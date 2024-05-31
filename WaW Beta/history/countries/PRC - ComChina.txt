@@ -1,0 +1,88 @@
+﻿capital = 622
+
+oob = "PRC_1936"
+
+# Starting tech
+set_technology = { #player
+    ################# infantry ###############
+	infantry_weapons = 1 
+	support_weapon_equipment = 1
+	fuel_silos = 1 
+	field_equipment = 1
+	special_equipment = 1
+	tech_mountaineers = 1
+	tech_dig_1 = 1
+	################## support ##################
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1
+	################## artillery ###############
+	gw_pack_artillery = 1
+
+	mass_assault = 1
+}
+set_stability = 0.6
+set_war_support = 0.7
+
+
+save_global_event_target_as = WTT_communist_china
+
+add_opinion_modifier = { target = MON modifier = HOL_caved_to_the_british_ger }
+add_opinion_modifier = { target = MON modifier = HOL_caved_to_the_british_ger_trade }
+
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 100
+}
+
+recruit_character = PRC_mao_zedong
+recruit_character = PRC_zhu_de
+recruit_character = PRC_peng_dehuai
+recruit_character = PRC_lin_biao
+recruit_character = PRC_gao_jin
+recruit_character = PRC_yang_wei
+recruit_character = PRC_deng_dong
+recruit_character = PRC_luo_ruiqing
+recruit_character = PRC_liu_shaoqi
+recruit_character = PRC_dong_biwu
+recruit_character = PRC_kang_sheng
+recruit_character = PRC_otto_braun
+recruit_character = PRC_ma_jin
+recruit_character = PRC_fang_zeyi
+recruit_character = PRC_xu_xiangqian
+recruit_character = PRC_nie_rongzhen
+recruit_character = PRC_chen_geng
+recruit_character = PRC_ye_jianying
+recruit_character = PRC_liu_bocheng
+recruit_character = PRC_lin_bojiu
+recruit_character = PRC_he_yuandang
+recruit_character = PRC_deng_xiaoping
+
+
+add_ideas = {
+	closed_economy
+	limited_conscription
+	war_economy
+	airandnavy_idea
+	CHI_defensive_nation
+}
+
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_the_long_march_1
+		PRC_low_popular_support_3
+		PRC_power_struggles
+		PRC_red_army_weakened
+	}
+}
+
+add_opinion_modifier = { target = CHI modifier = hostile_status }

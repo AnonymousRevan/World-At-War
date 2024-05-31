@@ -1,0 +1,125 @@
+operations = {
+	ROM_annex_bul = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ROM
+		}
+		visible = {
+			tag = ROM
+			BUL = { is_ai = yes }
+			country_exists = BUL
+		}
+		available = {
+			date > 1939.2.1
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			BUL = {
+				transfer_navy = {
+					target = ROM
+				}
+			}
+			annex_country = {
+              target = BUL
+              transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = BUL
+				}
+				set_resistance = 0
+				set_compliance = 100
+			}
+		}		
+	}
+	ROM_Nav_Rearm = {
+
+			icon = generic_naval
+		
+			available = {
+				has_navy_size = {
+					archetype = ship_hull_cruiser
+					size > 2
+				}
+				has_navy_size = {
+					archetype = ship_hull_light
+					size > 12
+				}
+			}
+		
+			days_mission_timeout = 1095
+			is_good = no
+			fire_only_once = yes
+		
+			activation = {
+				has_completed_focus = ROM_expand_the_galati_shipyards
+			}
+		
+			complete_effect = {
+				add_political_power = 50
+				navy_experience = 100
+				add_stability = 0.25
+				add_doctrine_cost_reduction = {
+					name = naval_doc_bonus
+					cost_reduction = 0.5
+					uses = 2
+					category = naval_doctrine
+				}
+		
+					}
+	}
+	ROM_force_bulgarian_steel_expansion = { #48
+			icon = steel
+
+			highlight_states = {
+			highlight_state_targets = {
+				state = 48
+				}
+			}
+
+			allowed = {
+				tag = ROM
+			}
+
+			available = {
+				has_completed_focus = ROM_fascist_bulg
+				has_full_control_of_state = 48
+				num_of_civilian_factories_available_for_projects > 4
+				has_tech = excavation3
+				controls_state = 48
+			}
+
+			visible = {
+				controls_state = 48
+			}
+
+			fire_only_once = yes
+
+			cost = 50
+			days_remove = 70
+
+			modifier = {
+				civilian_factory_use = 5
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			remove_effect = {
+				48 = {
+					add_resource = {
+						type = steel
+						amount = 100
+					}	
+				}
+			}
+	}
+}

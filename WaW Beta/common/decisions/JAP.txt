@@ -1,0 +1,1059 @@
+#Category allowed for JAP
+JAP_intervene_in_china = {
+
+	JAP_china_step_up_war_effort = {
+
+		icon = jap_conquer_china
+
+		available = {
+			JAP_has_idea_JAP_intervene_in_china = yes
+			OR = {
+				AND = {
+					JAP = {
+						controls_state = 614
+						controls_state = 743
+						controls_state = 597
+					}
+					OR = {
+						JAP = {controls_state = 608}
+						MAN = {controls_state = 608}
+					}
+				}
+				casualties >500000
+				}
+		}
+
+		visible = {
+			JAP_has_idea_JAP_intervene_in_china = yes
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				has_war_with = USA
+				factor = 100 #screw it, kill everything
+			}
+		}
+
+		days_remove = 0
+		days_re_enable = 30
+
+		cost = 25
+
+		complete_effect = {
+		    add_named_threat = { threat = 1 name = JAP_china_step_up_war_effort }
+			USA = { add_war_support = 0.025 }
+			JAP_intervene_in_china_level_down = yes
+		}
+	}
+	
+	JAP_china_step_up_war_effort2 = {
+
+		icon = jap_conquer_china
+
+		available = {
+			JAP_has_idea_JAP_intervene_in_china = yes
+
+			OR = {
+				JAP = {
+					controls_state = 613
+					}
+					casualties >500000
+				}		
+		}
+
+		visible = {
+			JAP_has_idea_JAP_intervene_in_china = yes
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				has_war_with = USA
+				factor = 100 #screw it, kill everything
+			}
+		}
+
+		days_remove = 0
+		days_re_enable = 30
+
+		cost = 25
+
+		complete_effect = {
+		    add_named_threat = { threat = 1 name = JAP_china_step_up_war_effort }
+			USA = { add_war_support = 0.025 }
+			JAP_intervene_in_china_level_down = yes
+		}
+	}	
+	
+	
+	
+	JAP_wargoal_for_china = {
+
+		icon = jap_conquer_china
+
+		available = {
+			date > 1937.3.1
+			has_completed_focus = JAP_intervene_in_china
+		}
+
+		visible = {
+			has_completed_focus = JAP_intervene_in_china
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+
+		}
+
+		modifier = {
+			industrial_capacity_factory = 0.12
+			industrial_capacity_dockyard = -0.04
+			consumer_goods_factor = -0.20
+		}
+		days_remove = 180
+
+		cost = 25
+
+		complete_effect = {
+			add_war_support = 0.025 
+		}
+	}
+	JAP_ichi_go = {
+
+		icon = jap_conquer_china
+
+		available = {	
+		    has_war_with = USA
+            has_war_with = CHI			
+		}
+
+		visible = {
+		    has_war_with = USA
+            has_war_with = CHI
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		cost = 50
+
+		complete_effect = {
+			add_ideas = JAP_ichi_go
+			activate_mission_tooltip = JAP_conquer_china
+			set_country_flag = JAP_conquer_china_activate
+		}
+	}
+	JAP_conquer_china = {
+
+		icon = jap_conquer_china
+
+		available = {
+			event_target:WTT_current_china_leader = {
+				OR = {
+					has_capitulated = yes
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+		}
+
+		visible = {
+			JAP_has_idea_JAP_intervene_in_china = yes
+			any_country = {
+				is_literally_china = yes
+				has_war_with = ROOT
+			}
+		}
+
+		activation = {
+			has_country_flag = JAP_conquer_china_activate
+		}
+
+		fire_only_once = yes
+
+		is_good = no
+
+		days_mission_timeout = 360
+		
+		timeout_effect = {
+			add_stability = -0.05
+			add_war_support = -0.15
+		}
+
+		complete_effect = {
+			add_stability = 0.03
+			add_war_support = 0.07
+		}
+	}
+	
+}
+JAP_interservice_rivalry = {
+	JAP_the_ultimate_battleship = {
+
+		icon = generic_naval
+
+		visible = {
+			has_completed_focus = JAP_the_ultimate_battleship
+		}
+		cost = 0
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+
+			create_equipment_variant = {
+				name = "Yamato Class"
+				type = ship_hull_super_heavy_1
+				name_group = JAP_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_super_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+					fixed_ship_radar_slot = ship_radar_1
+					fixed_ship_engine_slot = heavy_ship_engine_3
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					fixed_ship_armor_slot = ship_armor_shbb
+					front_1_custom_slot = ship_super_heavy_battery_1
+					front_2_custom_slot = ship_anti_air_2
+					mid_1_custom_slot = ship_secondaries_2
+					mid_2_custom_slot = ship_secondaries_2
+					mid_3_custom_slot = ship_anti_air_2
+					rear_1_custom_slot = ship_super_heavy_battery_1
+					rear_2_custom_slot = ship_airplane_launcher_2
+				}
+			}
+			custom_effect_tooltip = JAP_yamato_tt
+			#JAP_interservice_rivalry_towards_navy = yes
+			
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_1
+						creator = "JAP" 
+						version_name = "Yamato Class"
+					}
+					name = "Yamato" 
+					requested_factories = 5
+					progress = 0.55
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_1
+						creator = "JAP" 
+						version_name = "Yamato Class"
+					}
+					name = "Musashi" 
+					requested_factories = 5
+					progress = 0.40
+					amount = 1
+				}
+			}
+		}
+	}
+
+	JAP_steel_for_guns = {
+
+		icon = generic_tank
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_steel_for_ships
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_steel_for_ships
+			}
+			always = no
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			JAP_interservice_rivalry_towards_army = yes
+			set_country_flag = JAP_steel_for_guns
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	JAP_steel_for_ships = {
+
+		icon = generic_naval
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_steel_for_guns
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_steel_for_guns
+			}
+			always = no
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			JAP_interservice_rivalry_towards_navy = yes
+			set_country_flag = JAP_steel_for_ships
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+	JAP_prioritize_army_aircraft_construction = {
+
+		icon = generic_tank
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_prioritize_naval_aircraft_construction
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_prioritize_naval_aircraft_construction
+			}
+			always = no
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			add_ideas = JAP_prioritize_army_aircraft_construction
+			JAP_interservice_rivalry_towards_army = yes
+			set_country_flag = JAP_prioritize_army_aircraft_construction
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	JAP_prioritize_naval_aircraft_construction = {
+
+		icon = generic_naval
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_prioritize_army_aircraft_construction
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_prioritize_army_aircraft_construction
+			}
+			always = no
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			add_ideas = JAP_prioritize_naval_aircraft_construction
+			JAP_interservice_rivalry_towards_navy = yes
+			set_country_flag = JAP_prioritize_naval_aircraft_construction
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+	JAP_everybody_serves = {
+
+		icon = generic_tank
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_draft_exemptions
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_draft_exemptions
+			}
+			always = no
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			conscription = 0.02
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			JAP_interservice_rivalry_towards_army = yes
+			set_country_flag = JAP_everybody_serves
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	JAP_draft_exemptions = {
+
+		icon = generic_naval
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_everybody_serves
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_everybody_serves
+			}
+			always = no
+		}
+		cost = 50
+		days_remove = -1
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 3
+		}
+		modifier = {
+			industrial_capacity_factory = 0.05
+			industrial_capacity_dockyard = 0.05
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			JAP_interservice_rivalry_towards_navy = yes
+			set_country_flag = JAP_draft_exemptions
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	JAP_raiding_regiments = {
+
+		icon = generic_tank
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_special_air_landing_force
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_special_air_landing_force
+			}
+			always = no
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			special_forces_cap = 0.05
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			set_country_flag = JAP_raiding_regiments
+			JAP_interservice_rivalry_towards_army = yes
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+	JAP_special_air_landing_force = {
+
+		icon = generic_naval
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_raiding_regiments
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_raiding_regiments
+			}
+			always = no
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			special_forces_attack_factor = 0.05 
+			special_forces_defence_factor = 0.05
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			set_country_flag = JAP_special_air_landing_force
+			JAP_interservice_rivalry_towards_navy = yes
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+	JAP_favor_army = {
+
+		icon = generic_tank
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			AND = {
+				OR = { 
+					has_country_flag = JAP_raiding_regiments 
+					has_country_flag = JAP_special_air_landing_force
+				}
+				OR = { 
+					has_country_flag = JAP_everybody_serves
+					has_country_flag = JAP_draft_exemptions
+				}
+				OR = { 
+					has_country_flag = JAP_prioritize_naval_aircraft_construction
+					has_country_flag = JAP_prioritize_army_aircraft_construction
+				}
+				OR = { 
+					has_country_flag = JAP_steel_for_guns
+					has_country_flag = JAP_steel_for_ships
+				}
+			}
+			
+		}
+		visible = {
+			AND = {
+				OR = { 
+					has_country_flag = JAP_raiding_regiments 
+					has_country_flag = JAP_special_air_landing_force
+				}
+				OR = { 
+					has_country_flag = JAP_everybody_serves
+					has_country_flag = JAP_draft_exemptions
+				}
+				OR = { 
+					has_country_flag = JAP_prioritize_naval_aircraft_construction
+					has_country_flag = JAP_prioritize_army_aircraft_construction
+				}
+				OR = { 
+					has_country_flag = JAP_steel_for_guns
+					has_country_flag = JAP_steel_for_ships
+				}
+			}
+			always = no
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			JAP_interservice_rivalry_towards_army = yes
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	JAP_favor_navy = {
+
+		icon = generic_naval
+
+		available = { 
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			AND = {
+				OR = { 
+					has_country_flag = JAP_raiding_regiments 
+					has_country_flag = JAP_special_air_landing_force
+				}
+				OR = { 
+					has_country_flag = JAP_everybody_serves
+					has_country_flag = JAP_draft_exemptions
+				}
+				OR = { 
+					has_country_flag = JAP_prioritize_naval_aircraft_construction
+					has_country_flag = JAP_prioritize_army_aircraft_construction
+				}
+				OR = { 
+					has_country_flag = JAP_steel_for_guns
+					has_country_flag = JAP_steel_for_ships
+				}
+			}
+			
+		}
+		visible = {
+			AND = {
+				OR = { 
+					has_country_flag = JAP_raiding_regiments 
+					has_country_flag = JAP_special_air_landing_force
+				}
+				OR = { 
+					has_country_flag = JAP_everybody_serves
+					has_country_flag = JAP_draft_exemptions
+				}
+				OR = { 
+					has_country_flag = JAP_prioritize_naval_aircraft_construction
+					has_country_flag = JAP_prioritize_army_aircraft_construction
+				}
+				OR = { 
+					has_country_flag = JAP_steel_for_guns
+					has_country_flag = JAP_steel_for_ships
+				}
+			}
+			always = no
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			JAP_interservice_rivalry_towards_navy = yes
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+}
+
+foreign_politics = {
+	JAP_sue_for_peace_nuke = {
+		
+		   
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			has_global_flag = JAP_nuke_1
+			has_global_flag = JAP_nuke_2
+			has_navy_size = { size < 40 }
+			NOT = {
+				controls_state = 526
+				controls_state = 645
+			}
+		}
+
+		visible = {
+			has_war = yes
+			has_global_flag = JAP_nuke_1
+		}
+
+		cost = 0
+
+		days_remove = -1
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				NOT = {
+					controls_state = 525
+					controls_state = 527
+				}
+				factor = 10
+			}
+		}
+
+		modifier = {
+			forced_surrender_limit = -1.0
+		}
+
+		remove_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+			hidden_effect = {
+				clr_global_flag = JAP_nuke_1
+				clr_global_flag = JAP_nuke_2
+			}
+		}
+	}
+	JAP_sue_for_peace_nuke_mission = {
+		available = {
+			has_global_flag = JAP_nuke_1
+			has_global_flag = JAP_nuke_2
+		}
+
+		visible = {
+			NOT = {
+				OR = {
+					controls_state = 536
+					controls_state = 533
+					controls_state = 534
+					controls_state = 532
+					controls_state = 282
+					controls_state = 530
+					controls_state = 531
+					controls_state = 528
+					controls_state = 529
+				}
+			}
+		}
+
+		days_mission_timeout = 720
+		fire_only_once = yes
+
+		activation = {
+			has_tech = nukes
+			has_war_with = JAP
+		}
+
+		complete_effect = {
+			JAP = {
+				unlock_decision_tooltip = JAP_sue_for_peace_nuke
+			}
+		}
+	}
+}
+
+operations = {
+   JAP_annex_man = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = JAP			
+		}
+		visible = {
+			tag = JAP
+			MAN = { is_ai = yes }
+			country_exists = MAN
+		}
+		available = {
+			date > 1939.1.1
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			MAN = {
+				transfer_navy = {
+					target = JAP
+				}
+			}
+			annex_country = {
+              target = MAN
+              transfer_troops = yes
+			}
+			annex_country = {
+              target = MEN
+              transfer_troops = yes
+			}
+			every_state = {
+				limit = { is_core_of = MAN }
+				set_resistance = 0
+				set_compliance = 100
+			}	
+		}		
+	}
+   JAP_annex_sia = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = JAP			
+		}
+		visible = {
+			tag = JAP
+			SIA = { is_ai = yes }
+			country_exists = SIA
+		}
+		available = {
+			date > 1939.1.1
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			SIA = {
+				transfer_navy = {
+					target = JAP
+				}
+			}
+			annex_country = {
+              target = SIA
+              transfer_troops = yes
+			}
+			every_state = {
+				limit = { is_core_of = SIA }
+				set_resistance = 0
+				set_compliance = 100
+			}
+		}		
+	}
+
+	JAP_tora_tora_tora = {
+		allowed = {
+			original_tag = JAP
+		}			 
+		icon = decision_generic_naval
+
+		available = {
+			OR = {
+				has_war_with = HOL
+				has_war_with = ENG
+				has_war_with = USA
+				has_war_with = FRA
+			}
+		}
+		is_good = no	  
+	
+		fire_only_once = yes
+	
+		days_mission_timeout = 120
+	
+		activation = {
+			has_completed_focus = JAP_strike_on_the_southern_resource_area
+		}
+		
+		visible = {
+			has_completed_focus = JAP_strike_on_the_southern_resource_area
+		}
+	
+		complete_effect = {
+			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 120 }
+		}
+	}
+	
+	JAP_operation_mi = {
+		icon = generic_operation
+		
+		allowed = {
+			tag = JAP
+		}
+
+		available = {
+			NOT = {
+				has_full_control_of_state = 650
+				has_full_control_of_state = 631
+				523 = {
+					controller = {
+						OR = {
+							tag = JAP
+							is_in_faction_with = JAP
+						}
+					} 
+					#JAP = { controls_state = 523 }
+				}
+			}
+		}
+		
+		activation = {
+			has_global_flag = USA_doolittle_raid
+		}
+		is_good = yes
+		days_mission_timeout = 90
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		fire_only_once = yes
+		
+		timeout_effect = {
+			add_stability = 0.05
+			add_war_support = 0.10
+			
+		}
+		complete_effect = {
+			add_stability = -0.05
+			add_war_support = -0.10
+		}
+	}
+	
+	JAP_homeland_defense = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			tag = JAP
+		}
+
+		available = {
+			any_state = {
+				is_core_of = JAP
+				NOT = {
+					is_controlled_by = JAP
+				}
+			}
+			has_civil_war = no
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_war = yes
+		}
+
+		complete_effect = {
+			add_war_support = 0.1
+			add_ideas = JAP_homeland_defense
+		}
+	}
+}

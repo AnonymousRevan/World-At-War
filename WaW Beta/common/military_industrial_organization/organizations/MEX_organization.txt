@@ -1,0 +1,14 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+
+### Foreign Subsidiaries
+
+### USA_ford_motor_company_organization - Mexican ford -> see USA_organizations.txt 

@@ -1,0 +1,626 @@
+focus_tree = {
+	id = italian_east_africa_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ETH
+		}	
+		} 
+	
+	default = no
+	reset_on_civilwar = no
+
+	
+	
+	focus = {
+		id = ETH_army_reform
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 12
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 200
+		}
+	}
+	
+	focus = {
+		id = ETH_superior_firepower
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ETH_army_reform }
+		mutually_exclusive = { focus = ETH_superior_tactics }
+
+		x = 2
+		y = 1   
+		relative_position_id = ETH_army_reform  
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = cat_mobile_warfare
+				category = cat_superior_firepower	
+			}
+		}
+	}
+		
+	focus = {
+		id = ETH_superior_firepower_mw
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ETH_superior_firepower }
+		mutually_exclusive = { focus = ETH_superior_firepower_sf }
+		x = -1
+		y = 1   
+		relative_position_id = ETH_superior_firepower  
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = { set_technology = { light_tank_1934 = 1} set_technology = { light_tank_1936 = 1 } }
+			custom_effect_tooltip = "We will research up to 1936 light tanks."
+		}
+	}
+	focus = {
+		id = ETH_superior_firepower_mw2
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ETH_superior_firepower_mw }
+
+		x = 0
+		y = 1   
+		relative_position_id = ETH_superior_firepower_mw  
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_ideas = ETH_superior_firepower_mw2_idea		
+		}
+	}
+	
+						focus = {
+		id = ETH_superior_firepower_mw3 
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ETH_superior_firepower_mw2 }
+
+		x = 0
+		y = 1   
+		relative_position_id = ETH_superior_firepower_mw2  
+		cost = 10
+
+		available_if_capitulated = yes 
+
+		completion_reward = { 
+		add_equipment_to_stockpile = { producer = ITA  type = motorized_equipment amount = 1500 }
+			add_equipment_to_stockpile = { producer = ITA  type = light_tank_equipment_1934 amount = 400 }
+			add_equipment_to_stockpile = { producer = GER  type = light_tank_equipment_1936 amount = 200 }
+		}
+	}
+	
+		focus = {
+		id = ETH_superior_firepower_sf
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ETH_superior_firepower }
+				mutually_exclusive = { focus = ETH_superior_firepower_mw }
+
+		x = 1
+		y = 1   
+		relative_position_id = ETH_superior_firepower  
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = { set_technology = { artillery5 = 1} set_technology = { mountain_gun = 1}  }
+			custom_effect_tooltip = "We will research Advanced Artillery Upgrade"
+
+		}
+	}
+				focus = {
+		id = ETH_superior_firepower_sf2
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ETH_superior_firepower_sf }
+
+		x = 0 
+		y = 1   
+		relative_position_id = ETH_superior_firepower_sf  
+		cost = 10
+
+		available_if_capitulated = yes 
+
+		completion_reward = {
+							add_ideas = ETH_superior_firepower_sf2_idea 
+
+		}
+	}
+						focus = {
+		id = ETH_superior_firepower_sf3
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ETH_superior_firepower_sf2 }
+
+		x = 0
+		y = 1   
+		relative_position_id = ETH_superior_firepower_sf2  
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = { producer = ITA  type = artillery_equipment_1 amount = 1200 }	
+			add_equipment_to_stockpile = { producer = ITA  type = infantry_equipment_1 amount = 7500 }	
+			add_equipment_to_stockpile = { producer = ITA  type = support_equipment amount = 500 }				
+		}
+	}
+		focus = {
+		id = ETH_superior_tactics
+		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ETH_army_reform }
+						mutually_exclusive = { focus = ETH_superior_firepower }
+
+		x = -2
+		y = 1   
+		relative_position_id = ETH_army_reform  
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = cat_grand_battle_plan
+				category = cat_mass_assault		
+			}
+		}
+	}
+				focus = {
+		id = ETH_superior_tactics_ma
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ETH_superior_tactics }
+		mutually_exclusive = { focus = ETH_superior_tactics_gbp }
+		x = -1
+		y = 1   
+		relative_position_id = ETH_superior_tactics  
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+					hidden_effect = {  set_technology = { large_front_operations = 1 } }
+			custom_effect_tooltip = "We will research Large Front Operations, allowing us to research both sides of Mass Assault"
+
+		}
+	}
+			focus = {
+		id = ETH_superior_tactics_ma2
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ETH_superior_tactics_ma }  
+
+		x = 0
+		y = 1   
+		relative_position_id = ETH_superior_tactics_ma  
+		cost = 10 
+
+		available_if_capitulated = yes
+
+		completion_reward = { 
+			add_ideas = ETH_superior_tactics_ma2_idea
+		}
+	}
+	
+				focus = {
+		id = ETH_superior_tactics_ma3
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ETH_superior_tactics_ma2 }
+
+		x = 0
+		y = 1   
+		relative_position_id = ETH_superior_tactics_ma2  
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+              add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 10000 }
+		}
+	}	
+	
+	
+		focus = {
+		id = ETH_superior_tactics_gbp
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ETH_superior_tactics }
+				mutually_exclusive = { focus = ETH_superior_tactics_ma }
+
+		x = 1
+		y = 1   
+		relative_position_id = ETH_superior_tactics  
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 3
+				category = cat_grand_battle_plan
+			}
+		}
+	}
+	
+		focus = {
+		id = ETH_superior_tactics_gbp2
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ETH_superior_tactics_gbp }
+
+		x = 0
+		y = 1   
+		relative_position_id = ETH_superior_tactics_gbp  
+		cost = 10 
+
+		available_if_capitulated = yes
+
+		completion_reward = { 
+		add_ideas = ETH_superior_tactics_gbp2_idea
+		}
+	}	
+	 
+	
+			focus = {
+		id = ETH_superior_tactics_gbp3
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ETH_superior_tactics_gbp2 }
+
+		x = 0
+		y = 1   
+		relative_position_id = ETH_superior_tactics_gbp2  
+		cost = 10
+
+		available_if_capitulated = yes
+  
+		completion_reward = {
+			add_equipment_to_stockpile = { producer = ITA  type = infantry_equipment_1 amount = 7500 }	
+			add_equipment_to_stockpile = { producer = ITA  type = anti_tank_equipment_1 amount = 500 }				
+			add_equipment_to_stockpile = { producer = ITA  type = support_equipment amount = 1000 }				
+	
+		}
+	}	
+	
+	 
+				focus = {
+		id = ETH_army_reform_complete
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ETH_superior_tactics_gbp3 focus = ETH_superior_tactics_ma3 focus = ETH_superior_firepower_sf3 focus = ETH_superior_firepower_mw3 }
+
+		x = 1
+		y = 1   
+		relative_position_id = ETH_superior_tactics_gbp3  
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_war_support = 0.05
+			add_stability = 0.05	
+		}
+	}	
+	
+	focus = {
+		id = ETH_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		x = 1
+		y = 0   
+		cost = 10 
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = ETH_equipment_effort_2
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = ETH_equipment_effort }
+		x = 0
+		y = 1
+		relative_position_id = ETH_equipment_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+
+	focus = {
+		id = ETH_equipment_effort_3
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = ETH_equipment_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = ETH_equipment_effort_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = ETH_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = ETH_equipment_effort_3 }
+		x = 0
+		y = 1
+		relative_position_id = ETH_equipment_effort_3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+
+
+
+	focus = {
+		id = ETH_industrial_effort
+		icon = GFX_goal_generic_production
+		x = 4
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+
+	}
+
+	focus = {
+		id = ETH_construction_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = ETH_industrial_effort }
+		x = -1
+		y = 1
+		relative_position_id = ETH_industrial_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			271 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ETH_production_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ETH_industrial_effort }
+		x = 1
+		y = 1
+		relative_position_id = ETH_industrial_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			271 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ETH_construction_effort_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = ETH_construction_effort }
+		x = 0
+		y = 1
+		relative_position_id = ETH_construction_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			559 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ETH_production_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ETH_production_effort }
+		x = 0
+		y = 1
+		relative_position_id = ETH_production_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+						550 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ETH_production_effort_3
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ETH_production_effort_2 focus = ETH_construction_effort_2 }
+		x = -1
+		y = 1
+		relative_position_id = ETH_production_effort_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			550 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = ETH_political_effort
+		icon = GFX_goal_generic_demand_territory
+		x = 7
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	
+	focus = {
+		id = ETH_militarism
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = ETH_political_effort }
+		x = 0
+		y = 1
+		relative_position_id = ETH_political_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {	
+			add_ideas = militarism_focus
+			army_experience = 20
+		}
+	}
+
+
+	focus = {
+		id = ETH_why_we_fight
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ETH_militarism }
+		continue_if_invalid = yes	
+		x = 0
+		y = 1
+		relative_position_id = ETH_militarism
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = military_youth_focus
+			}
+		}
+	
+	focus = {
+		id = ETH_technology_sharing
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = {  focus = ETH_why_we_fight }
+		x = 0
+		y = 1
+		relative_position_id = ETH_why_we_fight
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+				add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 1.0
+					uses = 1
+					category = electronics
+				}
+				add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 1.0
+					uses = 1
+					category = industry
+				}	
+				add_tech_bonus = {
+					name = infantry_artillery_bonus #@#
+					bonus = 1.0
+					uses = 1
+					category = infantry_weapons
+					category = artillery
+				}				
+		}
+	}
+}

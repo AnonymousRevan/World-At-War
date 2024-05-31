@@ -1,0 +1,50 @@
+﻿capital = 44
+
+OOB = "ALB_1936"
+
+set_research_slots = 0
+
+set_technology = {
+	################# infantry ###############
+	infantry_weapons = 1  
+	fuel_silos = 1 
+	field_equipment = 1
+	################## support ##################
+	tech_support = 1
+	tech_recon = 1
+	################## artillery ###############
+	artillery1 = 1 
+	gw_pack_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	################## armor ##############
+	light_tank_1934 = 1 
+	motorised_infantry = 1
+	tech_armored_cars = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+set_convoys = 100
+
+add_ideas = {
+	no_spies_idea
+	annex_minor
+}
+recruit_character = ALB_king_zog
+recruit_character = ALB_xhemal_aranitasi
+recruit_character = ALB_bicaku
+recruit_character = ALB_bushati
+recruit_character = ALB_hoxha
+recruit_character = ALB_kara_qemal_bej
+recruit_character = ALB_veton_Çeku
+recruit_character = ALB_turhan_bazna

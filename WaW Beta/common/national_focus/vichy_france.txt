@@ -1,0 +1,1834 @@
+ focus_tree = {
+	id = vichy_france_focus
+
+	country = {
+		factor = 1
+		modifier = {
+			add = 10
+			tag = EFR
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1000 }
+
+	default = no
+	reset_on_civilwar = no
+
+	focus = {
+		id = EFR_marechal_nous_voila
+		icon = GFX_EFR_Marechal_Nous_Voila
+		x = 4
+		y = 0
+		cost = 3
+
+		available_if_capitulated = yes
+		
+		available = {
+		    FRA = {
+		        has_capitulated = yes 
+			}
+		}
+
+		completion_reward = {
+			add_to_tech_sharing_group = axis_research
+			add_timed_idea = { idea = EFR_german_industry_support days = 300 }
+			hidden_effect = {
+				load_oob = EFR_armistice_army
+				every_owned_state = {
+					limit = {
+						is_controlled_by = ROOT
+						NOT = {
+							is_core_of = ROOT
+						}
+						NOT = {
+							is_on_continent = europe
+						}
+					}
+					add_compliance = 100
+				}
+				290 = { set_demilitarized_zone = yes }
+				783 = { set_demilitarized_zone = yes }
+				699 = { set_demilitarized_zone = yes }
+				461 = { set_demilitarized_zone = yes }
+				462 = { set_demilitarized_zone = yes }
+				459 = { set_demilitarized_zone = yes }
+				513 = { set_demilitarized_zone = yes }
+			}
+			custom_effect_tooltip = EFR_armistice_army_tt
+		}
+	}
+	focus = {
+		id = EFR_travail
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = EFR_marechal_nous_voila }
+		relative_position_id = EFR_marechal_nous_voila
+		x = -2
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.00 
+				uses = 2
+				category = construction_tech
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+
+	focus = {
+		id = EFR_recycling
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = EFR_rationning }
+		relative_position_id = EFR_travail
+		x = 0
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+		
+				if = {
+					limit = { 
+						EFR = { is_ai = yes }
+					}
+				GER = { add_offsite_building = { type = industrial_complex level = 3 } }
+				else = {
+			random_owned_controlled_state = {
+			    prioritize = { 26 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+				}					
+				}
+		
+		
+
+		}
+	}
+
+	focus = {
+		id = EFR_improve_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = EFR_recycling }
+		relative_position_id = EFR_recycling
+		x = -2
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+
+		
+
+		completion_reward = {
+		
+				if = {
+					limit = { 
+						EFR = { is_ai = yes }
+					}
+				GER = { add_offsite_building = { type = industrial_complex level = 3 } }
+				else = {
+			random_owned_controlled_state = {
+			    prioritize = { 20 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+				}					
+				}	
+		
+		
+
+		}		
+		
+		
+		
+	}
+
+    focus = {
+        id = EFR_gazogenes_and_michelin_tires
+        icon = GFX_goal_generic_army_motorized 
+		relative_position_id = EFR_recycling
+        x = 0
+        y = 1
+        prerequisite = { focus = EFR_recycling}
+		available = {
+			controls_state = 26
+			26 = { is_owned_by = EFR }
+        }
+        cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+        completion_reward = {
+			31 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = synthetic_rubber_refinery
+						level = 2
+						instant_build = yes
+					}
+				}
+        }
+    }
+
+	focus = {
+		id = EFR_industrial_advisory_comitee
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = EFR_gazogenes_and_michelin_tires}
+		relative_position_id = EFR_gazogenes_and_michelin_tires
+		x = 0
+		y = 1
+		cost = 5
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			31 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 2
+						instant_build = yes
+					}
+				}		
+		}
+	}
+
+	focus = {
+		id = EFR_famille
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = EFR_marechal_nous_voila }
+		relative_position_id = EFR_marechal_nous_voila
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+
+		}
+		x = 0
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = fascism
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = fascism }
+				}
+			}
+		}
+
+		completion_reward = {
+			
+			20 = {
+				add_extra_state_shared_building_slots = 2
+			   	add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EFR_rationning
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = EFR_famille }
+		prerequisite = { focus = EFR_travail }
+		relative_position_id = EFR_marechal_nous_voila
+		x = -2
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+					add_ideas =	idea_EFR_rationning
+
+				if = {
+					limit = { 
+						EFR = { is_ai = yes }
+					}
+				GER = { add_offsite_building = { type = industrial_complex level = 2 } }
+				else = {
+			random_owned_controlled_state = {
+			    prioritize = { 33 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+				}					
+				}		
+		
+		
+
+		}
+
+
+	}
+
+	focus = {
+		id = EFR_patrie_focus
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = EFR_marechal_nous_voila }
+		relative_position_id = EFR_marechal_nous_voila
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+		x = 2
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = fascism
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = fascism }
+				}
+			}
+		}
+
+		completion_reward = {
+			add_ideas = nationalism
+		}
+	}
+
+	focus = {
+		id = EFR_armistice_army
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = {  focus = EFR_patrie_focus }
+		relative_position_id = EFR_patrie_focus
+		x = 0
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		custom_effect_tooltip = EFR_african_phalanx_tt
+			hidden_effect = {
+				load_oob = EFR_african_phalanx
+			}
+			army_experience = 10
+			20 = {
+				add_extra_state_shared_building_slots = 2
+			    add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EFR_chantiers_de_la_jeunesse
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = EFR_armistice_army }
+		relative_position_id = EFR_armistice_army
+		x = 1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = idea_EFR_chantiers_de_la_jeunesse
+		}
+	}
+	focus = {
+		id = EFR_negotiate_the_release_of_officer
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = EFR_chantiers_de_la_jeunesse focus = EFR_hide_military_equipment}
+		relative_position_id = EFR_chantiers_de_la_jeunesse
+		x = -1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 100
+		}
+	}
+	focus = {
+		id = EFR_phalange_africaine
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = EFR_negotiate_the_release_of_officer }
+		relative_position_id = EFR_negotiate_the_release_of_officer
+		x = 3
+		y = 1
+		cost = 5
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
+			}
+			army_experience = 10
+			add_doctrine_cost_reduction = {
+                name = land_doc_bonus
+                cost_reduction = 0.50
+                uses = 1
+                category = land_doctrine
+            }
+		}
+	}
+	focus = {
+		id = EFR_milice_francaise
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = EFR_negotiate_the_release_of_officer }
+		relative_position_id = EFR_negotiate_the_release_of_officer
+		x = 1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GER_gestapo_idea2
+		}
+	}
+	focus = {
+		id = EFR_ideological_fanaticism
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = EFR_milice_francaise focus = EFR_phalange_africaine}
+		relative_position_id = EFR_milice_francaise
+		x = 2
+		y = 1
+		cost = 5
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = ideological_fanaticism_focus
+		}
+	}
+	focus = {
+		id = EFR_military_youth
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = EFR_milice_francaise }
+		relative_position_id = EFR_milice_francaise
+		x = 0
+		y = 1
+		cost = 5
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = military_youth_focus
+			if = {
+				limit = { has_government = fascism }
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+			}
+		}
+	}
+	focus = {
+		id = EFR_hide_military_equipment
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {  focus = EFR_armistice_army }
+		relative_position_id = EFR_armistice_army
+		x = -1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = no
+
+		completion_reward = {
+		    army_experience = 10
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = EFR_secret_military_researches
+		icon = GFX_focus_research
+		prerequisite = { focus = EFR_negotiate_the_release_of_officer }
+		relative_position_id = EFR_negotiate_the_release_of_officer
+		x = -2
+		y = 1
+		cost = 5
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = idea_EFR_secret_military_researches
+		}
+	}
+
+	focus = {
+		id = EFR_restart_heavy_water_production
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = EFR_industrial_advisory_comitee }
+		prerequisite = { focus = EFR_improve_industry }
+		relative_position_id = EFR_industrial_advisory_comitee
+		x = -1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 0.8
+				category = nuclear
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
+
+	focus = {
+		id = EFR_research_collaboration
+		icon = GFX_focus_research
+		prerequisite = { focus = EFR_famille}
+		relative_position_id = EFR_famille
+		x = 0
+		y = 1
+		cost = 5
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			GER = {
+				add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = naval_doctrine
+				}
+			}
+			add_tech_bonus = {
+				name = HOL_expand_curacao_oil_refineries
+				bonus = 1.0
+				uses = 1
+				category = synth_resources
+			}		
+		}
+	}
+
+	focus = {
+		id = EFR_aviation_effort
+		icon = GFX_goal_generic_build_airforce
+		relative_position_id = EFR_patrie_focus
+		x = 4
+		y = -1
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+
+		complete_tooltip = {
+			air_experience = 50
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = air_doctrine
+			}
+		}
+
+		completion_reward = {
+			air_experience = 50
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = EFR_fighter_focus
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = EFR_aviation_effort }
+		mutually_exclusive = { focus = EFR_bomber_focus }
+		relative_position_id = EFR_aviation_effort
+		x = -1
+		y = 1
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.00 
+				uses = 1
+				category = light_air 
+			}
+		}
+	}
+
+	focus = {
+		id = EFR_bomber_focus
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = EFR_aviation_effort }
+		mutually_exclusive = { focus = EFR_fighter_focus }
+		relative_position_id = EFR_aviation_effort
+		x = 1
+		y = 1
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    air_experience = 50
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.25
+				uses = 1
+				category = heavy_air
+			}
+		}
+	}
+
+	focus = {
+		id = EFR_aviation_effort_2
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = EFR_bomber_focus focus = EFR_fighter_focus }
+		relative_position_id = EFR_aviation_effort
+		x = 0
+		y = 2
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+
+		complete_tooltip = {
+			air_experience = 50
+	        add_ideas = HUN_indigenous_designs_2
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		completion_reward = {
+			air_experience = 50
+			add_ideas = HUN_indigenous_designs_2
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = EFR_CAS_effort
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = EFR_aviation_effort_2 }
+		relative_position_id = EFR_aviation_effort
+		x = -1
+		y = 3
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.00 
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = EFR_rocket_effort
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = EFR_aviation_effort_2 }
+		relative_position_id = EFR_aviation_effort
+		x = 0
+		y = 4
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 0.5
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
+
+	focus = {
+		id = EFR_NAV_effort
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = EFR_aviation_effort_2 focus = EFR_flexible_navy }
+		relative_position_id = EFR_aviation_effort
+		x = 1
+		y = 3
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.00 
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = EFR_naval_effort
+		icon = GFX_goal_generic_construct_naval_dockyard
+		relative_position_id = EFR_aviation_effort
+		x = 4
+		y = 0
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 50
+		    set_country_flag = naval_effort_built
+		}
+	}
+
+	focus = {
+		id = EFR_flexible_navy
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = EFR_naval_effort }
+		relative_position_id = EFR_aviation_effort
+		x = 3
+		y = 1
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.50
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = EFR_large_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = EFR_naval_effort }
+		relative_position_id = EFR_aviation_effort
+		x = 5
+		y = 1
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.60
+				uses = 3
+				category = fleet_in_being_tree
+			}
+		}
+	}
+
+	focus = {
+		id = EFR_submarine_effort
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = EFR_flexible_navy focus = EFR_large_navy }
+		relative_position_id = EFR_aviation_effort
+		x = 3
+		y = 2
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+		    navy_experience = 50
+			add_tech_bonus = {
+				name = YUG_expand_the_submarine_fleet
+				bonus = 0.25
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = EFR_cruiser_effort
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = EFR_large_navy focus = EFR_flexible_navy }
+		relative_position_id = EFR_aviation_effort
+		x = 5
+		y = 2
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.00 
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+
+	focus = {
+		id = EFR_destroyer_effort
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = EFR_submarine_effort }
+		relative_position_id = EFR_aviation_effort
+		x = 3
+		y = 3
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.00 
+				uses = 1
+                category = dd_tech
+			}
+			navy_experience = 25
+		}
+	}
+
+	focus = {
+		id = EFR_capital_ships_effort
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = EFR_cruiser_effort }
+		relative_position_id = EFR_aviation_effort
+		x = 5
+		y = 3
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.00 
+				uses = 1
+				category = bb_tech
+				category = bc_tech
+			}
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.00 
+				uses = 1
+				category = cv_tech
+			}
+		}
+	}
+	focus = {
+		id = EFR_army_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		 x = 22
+         y = 0
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	
+	focus = {
+		id = EFR_equipment_effort
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = EFR_army_effort }
+		mutually_exclusive = { focus = EFR_tanks focus = EFR_motorized}
+		x = 18
+		y = 1
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = JAP }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 750 producer = JAP }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = JAP }
+			add_equipment_to_stockpile = { type = horse_equipment_0 amount = 500 producer = JAP }
+			add_equipment_to_stockpile = { type = support_weapon_equipment_1 amount = 500 producer = JAP }
+			add_equipment_to_stockpile = { type = special_equipment_1 amount = 250 producer = JAP }
+			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 250 producer = JAP }
+			add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 250 producer = JAP }
+		}
+	}
+	
+	focus = {
+		id = EFR_equipment_effort_2
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = EFR_equipment_effort }
+		x = 19
+		y = 2
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 1
+				category = support_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = EFR_equipment_effort_3
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = EFR_equipment_effort }
+		x = 17
+		y = 2
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = EFR_equipment_effort_4
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = EFR_equipment_effort_3 }
+		x = 17
+		y = 3
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 1
+				category = marine_tech
+				category = mountaineers_tech
+			    category = para_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = EFR_equipment_effort_5
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = EFR_equipment_effort_2 }
+		x = 19
+		y = 3
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = EFR_equipment_effort_6
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = EFR_equipment_effort_4 }
+		prerequisite = { focus = EFR_equipment_effort_5 }
+		x = 18
+		y = 4
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			modify_building_resources = {
+        	   building = steel_refinery
+        	   resource = steel
+        	   amount = 7
+        	}
+		    add_ideas = EFR_combat
+		}
+	}
+	
+	focus = {
+		id = EFR_motorized
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = EFR_army_effort }
+		mutually_exclusive = { focus = EFR_tanks focus = EFR_equipment_effort }
+		x = 22
+		y = 1
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = ITA }
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 750 producer = ITA }
+			add_equipment_to_stockpile = { type = horse_equipment_0 amount = 500 producer = ITA }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = ITA }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = ITA }
+			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 250 producer = ITA }
+			add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 250 producer = ITA }
+			add_equipment_to_stockpile = { type = support_weapon_equipment_1 amount = 100 producer = ITA }
+		}
+	}
+	
+	focus = {
+		id = EFR_motorized1
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = EFR_motorized }
+		x = 21
+		y = 2
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = EFR_motorized2
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = EFR_motorized }
+		x = 23
+		y = 2
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = EFR_motorized3
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = EFR_motorized1 }
+		x = 21
+		y = 3
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = EFR_motorized4
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = EFR_motorized2 }
+		x = 23
+		y = 3
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = EFR_motorized5
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = EFR_motorized3 }
+		prerequisite = { focus = EFR_motorized4 }
+		x = 22
+		y = 4
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			modify_building_resources = {
+        	   building = synthetic_rubber_refinery
+        	   resource = rubber
+        	   amount = 4
+        	}
+			add_ideas = FRA_motorized_focus
+		}
+	}
+	
+	focus = {
+		id = EFR_tanks
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = EFR_army_effort }
+		mutually_exclusive = { focus = EFR_equipment_effort focus = EFR_motorized}
+		x = 26
+		y = 1
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = GER }
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 500 producer = GER }
+			add_equipment_to_stockpile = { type = medium_tank_equipment_1936 amount = 300 producer = GER }
+			add_equipment_to_stockpile = { type = heavy_tank_equipment_1934 amount = 250 producer = GER }
+			add_equipment_to_stockpile = { type = light_tank_equipment_1936 amount = 200 producer = GER }
+			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 200 producer = GER }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 200 producer = GER }
+			add_equipment_to_stockpile = { type = support_weapon_equipment_1 amount = 100 producer = GER }
+		}
+	}
+	focus = {
+		id = EFR_bulldozer_experiments
+		icon = GFX_focus_NZL_bob_semple_tank
+		prerequisite = { focus = EFR_tanks }
+		x = 25
+		y = 2
+		cost = 7.16
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.00 
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = EFR_contact_renault
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = EFR_tanks }
+		x = 27
+		y = 2
+		cost = 7.16
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_mechanized_focus
+				bonus = 1.0
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = EFR_tanks1
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = EFR_bulldozer_experiments }
+		x = 25
+		y = 3
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = tanks_bonus
+				bonus = 1.0
+				uses = 1
+				category = support_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = EFR_tanks2
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = EFR_contact_renault }
+		x = 27
+		y = 3
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = tanks_bonus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = EFR_tanks3
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = EFR_tanks1 }
+		prerequisite = { focus = EFR_tanks2 }
+		x = 26
+		y = 4
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			modify_building_resources = {
+        	   building = steel_refinery
+        	   resource = tungsten
+        	   amount = 2
+        	}
+			modify_building_resources = {
+        	   building = steel_refinery
+        	   resource = chromium
+        	   amount = 1
+        	}
+			add_trait = {
+				character = EFR_philippe_pétain
+				slot = country_leader
+			    trait = master_armorer
+		   }
+		}
+	}
+	
+	focus = {
+		id = EFR_doctrine_inf_1
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = EFR_motorized5 focus = EFR_tanks3 focus = EFR_equipment_effort_6 }
+		x = 22
+		y = 5
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+                name = land_doc_bonus
+                cost_reduction = 0.50
+                uses = 1
+                category = land_doctrine
+            }
+		}
+	}
+	
+	focus = {
+		id = EFR_doctrine_inf_2
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = EFR_doctrine_inf_1 }
+		x = 22
+		y = 6
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+                name = land_doc_bonus
+                cost_reduction = 0.50
+                uses = 1
+                category = land_doctrine
+            }
+		}
+	}
+	focus = {
+		id = EFR_lost1
+		icon = GFX_GER_total_war
+		x = 31
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_offsite_building = {
+		    	type = dockyard
+		    	level = 5
+		    }
+			add_offsite_building = {
+		    	type = arms_factory
+				level = 5
+		    }
+			add_offsite_building = {
+		    	type = industrial_complex
+				level = 8
+		    }
+		}
+	}
+	focus = {
+		id = EFR_lost2
+		icon = GFX_USA_fight_fascist_with_fire
+		x = 0
+		y = 1
+		prerequisite = { focus = EFR_lost1 }
+		relative_position_id = EFR_lost1
+		cost = 10
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+            add_ideas = idea_EFR_recycling
+		}
+
+	}
+	focus = {
+		id = EFR_lost3
+		icon = GFX_USA_reorganize_the_army_departments
+		prerequisite = { focus = EFR_lost2 }
+		relative_position_id = EFR_lost2
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_ideas = PHI_refugee_volunteers
+		}
+	}
+	focus = {
+		id = EFR_lost4
+		icon = GFX_GER_demand_sudetenland
+		prerequisite = { focus = EFR_lost3 }
+		relative_position_id = EFR_lost3
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = GER }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 750 producer = GER }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = GER }
+			add_equipment_to_stockpile = { type = horse_equipment_0 amount = 500 producer = GER }
+			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 250 producer = GER }
+			add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 250 producer = GER }
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 250 producer = GER }
+			add_equipment_to_stockpile = { type = fighter_equipment_1936 amount = 200 producer = GER }
+		}
+	}
+	focus = {
+		id = EFR_lost5
+		icon = GFX_SOV_mechanized_wave
+		prerequisite = { focus = EFR_lost4 }
+		relative_position_id = EFR_lost4
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = EFR_german_assist
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -2
+		y = 1
+		prerequisite = { focus = EFR_lost1 }
+		relative_position_id = EFR_lost1
+		cost = 5
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+            add_offsite_building = {
+		    	type = arms_factory
+				level = 1
+		    }
+		}
+
+	}
+	
+	focus = {
+		id = EFR_german_assist_more
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -2
+		y = 2
+		prerequisite = { focus = EFR_german_assist }
+		relative_position_id = EFR_lost1
+		cost = 5
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+            add_offsite_building = {
+		    	type = arms_factory
+				level = 1
+		    }
+		}
+
+	}
+	
+	focus = {
+		id = EFR_german_assist_most
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -2
+		y = 3
+		prerequisite = { focus = EFR_german_assist_more }
+		relative_position_id = EFR_lost1
+		cost = 5
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+            add_offsite_building = {
+		    	type = arms_factory
+				level = 1
+		    }
+		}
+
+	}
+	
+	focus = {
+		id = EFR_german_factory
+		icon = GFX_goal_factory_complex
+		x = -2
+		y = 4
+		prerequisite = { focus = EFR_german_assist_most }
+		relative_position_id = EFR_lost1
+		cost = 10
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+            add_offsite_building = {
+		    	type = arms_factory
+				level = 2
+		    }
+			remove_ideas = EFR_production_debuff
+		}
+
+	}
+	
+	focus = {
+		id = EFR_secret_navy
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = EFR_lost1 }
+		relative_position_id = EFR_lost1
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_offsite_building = {
+		    	type = dockyard
+		    	level = 1
+		    }
+		}
+	}
+	
+	focus = {
+		id = EFR_secret_navy_expand
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = EFR_secret_navy }
+		relative_position_id = EFR_lost1
+		x = 2
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_offsite_building = {
+		    	type = dockyard
+		    	level = 1
+		    }
+		}
+	}
+	
+	focus = {
+		id = EFR_secret_navy_invest
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = EFR_secret_navy_expand }
+		relative_position_id = EFR_lost1
+		x = 2
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_offsite_building = {
+		    	type = dockyard
+		    	level = 1
+		    }
+		}
+	}
+	
+	focus = {
+		id = EFR_secret_navy_german_empowered
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = EFR_secret_navy_invest }
+		relative_position_id = EFR_lost1
+		x = 2
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_offsite_building = {
+		    	type = dockyard
+		    	level = 2
+		    }
+			add_ideas = EFR_naval_bonus
+		}
+	}
+	
+	focus = {
+		id = EFR_traitor_rises
+		icon = GFX_goal_revolution
+		prerequisite = { focus = EFR_secret_navy_german_empowered }
+		prerequisite = { focus = EFR_lost5 }
+		prerequisite = { focus = EFR_german_factory }
+		relative_position_id = EFR_lost1
+		x = 0
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = EFR_naval_bonus
+				add_idea = EFR_irredentism
+			}
+			remove_ideas = EFR_air
+			add_research_slot = 1
+		}
+	}
+}

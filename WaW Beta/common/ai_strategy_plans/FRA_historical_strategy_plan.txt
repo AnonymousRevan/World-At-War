@@ -1,0 +1,44 @@
+FRA_historical_plan = {
+	name = "France historical plan"
+	desc = "Historical behavior for France"
+
+	enable = {
+		original_tag = FRA
+		is_historical_focus_on = yes
+	}
+
+	ai_national_focuses = {
+		FRA_la_front_du_popular
+		FRA_matignon_agreements
+		FRA_public_works
+		FRA_develop_the_countryside
+		FRA_regulate_the_banking_sector
+		FRA_devaluate_the_franc
+		FRA_renault_goal
+		FRA_internal
+		FRA_resignation_of_leon_blum
+		FRA_garuantee_czechoslovakia
+		FRA_ratify_matignon
+		FRA_purge_the_anti_appeasers
+		FRA_join_the_allies
+		FRA_obtain_foreign_colonial_investments
+		FRA_the_only_black_man_in_the_french_colonial_government
+		FRA_free_france
+		FRA_resistance_in_the_metropolitan
+		FRA_national_council_of_resistance
+		FRA_the_casablanca_conference
+		FRA_liberation
+		FRA_middle_eastern_possessions
+		FRA_north_african_development
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

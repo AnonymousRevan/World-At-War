@@ -1,0 +1,8 @@
+##### EVENT Speeches #####
+music_station = "event_speeches"
+music = {
+	name = "usanyecommittee"
+	file = "event_speeches/Boom.ogg"
+	volume = 0.69
+}
+

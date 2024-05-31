@@ -1,0 +1,237 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.2.1
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+		
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_germany_is_the_greater_threat
+				FRA_matignon_agreements
+				FRA_free_france
+			}
+		}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
+			}
+			focuses = {
+				USA_two_ocean_navy_act
+				USA_build_the_pentagon
+				USA_never_at_a_disadvantage
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
+			}
+			focuses = {
+				ENG_global_defense
+				ENG_special_air_service
+				crypto_bomb_focus
+			}
+		}
+
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				general_staff
+				GER_mefo_bills_1
+				GER_gestapo_idea2
+			}
+			focuses = {
+				GER_air_innovation
+				GER_Wehrmacht
+				GER_prepare_the_kriegsmarine
+			}
+		}
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				vittoria_mutilata
+				vittorio_emanuele
+				italian_leadership
+			}	
+			focuses = {
+				ITA_Alpini
+				ITA_victoryinETH
+				ITA_join_the_axis
+			}		
+		}
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				state_shintoism
+				JAP_zaibatsus
+				JAP_militarism
+			}	
+			focuses = {
+				JAP_the_zero
+				JAP_warrior_spirit
+				JAP_strike_on_the_southern_resource_area
+			}			
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				trotskyite_plot
+				home_of_revolution
+				SOV_STAVKA1
+				stalins_reign_of_terror_1
+				SOV_idea_2_5_year_plan
+			}
+			focuses = {
+				SOV_great_purge
+				SOV_begin_the_3_5_year_plan
+				SOV_air_volunteers_in_china
+			}	
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors from DLC ####
+		"CAN"={
+			minor = yes
+			history = "CAN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				CAN_great_depression_1
+				CAN_conscription_crisis
+			}
+			focuses = {
+				CAN_canada_wheat_board
+				CAN_strengthen_the_commonwealth_ties
+				CAN_if_day
+			}
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				RAJ_sikhism
+				RAJ_princely_states
+				RAJ_marginalized_muslim_community
+			}
+			focuses = {
+				RAJ_submits_to_england
+				RAJ_organize_the_indian_congress
+				RAJ_side_with_princes
+			}
+		}
+		"AST"={
+			minor = yes
+			history = "AST_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				AST_great_depression_1
+				AST_conscript_malus
+			}
+			focuses = {
+				AST_expand_the_raaf
+				AST_invest_in_victory
+				AST_rats_of_tobruk
+			}
+		}
+		"SAF"={
+			minor = yes
+			history = "SAF_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				SAF_ossewabrandwag_2
+				SAF_history_of_segregation
+				SAF_worker_restrictions
+			}
+			focuses = {
+				SAF_hofmeyrs_reforms
+				SAF_force_parliament_debate
+				SAF_support_the_policy_of_appeasement
+			}
+		}		
+		"SPR"={
+			minor = yes
+			history = "SPR_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				SPR_military_disloyalty
+				SPA_carlism_1
+				SPR_political_violence
+			}
+			focuses = {
+			    SPA_unify_the_nationalist_front
+				SPA_fuse_the_parties
+				SPA_national_recovery
+			}
+		}
+		"ROM"={
+			minor = yes
+			history = "ROM_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				ROM_king_carol_ii_hedonist
+				neutrality_idea
+				ROM_romanian_officers
+			}
+			focuses = {
+				ROM_institute_a_royal_dictatorship
+				ROM_for_the_preservation_of_greater_romania
+			}
+		}
+		"HUN"={
+			minor = yes
+			history = "HUN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				HUN_treaty_of_triannon
+			}
+			focuses = {
+				HUN_secret_rearmament_focus
+				HUN_renounce_the_treaty_of_trianon
+			}
+		}
+		"FIN"={
+			minor = yes
+			history = "FIN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+   			    FIN_communism_banned
+				sisu
+			}
+			focuses = {
+				FIN_ready_and_waiting
+				FIN_white_reapers
+				FIN_our_new_empire
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

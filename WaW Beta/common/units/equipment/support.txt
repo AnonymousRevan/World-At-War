@@ -1,0 +1,38 @@
+equipments = {
+
+	support_equipment = {
+    	year = 1918
+		
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no		
+		type = {
+		    infantry
+			motorized
+			support
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.82
+		max_organisation = 0.02
+		default_morale = 0.10
+		
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 2.3
+		resources = {
+			aluminium = 4
+			steel = 6
+			chromium = 3
+		}
+	}
+	
+	support_equipment_1 = {
+	    year = 1918
+		archetype = support_equipment
+		priority = 20	
+	}
+}

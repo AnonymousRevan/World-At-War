@@ -1,0 +1,73 @@
+#################
+#### GERMANY ####
+#################
+
+GER_speeches_category = {
+	icon = generic_propaganda
+
+	picture = GFX_decision_cat_generic_adolf	
+	
+	allowed = {
+		original_tag = GER
+	}
+	
+}
+
+GER_endsieg_category = {
+	icon = generic_propaganda
+
+	picture = GFX_decision_cat_generic_adolf	
+
+	priority = 100 
+
+	allowed = {
+		original_tag = GER
+	}
+	
+	visible = {
+		has_completed_focus = GER_total_war
+	}
+}
+
+GER_reichskommissariats = {
+	
+	allowed = {
+		original_tag = GER
+		SOV = { is_ai = yes }
+	}
+
+	priority = 99 
+
+	visible = {
+		has_completed_focus = GER_mobilize_the_reich
+	}
+}
+
+GER_case_anton_category = {
+	icon = military_operation
+
+	picture = GFX_decision_cat_picture_ger_case_anton
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		FRA = {
+		   has_capitulated = yes 
+		}
+	}
+	priority = 85
+}
+
+
+GER_military_buildup = {
+	icon = GFX_decision_category_ger_military_buildup
+	
+	allowed = {
+		original_tag = GER
+	}
+	
+	priority = 90
+}
+

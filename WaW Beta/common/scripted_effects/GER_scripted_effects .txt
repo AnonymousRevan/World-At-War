@@ -1,0 +1,1286 @@
+
+#Important to put HIGHEST first
+GER_mefo_bills_level_up = {
+	if = {
+		limit = { has_idea = GER_mefo_bills_22 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_22
+			add_idea = GER_mefo_bills_23
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_21 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_21
+			add_idea = GER_mefo_bills_22
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_20 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_20
+			add_idea = GER_mefo_bills_21
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_19 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_19
+			add_idea = GER_mefo_bills_20
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_18 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_18
+			add_idea = GER_mefo_bills_19
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_17 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_17
+			add_idea = GER_mefo_bills_18
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_16 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_16
+			add_idea = GER_mefo_bills_17
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_15 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_15
+			add_idea = GER_mefo_bills_16
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_14 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_14
+			add_idea = GER_mefo_bills_15
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_13 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_13
+			add_idea = GER_mefo_bills_14
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_12 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_12
+			add_idea = GER_mefo_bills_13
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_11 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_11
+			add_idea = GER_mefo_bills_12
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_10 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_10
+			add_idea = GER_mefo_bills_11
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_9 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_9
+			add_idea = GER_mefo_bills_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_8 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_8
+			add_idea = GER_mefo_bills_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_7 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_7
+			add_idea = GER_mefo_bills_8
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_6 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_6
+			add_idea = GER_mefo_bills_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_5 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_5
+			add_idea = GER_mefo_bills_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_4 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_4
+			add_idea = GER_mefo_bills_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_3 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_3
+			add_idea = GER_mefo_bills_4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_2 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_2
+			add_idea = GER_mefo_bills_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_1 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_1
+			add_idea = GER_mefo_bills_2
+		}
+	}
+}
+
+#Important to put HIGHEST first
+GER_remove_mefo_bills = {
+	if = {
+		limit = { has_idea = GER_mefo_bills_1 }
+		remove_ideas = GER_mefo_bills_1
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_2 }
+		remove_ideas = GER_mefo_bills_2
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_3 }
+		remove_ideas = GER_mefo_bills_3
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_4 }
+		remove_ideas = GER_mefo_bills_4
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_5 }
+		remove_ideas = GER_mefo_bills_5
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_6 }
+		remove_ideas = GER_mefo_bills_6
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_7 }
+		remove_ideas = GER_mefo_bills_7
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_8 }
+		remove_ideas = GER_mefo_bills_8
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_9 }
+		remove_ideas = GER_mefo_bills_9
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_10 }
+		remove_ideas = GER_mefo_bills_10
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_11 }
+		remove_ideas = GER_mefo_bills_11
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_12 }
+		remove_ideas = GER_mefo_bills_12
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_13 }
+		remove_ideas = GER_mefo_bills_13
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_14 }
+		remove_ideas = GER_mefo_bills_14
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_15 }
+		remove_ideas = GER_mefo_bills_15
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_16 }
+		remove_ideas = GER_mefo_bills_16
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_17 }
+		remove_ideas = GER_mefo_bills_17
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_18 }
+		remove_ideas = GER_mefo_bills_18
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_19 }
+		remove_ideas = GER_mefo_bills_19
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_20 }
+		remove_ideas = GER_mefo_bills_20
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_21 }
+		remove_ideas = GER_mefo_bills_21
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_22 }
+		remove_ideas = GER_mefo_bills_22
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_23 }
+		remove_ideas = GER_mefo_bills_23
+	}
+}
+
+# Like the level up effect except it runs in reverse
+# For use when annexing the gold reserves of Austria, Czechoslovakia and Yugoslavia
+
+GER_mefo_bills_level_down = {
+	if = {
+		limit = { has_idea = GER_mefo_bills_1 }
+		remove_ideas = GER_mefo_bills_1
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_2 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_2
+			add_idea = GER_mefo_bills_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_3 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_3
+			add_idea = GER_mefo_bills_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_4 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_4
+			add_idea = GER_mefo_bills_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_5 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_5
+			add_idea = GER_mefo_bills_4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_6 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_6
+			add_idea = GER_mefo_bills_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_7 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_7
+			add_idea = GER_mefo_bills_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_8 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_8
+			add_idea = GER_mefo_bills_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_9 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_9
+			add_idea = GER_mefo_bills_8
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_10 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_10
+			add_idea = GER_mefo_bills_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_11 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_11
+			add_idea = GER_mefo_bills_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_12 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_12
+			add_idea = GER_mefo_bills_11
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_13 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_13
+			add_idea = GER_mefo_bills_12
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_14 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_14
+			add_idea = GER_mefo_bills_13
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_15 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_15
+			add_idea = GER_mefo_bills_14
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_16 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_16
+			add_idea = GER_mefo_bills_15
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_17 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_17
+			add_idea = GER_mefo_bills_16
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_18 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_18
+			add_idea = GER_mefo_bills_17
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_19 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_19
+			add_idea = GER_mefo_bills_18
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_20 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_20
+			add_idea = GER_mefo_bills_19
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_21 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_21
+			add_idea = GER_mefo_bills_20
+		}		
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_22 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_22
+			add_idea = GER_mefo_bills_21
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_mefo_bills_23 }
+		swap_ideas = {
+			remove_idea = GER_mefo_bills_23
+			add_idea = GER_mefo_bills_22
+		}
+	}
+}
+
+GER_economy_of_plunder = {
+	if = {
+		limit = { has_idea = GER_economy_of_plunder_5 }
+		swap_ideas = {
+			remove_idea = GER_economy_of_plunder_5
+			add_idea = GER_economy_of_plunder_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_economy_of_plunder_4 }
+		swap_ideas = {
+			remove_idea = GER_economy_of_plunder_4
+			add_idea = GER_economy_of_plunder_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_economy_of_plunder_3 }
+		swap_ideas = {
+			remove_idea = GER_economy_of_plunder_3
+			add_idea = GER_economy_of_plunder_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_economy_of_plunder_2 }
+		swap_ideas = {
+			remove_idea = GER_economy_of_plunder_2
+			add_idea = GER_economy_of_plunder_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = GER_economy_of_plunder_1 }
+		swap_ideas = {
+			remove_idea = GER_economy_of_plunder_1
+			add_idea = GER_economy_of_plunder_2
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = GER_economy_of_plunder_1 } }
+		add_ideas = GER_economy_of_plunder_1
+	}
+}
+
+##Atlantikwall
+GER_increment_atlantikwall = {
+	if = {
+		limit = {has_country_flag = GER_atlantikwall_9}
+		clr_country_flag = GER_atlantikwall_9
+		set_country_flag = GER_atlantikwall_10
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_9
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_10
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_9
+				add_idea = ENG_atlantikwall_10
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_9
+				add_idea = ITA_atlantikwall_10
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_9
+				add_idea = ITA_atlantikwall_10
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_8}
+		clr_country_flag = GER_atlantikwall_8
+		set_country_flag = GER_atlantikwall_9
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_8
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_9
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_8
+				add_idea = ENG_atlantikwall_9
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_8
+				add_idea = ITA_atlantikwall_9
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_8
+				add_idea = ITA_atlantikwall_9
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_7}
+		clr_country_flag = GER_atlantikwall_7
+		set_country_flag = GER_atlantikwall_8
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_7
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_8
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_7
+				add_idea = ENG_atlantikwall_8
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_7
+				add_idea = ITA_atlantikwall_8
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_7
+				add_idea = ITA_atlantikwall_8
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_6}
+		clr_country_flag = GER_atlantikwall_6
+		set_country_flag = GER_atlantikwall_7
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_6
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_7
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_6
+				add_idea = ENG_atlantikwall_7
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_6
+				add_idea = ITA_atlantikwall_7
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_6
+				add_idea = ITA_atlantikwall_7
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_5}
+		clr_country_flag = GER_atlantikwall_5
+		set_country_flag = GER_atlantikwall_6
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_5
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_6
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_5
+				add_idea = ENG_atlantikwall_6
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_5
+				add_idea = ITA_atlantikwall_6
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_5
+				add_idea = ITA_atlantikwall_6
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_4}
+		clr_country_flag = GER_atlantikwall_4
+		set_country_flag = GER_atlantikwall_5
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_4
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_5
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_4
+				add_idea = ENG_atlantikwall_5
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_4
+				add_idea = ITA_atlantikwall_5
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_4
+				add_idea = ITA_atlantikwall_5
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_3}
+		clr_country_flag = GER_atlantikwall_3
+		set_country_flag = GER_atlantikwall_4
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_3
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_4
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_3
+				add_idea = ENG_atlantikwall_4
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_3
+				add_idea = ITA_atlantikwall_4
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_3
+				add_idea = ITA_atlantikwall_4
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_2}
+		clr_country_flag = GER_atlantikwall_2
+		set_country_flag = GER_atlantikwall_3
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_2
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_3
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_2
+				add_idea = ENG_atlantikwall_3
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_2
+				add_idea = ITA_atlantikwall_3
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_2
+				add_idea = ITA_atlantikwall_3
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_1}
+		clr_country_flag = GER_atlantikwall_1
+		set_country_flag = GER_atlantikwall_2
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_1
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_2
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_1
+				add_idea = ENG_atlantikwall_2
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_1
+				add_idea = ITA_atlantikwall_2
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_1
+				add_idea = ITA_atlantikwall_2
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_0}
+		clr_country_flag = GER_atlantikwall_0
+		set_country_flag = GER_atlantikwall_1
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_0
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_1
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_0
+				add_idea = ENG_atlantikwall_1
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_0
+				add_idea = ITA_atlantikwall_1
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_0
+				add_idea = ITA_atlantikwall_1
+			}
+		}
+	}
+}
+GER_decrement_atlantikwall = {
+	if = {
+		limit = {has_country_flag = GER_atlantikwall_1}
+		clr_country_flag = GER_atlantikwall_1
+		set_country_flag = GER_atlantikwall_0
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_1
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_0
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_1
+				add_idea = ENG_atlantikwall_0
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_1
+				add_idea = ITA_atlantikwall_0
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_1
+				add_idea = ITA_atlantikwall_0
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_2}
+		clr_country_flag = GER_atlantikwall_2
+		set_country_flag = GER_atlantikwall_1
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_2
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_1
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_2
+				add_idea = ENG_atlantikwall_1
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_2
+				add_idea = ITA_atlantikwall_1
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_2
+				add_idea = ITA_atlantikwall_1
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_3}
+		clr_country_flag = GER_atlantikwall_3
+		set_country_flag = GER_atlantikwall_2
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_3
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_2
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_3
+				add_idea = ENG_atlantikwall_2
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_3
+				add_idea = ITA_atlantikwall_2
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_3
+				add_idea = ITA_atlantikwall_2
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_4}
+		clr_country_flag = GER_atlantikwall_4
+		set_country_flag = GER_atlantikwall_3
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_4
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_3
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_4
+				add_idea = ENG_atlantikwall_3
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_4
+				add_idea = ITA_atlantikwall_3
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_4
+				add_idea = ITA_atlantikwall_3
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_5}
+		clr_country_flag = GER_atlantikwall_5
+		set_country_flag = GER_atlantikwall_4
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_5
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_4
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_5
+				add_idea = ENG_atlantikwall_4
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_5
+				add_idea = ITA_atlantikwall_4
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_5
+				add_idea = ITA_atlantikwall_4
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_6}
+		clr_country_flag = GER_atlantikwall_6
+		set_country_flag = GER_atlantikwall_5
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_6
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_5
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_6
+				add_idea = ENG_atlantikwall_5
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_6
+				add_idea = ITA_atlantikwall_5
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_6
+				add_idea = ITA_atlantikwall_5
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_7}
+		clr_country_flag = GER_atlantikwall_7
+		set_country_flag = GER_atlantikwall_6
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_7
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_6
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_7
+				add_idea = ENG_atlantikwall_6
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_7
+				add_idea = ITA_atlantikwall_6
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_7
+				add_idea = ITA_atlantikwall_6
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_8}
+		clr_country_flag = GER_atlantikwall_8
+		set_country_flag = GER_atlantikwall_7
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_8
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_7
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_8
+				add_idea = ENG_atlantikwall_7
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_8
+				add_idea = ITA_atlantikwall_7
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_8
+				add_idea = ITA_atlantikwall_7
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_9}
+		clr_country_flag = GER_atlantikwall_9
+		set_country_flag = GER_atlantikwall_8
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_9
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_8
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_9
+				add_idea = ENG_atlantikwall_8
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_9
+				add_idea = ITA_atlantikwall_8
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_9
+				add_idea = ITA_atlantikwall_8
+			}
+		}
+	}
+	else_if = {
+		limit = {has_country_flag = GER_atlantikwall_10}
+		clr_country_flag = GER_atlantikwall_10
+		set_country_flag = GER_atlantikwall_9
+		every_state = {
+			limit = {has_state_flag = atlantikwall_state}
+			remove_dynamic_modifier = {
+				modifier = atlantikwall_10
+			}
+			add_dynamic_modifier = {
+				modifier = atlantikwall_9
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = USA
+				}
+				OR = {
+					tag = ENG
+					is_in_faction_with = ENG
+				}
+			}
+			swap_ideas = {
+				remove_idea = ENG_atlantikwall_10
+				add_idea = ENG_atlantikwall_9
+			}
+		}
+		ITA = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_10
+				add_idea = ITA_atlantikwall_9
+			}
+		}
+		GER = {
+			swap_ideas = {
+				remove_idea = ITA_atlantikwall_10
+				add_idea = ITA_atlantikwall_9
+			}
+		}
+	}
+}

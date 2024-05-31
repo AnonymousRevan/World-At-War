@@ -1,0 +1,79 @@
+﻿capital = 604
+
+oob = "XSM_1936"
+
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+	}
+}
+# Starting tech
+set_technology = {
+	################# infantry ###############
+	
+	infantry_weapons = 1 
+	support_weapon_equipment = 1
+	fuel_silos = 1
+	field_equipment = 1
+	
+	################## support ##################
+	tech_recon = 1
+	tech_support = 1
+	
+	################## armor ##############
+	light_tank_1934 = 1 
+
+	################## aircraft ##############
+	tactical_bomber_1934 = 1
+
+	############### economy ############
+	mass_assault = 1
+}
+
+set_country_flag = is_warlord
+
+
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+	}
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+
+create_country_leader = {
+	name = "Ma Bufang"
+	desc = ""
+	picture = "GFX_portrait_xsm_ma_bufang"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Ma Hongbin"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}

@@ -1,0 +1,3697 @@
+technologies = {
+     fuel_silos = {
+
+		enable_building = {
+			building = fuel_silo
+			level = 3
+		}
+				
+		path = {
+			leads_to_tech = synth_oil_experiments 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fuel_refining 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 0.8
+		start_year = 1936
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 0 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	fuel_refining = {
+
+		fuel_gain_factor = 0.15
+		fuel_gain_factor_from_states = 0.2
+					
+		path = {
+			leads_to_tech = fuel_refining2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 0.8
+		start_year = 1936
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+	}
+
+	fuel_refining2 = {
+		
+		fuel_gain_factor = 0.15
+		fuel_gain_factor_from_states = 0.2
+
+		path = {
+			leads_to_tech = fuel_refining3 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 0.8
+		start_year = 1937
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5			
+		}
+		
+	}
+
+	fuel_refining3 = {
+		
+		fuel_gain_factor = 0.15
+		fuel_gain_factor_from_states = 0.2
+
+		path = {
+			leads_to_tech = fuel_refining4 
+			research_cost_coeff = 1
+		}
+		research_cost = 0.8
+		start_year = 1939
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5			
+		}		
+	}
+
+	fuel_refining4 = {
+		
+		fuel_gain_factor = 0.15
+		fuel_gain_factor_from_states = 0.2
+
+		path = {
+			leads_to_tech = fuel_refining5
+			research_cost_coeff = 1
+		}
+		research_cost = 0.8
+		start_year = 1941
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5				
+		}		
+	}
+
+	fuel_refining5 = {
+		
+		fuel_gain_factor = 0.15
+		fuel_gain_factor_from_states = 0.2
+
+		research_cost = 0.8
+		start_year = 1943
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5			
+		}		
+	}	
+	basic_machine_tools = {
+	
+		production_factory_max_efficiency_factor = 0.05
+
+		
+		path = {
+			leads_to_tech = improved_machine_tools 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_skills
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.0
+		start_year = 1936
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			industry
+		}
+	}
+    
+	#skills
+	basic_skills = {
+	    
+		production_factory_efficiency_gain_factor = 0.05
+		line_change_production_efficiency_factor = 0.05
+
+		path = {
+			leads_to_tech = specialized_skills
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.2
+		start_year = 1936
+		
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+								
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	specialized_skills = {
+	    
+		conversion_cost_civ_to_mil_factor = -0.1
+		production_factory_efficiency_gain_factor = 0.075
+		line_change_production_efficiency_factor = 0.075
+
+		path = {
+			leads_to_tech = streamlined_skills
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.2
+		start_year = 1937
+		
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+								
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	streamlined_skills = {
+	    
+		conversion_cost_civ_to_mil_factor = -0.15
+		production_factory_efficiency_gain_factor = 0.1
+		line_change_production_efficiency_factor = 0.1
+
+		path = {
+			leads_to_tech = expanded_workforce
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.2
+		start_year = 1939
+		
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 5					
+			
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	expanded_workforce = {
+	    
+		production_factory_efficiency_gain_factor = 0.15
+		line_change_production_efficiency_factor = 0.15
+		
+		research_cost = 1.2
+		start_year = 1941
+		
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+								
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	#Machine tools branch	
+	improved_machine_tools = {
+	
+		production_factory_max_efficiency_factor = 0.075
+
+		path = {
+			leads_to_tech = advanced_machine_tools 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = improved_equipment_conversion
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.25
+		start_year = 1937
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 4 }
+		}
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 2 }
+		}
+		folder = {
+			name = ger_armour_folder
+			position = { x = 0 y = 2 }
+		}
+		folder = {
+			name = axis_armour_folder
+			position = { x = 0 y = 2 }
+		}
+		folder = {
+			name = jap_armour_folder
+			position = { x = 0 y = 2 }
+		}
+		folder = {
+			name = usa_armour_folder
+			position = { x = 0 y = 2 }
+		}
+		folder = {
+			name = eng_armour_folder
+			position = { x = 0 y = 2 }
+		}
+		folder = {
+			name = sov_armour_folder
+			position = { x = 0 y = 2 }
+		}
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+		folder = {
+			name = sov_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+		folder = {
+			name = ger_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+		folder = {
+			name = eng_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+		ai_will_do = {
+			factor = 10					
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	advanced_machine_tools = {
+	
+		production_factory_max_efficiency_factor = 0.075
+		
+		path = {
+			leads_to_tech = assembly_line_production 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.75
+		start_year = 1939
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 6 }
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 6 }
+		}
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 6 }
+		}
+		folder = {
+			name = ger_armour_folder
+			position = { x = 0 y = 6 }
+		}
+		folder = {
+			name = axis_armour_folder
+			position = { x = 0 y = 6 }
+		}
+		folder = {
+			name = jap_armour_folder
+			position = { x = 0 y = 6 }
+		}
+		folder = {
+			name = usa_armour_folder
+			position = { x = 0 y = 6 }
+		}
+		folder = {
+			name = eng_armour_folder
+			position = { x = 0 y = 6 }
+		}
+		folder = {
+			name = sov_armour_folder
+			position = { x = 0 y = 6 }
+		}
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 6 }
+		}	
+		folder = {
+			name = sov_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+		folder = {
+			name = ger_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+		folder = {
+			name = eng_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	assembly_line_production = {
+	
+		production_factory_max_efficiency_factor = 0.075
+		
+				
+		path = {
+			leads_to_tech = modern_tools
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 1941
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 8 }
+		}
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 10 }
+		}
+		folder = {
+			name = ger_armour_folder
+			position = { x = 0 y = 10 }
+		}
+		folder = {
+			name = axis_armour_folder
+			position = { x = 0 y = 10 }
+		}
+		folder = {
+			name = jap_armour_folder
+			position = { x = 0 y = 10 }
+		}
+		folder = {
+			name = usa_armour_folder
+			position = { x = 0 y = 10 }
+		}
+		folder = {
+			name = eng_armour_folder
+			position = { x = 0 y = 10 }
+		}
+		folder = {
+			name = sov_armour_folder
+			position = { x = 0 y = 10 }
+		}
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 10 }
+		}
+		folder = {
+			name = sov_air_techs_folder
+			position = { x = 0 y = 10 }
+		}
+		folder = {
+			name = ger_air_techs_folder
+			position = { x = 0 y = 10 }
+		}
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 0 y = 10 }
+		}
+		folder = {
+			name = eng_air_techs_folder
+			position = { x = 0 y = 10 }
+		}
+		ai_will_do = {
+			factor = 10		
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	modern_tools = {
+	
+		production_factory_max_efficiency_factor = 0.075
+				
+		path = {
+			leads_to_tech = flexible_line
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = streamlined_line
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 2.0
+		start_year = 1943
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 10 }
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 12 }
+		}
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 14 }
+		}
+		folder = {
+			name = ger_armour_folder
+			position = { x = 0 y = 14 }
+		}
+		folder = {
+			name = axis_armour_folder
+			position = { x = 0 y = 14 }
+		}
+		folder = {
+			name = jap_armour_folder
+			position = { x = 0 y = 14 }
+		}
+		folder = {
+			name = usa_armour_folder
+			position = { x = 0 y = 14 }
+		}
+		folder = {
+			name = eng_armour_folder
+			position = { x = 0 y = 14 }
+		}
+		folder = {
+			name = sov_armour_folder
+			position = { x = 0 y = 14 }
+		}
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 14 }
+		}
+		folder = {
+			name = sov_air_techs_folder
+			position = { x = 0 y = 14 }
+		}
+		folder = {
+			name = ger_air_techs_folder
+			position = { x = 0 y = 14 }
+		}
+		folder = {
+			name = usa_air_techs_folder
+			position = { x = 0 y = 14 }
+		}
+		folder = {
+			name = eng_air_techs_folder
+			position = { x = 0 y = 14 }
+		}
+		ai_will_do = {
+			factor = 10
+
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	flexible_line = {
+
+		production_factory_start_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.2
+		
+		research_cost = 2.5
+		start_year = 1944
+		
+		XOR = {
+			streamlined_line
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 11 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	streamlined_line = {
+
+		production_factory_start_efficiency_factor = 0.15
+		production_factory_efficiency_gain_factor = 0.1
+			
+		research_cost = 2.5
+		start_year = 1944
+		
+		XOR = {
+			flexible_line
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 11 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+		
+		categories = {
+			industry
+		}
+	}
+
+	#Conversion branch - Enabled in DoD
+	improved_equipment_conversion = {
+	
+		equipment_conversion_speed = 0.40
+
+		path = {
+			leads_to_tech = advanced_equipment_conversion
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 0.5
+		start_year = 1937
+		
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	advanced_equipment_conversion = {
+		
+		equipment_conversion_speed = 0.40
+
+		research_cost = 0.5
+		start_year = 1939
+		
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+
+		}
+		
+		categories = {
+			industry
+		}
+	} 
+    #quality
+	factory_management = {
+ 
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		
+		path = {
+			leads_to_tech = quality1 
+			research_cost_coeff = 1
+		}
+        start_year = 1938
+		path = {
+			leads_to_tech = massed1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.25
+		
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+					
+		}
+		
+		categories = {
+			industry
+		}
+		
+	}
+	##massed
+	massed1 = { 
+	    category_army = { 
+			soft_attack = -0.03
+			hard_attack = -0.03
+			defense = -0.03
+			breakthrough = -0.03
+		}
+		
+		signal_company = {
+			need = {
+			   	support_equipment = -2
+				motorized_equipment = -1
+			}
+		}
+		recon = {
+			need = {
+			   	infantry_equipment = -2
+				support_equipment = -1
+			}
+		}
+		recon_ac = {
+			need = {
+			   	armored_cars_equipment = -1
+				support_equipment = -1
+			}
+		}
+		
+		military_police = {
+			need = {
+			   	infantry_equipment = -1
+				support_equipment = -1
+			}
+		}
+		maintenance_company = {
+			need = {
+			   	motorized_equipment = -1
+				support_equipment = -1
+			}
+		}
+		logistics_company = {
+			need = {
+			   	horse_equipment = -1
+				support_equipment = -1
+			}
+		}
+		logistics_company_mot = {
+			need = {
+			   	motorized_equipment = -1
+				support_equipment = -1
+			}
+		}
+		logistics_company_mech = {
+			need = {
+			   	mechanized_equipment = -1
+				support_equipment = -1
+			}
+		}
+		field_hospital = {
+			need = {
+			   	motorized_equipment = -1
+				support_equipment = -2
+			}
+		}
+		engineer = {
+			need = {
+			   	infantry_equipment = -1
+				support_equipment = -3
+			}
+		}
+		DIV_HQ = {
+			need = {
+				motorized_equipment = -1
+				support_equipment = -2
+			}
+		}
+		
+		cavalry = {
+			need = {
+			   	horse_equipment = -2
+				infantry_equipment = -5
+			}
+		}
+		armored_car = {
+			need = {
+			   	armored_cars_equipment = -2
+			}
+		}
+		amphibious_mechanized = {
+			need = {
+			   	amphibious_mechanized_equipment = -3
+				infantry_equipment = -5
+			}
+		}
+		
+		infantry = {
+			need = {
+			   	infantry_equipment = -5
+				horse_equipment = -1
+			}
+		}
+		light_infantry = {
+			need = {
+			   	infantry_equipment = -4
+				horse_equipment = -1
+			}
+		}
+		garrison = {
+			need = {
+			   	infantry_equipment = -3
+				horse_equipment = -1
+			}
+		}
+		bicycle_battalion = {
+			need = {
+			   	infantry_equipment = -5
+				support_equipment = -1
+			}
+		}
+		motorized = {
+			need = {
+			   	infantry_equipment = -4
+				motorized_equipment = -2
+			}
+		}
+		mechanized = {
+			need = {
+			   	infantry_equipment = -4
+				mechanized_equipment = -2
+			}
+		}
+		marine = {
+			need = {
+			   	infantry_equipment = -6
+				special_equipment = -2
+			}
+		}
+		mountaineers = {
+			need = {
+			   	infantry_equipment = -5
+				special_equipment = -2
+			}
+		}
+		paratrooper = {
+			need = {
+			   	infantry_equipment = -5
+				special_equipment = -3
+			}
+		}
+		artillery_brigade = {
+			need = {
+			   	artillery_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		artillery_brigade_mot = {
+			need = {
+			   	artillery_equipment = -1
+				motorized_equipment = -1
+			}
+		}
+		pack_artillery_brigade = {
+			need = {
+			   	pack_artillery_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		pack_artillery_brigade_mot = {
+			need = {
+			   	pack_artillery_equipment = -1
+				motorized_equipment = -1
+			}
+		}
+		artillery_heavy = {
+			need = {
+			    heavy_artillery_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		artillery_heavy_mot = {
+			need = {
+			   	heavy_artillery_equipment = -1
+				motorized_equipment = -1
+			}
+		}
+		rocket_artillery_brigade = {
+			need = {
+			   	rocket_artillery_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		motorized_rocket_brigade = {
+			need = {
+			   	motorized_rocket_equipment = -1
+			}
+		}
+		artillery = {
+			need = {
+			    artillery_equipment = -1
+			}
+		}
+		rocket_artillery = {
+			need = {
+			    rocket_artillery_equipment = -1
+			}
+		}
+		pack_artillery = {
+			need = {
+			    pack_artillery_equipment = -1
+			}
+		}
+		artillery_heavy_support = {
+			need = {
+			    heavy_artillery_equipment = -1
+			}
+		}
+		anti_tank_brigade = {
+			need = {
+			    anti_tank_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		anti_tank_brigade_mot = {
+			need = {
+			    anti_tank_equipment = -1
+				motorized_equipment = -1
+			}
+		}
+		anti_tank = {
+			need = {
+			    anti_tank_equipment = -1
+			}
+		}
+		anti_air = {
+			need = {
+			    anti_air_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		anti_air_mot = {
+			need = {
+			    anti_air_equipment = -1
+				motorized_equipment = -1
+			}
+		}
+		anti_air_company = {
+			need = {
+			    anti_air_equipment = -1
+			}
+		}
+		
+        on_research_complete = {
+			custom_effect_tooltip = quantity_1_tt
+		}
+		path = {
+			leads_to_tech = massed2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.4
+
+		xor = {
+            quality1
+        }
+		folder = {
+			name = industry_folder
+			position = { x = 7 y = 7 }
+		}
+		start_year = 1940
+		ai_will_do = {
+			factor = 5
+
+			modifier = {
+				factor = 50
+				tag = SOV
+			}
+			
+			modifier = {
+				factor = 0
+				has_tech = quality1
+			}
+			
+			modifier = {
+				factor = 0
+				is_researching_technology = quality1
+			}
+
+		}
+		
+	}
+	massed2 = {
+	    category_army = { 
+			soft_attack = -0.03
+			hard_attack = -0.03
+			defense = -0.03
+			breakthrough = -0.03
+		}
+		
+		signal_company = {
+			need = {
+			   	support_equipment = -2
+				motorized_equipment = -1
+			}
+		}
+		recon = {
+			need = {
+			   	infantry_equipment = -2
+				support_equipment = -1
+			}
+		}
+		recon_ac = {
+			need = {
+			   	armored_cars_equipment = -1
+				support_equipment = -1
+			}
+		}
+		
+		military_police = {
+			need = {
+			   	infantry_equipment = -1
+				support_equipment = -1
+			}
+		}
+		maintenance_company = {
+			need = {
+			   	motorized_equipment = -1
+				support_equipment = -1
+			}
+		}
+		logistics_company = {
+			need = {
+			   	horse_equipment = -1
+				support_equipment = -1
+			}
+		}
+		logistics_company_mot = {
+			need = {
+			   	motorized_equipment = -1
+				support_equipment = -1
+			}
+		}
+		logistics_company_mech = {
+			need = {
+			   	mechanized_equipment = -1
+				support_equipment = -1
+			}
+		}
+		field_hospital = {
+			need = {
+			   	motorized_equipment = -1
+				support_equipment = -2
+			}
+		}
+		engineer = {
+			need = {
+			   	infantry_equipment = -1
+				support_equipment = -3
+			}
+		}
+		DIV_HQ = {
+			need = {
+				motorized_equipment = 1
+				support_equipment = -2
+			}
+		}
+		
+		cavalry = {
+			need = {
+			   	horse_equipment = -2
+				infantry_equipment = -5
+			}
+		}
+		armored_car = {
+			need = {
+			   	armored_cars_equipment = -2
+			}
+		}
+		amphibious_mechanized = {
+			need = {
+			   	amphibious_mechanized_equipment = -3
+				infantry_equipment = -5
+			}
+		}
+		
+		infantry = {
+			need = {
+			   	infantry_equipment = -5
+				horse_equipment = -1
+			}
+		}
+		light_infantry = {
+			need = {
+			   	infantry_equipment = -4
+				horse_equipment = -1
+			}
+		}
+		garrison = {
+			need = {
+			   	infantry_equipment = -3
+				horse_equipment = -1
+			}
+		}
+		bicycle_battalion = {
+			need = {
+			   	infantry_equipment = -5
+				support_equipment = -1
+			}
+		}
+		motorized = {
+			need = {
+			   	infantry_equipment = -4
+				motorized_equipment = -2
+			}
+		}
+		mechanized = {
+			need = {
+			   	infantry_equipment = -4
+				mechanized_equipment = -2
+			}
+		}
+		marine = {
+			need = {
+			   	infantry_equipment = -6
+				special_equipment = -2
+			}
+		}
+		mountaineers = {
+			need = {
+			   	infantry_equipment = -5
+				special_equipment = -2
+			}
+		}
+		paratrooper = {
+			need = {
+			   	infantry_equipment = -5
+				special_equipment = -3
+			}
+		}
+		artillery_brigade = {
+			need = {
+			   	artillery_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		artillery_brigade_mot = {
+			need = {
+			   	artillery_equipment = -1
+				motorized_equipment = -1
+			}
+		}
+		pack_artillery_brigade = {
+			need = {
+			   	pack_artillery_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		pack_artillery_brigade_mot = {
+			need = {
+			   	pack_artillery_equipment = -1
+				motorized_equipment = -1
+			}
+		}
+		artillery_heavy = {
+			need = {
+			    heavy_artillery_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		artillery_heavy_mot = {
+			need = {
+			   	heavy_artillery_equipment = -1
+				motorized_equipment = -1
+			}
+		}
+		rocket_artillery_brigade = {
+			need = {
+			   	rocket_artillery_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		motorized_rocket_brigade = {
+			need = {
+			   	motorized_rocket_equipment = -1
+			}
+		}
+		artillery = {
+			need = {
+			    artillery_equipment = -1
+			}
+		}
+		rocket_artillery = {
+			need = {
+			    rocket_artillery_equipment = -1
+			}
+		}
+		pack_artillery = {
+			need = {
+			    pack_artillery_equipment = -1
+			}
+		}
+		artillery_heavy_support = {
+			need = {
+			    heavy_artillery_equipment = -1
+			}
+		}
+		anti_tank_brigade = {
+			need = {
+			    anti_tank_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		anti_tank_brigade_mot = {
+			need = {
+			    anti_tank_equipment = -1
+				motorized_equipment = -1
+			}
+		}
+		anti_tank = {
+			need = {
+			    anti_tank_equipment = -1
+			}
+		}
+		anti_air = {
+			need = {
+			    anti_air_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		anti_air_mot = {
+			need = {
+			    anti_air_equipment = -1
+				motorized_equipment = -1
+			}
+		}
+		anti_air_company = {
+			need = {
+			    anti_air_equipment = -1
+			}
+		}
+        on_research_complete = {
+			custom_effect_tooltip = quantity_2_tt
+		}
+		path = {
+			leads_to_tech = massed3 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.4
+		
+		folder = {
+			name = industry_folder
+			position = { x = 7 y = 9 }
+		}
+		start_year = 1942
+		ai_will_do = {
+			factor = 5
+		}
+		
+	}
+	massed3 = {
+	    category_army = { 
+			soft_attack = -0.03
+			hard_attack = -0.03  
+			defense = -0.03
+			breakthrough = -0.03
+		}
+		
+		signal_company = {
+			need = {
+			   	support_equipment = -2
+				motorized_equipment = -1
+			}
+		}
+		recon = {
+			need = {
+			   	infantry_equipment = -2
+				support_equipment = -1
+			}
+		}
+		recon_ac = {
+			need = {
+			   	armored_cars_equipment = -1
+				support_equipment = -1
+			}
+		}
+		
+		military_police = {
+			need = {
+			   	infantry_equipment = -1
+				support_equipment = -1
+			}
+		}
+		maintenance_company = {
+			need = {
+			   	motorized_equipment = -1
+				support_equipment = -1
+			}
+		}
+		logistics_company = {
+			need = {
+			   	horse_equipment = -1
+				support_equipment = -1
+			}
+		}
+		logistics_company_mot = {
+			need = {
+			   	motorized_equipment = -1
+				support_equipment = -1
+			}
+		}
+		logistics_company_mech = {
+			need = {
+			   	mechanized_equipment = -1
+				support_equipment = -1
+			}
+		}
+		field_hospital = {
+			need = {
+			   	motorized_equipment = -1
+				support_equipment = -2
+			}
+		}
+		engineer = {
+			need = {
+			   	infantry_equipment = -1
+				support_equipment = -3
+			}
+		}
+		DIV_HQ = {
+			need = {
+				motorized_equipment = 1
+				support_equipment = -2
+			}
+		}
+		
+		cavalry = {
+			need = {
+			   	horse_equipment = -2
+				infantry_equipment = -5
+			}
+		}
+		armored_car = {
+			need = {
+			   	armored_cars_equipment = -2
+			}
+		}
+		amphibious_mechanized = {
+			need = {
+			   	amphibious_mechanized_equipment = -3
+				infantry_equipment = -5
+			}
+		}
+		amphibious_armor = {
+			need = {
+			   	amphibious_tank_chassis = -3
+			}
+		}
+		infantry = {
+			need = {
+			   	infantry_equipment = -5
+				horse_equipment = -1
+			}
+		}
+		light_infantry = {
+			need = {
+			   	infantry_equipment = -4
+				horse_equipment = -1
+			}
+		}
+		garrison = {
+			need = {
+			   	infantry_equipment = -3
+				horse_equipment = -1
+			}
+		}
+		bicycle_battalion = {
+			need = {
+			   	infantry_equipment = -5
+				support_equipment = -1
+			}
+		}
+		motorized = {
+			need = {
+			   	infantry_equipment = -4
+				motorized_equipment = -2
+			}
+		}
+		mechanized = {
+			need = {
+			   	infantry_equipment = -4
+				mechanized_equipment = -2
+			}
+		}
+		marine = {
+			need = {
+			   	infantry_equipment = -6
+				special_equipment = -2
+			}
+		}
+		mountaineers = {
+			need = {
+			   	infantry_equipment = -5
+				special_equipment = -2
+			}
+		}
+		paratrooper = {
+			need = {
+			   	infantry_equipment = -5
+				special_equipment = -3
+			}
+		}
+		artillery_brigade = {
+			need = {
+			   	artillery_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		artillery_brigade_mot = {
+			need = {
+			   	artillery_equipment = -1
+				motorized_equipment = -1
+			}
+		}
+		pack_artillery_brigade = {
+			need = {
+			   	pack_artillery_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		pack_artillery_brigade_mot = {
+			need = {
+			   	pack_artillery_equipment = -1
+				motorized_equipment = -1
+			}
+		}
+		artillery_heavy = {
+			need = {
+			    heavy_artillery_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		artillery_heavy_mot = {
+			need = {
+			   	heavy_artillery_equipment = -1
+				motorized_equipment = -1
+			}
+		}
+		rocket_artillery_brigade = {
+			need = {
+			   	rocket_artillery_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		motorized_rocket_brigade = {
+			need = {
+			   	motorized_rocket_equipment = -1
+			}
+		}
+		artillery = {
+			need = {
+			    artillery_equipment = -1
+			}
+		}
+		rocket_artillery = {
+			need = {
+			    rocket_artillery_equipment = -1
+			}
+		}
+		pack_artillery = {
+			need = {
+			    pack_artillery_equipment = -1
+			}
+		}
+		artillery_heavy_support = {
+			need = {
+			    heavy_artillery_equipment = -1
+			}
+		}
+		anti_tank_brigade = {
+			need = {
+			    anti_tank_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		anti_tank_brigade_mot = {
+			need = {
+			    anti_tank_equipment = -1
+				motorized_equipment = -1
+			}
+		}
+		anti_tank = {
+			need = {
+			    anti_tank_equipment = -1
+			}
+		}
+		anti_air = {
+			need = {
+			    anti_air_equipment = -1
+				horse_equipment = -1
+			}
+		}
+		anti_air_mot = {
+			need = {
+			    anti_air_equipment = -1
+				motorized_equipment = -1
+			}
+		}
+		anti_air_company = {
+			need = {
+			    anti_air_equipment = -1
+			}
+		}
+        on_research_complete = {
+			custom_effect_tooltip = quantity_3_tt
+		}
+		research_cost = 1.4
+		
+		folder = {
+			name = industry_folder
+			position = { x = 7 y = 11 }
+		}
+		start_year = 1944
+		ai_will_do = {
+			factor = 5
+		}
+		
+	}
+	###more quality
+	quality1 = {
+        category_army = { 
+			soft_attack = 0.03
+			hard_attack = 0.03
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+		signal_company = {
+			need = {
+			   	support_equipment = 2
+				motorized_equipment = 1
+			}
+		}
+		recon = {
+			need = {
+			   	infantry_equipment = 2
+				support_equipment = 1
+			}
+		}
+		recon_ac = {
+			need = {
+			   	armored_cars_equipment = 1
+				support_equipment = 1
+			}
+		}
+		
+		military_police = {
+			need = {
+			   	infantry_equipment = 1
+				support_equipment = 1
+			}
+		}
+		maintenance_company = {
+			need = {
+			   	motorized_equipment = 1
+				support_equipment = 1
+			}
+		}
+		logistics_company = {
+			need = {
+			   	horse_equipment = 1
+				support_equipment = 1
+			}
+		}
+		logistics_company_mot = {
+			need = {
+			   	motorized_equipment = 1
+				support_equipment = 1
+			}
+		}
+		logistics_company_mech = {
+			need = {
+			   	mechanized_equipment = 1
+				support_equipment = 1
+			}
+		}
+		field_hospital = {
+			need = {
+			   	motorized_equipment = 1
+				support_equipment = 2
+			}
+		}
+		engineer = {
+			need = {
+			   	infantry_equipment = 1
+				support_equipment = 3
+			}
+		}
+		DIV_HQ = {
+			need = {
+				motorized_equipment = 1
+				support_equipment = 2
+			}
+		}
+		
+		cavalry = {
+			need = {
+			   	horse_equipment = 2
+				infantry_equipment = 5
+			}
+		}
+		armored_car = {
+			need = {
+			   	armored_cars_equipment = 2
+			}
+		}
+		amphibious_mechanized = {
+			need = {
+			   	amphibious_mechanized_equipment = 3
+				infantry_equipment = 5
+			}
+		}
+		
+		infantry = {
+			need = {
+			   	infantry_equipment = 5
+				horse_equipment = 1
+			}
+		}
+		light_infantry = {
+			need = {
+			   	infantry_equipment = 4
+				horse_equipment = 1
+			}
+		}
+		garrison = {
+			need = {
+			   	infantry_equipment = 3
+				horse_equipment = 1
+			}
+		}
+		bicycle_battalion = {
+			need = {
+			   	infantry_equipment = 5
+				support_equipment = 1
+			}
+		}
+		motorized = {
+			need = {
+			   	infantry_equipment = 4
+				motorized_equipment = 2
+			}
+		}
+		mechanized = {
+			need = {
+			   	infantry_equipment = 4
+				mechanized_equipment = 2
+			}
+		}
+		marine = {
+			need = {
+			   	infantry_equipment = 6
+				special_equipment = 2
+			}
+		}
+		mountaineers = {
+			need = {
+			   	infantry_equipment = 5
+				special_equipment = 2
+			}
+		}
+		paratrooper = {
+			need = {
+			   	infantry_equipment = 5
+				special_equipment = 3
+			}
+		}
+		artillery_brigade = {
+			need = {
+			   	artillery_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		artillery_brigade_mot = {
+			need = {
+			   	artillery_equipment = 1
+				motorized_equipment = 1
+			}
+		}
+		pack_artillery_brigade = {
+			need = {
+			   	pack_artillery_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		pack_artillery_brigade_mot = {
+			need = {
+			   	pack_artillery_equipment = 1
+				motorized_equipment = 1
+			}
+		}
+		artillery_heavy = {
+			need = {
+			    heavy_artillery_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		artillery_heavy_mot = {
+			need = {
+			   	heavy_artillery_equipment = 1
+				motorized_equipment = 1
+			}
+		}
+		rocket_artillery_brigade = {
+			need = {
+			   	rocket_artillery_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		motorized_rocket_brigade = {
+			need = {
+			   	motorized_rocket_equipment = 1
+			}
+		}
+		artillery = {
+			need = {
+			    artillery_equipment = 1
+			}
+		}
+		rocket_artillery = {
+			need = {
+			    rocket_artillery_equipment = 1
+			}
+		}
+		pack_artillery = {
+			need = {
+			    pack_artillery_equipment = 1
+			}
+		}
+		artillery_heavy_support = {
+			need = {
+			    heavy_artillery_equipment = 1
+			}
+		}
+		anti_tank_brigade = {
+			need = {
+			    anti_tank_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		anti_tank_brigade_mot = {
+			need = {
+			    anti_tank_equipment = 1
+				motorized_equipment = 1
+			}
+		}
+		anti_tank = {
+			need = {
+			    anti_tank_equipment = 1
+			}
+		}
+		anti_air = {
+			need = {
+			    anti_air_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		anti_air_mot = {
+			need = {
+			    anti_air_equipment = 1
+				motorized_equipment = 1
+			}
+		}
+		anti_air_company = {
+			need = {
+			    anti_air_equipment = 1
+			}
+		}
+		on_research_complete = {
+			custom_effect_tooltip = quality_1_tt
+		}
+		
+		path = {
+			leads_to_tech = quality2 
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.4
+		start_year = 1940
+		
+		folder = {
+			name = industry_folder
+			position = { x = 5 y = 7 }
+		}
+		xor = {
+            massed1
+        }
+        
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 10
+				tag = GER 
+			}
+			modifier = {
+				factor = 50
+				tag = USA 
+			}
+			modifier = {
+				factor = 0
+				has_tech = massed1
+			}
+			
+			modifier = {
+				factor = 0
+				is_researching_technology = massed1
+			}
+			
+		}
+		
+		
+	}
+	quality2 = {
+        category_army = { 
+			soft_attack = 0.03
+			hard_attack = 0.03
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+		signal_company = {
+			need = {
+			   	support_equipment = 2
+				motorized_equipment = 1
+			}
+		}
+		recon = {
+			need = {
+			   	infantry_equipment = 2
+				support_equipment = 1
+			}
+		}
+		recon_ac = {
+			need = {
+			   	armored_cars_equipment = 1
+				support_equipment = 1
+			}
+		}
+		
+		military_police = {
+			need = {
+			   	infantry_equipment = 1
+				support_equipment = 1
+			}
+		}
+		maintenance_company = {
+			need = {
+			   	motorized_equipment = 1
+				support_equipment = 1
+			}
+		}
+		logistics_company = {
+			need = {
+			   	horse_equipment = 1
+				support_equipment = 1
+			}
+		}
+		logistics_company_mot = {
+			need = {
+			   	motorized_equipment = 1
+				support_equipment = 1
+			}
+		}
+		logistics_company_mech = {
+			need = {
+			   	mechanized_equipment = 1
+				support_equipment = 1
+			}
+		}
+		field_hospital = {
+			need = {
+			   	motorized_equipment = 1
+				support_equipment = 2
+			}
+		}
+		engineer = {
+			need = {
+			   	infantry_equipment = 1
+				support_equipment = 3
+			}
+		}
+		DIV_HQ = {
+			need = {
+				motorized_equipment = 1
+				support_equipment = 2
+			}
+		}
+		
+		cavalry = {
+			need = {
+			   	horse_equipment = 2
+				infantry_equipment = 5
+			}
+		}
+		armored_car = {
+			need = {
+			   	armored_cars_equipment = 2
+			}
+		}
+		amphibious_mechanized = {
+			need = {
+			   	amphibious_mechanized_equipment = 3
+				infantry_equipment = 5
+			}
+		}
+		
+		infantry = {
+			need = {
+			   	infantry_equipment = 5
+				horse_equipment = 1
+			}
+		}
+		light_infantry = {
+			need = {
+			   	infantry_equipment = 4
+				horse_equipment = 1
+			}
+		}
+		garrison = {
+			need = {
+			   	infantry_equipment = 3
+				horse_equipment = 1
+			}
+		}
+		bicycle_battalion = {
+			need = {
+			   	infantry_equipment = 5
+				support_equipment = 1
+			}
+		}
+		motorized = {
+			need = {
+			   	infantry_equipment = 4
+				motorized_equipment = 2
+			}
+		}
+		mechanized = {
+			need = {
+			   	infantry_equipment = 4
+				mechanized_equipment = 2
+			}
+		}
+		marine = {
+			need = {
+			   	infantry_equipment = 6
+				special_equipment = 2
+			}
+		}
+		mountaineers = {
+			need = {
+			   	infantry_equipment = 5
+				special_equipment = 2
+			}
+		}
+		paratrooper = {
+			need = {
+			   	infantry_equipment = 5
+				special_equipment = 3
+			}
+		}
+		artillery_brigade = {
+			need = {
+			   	artillery_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		artillery_brigade_mot = {
+			need = {
+			   	artillery_equipment = 1
+				motorized_equipment = 1
+			}
+		}
+		pack_artillery_brigade = {
+			need = {
+			   	pack_artillery_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		pack_artillery_brigade_mot = {
+			need = {
+			   	pack_artillery_equipment = 1
+				motorized_equipment = 1
+			}
+		}
+		artillery_heavy = {
+			need = {
+			    heavy_artillery_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		artillery_heavy_mot = {
+			need = {
+			   	heavy_artillery_equipment = 1
+				motorized_equipment = 1
+			}
+		}
+		rocket_artillery_brigade = {
+			need = {
+				rocket_artillery_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		motorized_rocket_brigade = {
+			need = {
+			   	motorized_rocket_equipment = 1
+			}
+		}
+		artillery = {
+			need = {
+			    artillery_equipment = 1
+			}
+		}
+		rocket_artillery = {
+			need = {
+			    rocket_artillery_equipment = 1
+			}
+		}
+		pack_artillery = {
+			need = {
+			    pack_artillery_equipment = 1
+			}
+		}
+		artillery_heavy_support = {
+			need = {
+			    heavy_artillery_equipment = 1
+			}
+		}
+		anti_tank_brigade = {
+			need = {
+			    anti_tank_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		anti_tank_brigade_mot = {
+			need = {
+			    anti_tank_equipment = 1
+				motorized_equipment = 1
+			}
+		}
+		anti_tank = {
+			need = {
+			    anti_tank_equipment = 1
+			}
+		}
+		anti_air = {
+			need = {
+			    anti_air_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		anti_air_mot = {
+			need = {
+			    anti_air_equipment = 1
+				motorized_equipment = 1
+			}
+		}
+		anti_air_company = {
+			need = {
+			    anti_air_equipment = 1
+			}
+		}
+		on_research_complete = {
+			custom_effect_tooltip = quality_2_tt
+		}
+		path = {
+			leads_to_tech = quality3 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.4
+		
+		start_year = 1942
+		folder = {
+			name = industry_folder
+			position = { x = 5 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		
+	}
+	quality3 = {
+	    category_army = { 
+			soft_attack = 0.03
+			hard_attack = 0.03  
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+		signal_company = {
+			need = {
+			   	support_equipment = 2
+				motorized_equipment = 1
+			}
+		}
+		recon = {
+			need = {
+			   	infantry_equipment = 2
+				support_equipment = 1
+			}
+		}
+		recon_ac = {
+			need = {
+			   	armored_cars_equipment = 1
+				support_equipment = 1
+			}
+		}
+		
+		military_police = {
+			need = {
+			   	infantry_equipment = 1
+				support_equipment = 1
+			}
+		}
+		maintenance_company = {
+			need = {
+			   	motorized_equipment = 1
+				support_equipment = 1
+			}
+		}
+		logistics_company = {
+			need = {
+			   	horse_equipment = 1
+				support_equipment = 1
+			}
+		}
+		logistics_company_mot = {
+			need = {
+			   	motorized_equipment = 1
+				support_equipment = 1
+			}
+		}
+		logistics_company_mech = {
+			need = {
+			   	mechanized_equipment = 1
+				support_equipment = 1
+			}
+		}
+		field_hospital = {
+			need = {
+			   	motorized_equipment = 1
+				support_equipment = 2
+			}
+		}
+		engineer = {
+			need = {
+			   	infantry_equipment = 1
+				support_equipment = 3
+			}
+		}
+		DIV_HQ = {
+			need = {
+				motorized_equipment = 1
+				support_equipment = 2
+			}
+		}
+		
+		cavalry = {
+			need = {
+			   	horse_equipment = 2
+				infantry_equipment = 5
+			}
+		}
+		armored_car = {
+			need = {
+			   	armored_cars_equipment = 2
+			}
+		}
+		amphibious_mechanized = {
+			need = {
+			   	amphibious_mechanized_equipment = 3
+				infantry_equipment = 5
+			}
+		}
+		
+		infantry = {
+			need = {
+			   	infantry_equipment = 5
+				horse_equipment = 1
+			}
+		}
+		light_infantry = {
+			need = {
+			   	infantry_equipment = 4
+				horse_equipment = 1
+			}
+		}
+		garrison = {
+			need = {
+			   	infantry_equipment = 3
+				horse_equipment = 1
+			}
+		}
+		bicycle_battalion = {
+			need = {
+			   	infantry_equipment = 5
+				support_equipment = 1
+			}
+		}
+		motorized = {
+			need = {
+			   	infantry_equipment = 4
+				motorized_equipment = 2
+			}
+		}
+		mechanized = {
+			need = {
+			   	infantry_equipment = 4
+				mechanized_equipment = 2
+			}
+		}
+		marine = {
+			need = {
+			   	infantry_equipment = 6
+				special_equipment = 2
+			}
+		}
+		mountaineers = {
+			need = {
+			   	infantry_equipment = 5
+				special_equipment = 2
+			}
+		}
+		paratrooper = {
+			need = {
+			   	infantry_equipment = 5
+				special_equipment = 3
+			}
+		}
+		artillery_brigade = {
+			need = {
+			   	artillery_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		artillery_brigade_mot = {
+			need = {
+			   	artillery_equipment = 1
+				motorized_equipment = 1
+			}
+		}
+		pack_artillery_brigade = {
+			need = {
+			   	pack_artillery_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		pack_artillery_brigade_mot = {
+			need = {
+			   	pack_artillery_equipment = 1
+				motorized_equipment = 1
+			}
+		}
+		artillery_heavy = {
+			need = {
+			    heavy_artillery_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		artillery_heavy_mot = {
+			need = {
+			   	heavy_artillery_equipment = 1
+				motorized_equipment = 1
+			}
+		}
+		rocket_artillery_brigade = {
+			need = {
+			   	rocket_artillery_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		motorized_rocket_brigade = {
+			need = {
+			   	motorized_rocket_equipment = 1
+			}
+		}
+		artillery = {
+			need = {
+			    artillery_equipment = 1
+			}
+		}
+		rocket_artillery = {
+			need = {
+			    rocket_artillery_equipment = 1
+			}
+		}
+		pack_artillery = {
+			need = {
+			    pack_artillery_equipment = 1
+			}
+		}
+		artillery_heavy_support = {
+			need = {
+			    heavy_artillery_equipment = 1
+			}
+		}
+		anti_tank_brigade = {
+			need = {
+			    anti_tank_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		anti_tank_brigade_mot = {
+			need = {
+			    anti_tank_equipment = 1
+				motorized_equipment = 1
+			}
+		}
+		anti_tank = {
+			need = {
+			    anti_tank_equipment = 1
+			}
+		}
+		anti_air = {
+			need = {
+			    anti_air_equipment = 1
+				horse_equipment = 1
+			}
+		}
+		anti_air_mot = {
+			need = {
+			    anti_air_equipment = 1
+				motorized_equipment = 1
+			}
+		}
+		anti_air_company = {
+			need = {
+			    anti_air_equipment = 1
+			}
+		}
+		on_research_complete = {
+			custom_effect_tooltip = quality_3_tt
+		}
+		
+		research_cost = 1.4
+		
+		start_year = 1944
+		folder = {
+			name = industry_folder
+			position = { x = 5 y = 11 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	starting_industry = {
+
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		global_building_slots_factor = 0.1
+		
+		path = {
+			leads_to_tech = concentrated_industry 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = dispersed_industry
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		folder = {
+			name = industry_folder
+			position = { x = 5 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 500	
+		}
+		
+		categories = {
+			industry
+		}
+		enable_building = {
+			building = infrastructure
+			level = 6
+		}
+		enable_building = {
+			building = bunker
+			level = 5
+		}
+		enable_building = {
+			building = air_base 
+			level = 5
+		}
+		enable_building = {
+			building = naval_base
+			level = 5
+		}
+		enable_building = {
+			building = coastal_bunker
+			level = 5
+		}
+		ai_research_weights = {
+			offensive = -1.0
+		}
+	}
+	###############
+	concentrated_industry = {
+
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		global_building_slots_factor = 0.20
+		production_factory_start_efficiency_factor = 0.02
+		industry_air_damage_factor = 0.05
+		path = {
+			leads_to_tech = concentrated_industry2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		
+		XOR = {
+			dispersed_industry
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 25
+
+			modifier = {
+				factor = 0
+				tag = GER 
+			}
+			
+			modifier = {
+				factor = 50
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 50
+				tag = ENG
+			}
+			
+			modifier = {
+				factor = 20
+				tag = JAP
+			}
+
+			modifier = {
+				factor = 0
+				has_tech = dispersed_industry
+			}
+			
+			modifier = {
+				factor = 0
+				is_researching_technology = dispersed_industry
+			}
+						
+		}
+		
+		categories = {
+			industry
+			concentrated_industry_category
+		}
+		
+		ai_research_weights = {
+			offensive = -1.0
+		}
+	}
+	
+	concentrated_industry2 = {
+
+		industrial_capacity_factory = 0.075
+		industrial_capacity_dockyard = 0.075
+		global_building_slots_factor = 0.20
+		production_factory_start_efficiency_factor = 0.02
+		industry_air_damage_factor = 0.05
+		path = {
+			leads_to_tech = concentrated_industry3 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1937
+		
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+		}
+		
+		categories = {
+			industry
+			concentrated_industry_category
+		}
+		
+		ai_research_weights = {
+			offensive = -1.0
+		}
+	}
+	
+	concentrated_industry3 = {
+
+		industrial_capacity_factory = 0.10
+		industrial_capacity_dockyard = 0.10
+		global_building_slots_factor = 0.20
+		production_factory_start_efficiency_factor = 0.02
+		industry_air_damage_factor = 0.05
+		path = {
+			leads_to_tech = concentrated_industry4 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1939
+		
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 10		
+		}
+		
+		categories = {
+			industry
+			concentrated_industry_category
+		}
+		
+		ai_research_weights = {
+			offensive = -1.0
+		}
+	}
+	
+	concentrated_industry4 = {
+
+		industrial_capacity_factory = 0.125
+		industrial_capacity_dockyard = 0.125
+		global_building_slots_factor = 0.20
+		production_factory_start_efficiency_factor = 0.02
+		industry_air_damage_factor = 0.05
+		path = {
+			leads_to_tech = concentrated_industry5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1941
+		
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+					
+		}
+		
+		categories = {
+			industry
+			concentrated_industry_category
+		}
+		
+		ai_research_weights = {
+			offensive = -1.0
+		}
+	}
+	
+	concentrated_industry5 = {
+
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
+		global_building_slots_factor = 0.20
+		production_factory_start_efficiency_factor = 0.02
+		industry_air_damage_factor = 0.05
+		
+		research_cost = 1.5
+		start_year = 1943
+		
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		
+		}
+		
+		categories = {
+			industry
+			concentrated_industry_category
+		}
+		
+		ai_research_weights = {
+			offensive = -1.0
+		}
+	}
+	
+	dispersed_industry = {
+
+		industrial_capacity_factory = 0.03
+		industrial_capacity_dockyard = 0.03
+		production_factory_start_efficiency_factor = 0.05
+		line_change_production_efficiency_factor = 0.05
+		industry_air_damage_factor = -0.1
+		global_building_slots_factor = 0.15
+		
+		path = {
+			leads_to_tech = dispersed_industry2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		
+		XOR = {
+			concentrated_industry
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+
+			modifier = {
+				factor = 50
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 0.25
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 0.25
+				tag = ENG
+			}
+			
+			modifier = {
+				factor = 0.25
+				tag = JAP
+			}
+
+			modifier = {
+				factor = 0
+				has_tech = concentrated_industry
+			}
+			
+			modifier = {
+				factor = 0
+				is_researching_technology = concentrated_industry
+			}
+
+		}
+		
+		categories = {
+			industry
+			dispersed_industry_category
+		}
+		
+		ai_research_weights = {
+			defensive = -1.0
+		}
+	}
+	
+	dispersed_industry2 = {
+
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		production_factory_start_efficiency_factor = 0.05
+		line_change_production_efficiency_factor = 0.05
+		industry_air_damage_factor = -0.1
+		global_building_slots_factor = 0.15
+		
+		path = {
+			leads_to_tech = dispersed_industry3 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1937
+		
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+						
+		}
+		
+		categories = {
+			industry
+			dispersed_industry_category
+		}
+		
+		ai_research_weights = {
+			defensive = -1.0
+		}
+	}
+	
+	dispersed_industry3 = {
+
+		industrial_capacity_factory = 0.07
+		industrial_capacity_dockyard = 0.07
+		production_factory_start_efficiency_factor = 0.05
+		line_change_production_efficiency_factor = 0.05
+		industry_air_damage_factor = -0.1
+		global_building_slots_factor = 0.15
+		
+		path = {
+			leads_to_tech = dispersed_industry4 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1939
+		
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+								
+		}
+		
+		categories = {
+			industry
+			dispersed_industry_category
+		}
+		
+		ai_research_weights = {
+			defensive = -1.0
+		}
+	}
+	
+	dispersed_industry4 = {
+
+		industrial_capacity_factory = 0.09
+		industrial_capacity_dockyard = 0.09
+		production_factory_start_efficiency_factor = 0.05
+		line_change_production_efficiency_factor = 0.05
+		industry_air_damage_factor = -0.1
+		global_building_slots_factor = 0.15
+		
+		path = {
+			leads_to_tech = dispersed_industry5 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1941
+		
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			industry
+			dispersed_industry_category
+		}
+		
+		ai_research_weights = {
+			defensive = -1.0
+		}
+	}
+	
+	dispersed_industry5 = {
+
+		industrial_capacity_factory = 0.11
+		industrial_capacity_dockyard = 0.11
+		production_factory_start_efficiency_factor = 0.05
+		line_change_production_efficiency_factor = 0.05
+		industry_air_damage_factor = -0.1
+		global_building_slots_factor = 0.15
+		
+		
+		research_cost = 1.5
+		start_year = 1943
+		
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			industry
+			dispersed_industry_category
+		}
+		
+		ai_research_weights = {
+			defensive = -1.0
+		}
+	}
+	
+	synth_oil_experiments = {
+
+		enable_building = {
+			building = synthetic_refinery
+			level = 1
+		}
+				
+		path = {
+			leads_to_tech = oil_processing 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = rubber_processing 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.25
+		start_year = 1936
+		folder = {
+			name = industry_folder
+			position = { x = 7 y = 2 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 100
+				tag = JAP 
+			}		
+		}
+		
+		ai_research_weights = {
+			oil = -2.0
+		}
+	}
+	
+	oil_processing = {
+		
+		enable_building = {
+			building = synthetic_refinery
+			level = 2
+		}
+		
+		fuel_gain_factor_from_states = 0.5
+
+		start_year = 1937
+
+		path = {
+			leads_to_tech = improved_oil_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.25
+		
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 4 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = { 
+			factor = 0.5
+			
+			modifier = {
+				factor = 100
+				tag = GER 
+			}
+			modifier = {
+				factor = 100
+				tag = JAP 
+			}			
+		}
+		
+		ai_research_weights = {
+			oil = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+	
+	improved_oil_processing = {
+		
+		enable_building = {
+			building = synthetic_refinery
+			level = 3
+		}
+		
+		fuel_gain_factor_from_states = 0.5
+
+		path = {
+			leads_to_tech = advanced_oil_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.25
+		start_year = 1939
+		
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 6 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 100
+				tag = GER 
+			}
+			modifier = {
+				factor = 100
+				tag = JAP 
+			}		
+		}
+		
+		ai_research_weights = {
+			oil = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+	
+	advanced_oil_processing = {
+
+		enable_building = {
+			building = synthetic_refinery
+			level = 4
+		}
+		
+		fuel_gain_factor_from_states = 0.5
+
+		path = {
+			leads_to_tech = modern_oil_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.25
+		start_year = 1941
+		
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 8 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 100
+				tag = GER 
+			}
+			modifier = {
+				factor = 100
+				tag = JAP 
+			}			
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+
+	modern_oil_processing = {
+
+		fuel_gain_factor_from_states = 0.5
+		
+		research_cost = 1.5
+		start_year = 1943
+		
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 10 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 100
+				tag = GER 
+			}
+			modifier = {
+				factor = 100
+				tag = JAP 
+			}		
+		}
+		
+		ai_research_weights = {
+			oil = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+
+	#####################################
+	rubber_processing = {
+
+		enable_building = {
+			building = synthetic_rubber_refinery
+			level = 1
+		}
+
+		path = {
+			leads_to_tech = improved_rubber_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.25
+		start_year = 1937
+		
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 4 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 100
+				tag = GER 
+			}
+			
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+	
+	improved_rubber_processing = {
+
+		enable_building = {
+			building = synthetic_rubber_refinery
+			level = 2
+		}
+
+		path = {
+			leads_to_tech = advanced_rubber_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.25
+		start_year = 1939
+		
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 6 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 100
+				tag = GER 
+			}
+		
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+	
+	advanced_rubber_processing = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = synthetic_rubber_refinery
+				resource = rubber
+				amount = 5
+			}
+		}
+
+		path = {
+			leads_to_tech = modern_rubber_processing
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.25
+		start_year = 1941
+		
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 8 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 100
+				tag = GER 
+			}		
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+
+	modern_rubber_processing = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = synthetic_rubber_refinery
+				resource = rubber
+				amount = 5
+			}
+		}
+		enable_building = {
+			building = synthetic_rubber_refinery
+			level = 3
+		}
+		
+		research_cost = 1.5
+		start_year = 1943
+		
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 10 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 100
+				tag = GER 
+			}			
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+		
+		show_effect_as_desc = yes
+	}
+	#####################################
+	
+	construction1 = {
+		
+		production_speed_buildings_factor = 0.05
+		industry_repair_factor = 0.025
+
+		path = {
+			leads_to_tech = construction2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = excavation1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1936
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+		enable_building = {
+			building = infrastructure
+			level = 7
+		}
+		enable_building = {
+			building = bunker
+			level = 6
+		}
+		enable_building = {
+			building = air_base 
+			level = 6
+		}
+		enable_building = {
+			building = naval_base
+			level = 6
+		}
+		enable_building = {
+			building = coastal_bunker
+			level = 6
+		}
+		ai_will_do = {
+			factor = 500
+
+		}
+	}
+
+	excavation1 = {
+		
+		local_resources_factor = 0.075
+		enable_building = {
+			building = steel_refinery
+			level = 1
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		
+		categories = {
+			industry
+			construction_tech
+			excavation_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	
+	construction2 = {
+
+		production_speed_buildings_factor = 0.075
+		industry_repair_factor = 0.05
+		
+		path = {
+			leads_to_tech = construction3 
+			research_cost_coeff = 1
+		}		
+		path = {
+			leads_to_tech = excavation2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1937
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 2 }
+		}
+		enable_building = {
+			building = infrastructure
+			level = 8
+		}
+		enable_building = {
+			building = bunker
+			level = 7
+		}
+		enable_building = {
+			building = air_base 
+			level = 7
+		}
+		enable_building = {
+			building = naval_base
+			level = 7
+		}
+		ai_will_do = {
+			factor = 100
+						
+		}
+	}
+
+	excavation2 = {
+		
+		local_resources_factor = 0.075
+		enable_building = {
+			building = steel_refinery
+			level = 2
+		}
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1937
+		
+		categories = {
+			industry
+			construction_tech
+			excavation_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}	
+	
+	construction3 = {
+
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.075
+		
+		path = {
+			leads_to_tech = construction4 
+			research_cost_coeff = 1
+		}
+				
+		path = {
+			leads_to_tech = excavation3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+		start_year = 1939
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 4 }
+		}
+		enable_building = {
+			building = infrastructure
+			level = 9
+		}
+		enable_building = {
+			building = bunker
+			level = 8
+		}
+		enable_building = {
+			building = air_base 
+			level = 8
+		}
+		enable_building = {
+			building = naval_base
+			level = 8
+		}
+		ai_will_do = {
+			factor = 100
+		
+		}
+	}
+
+
+	excavation3 = {
+		
+		local_resources_factor = 0.075
+		enable_building = {
+			building = steel_refinery
+			level = 3
+		}
+		on_research_complete = {
+			modify_building_resources = {
+			   building = steel_refinery
+			   resource = steel
+			   amount = 10
+			}
+			modify_building_resources = {
+			   building = steel_refinery
+			   resource = aluminium
+			   amount = 5
+			}
+
+		}
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1939
+		
+		categories = {
+			industry
+			construction_tech
+			excavation_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}		
+	
+	construction4 = {
+
+		production_speed_buildings_factor = 0.125
+		industry_repair_factor = 0.10
+		
+		path = {
+			leads_to_tech = construction5 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = excavation4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1941
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 6 }
+		}
+		enable_building = {
+			building = infrastructure
+			level = 10
+		}
+		enable_building = {
+			building = bunker
+			level = 9
+		}
+		enable_building = {
+			building = air_base 
+			level = 9
+		}
+		enable_building = {
+			building = naval_base
+			level = 9
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	excavation4 = {
+		
+		local_resources_factor = 0.075
+		enable_building = {
+			building = steel_refinery
+			level = 4
+		}
+		on_research_complete = {
+			modify_building_resources = {
+			   building = steel_refinery
+			   resource = steel
+			   amount = 10
+			}
+			modify_building_resources = {
+			   building = steel_refinery
+			   resource = aluminium
+			   amount = 5
+			}
+			modify_building_resources = {
+			   building = steel_refinery
+			   resource = tungsten
+			   amount = 5
+			}
+
+		}
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1941
+		
+		categories = {
+			industry
+			construction_tech
+			excavation_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}			
+	
+	construction5 = {
+
+		production_speed_buildings_factor = 0.15
+		industry_repair_factor = 0.10
+		
+		path = {
+			leads_to_tech = excavation5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1943
+		
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 8 }
+		}
+		enable_building = {
+			building = bunker
+			level = 10
+		}
+		enable_building = {
+			building = air_base 
+			level = 10
+		}
+		enable_building = {
+			building = naval_base
+			level = 10
+		}
+		ai_will_do = {
+			factor = 100
+
+		}
+	}
+
+
+	excavation5 = {
+		
+		local_resources_factor = 0.075
+		on_research_complete = {
+			modify_building_resources = {
+			   building = steel_refinery
+			   resource = steel
+			   amount = 10
+			}
+			modify_building_resources = {
+			   building = steel_refinery
+			   resource = aluminium
+			   amount = 5
+			}
+			modify_building_resources = {
+			   building = steel_refinery
+			   resource = tungsten
+			   amount = 5
+			}
+			modify_building_resources = {
+			   building = steel_refinery
+			   resource = chromium
+			   amount = 5
+			}
+		}
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1943
+		
+		categories = {
+			industry
+			construction_tech
+			excavation_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}	
+	
+}

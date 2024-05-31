@@ -1,0 +1,5 @@
+	spriteType = {
+		name = "event_speeches_faceplate"
+		texturefile = "gfx/interface/topbar/musicplayer/event_speeches_album_art.dds"
+		noOfFrames = 2
+	}

@@ -1,0 +1,303 @@
+equipments = {
+
+	infantry_equipment = {
+		is_archetype = yes
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		active = yes
+		
+		#Misc Abilities
+		reliability = 0.77
+
+		#Defensive Abilities
+		defense = 1
+		breakthrough = 2
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 6
+		hard_attack = 1
+		ap_attack = 1.6
+		air_attack = 0.0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 0.50
+		resources = {
+			steel = 4
+		}
+		
+		upgrades = {
+			i_forgot_a_designer
+		}
+	}
+##### Regular infantry ~1920
+	infantry_equipment_0 = {
+		archetype = infantry_equipment
+		active = yes
+		priority = 11
+		visual_level = 0
+
+		reliability = 0.80
+
+		#Defensive Abilities
+		defense = 12
+		breakthrough = 1
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 1
+		ap_attack = 1
+		air_attack = 0.0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 0.50
+		resources = {
+			steel = 5
+		}
+		
+		upgrades = {
+			i_forgot_a_designer
+		}
+	}
+##### Regular infantry ~1936
+	infantry_equipment_1 = {
+		archetype = infantry_equipment
+		parent = infantry_equipment_0
+		priority = 11
+		visual_level = 1
+
+		reliability = 0.80
+
+		#Defensive Abilities
+		defense = 14
+		breakthrough = 2
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 4
+		hard_attack = 1
+		ap_attack = 2
+		air_attack = 0.0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 0.90
+		resources = {
+			steel = 6
+		}
+		
+		upgrades = {
+			i_forgot_a_designer
+		}
+	}
+##### Improved weapons  ~1939
+	infantry_equipment_2 = {
+		archetype = infantry_equipment
+		parent = infantry_equipment_1
+		priority = 11
+		visual_level = 1
+		
+		reliability = 0.82
+
+		#Defensive Abilities
+		defense = 16
+		breakthrough = 3
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 5
+		hard_attack = 1.2
+		ap_attack = 3
+		air_attack = 0.0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 1.05
+		resources = {
+			steel = 7
+		}
+		
+		upgrades = {
+			i_forgot_a_designer
+		}
+	}
+##### Advanced weapons  ~1942
+	infantry_equipment_3 = {
+		archetype = infantry_equipment
+		parent = infantry_equipment_2
+		priority = 11
+		visual_level = 2
+		
+		reliability = 0.82
+
+		#Defensive Abilities
+		defense = 18
+		breakthrough = 4
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 6
+		hard_attack = 1.4
+		ap_attack = 5
+		air_attack = 0.0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 1.20
+		resources = {
+			steel = 8
+		}
+		
+		upgrades = {
+			i_forgot_a_designer
+		}
+	}
+	infantry_equipment_4 = {
+		archetype = infantry_equipment
+		parent = infantry_equipment_3
+		priority = 11
+		visual_level = 3
+		
+		reliability = 0.85
+
+		#Defensive Abilities
+		defense = 20
+		breakthrough = 5
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 13
+		hard_attack = 1.5
+		ap_attack = 7
+		air_attack = 0.0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 1.35
+		resources = {
+			steel = 9
+		}
+		
+		upgrades = {
+			i_forgot_a_designer
+		}
+	}
+	
+## Radio Equipment ##
+#	radio_equipment = {
+#		is_archetype = yes
+#		is_buildable = no
+#		type = infantry
+#		group_by = archetype
+#		
+#		interface_category = interface_category_land
+#			
+#		reliability = 0.9
+#
+#		initiative = 0.002
+#		lend_lease_cost = 1
+#		build_cost_ic = 3
+#		resources = {
+#		    chromium = 2
+#		}
+#	}
+#
+#	radio_equipment_1 = {
+#		archetype = radio_equipment
+#		active = yes
+#		priority = 8
+#		
+#		reliability = 0.9
+#		max_organisation = 0.02
+#		default_morale = 0.10
+#       initiative = 0.002
+#		build_cost_ic = 2.5
+#	}
+
+    ## Special equipment ##
+	special_equipment = {
+		is_archetype = yes
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+			
+		#Misc Abilities
+		reliability = 0.9
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 3
+		breakthrough = 3
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 1
+		ap_attack = 1
+		air_attack = 0.0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 3.5
+		resources = {
+		    steel = 5
+			aluminium = 4
+			chromium = 4
+			rubber = 3
+		}
+	}
+    special_equipment_1 = {
+		archetype = special_equipment
+		active = no
+		priority = 5
+		visual_level = 0
+	}
+    ##
+	horse_equipment = {
+		is_archetype = yes
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		active = yes
+
+		reliability = 0.8
+		maximum_speed = 4
+		lend_lease_cost = 1
+		build_cost_ic = 0.4
+
+	}
+
+	horse_equipment_0 = {
+		archetype = horse_equipment
+		active = yes
+		priority = 10
+		visual_level = 1
+		
+	}
+}

@@ -1,0 +1,497 @@
+on_actions = {
+		
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+
+	on_state_control_changed = {
+		effect = {
+			##Island Hopping
+			if = {
+				limit = {
+					FROM.FROM = {
+						has_state_flag = JAP_controls
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = JAP 
+							tag = JAP
+							is_in_faction_with = GER
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = USA 
+							tag = USA
+						} 
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = USA_controls
+				 	clr_state_flag = JAP_controls
+				}
+			 	USA = { 
+			 		USA_island_hopping_level_up = yes
+			 	}
+		 		JAP = {
+		 			JAP_island_hopping_level_down = yes 
+		 		}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_flag = USA_controls
+					}
+					FROM = { 
+					    OR = { 
+							is_in_faction_with = USA 
+							tag = USA
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = JAP 
+							tag = JAP
+							is_in_faction_with = GER
+						} 
+					}
+				}
+				FROM.FROM = { 
+				 	set_state_flag = JAP_controls 
+				 	clr_state_flag = USA_controls 
+				}
+		 		JAP = {
+		 			JAP_island_hopping_level_up = yes 
+		 		}
+		 		USA = {
+					USA_island_hopping_level_down = yes
+		 		} 
+			}
+			##Japan Major Conquest - Phillipines and Raj
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_flag = JAP_major_control
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = JAP 
+							tag = JAP
+							is_in_faction_with = GER
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = ENG 
+							tag = USA
+							tag = PHI
+						} 
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = JAP_major_uncontrol
+				 	clr_state_flag = JAP_major_control
+				}
+		 		JAP = {
+		 			JAP_decrement_major_conquest = yes 
+		 		}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_flag = JAP_major_uncontrol
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = ENG 
+							tag = USA
+							tag = PHI
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = JAP 
+							tag = JAP
+							is_in_faction_with = GER
+						} 
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = JAP_major_control
+				 	clr_state_flag = JAP_major_uncontrol
+				}
+		 		JAP = {
+		 			JAP_increment_major_conquest = yes 
+		 		}
+			}
+			##Japan Major Conquest - Australia and New Zealand
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_flag = JAP_control_ANZAC
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = JAP 
+							tag = JAP
+							is_in_faction_with = GER
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = ENG 
+							tag = USA
+						} 
+					}
+				}
+				FROM.FROM = {
+					set_state_flag = JAP_uncontrol_ANZAC
+					clr_state_flag = JAP_control_ANZAC
+				}
+				if = {
+					limit = {
+						NOT = {
+							JAP = {
+								has_global_flag = JAP_ANZAC_decremented
+							}
+						}
+					}
+					JAP = {
+						JAP_decrement_major_conquest = yes
+						set_global_flag = JAP_ANZAC_decremented
+						clr_global_flag = JAP_ANZAC_incremented
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_flag = JAP_uncontrol_ANZAC
+					}
+					FROM = {
+						OR = {
+							is_in_faction_with = ENG
+							tag = USA
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = JAP 
+							tag = JAP
+							is_in_faction_with = GER
+						}  
+					}
+				}
+				FROM.FROM = {
+					set_state_flag = JAP_control_ANZAC
+					clr_state_flag = JAP_uncontrol_ANZAC
+				}
+				if = {
+					limit = {
+						284 = {
+							has_state_flag = JAP_control_ANZAC
+						}
+						285 = {
+							has_state_flag = JAP_control_ANZAC
+						}
+						NOT = {
+							JAP = {
+								has_global_flag = JAP_ANZAC_incremented
+							}
+						}
+					}
+					JAP = {
+						JAP_increment_major_conquest = yes
+						set_global_flag = JAP_ANZAC_incremented
+						clr_global_flag = JAP_ANZAC_decremented
+					}
+				}
+			}
+			##AST/NZL island protection
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_flag = JAP_control_wall
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = JAP 
+							tag = JAP
+							is_in_faction_with = GER
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = ENG 
+							tag = USA
+						} 
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = AST_control_wall
+				 	clr_state_flag = JAP_control_wall
+				}
+			 	AST = { 
+			 		AST_wall_defence_up = yes
+			 	}
+			 	NZL = {
+			 		NZL_wall_defence_up = yes
+			 	}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_flag = AST_control_wall
+					}
+					FROM = { 
+					    OR = { 
+							is_in_faction_with = ENG 
+							tag = USA
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = JAP 
+							tag = JAP
+							is_in_faction_with = GER
+						} 
+					}
+				}
+				FROM.FROM = { 
+				 	set_state_flag = JAP_control_wall 
+				 	clr_state_flag = AST_control_wall 
+				}
+			 	AST = { 
+			 		AST_wall_defence_down = yes
+			 	}
+			 	NZL = {
+			 		NZL_wall_defence_down = yes
+			 	}
+			}
+			##Rubber Occupation
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_flag = JAP_controls_air
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = JAP 
+							tag = JAP
+							is_in_faction_with = GER
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = ENG 
+							tag = USA
+							tag = INS
+						} 
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = USA_controls_air
+				 	clr_state_flag = JAP_controls_air
+				}
+			 	every_country = {
+			 		limit = {
+			 			OR = {
+			 				is_in_faction_with = ENG
+			 				tag = USA
+			 			}
+			 		}
+			 		JAP_allies_air_production_malus_down = yes
+			 	}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_flag = USA_controls_air
+					}
+					FROM = { 
+					    OR = { 
+							is_in_faction_with = ENG 
+							tag = USA
+							tag = INS
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = JAP 
+							tag = JAP
+							is_in_faction_with = GER
+						} 
+					}
+				}
+				FROM.FROM = { 
+				 	set_state_flag = JAP_controls_air
+				 	clr_state_flag = USA_controls_air
+				}
+			 	every_country = {
+			 		limit = {
+			 			OR = {
+			 				is_in_faction_with = ENG
+			 				tag = USA
+			 			}
+			 		}
+			 		JAP_allies_air_production_malus_up = yes
+			 	}
+			}
+			##Atlantikwall
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_flag = GER_atlantikwall
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER 
+							tag = GER
+							tag = EFR
+							is_in_faction_with = JAP
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = ENG
+							tag = ENG
+							tag = USA
+							tag = PHI
+						} 
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = ENG_atlantikwall
+				 	clr_state_flag = GER_atlantikwall
+				}
+		 		GER = {
+		 			GER_decrement_atlantikwall = yes 
+		 		}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_flag = ENG_atlantikwall
+					}
+					FROM = { 
+						OR = { 
+							is_in_faction_with = ENG
+							tag = ENG
+							tag = USA
+							tag = PHI
+						} 
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							tag = GER
+							tag = EFR
+							is_in_faction_with = JAP
+						} 
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = GER_atlantikwall
+				 	clr_state_flag = ENG_atlantikwall
+				}
+		 		GER = {
+		 			GER_increment_atlantikwall = yes 
+		 		}
+			}
+			#SOV Push Progress
+			else_if = {
+				limit = {
+					FROM = { 
+						tag = SOV 
+					}
+					ROOT = {
+						OR = { 
+							is_in_faction_with = GER 
+							tag = GER 
+						}
+					}
+					NOT = {
+						FROM.FROM = {
+							has_state_flag = SOV_captured_by_ger
+						}
+					}
+				}
+				FROM.FROM = {
+					set_state_flag = SOV_captured_by_ger 
+				}
+				if = {
+					limit = {
+						FROM.FROM = {
+							OR = {
+								state = 12 #Riga
+								state = 206 #Minsk
+								state = 242 #Smolensk
+								state = 224 #Bryansk
+								state = 202 #Kiev
+								state = 221 #Kharkov
+								state = 218 #Rostov
+								state = 137 #Sevestapol
+								state = 217 #Stalingrad
+								state = 238 #Near Stalingrad
+								state = 234 #Near Stalingrad 2
+								state = 235 #Near Stalingrad 3
+								state = 232 #Near Stalingrad 4
+								state = 219 #Moscow
+								state = 195 #Leningrad
+							}
+							NOT = { has_state_flag = SOV_captured_by_ger_2 }
+						}
+					}
+					SOV = {
+						add_to_variable = {
+							var = eastern_front_points_var
+							value = 2
+						}
+					}
+					FROM.FROM = {
+						set_state_flag = SOV_captured_by_ger_2 
+					}
+				}
+				SOV = {
+					add_to_variable = {
+						var = eastern_front_points_var
+						value = 2
+					}
+				}
+				SOV = {
+					SOV_great_patriotic_war_scripted_effect = yes 
+				}
+			}
+		}
+	}
+
+	on_monthly_SOV = {
+		effect = {
+			add_to_variable = {
+				var = SOV_gulag_inmates
+				value = 2500
+			}
+			if = {
+				limit = {
+					SOV = { 
+						has_completed_focus = SOV_expand_nkvd_quotas 
+					}
+				}
+				add_to_variable = {
+					var = SOV_gulag_inmates 
+					value = 1250 
+				}
+			}
+			if = {
+				limit = {
+					SOV = {
+						has_completed_focus = SOV_kulak_operation
+					}
+				}
+				add_to_variable = {
+					var = SOV_gulag_inmates 
+					value = 1250 
+				}
+			}
+		}
+	}
+}

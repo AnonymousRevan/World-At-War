@@ -1,0 +1,1605 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			JAP = {
+				country_event = { id = japan.33 days = 1 }
+			}
+
+			SOV = {
+				516 = { set_state_flag = SOV_gulag_economy_flag }
+				644 = { set_state_flag = SOV_gulag_economy_flag }
+				562 = { set_state_flag = SOV_gulag_economy_flag }
+				579 = { set_state_flag = SOV_gulag_economy_flag }
+				574 = { set_state_flag = SOV_gulag_economy_flag }
+				575 = { set_state_flag = SOV_gulag_economy_flag }
+				576 = { set_state_flag = SOV_gulag_economy_flag }
+				577 = { set_state_flag = SOV_gulag_economy_flag }
+				580 = { set_state_flag = SOV_gulag_economy_flag }
+
+				if = {
+					limit = { SOV = { is_ai = yes } }
+					delete_unit_template_and_units = {
+						division_template = "Motostrelkovaya Diviziya"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Strelkovaya Diviziya Special"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Kavaleriyskaya Diviziya" 
+					}
+					delete_unit_template_and_units = {
+						division_template = "NKVD Pogranichnaya Diviziya"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mekhanizirovaniy Korpus"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Mekhanizirovaniy Brigada"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Vozdushno-Desantnaya Brigada"
+					}
+					delete_unit_template_and_units = {
+						division_template = "Gornostrelkovaya Diviziya"
+					}
+
+					add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 15000 producer = SOV }
+					add_equipment_to_stockpile = { type = support_equipment_1 amount = 8000 producer = SOV }
+					add_equipment_to_stockpile = { type = pack_artillery_equipment_1 amount = 1500 producer = SOV }
+					add_equipment_to_stockpile = { type = horse_equipment_0 amount = 8000 producer = SOV } 
+					add_equipment_to_stockpile = { type = armored_cars_equipment_1 amount = 1500 producer = SOV } 
+					add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 3000 producer = SOV } 
+					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = SOV } 
+					load_oob = "SOV_tanks_ai"
+				}
+			}
+			USA = {
+				country_event = { id = usa.31 days = 20 }
+				country_event = { id = usa.6 days = 305 } #1936.11.01, election
+				country_event = { id = usa.30 days = 516 } #1937.6.01, recession 1937
+				country_event = { id = usa.7 days = 1762 } #1940.11.01, election
+				country_event = { id = usa.9 days = 3225 } #1944.11.01, election
+				country_event = { id = usa.14 days = 3372 } #1945.03.29, death of Roosevelt
+			}
+			RAJ = {
+				country_event = { id = tfv_raj.210 days = 2191 } #1942.01.01, Quit India
+			}
+			ENG = {
+				country_event = { id = britain.16 days = 20 } 
+			}
+		    if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				IRQ = {
+					give_resource_rights = { receiver = ENG state = 291 }
+					give_resource_rights = { receiver = ENG state = 676 }
+				}
+				MAN = {
+					give_resource_rights = { receiver = JAP state = 716 }
+					give_resource_rights = { receiver = JAP state = 328 }
+				}
+				SIA = {
+					give_resource_rights = { receiver = JAP state = 724 }
+				}
+				INS = {
+					give_resource_rights = { receiver = HOL state = 672 }
+					give_resource_rights = { receiver = HOL state = 335 }
+					give_resource_rights = { receiver = HOL state = 334 }
+					give_resource_rights = { receiver = HOL state = 667 }
+					give_resource_rights = { receiver = HOL state = 673 }
+					give_resource_rights = { receiver = HOL state = 668 }
+				}
+				MAL = {
+					give_resource_rights = { receiver = RAJ state = 336 }
+					give_resource_rights = { receiver = RAJ state = 333 }
+				}
+				
+			}
+			#Mexican oil concessions
+		    if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				MEX = {
+					give_resource_rights = { receiver = ENG state = 476 }
+					give_resource_rights = { receiver = ENG state = 477 }
+					give_resource_rights = { receiver = USA state = 479 }
+					give_resource_rights = { receiver = USA state = 480 }
+				}
+			}
+		}
+	}
+	# country 		
+	on_new_term_election = {
+		random_events = {
+			100 = election.2
+			100 = election.3
+			100 = election.4
+			100 = election.5
+			100 = election.6
+			100 = election.11
+			100 = election.12
+			100 = election.13
+			100 = election.14
+			100 = election.15
+		}
+	}
+
+	# Ace pilots
+	# country, FROM = ace
+	on_ace_promoted = {
+		random_events = {
+			100 = ace_promoted.1
+			5 = ace_promoted.2
+		}
+	}
+
+	# country, FROM = ace, PREV = enemy ace 
+	# This event fires twice, once for each ace.
+	on_aces_killed_each_other = {
+		random_events = {
+			100 = aces_killed_each_other.1
+		}
+	}
+	
+	# country, FROM = our ace, 
+	# PREV = enemy ace, has killed FROM
+	on_ace_killed_by_ace = {
+		random_events = {
+			100 = ace_killed_by_ace.1
+		}
+	}
+
+	# country, FROM = our ace, 
+	# PREV = enemy ace, killed by FROM
+	on_ace_killed_other_ace = {
+		random_events = {
+			100 = ace_killed_other_ace.1
+		}
+	}
+
+	# country, FROM = ace
+	on_ace_killed = {
+		random_events = {
+			100 = ace_died.1
+		}
+	}
+	# our ace died in accident
+	# country, FROM = ace
+	# on_ace_killed_on_accident = {
+	#
+	# }
+	
+	# enemy ace is killed by our non name
+	# country, FROM = enemy ace
+	# on_non_ace_killed_other_ace = {
+	#
+	# }
+	
+	on_nuke_drop = {
+
+		effect = {
+			set_global_flag = first_nuke_dropped
+			if = {
+				limit = { NOT = { has_global_flag = first_nuke_dropped } }
+				country_event = { id = generic.8 }
+			}
+			if = {
+				limit = { has_idea = race_for_the_bomb_outclassed }
+				remove_ideas = race_for_the_bomb_outclassed
+			}
+			if = {
+				limit = { NOT = { has_country_flag = achievement_has_dropped_nuke } }
+				goto_state = FROM
+				set_country_flag = achievement_has_dropped_nuke
+			}
+			if = {
+				limit = {
+					FROM = { state = 378 }					
+				}
+				set_country_flag = achievement_has_nuked_california
+			}
+			if = {
+				limit = {
+					FROM = { is_core_of = AST }					
+				}
+				set_country_flag = achievement_AST_nuke_self
+			}
+			if = {
+				limit = {
+					tag = SWE
+					FROM = {
+						is_owned_by = DEN
+						is_core_of = DEN
+					}
+				}
+				set_country_flag = achievement_med_plutonium
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_core_of = JAP
+					}
+					has_global_flag = JAP_nuke_1
+					NOT = {
+						has_global_flag = JAP_nuke_2
+					}
+				}
+				set_global_flag = JAP_nuke_2
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_core_of = JAP
+					}
+					NOT = {
+						has_global_flag = JAP_nuke_1
+					}
+				}
+				set_global_flag = JAP_nuke_1
+			}
+			
+			news_event = { id = nuke_dropped.2 days = 1}
+			news_event = { id = nuke_dropped.3 days = 1}
+			news_event = { id = nuke_dropped.4 days = 1}
+			news_event = { id = nuke_dropped.5 days = 1}
+			news_event = { id = nuke_dropped.6 days = 1}
+			news_event = { id = nuke_dropped.7 days = 1}
+			news_event = { id = nuke_dropped.8 days = 1}
+			news_event = { id = nuke_dropped.9 days = 1}
+			news_event = { id = nuke_dropped.10 days = 1}
+			news_event = { id = nuke_dropped.11 days = 1}
+			news_event = { id = nuke_dropped.12 days = 1}
+			news_event = { id = nuke_dropped.13 days = 1}
+		}
+		random_events = {
+			100 = nuke_dropped.0
+		}
+	}
+
+	# on_monthly = {
+	#	
+	# }
+
+	# country random events
+	#on_bi_yearly_pulse = {
+	#
+	#}
+
+	#on_five_year_pulse = {
+	#
+	#}
+
+	on_border_war_lost = {
+		effect = {
+			owner = {
+				country_event = { id = china.14 }
+				country_event = { id = china.16 }
+			}
+		}
+	}
+	
+	# on_leave_faction = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = { 
+	# 				AND = {
+	# 					tag = CAN 	
+	# 					NOT = { has_dlc = "Together for Victory" }
+	# 				}
+	# 			}
+	# 			drop_cosmetic_tag = yes
+	# 		}
+	# 		FROM = {
+	# 			add_opinion_modifier = {
+	# 				modifier = faction_traitor
+	# 				target = ROOT
+	# 				days = 365
+	# 			}
+			
+	# 			add_opinion_modifier = {
+	# 				modifier = faction_traitor_trade
+	# 				target = ROOT
+	# 				days = 365
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	#FROM is the one that joins the faction
+	# on_create_faction = {
+	# 	effect = {
+	# 		# Sunset invasion check
+	# 		if = {
+	# 			limit = {
+	# 				FROM = { is_puppet = no }
+	# 				OR = {
+	# 					AND = {
+	# 						tag = MEX
+	# 						FROM = {
+	# 							capital_scope = {
+	# 								NOT = { is_on_continent = south_america }
+	# 							}
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						FROM = {
+	# 							tag = MEX
+	# 						}
+	# 						capital_scope = {
+	# 							NOT = { is_on_continent = south_america }
+	# 						}
+	# 					}
+	# 				}
+	# 			}
+	# 			set_country_flag = achievement_failed_sunset_invasion
+	# 		}
+	# 	}
+	# }
+
+	#FROM is country getting invited.
+	# on_offer_join_faction = {
+	# 	effect = {
+	# 		#Give achievement to nation joining a faction, but not in one from game start
+	# 		if = {
+	# 			limit = {
+	# 				date > 1936.01.02
+	# 			}
+	# 			FROM = {
+	# 				if = {
+	# 					limit = {
+	# 						is_faction_leader = no
+	# 					}
+	# 					set_country_flag = achievement_has_joined_faction
+	# 				}
+	# 			}
+	# 		}
+	# 		#Remove anti_soviet_pact if joining commie Soviet in faction
+	# 		if = {
+	# 			limit = {
+	# 				original_tag = SOV
+	# 				has_government = communism
+	# 				FROM = {
+	# 					has_idea = anti_soviet_pact 
+	# 				}
+	# 			}
+	# 			FROM = {
+	# 				remove_ideas = anti_soviet_pact
+	# 			}
+	# 		}
+	
+	# 		# Sunset invasion check
+	# 		if = {
+	# 			limit = {
+	# 				is_puppet = no
+	# 				OR = {
+	# 					AND = {
+	# 						tag = MEX
+	# 						FROM = {
+	# 							capital_scope = {
+	# 								NOT = { is_on_continent = south_america }
+	# 							}
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						FROM = {
+	# 							tag = MEX
+	# 						}
+	# 						capital_scope = {
+	# 							NOT = { is_on_continent = south_america }
+	# 						}
+	# 					}
+	# 				}
+	# 			}
+	# 			set_country_flag = achievement_failed_sunset_invasion
+	# 		}			
+	# 	}
+	# }
+
+	#FROM is faction leader on join faction requests. THIS DOES NOT FIRE ON ADD_TO_FACTION EFFECT! USE ON_OFFER_JOIN_FACTION!
+	# on_join_faction = {
+	# 	effect = {
+	# 		set_country_flag = achievement_has_joined_faction
+	# 		#Remove anti_soviet_pact if joining commie Soviet in faction
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = anti_soviet_pact 
+	# 				FROM = {
+	# 					original_tag = SOV
+	# 					has_government = communism
+	# 				}
+	# 			}
+	# 			remove_ideas = anti_soviet_pact
+	# 		}
+
+	# 		# Sunset invasion check
+	# 		if = {
+	# 			limit = {
+	# 				is_puppet = no
+	# 				OR = {
+	# 					AND = {
+	# 						tag = MEX
+	# 						FROM = {
+	# 							capital_scope = {
+	# 								NOT = { is_on_continent = south_america }
+	# 							}
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						FROM = {
+	# 							tag = MEX
+	# 						}
+	# 						capital_scope = {
+	# 							NOT = { is_on_continent = south_america }
+	# 						}
+	# 					}
+	# 				}
+	# 			}
+	# 			set_country_flag = achievement_failed_sunset_invasion
+	# 		}
+	# 		# Romania shouldn't declare war on Bulgaria on historical mode, if both are going to join the Axis
+	# 		if = {
+	# 			limit = {
+	# 				original_tag = BUL
+	# 				FROM = { original_tag = GER }
+	# 				is_historical_focus_on = yes
+	# 			}
+	# 			ROM = {
+	# 				add_ai_strategy = {
+	# 					type = befriend
+	# 					id = "BUL"
+	# 					value = 200
+	# 				}
+	# 			}
+	# 		}																						 
+	# 	}
+	# }
+
+	#FROM is war target
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = SOV }
+					ROOT = { tag = GER }
+				}
+				GER = {
+					swap_ideas = {
+						remove_idea = general_staff
+						add_idea = general_staff2
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+					OR = {
+						AND = {
+							has_naval_treaty_trigger = yes
+							FROM = {
+								is_major = yes
+							}
+						}
+						AND = {
+							is_major = yes
+							FROM = {
+								has_naval_treaty_trigger = yes
+							}
+						}
+					}
+				}
+				every_country = {
+					limit = { has_naval_treaty_trigger = yes }
+					remove_naval_treaty_effect = yes
+					#MTG_TODO_GABRIEL: news event
+				}
+	        }
+			
+
+			## Soviet war after purge
+			if = {
+				limit = {
+					OR = {
+						FROM = { tag = SOV }
+						ROOT = { tag = SOV }
+					}
+					SOV = {
+						NOT = { has_country_flag = SOV_war_since_purge }
+						has_completed_focus = SOV_great_purge
+					}
+				}
+				SOV = { set_country_flag = SOV_war_since_purge }
+			}							
+            #Greece if ita or ger is a  player
+			if = {
+				limit = {
+					OR = {
+						FROM = { tag = GRE }
+						ROOT = { tag = GRE }
+					}
+					OR = { 
+						ITA = { is_ai = no } 
+						GER = { is_ai = no } 
+					}			
+			    }		
+				GRE = { add_ideas = GRE_spirit_of_spartans }
+			}
+			# Remove pact opinion modifiers if at war with Germany
+			if = {
+				limit = {
+					tag = GER
+					FROM = {
+						OR = {
+							has_opinion_modifier = anti_comintern_pact_opinion
+							has_opinion_modifier = tripartite_pact_opinion
+							has_idea = anti_soviet_pact
+						}
+					}
+				}
+				FROM = {
+					remove_opinion_modifier = { target = GER modifier = anti_comintern_pact_opinion }
+					remove_opinion_modifier = { target = GER modifier = tripartite_pact_opinion }
+					remove_ideas = anti_soviet_pact
+				}
+			}
+			if = {
+				limit = {
+					FIN = { has_completed_focus = FIN_learn_from_the_winter_war }
+					ROOT = {
+						TAG = FIN
+					}
+					FROM = {
+						TAG = SOV
+					}
+				}
+				FIN = { complete_national_focus = FIN_begin_the_continuation_war }	 
+			}
+			if = {
+				limit = {
+					FIN = { has_completed_focus = FIN_learn_from_the_winter_war }
+					ROOT = {
+						TAG = SOV
+					}
+					FROM = {
+						TAG = FIN
+					}
+				}
+				FIN = { complete_national_focus = FIN_begin_the_continuation_war }	 
+			}
+			#Germany has started a war - allies should try to contain Germany
+			if = {
+				limit = {
+					ROOT = {
+						TAG = GER
+					}
+					FROM = {
+						TAG = POL
+					}
+				}
+				ENG = { country_event = { id = britain.38 days = 7 } }		
+				SAF = { country_event = { id = britain.38 days = 7 } }	
+				CAN = { country_event = { id = britain.38 days = 7 } }
+				AST = { country_event = { id = britain.38 days = 7 } }
+				NZL = { country_event = { id = britain.38 days = 7 } }
+				RAJ = { country_event = { id = britain.38 days = 7 } }		
+				FRA = {
+					add_timed_idea = {
+						idea = FRA_saarland
+						days = 14
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						TAG = GER
+					}
+					FROM = {
+						TAG = POL
+					}
+					NOT = { has_global_flag = sov_yes_pact }
+				}
+				SOV = { country_event = { id = germany.248 days = 3 } }				
+			}			
+			#Call Anti-Soviet pact members to war
+			if = {
+				limit = {
+					ROOT = { tag = SOV }
+					FROM = { has_idea = anti_soviet_pact }
+				}
+				FROM = {
+					country_event = { id = germany.84 days = 1 }
+				}
+			}
+			#Remove MEFO bills if Germany goes to war
+			if = {
+				limit = {
+					ROOT = { original_tag = GER }
+					ROOT = { GER_has_mefo_bills = yes }
+					NOT = { FROM = { original_tag = GER } } # Don't remove it from Fascist Germany if they start the civil war
+				}
+				ROOT = {
+					GER_remove_mefo_bills = yes
+					set_country_flag = mefo_bills_removed_through_war
+				}
+			}
+
+			#Remove MEFO bills if Germany is declared war on
+			if = {
+				limit = {
+					FROM = { original_tag = GER }
+					FROM = { GER_has_mefo_bills = yes }
+				}
+				FROM = {
+					GER_remove_mefo_bills = yes
+					set_country_flag = mefo_bills_removed_through_war
+				}
+			}
+
+			#Remove previous ideology civil war faction from Democratic Germany faction and add Democratic civil war faction to Germany's faction
+			if = {
+				limit = {
+					FROM = {
+						is_in_faction_with = GER
+					#	has_civil_war = yes
+						NOT = { has_government = democratic }
+					}
+					has_government = democratic
+					GER = { has_government = democratic }
+				}
+				FROM = { set_country_flag = GER_civil_war_target }
+				GER = { remove_from_faction = FROM }
+				GER = { add_to_faction = ROOT }
+				GER = { country_event = wtt_germany.52 }
+			}
+
+			#If prepared by siphoning equipment, receive equipment back
+			if = {
+				limit = {
+					FROM = {
+						has_civil_war = yes
+						has_country_flag = siphoned_equipment_stockpiles_for_civil_war
+					}
+					has_civil_war = yes
+				}
+				FROM = {
+					clr_country_flag = siphoned_equipment_stockpiles_for_civil_war
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 1000
+					}
+				}
+			}
+
+			#If prepared with surprise attack plan, get bonus
+			if = {
+				limit = {
+					FROM = {
+						original_tag = ROOT
+						#has_civil_war = yes
+						has_country_flag = formulated_surprise_attack_plan_for_civil_war
+					}
+					#has_civil_war = yes
+				}
+				FROM = {
+					clr_country_flag = formulated_surprise_attack_plan_for_civil_war
+					add_timed_idea = {
+						idea = civil_war_surprise_attack_plan
+						days = 30
+					}
+				}
+			}
+		
+		}
+	}
+	
+	# When a new faction is formed
+	on_faction_formed = {
+		effect = {
+			news_event = { id = news.159 }
+		}
+	}
+
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						FROM = {
+							has_idea = free_trade 
+						}					
+						ROOT = {
+							has_idea = free_trade 
+						}
+					}
+				}
+				add_ideas = export_focus
+			}
+			if = {
+				limit = {
+					OR = {
+						FROM = {
+							OR = {
+								has_idea = disarmed_nation 
+								has_idea = volunteer_only
+							}
+						}					
+						ROOT = {
+						    OR = {
+								has_idea = disarmed_nation 
+								has_idea = volunteer_only
+							}
+						}
+					}
+				}
+				add_ideas = limited_conscription
+			}		
+		}	
+	}	
+	# ROOT is capitulated country, FROM is winner
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { original_tag = POL }
+					FROM = { 
+						OR = {
+							original_tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				FRA = {
+					add_timed_idea = {
+						idea = FRA_phoney 
+						days = 180 
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = NOR }
+					FROM = { 
+						OR = {
+							original_tag = GER
+							is_in_faction_with = GER
+						}
+					}
+				}
+				FRA = {
+					add_timed_idea = {
+						idea = French_Malaise 
+						days = 365 
+					}
+					remove_ideas = FRA_phoney
+				}
+				hidden_effect = {
+					play_song = "Boum (Charles Trenet)"
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = RAJ }
+					FROM = {
+						OR = {
+							original_tag = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+				USA = { add_ideas = raj_capitulated }
+				USA =  { country_event = { id = usa.67 } }
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = AST }
+					FROM = {
+						OR = {
+							original_tag = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+				USA = { add_ideas = ast_capitulated }
+				USA =  { country_event = { id = usa.71 }}
+			}
+			if = {
+				limit = {
+					NOT = { original_tag = GER }
+					NOT = { has_government = fascism }
+					NOT = { has_civil_war = yes }
+				}
+			}
+			news_event = { id = country_capitulated.0 days = 0 }
+			if = {
+				limit = { 
+					original_tag = POL
+					has_government = neutrality
+				}
+				retire_country_leader = yes
+			}
+			if = {
+				limit = {
+					original_tag = YUG
+				}
+				remove_ideas = YUG_idea_economic_aid
+			}
+			if =  { #bug fix to central africa flipping to GER on BEL capitulation
+                limit = {
+                    ROOT = { tag = BEL is_in_faction = yes }
+                    FROM = { is_in_faction_with = GER }
+                }
+
+                if = { limit = { 295 = { CONTROLLER = { is_in_faction_with = GER } } }
+                    BEL = { set_state_controller = 295 }
+                }
+
+                if = { limit = { 538 = { CONTROLLER = { is_in_faction_with = GER } } }
+                    BEL = { set_state_controller = 538 }
+                }
+
+                if = { limit = { 718 = { CONTROLLER = { is_in_faction_with = GER } } }
+                    BEL = { set_state_controller = 718 }
+                }
+
+                if = { limit = { 768 = { CONTROLLER = { is_in_faction_with = GER } } }
+                    BEL = { set_state_controller = 768 }
+                }
+				if = { limit = { 769 = { CONTROLLER = { is_in_faction_with = GER } } }
+                    BEL = { set_state_controller = 769 }
+                }
+            }
+
+			if =  { #AA Line Peace 
+                limit = {
+                    ROOT = { original_tag = "SOV" }
+                    FROM = { is_in_faction_with = GER }
+                }
+				# German Occupation Zone
+
+				SOV = {
+					white_peace = GER	
+					news_event = { id = news.4 days = 5 }		
+					diplomatic_relation = { country = GER relation = non_aggression_pact }
+			
+				}
+
+				GER = {
+					set_country_flag = GER_victory_over_the_soviet_union
+					diplomatic_relation = { country = SOV relation = non_aggression_pact }
+				}
+
+				FIN = {
+					transfer_state = 146
+					transfer_state = 216
+					transfer_state = 215
+					transfer_state = 147
+					transfer_state = 213
+				}
+
+				if = {
+					limit = {
+						266 = {
+							is_owned_by = SOV
+						}
+						NOT = {
+							291 = {
+								is_controlled_by = ITA
+							}
+							419 = {
+								is_controlled_by = ENG
+							}
+						}
+					}
+					GER = {
+						transfer_state = 420
+						transfer_state = 419
+						transfer_state = 418
+						transfer_state = 266
+	 					transfer_state = 416
+					}
+				}
+				else_if = {
+					limit = {
+						266 = {
+							is_owned_by = SOV
+						}
+						291 = {
+							is_controlled_by = ITA
+						}
+					}
+					ITA = {
+						transfer_state = 420
+						transfer_state = 419
+						transfer_state = 418
+						transfer_state = 266
+	 					transfer_state = 416
+					}	
+				}
+				else_if = {
+					limit = {
+						266 = {
+							is_owned_by = SOV
+						}
+						419 = {
+							is_controlled_by = ENG
+						}
+					}
+					PER = {
+						transfer_state = 420
+						transfer_state = 419
+						transfer_state = 418
+						transfer_state = 266
+	 					transfer_state = 416
+					}	
+				}					
+
+				if = {
+					limit = {
+						ROM = { is_in_faction_with = GER }
+					}
+					ROM = {
+						transfer_state = 80
+						transfer_state = 78 
+						transfer_state = 766 
+					}
+					else = {
+						GER = {
+							transfer_state = 80
+							transfer_state = 78 
+							transfer_state = 766 
+						}
+					}
+				}
+
+				GER = {
+					transfer_state = 208
+					transfer_state = 209
+					transfer_state = 210
+					transfer_state = 242
+					transfer_state = 243
+					transfer_state = 224
+					transfer_state = 220
+					transfer_state = 240
+					transfer_state = 260
+					transfer_state = 245
+					transfer_state = 218
+					transfer_state = 238
+					transfer_state = 237
+					transfer_state = 236
+					transfer_state = 247
+					transfer_state = 248
+					transfer_state = 223
+					transfer_state = 254
+					transfer_state = 256
+					transfer_state = 250
+					transfer_state = 195
+					transfer_state = 398
+					transfer_state = 137
+					transfer_state = 651
+
+					transfer_state = 217
+					transfer_state = 265
+					transfer_state = 239
+					transfer_state = 257
+					transfer_state = 258
+					transfer_state = 222
+					transfer_state = 205
+					transfer_state = 219
+					transfer_state = 265
+					transfer_state = 246
+					transfer_state = 263
+					transfer_state = 244
+					transfer_state = 264
+					transfer_state = 351
+
+					transfer_state = 253
+					transfer_state = 252
+					transfer_state = 255
+					transfer_state = 239
+					transfer_state = 401
+					transfer_state = 407
+					transfer_state = 406
+					transfer_state = 652
+					transfer_state = 251
+					transfer_state = 249
+					transfer_state = 399
+					transfer_state = 400
+					transfer_state = 397
+					transfer_state = 214
+					transfer_state = 262
+					transfer_state = 229
+					transfer_state = 230
+					transfer_state = 231
+					transfer_state = 232
+					transfer_state = 233
+					transfer_state = 234
+					transfer_state = 235
+					transfer_state = 93
+					transfer_state = 91
+					transfer_state = 89
+					transfer_state = 199
+					transfer_state = 201
+					transfer_state = 198
+					transfer_state = 202
+					transfer_state = 193
+					transfer_state = 192
+					transfer_state = 203
+					transfer_state = 197
+					transfer_state = 225
+					transfer_state = 259
+					transfer_state = 226
+					transfer_state = 196
+					transfer_state = 200
+					transfer_state = 221
+					transfer_state = 228
+					transfer_state = 227
+					transfer_state = 97
+					transfer_state = 94
+					transfer_state = 95
+					transfer_state = 96
+					transfer_state = 194
+					transfer_state = 204
+					transfer_state = 206
+					transfer_state = 207
+					transfer_state = 241
+					transfer_state = 11
+					transfer_state = 784
+					transfer_state = 189
+					transfer_state = 12
+					transfer_state = 190
+					transfer_state = 13
+					transfer_state = 191
+
+					transfer_state = 808
+					transfer_state = 809
+					transfer_state = 810
+					transfer_state = 811
+					transfer_state = 812
+					transfer_state = 813
+					transfer_state = 814
+					transfer_state = 815
+					transfer_state = 834
+					transfer_state = 879
+					transfer_state = 880
+					transfer_state = 825
+					transfer_state = 826
+					transfer_state = 827
+					transfer_state = 828
+					transfer_state = 829
+					transfer_state = 821
+					transfer_state = 833
+				}		
+			}
+			# ROOT is capitulated country, FROM is winner
+			if = {#fall of china
+				limit = {
+                    ROOT = { tag = CHI }
+					FROM = {
+						OR = {
+							original_tag = JAP
+							is_in_faction_with = JAP
+						}
+					}
+                }
+				#CHI = {
+				#	white_peace = JAP		
+				#	diplomatic_relation = { country = JAP relation = non_aggression_pact }
+				#
+				#}
+				JAP = {
+					set_state_controller = 608
+					set_state_controller = 614
+					set_state_controller = 597
+					set_state_controller = 743
+					set_state_controller = 607
+					set_state_controller = 598
+					set_state_controller = 749
+					set_state_controller = 613
+					set_state_controller = 606
+					set_state_controller = 596
+					set_state_controller = 595
+					set_state_controller = 600
+					set_state_controller = 620
+					set_state_controller = 602
+					set_state_controller = 750
+					set_state_controller = 605
+					set_state_controller = 744
+					set_state_controller = 603
+					set_state_controller = 748
+					set_state_controller = 751
+					set_state_controller = 752
+					set_state_controller = 601
+					set_state_controller = 622
+					set_state_controller = 621
+					set_state_controller = 615
+					set_state_controller = 746
+					set_state_controller = 753
+					set_state_controller = 283
+					set_state_controller = 616
+					set_state_controller = 756
+					set_state_controller = 755
+					set_state_controller = 754
+					set_state_controller = 604
+					set_state_controller = 747
+					set_state_controller = 325
+					set_state_controller = 599
+					set_state_controller = 594
+					set_state_controller = 592
+					set_state_controller = 593
+					set_state_controller = 591
+					
+				}
+			}
+			if =  { #fall of france
+                limit = {
+                    ROOT = { tag = FRA is_in_faction_with = ENG }
+					FROM = {
+						OR = {
+							original_tag = GER
+							is_in_faction_with = GER
+						}
+					}
+                }
+				ENG = {				
+					load_oob = ENG_France_Merchant_fleet 
+					add_timed_idea = { idea = ENG_darkest_hour	days = 365 }
+					news_event = { id = news.44 }	
+				}
+				# German Occupation Zone
+				FRA = {
+					set_cosmetic_tag = FRA_FREE	
+					set_country_flag = free_france			
+					set_capital = { state = 539 }
+					add_ideas = allied_construction_engineers
+					country_event = france.10
+					if = { limit = { has_idea = FRA_disjointed_government}
+					remove_ideas = FRA_disjointed_government }
+					if = { limit = { is_ai = yes }					
+						load_oob = FRA_ai						
+					}
+					
+                    FRA_maurice_gamelin = { remove_unit_leader_role = yes }
+                    FRA_maxime_weygand = { remove_unit_leader_role = yes }
+                    FRA_alphonse_georges = { remove_unit_leader_role = yes }
+					FRA_charles_huntziger = { remove_unit_leader_role = yes }
+					FRA_antoinemariebenoît_besson = { remove_unit_leader_role = yes }
+					FRA_rené_olry = { remove_unit_leader_role = yes }
+					FRA_rené_prioux = { remove_unit_leader_role = yes }
+					FRA_georges_blanchard = { remove_unit_leader_role = yes }
+					FRA_charlesmarie_condé = { remove_unit_leader_role = yes }
+					FRA_paul_legentilhomme = { remove_unit_leader_role = yes }
+				}
+				GER = {
+					set_state_controller = 28
+					set_state_controller = 17
+					set_state_controller = 27
+					set_state_controller = 18
+					set_state_controller = 29
+					set_state_controller = 15
+					set_state_controller = 16
+					set_state_controller = 24
+					set_state_controller = 30
+					set_state_controller = 14
+					set_state_controller = 23
+					set_state_controller = 19
+					set_state_controller = 785
+					set_state_controller = 806				
+					country_event = { days = 7 id = germany.236 }
+					country_event = { days = 7 id = germany.107 }
+					country_event = { days = 2 id = germany.320 }
+					remove_ideas = GER_blitzkrieg
+					remove_ideas = GER_phoney_war
+					every_state = {
+						limit = {has_state_flag = atlantikwall_state}
+						add_dynamic_modifier = {
+							modifier = atlantikwall_5
+						}
+					}
+					ITA = {
+						add_ideas = ITA_atlantikwall_5
+					}
+					GER = {
+						add_ideas = ITA_atlantikwall_5
+					}
+					every_country = {
+						limit = {
+							NOT = {
+								tag = USA
+							}
+							OR = {
+								tag = ENG
+								is_in_faction_with = ENG
+							}
+						}
+						add_ideas = ENG_atlantikwall_5
+					}
+					set_country_flag = GER_atlantikwall_5
+				}		
+				EFR = {
+					add_state_core = 20
+					add_state_core = 21
+					add_state_core = 22
+				    add_state_core = 25
+					add_state_core = 26
+					add_state_core = 31
+					add_state_core = 32
+					add_state_core = 33
+					add_state_core = 735
+					add_state_core = 851
+					add_state_core = 799
+					
+					transfer_state = 26
+					transfer_state = 22
+					transfer_state = 31
+					transfer_state = 25
+					transfer_state = 20
+					transfer_state = 33
+					transfer_state = 21
+					transfer_state = 735
+					transfer_state = 851
+					transfer_state = 799
+					transfer_state = 32
+					
+
+					transfer_state = 677
+					transfer_state = 680
+					transfer_state = 554
+					transfer_state = 458
+					transfer_state = 459
+					transfer_state = 460
+					transfer_state = 461
+					transfer_state = 462
+				
+					transfer_state = 665
+					transfer_state = 671
+					transfer_state = 670
+					transfer_state = 741
+					transfer_state = 286
+					transfer_state = 513
+					transfer_state = 553
+					set_capital = { state = 26 }
+					remove_ideas = EFR_war
+					diplomatic_relation = { country = ENG relation = non_aggression_pact }				
+					diplomatic_relation = { country = FRA relation = non_aggression_pact }
+					diplomatic_relation = { country = SAF relation = non_aggression_pact }
+					diplomatic_relation = { country = CAN relation = non_aggression_pact }
+					diplomatic_relation = { country = RAJ relation = non_aggression_pact }
+					diplomatic_relation = { country = AST relation = non_aggression_pact }
+					diplomatic_relation = { country = NZL relation = non_aggression_pact }
+					diplomatic_relation = { country = GER relation = non_aggression_pact }					
+					every_state = {
+						limit = {
+							NOT = {
+								is_core_of = FRA
+							}
+							is_controlled_by = EFR
+						}
+						add_claim_by  = FRA
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = POL
+					has_global_flag = sov_yes_pact
+		            SOV = { exists = yes }
+		            NOT =  { GER = { has_war_with = SOV } }
+				}
+				GER = { country_event = germany.14 } 
+			}			
+			if = {
+				limit = {
+					tag = DEN
+				}
+				ENG = { country_event = usa.48 } 
+			}
+			if = {
+				limit = {
+					tag = NOR
+				}
+				ENG = { load_oob = ENG_Norway_Merchant_fleet } 
+			}
+         	if = {
+				limit = {
+					original_tag = BEL
+					BEL = { has_war_with = GER }
+					BEL = { is_in_faction_with = ENG } 
+		            ENG = { has_capitulated = no }
+				}
+				#ENG = {
+				#	set_autonomy = { target = BEL autonomy_state = autonomy_colony }
+				#}
+				BEL = {
+					load_oob = BEL_ai					
+				}
+			}
+         	if = {
+				limit = {
+					original_tag = HOL
+					HOL = { has_war_with = GER }
+					HOL = { is_in_faction_with = ENG } 
+		            ENG = { has_capitulated = no }
+				}
+				#ENG = {
+				#	set_autonomy = { target = HOL autonomy_state = autonomy_dominion }
+				#	set_autonomy = { target = INS autonomy_state = autonomy_dominion }
+				#}
+			}
+		}
+	}
+
+	# ROOT is previously capitulated country
+	on_uncapitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { original_tag = RAJ }
+				}
+				USA = { remove_ideas = raj_capitulated }
+				USA =  { country_event = { id = usa.68 } }
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = AST }
+				}
+				USA = { remove_ideas = ast_capitulated }
+				USA =  { country_event = { id = usa.72 }}
+			}
+			if = {
+				limit = {
+					original_tag = FRA
+					has_government = democratic
+					is_puppet = no
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+    
+	# on_government_change = {
+	# 	effect = {			
+	# 		#Make sure Soviet can always create factions
+	# 		if = {
+	# 			limit = {
+	# 				original_tag = SOV
+	# 				NOT = { has_government = communism }
+	# 			}
+	# 			set_rule = { can_create_factions = yes }
+	# 		}
+	# 		if = {
+	# 			limit = { has_government = democratic }
+	# 			if = {
+	# 				limit = { has_idea = democratic_opposition_voicing_protests }
+	# 				remove_ideas = democratic_opposition_voicing_protests
+	# 			}
+	# 			if = {
+	# 				limit = { has_idea = democratic_revolutionaries }
+	# 				remove_ideas = democratic_revolutionaries
+	# 			}
+	# 			if = {
+	# 				limit = { has_idea = reign_of_terror }
+	# 				remove_ideas = reign_of_terror
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = { has_government = communism }
+	# 			if = {
+	# 				limit = { TAG = SAF }
+	# 				set_cosmetic_tag = SAF_COM
+	# 			}
+	# 			if = {
+	# 				limit = { has_idea = communist_partisans_recruiting }
+	# 				remove_ideas = communist_partisans_recruiting
+	# 			}
+	# 			if = {
+	# 				limit = { has_idea = communist_revolutionaries }
+	# 				remove_ideas = communist_revolutionaries
+	# 			}
+	# 			if = {
+	# 				limit = { has_idea = communism_defeated }
+	# 				remove_ideas = communism_defeated
+	# 			}
+
+	# 			#Remove anti_soviet_pact
+	# 			if = {
+	# 				limit = { has_idea = anti_soviet_pact }
+	# 				remove_ideas = anti_soviet_pact
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = { has_government = fascism }
+	# 			if = {
+	# 				limit = { has_idea = fascist_assault_divisions }
+	# 				remove_ideas = fascist_assault_divisions
+	# 			}
+	# 			if = {
+	# 				limit = { has_idea = fascist_revolutionaries }
+	# 				remove_ideas = fascist_revolutionaries
+	# 			}
+	# 			if = {
+	# 				limit = { has_idea = fascism_defeated }
+	# 				remove_ideas = fascism_defeated
+	# 			}
+	# 			if = {
+	# 				limit = { has_idea = anti_nazi_coup }
+	# 				remove_ideas = anti_nazi_coup
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = { has_government = fascism }
+	# 			if = {
+	# 				limit = { has_idea = free_trade }
+	# 				add_ideas = export_focus
+	# 			}
+	# 		}
+	# 		#Replace the following two with events for SOV if they are not communist.
+	# 		#if = {
+	# 		#	limit = { 
+	# 		#		OR = {
+	# 		#			has_idea = trotskyite_plot 
+	# 		#			has_idea = trotskyite_plot_purged
+	# 		#		}
+	# 		#		NOT = {
+	# 		#			has_civil_war = yes
+	# 		#		}
+	# 		#	}
+	# 		#	country_event = { id = soviet.54 }
+	# 		#}
+	# 	}
+	# }
+
+	# on_coup_succeeded = {
+	# 	effect = {
+	# 		#Turn elections on for democracies created from coup
+	# 		random_other_country = {
+	# 			limit = {
+	# 				has_government = democratic
+	# 				original_tag = ROOT
+	# 			}
+	# 			set_politics = {
+	# 				elections_allowed = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	#ROOT is winner #FROM gets annexed - This will also fire on_annex
+	on_civil_war_end = {
+		effect = {
+
+			#End of SCW
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SPR
+					}
+				}
+				ROOT = {
+					set_country_flag = achievement_won_spanish_civil_war
+				}
+			}
+			if = {
+				limit = {
+					has_government = democratic			
+				}
+				set_politics = {
+					elections_allowed = yes
+				}
+			}
+			#End of German Civil War
+			if = {
+				limit = {
+					FROM = {
+						original_tag = GER
+						has_government = fascism
+					}
+					original_tag = GER
+					has_government = neutrality
+				}
+				set_global_flag = { flag = civil_war_olympics value = 1 days = 30 }
+				country_event = { id = wtt_germany.18 days = 1 }
+			}
+
+			#End of ideology Civil War
+			if = {
+				limit = {
+					has_country_flag = ideology_civil_war
+				}
+				clr_country_flag = ideology_civil_war
+				set_country_flag = { flag = won_ideology_civil_war value = 1 days = 365 }
+				country_event = { id = generic.11 days = 1 }
+			}
+		}
+	}
+
+	#used when puppeting in a peace conference
+	#ROOT = nation being puppeted, FROM = overlord
+	
+	on_puppet = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						original_tag = DDR
+						original_tag = WGR
+						original_tag = GER
+					}
+					has_government = communism
+					has_country_leader = { name = "Wilhelm Pieck" }
+					FROM = {
+						original_tag = SOV
+						has_government = communism
+						has_country_leader = { name = "Joseph Stalin" } # Would look silly if Trotsky released Stalin's Puppet
+					}
+				}
+				add_country_leader_trait = stalins_puppet
+			}	
+		}
+	}
+	
+	#used when puppeting through the occupied territories menu during peace time (or when releasing from non-core but owned territory, f.e. Britain releasing Egypt)
+	#ROOT = nation being released, FROM = overlord
+	
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						original_tag = DDR
+						original_tag = WGR
+						original_tag = GER
+					}
+					has_government = communism
+					has_country_leader = { name = "Wilhelm Pieck" }
+					FROM = {
+						original_tag = SOV
+						has_government = communism
+						has_country_leader = { name = "Joseph Stalin" } # Would look silly if Trotsky released Stalin's Puppet
+					}
+				}
+				add_country_leader_trait = stalins_puppet
+			}
+		}
+	}
+	
+	on_army_leader_promoted = {
+		effect = {
+			add_timed_unit_leader_trait = {
+				trait = recently_promoted
+				days = 100
+			}
+		}
+	}
+	# root country that invades
+	# scope state that is invaded
+	# from scope state that the invasion started
+	# on_naval_invasion = {
+	# 	effect = {
+	# 	}
+	# }
+	
+	
+	# root country that paradrops
+	# scope state that is paradroped into
+	# from scope state that the paradrop started
+	on_paradrop = {
+	    effect = {
+		    set_country_flag = has_paradropped_flag
+		}
+	}
+	on_ruling_party_change = { 
+		# temp var old_ideology_token is available for effects
+		effect = {
+			every_controlled_state = {
+				limit = {
+					has_resistance = yes
+				}
+				set_temp_variable = { new_compliance = compliance }
+				multiply_temp_variable = { new_compliance = 0.5 }
+				set_compliance = new_compliance
+			}
+		}
+	}
+}

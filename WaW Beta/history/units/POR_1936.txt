@@ -1,0 +1,301 @@
+﻿division_template = {
+#	name = "Divisão de Infanteria"		# Infantry Division
+#	division_names_group = POR_INF_01
+#	# Note: each regiment could also mobilize a 3rd battalion if called up
+#	regiments = {
+#		infantry = { x = 0 y = 0 }
+#		infantry = { x = 0 y = 1 }
+#		infantry = { x = 0 y = 2 }
+#		infantry = { x = 0 y = 3 }
+#		
+#		infantry = { x = 1 y = 0 }
+#		infantry = { x = 1 y = 1 }
+#		infantry = { x = 1 y = 2 }
+#		infantry = { x = 1 y = 3 }
+#		
+#		artillery_brigade = { x = 2 y = 0 }
+#		artillery_brigade = { x = 2 y = 1 }
+#	}
+#	support = {
+#		DIV_HQ = { x = 0 y = 0 } 
+#		artillery = { x = 0 y = 1 }  # Full howitzer regiment
+#		recon = { x = 1 y = 0 }   
+#		engineer = { x = 1 y = 1 }  
+#        anti_air_company = { x = 0 y = 2 }		
+#	}
+#}
+#
+#division_template = {
+#	name = "Divisão de Montanha"		# Infantry Division
+#	division_names_group = POR_MNT_01
+#	# Note: each regiment could also mobilize a 3rd battalion if called up
+#	regiments = {
+#		mountaineers = { x = 0 y = 0 }	
+#		mountaineers = { x = 0 y = 1 }
+#		mountaineers = { x = 0 y = 2 }	
+#		mountaineers = { x = 0 y = 3 }	
+#
+#		mountaineers = { x = 1 y = 0 }
+#		mountaineers = { x = 1 y = 1 }
+#		mountaineers = { x = 1 y = 2 }
+#		mountaineers = { x = 1 y = 3 }
+#		
+#		artillery_brigade = { x = 2 y = 0 }
+#		artillery_brigade = { x = 2 y = 1 }
+#	}
+#	support = {
+#		DIV_HQ = { x = 0 y = 0 } 
+#		artillery = { x = 0 y = 1 }  # Full howitzer regiment
+#		recon = { x = 1 y = 0 }   
+#		engineer = { x = 1 y = 1 } 
+#        anti_air_company = { x = 0 y = 2 }		
+#	}
+#}
+#division_template = {
+#	name = "Brigada de Bicycle" 		# Bicycle Brigade
+#	division_names_group = POR_CAV_01
+#	# Note: Bicycle regiments included about 5 squadrons/companies
+#	regiments = {
+#		bicycle_battalion = { x = 0 y = 0 }
+#       	bicycle_battalion = { x = 0 y = 1 }
+#		bicycle_battalion = { x = 0 y = 2 }
+#		bicycle_battalion = { x = 0 y = 3 }
+#		
+#        bicycle_battalion = { x = 1 y = 0 }
+#		bicycle_battalion = { x = 1 y = 1 }
+#        bicycle_battalion = { x = 1 y = 2 }
+#		bicycle_battalion = { x = 1 y = 3 }
+#		
+#        artillery_brigade = { x = 2 y = 0 }
+#		artillery_brigade = { x = 2 y = 1 }
+#	}
+#	support = {
+#		DIV_HQ = { x = 0 y = 0 } 
+#		artillery = { x = 0 y = 1 }  # Full howitzer regiment
+#		recon = { x = 1 y = 0 }   
+#		engineer = { x = 1 y = 1 }  
+#        anti_air_company = { x = 0 y = 2 }	
+#	}
+#}
+#division_template = {
+#	name = "Brigada de Tanka" 		# Tank Brigade
+#	division_names_group = POR_ARM_01
+#	# Note: Cavalry regiments included about 5 squadrons/companies
+#	regiments = {
+#		motorized = { x = 0 y = 0 }
+#		motorized = { x = 0 y = 1 }
+#		
+#		motorized = { x = 1 y = 0 }
+#		motorized = { x = 1 y = 1 }
+#		
+#		light_armor = { x= 2 y = 0 }
+#		light_armor = { x= 2 y = 1 }
+#		
+#		light_armor = { x= 3 y = 0 }
+#		light_armor = { x= 3 y = 1 }
+#	
+#		light_armor = { x= 4 y = 0 }
+#		light_armor = { x= 4 y = 1 }
+#		
+#	}
+#	support = {
+#		DIV_HQ = { x = 0 y = 0 } 
+#		artillery = { x = 0 y = 1 }  # Full howitzer regiment
+#		mot_recon = { x = 1 y = 0 }   
+#		engineer = { x = 1 y = 1 } 
+#        anti_air_company = { x = 0 y = 2 }	
+#	}
+#}
+#
+#division_template = {
+#	name = "Brigada de Cavalaria" 		# Cavalry Brigade
+#	division_names_group = POR_CAV_01
+#	# Note: Cavalry regiments included about 5 squadrons/companies
+#	regiments = {
+#		cavalry = { x = 0 y = 0 }
+#		cavalry = { x = 0 y = 1 }
+#		cavalry = { x = 1 y = 0 }
+#		cavalry = { x = 1 y = 1 }
+#		cavalry = { x = 1 y = 2 }
+#	}
+#}
+#units = {
+#	###### Exército Portugues #####
+#	# 1a Distrito Militar #
+#	division = { # "1a Divisão de Infanteria"
+#		division_name = {
+#				is_name_ordered = yes
+#				name_order = 1
+#		}
+#		location = 11805
+#		division_template = "Divisão de Infanteria"
+#		start_experience_factor = 0.2
+#	}
+#	division = { # "2a Divisão de Infanteria"
+#		division_name = {
+#				is_name_ordered = yes
+#				name_order = 2
+#		}
+#		location = 11805
+#		division_template = "Divisão de Infanteria"
+#		start_experience_factor = 0.2
+#	}
+#	division = { # "2a Divisão de Infanteria"
+#		division_name = {
+#				is_name_ordered = yes
+#				name_order = 3
+#		}
+#		location = 11805
+#		division_template = "Divisão de Infanteria"
+#		start_experience_factor = 0.2
+#	}
+#	division = { # "2a Divisão de Infanteria"
+#		division_name = {
+#				is_name_ordered = yes
+#				name_order = 4
+#		}
+#		location = 11805
+#		division_template = "Divisão de Infanteria"
+#		start_experience_factor = 0.2
+#	}
+#	division = { # "1a Divisão de Montanha"
+#		division_name = {
+#				is_name_ordered = yes
+#				name_order = 1
+#		}
+#		location = 11805
+#		division_template = "Divisão de Montanha"
+#		start_experience_factor = 0.2
+#	}
+#	division = { # "2a Divisão de Montanha"
+#		division_name = {
+#				is_name_ordered = yes
+#				name_order = 2
+#		}
+#		location = 11805
+#		division_template = "Divisão de Montanha"
+#		start_experience_factor = 0.2
+#	}
+#}
+#### Aeronáutica Militar ###
+#air_wings = {
+#	112 = {	
+#		fighter_equipment_1936 = {
+#			owner = "POR" 
+#			amount = 100
+#		}
+<<<<<<< Updated upstream
+=======
+#        start_experience_factor = 0.2
+>>>>>>> Stashed changes
+#	}	
+#}
+#### Production ###
+#instant_effect = {
+#	add_equipment_production = {
+#		equipment = {
+#			type = infantry_equipment_1
+#			creator = "POR"
+#		}
+#		requested_factories = 2
+#		progress = 0.47
+#		efficiency = 100
+#	}
+#	add_equipment_production = {
+#		equipment = {
+#			type = support_equipment_1
+#			creator = "POR"
+#		}
+#		requested_factories = 1
+#		progress = 0.74
+#		efficiency = 100
+#	}
+#	add_equipment_production = {
+#		equipment = {
+#			type = special_equipment_1
+#			creator = "POR" 
+#		}
+#		requested_factories = 1
+#		progress = 0.5
+#		efficiency = 100
+#	}
+#	add_equipment_production = {
+#		equipment = {
+#			type = radio_equipment_1
+#			creator = "POR"
+#		}
+#		requested_factories = 1
+#		progress = 0.5
+#		efficiency = 100
+#	}
+#	
+#	add_equipment_production = {
+#		equipment = {
+#			type = horse_equipment_0
+#			creator = "POR" 
+#		}
+#		requested_factories = 1
+#		progress = 0.5
+#		efficiency = 100
+#	}
+#	add_equipment_production = {
+#		equipment = {
+#			type = artillery_equipment_1
+#			creator = "POR" 
+#		}
+#		requested_factories = 1
+#		progress = 0.5
+#		efficiency = 100
+#	}
+#    add_equipment_production = {
+#		equipment = {
+#			type = anti_air_equipment_1
+#			creator = "POR" 
+#		}
+#		requested_factories = 1
+#		progress = 0.5
+#		efficiency = 100
+#	}
+#	add_equipment_production = {
+#		equipment = {
+#			type = motorized_equipment_1
+#			creator = "POR" 
+#		}
+#		requested_factories = 1
+#		progress = 0.4
+#		efficiency = 100
+#	}	
+#	add_equipment_production = { 
+#		equipment = {
+#			type = light_tank_equipment_1936
+#			creator = "POR" 
+#		}
+#		requested_factories = 1
+#		progress = 0.8
+#		efficiency = 100
+#	}	
+#	add_equipment_production = { 
+#		equipment = {
+#			type = fighter_equipment_1936
+#			creator = "POR" 
+#		}
+#		requested_factories = 1
+#		progress = 0.8
+#		efficiency = 100
+#	}
+#	add_equipment_production = {
+#		equipment = {
+#			type = tac_bomber_equipment_1936
+#			creator = "POR" 
+#		}
+#		requested_factories = 1
+#		progress = 0.4
+#		efficiency = 100
+#	}
+#	############### Equipment stockpile
+#	add_equipment_to_stockpile = {
+#		type = infantry_equipment_1
+#		amount = 5
+#		producer = POR
+#	}
+}

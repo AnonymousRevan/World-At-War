@@ -1,0 +1,51 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_event_picture_totalen_krieg"
+		texturefile = "gfx/event_pictures/news_event_totalen_krieg.dds"
+	}	
+	SpriteType = {
+		name = "GFX_event_picture_antonescu"
+		texturefile = "gfx/event_pictures/news_event_antonescu.dds"
+	}	
+	SpriteType = {
+		name = "GFX_event_picture_Perth"
+		texturefile = "gfx/event_pictures/Nora_HMAS_Perth.dds"
+	}
+	SpriteType = {
+		name = "GFX_news_event_guernica"
+		texturefile = "gfx/event_pictures/news_event_guernica.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_usa_mark_14"
+		texturefile = "gfx/event_pictures/mark_14.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_doolittle_raid"
+		texturefile = "gfx/event_pictures/doolittle_raid.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_mogami_class"
+		texturefile = "gfx/event_pictures/mogami_class.dds"
+	}
+		SpriteType = {
+		name = "GFX_report_event_usa_election_generic_2"
+		texturefile = "gfx/event_pictures/report_event_usa_election_generic_2.dds"
+	}
+     frameAnimatedSpriteType = {
+          name = "GFX_report_event_usa_election_LTG"     
+          texturefile = "gfx/event_pictures/report_event_usa_election_LTG.dds"        
+         noOfFrames = 92
+         animation_rate_fps = 10
+         looping = yes
+         play_on_show = yes
+     }
+     frameAnimatedSpriteType = {
+          name = "GFX_report_event_usa_election_1936"     
+          texturefile = "gfx/event_pictures/report_event_usa_election_1936.dds"        
+         noOfFrames = 171
+         animation_rate_fps = 17
+         looping = yes
+         play_on_show = yes
+     }
+}

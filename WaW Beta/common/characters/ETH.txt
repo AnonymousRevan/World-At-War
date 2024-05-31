@@ -1,0 +1,280 @@
+characters={
+	ETH_haile_selassie={
+		name="Haile Selassie"
+		portraits={
+			civilian={
+				large="gfx/leaders/ETH/Portrait_Ethiopia_Haile_Selassie.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HAILE_SELASSIE_DESC"
+			ideology=despotism
+			traits={ staunch_traditionalist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ETH_fitawrari_yeebio_woldai={
+		name="Fitawrari Yeebio Woldai"
+		portraits={
+			civilian={
+				large="gfx/leaders/ETH/Portrait_Ethiopia_Haile_Selassie.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_YEEBIO_WOLDAI_DESC"
+			ideology=socialism
+			traits={ popular_figurehead }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ETH_seyoum_mengesha={
+		name="Seyoum Mengesha"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_africa_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ desert_fox trait_mountaineer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	ETH_benito_mussolini={
+		name="Benito Mussolini"
+		portraits={
+			civilian={
+				large="gfx/leaders/ETH/Portrait_Italy_Benito_Mussolini.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_BENITO_MUSSOLINI_DESC"
+			ideology=fascism_ideology
+			traits={ Duce }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ETH_negasi_wossen={
+		name="Negasi Wossen"
+		portraits={
+			civilian={
+				large="GFX_Portrait_South_Africa_Political_Leader_Generic"
+			}
+		}
+		country_leader={
+			ideology=anti_revisionism
+			traits={ SOV_military_unintelligence }
+			expire="1951.1.1.12"
+			id=-1
+		}
+	}
+	ETH_bedjironde_tekle_hawariate = {
+		advisor={
+			slot = political_advisor
+			idea_token = ETH_bedjironde_tekle_hawariate
+			ledger  = civilian 
+			cost  = 150.000
+			allowed = {
+				original_tag  = ETH
+			}
+			traits = {
+				prince_of_terror
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	BEL_paul_van_zeeland={
+		advisor={
+			slot = political_advisor
+			idea_token = BEL_paul_van_zeeland
+			allowed  = {
+					original_tag  = ETH
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="BEL_paul_van_zeeland"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	SWI_giuseppe_motta={
+		advisor={
+			slot = political_advisor
+			idea_token = SWI_giuseppe_motta
+			allowed  = {
+					original_tag  = ETH
+				}
+				traits  = {
+					industry_reformer 
+				}
+		}
+		name="SWI_giuseppe_motta"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	ETH_pietro = {
+		advisor={
+			slot = theorist_production
+			idea_token = ETH_pietro	
+			ledger = civilian 	
+			picture = pietro_badoglio
+			allowed = {
+				original_tag = ETH
+			}
+			traits = { war_industrialist }
+		}
+	}
+	ETH_ras_imru_haile_selassie = {
+		advisor={
+			slot = theorist_production
+			idea_token = ETH_ras_imru_haile_selassie
+			ledger = civilian
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = ETH
+			}
+			
+			traits = { captain_of_industry }
+			
+			ai_will_do = {
+				factor = 99
+				modifier = {
+					factor = 0
+					date > 1938.1.1
+				}
+			}
+		}
+	}
+	ETH_desta_damtew = {
+		advisor={
+			slot = army_chief
+			idea_token = ETH_desta_damtew
+			ledger  = army 
+			picture = generic_army_arab_2	
+			allowed = {	original_tag = ETH	}			
+			traits = { army_chief_organizational_3 }
+		}
+		corps_commander={
+			traits={ infantry_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	ETH_mesfin_sileshi = {
+		advisor={
+			slot = air_chief
+			idea_token = ETH_mesfin_sileshi
+			ledger  = air 
+			picture = generic_air_arab_3
+			allowed = {	original_tag = ETH	}		
+			traits = { air_chief_ground_support_2 }
+		}
+	}
+	ETH_ras_seyum = {
+		advisor={
+			slot = navy_chief
+			idea_token = ETH_mesfin_sileshi
+			ledger  = navy 
+			picture = generic_navy_arab_2
+			allowed = {	original_tag = ETH	}			
+			traits = { navy_chief_commerce_raiding_2 }
+		}
+	}
+	ETH_mario_roatta = {
+		advisor={
+			slot = high_command
+			idea_token = ETH_mario_roatta	
+			ledger = army 
+			picture = mario_roatta	
+			allowed = {	original_tag = ETH	}	
+			traits = { army_regrouping_2 }
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	ETH_alfredo_guzzoni = {
+		advisor={
+			slot = high_command
+			idea_token = ETH_alfredo_guzzoni	
+			ledger = army 
+			picture = alfredo_guzzoni 
+			allowed = {	original_tag = ETH	}	
+			traits = { army_infantry_2 }
+		}
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	ETH_graziani = {
+		advisor={
+			slot = high_command
+			idea_token = ETH_graziani	
+			ledger = army
+			picture = generic_army_europe_3
+			allowed = {	original_tag = ETH	}	
+			traits = { army_cavalry_2 }
+		}
+	}
+	ETH_vittorio_ambrosio = {
+		advisor={
+			slot = high_command
+			idea_token = ETH_vittorio_ambrosio
+			ledger = army
+			picture = generic_army_europe_2	
+			allowed = {	original_tag = ETH	}	
+			traits = { army_armored_2 }
+		}
+	}
+	ETH_ras_kebbede = {
+		advisor={
+			slot = theorist
+			idea_token = ETH_ras_kebbede	
+			ledger = army
+			picture = generic_army_arab_2
+			allowed = {	original_tag = ETH	}
+			
+			traits = { military_theorist }
+		}
+	}
+	ETH_Buffer_Character_1 = { 
+		#Bugfix Char
+	}
+}

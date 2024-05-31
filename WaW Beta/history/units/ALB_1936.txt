@@ -1,0 +1,18 @@
+﻿### Starting Production ###
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+			amount = 8000
+			producer = ALB
+		}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+			amount = 800
+			producer = ALB
+		}
+	add_equipment_to_stockpile = {
+		type = horse_equipment_0
+			amount = 1000
+			producer = ALB
+		}
+}

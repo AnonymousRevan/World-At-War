@@ -1,0 +1,417 @@
+
+capital = 41
+
+oob = "SPR_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "SPR_1936_naval_mtg"
+	else = {
+		set_naval_oob = "SPR_1936_naval_legacy"
+	}
+}
+set_research_slots = 3
+add_ideas = {
+	limited_exports
+	limited_conscription
+	SPA_german_trading
+	SPA_no_army
+}
+set_technology = { #player 
+	############### infantry #############
+	infantry_weapons = 1
+	support_weapon_equipment = 1
+	fuel_silos = 1
+	field_equipment = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	special_equipment = 1
+	tech_radio_1 = 1 
+	############### supports ############
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	############### artillery ##############
+	artillery1 = 1 
+	gw_pack_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	axis_light_tank_1934 = 1 
+	axis_motorised_infantry = 1
+	axis_tech_armored_cars = 1
+	axis_basic_tank_engines = 1
+	axis_rivetted_armour = 1
+	
+	############## aircraft ##############
+	fighter_1934 = 1
+	tactical_bomber_1934 = 1
+	naval_bomber_1936 = 1
+	
+	################# economy ############
+	starting_industry = 1
+	basic_train = 1
+	
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		#early_ship_hull_frigate = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_medium_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+	}
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "La Resistance"
+		}
+	}
+	set_popularities = {
+		democratic = 47
+		fascism = 46
+		communism = 7
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_popularities = {
+		democratic = 41
+		fascism = 37
+		communism = 7
+		neutrality = 15
+	}
+	create_dynamic_country = {
+	    original_tag = SPR
+	    set_country_flag = SPR_nationalist_spain_flag
+		set_politics = {
+			ruling_party = neutrality
+		}
+		set_cosmetic_tag = SPR_nationalist_spain
+		set_research_slots = 3
+	    reserve_dynamic_country = yes
+	}
+	create_dynamic_country = {
+	    original_tag = SPR
+	    set_country_flag = SPR_carlist_spain_flag
+	    set_politics = {
+			ruling_party = neutrality
+		}
+		set_cosmetic_tag = SPR_carlist_spain
+		set_research_slots = 3
+	    reserve_dynamic_country = yes
+	}
+	create_dynamic_country = {
+	    original_tag = SPR
+	    set_country_flag = SPR_anarchist_spain_flag
+	    set_politics = {
+			ruling_party = neutrality
+		}
+		set_cosmetic_tag = SPR_anarchist_spain
+		set_research_slots = 3
+	    reserve_dynamic_country = yes
+	}
+	add_ideas = {
+		SPA_carlism_1
+		SPR_political_violence
+		SPR_national_strikes_1
+	}
+}
+
+set_convoys = 100
+set_stability = 0.5
+
+recruit_character = SPR_manuel_fal_conde
+recruit_character = SPR_vicente_rojo_lluch
+recruit_character = SPR_juan_modesto
+recruit_character = SPR_mohamed_meziane
+recruit_character = SPR_gonzalo_queipo_de_llano
+recruit_character = SPR_niceto_alcalázamora
+recruit_character = SPR_josé_díaz
+recruit_character = SPR_josé_antonio_primo_de_rivera
+recruit_character = SPR_josé_miaja
+recruit_character = SPR_josé_asensio_torrado
+recruit_character = SPR_valentín_gonzález
+recruit_character = SPR_antonio_cordón_garcía
+recruit_character = SPR_jános_gálicz
+recruit_character = SPR_francisco_franco
+recruit_character = SPR_emilio_mola
+recruit_character = SPR_juan_yagüe
+recruit_character = SPR_agustín_muñoz_grandes
+recruit_character = SPR_josé_enrique_varela
+recruit_character = SPR_miguel_cabanellas
+recruit_character = SPR_josé_millán_astray
+recruit_character = SPR_miguel_buiza_fernándezpalacios
+recruit_character = SPR_luis_carrero_blanco
+recruit_character = SPA_luis_valdes_cavanillas_vanilla
+recruit_character = SPA_tomas_garciano_goni_vanilla
+recruit_character = SPA_manuel_hedilla 
+recruit_character = SPA_raimundo_fernandez_cuesta
+recruit_character = SPA_jose_antonio_primo_de_rivera
+recruit_character = SPA_mauricio_de_sivatte
+recruit_character = SPA_miguel_cabanellas_ferrer_vanilla
+recruit_character = SPA_ricardo_rada_vanilla
+recruit_character = SPA_emilio_mola_vidal_vanilla
+recruit_character = SPA_juan_yague
+recruit_character = SPA_rafael_garcia_valino
+recruit_character = SPA_heli_rolando_de_tella
+recruit_character = SPA_miguel_ponte
+recruit_character = SPA_alfredo_kindelan_duany_vanilla
+recruit_character = SPA_juan_yague_blanco_vanilla
+recruit_character = SPA_joaquin_garcia_morato
+recruit_character = SPA_juan_vigon_suero_diaz
+recruit_character = SPA_salvador_moreno_fernandez_vanilla 
+recruit_character = SPA_fransisco_moreno_fernandez_vanilla
+recruit_character = SPA_luis_carrero_blanco_vanilla
+recruit_character = SPA_luis_carrero_blanco
+recruit_character = SPA_emilio_esteban_infantes_vanilla
+recruit_character = SPA_agustin_munoz_grandes_vanilla
+recruit_character = SPA_joaquin_garcia_morato_vanilla
+recruit_character = SPA_angel_salas_larrazabal_vanilla
+recruit_character = SPA_emilio_mola
+recruit_character = SPA_wilhelm_ritter_von_thoma
+recruit_character = SPA_enrique_canovas_lacruz
+recruit_character = SPA_miguel_cabanellas
+recruit_character = SPA_ricardo_rada
+recruit_character = SPA_jose_enrique_varela_vanilla
+recruit_character = SPA_emilio_herrera_vanilla
+recruit_character = SPA_jose_enrique_varela
+recruit_character = SPA_agustin_munoz_grandes
+recruit_character = SPA_jose_antonio_giron
+recruit_character = SPA_fidel_davila_arrondo_vanilla
+recruit_character = SPA_diego_hidalgo_y_duran
+recruit_character = SPA_alejandro_velez
+recruit_character = SPA_rodrigo_orona
+recruit_character = SPA_raul_castanon
+recruit_character = SPA_inf_sister
+
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "C Class"
+		type = submarine_1
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Príncipe Alfonso Class"
+		type = light_cruiser_1
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_gun_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "B Class"				
+		type = ship_hull_submarine_1
+		parent_version = 0
+		name_group = SPR_SS_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "C Class"				
+		type = ship_hull_submarine_2
+		name_group = SPR_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Alsedo Class"				
+		type = ship_hull_light_1
+		name_group = SPR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Churucca Class"	
+		type = ship_hull_light_2
+		name_group = SPR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Júpiter Class"					# minelayers
+		type = ship_hull_light_2
+		name_group = SPR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "República Class"
+		type = ship_hull_cruiser_1
+		name_group = SPR_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Méndez Núñes Class"
+		type = ship_hull_cruiser_1
+		name_group = SPR_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Príncipe Alfonso Class"
+		type = ship_hull_cruiser_2
+		name_group = SPR_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Canarias Class"				
+		type = ship_hull_cruiser_2
+		name_group = SPR_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = ship_medium_battery_2
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	# Battleships #
+	create_equipment_variant = {
+		name = "España Class"	
+		type = ship_hull_heavy_1
+		name_group = SPR_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = empty
+		}
+	}
+}

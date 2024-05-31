@@ -1,0 +1,103 @@
+﻿capital = 330
+
+set_convoys = 100
+set_stability = 0.3
+set_war_support = 0.75
+
+set_research_slots = 3
+
+oob = "MON_1936"
+# Starting tech
+set_technology = {
+	################# infantry ###############
+	infantry_weapons = 1
+	support_weapon_equipment = 1	
+	fuel_silos = 1 
+	field_equipment = 1 
+	tech_radio_1 = 1
+    infantry_weapons1 = 1	
+	tech_mountaineers = 1
+	special_equipment = 1
+	################## support ##################
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	################## artillery ###############
+	artillery1 = 1 
+	gw_pack_artillery = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	################## armor ##############
+	sov_light_tank_1934 = 1 
+	sov_light_tank_1936 = 1 
+	sov_medium_tank_1937 = 1 
+	sov_motorised_infantry = 1
+	################## aircraft ##############
+	sov_fighter_1934 = 1
+	sov_tactical_bomber_1934 = 1
+	sov_CAS_1937 = 1
+	############### economy ############
+	starting_industry = 1
+	electronic_mechanical_engineering = 1
+	basic_machine_tools = 1
+	basic_train = 1
+}
+add_ideas = {
+	partial_economic_mobilisation
+	export_focus
+    MON_Rogue_state
+    MON_Rual_population
+	MON_agrarian_reform1
+	airandnavy_idea
+}
+
+add_opinion_modifier = { target = CHI modifier = HOL_caved_to_the_british_ger }
+add_opinion_modifier = { target = CHI modifier = HOL_caved_to_the_british_ger_trade }
+add_opinion_modifier = { target = PRC modifier = HOL_caved_to_the_british_ger }
+add_opinion_modifier = { target = PRC modifier = HOL_caved_to_the_british_ger_trade }
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 75
+	neutrality = 25
+}
+
+recruit_character = MON_khorloogiin_choibalsan
+recruit_character = MON_khorloin_amar
+recruit_character = MON_borjigin_altan
+recruit_character = MON_chono_dzhambul_
+recruit_character = MON_fu_zhanshan
+recruit_character = MON_songgotu_linge
+recruit_character = MON_mingzhu_kangan
+recruit_character = MON_dagva
+recruit_character = MON_ulanhu
+recruit_character = MON_horloogiyn_choybalsan
+recruit_character = MON_olziytrygyn_badrak
+recruit_character = MON_yundunwangcug
+recruit_character = MON_khan
+recruit_character = MON_haidav
+recruit_character = MON_chimid
+recruit_character = MON_dansrabilegyin_dogsam
+recruit_character = MON_sukhbaataryn_yanjmaa
+recruit_character = MON_ganbaatar
+recruit_character = MON_vg_pyrselov
+recruit_character = MON_Harghasun
+recruit_character = MON_lee_shou_hsin
+recruit_character = MON_buyannmeh
+recruit_character = MON_dashdorj
+recruit_character = MON_gomgchigryn_bumtsend
+recruit_character = MON_georgy_malenkov
+recruit_character = MON_nikolai_voznesensky
+recruit_character = MON_pai_yun_ti
+recruit_character = MON_Sukhbataar
+recruit_character = MON_Yurukhan
+

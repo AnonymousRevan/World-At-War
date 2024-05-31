@@ -1,0 +1,84 @@
+﻿capital = 107
+
+oob = "YUG_1936"
+
+set_research_slots = 3
+
+
+set_technology = {
+	################# infantry ###############
+	infantry_weapons = 1  
+	fuel_silos = 1 
+	field_equipment = 1
+	tech_mountaineers = 1
+	################## support ##################
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	################## artillery ###############
+	artillery1 = 1
+	gw_pack_artillery = 1
+	################## aircraft ##############
+	fighter_1934 = 1
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 20
+	fascism = 30
+	communism = 20
+	neutrality = 30
+}
+
+set_stability = 0.6
+
+create_country_leader = {
+	name = "Draza Mihailovic"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Nikola Kalabic"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Peter Karadordevic"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = Despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Zivorad Jovanovic"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}

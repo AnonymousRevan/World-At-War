@@ -1,0 +1,99 @@
+﻿capital = 13
+
+oob = "EST_1936"
+
+set_research_slots = 0
+
+add_ideas = {
+	limited_conscription
+	no_spies_idea
+	annex_minor
+}
+
+set_technology = {
+	################# infantry ###############
+	
+	infantry_weapons = 1  fuel_silos = 1 field_equipment = 1 
+	tech_radio_1 = 1 
+	################## support ##################
+	tech_support = 1
+	tech_recon = 1
+	################## armor ##############
+	light_tank_1934 = 1 
+	motorised_infantry = 1
+
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		
+		
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+set_convoys = 30
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.5.21"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 20
+	fascism = 15
+	communism = 5
+	neutrality = 60
+}
+recruit_character = EST_konstantin_päts
+recruit_character = EST_toomas_perna
+recruit_character = EST_tarmo_sirk
+recruit_character = EST_hendrik_sirk
+recruit_character = EST_alexander_jaakson
+recruit_character = EST_oskar_eiriksson
+recruit_character = EST_richard_veermaa
+recruit_character = EST_alex_nirk
+recruit_character = EST_richard_tomberg
+recruit_character = EST_august_rei
+recruit_character = EST_alfred_vendt
+recruit_character = EST_juhan_tuuling
+recruit_character = EST_alfons_rebane
+recruit_character = EST_leo_sepp
+recruit_character = EST_boris_kumm
+recruit_character = EST_voldemar_mere
+recruit_character = EST_nikolay_g_karotamm
+recruit_character = EST_johan_laidoner
+recruit_character = EST_juri_uluots
+
+### VARIANTS ###
+# 1939 Start #
+1939.1.1 = {
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		# Ship variants #
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		# Submarines #
+		create_equipment_variant = {
+			name = "Kalev Class"				
+			type = ship_hull_submarine_2
+			name_group = EST_SS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = empty
+			}
+		}
+	}
+}

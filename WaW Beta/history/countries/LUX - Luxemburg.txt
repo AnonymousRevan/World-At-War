@@ -1,0 +1,57 @@
+﻿capital = 8
+
+set_research_slots = 0
+
+oob = "LUX_1936"
+add_ideas = {
+	neutrality_idea	
+	no_spies_idea
+	neutered_minor
+}
+# Starting tech
+set_technology = {
+################# infantry ###############
+	
+	infantry_weapons = 1  fuel_silos = 1 field_equipment = 1 
+	tech_radio_1 = 1 
+	################## support ##################
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	################## artillery ###############
+	artillery1 = 1 
+	gw_pack_artillery = 1
+	################## armor ##############
+	light_tank_1934 = 1 
+	motorised_infantry = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1934.6.3"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 92
+	fascism = 3
+	communism = 5
+}
+recruit_character = LUX_joseph_bech
+recruit_character = LUX_isidore_de_bocarmé
+recruit_character = LUX_fernand_de_chasteler
+recruit_character = LUX_frédéric_de_hemptinne
+recruit_character = LUX_martin_karp
+recruit_character = LUX_pierre_dupong
+recruit_character = LUX_pierre_krier
+recruit_character = LUX_emile_speller
+recruit_character = LUX_alexander_von_falkenhausen
+recruit_character = LUX_guillaume_soisson
+recruit_character = LUX_nicholas_diedrich
+recruit_character = LUX_paul_medinger
+recruit_character = LUX_henri_ahnen
+recruit_character = LUX_francois_schammel
+recruit_character = LUX_aloyse_glodt
+recruit_character = LUX_alex_federspiel
+recruit_character = LUX_nicolas_de_dixmude
+recruit_character = LUX_Buffer_Character_1

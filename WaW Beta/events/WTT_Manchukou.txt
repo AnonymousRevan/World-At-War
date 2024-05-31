@@ -1,0 +1,313 @@
+﻿
+### Manchu Events ###
+
+add_namespace = wtt_manchukou
+add_namespace = wtt_manchukou_china
+
+#Manchu demands Chinese States
+
+country_event = {
+	id = wtt_manchukou_china.1
+	title = wtt_manchukou_china.1.t
+	desc = wtt_manchukou_china.1.d
+	picture = GFX_report_event_manchukuo_army_2
+
+	is_triggered_only = yes
+	
+	#take communist china
+	option = {
+		name = wtt_manchukou.china.1.a	# JAP gives communist china
+		
+		ai_chance = { factor = 90 }
+			
+		effect_tooltip = {
+			MAN = {
+				transfer_state = 615
+				transfer_state = 621
+				transfer_state = 622
+				transfer_state = 746				
+			}
+		}
+		hidden_effect = {
+			MAN = {
+				transfer_state = 615
+				transfer_state = 621
+				transfer_state = 622
+				transfer_state = 746				
+			}
+		}
+	}
+	#give communist and northern wastes
+	option = {
+		name = wtt_manchukou.china.1.b	# JAP gives communist and northern wastes
+		
+		ai_chance = { factor = 5 }
+			
+		effect_tooltip = {
+			MAN = {
+				transfer_state = 615
+				transfer_state = 621
+				transfer_state = 622
+				transfer_state = 746
+				transfer_state = 616
+				transfer_state = 756
+				transfer_state = 755
+				transfer_state = 754
+				transfer_state = 604
+				transfer_state = 283
+				transfer_state = 753				
+			}
+		}
+		hidden_effect = {
+			MAN = {
+				transfer_state = 615
+				transfer_state = 621
+				transfer_state = 622
+				transfer_state = 746
+				transfer_state = 616
+				transfer_state = 756
+				transfer_state = 755
+				transfer_state = 754
+				transfer_state = 604
+				transfer_state = 283
+				transfer_state = 753				
+			}
+		}
+	}
+	#accept all emperor demands - communist, northern wastes, sichuan, and bejing
+	option = {
+		name = wtt_manchukou.china.1.c	# JAP gives communist, northern wastes, sichuan, and bejing
+		
+		ai_chance = { factor = 5 }
+		
+		effect_tooltip = {
+			MAN = {
+				transfer_state = 615
+				transfer_state = 621
+				transfer_state = 622
+				transfer_state = 746
+				transfer_state = 616
+				transfer_state = 756
+				transfer_state = 755
+				transfer_state = 754
+				transfer_state = 604
+				transfer_state = 283
+				transfer_state = 753
+				transfer_state = 601
+				transfer_state = 752
+				transfer_state = 751
+				transfer_state = 605
+				transfer_state = 744
+				transfer_state = 608
+				transfer_state = 609
+			}
+		}
+		hidden_effect = {
+			MAN = {
+				transfer_state = 615
+				transfer_state = 621
+				transfer_state = 622
+				transfer_state = 746
+				transfer_state = 616
+				transfer_state = 756
+				transfer_state = 755
+				transfer_state = 754
+				transfer_state = 604
+				transfer_state = 283
+				transfer_state = 753
+				transfer_state = 601
+				transfer_state = 752
+				transfer_state = 751
+				transfer_state = 605
+				transfer_state = 744
+				transfer_state = 608
+				transfer_state = 609
+			}
+		}
+	}
+
+}
+
+# Manchukou demands warlord be puppeted
+country_event = {
+	id = wtt_manchukou.1
+	title = wtt_manchukou.1.t
+	desc = wtt_manchukou.1.desc
+	picture = GFX_report_event_manchukuo_army_2
+
+	is_triggered_only = yes
+	
+	#Accept puppet
+	option = {
+		name = wtt_manchukou.1.a
+		ai_chance = { 
+			base = 10 
+			modifier = {
+				has_global_flag = CHI_xian_refused
+				factor = 0
+			}
+		}
+		FROM = {
+			puppet = ROOT
+			country_event = { id = wtt_manchukou.2 }
+		}
+	}
+
+	#Never
+	option = {
+		name = wtt_manchukou.1.b
+		ai_chance = { 
+			base = 10 
+		}
+		FROM = {
+			country_event = { id = wtt_manchukou.3 }
+		}
+	}
+}
+
+# Answer from warlord wtt_manchukou.1 - Yes
+country_event = {
+	id = wtt_manchukou.2
+	title = wtt_manchukou.2.t
+	desc = wtt_manchukou.2.desc
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou.2.a
+	}
+}
+
+
+# Answer from warlord wtt_manchukou.1 - No
+country_event = {
+	id = wtt_manchukou.3
+	title = wtt_manchukou.3.t
+	desc = wtt_manchukou.3.desc
+	picture = GFX_report_event_chinese_soldiers_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou.3.a
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FROM
+		}
+	}
+}
+
+#First five year plan
+country_event = {
+	id = wtt_manchukou.11
+	title = wtt_manchukou.11.t
+	desc = wtt_manchukou.11.desc
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+	
+	#Air
+	option = {
+		name = wtt_manchukou.11.a
+		ai_chance = {
+			base = 3
+		}
+		add_ideas =  MAN_five_year_plan_air 
+	}	
+	#Tank
+	option = {
+		name = wtt_manchukou.11.b
+		ai_chance = {
+			base = 3
+		}
+		add_ideas =  MAN_five_year_plan_tank
+	}	
+	#Industry
+	option = {
+		name = wtt_manchukou.11.c
+		ai_chance = {
+			base = 10
+		}
+		add_ideas =  MAN_five_year_plan_industry 
+	}
+}
+
+###   ##  #  # ###  ### ###      ##  ##  ###   ##  ###  ##   ##  ### 
+#  # #  # ## # #  #  #   #      #   #  # #  # #  #  #  #  # #    #   
+###  #### # ## #  #  #   #       #  #### ###  #  #  #  #### # ## ##  
+#  # #  # #  # #  #  #   #        # #  # #  # #  #  #  #  # #  # #   
+###  #  # #  # ###  ###  #      ##  #  # ###   ##   #  #  #  ##  ### 
+
+add_namespace = wtt_manchukou_bandit_sabotage
+#Bandit sabotage - factory sabotaged
+country_event = {
+	id = wtt_manchukou_bandit_sabotage.21
+	title = wtt_manchukou_bandit_sabotage.21.t
+	desc = wtt_manchukou_bandit_sabotage.21.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou_bandit_sabotage.21.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+#Bandit sabotage - civilian factory sabotaged
+country_event = {
+	id = wtt_manchukou_bandit_sabotage.22
+	title = wtt_manchukou_bandit_sabotage.22.t
+	desc = wtt_manchukou_bandit_sabotage.21.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou_bandit_sabotage.21.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+#Bandit sabotage - bridge blown
+country_event = {
+	id = wtt_manchukou_bandit_sabotage.23
+	title = wtt_manchukou_bandit_sabotage.23.t
+	desc = wtt_manchukou_bandit_sabotage.23.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_manchukou_bandit_sabotage.21.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}

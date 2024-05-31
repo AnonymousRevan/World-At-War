@@ -1,0 +1,181 @@
+equipments = {
+
+	support_weapon_equipment = {
+		is_archetype = yes
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		active = yes
+
+		#Misc Abilities
+		reliability = 0.75
+
+		#Defensive Abilities
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 1
+		breakthrough = 0.5
+		defense = 10
+
+		#Space taken in convoy
+		lend_lease_cost = 0.2
+		air_attack = 0.1
+
+		build_cost_ic = 1.5
+		resources = {
+			steel = 1
+		}
+	}
+	
+	# Regular heavy weapons
+	support_weapon_equipment_1 = { #1918 HG-34
+		year = 1918
+
+		archetype = support_weapon_equipment
+		priority = 10
+		visual_level = 0
+		
+		#Misc Abilities
+		reliability = 0.75
+
+		#Defensive Abilities
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 4
+		hard_attack = 1
+		breakthrough = 4
+		defense = 5		
+
+		build_cost_ic = 1.5
+		resources = {
+			steel = 6
+		}
+		
+	}
+
+	# Improved heavy weapons
+	support_weapon_equipment_2 = { #1936 HG-34/36 1936 IAG-36 LMG
+		year = 1936
+
+		archetype = support_weapon_equipment
+		parent = support_weapon_equipment_1
+		priority = 11
+		visual_level = 1		
+		
+		#Misc Abilities
+		reliability = 0.77
+
+		#Defensive Abilities
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 5
+		hard_attack = 1.4
+		breakthrough = 5.5
+		defense = 6
+
+		build_cost_ic = 1.6
+		resources = {
+			steel = 7
+		}
+	}
+
+	# Advanced heavy weapons
+	support_weapon_equipment_3 = { #1940 DG-11 Repeater 1936 IAG-36 LMG
+		year = 1941
+
+		archetype = support_weapon_equipment
+		parent = support_weapon_equipment_2
+		is_convertable = yes
+		priority = 10
+		visual_level = 3
+		
+		#Misc Abilities
+		reliability = 0.80
+
+		#Defensive Abilities
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 6
+		hard_attack = 1.8
+		ap_attack = 11
+		breakthrough = 7
+		defense = 9
+
+		build_cost_ic = 1.8
+		resources = {
+			steel = 8
+		}
+	}
+	
+	# Advanced heavy weapons + AT
+	support_weapon_equipment_4 = { #1942 DG-23 Repeater 1936 IAG-36 LMG
+		year = 1943
+
+		archetype = support_weapon_equipment
+		parent = support_weapon_equipment_3
+		is_convertable = yes
+		priority = 10
+		visual_level = 4
+		
+		#Misc Abilities
+		reliability = 0.82
+
+		#Defensive Abilities
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 7
+		hard_attack = 2.2
+		ap_attack = 16
+		breakthrough = 8.5
+		defense = 11
+
+		build_cost_ic = 2.0
+		resources = {
+			steel = 9
+		}
+	}
+
+	# Modern heavy weapons + AT
+	support_weapon_equipment_5 = { #1944 RG-44  1944 AG-44 LMG
+		year = 1945
+
+		archetype = support_weapon_equipment
+		parent = support_weapon_equipment_4
+		priority = 10
+		visual_level = 5
+		
+		#Misc Abilities
+		reliability = 0.85
+
+		#Defensive Abilities
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 8
+		hard_attack = 2.5
+		ap_attack = 20
+		breakthrough = 10
+		defense = 13
+
+		build_cost_ic = 2.2
+		resources = {
+			steel = 9
+			tungsten = 1
+		}
+	}
+}

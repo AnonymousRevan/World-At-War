@@ -1,0 +1,223 @@
+﻿capital = 613 # Nanjing
+
+oob = "CHI_1936"
+
+set_convoys = 100
+set_stability = 0.35
+set_war_support = 0.65
+set_research_slots = 3
+# Starting tech
+set_technology = { #player 
+	##################### infantry ###############
+	fuel_silos = 1
+	infantry_weapons = 1
+	support_weapon_equipment = 1
+	field_equipment = 1 
+	tech_radio_1 = 1 
+	motorised_infantry = 1
+	############### support ############
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1
+	################ artillery #############
+	artillery1 = 1 
+	gw_pack_artillery = 1
+	################### armor #############
+	tech_armored_cars = 1
+	light_tank_1934 = 1 
+	############## aircraft ##############
+	fighter_1934 = 1
+	tactical_bomber_1934 = 1
+	trench_warfare = 1
+	################# economy ################
+	starting_industry = 1
+	basic_train = 1
+	
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+	}
+}
+add_ideas = {
+	german_advisors
+	airandnavy_idea
+	CHI_defensive_nation
+}
+
+add_opinion_modifier = { target = MON modifier = HOL_caved_to_the_british_ger }
+add_opinion_modifier = { target = MON modifier = HOL_caved_to_the_british_ger_trade }
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	add_ideas = {
+		CHI_communist_uprisings
+		closed_economy
+		partial_economic_mobilisation
+	}
+}
+
+
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}		
+	add_ideas = {
+		CHI_nine_power_treaty
+		CHI_army_corruption_1
+		CHI_ineffective_bureaucracy
+		CHI_incompetent_officers
+		closed_economy
+		partial_economic_mobilisation
+		CHI_hyper_inflation_1
+	}
+}
+save_global_event_target_as = WTT_current_china_leader
+
+create_import = {
+	resource = steel
+	amount = 80
+	exporter = GER
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+recruit_character = CHI_chiang_kaishek
+recruit_character = CHI_zhang_guotao
+recruit_character = CHI_wang_jingwei
+recruit_character = CHI_weng_wenhao
+recruit_character = CHI_tu_yuming
+recruit_character = CHI_hsueh_yueh
+recruit_character = CHI_tai_anlan
+recruit_character = CHI_sun_li_jen
+recruit_character = CHI_hu_zongnan
+recruit_character = CHI_gu_zhutong
+recruit_character = CHI_wei_lihuang
+recruit_character = CHI_fu_zuoyi
+recruit_character = CHI_zhang_xueliang
+recruit_character = CHI_zhu_de
+recruit_character = CHI_chen_cheng
+recruit_character = CHI_dai_li_2
+recruit_character = CHI_li_zongren
+recruit_character = CHI_soong_mei_ling
+recruit_character = CHI_chen_jitang
+recruit_character = CHI_wang_shuming
+recruit_character = CHI_bai_chongxi
+recruit_character = CHI_zhou_zhirou
+recruit_character = CHI_lin_sen
+recruit_character = CHI_xiao_yisu
+recruit_character = CHI_chen_shaokuan
+recruit_character = CHI_kwong_jiang
+recruit_character = CHI_xiao_jinguang
+recruit_character = CHI_chiang_ching_kuo
+recruit_character = CHI_yu_hanmou
+recruit_character = CHI_dai_li
+recruit_character = CHI_he_yingqin
+recruit_character = CHI_gao_zhihang
+recruit_character = CHI_t_v_soong
+recruit_character = PRC_hsia_tian
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Jianwei Class"			
+		type = ship_hull_light_1
+		name_group = CHI_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Hairong Class"					# Hairong protected cruisers and Zhaohe, Yingrui training cruisers
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Haiqi Class"
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Ninghai Class"
+		type = ship_hull_cruiser_1
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+}

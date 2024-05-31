@@ -1,0 +1,27 @@
+
+state={
+	id=509
+	name="STATE_509" # Chaco Australis
+	manpower = 1
+	
+	state_category = town
+	
+	resources={
+#		tungsten=35 # was: 46
+#		steel=6 # was: 8
+	}
+
+	history={
+		owner = PAR
+		buildings = {
+
+		}
+
+	}
+
+	provinces={
+		5213 10986
+	}
+
+	local_supplies=6.0 
+}

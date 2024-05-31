@@ -1,0 +1,136 @@
+characters={
+	ALB_king_zog={
+		name="King Zog"
+		portraits={
+			civilian={
+				large="gfx/leaders/ALB/Portrait_Albania_King_Zog.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_KING_ZOG_DESC"
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ALB_xhemal_aranitasi={
+		name="Xhemal Aranitasi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		field_marshal={
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ALB_bicaku={
+		name="Bicaku"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard commando }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ALB_bushati={
+		name="Bushati"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard trickster }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ALB_hoxha={
+		name="Hoxha"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	ALB_kara_qemal_bej={
+		name="Kara Qemal Bej"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_4"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ colonial_organizer }
+			expire="1943.1.1.12"
+			id=-1
+		}
+	}
+	ALB_veton_Çeku={
+		name="Veton Çeku"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		country_leader={
+			ideology=anti_revisionism
+			expire="1941.1.1.12"
+			id=-1
+		}
+	}
+	ALB_turhan_bazna={
+		name="Turhan Bazna"
+		portraits={
+			civilian={
+				large="GFX_Portrait_europe_generic_7"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			traits={ quartermaster_general }
+			expire="1955.1.1.12"
+			id=-1
+		}
+	}
+}

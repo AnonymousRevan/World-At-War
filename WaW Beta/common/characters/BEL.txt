@@ -1,0 +1,230 @@
+characters={
+	BEL_hubert_pierlot={
+		name="Hubert Pierlot"
+		portraits={
+			civilian={
+				large="gfx/leaders/BEL/Portrait_Belgium_Hubert_Pierlot.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HUBERT_PIERLOT_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BEL_joseph_jacquemotte={
+		name="Joseph Jacquemotte"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JOSEPH_JACQUEMOTTE_DESC"
+			ideology=anarchist_communism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BEL_léon_degrelle={
+		name="Léon Degrelle"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_LEON_DEGRELLE_DESC"
+			ideology=rexism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BEL_m.c.l._keyaerts={
+		name="M.C.L. Keyaerts"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer hill_fighter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	BEL_florent_de_rouille={
+		name="Florent de Rouille"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_4"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ SOV_peoples_commissar_of_armaments }
+			expire="1952.1.1.12"
+			id=-1
+		}
+	}
+	BEL_fritz_conrad={
+		advisor={
+			slot = navy_chief
+			idea_token = BEL_fritz_conrad
+			allowed  = {
+					original_tag  = BEL
+				}
+				traits  = {
+					navy_chief_naval_aviation_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="BEL_fritz_conrad"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	BEL_raoul_overstraeten={
+		advisor={
+			slot = air_chief
+			idea_token = BEL_raoul_overstraeten
+			allowed  = {
+					original_tag  = BEL
+				}
+				traits  = {
+					air_chief_old_guard 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="BEL_raoul_overstraeten"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	BEL_victor_strydonck_burkel={
+		advisor={
+			slot = army_chief
+			idea_token = BEL_victor_strydonck_burkel
+			allowed  = {
+					original_tag  = BEL
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="BEL_victor_strydonck_burkel"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	BEL_oscar_michiels={
+		advisor={
+			slot = high_command
+			idea_token = BEL_oscar_michiels
+			ledger  = army 
+				allowed  = {
+					original_tag  = BEL
+				}
+				traits  = {
+					army_logistics_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="BEL_oscar_michiels"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	BEL_charles_bastin={
+		advisor={
+			slot = army_chief
+			idea_token = BEL_charles_bastin
+			allowed  = {
+					original_tag  = BEL
+				}
+				traits  = {
+					army_chief_morale_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="BEL_charles_bastin"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	BEL_yvan_gerard={
+		advisor={
+			slot = high_command
+			idea_token = BEL_yvan_gerard
+			ledger  = navy 
+				allowed  = {
+					original_tag  = BEL
+				}
+				traits  = {
+					navy_naval_air_defense_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="BEL_yvan_gerard"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	BEL_leon_degrelle={
+		advisor={
+			slot = army_chief
+			idea_token = BEL_leon_degrelle
+			allowed  = {
+					original_tag  = BEL
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="BEL_leon_degrelle"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	BEL_Buffer_Character_1 = { 
+		#Bugfix Char
+	}
+}

@@ -1,0 +1,61 @@
+manchu_historical = {
+	name = "Manchu Historical"
+	desc = "Eco > Army"
+
+	enable = {
+		original_tag = MAN
+		has_dlc = "Man the Guns"
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = MAN_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_game_rule = {
+				rule = MAN_ai_behavior
+				option = DEFAULT
+			}
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = JAP
+		}
+	}
+
+	ai_national_focuses = {
+		#Banditry - remove quick
+		MAN_banditry_solution
+		MAN_improve_rural_infra
+		MAN_fair_labor_laws
+		MAN_recruit_former_bandits
+		#eco
+		MAN_pacify_the_countryside
+		MAN_japan_assistance
+		MAN_national_defense_state
+		MAN_expand_the_railways
+		MAN_invite_japanese_settlers
+		MAN_resource_expansion_demand
+		MAN_develop_aluminum_sources
+		MAN_self_sufficient
+		MAN_trade_delegation
+		MAN_national_cooperation_government
+		MAN_obedience
+		MAN_invite_japanese_investors
+		MAN_expand_jehol_production
+		#navy
+		MAN_navy_funds
+		MAN_navy_doc_2
+		MAN_submarine_effort
+		MAN_big_ship_effort
+		#army
+		MAN_alliance_with_the_kwantung_army
+		MAN_chinese_tactics
+		MAN_chinese_army_value
+		MAN_army_effort
+		MAN_doctrine_inf_china
+		MAN_doctrine_inf_china_2
+	}
+}

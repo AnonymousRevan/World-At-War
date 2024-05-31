@@ -1,0 +1,21 @@
+################
+##### POR ######
+################
+
+POR_overseas_provinces = {
+	
+	icon = saf_anti_colonialist_crusade
+
+	allowed = {
+		original_tag = POR
+		has_dlc = "La Resistance"
+	}
+}
+
+POR_prospect_for_resources = {
+	icon = generic_prospect_for_resources
+	allowed = {
+		has_dlc = "La Resistance"
+		tag = POR
+	}
+}

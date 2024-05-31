@@ -1,0 +1,102 @@
+
+# Increase Imperial Defense spirit
+ENG_imperial_conference_defense_level_up = {
+	if = {
+		limit = {
+			has_idea = ENG_imperial_conference_defense_4
+		}
+		swap_ideas = {
+			remove_idea = ENG_imperial_conference_defense_4
+			add_idea = ENG_imperial_conference_defense_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = ENG_imperial_conference_defense_3
+		}
+		swap_ideas = {
+			remove_idea = ENG_imperial_conference_defense_3
+			add_idea = ENG_imperial_conference_defense_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = ENG_imperial_conference_defense_2
+		}
+		swap_ideas = {
+			remove_idea = ENG_imperial_conference_defense_2
+			add_idea = ENG_imperial_conference_defense_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = ENG_imperial_conference_defense_1
+		}
+		swap_ideas = {
+			remove_idea = ENG_imperial_conference_defense_1
+			add_idea = ENG_imperial_conference_defense_2
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { has_idea = ENG_imperial_conference_defense_1 }
+			NOT = { has_idea = ENG_imperial_conference_defense_2 }
+			NOT = { has_idea = ENG_imperial_conference_defense_3 }
+			NOT = { has_idea = ENG_imperial_conference_defense_4 }
+			NOT = { has_idea = ENG_imperial_conference_defense_5 }
+		}
+		add_timed_idea = { idea = ENG_imperial_conference_defense_1 days = 365 }
+	}
+}
+
+# Increase Imperial Economy spirit
+ENG_imperial_conference_economy_level_up = {
+	if = {
+		limit = {
+			has_idea = ENG_imperial_conference_economy_4
+		}
+		swap_ideas = {
+			remove_idea = ENG_imperial_conference_economy_4
+			add_idea = ENG_imperial_conference_economy_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = ENG_imperial_conference_economy_3
+		}
+		swap_ideas = {
+			remove_idea = ENG_imperial_conference_economy_3
+			add_idea = ENG_imperial_conference_economy_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = ENG_imperial_conference_economy_2
+		}
+		swap_ideas = {
+			remove_idea = ENG_imperial_conference_economy_2
+			add_idea = ENG_imperial_conference_economy_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = ENG_imperial_conference_economy_1
+		}
+		swap_ideas = {
+			remove_idea = ENG_imperial_conference_economy_1
+			add_idea = ENG_imperial_conference_economy_2
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { has_idea = ENG_imperial_conference_economy_1 }
+			NOT = { has_idea = ENG_imperial_conference_economy_2 }
+			NOT = { has_idea = ENG_imperial_conference_economy_3 }
+			NOT = { has_idea = ENG_imperial_conference_economy_4 }
+			NOT = { has_idea = ENG_imperial_conference_economy_5 }
+		}
+		add_timed_idea = { idea = ENG_imperial_conference_economy_1 days = 365 }
+	}
+}
+
+

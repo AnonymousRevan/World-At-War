@@ -1,0 +1,44 @@
+	BRA_ensure_support_cat = {
+		icon = GFX_decision_category_military_operation
+		priority = 50
+		picture = GFX_decision_category_military_operation
+		visible_when_empty = no	
+		allowed = {
+			
+		}
+
+		visible = {
+			
+		}
+	}
+	
+generic_purchase_old_ships_category = {
+	icon = GFX_decision_category_MTG_naval_treaties
+	picture = GFX_decision_cat_picture_naval_treaties
+	
+	allowed = {
+		original_tag = BRA
+		has_dlc = "Trial of Allegiance"
+	}
+	visible = {
+		has_country_flag = generic_purchase_old_ships_flag
+	}
+	
+	priority = {
+		base = 8
+	}
+	visible_when_empty = no
+}
+
+
+	BRA_invite_foreign_companies_cat = {
+		priority = 50
+		picture = GFX_decision_cat_generic_mefo_bills
+		icon = GFX_decision_category_ITA_reggianes_exports
+
+		allowed = {
+			original_tag = BRA
+		}
+
+		visible_when_empty = no
+	}

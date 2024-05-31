@@ -1,0 +1,531 @@
+characters={
+	IRE_Éamon_de_valera={
+		name="Éamon de Valera"
+		portraits={
+			civilian={
+				large="gfx/leaders/IRE/Portrait_Ireland_Eamon_de_Valera.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ÉAMON_DE_VALERA_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	IRE_eoin_oduffy={
+		name="Eoin O'Duffy"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_EOIN_ODUFFY_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	IRE_james_larkin={
+		name="James Larkin"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JAMES_LARKIN_DESC"
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	IRE_william_norton={
+		name="William Norton"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JAMES_LARKIN_DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	IRE_michael_costello={
+		name="Michael Costello"
+		portraits={
+			army={
+				large="gfx/leaders/IRE/Portrait_Michael_Costello.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader skilled_staffer naval_invader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	IRE_conner_obrian={
+		name="Conner O'Brian"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		field_marshal={
+			traits={ inflexible_strategist logistics_wizard }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	IRE_mike_fleischer={
+		name="Mike Fleischer"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_1.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ skilled_staffer panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	IRE_mark_mellett={
+		name="Mark Mellett"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_navy_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			}
+		}
+		navy_leader={
+			traits={ blockade_runner }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	IRE_sean_lemass = {
+		advisor={
+			slot = theorist_production
+			idea_token = IRE_sean_lemass
+			ledger = civilian
+			picture = generic_political_advisor_europe_5
+
+			allowed = {
+				original_tag = IRE
+			}
+			
+			traits = { captain_of_industry }
+			
+			ai_will_do = {
+				factor = 99
+				modifier = {
+					factor = 0
+					date > 1938.1.1
+				}
+			}
+			
+			ai_will_do = {
+				factor = 99
+				modifier = {
+					factor = 0
+					date > 1938.1.1
+				}
+			}
+		}
+	}
+	BEL_paul-henri_spaak = {
+		advisor={
+			slot = theorist_production
+			idea_token = BEL_paul-henri_spaak
+			ledger  = civilian 
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = IRE
+			}
+			
+			traits = { war_industrialist }
+		}
+	}
+	BEL_gaston_eyskens={
+		advisor={
+			slot = political_advisor
+			idea_token = BEL_gaston_eyskens
+			allowed  = {
+					original_tag  = IRE
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="BEL_gaston_eyskens"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	IRE_douglas_hyde = {
+		advisor={
+			slot = political_advisor
+			idea_token = IRE_douglas_hyde
+			ledger = civilian
+			picture = generic_political_advisor_europe_3
+				
+			allowed = {
+				original_tag = IRE
+			}
+			
+			traits = { popular_figurehead }
+		}
+	}
+	IRE_sean_ceallaigh = {
+		advisor={
+			slot = political_advisor
+			idea_token = IRE_sean_ceallaigh
+			ledger = civilian
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = IRE
+			}
+			
+			traits = { technocrat }
+		}
+	}
+	IRE_liam_archer = {
+		advisor={
+			slot = army_chief
+			idea_token = IRE_liam_archer
+			ledger = army
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = IRE
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	IRE_richard_james_mulcahy = {
+		advisor={
+			slot = army_chief
+			idea_token = IRE_richard_james_mulcahy
+			ledger = army
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = IRE
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	IRE_h_t_green = {
+		advisor={
+			slot = air_chief
+			idea_token = IRE_h_t_green
+			ledger = air	
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = IRE
+			}
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BEL_jules_iserentant={
+		advisor={
+			slot = air_chief
+			idea_token = BEL_jules_iserentant
+			allowed  = {
+					original_tag  = IRE
+				}
+				traits  = {
+					air_chief_reform_3 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="BEL_jules_iserentant"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	IRE_p_a_mulcahy = {
+		advisor={
+			slot = air_chief
+			idea_token = IRE_p_a_mulcahy
+			ledger = air	
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = IRE
+			}
+		
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	IRE_john_byrne = {
+		advisor={
+			slot = navy_chief
+			idea_token = IRE_john_byrne
+			ledger = navy
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = IRE
+			}
+			
+			traits = { navy_chief_naval_aviation_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BEL_georges_vereecken={
+		advisor={
+			slot = navy_chief
+			idea_token = BEL_georges_vereecken
+			allowed  = {
+					original_tag  = IRE
+				}
+				traits  = {
+					navy_anti_submarine_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="BEL_georges_vereecken"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	IRE_s_muiris = {
+		advisor={
+			slot = navy_chief
+			idea_token = IRE_s_muiris
+			ledger = navy
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = IRE
+			}
+		
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	IRE_dan_mckenna = {
+		advisor={
+			slot = high_command
+			idea_token = IRE_dan_mckenna
+			ledger = army
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = IRE
+			}
+					
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	IRE_frank_fahy = {
+		advisor={
+			slot = high_command
+			idea_token = IRE_frank_fahy
+			ledger = army	
+			
+			picture = generic_army_europe_6
+			
+			allowed = {
+				original_tag = IRE
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	IRE_michael_brennan = {
+		advisor={
+			slot = high_command
+			idea_token = IRE_michael_brennan
+			ledger = army		
+			
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = IRE
+			}
+			
+			traits = { army_armored_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	IRE_a_t_lawlor = {
+		advisor={
+			slot = high_command
+			idea_token = IRE_a_t_lawlor	
+			ledger = navy
+
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = IRE
+			}
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	BEL_rene_lagrou={
+		advisor={
+			slot = high_command
+			idea_token = BEL_rene_lagrou
+			ledger  = air 
+				allowed  = {
+					original_tag  = IRE
+				}
+				traits  = {
+					air_bomber_interception_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="BEL_rene_lagrou"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	IRE_michael_joe_costello = {
+		advisor={
+			slot = theorist
+			idea_token = IRE_michael_joe_costello	
+			ledger = army
+			
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = IRE
+			}
+			
+			
+			
+			traits = { military_theorist }
+		}
+	}
+	
+	IRE_oscar_traynor = {
+		advisor={
+			slot = theorist
+			idea_token = IRE_oscar_traynor	
+			ledger = air
+		
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = IRE
+			}
+			
+			
+			
+			traits = { air_warfare_theorist }
+		}
+	}
+		
+	IRE_georges_deffontaine = {
+		advisor={
+			slot = theorist
+			idea_token = IRE_georges_deffontaine	
+			ledger = navy
+
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = IRE
+			}
+			
+			
+			
+			traits = { naval_theorist }
+		}
+	}
+}
+

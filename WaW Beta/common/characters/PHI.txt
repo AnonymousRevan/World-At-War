@@ -1,0 +1,478 @@
+characters={
+	PHI_manuel_luis_quezón={
+		name="Manuel Luis Quezón"
+		portraits={
+			civilian={
+				large="gfx/leaders/PHI/Portrait_Philippines_Manuel_Luis_Quezon.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MANUEL_LUIS_QUEZON_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	PHI_pedro_p._baguisa={
+		name="Pedro P. Baguisa"
+		portraits={
+			civilian={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PEDRO_BAGUISA_DESC"
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	PHI_richard_marshall={
+		name="Richard Marshall"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_1.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+		    traits={ panzer_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	BEL_georges_timmermans={
+		name="Georges Timmermans"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_navy_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+	SWE_folke_högberg={
+		name="Folke Högberg"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		field_marshal={
+			traits={ logistics_wizard unyielding_defender }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	PHI__leonard_t._gerow={
+		name=" Leonard T. Gerow"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	PHI_josé_aguainaldo={
+		name="José Aguainaldo"
+		portraits={
+			civilian={
+				large="GFX_portrait_asia_generic_4"
+			}
+		}
+		country_leader={
+			ideology=rexism
+			traits={ colonial_organizer }
+			expire="1954.1.1.12"
+			id=-1
+		}
+	}
+	PHI_ladislao_díaz={
+		name="Ladislao Díaz"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Asia_Generic_3"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			traits={ SOV_iron_fisted_brute ENG_first_lord_of_the_admiralty }
+			expire="1954.1.1.12"
+			id=-1
+		}
+	}
+	PHI_sergio_osmena = {
+		advisor={
+			slot = political_advisor
+			idea_token = PHI_sergio_osmena
+			ledger  = civilian 
+			picture = generic_political_advisor_asia_2
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { silent_workhorse }
+		}
+	}
+
+	PHI_emilio_aguinaldo = {
+		advisor={
+			slot = political_advisor
+			idea_token = PHI_emilio_aguinaldo
+			ledger  = civilian 
+			picture = generic_political_advisor_asia_3
+				
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { industry_reformer }
+		}
+	}
+	SWI_johannes_baumann={
+		advisor={
+			slot = political_advisor
+			idea_token = SWI_johannes_baumann
+			allowed  = {
+					original_tag  = PHI
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="SWI_johannes_baumann"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	PHI_leoncio_s_tan = {
+		advisor={
+			slot = army_chief
+			idea_token = PHI_leoncio_s_tan
+			ledger  = army 
+			picture = generic_army_asia_2
+
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+		
+	PHI_basilio_j_valdez = {
+		advisor={
+			slot = army_chief
+			idea_token = PHI_basilio_j_valdez
+			ledger  = army 
+			picture = generic_army_asia_4
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SWI_roger_masson = {
+		advisor={
+			slot = theorist_production
+			idea_token = SWI_roger_masson
+			ledger  = civilian 
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { war_industrialist }
+		}
+	}
+	PHI_pelagio_cruz = {
+		advisor={
+			slot = air_chief
+			idea_token = PHI_pelagio_cruz
+			ledger  = air 	
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	PHI_edwin_andrews = {
+		advisor={
+			slot = air_chief
+			idea_token = PHI_edwin_andrews
+			ledger  = air 
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { air_air_superiority_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	PHI_santiago_nuval = {
+		advisor={
+			slot = navy_chief
+			idea_token = PHI_santiago_nuval
+			ledger  = navy 
+			picture = generic_navy_asia_1
+
+			allowed = {
+				original_tag = PHI
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+	PHI_eustacio_orobia = {
+		advisor={
+			slot = navy_chief
+			idea_token = PHI_eustacio_orobia
+			ledger  = navy 
+			picture = generic_navy_asia_3
+
+			allowed = {
+				original_tag = PHI
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	PHI_vicente_p_lim = {
+		advisor={
+			slot = high_command
+			idea_token = PHI_vicente_p_lim
+			ledger = army
+
+			picture = generic_army_asia_3
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+		
+	PHI_heraclio_alano = {
+		advisor={
+			slot = high_command
+			idea_token = PHI_heraclio_alano
+			ledger = army
+
+			picture = generic_army_asia_1
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	PHI_basilio_fernando = {
+		advisor={
+			slot = high_command
+			idea_token = PHI_basilio_fernando 
+			ledger = air
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	PHI_jose_v_andrada = {
+		advisor={
+			slot = high_command
+			idea_token = PHI_jose_v_andrada
+			ledger = navy
+
+			picture = generic_navy_asia_1
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	PHI_phraya_preechacholayudha = {
+		advisor={
+			slot = high_command
+			idea_token = PHI_phraya_preechacholayudha
+			ledger = navy
+
+			picture = generic_navy_asia_1
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { air_air_combat_training_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	PHI_benito_n_ebuen = {
+		advisor={
+			slot = theorist
+			idea_token = PHI_benito_n_ebuen
+			ledger = army
+
+			picture = generic_army_asia_5
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			
+			
+			traits = { military_theorist }
+		}
+	}
+		
+	PHI_ramon_a_alcaraz = { 
+		advisor={
+			slot = theorist
+			idea_token = PHI_ramon_a_alcaraz
+			ledger = air
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			
+			
+			traits = { air_warfare_theorist }
+		}
+	}
+
+	PHI_victor_h_dizon = {
+		advisor={
+			slot = theorist
+			idea_token = PHI_victor_h_dizon
+			ledger = navy
+
+			picture = generic_navy_asia_3
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			
+			
+			traits = { naval_theorist }
+		}
+	}
+	PHI_juan_sumulong = {
+		advisor={
+			slot = theorist_production
+			idea_token = PHI_juan_sumulong
+			ledger = civilian
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = PHI
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}
+}

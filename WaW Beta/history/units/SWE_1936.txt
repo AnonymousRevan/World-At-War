@@ -1,0 +1,2 @@
+﻿instant_effect = {
+}

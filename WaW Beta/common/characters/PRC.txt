@@ -1,0 +1,486 @@
+characters={
+
+	PRC_mao_zedong={
+		name="Mao Zedong"
+		portraits={
+			civilian={
+				large="GFX_portrait_prc_mao_zedong"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious politically_connected defensive_doctrine }
+			skill=4
+			attack_skill=2
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+		country_leader={
+			desc="POLITICS_MAO_ZEDONG_DESC"
+			ideology=marxism
+			traits={ cornered_fox }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	PRC_zhu_de={
+		name="Zhu De"
+		advisor={
+			slot = army_chief
+			idea_token = PRC_zhu_de
+			ledger  = army 		
+			picture = generic_army_asia_3
+
+			allowed = {
+				original_tag = PRC
+			}
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		portraits={
+			army={
+				small="GFX_portrait_prc_zhu_de_small"
+			}
+			army={
+				large="GFX_portrait_prc_zhu_de"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer organizer }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	PRC_peng_dehuai={
+		name="Peng Dehuai"
+		portraits={
+			army={
+				small="GFX_portrait_prc_peng_dehuai_small"
+			}
+			army={
+				large="GFX_portrait_prc_peng_dehuai"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trait_mountaineer }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	PRC_lin_biao={
+		name="Lin Biao"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_asia_generic_warlord1.dds"
+			}
+			army={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trait_mountaineer }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	PRC_gao_jin={
+		name="Gao Jin"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Asia_Generic_2"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ finance_graduate }
+			expire="1950.1.1.12"
+			id=-1
+		}
+	}
+	PRC_yang_wei={
+		name="Yang Wei"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Asia_Generic_3"
+			}
+		}
+		country_leader={
+			ideology=rexism
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+	PRC_deng_dong={
+		name="Deng Dong"
+		portraits={
+			civilian={
+				large="GFX_portrait_asia_generic_4"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			traits={ OAK_pig_headed_isolationist }
+			expire="1955.1.1.12"
+			id=-1
+		}
+	}
+	PRC_luo_ruiqing = {
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_luo_ruiqing
+			ledger  = civilian 
+			picture = china_luo_ruiqing
+		
+			available = {
+				has_intelligence_agency = yes
+			}
+			
+			allowed = {
+				original_tag = PRC
+				has_dlc = "La Resistance" 
+			}
+			
+			traits = { head_of_intelligence }
+
+		}
+	}
+
+	PRC_liu_shaoqi = {
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_liu_shaoqi
+			ledger  = civilian 
+			picture = generic_political_advisor_asia_1
+				
+			allowed = {
+				original_tag = PRC
+			}
+			
+			traits = { silent_workhorse }
+		}
+	}
+		
+	PRC_dong_biwu = {
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_dong_biwu
+			ledger  = civilian 	
+			picture = generic_political_advisor_asia_1
+						
+			allowed = {
+				original_tag = PRC
+				has_dlc = "Waking the Tiger"
+			}
+
+			traits = { popular_figurehead }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	PRC_kang_sheng = {
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_kang_sheng
+			ledger  = civilian 		
+			picture = generic_political_advisor_asia_2
+
+			available = {
+				has_completed_focus = PRC_military_intelligence_department
+			}
+			
+			allowed = {
+				OR = {
+					original_tag = PRC
+					is_chinese_warlord = yes
+				}
+				has_dlc = "Waking the Tiger"
+			}
+
+			cost = 75
+
+			traits = { prince_of_terror }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	PRC_gao_gang = {
+		advisor={
+			slot = air_chief
+			idea_token = PRC_gao_gang
+			ledger  = air	
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			traits = { air_bomber_interception_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	PRC_otto_braun = {
+		advisor={
+			slot = army_chief
+			idea_token = PRC_otto_braun
+			ledger  = army		
+			picture = generic_army_europe_3
+
+			allowed = {
+				original_tag = PRC
+			}
+			
+			traits = { army_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	PRC_ma_jin = {
+		advisor={
+			slot = army_chief
+			idea_token = PRC_ma_jin
+			ledger  = army		
+			picture = generic_army_asia_5
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	PRC_fang_zeyi = {
+		advisor={
+			slot = air_chief
+			idea_token = PRC_fang_zeyi
+			ledger  = air	
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	PRC_xu_xiangqian = {
+		advisor={
+			slot = high_command
+			idea_token = PRC_xu_xiangqian
+			ledger = army
+
+			picture = generic_army_asia_1
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	PRC_nie_rongzhen = {
+		advisor={
+			slot = high_command
+			idea_token = PRC_nie_rongzhen
+			ledger = army
+
+			picture = generic_army_asia_1
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	PRC_chen_geng = {
+		advisor={
+			slot = high_command
+			idea_token = PRC_chen_geng
+			ledger = army
+
+			picture = generic_army_asia_2
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			traits = { army_entrenchment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	PRC_ye_jianying = {
+		advisor={
+			slot = high_command
+			idea_token = PRC_ye_jianying
+			ledger = army
+			picture = generic_army_asia_2
+
+			allowed = {
+				original_tag = PRC
+			}
+
+			traits = {
+				army_logistics_2
+			}
+
+		}
+	}
+
+	PRC_deng_ye_peng = {
+		advisor={
+			slot = high_command
+			idea_token = PRC_deng_ye_peng
+			ledger = army
+
+			picture = generic_navy_asia_1
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	PRC_liu_bocheng = {
+		advisor={
+			slot = theorist
+			idea_token = PRC_liu_bocheng
+			ledger = army
+
+			picture = generic_air_asia_1
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			
+			traits = { military_theorist }
+		}
+	}
+
+	PRC_zhang_wei = {
+		advisor={
+			slot = theorist
+			idea_token = PRC_zhang_wei
+			ledger = navy
+
+			picture = generic_navy_asia_2
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			
+			traits = { naval_theorist }
+		}
+	}
+	PRC_lin_bojiu = {
+		advisor={
+			slot = theorist_production
+			idea_token = PRC_lin_bojiu
+			ledger = civilian
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			traits = { armaments_organizer }
+		}
+	}
+	PRC_he_yuandang = {
+		advisor={
+			slot = theorist_production
+			idea_token = PRC_he_yuandang
+			ledger = civilian
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			traits = { war_industrialist } 
+		}
+	}
+	PRC_deng_xiaoping = {
+		advisor={
+			slot = theorist_production
+			idea_token = PRC_deng_xiaoping
+			ledger = civilian	
+			picture = generic_political_advisor_asia_2
+
+			available = {
+				has_completed_focus = PRC_socialist_market_economy
+			}
+						
+			allowed = {
+				OR = {
+					original_tag = PRC
+					is_chinese_warlord = yes
+				}
+				has_dlc = "Waking the Tiger"
+			}
+
+			traits = { captain_of_industry }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

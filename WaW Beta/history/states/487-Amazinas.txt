@@ -1,0 +1,23 @@
+
+state={
+	id=487
+	name="STATE_487"
+	manpower = 1
+	
+	state_category = pastoral
+
+	history={
+		owner = PAR
+		buildings = {
+
+		}
+
+	}
+
+	provinces={
+		2160 10996 12917
+	}
+	
+
+	local_supplies=0.0 
+}

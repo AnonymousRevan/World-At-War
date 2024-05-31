@@ -1,0 +1,37 @@
+﻿capital = 292
+
+oob = "SAU_1936"
+
+add_ideas = {
+	developing_country
+}
+
+# Starting tech
+set_technology = {
+	################# infantry ###############
+	
+	infantry_weapons = 1  fuel_silos = 1 field_equipment = 1
+}
+
+set_convoys = 16
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Abdulaziz Ibn Saud"
+	desc = "POLITICS_ABDULAZIZ_DESC"
+	picture = "Portrait_Saudi_Arabia_Abdulazis_Ibn_Saud.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}

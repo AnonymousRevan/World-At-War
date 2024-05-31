@@ -1,0 +1,143 @@
+﻿###########################
+# Portugal Events
+###########################
+add_namespace = lar_portugal_overseas_provinces
+add_namespace = portugal
+
+######## OVERSEAS PROVINCES ########
+# Event for POR after integrating Angola (via decision)
+country_event = {
+	id = lar_portugal_overseas_provinces.1
+	title = lar_portugal_overseas_provinces.1.t
+	desc = lar_portugal_overseas_provinces.1.desc
+	picture = GFX_report_event_por_estado_novo
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_idea = POR_colonial_assimilation_policy }
+				swap_ideas = {
+					remove_idea = POR_colonial_assimilation_policy
+	    			add_idea = POR_colonial_assimilation_policy_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = POR_colonial_assimilation_policy_2 }
+				swap_ideas = {
+					remove_idea = POR_colonial_assimilation_policy_2
+	    			add_idea = POR_colonial_assimilation_policy_3
+				}
+			}
+		}
+	}
+
+	option = {
+		name = lar_portugal_overseas_provinces.1.a
+		add_stability = -0.1
+		effect_tooltip = {
+			if = { #Check for the idea added through immediate effect in order to show appropriate tt
+				limit = { has_idea = POR_colonial_assimilation_policy_2 }
+				swap_ideas = {
+					remove_idea = POR_colonial_assimilation_policy
+	    			add_idea = POR_colonial_assimilation_policy_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = POR_colonial_assimilation_policy_3 }
+				swap_ideas = {
+					remove_idea = POR_colonial_assimilation_policy_2
+	    			add_idea = POR_colonial_assimilation_policy_3
+				}
+			}
+		}
+	}
+}
+
+
+# Event for POR after integrating Mozambique (via decision) 
+country_event = {
+	id = lar_portugal_overseas_provinces.2
+	title = lar_portugal_overseas_provinces.2.t
+	desc = lar_portugal_overseas_provinces.2.desc
+	picture = GFX_report_event_por_estado_novo
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_idea = POR_colonial_assimilation_policy } 
+				swap_ideas = {
+					remove_idea = POR_colonial_assimilation_policy
+	    			add_idea = POR_colonial_assimilation_policy_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = POR_colonial_assimilation_policy_2 }
+				swap_ideas = {
+					remove_idea = POR_colonial_assimilation_policy_2
+	    			add_idea = POR_colonial_assimilation_policy_3
+				}
+			}
+		}
+	}
+
+	option = {
+		name = lar_portugal_overseas_provinces.2.a
+		add_stability = -0.1
+		effect_tooltip = {
+			if = { #Check for the idea added through immediate effect in order to show appropriate tt
+				limit = { has_idea = POR_colonial_assimilation_policy_2 }
+				swap_ideas = {
+					remove_idea = POR_colonial_assimilation_policy
+	    			add_idea = POR_colonial_assimilation_policy_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = POR_colonial_assimilation_policy_3 }
+				swap_ideas = {
+					remove_idea = POR_colonial_assimilation_policy_2
+	    			add_idea = POR_colonial_assimilation_policy_3
+				}
+			}
+		}
+	}
+}
+#Portugal Aids Allies
+country_event = {
+	id = portugal.1
+	title = portugal.1.t
+	desc = portugal.1.d
+	picture = GFX_report_event_por_estado_novo
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = portugal.1.a
+		add_to_faction = POR
+		POR = {
+			add_to_tech_sharing_group = commonwealth_research
+		}
+	}
+}
+#Portugal Aids Axis
+country_event = {
+	id = portugal.2
+	title = portugal.2.t
+	desc = portugal.2.d
+	picture = GFX_report_event_por_estado_novo
+
+	is_triggered_only = yes
+	
+	# ok
+	option = {
+		name = portugal.2.a
+		add_to_faction = POR
+		POR = {
+			add_to_tech_sharing_group = axis_research
+		}
+	}
+}

@@ -1,0 +1,259 @@
+﻿division_template = {
+	name = "Infanterie Divisie"
+	division_names_group = HOL_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 } 
+		artillery = { x = 0 y = 1 }  # Full howitzer regiment
+		recon = { x = 1 y = 0 }   
+		engineer = { x = 1 y = 1 }  
+        anti_air_company = { x = 0 y = 2 }	  
+	}
+}
+division_template = {
+	name = "Korps Mariniers"		
+    division_names_group = HOL_MAR_01	
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 1 y = 3 }
+		
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 2 y = 2 }
+		marine = { x = 2 y = 3 }
+		
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 } 
+		artillery = { x = 0 y = 1 }  # Full howitzer regiment
+		recon = { x = 1 y = 0 }   
+		engineer = { x = 1 y = 1 }  
+        anti_air_company = { x = 0 y = 2 }	
+	}	
+	priority = 2
+}
+#division_template = {
+#	name = "Brigada de Cavalary" 		# Cavalry Brigade
+#	division_names_group = POR_CAV_01
+#	# Note: Cavalry regiments included about 5 squadrons/companies
+#	regiments = {
+#		cavalry = { x = 0 y = 0 }
+#       	cavalry = { x = 0 y = 1 }
+#		cavalry = { x = 0 y = 2 }
+#		
+#        cavalry = { x = 1 y = 0 }
+#		cavalry = { x = 1 y = 1 }
+#	}
+#}
+### 40 width garrison occupation template
+division_template = {
+	name = "Occupation Division"	
+	regiments = {
+		garrison = { x = 0 y = 0 }
+		garrison = { x = 0 y = 1 }
+		garrison = { x = 0 y = 2 }
+		garrison = { x = 0 y = 3 }
+
+		garrison = { x = 1 y = 0 }
+		garrison = { x = 1 y = 1 }
+		garrison = { x = 1 y = 2 }
+		garrison = { x = 1 y = 3 }
+		
+		garrison = { x = 2 y = 0 }
+		garrison = { x = 2 y = 1 }
+		garrison = { x = 2 y = 2 }
+		garrison = { x = 2 y = 3 }
+		
+		garrison = { x = 3 y = 0 }
+		garrison = { x = 3 y = 1 }
+		garrison = { x = 3 y = 2 }
+		garrison = { x = 3 y = 3 }
+		
+		garrison = { x = 4 y = 0 }
+		garrison = { x = 4 y = 1 }
+		garrison = { x = 4 y = 2 }
+		garrison = { x = 4 y = 3 }	
+	}
+	support = {
+	    military_police = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	##### OLZ Nederland #####
+	### Veldleger ###
+	# 1e Legerkorps
+	division= {	# "1e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 391  # Amsterdam
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.2
+	}
+	division= {	# "3e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 391 # The Hague
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.2
+	}
+
+	# 2e Legerkorps
+	division= {	# "2e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 391  # Rotterdam
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.2
+
+	}
+	division= {	# "4e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 391  # Rotterdam
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.2
+
+	}
+
+}
+
+### Air Wings
+air_wings = {
+	# Luchtvaartafdeling -- NONE
+	# Note: All European aircraft were built by Fokker or ordered from USA starting in 1938
+
+	# Militaire Luchtvaart van het Koninklijk Nederlands-Indisch Leger (ML-KNIL) -- Celebes
+	# Note: ML-KNIL would increase in size during 1937-40 with USA models:
+	#	Curtis P-36 Hawks (H-75), CW-21 Interceptors, Brewster Buffaloes, Martin B-10s (WH-1--WH-3s)
+	7 = {
+		fighter_equipment_1936 = {		# Curtis P-6
+			owner = "HOL" 
+			amount = 100
+		}
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "HOL"
+		}
+		requested_factories = 1
+		progress = 0.47
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "HOL"
+		}
+		requested_factories = 1
+		progress = 0.74
+		efficiency = 100
+	}	
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "HOL" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "HOL" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = special_equipment_1
+			creator = "HOL" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+    add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "HOL" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "HOL" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1936
+			creator = "HOL" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1934
+			creator = "HOL" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+}
+

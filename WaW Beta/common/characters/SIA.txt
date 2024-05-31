@@ -1,0 +1,514 @@
+characters={
+	SIA_phraya_phahon={
+		name="Phraya Phahon"
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/Portrait_Siam_Phraya_Phahon.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PHRAYA_PHAHON_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CHI_wang_yaowu={
+		name="Wang Yao-wu"
+		portraits={
+			army={
+				small="GFX_portrait_chi_wang_yaowu_small"
+			}
+			army={
+				large="GFX_portrait_chi_wang_yaowu"
+			}
+		}
+		field_marshal={
+			traits={ logistics_wizard unyielding_defender }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	SWE_claes_lindström={
+		name="Claes Lindström"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_navy_2.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+			}
+		}
+		navy_leader={
+			traits={ blockade_runner }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+	SIA_lu_long={
+		name="Lu Long"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_asia_generic_land_1.dds"
+			}
+			army={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+		    traits={ panzer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	SIA_chang_tano={
+		name="Chang Tano"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_asia_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	SIA_naritsaranuwatiwong_nitithada={
+		name="Naritsaranuwatiwong Nitithada"
+		portraits={
+			civilian={
+				large="GFX_portrait_asia_generic_4"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ captain_of_industry USA_vice_president }
+			expire="1945.1.1.12"
+			id=-1
+		}
+	}
+	SIA_plaek_nitithada={
+		name="Plaek Nitithada"
+		portraits={
+			civilian={
+				large="GFX_portrait_asia_generic_4"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1955.1.1.12"
+			id=-1
+		}
+	}
+	CHI_huang_shen={
+		advisor={
+			slot = political_advisor
+			idea_token = CHI_huang_shen
+			ledger  = navy 
+				allowed  = {
+					original_tag  = SIA
+				}
+				
+				traits  = {
+					silent_workhorse 
+				}
+		}
+		name="CHI_huang_shen"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_2"
+			}
+		}
+	}
+	CHI_fang_zeyi={
+		advisor={
+			slot = political_advisor
+			idea_token = CHI_fang_zeyi
+			ledger  = air 
+				allowed  = {
+					original_tag  = SIA
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="CHI_fang_zeyi"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+	}
+	CHI_bo_yibo={
+		advisor={
+			slot = political_advisor
+			idea_token = CHI_bo_yibo
+			ledger  = army 
+				allowed  = {
+					original_tag  = SIA
+				}
+				
+				traits  = {
+					industry_reformer 
+				}
+		}
+		name="CHI_bo_yibo"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_2"
+			}
+		}
+	}
+	CHI_h_h_kung = {
+		advisor={
+			slot = theorist_production
+			idea_token = CHI_h_h_kung
+			ledger  = civilian 
+			picture = chi_h_h_kung
+				
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { war_industrialist }
+		}
+	}
+	SIA_plaek_saovabha={
+		name="Plaek Saovabha"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Asia_Generic_3"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			traits={ ENG_secretary_of_state_home_department }
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+	SIA_phot_bhahalyodin = {
+		advisor={
+			slot = political_advisor
+			idea_token = SIA_phot_bhahalyodin
+			ledger = civilian
+			picture = generic_political_advisor_asia_2
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { popular_figurehead }
+		}
+	}
+	SIA_kuang_abhayavongsa = {
+		advisor={
+			slot = political_advisor
+			idea_token = SIA_kuang_abhayavongsa
+			ledger = civilian
+			picture = generic_political_advisor_asia_3
+				
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { silent_workhorse }
+		}
+	}
+	SIA_luang_phibunsongkhram = {
+		advisor={
+			slot = army_chief
+			idea_token = SIA_luang_phibunsongkhram
+			ledger = army	
+			picture = generic_army_asia_2
+
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIA_phraya_chitnasongkhla = {
+		advisor={
+			slot = army_chief
+			idea_token = SIA_phraya_chitnasongkhla
+			ledger = army	
+			picture = generic_army_asia_4
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIA_phra_vechayanrangsarit = {
+		advisor={
+			slot = air_chief
+			idea_token = SIA_phra_vechayanrangsarit
+			ledger = air		
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIA_phraya_chalermarkiart = {
+		advisor={
+			slot = air_chief
+			idea_token = SIA_phraya_chalermarkiart
+			ledger = air
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { air_air_superiority_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIA_phraya_wichcitcholathai = {
+		advisor={
+			slot = navy_chief
+			idea_token = SIA_phraya_wichcitcholathai
+			ledger = navy	
+			picture = generic_navy_asia_1
+
+			allowed = {
+				original_tag = SIA
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIA_thawon_thamrongnawasawat = {
+		advisor={
+			slot = navy_chief
+			idea_token = SIA_thawon_thamrongnawasawat
+			ledger = navy
+			picture = generic_navy_asia_3
+
+			allowed = {
+				original_tag = SIA
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIA_tianliang_huntrakool = {
+		advisor={
+			slot = high_command
+			idea_token = SIA_tianliang_huntrakool
+			ledger = army
+
+			picture = generic_army_asia_3
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+	SIA_sindhu_kamalanavin = {
+		advisor={
+			slot = high_command
+			idea_token = SIA_sindhu_kamalanavin
+			ledger = army
+
+			picture = generic_army_asia_1
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIA_phraya_thayarnpikart = {
+		advisor={
+			slot = high_command
+			idea_token = SIA_phraya_thayarnpikart
+			ledger = army
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIA_luang_sinthusongkhramchai = {
+		advisor={
+			slot = high_command
+			idea_token = SIA_luang_sinthusongkhramchai
+			ledger = air
+
+			picture = generic_air_asia_1
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { air_air_combat_training_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIA_pridi_phanomyong = {
+		advisor={
+			slot = high_command
+			idea_token = SIA_pridi_phanomyong
+			ledger = navy
+
+			picture = generic_navy_asia_3
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIA_manphya_khanphialong = {
+		advisor={
+			slot = theorist
+			idea_token = SIA_manphya_khanphialong
+			ledger = army
+
+			picture = generic_army_asia_5
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			
+			
+			traits = { military_theorist }
+		}
+	}
+	SIA_sawat_phutianands = { 
+		advisor={
+			slot = theorist
+			idea_token = SIA_sawat_phutianands
+			ledger = navy
+
+			picture = generic_navy_asia_3
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			
+			
+			traits = { naval_theorist }
+		}
+	}
+	SIA_phra_silpasakrakorn = {
+		advisor={
+			slot = theorist
+			idea_token = SIA_phra_silpasakrakorn
+			ledger = air
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			
+			
+			traits = { air_warfare_theorist }
+		}
+	}
+	SIA_thawee_punyaketu = {
+		advisor={
+			slot = theorist_production
+			idea_token = SIA_thawee_punyaketu 
+			ledger = civilian
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { captain_of_industry }
+			
+			ai_will_do = {
+				factor = 99
+				modifier = {
+					factor = 0
+					date > 1938.1.1
+				}
+			}
+		}	
+	}
+}

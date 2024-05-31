@@ -1,0 +1,8 @@
+state_categories={
+	tiny_island = {
+		local_building_slots = 3
+		local_supplies = -0.15
+		color = { 40 40 40 }
+		state_production_speed_air_base_factor = -0.5
+	}
+}
