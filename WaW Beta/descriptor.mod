@@ -21,5 +21,5 @@ tags={
 	"Military"
 	"Sound"
 }
-name="World At War"
+name="The Road to War"
 supported_version="1.14.5"
