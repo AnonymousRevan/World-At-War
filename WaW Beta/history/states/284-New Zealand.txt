@@ -8,6 +8,7 @@ state={
 	
 	history={
 		owner = AST
+		set_state_flag = JAP_uncontrol_ANZAC
 		buildings = {
 			infrastructure = 6
 			arms_factory = 3

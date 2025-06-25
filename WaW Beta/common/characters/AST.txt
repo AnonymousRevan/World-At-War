@@ -145,8 +145,8 @@ characters={
 			}
 			available = {
 				OR = {
-				has_completed_focus = AST_adopt_westminster
-				has_completed_focus = AST_abandon_wesminster
+				has_completed_focus = AST_go_with_europe
+				has_completed_focus = AST_australia_first
 				}
 			}
 			traits = {
@@ -171,8 +171,8 @@ characters={
 			}
 			available = {
 				OR = {
-				has_completed_focus = AST_the_singapore_strategy
-				has_completed_focus = AST_Homeland_defence
+				has_completed_focus = AST_australia_first
+				has_completed_focus = AST_defence_of_the_pacific
 				}
 			}
 			traits = {
@@ -481,8 +481,8 @@ characters={
 			traits={ harsh_leader war_hero infantry_leader trickster desert_fox }
 			skill=4
 			attack_skill=4
-			defense_skill=3
-			planning_skill=6
+			defense_skill=2
+			planning_skill=5
 			logistics_skill=2
 			legacy_id=-1
 		}
@@ -499,10 +499,10 @@ characters={
 		}
 		corps_commander={
 			traits={ organizer infantry_leader }
-			skill=4
-			attack_skill=4
+			skill=3
+			attack_skill=2
 			defense_skill=4
-			planning_skill=4
+			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
 		}
@@ -519,11 +519,11 @@ characters={
 		}
 		corps_commander={
 			traits={ naval_invader }
-			skill=4
+			skill=3
 			attack_skill=3
-			defense_skill=4
+			defense_skill=3
 			planning_skill=3
-			logistics_skill=3
+			logistics_skill=1
 			legacy_id=-1
 		}
 	}
@@ -541,7 +541,7 @@ characters={
 			traits={ hill_fighter }
 			skill=3
 			attack_skill=2
-			defense_skill=4
+			defense_skill=3
 			planning_skill=3
 			logistics_skill=1
 			legacy_id=-1
@@ -562,7 +562,7 @@ characters={
 			skill=3
 			attack_skill=3
 			defense_skill=3
-			planning_skill=3
+			planning_skill=1
 			logistics_skill=3
 			legacy_id=-1
 		}

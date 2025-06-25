@@ -20,6 +20,27 @@
 ### ITA_fiat_organization -> see ITA_organizations.txt 
 ### SOV_okmo_organization -> see SOV_organizations.txt 
 
+BUL_daimler_benz = {
+	include = medium_tank_designer
+	name = "Licensed Daimler Benz"
+	icon = 	GFX_idea_daimler_benz
+	
+	allowed = {	
+			tag = BUL
+    }
+	
+}
+BUL_industrias_cataluna = {
+	include = light_tank_designer
+	name = "Licensed La Hispano"
+	icon = 	GFX_spr_la_hispano
+	
+	allowed = {	
+			tag = BUL
+    }
+	
+}
+
 #####################
 
  ## #  # ### ###   ## 
@@ -187,14 +208,8 @@ BUL_dvf_organization = {
 	icon = GFX_idea_bul_darzhavna_voenna_fabrika
 	
 	allowed = {	
-		tag = BUL
-		has_dlc = "Battle for the Bosporus"
+		original_tag = BUL
 	}
-	
-	available = {
-		
-	}
-
 }
 
 BUL_dvf_sopot_organization = {
@@ -202,16 +217,25 @@ BUL_dvf_sopot_organization = {
 	icon = GFX_idea_bul_darzhavna_voenna_fabrika
 	
 	allowed = {	
-		tag = BUL
-		has_dlc = "Battle for the Bosporus"
+		original_tag = BUL
 	}
-
-	available = {
-		
-	}
-
 }
-
+BUL_dvf_heavy_artillery = {
+	include = generic_heavy_artillery_organization
+	icon = GFX_idea_bul_darzhavna_voenna_fabrika
+	name = "DVF Heavy Industry"
+	allowed = {	
+		original_tag = BUL
+	}
+}
+BUL_dvf_anti_tank_air = {
+	include = generic_anti_tank_air_organization
+	icon = GFX_idea_bul_darzhavna_voenna_fabrika	
+	name = "DFV Support Weaponry"
+	allowed = {	
+		original_tag = BUL
+	}
+}
 ### Foreign Subsidiaries
 
 ### GER_opel_organization -> see GER_organizations.txt 

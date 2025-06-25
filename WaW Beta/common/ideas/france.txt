@@ -34,27 +34,27 @@ ideas = {
 			equipment_bonus = {
 				small_plane_airframe = {
 					instant = yes
-					build_cost_ic = 0.3
+					build_cost_ic = 0.5
 				}
 				medium_plane_fighter_airframe = {
 					instant = yes
-					build_cost_ic = 0.3
+					build_cost_ic = 0.25
 				}
 				small_plane_cas_airframe = {
 					instant = yes
-					build_cost_ic = 0.3
+					build_cost_ic = 0.5
 				}
 				small_plane_naval_bomber_airframe = {
 					instant = yes
-					build_cost_ic = 0.3
+					build_cost_ic = 0.5
 				}
 				medium_plane_airframe = {
 				    instant = yes
-					build_cost_ic = 0.3
+					build_cost_ic = 0.5
 				}
 				large_plane_airframe = {
 				    instant = yes
-					build_cost_ic = 0.3
+					build_cost_ic = 0.75
 				}
 			}
 		}
@@ -319,9 +319,6 @@ ideas = {
 			
 			equipment_bonus = { 
 				destroyer = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				frigate = {
 					build_cost_ic = -0.1 instant = yes
 				}
 				convoy = {
@@ -1385,7 +1382,7 @@ ideas = {
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.2
 				consumer_goods_factor = 0.33
-				industrial_capacity_factory = -0.15
+				industrial_capacity_factory = -0.20
 			}
 			
 			removal_cost = -1

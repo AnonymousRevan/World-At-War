@@ -100,9 +100,9 @@ characters={
 		}
 		field_marshal={
 			traits={ old_guard politically_connected defensive_doctrine }
-			skill=1
+			skill=2
 			attack_skill=1
-			defense_skill=1
+			defense_skill=3
 			planning_skill=2
 			logistics_skill=1
 			legacy_id=-1
@@ -132,10 +132,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard trait_cautious reservist }
+			traits={ old_guard reservist }
 			skill=2
 			attack_skill=1
-			defense_skill=1
+			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
@@ -187,7 +187,7 @@ characters={
 			traits={ war_hero trait_engineer panzer_leader }
 			skill=3
 			attack_skill=4
-			defense_skill=3
+			defense_skill=2
 			planning_skill=4
 			logistics_skill=3
 			legacy_id=-1
@@ -228,7 +228,7 @@ characters={
 			skill=3
 			attack_skill=3
 			defense_skill=3
-			planning_skill=3
+			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
 		}
@@ -541,8 +541,8 @@ characters={
 		corps_commander={
 			skill=2
 			attack_skill=2
-			defense_skill=2
-			planning_skill=2
+			defense_skill=3
+			planning_skill=1
 			logistics_skill=2
 			legacy_id=-1
 		}
@@ -571,7 +571,7 @@ characters={
 		}
 		corps_commander={
 			traits={ trait_cautious }
-			skill=2
+			skill=1
 			attack_skill=1
 			defense_skill=2
 			planning_skill=2

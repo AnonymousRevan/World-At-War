@@ -140,7 +140,6 @@ POL_vauxhall = {
 
 }
 POL_vulcan = {
-	include = Vulcan
 	name = "Vulcan Foundry" 
 	icon = GFX_idea_vulcan
 

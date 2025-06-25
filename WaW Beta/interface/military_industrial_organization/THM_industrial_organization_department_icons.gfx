@@ -62,6 +62,26 @@ spriteTypes = {
 	}	
 
 	spriteType = {
+		name = "GFX_military_industrial_organization_pack_artillery"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_pack_arty.dds"
+	}
+
+	spriteType = {
+		name = "GFX_military_industrial_organization_pack_artillery_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_pack_arty.dds"
+	}
+
+	spriteType = {
+		name = "GFX_military_industrial_organization_heavy_artillery"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_heavy_arty.dds"
+	}
+
+	spriteType = {
+		name = "GFX_military_industrial_organization_heavy_artillery_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_heavy_arty.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_military_industrial_organization_anti_tank"
 		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_anti_tank.dds"
 	}

@@ -462,7 +462,7 @@
 }
 CZE_skoda = {
     name = "Škoda"
-	include = medium_tank_designer
+	include = quality_light_tank_designer
 	icon = GFX_idea_HUN_skoda_works
 	
 	allowed = {	
@@ -472,28 +472,36 @@ CZE_skoda = {
 				}
 			}
 	equipment_type = { armor }
-	research_categories = { armor }
+	research_categories = { mio_cat_eq_all_light_tank }
 
 	initial_trait = {
-		name = medium_tank_designer
+		name = quality_light_tank_designer
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		organization_modifier = {
-			military_industrial_organization_funds_gain = 1
-			military_industrial_organization_design_team_change_cost = -1.0
-		}
-		
+			military_industrial_organization_funds_gain = 0.25
+			military_industrial_organization_design_team_change_cost = 0.25
+		}		
 		equipment_bonus = {
-			reliability = -0.25		
-					maximum_speed = 0.1
-		}
+			reliability = 0.10		
+			hard_attack = 0.10
+			armor_value = 0.10
+			hardness = 0.05
+			build_cost_ic = 0.10
+		}		
 	}
 	trait = {
 		token = skoda_art
 		name = "Co-operation with Škoda Artillery"
 		icon = GFX_generic_mio_department_icon_facilities
 		position = { x=5 y=0}
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		equipment_bonus = {
-			soft_attack = 0.02
-			hard_attack = 0.02
+			soft_attack = 0.04
+			breakthrough = 0.05
 		}
 	}
 	trait = {
@@ -502,45 +510,45 @@ CZE_skoda = {
 		icon = GFX_generic_mio_trait_icon_hard_attack
 		position = { x=4 y=1}
 	    any_parent = { skoda_art }
-				mutually_exclusive = { flex_for_fire mob_art }
+		mutually_exclusive = { flex_for_fire }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		equipment_bonus = {
-			hard_attack = 0.035
+			soft_attack = 0.025
+			hard_attack = 0.025
 		}
 	}
 	trait = {
 		token = flex_for_fire
 		name = "Sacrifice Flexibility for Firepower"
 		icon = GFX_generic_mio_department_icon_tank_general_at
-		position = { x=5 y=1}
-	    any_parent = { skoda_art }
-				mutually_exclusive = { agile_td mob_art }
-		equipment_bonus = {
-			maximum_speed = -0.15
-			hard_attack = 0.035
-			soft_attack = 0.035
-		}
-	}
-	trait = {
-		token = mob_art
-		name = "Mobile Artillery"
-		icon = GFX_generic_mio_department_icon_tank_general_spg
 		position = { x=6 y=1}
 	    any_parent = { skoda_art }
-		mutually_exclusive = { flex_for_fire agile_td }
+		mutually_exclusive = { agile_td }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		equipment_bonus = {
-			soft_attack = 0.035
+			maximum_speed = -0.15
+			soft_attack = 0.05
+			hard_attack = 0.05
 		}
 	}
 	trait = {
-		token = spaa
+		token = skoda_spaa
 		name = "Armoured Air Defence"
 		icon = GFX_generic_mio_department_icon_tank_general_spg
 		position = { x=5 y=2}
-	    any_parent = { mob_art flex_for_fire agile_td }
-		limit_to_equipment_type = { mio_cat_eq_all_spaa }
+	    any_parent = { flex_for_fire agile_td }
+		limit_to_equipment_type = { 
+			light_tank_aa_chassis
+		}
 
 		equipment_bonus = {
-			air_attack = 0.1
+			air_attack = 0.15
+			soft_attack = 0.10
+			armor_value = 0.10
 			build_cost_ic = 0.05
 		}
 	}
@@ -549,10 +557,13 @@ CZE_skoda = {
 		name = "Optimized Gun Production Methods"
 		icon = GFX_generic_mio_trait_icon_production_capacity
 		position = { x=5 y=3}
-	    any_parent = { spaa }
-		equipment_bonus = {
-			build_cost_ic = -0.05
+	    any_parent = { skoda_spaa }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
 		}
+        production_bonus = {
+            production_capacity_factor = 0.05
+        }
 	}
 	trait = {
 		token = czech
@@ -560,7 +571,9 @@ CZE_skoda = {
 		icon = GFX_generic_mio_trait_icon_reliability
 
 		position = { x=1 y=0 }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}		
 		production_bonus = {
 			production_efficiency_cap_factor = 0.02
 		}
@@ -570,16 +583,18 @@ CZE_skoda = {
 	}
 	trait = {
 		token = state_growth
-		name = "State Sponsored Growth"
+		name = "State Sponsored Research"
 		icon = GFX_generic_mio_department_icon_facilities		
 
 		position = { x=0 y=1 }
 		relative_position_id = czech
 		all_parents = { czech }
 		
-
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		organization_modifier = {
-			military_industrial_organization_size_up_requirement = -0.15
+			military_industrial_organization_research_bonus = 0.15
 		}
 	}
 	trait = {
@@ -591,10 +606,12 @@ CZE_skoda = {
 		relative_position_id = state_growth
 		all_parents = { state_growth }
 		mutually_exclusive = { flexible_line }		
-
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		production_bonus = {
 			production_efficiency_cap_factor = 0.03
-			production_efficiency_gain_factor = -0.3
+			production_efficiency_gain_factor = -0.25
 		}
 	}
 	trait = {
@@ -606,9 +623,11 @@ CZE_skoda = {
 		relative_position_id = state_growth
 		mutually_exclusive = { cap }
 		all_parents = { state_growth }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}		
 		production_bonus = {
-			production_efficiency_gain_factor = 0.25
+			production_efficiency_gain_factor = 0.20
 		}
 	}
 
@@ -619,11 +638,13 @@ CZE_skoda = {
 
 		position = { x=3 y=0 }
 
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}		
 		equipment_bonus = {
 			build_cost_ic =0.025
-			soft_attack = 0.02
-			hard_attack = 0.02
+			armor_value = 0.10
+			breakthrough = 0.05
 		}
 	}
 	trait = {
@@ -633,11 +654,15 @@ CZE_skoda = {
 
 		position = { x=0 y=1 }
 		relative_position_id = improved_fightingcompartment
-		all_parents = { improved_fightingcompartment }		
+		all_parents = { improved_fightingcompartment }	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}		
 		equipment_bonus = {
-			build_cost_ic =0.025
+			build_cost_ic = 0.025
 			soft_attack = 0.025
-			hard_attack = 0.025
+			ap_attack = 0.05
+			defense = 0.10
 		}
 	}
 	trait = {
@@ -646,24 +671,30 @@ CZE_skoda = {
 		icon = GFX_generic_mio_trait_icon_naval_strike_targetting
 
 		position = { x= 8 y=0 }
-	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}	
 		equipment_bonus = {
-			soft_attack = 0.035
-			hard_attack = 0.035
+			maximum_speed = 0.06
 			reliability = -0.1
 		}
 	}
 	trait = {
 		token = cylinders
-		name = "Advanced Cylinder Heads"
+		name = "Advanced Turret Technology"
 		icon = GFX_generic_mio_department_icon_tank_general_engine
 
 		position = { x=1 y=1 }
 		mutually_exclusive = { cooling }
 		relative_position_id = pneumatic		
 		all_parents = { pneumatic }	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		equipment_bonus = {
-			maximum_speed = 0.15
+			armor_value = 0.125
+			hardness = 0.015
+			ap_attack = 0.10
 		}
 	}
 	trait = {
@@ -674,10 +705,14 @@ CZE_skoda = {
 		position = { x=-1 y=1 }
 		relative_position_id = pneumatic
 		mutually_exclusive = { cylinders }
-		all_parents = { pneumatic }			
+		all_parents = { pneumatic }	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}		
 		equipment_bonus = {
-			reliability = 0.1
-
+			reliability = 0.10
+			fuel_capacity = 0.15
+			fuel_consumption = -0.10
 		}
 	}
 }

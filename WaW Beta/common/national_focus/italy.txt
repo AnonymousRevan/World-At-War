@@ -137,10 +137,6 @@ focus_tree = {
 			add_stability = 0.1
 			add_political_power = 120
 			add_ideas = impero_di_argilla
-			hidden_effect = {
-				 sound_effect = sp_ita_ethiopia
-				 play_song = "Faccetta Nera"
-			}
 			country_event = { hours = 6 id = news.347 }
 		}
 	}
@@ -2569,7 +2565,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 12
+				amount = 25
 				state = 448
 			}
 			
@@ -3100,7 +3096,14 @@ focus_tree = {
 		cost = 2.2
 		ai_will_do = {
 			factor = 10
-		}	
+		}
+		bypass = {
+			OR = {
+				NOT = { country_exists = GRE }
+				has_war_with = GRE
+				date > 1941.1.1
+			}
+		}
 		completion_reward = {
 			44 = {
 				build_2_infrastructure = yes
@@ -3257,6 +3260,14 @@ focus_tree = {
  
 		completion_reward = {
 			add_ideas = ITA_occupation
+			if = {
+				limit = {
+					EFR = { is_ai = yes }
+				}
+			ITA = { 
+				transfer_state = 1 
+			}				
+			}
 			ITA = { 
 				transfer_state = 735 
 				transfer_state = 458
@@ -3278,12 +3289,15 @@ focus_tree = {
 			factor = 10
 		}
         available = {
-		OR = {
-		YUG = { has_capitulated = yes }
-		is_in_faction_with = YUG
-		}
-		GRE = { has_capitulated = yes }
-		has_political_power > 200
+			OR = {
+				YUG = { has_capitulated = yes }
+				is_in_faction_with = YUG
+		
+				GRE = { has_capitulated = yes }
+				date > 1941.1.1
+			}
+			has_political_power > 200
+				
 		}
 		completion_reward = {
 			add_political_power = -200

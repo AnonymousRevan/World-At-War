@@ -184,10 +184,6 @@
 #			owner = "POR" 
 #			amount = 100
 #		}
-<<<<<<< Updated upstream
-=======
-#        start_experience_factor = 0.2
->>>>>>> Stashed changes
 #	}	
 #}
 #### Production ###

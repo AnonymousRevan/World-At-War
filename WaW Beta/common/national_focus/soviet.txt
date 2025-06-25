@@ -67,7 +67,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = SOV_finish_the_2_5_year_plan
 
-		cost = 3 
+		cost = 1 
 
 		ai_will_do = {
 			factor = 1
@@ -186,7 +186,7 @@ focus_tree = {
 		relative_position_id = SOV_expand_the_fleet_commands
 	 	prerequisite = { focus = SOV_expand_the_fleet_commands }
 
-		cost = 5.8
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -279,7 +279,7 @@ focus_tree = {
 		relative_position_id = SOV_expand_the_fleet_commands
 		x = -2
 		y = 1
-		cost = 3
+		cost = 1
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -310,7 +310,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_the_old_school
-		cost = 3
+		cost = 1
 		available = {
 			has_tech = basic_ship_hull_heavy
 	}
@@ -402,7 +402,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_old_school
-		cost = 3
+		cost = 1
 		available = {
 			has_tech = early_ship_hull_carrier
 	}
@@ -490,7 +490,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_carrier_focus
-		cost = 3
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -511,7 +511,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_expand_the_fleet_commands
-		cost = 3
+		cost = 1
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -528,7 +528,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_young_school
-		cost = 3
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -551,7 +551,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_the_young_school
-		cost = 3
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -574,7 +574,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_surface_combat
-		cost = 3
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -872,10 +872,10 @@ focus_tree = {
 			custom_effect_tooltip = SOV_phase_of_5_year_plan_focus_tt
 			every_state = {
 				limit = { has_state_flag = SOV_5_year_plan_IC }
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				build_1_infrastructure = yes
@@ -885,37 +885,37 @@ focus_tree = {
 					is_ai = yes
 				}
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 					build_1_infrastructure = yes
 				}
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 					build_1_infrastructure = yes
 				}
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 					build_1_infrastructure = yes
 				}
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 					build_1_infrastructure = yes
@@ -972,10 +972,10 @@ focus_tree = {
 			custom_effect_tooltip = SOV_phase_of_5_year_plan_focus_tt
 			every_state = {
 				limit = { has_state_flag = SOV_5_year_plan_IC }
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				build_1_infrastructure = yes
@@ -990,37 +990,37 @@ focus_tree = {
 					is_ai = yes
 				}
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 					build_1_infrastructure = yes
 				}
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 					build_1_infrastructure = yes
 				}
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 					build_1_infrastructure = yes
 				}
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 					build_1_infrastructure = yes
@@ -2449,10 +2449,10 @@ focus_tree = {
 			custom_effect_tooltip = SOV_phase_of_5_year_plan_focus_tt
 			every_state = {
 				limit = { has_state_flag = SOV_5_year_plan_IC }
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				build_1_infrastructure = yes
@@ -2641,10 +2641,10 @@ focus_tree = {
 			custom_effect_tooltip = SOV_phase_of_5_year_plan_focus_tt
 			every_state = {
 				limit = { has_state_flag = SOV_5_year_plan_IC }
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				build_1_infrastructure = yes
@@ -2784,10 +2784,10 @@ focus_tree = {
 			custom_effect_tooltip = SOV_phase_of_5_year_plan_focus_tt
 			every_state = {
 				limit = { has_state_flag = SOV_5_year_plan_IC }
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				build_1_infrastructure = yes
@@ -3693,12 +3693,10 @@ focus_tree = {
 						motorized = { x = 0 y = 0 }
 						motorized = { x = 0 y = 1 }
 						motorized = { x = 0 y = 2 }
-						motorized = { x = 0 y = 3 }
 						
 						motorized = { x = 1 y = 0 }
 						motorized = { x = 1 y = 1 }
 						motorized = { x = 1 y = 2 }
-						motorized = { x = 1 y = 3 }
 						
 						motorized = { x = 2 y = 0 }
 						motorized = { x = 2 y = 1 }
@@ -3706,8 +3704,11 @@ focus_tree = {
 
 						artillery_brigade_mot = { x = 3 y = 0 }
 						artillery_brigade_mot = { x = 3 y = 1 }
-						artillery_heavy_mot = { x = 3 y = 2 }		
-						anti_tank_brigade_mot = { x = 3 y = 3 }					
+						artillery_brigade_mot = { x = 3 y = 2 }		
+						anti_tank_brigade_mot = { x = 3 y = 3 }	
+
+						anti_air_mot = { x = 4 y = 0 }
+						anti_tank_brigade_mot = { x = 4 y = 1 }
 					}
 					support = {
 						DIV_HQ = { x = 0 y = 0 } 
@@ -3739,6 +3740,14 @@ focus_tree = {
 						division = "name = \"Mekhanizirovaniy Korpus\" division_template = \"Motorized Rifle Corps\" start_experience_factor = 0.8 start_equipment_factor = 1.0" 
 						owner = SOV
 					}	
+					create_unit = {
+						division = "name = \"Mekhanizirovaniy Korpus\" division_template = \"Motorized Rifle Corps\" start_experience_factor = 0.8 start_equipment_factor = 1.0" 
+						owner = SOV
+					}
+					create_unit = {
+						division = "name = \"Mekhanizirovaniy Korpus\" division_template = \"Motorized Rifle Corps\" start_experience_factor = 0.8 start_equipment_factor = 1.0" 
+						owner = SOV
+					}
 					create_unit = {
 						division = "name = \"Mekhanizirovaniy Korpus\" division_template = \"Motorized Rifle Corps\" start_experience_factor = 0.8 start_equipment_factor = 1.0" 
 						owner = SOV
@@ -3849,6 +3858,9 @@ focus_tree = {
 		relative_position_id = SOV_work_harder_not_smarter
 		completion_reward = {
 			add_tech_bonus = {
+				technology = improved_machine_tools
+				technology = advanced_machine_tools
+				technology = assembly_line_production
 				technology = concentrated_industry2
 				technology = concentrated_industry3 
 				technology = concentrated_industry4 
@@ -3947,11 +3959,9 @@ focus_tree = {
 				technology = improved_machine_tools
 				technology = advanced_machine_tools
 				technology = assembly_line_production
-				technology = dispersed_industry
 				technology = dispersed_industry2
 				technology = dispersed_industry3
 				technology = dispersed_industry4
-				technology = dispersed_industry5
 				uses = 2 
 				bonus = 1
 			}
@@ -4406,8 +4416,8 @@ focus_tree = {
 			army_experience = -50
 			add_doctrine_cost_reduction = {
 				category = land_doctrine 
-				uses = 1 
-				cost_reduction = 0.35
+				uses = 2 
+				cost_reduction = 0.75
 				name = SOV_rehabilitate_the_military 
 			}			 
 		}
@@ -4428,7 +4438,7 @@ focus_tree = {
 		}
 		bypass = {
 			CHI = {
-				exists = NO
+				exists = no
 			}
 		}
 		x = 8
@@ -5008,13 +5018,13 @@ focus_tree = {
 			}
 			OR = {
 				has_completed_focus = SOV_organize_the_defence_of_stalingrad
-				date > 1942.10.01
+				date > 1942.6.01
 			}
 		}
 
 		completion_reward = {
 			swap_ideas = {
-				add_idea = SOV_aviation_enthusiasm
+				add_idea = SOV_aviation_enthusiasm_2
 				remove_idea = SOV_outdated_airforce
 			}
 			
@@ -5061,6 +5071,7 @@ focus_tree = {
 		id = SOV_the_great_patriotic_war
 		icon = GFX_SOV_red_army
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_RESEARCH}
+#		mutually_exclusive = { focus = SOV_the_great_patriotic_war_1942 }
 		cost = 5 
 
 		ai_will_do = {
@@ -5073,7 +5084,7 @@ focus_tree = {
 			has_war_with = GER 
 		}
 
-		x = 2
+		x = 1
 		y = 1
 		
 		complete_tooltip = {
@@ -5083,7 +5094,7 @@ focus_tree = {
 					is_ai = no 
 				}
 				remove_ideas = home_of_revolution
-				add_timed_idea = { idea = home_of_revolution_2 days = 210 }
+				add_timed_idea = { idea = home_of_revolution_2 days = 240 }
 
 			}
 			if = {
@@ -5103,7 +5114,7 @@ focus_tree = {
 					is_ai = no 
 				}
 				remove_ideas = home_of_revolution
-				add_timed_idea = { idea = home_of_revolution_2 days = 210 }
+				add_timed_idea = { idea = home_of_revolution_2 days = 240 }
 
 			}
 			if = {
@@ -5118,6 +5129,223 @@ focus_tree = {
 		}
 	}
 
+### 1942 BARB WIP Stuff	
+#	focus = {
+#		id = SOV_the_great_patriotic_war_1942
+#		icon = GFX_SOV_red_army
+#		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_RESEARCH}
+#		mutually_exclusive = { focus = SOV_the_great_patriotic_war}
+#		cost = 5 
+#
+#		ai_will_do = {
+#			factor = 100			
+#		}
+#
+#		relative_position_id = SOV_peoples_commissariat
+#
+#		available = {
+#			has_war_with = GER
+#			GER = {
+#			has_idea = GER_summer_42			
+#			}
+#			NOT = {
+#				has_idea = SOV_surprise_strike
+#			}
+#		}
+#
+#		x = 3
+#		y = 1
+#		
+#		complete_tooltip = {
+#			custom_effect_tooltip = SOV_great_patriotic_war_category_tt	
+#			if = {
+#				limit = {
+#					is_ai = no 
+#				}
+#				remove_ideas = home_of_revolution
+#
+#			}
+#			if = {
+#				limit = {
+#					is_ai = yes 
+#					GER = {
+#						is_ai = no 
+#					}
+#				}
+#				remove_ideas = home_of_revolution			
+#			}
+#		}
+#		completion_reward = {
+#			custom_effect_tooltip = SOV_great_patriotic_war_category_tt	
+#			if = {
+#				limit = {
+#					is_ai = no 
+#				}
+#				remove_ideas = home_of_revolution
+#
+#			}
+#			if = {
+#				limit = {
+#					is_ai = yes 
+#					GER = {
+#						is_ai = no 
+#					}
+#				}
+#				remove_ideas = home_of_revolution			
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = SOV_race_to_prepare
+#		icon = GFX_SOV_form_the_PCDI
+#		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_RESEARCH}
+#		cost = 1
+#
+#		ai_will_do = {
+#			factor = 100			
+#		}
+#
+#		relative_position_id = SOV_peoples_commissariat
+#
+#		available = {
+#			date > 1942.1.1
+#			NOT = {
+#				has_war_with = GER
+#			}
+#		}
+#
+#		x = 9
+#		y = 1
+#		
+#		complete_tooltip = {
+#			add_timed_idea = { idea = SOV_prepare_for_the_resist_war days = 180 }
+#		}
+#		completion_reward = {
+#			add_timed_idea = { idea = SOV_prepare_for_the_resist_war days = 180 }
+#		}
+#	}
+#	
+#	focus = {
+#		id = SOV_the_growing_resistance
+#		icon = GFX_SOV_red_army
+#		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_RESEARCH}
+#		prerequisite = {
+#			focus = SOV_the_great_patriotic_war_1942
+#		}
+#		prerequisite = {
+#			focus = SOV_race_to_prepare
+#		}
+#		cost = 1
+#
+#		ai_will_do = {
+#			factor = 100			
+#		}
+#
+#		relative_position_id = SOV_peoples_commissariat
+#
+#		available = {
+#			AND = {
+#				NOT = {
+#					has_idea = SOV_surprise_strike
+#				}
+#				date > 1943.1.1
+#			}
+#		}
+#
+#		x = 9
+#		y = 2
+#		
+#		complete_tooltip = {
+#			add_ideas = SOV_grow_resist
+#		}
+#		completion_reward = {
+#			add_ideas = SOV_grow_resist
+#		}
+#	}
+#
+#	focus = {
+#		id = SOV_the_red_fervor
+#		icon = GFX_SOV_red_army
+#		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_RESEARCH}
+#		prerequisite = {
+#			focus = SOV_the_great_patriotic_war_1942
+#		}
+#		cost = 1
+#
+#		ai_will_do = {
+#			factor = 100			
+#		}
+#
+#		relative_position_id = SOV_peoples_commissariat
+#
+#		available = {
+#			AND = {
+#				NOT = {
+#					has_idea = SOV_surprise_strike
+#				}
+#				date > 1944.1.1
+#			}
+#		}
+#
+#		x = 9
+#		y = 3
+#		
+#		complete_tooltip = {
+#			swap_ideas = {
+#				remove_idea = SOV_grow_resist
+#				add_idea = SOV_fervor
+#			}
+#		}
+#		completion_reward = {
+#			swap_ideas = {
+#				remove_idea = SOV_grow_resist
+#				add_idea = SOV_fervor
+#			}
+#		}
+#	}
+#	
+#	focus = {
+#		id = SOV_leave_no_fascist_standing
+#		icon = GFX_SOV_red_army
+#		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_RESEARCH}
+#		prerequisite = {
+#			focus = SOV_the_great_patriotic_war_1942
+#		}
+#		cost = 1
+#
+#		ai_will_do = {
+#			factor = 100			
+#		}
+#
+#		relative_position_id = SOV_peoples_commissariat
+#
+#		available = {
+#			AND = {
+#				NOT = {
+#					has_idea = SOV_surprise_strike
+#				}
+#				date > 1945.1.1
+#			}
+#		}
+#
+#		x = 9
+#		y = 4
+#		
+#		complete_tooltip = {
+#			swap_ideas = {
+#				remove_idea = SOV_fervor
+#				add_idea = SOV_no_fascist
+#			}
+#		}
+#		completion_reward = {
+#			swap_ideas = {
+#				remove_idea = SOV_fervor
+#				add_idea = SOV_no_fascist
+#			}
+#		}
+#	}
+
 	focus = {
 		id = SOV_retrieve_stalin_from_his_dacha
 		icon = GFX_SOV_stalin_constitution
@@ -5125,6 +5353,7 @@ focus_tree = {
 		cost = 5 
 		prerequisite = {
 			focus = SOV_the_great_patriotic_war
+#			focus = SOV_the_great_patriotic_war_1942
 		}
 		x = 0
 		y = 1
@@ -5758,6 +5987,7 @@ focus_tree = {
 		cost = 5 
 		prerequisite = {
 			focus = SOV_the_great_patriotic_war
+#			focus = SOV_the_great_patriotic_war_1942
 		}
 		x = -4
 		y = 1
@@ -5879,6 +6109,7 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = SOV_the_great_patriotic_war
+#			focus = SOV_the_great_patriotic_war_1942
 		}
 		x = 4
 		y = 1

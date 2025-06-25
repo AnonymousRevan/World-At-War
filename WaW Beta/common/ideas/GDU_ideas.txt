@@ -1033,6 +1033,7 @@ ideas = {
 				original_tag = CAN
 				original_tag = SAF
 				original_tag = RAJ
+				original_tag = IDR
 				original_tag = AST
 				original_tag = NZL
 				original_tag = FRF				
@@ -1760,7 +1761,6 @@ ideas = {
 				experience_gain_carrier_training_factor = 10.0
 				experience_gain_heavy_cruiser_training_factor = 10.0
 				experience_gain_light_cruiser_training_factor = 10.0
-				experience_gain_frigate_training_factor = 10.0
 				experience_gain_hilfskreuzer_training_factor = 10.0
 				training_time_factor = -0.70
 			}

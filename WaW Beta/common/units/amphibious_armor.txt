@@ -15,6 +15,7 @@ sub_units = {
 		group = special_infantry
 		
 		categories = {
+			category_amphib_armor
 			category_tanks
 			category_front_line
 			category_all_armor

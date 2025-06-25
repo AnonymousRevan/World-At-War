@@ -16,7 +16,7 @@ characters={
 			attack_skill=4
 			defense_skill=2
 			planning_skill=3
-			logistics_skill=3
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -31,11 +31,11 @@ characters={
 			}
 		}
 		field_marshal={
-			skill=4
-			attack_skill=4
+			skill=3
+			attack_skill=2
 			defense_skill=4
 			planning_skill=4
-			logistics_skill=4
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -147,7 +147,7 @@ characters={
 		corps_commander={
 			traits={ motorized_leader }
 			skill=3
-			attack_skill=4
+			attack_skill=3
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=2
@@ -167,7 +167,7 @@ characters={
 		corps_commander={
 			traits={ trickster }
 			skill=4
-			attack_skill=3
+			attack_skill=2
 			defense_skill=4
 			planning_skill=2
 			logistics_skill=4
@@ -205,11 +205,11 @@ characters={
 		}
 		corps_commander={
 			traits={ old_guard trait_engineer }
-			skill=1
+			skill=2
 			attack_skill=2
-			defense_skill=4
+			defense_skill=3
 			planning_skill=2
-			logistics_skill=2
+			logistics_skill=1
 			legacy_id=-1
 		}
 	}
@@ -226,9 +226,9 @@ characters={
 		corps_commander={
 			traits={ old_guard infantry_leader }
 			skill=3
-			attack_skill=3
+			attack_skill=2
 			defense_skill=3
-			planning_skill=3
+			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
 		}

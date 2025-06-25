@@ -31,6 +31,10 @@
 		completion_reward = {
 			add_to_tech_sharing_group = axis_research
 			add_timed_idea = { idea = EFR_german_industry_support days = 300 }
+			add_offsite_building = {
+		    	type = dockyard
+		    	level = -10
+		    }
 			hidden_effect = {
 				load_oob = EFR_armistice_army
 				every_owned_state = {
@@ -1552,7 +1556,7 @@
 		    }
 			add_offsite_building = {
 		    	type = industrial_complex
-				level = 8
+				level = 5
 		    }
 		}
 	}

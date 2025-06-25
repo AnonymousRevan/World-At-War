@@ -7,8 +7,8 @@
  #  #  # #  # # # ## 
 
  #################### 
-  ROM_leonidas_armor = {
-	include = CZE_praga_armor
+ROM_leonidas_armor = {
+	include = light_tank_designer
 	name = "Atelierele Leonida"
 	icon = 	GFX_idea_ROM_leonidas_works
 	
@@ -16,8 +16,8 @@
 			tag = ROM
     }
 }
-  ROM_malaxa_armor = {
-	include = CZE_tatra_armor
+ROM_malaxa_armor = {
+	include = medium_tank_designer
 	name = "Malaxa"
 	icon = 	GFX_idea_ROM_malaxa_research
 	
@@ -39,24 +39,6 @@ ROM_skoda = {
 			has_completed_focus = ROM_acquire_modern_tank
 		}
 		
-	}
-	trait = {
-		token = czech
-		name = "Import Czech Expertise"
-		icon = GFX_generic_mio_trait_icon_reliability
-
-		position = { x=1 y=0 }
-		available = {
-			GER = {
-				has_completed_focus = GER_expand_the_reichswerke
-			}
-		}		
-		production_bonus = {
-			production_efficiency_cap_factor = 0.025
-		}
-		equipment_bonus = {
-			reliability = 0.05
-		}
 	}
 }
 
@@ -194,8 +176,8 @@ ROM_set_organization = {
 ROM_cugir_organization = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_ROM_cugir  #used with permission from Turning Point mod
-	allowed = { 
-		tag = ROM
+	allowed = {	
+		original_tag = ROM
 	}
 }
 ROM_concordia = {
@@ -203,29 +185,43 @@ ROM_concordia = {
 	icon = 	GFX_idea_concordia
 	name = "Concordia"
 	allowed = {	
-					original_tag = ROM
-
-			}
+		original_tag = ROM
+	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.10
+			military_industrial_organization_funds_gain = 0.10
+		}
+	}
 }
 ROM_resita = {
 	include = generic_artillery_organization
 	icon = GFX_idea_ROM_resita
 	name= "Resita UDR"
-	allowed = { 
-		tag = ROM
+	allowed = {	
+		original_tag = ROM
 	}
 }
-
+ROM_malaxa_heavy_artillery = {
+	include = generic_heavy_artillery_organization
+	icon = GFX_idea_ROM_malaxa
+	name = "Malaxa Heavy Industry"
+	allowed = {	
+		original_tag = ROM
+	}
+}
+ROM_resita_anti_tank_air = {
+	include = generic_anti_tank_air_organization
+	icon = GFX_idea_ROM_resita
+	name = "Resita Support Weaponry"
+	allowed = {	
+		original_tag = ROM
+	}
+}
 ROM_malaxa_organization = {
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_ROM_malaxa
-	allowed = { 
-		tag = ROM
-	}
-	initial_trait = {
-		organization_modifier = {
-			military_industrial_organization_research_bonus = -0.03
-			military_industrial_organization_funds_gain = -0.1
-		}
+	allowed = {	
+		original_tag = ROM
 	}
 }

@@ -19,7 +19,7 @@ equipments = {
 		module_slots = {
 			fixed_ship_battery_slot = {
 				required = yes
-				allowed_module_categories = { ship_heavy_battery }
+				allowed_module_categories = { ship_heavy_battery ship_super_heavy_battery }
 			}
 			fixed_ship_anti_air_slot = {
 				required = yes
@@ -43,7 +43,7 @@ equipments = {
 			}
 			fixed_ship_armor_slot = {
 				required = yes
-				allowed_module_categories = { ship_heavy_armor }
+				allowed_module_categories = { ship_heavy_armor ship_super_heavy_armor }
 			}
 			front_1_custom_slot = {
 				required = no
@@ -113,7 +113,7 @@ equipments = {
 		hg_attack = 0
 		torpedo_attack = 0
 		sub_attack = 1
-		anti_air_attack = 0
+		anti_air_attack = 4
 
 		build_cost_ic = 3250
 		manpower = 3000
@@ -130,7 +130,7 @@ equipments = {
 		sub_detection = 1
 		resources = {
 			steel = 9
-			chromium = 6
+			chromium = 5
 		}
 		naval_supremacy_factor = 2.6
 		naval_weather_penalty_factor = 1 #this value gets -1 before its used so 1.5 will increase the effects of weather penalties by 0.5. this is base value is required for MIO stat modifiers
@@ -238,7 +238,7 @@ equipments = {
 		naval_range = 3750
 		resources = {
 			steel = 15
-			chromium = 7
+			chromium = 6
 		}
 	}
 
@@ -278,7 +278,7 @@ equipments = {
 		naval_range = 4000
 		resources = {
 			steel = 22
-			chromium = 9
+			chromium = 8
 		}
 	}
 
@@ -316,7 +316,7 @@ equipments = {
 		naval_range = 4250
 		resources = {
 			steel = 25
-			chromium = 11
+			chromium = 10
 		}
 	}
 
@@ -330,7 +330,7 @@ equipments = {
 		module_slots = {
 			fixed_ship_battery_slot = {
 				required = yes
-				allowed_module_categories = { ship_super_heavy_battery }
+				allowed_module_categories = { ship_super_heavy_battery ship_heavy_battery }
 			}
 			fixed_ship_anti_air_slot = {
 				required = no
@@ -354,7 +354,7 @@ equipments = {
 			}
 			fixed_ship_armor_slot = {
 				required = yes
-				allowed_module_categories = { ship_super_heavy_armor }
+				allowed_module_categories = { ship_super_heavy_armor ship_heavy_armor }
 			}
 			front_1_custom_slot = {
 				required = no
@@ -773,7 +773,7 @@ equipments = {
 		lg_attack = 0
 		torpedo_attack = 0
 
-		anti_air_attack = 0
+		anti_air_attack = 10
 
 		armor_value = 47
 
@@ -892,9 +892,9 @@ equipments = {
 		lg_attack = 0
 		torpedo_attack = 0
 
-		anti_air_attack = 0
+		anti_air_attack = 10
 
-		armor_value = 3
+		armor_value = 6
 
 
 		surface_detection = 25
@@ -905,12 +905,12 @@ equipments = {
 
 		naval_range = 4500
 
-		max_strength = 800
+		max_strength = 1000
 
 
 		fuel_consumption = 93
 
-		build_cost_ic = 13000
+		build_cost_ic = 18000
 		resources = {
 			steel = 5
 			chromium = 3

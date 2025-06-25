@@ -99,10 +99,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1943
+		start_year = 1942
 		folder = {
 			name = armour_folder
-			position = { x = -4 y = @1943 }
+			position = { x = -4 y = @1942 }
 		}		
 		
 		categories = { 

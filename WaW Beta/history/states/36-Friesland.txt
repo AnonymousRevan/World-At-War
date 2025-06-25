@@ -4,6 +4,7 @@ state={
 
 	history={
 		owner = HOL
+		set_state_flag = atlantikwall_state
 		add_core_of = HOL
 		victory_points = {
 			6241 5 

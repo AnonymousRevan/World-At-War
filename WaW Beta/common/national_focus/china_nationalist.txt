@@ -1297,7 +1297,7 @@ focus_tree = {
 				tag = CHI
 			}
 			modifier = {
-				RAJ = {
+				IDR = {
 					exists = yes
 					NOT = {
 						is_in_faction_with = ENG
@@ -1378,7 +1378,7 @@ focus_tree = {
 				tag = CHI
 			}
 			modifier = {
-				RAJ = {
+				IDR = {
 					exists = yes
 					NOT = {
 						is_in_faction_with = ENG
@@ -1460,7 +1460,7 @@ focus_tree = {
 				tag = CHI
 			}
 			modifier = {
-				RAJ = {
+				IDR = {
 					exists = yes
 					NOT = {
 						is_in_faction_with = ENG

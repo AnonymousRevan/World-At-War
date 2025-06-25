@@ -1161,8 +1161,7 @@ technologies = {
 	marines2 = {
 
 		marine = {
-			max_organisation = 2
-			soft_attack = 0.02
+			max_organisation = 1
 			
 			jungle = {
 				attack = 0.025
@@ -1178,6 +1177,22 @@ technologies = {
 			}
 		}
 		
+		marines_commando = {
+			max_organisation = 1
+			
+			jungle = {
+				attack = 0.02
+			}
+			marsh = {
+				attack = 0.02
+			}
+			river = {
+				attack = 0.02
+			}
+			urban = {
+				attack = 0.025
+			}
+		}
 		
 		path = {
 			leads_to_tech = marines3
@@ -1204,8 +1219,7 @@ technologies = {
 	
 	marines3 = {
 		marine = {
-			soft_attack = 0.02
-			max_organisation = 2
+			max_organisation = 1
 			
 			jungle = {
 				attack = 0.025
@@ -1222,6 +1236,27 @@ technologies = {
 			amphibious = {
 				attack = 0.075
 				defence = 0.025
+			}
+		}
+		
+		marines_commando = {
+			max_organisation = 1
+			
+			jungle = {
+				attack = 0.025
+				defence = 0.05
+			}
+			marsh = {
+				attack = 0.025
+				defence = 0.05
+			}
+			river = {
+				attack = 0.025
+				defence = 0.05
+			}
+			urban = {
+				attack = 0.025
+				defence = 0.05
 			}
 		}
 		path = {
@@ -1249,7 +1284,7 @@ technologies = {
 		marine = {
 			hard_attack = 0.01
 			breakthrough = 0.025
-			max_organisation = 3
+			max_organisation = 1
 			
 			jungle = {
 				attack = 0.025
@@ -1270,6 +1305,27 @@ technologies = {
 				attack = 0.075
 				defence = 0.05
 				movement = 0.05
+			}
+		}
+		
+		marines_commando = {
+			max_organisation = 3
+			
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defence = 0.05
+			}
+			river = {
+				attack = 0.05
+				defence = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defence = 0.05
 			}
 		}
 		
@@ -1297,7 +1353,7 @@ technologies = {
 		marine = {
 			hard_attack = 0.02
 			breakthrough = 0.025
-			max_organisation = 3
+			max_organisation = 1
 			
 			jungle = {
 				attack = 0.025
@@ -1318,6 +1374,28 @@ technologies = {
 				attack = 0.10
 				defence = 0.075
 				movement = 0.05
+			}
+		}
+		
+		marines_commando = {
+			max_organisation = 2
+			soft_attack = 0.03
+			
+			jungle = {
+				attack = 0.075
+				defence = 0.05
+			}
+			marsh = {
+				attack = 0.075
+				defence = 0.05
+			}
+			river = {
+				attack = 0.075
+				defence = 0.05
+			}
+			urban = {
+				attack = 0.075
+				defence = 0.05
 			}
 		}
 		
@@ -1369,8 +1447,7 @@ technologies = {
 	tech_mountaineers2 = {
 
 		mountaineers = {
-		    max_organisation = 2
-			soft_attack = 0.02
+		    max_organisation = 1
 			
 			forest = {
 			}
@@ -1406,8 +1483,7 @@ technologies = {
 	}
 	tech_mountaineers3 = {
 		mountaineers = {
-			soft_attack = 0.025
-			max_organisation = 2
+			max_organisation = 1
 			
 			forest = {
 				defence = 0.025
@@ -1445,8 +1521,8 @@ technologies = {
 
 		mountaineers = {
 			hard_attack = 0.025
-			breakthrough = 0.025
-			max_organisation = 3
+			breakthrough = 0.01
+			max_organisation = 1
 			
 			forest = {
 				defence = 0.025
@@ -1486,9 +1562,9 @@ technologies = {
 	tech_mountaineers5 = {
 
 		mountaineers = {
-			hard_attack = 0.010
-			breakthrough = 0.025
-			max_organisation = 3
+			hard_attack = 0.025
+			breakthrough = 0.01
+			max_organisation = 1
 			
 			forest = {
 				attack = 0.025
@@ -1571,8 +1647,7 @@ technologies = {
 	paratroopers2 = {
 
 		paratrooper = {
-			max_organisation = 2
-			soft_attack = 0.025
+			max_organisation = 1
 		}
 		
 		path = {
@@ -1597,12 +1672,11 @@ technologies = {
 		}
 	}
 	paratroopers3 = {
-        enable_subunits = {
-			light_armor_para
-		}
+#        enable_subunits = {
+#			light_armor_para
+#		}
 		paratrooper = {
-			soft_attack = 0.025
-			max_organisation = 2
+			max_organisation = 1
 			
 			plains = {
 				attack = 0.025
@@ -1634,9 +1708,9 @@ technologies = {
 	paratroopers4 = {
 
 		paratrooper = {
-			hard_attack = 0.025
-			breakthrough = 0.025
-			max_organisation = 3
+			hard_attack = 0.02
+			breakthrough = 0.02
+			max_organisation = 1
 			
 			plains = {
 				attack = 0.025
@@ -1676,9 +1750,9 @@ technologies = {
 	paratroopers5 = {
 
 		paratrooper = {
-			hard_attack = 0.02
-			breakthrough = 0.02
-			max_organisation = 3
+			hard_attack = 0.025
+			breakthrough = 0.025
+			max_organisation = 1
 			
 			plains = {
 				attack = 0.025
@@ -1716,236 +1790,236 @@ technologies = {
 	
 	#special upgrades
 	
-	tech_special_forces = {
-		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.05
-			acclimatization_cold_climate_gain_factor = 0.05
-		}
-		special_forces_min = 10
-		path = {
-			leads_to_tech = advanced_special_forces
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = improved_special_forces
-			research_cost_coeff = 1
-		}
-		dependencies = {
-		 special_equipment = 1
-		}      
-		research_cost = 1
-		start_year = 1938
-		folder = {
-			name = infantry_folder
-			position = { x = 25 y = @1938 }
-		}
-		
-		categories = {
-			mountaineers_tech
-			marine_tech
-			para_tech
-			special_tech
-		}
-		
-		ai_will_do = {
-			factor = 0
-			
-			modifier = {
-				factor = 5
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 5
-				tag = GER
-			}
-			
-			modifier = {
-				factor = 5
-				tag = ENG
-			}
-			
-			modifier = {
-				factor = 5
-				tag = JAP
-			}
-			modifier = {
-				factor = 5
-				tag = ITA
-			}
-		}
-	}
-
-
-	advanced_special_forces = {
-		xor={
-			improved_special_forces
-		}
-
-		category_special_forces = {
-			max_organisation = 2
-			defense = 0.1
-		}
-
-		special_forces_training_time_factor = 0.1
-		
-		path = {
-			leads_to_tech = extreme_environment_training
-			research_cost_coeff = 1
-		}
-		special_forces_min = 10
-		research_cost = 1.25
-		start_year = 1940
-		folder = {
-			name = infantry_folder
-			position = { x = 24 y = @1940 }
-		}
-		
-		categories = {
-			mountaineers_tech
-			marine_tech
-			para_tech
-			special_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-
-		}
-	}
-
-	improved_special_forces = {
-		xor={
-			advanced_special_forces
-		}
-
-		special_forces_cap = 0.05
-		special_forces_training_time_factor = -0.1
-		
-		path = {
-			leads_to_tech = survival_training
-			research_cost_coeff = 1
-		}
-		special_forces_min = 10
-		research_cost = 1.25
-		start_year = 1940
-		folder = {
-			name = infantry_folder
-			position = { x = 26 y = @1940 }
-		}
-		
-		categories = {
-			mountaineers_tech
-			marine_tech
-			para_tech
-			special_tech
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-		}
-	}
-
-
-	extreme_environment_training = {
-
-		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.50
-			acclimatization_cold_climate_gain_factor = 0.50
-		}
-		
-		special_forces_no_supply_grace = 48
-		special_forces_training_time_factor = 0.1
-		
-		path = {
-			leads_to_tech = elite_forces
-			research_cost_coeff = 1
-		}
-		special_forces_min = 10
-		research_cost = 1.25
-		start_year = 1942
-		folder = {
-			name = infantry_folder
-			position = { x = 24 y = @1942 }
-		}
-		
-		categories = {
-			mountaineers_tech
-			marine_tech
-			para_tech
-			special_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-		
-		}
-	}
-
-
-	survival_training = {
-
-		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.20
-			acclimatization_cold_climate_gain_factor = 0.20
-		}
-		
-		special_forces_out_of_supply_factor = -0.1
-		
-		path = {
-			leads_to_tech = elite_forces
-			research_cost_coeff = 1
-		}
-		special_forces_min = 10
-		research_cost = 1.25
-		start_year = 1942
-		folder = {
-			name = infantry_folder
-			position = { x = 26 y = @1942 }
-		}
-		
-		categories = {
-			mountaineers_tech
-			marine_tech
-			para_tech
-			special_tech
-		}
-		
-		ai_will_do = {
-			factor = 0.5
-		}
-	}
-
-
-	elite_forces = {
-		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.20
-			acclimatization_cold_climate_gain_factor = 0.20
-			max_organisation = 3
-			soft_attack = 0.05
-		}
-		
-		special_forces_no_supply_grace = 48
-
-		research_cost = 1.5
-		start_year = 1944
-		folder = {
-			name = infantry_folder
-			position = { x = 25 y = @1944 }
-		}
-		special_forces_min = 15
-		categories = {
-			mountaineers_tech
-			marine_tech
-			para_tech
-			special_tech
-		}
-		
-		ai_will_do = {
-			factor = 1		
-		}
-	}
+#	tech_special_forces = {
+#		category_special_forces = {
+#			acclimatization_hot_climate_gain_factor = 0.05
+#			acclimatization_cold_climate_gain_factor = 0.05
+#		}
+#		special_forces_min = 10
+#		path = {
+#			leads_to_tech = advanced_special_forces
+#			research_cost_coeff = 1
+#		}
+#
+#		path = {
+#			leads_to_tech = improved_special_forces
+#			research_cost_coeff = 1
+#		}
+#		dependencies = {
+#		 special_equipment = 1
+#		}      
+#		research_cost = 1
+#		start_year = 1938
+#		folder = {
+#			name = infantry_folder
+#			position = { x = 25 y = @1938 }
+#		}
+#		
+#		categories = {
+#			mountaineers_tech
+#			marine_tech
+#			para_tech
+#			special_tech
+#		}
+#		
+#		ai_will_do = {
+#			factor = 0
+#			
+#			modifier = {
+#				factor = 5
+#				tag = USA
+#			}
+#			
+#			modifier = {
+#				factor = 5
+#				tag = GER
+#			}
+#			
+#			modifier = {
+#				factor = 5
+#				tag = ENG
+#			}
+#			
+#			modifier = {
+#				factor = 5
+#				tag = JAP
+#			}
+#			modifier = {
+#				factor = 5
+#				tag = ITA
+#			}
+#		}
+#	}
+#
+#
+#	advanced_special_forces = {
+#		xor={
+#			improved_special_forces
+#		}
+#
+#		category_special_forces = {
+#			max_organisation = 2
+#			defense = 0.1
+#		}
+#
+#		special_forces_training_time_factor = 0.1
+#		
+#		path = {
+#			leads_to_tech = extreme_environment_training
+#			research_cost_coeff = 1
+#		}
+#		special_forces_min = 10
+#		research_cost = 1.25
+#		start_year = 1940
+#		folder = {
+#			name = infantry_folder
+#			position = { x = 24 y = @1940 }
+#		}
+#		
+#		categories = {
+#			mountaineers_tech
+#			marine_tech
+#			para_tech
+#			special_tech
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#
+#		}
+#	}
+#
+#	improved_special_forces = {
+#		xor={
+#			advanced_special_forces
+#		}
+#
+#		special_forces_cap = 0.05
+#		special_forces_training_time_factor = -0.1
+#		
+#		path = {
+#			leads_to_tech = survival_training
+#			research_cost_coeff = 1
+#		}
+#		special_forces_min = 10
+#		research_cost = 1.25
+#		start_year = 1940
+#		folder = {
+#			name = infantry_folder
+#			position = { x = 26 y = @1940 }
+#		}
+#		
+#		categories = {
+#			mountaineers_tech
+#			marine_tech
+#			para_tech
+#			special_tech
+#		}
+#		
+#		ai_will_do = {
+#			factor = 0.5
+#		}
+#	}
+#
+#
+#	extreme_environment_training = {
+#
+#		category_special_forces = {
+#			acclimatization_hot_climate_gain_factor = 0.50
+#			acclimatization_cold_climate_gain_factor = 0.50
+#		}
+#		
+#		special_forces_no_supply_grace = 48
+#		special_forces_training_time_factor = 0.1
+#		
+#		path = {
+#			leads_to_tech = elite_forces
+#			research_cost_coeff = 1
+#		}
+#		special_forces_min = 10
+#		research_cost = 1.25
+#		start_year = 1942
+#		folder = {
+#			name = infantry_folder
+#			position = { x = 24 y = @1942 }
+#		}
+#		
+#		categories = {
+#			mountaineers_tech
+#			marine_tech
+#			para_tech
+#			special_tech
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		
+#		}
+#	}
+#
+#
+#	survival_training = {
+#
+#		category_special_forces = {
+#			acclimatization_hot_climate_gain_factor = 0.20
+#			acclimatization_cold_climate_gain_factor = 0.20
+#		}
+#		
+#		special_forces_out_of_supply_factor = -0.1
+#		
+#		path = {
+#			leads_to_tech = elite_forces
+#			research_cost_coeff = 1
+#		}
+#		special_forces_min = 10
+#		research_cost = 1.25
+#		start_year = 1942
+#		folder = {
+#			name = infantry_folder
+#			position = { x = 26 y = @1942 }
+#		}
+#		
+#		categories = {
+#			mountaineers_tech
+#			marine_tech
+#			para_tech
+#			special_tech
+#		}
+#		
+#		ai_will_do = {
+#			factor = 0.5
+#		}
+#	}
+#
+#
+#	elite_forces = {
+#		category_special_forces = {
+#			acclimatization_hot_climate_gain_factor = 0.20
+#			acclimatization_cold_climate_gain_factor = 0.20
+#			max_organisation = 3
+#			soft_attack = 0.05
+#		}
+#		
+#		special_forces_no_supply_grace = 48
+#
+#		research_cost = 1.5
+#		start_year = 1944
+#		folder = {
+#			name = infantry_folder
+#			position = { x = 25 y = @1944 }
+#		}
+#		special_forces_min = 15
+#		categories = {
+#			mountaineers_tech
+#			marine_tech
+#			para_tech
+#			special_tech
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1		
+#		}
+#	}
 	amphibious_mechanized_infantry = {
 
 		enable_equipments = {

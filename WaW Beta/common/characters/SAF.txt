@@ -59,9 +59,9 @@ characters={
 			traits={ logistics_wizard }
 			skill=3
 			attack_skill=3
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
 			legacy_id=1001
 		}
 	}
@@ -77,10 +77,10 @@ characters={
 		}
 		corps_commander={
 			traits={ trait_engineer panzer_leader desert_fox }
-			skill=4
+			skill=3
 			attack_skill=4
-			defense_skill=3
-			planning_skill=3
+			defense_skill=2
+			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
 		}
@@ -198,7 +198,7 @@ characters={
 			attack_skill=3
 			defense_skill=3
 			planning_skill=3
-			logistics_skill=3
+			logistics_skill=1
 			legacy_id=-1
 		}
 	}
@@ -214,7 +214,7 @@ characters={
 			skill=2
 			attack_skill=2
 			defense_skill=3
-			planning_skill=3
+			planning_skill=2
 			logistics_skill=2
 			legacy_id=1005
 		}

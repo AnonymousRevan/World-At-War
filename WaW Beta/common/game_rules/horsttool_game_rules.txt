@@ -54,8 +54,8 @@ horst_host_country = {
 		desc = ""
 	}
 	option = {
-		name = RAJ
-		text = "British Raj"
+		name = IDR
+		text = "Indian Raj"
 		desc = ""
 	}
 	option = {

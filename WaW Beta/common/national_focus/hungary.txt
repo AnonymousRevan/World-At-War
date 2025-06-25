@@ -379,9 +379,6 @@ focus_tree = {
 			add_state_core = 664
 			add_state_core = 764
 			add_state_core = 109
-			add_state_core = 102
-			add_state_core = 853
-			add_state_core = 103
 			add_stability = 0.05
 		}
 	}
@@ -771,14 +768,14 @@ focus_tree = {
 		completion_reward = {
 			HUN_fractured_industry_level_up = yes
 			add_timed_idea = { idea = HUN_german_recovery	days = 180 }
-			154 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					level = 2
-					type = industrial_complex
-					instant_build = yes
-				}
-			}
+#			154 = {
+#				add_extra_state_shared_building_slots = 2
+#				add_building_construction = {
+#					level = 2
+#					type = industrial_complex
+#					instant_build = yes
+#				}
+#			}
 		}
 	}
 	
@@ -809,10 +806,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = HUN_expand_the_manfred_weiss_steel_works_IC
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -861,15 +858,15 @@ focus_tree = {
 			43 = {
 				add_resource = {
 					type = steel
-					amount = 60
+					amount = 70
 				}
 				add_resource = {
 					type = aluminium
-					amount = 20
+					amount = 25
 				}
 				add_resource = {
 					type = tungsten
-					amount = 20
+					amount = 25
 				}
 			}
 		}
@@ -878,15 +875,15 @@ focus_tree = {
 			43 = {
 				add_resource = {
 					type = steel
-					amount = 60
+					amount = 70
 				}
 				add_resource = {
 					type = aluminium
-					amount = 20
+					amount = 25
 				}
 				add_resource = {
 					type = tungsten
-					amount = 20
+					amount = 25
 				}
 			}
 		}
@@ -925,8 +922,12 @@ focus_tree = {
 					amount = 60
 				}
 				add_resource = {
+					type = aluminium
+					amount = 40
+				}				
+				add_resource = {
 					type = tungsten
-					amount = 20
+					amount = 30
 				}
 			}
 			154 = {
@@ -1036,14 +1037,14 @@ focus_tree = {
 		completion_reward = {
 			HUN_fractured_industry_level_up = yes
 			add_timed_idea = { idea = HUN_italian_recovery	days = 365 }
-			154 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					level = 2
-					type = industrial_complex
-					instant_build = yes
-				}
-			}
+#			154 = {
+#				add_extra_state_shared_building_slots = 2
+#				add_building_construction = {
+#					level = 2
+#					type = industrial_complex
+#					instant_build = yes
+#				}
+#			}
 		}
 	}
 
@@ -1073,10 +1074,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = HUN_expand_the_manfred_weiss_steel_works_IC
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1125,11 +1126,11 @@ focus_tree = {
 			43 = {
 				add_resource = {
 					type = aluminium
-					amount = 100
+					amount = 80
 				}
 				add_resource = {
 					type = steel
-					amount = 50
+					amount = 40
 				}
 			}
 		}
@@ -1165,11 +1166,11 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 50
+					amount = 40
 				}
 				add_resource = {
 					type = rubber
-					amount = 25
+					amount = 40
 				}
 			}
 			154 = {
@@ -1517,10 +1518,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = HUN_support_domestic_industry_IC
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1535,10 +1536,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = HUN_support_domestic_industry_IC
@@ -1597,7 +1598,7 @@ focus_tree = {
 				limit = {
 					has_state_flag = HUN_synthetic_industry_oil
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = synthetic_refinery
 					level = 1
@@ -1619,7 +1620,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = synthetic_refinery
 						level = 1
@@ -1637,10 +1638,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = synthetic_refinery
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 					set_state_flag = HUN_synthetic_industry_oil
@@ -1676,7 +1677,7 @@ focus_tree = {
 				limit = {
 					has_state_flag = HUN_synthetic_industry_rubber
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = synthetic_rubber_refinery
 					level = 1
@@ -1698,7 +1699,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = synthetic_rubber_refinery
 						level = 1
@@ -1716,10 +1717,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = synthetic_rubber_refinery
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 					set_state_flag = HUN_synthetic_industry_rubber
@@ -1767,10 +1768,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = HUN_civilian_industry_IC
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1785,10 +1786,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = HUN_civilian_industry_IC
@@ -1832,74 +1833,6 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = HUN_invests_finland
-		icon = GFX_FIN_the_white_guard
-		mutually_exclusive = { focus = HUN_invests_romania }
-		relative_position_id = HUN_secret_rearmament_focus
-		x = 4
-		y = 0
-		cost = 2.9
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			date > 1939.1.1
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			43 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			FIN = { add_ideas = HUN_foreign_workers }
-		}
-	}
-	
-	focus = {
-		id = HUN_invests_romania
-		icon = GFX_ROM_for_the_preservation_of_greater_romania
-		mutually_exclusive = { focus = HUN_invests_finland }
-		relative_position_id = HUN_secret_rearmament_focus
-
-		x = 6
-		y = 0
-		cost = 2.9
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			date > 1939.1.1
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			43 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			ROM = { add_ideas = HUN_foreign_workers }
-		}
-	}
 	############################
 	####### ARMY STUFFS ########
 	############################
@@ -2387,16 +2320,15 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-		add_tech_bonus = {
-			bonus = 1
-			uses = 2
-			category = support_tech
-			
-		set_technology = { 
-				artillery_radio = 1 
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = support_tech
+			}
+			set_technology = { 
+					artillery_radio = 1 
+			}
 		}
-	}
-	}
 	}
 	focus = {
 		id = HUN_arditi
@@ -2943,9 +2875,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_the_botond
-				bonus = 1
+				category = cat_mechanized_equipment
 				uses = 1
-				category = motorized_equipment
+				bonus = 1.0
 			}
 		}
 	}

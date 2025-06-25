@@ -10,7 +10,8 @@ state={
 	}
 
 	history={
-		owner = RAJ
+		owner = IDR
+		add_core_of = NGA
 		buildings = {
 			infrastructure = 1
 		}

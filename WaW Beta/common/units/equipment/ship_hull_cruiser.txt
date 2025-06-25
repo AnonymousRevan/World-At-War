@@ -100,14 +100,14 @@ equipments = {
 		hg_attack = 0
 		torpedo_attack = 0
 		sub_attack = 0
-		anti_air_attack = 0
+		anti_air_attack = 5
 
 		build_cost_ic = 1325
 		manpower = 600
 		fuel_consumption = 20
 		
 		max_strength = 90
-		armor_value = 0
+		armor_value = 2
 		reliability = 0.75
 		naval_speed = 24
 
@@ -1046,10 +1046,10 @@ equipments = {
 		}
 
 		hg_attack = 0
-		naval_speed = 15
+		naval_speed = 23
 		reliability = 0.80
 		surface_visibility = 20
-		naval_range = 1500
+		naval_range = 1000
 		module_slots = {
 			fixed_ship_battery_slot = {
 				required = yes

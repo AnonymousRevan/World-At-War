@@ -145,7 +145,7 @@ bookmarks = {
 				SAF_support_the_policy_of_appeasement
 			}
 		}
-		"RAJ"={
+		"IDR"={
 			minor = yes
 			history = "RAJ_GATHERING_STORM_DESC"
 			ideology = neutrality
@@ -170,7 +170,7 @@ bookmarks = {
 				AST_wall_defence3
 			}
 			focuses = {
-				AST_expand_the_raaf
+				AST_Isolation
 				AST_invest_in_victory
 				AST_rats_of_tobruk
 			}

@@ -44,41 +44,41 @@ RAJ_level_up_corruption = { #bad
 	}	
 }
 
-RAJ_level_down_corruption = { #good
-	if = {
-		limit = {
-			has_idea = RAJ_corruption_1
-		}
-		swap_ideas = {
-			remove_idea = RAJ_corruption_1
-			add_idea = RAJ_corruption_2
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = RAJ_corruption_2
-		}
-		swap_ideas = {
-			remove_idea = RAJ_corruption_2
-			add_idea = RAJ_corruption_3
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = RAJ_corruption_3
-		}
-		swap_ideas = {
-			remove_idea = RAJ_corruption_3
-			add_idea = RAJ_corruption_4
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = RAJ_corruption_4
-		}
-		swap_ideas = {
-			remove_idea = RAJ_corruption_4
-			add_idea = RAJ_corruption_5
-		}
-	}	
-}
+#RAJ_level_down_corruption = { #good
+#	if = {
+#		limit = {
+#			has_idea = RAJ_corruption_1
+#		}
+#		swap_ideas = {
+#			remove_idea = RAJ_corruption_1
+#			add_idea = RAJ_corruption_2
+#		}
+#	}
+#	else_if = {
+#		limit = {
+#			has_idea = RAJ_corruption_2
+#		}
+#		swap_ideas = {
+#			remove_idea = RAJ_corruption_2
+#			add_idea = RAJ_corruption_3
+#		}
+#	}
+#	else_if = {
+#		limit = {
+#			has_idea = RAJ_corruption_3
+#		}
+#		swap_ideas = {
+#			remove_idea = RAJ_corruption_3
+#			add_idea = RAJ_corruption_4
+#		}
+#	}
+#	else_if = {
+#		limit = {
+#			has_idea = RAJ_corruption_4
+#		}
+#		swap_ideas = {
+#			remove_idea = RAJ_corruption_4
+#			add_idea = RAJ_corruption_5
+#		}
+#	}	
+#}

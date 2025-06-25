@@ -49,7 +49,7 @@
  #special forces
  group_special_infantry_title:0 "Special Forces"
  group_special_infantry_title_desc:0 "Specialized units in the most complex operations and rough terrains."
- group_semi_mobile_title:0 "Semi-Motorised"
+ group_semi_mobile_title:0 "Truck Infantry"
  group_semi_mobile_title_desc:0 "Semi-Motorised troops don't rely on horses anymore but do not enjoy fully the advantages of being motorised."
  ##Red Guards##
  red_infantry:0 "Red Guard Infantry Battalion"
@@ -109,6 +109,8 @@
  infantry_desc:0 "The backbone of any non-motorized army."
  light_infantry:0 "Light Infantry Battalion"
  light_infantry_desc:0 "Infantry with lighter kits more suited for rough terrain."
+ truck_infantry:0 "Semi-Motorized"
+ truck_infantry_desc:0 "Infantry with partial motorized support."
  SPR_infantry_spain:0 "Brigada Legionario"
  infantry_spain:0 "Brigada Internacionales"	
  infantry_spain_desc:0 "Spanish civil war volunteers."

@@ -50,6 +50,29 @@ ideas = {
 			}
 		}
 		
+		SPR_prepare_for_war_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.025
+				production_factory_max_efficiency_factor = 0.025
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		
 	    SPA_spanish_civil_war_industry = {
 
 			picture = generic_goods_red_bonus

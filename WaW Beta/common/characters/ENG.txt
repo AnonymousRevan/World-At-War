@@ -137,9 +137,9 @@ characters={
 			traits={ inflexible_strategist trait_cautious logistics_wizard offensive_doctrine thorough_planner }
 			skill=3
 			attack_skill=3
-			defense_skill=3
+			defense_skill=2
 			planning_skill=2
-			logistics_skill=3
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -176,7 +176,7 @@ characters={
 			attack_skill=2
 			defense_skill=4
 			planning_skill=2
-			logistics_skill=4
+			logistics_skill=3
 			legacy_id=-1
 		}
 	}
@@ -253,7 +253,7 @@ characters={
 			traits={ motorized_leader desert_fox }
 			skill=3
 			attack_skill=3
-			defense_skill=3
+			defense_skill=1
 			planning_skill=3
 			logistics_skill=2
 			legacy_id=-1
@@ -331,7 +331,7 @@ characters={
 			traits={ politically_connected }
 			skill=4
 			attack_skill=3
-			defense_skill=3
+			defense_skill=2
 			planning_skill=2
 			logistics_skill=4
 			legacy_id=-1
@@ -1173,7 +1173,7 @@ characters={
 			traits={ career_officer reservist }
 			skill=1
 			attack_skill=1
-			defense_skill=1
+			defense_skill=2
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=-1
@@ -1375,7 +1375,7 @@ characters={
 			    HOL = {
 				    add_ideas = ENG_idea_secretary_of_state_for_the_colonies
 				}
-			    RAJ = {    
+			    IDR = {    
 					add_ideas = ENG_idea_secretary_of_state_for_the_colonies
 				}
 			    CAN = {    
@@ -1399,7 +1399,7 @@ characters={
 				    remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
 				}
 
-			    RAJ = {    
+			    IDR = {    
 					remove_ideas = ENG_idea_secretary_of_state_for_the_colonies
 				}
 			    CAN = {    

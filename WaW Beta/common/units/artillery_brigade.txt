@@ -65,12 +65,12 @@ sub_units = {
 		}	
 		forest = {
 			attack = -0.10
-			defence = -0.05
+			defence = -0.10
 			movement = -0.10
 		}
 		jungle = {
 			attack = -0.15
-			defence = -0.10
+			defence = -0.15
 			movement = -0.20
 		}
 		hills = {
@@ -78,7 +78,7 @@ sub_units = {
 		}
 		mountain = {
 			attack = -0.30
-			defence = -0.25
+			defence = -0.30
 			movement = -0.30			
 		}
 		urban = {
@@ -88,17 +88,17 @@ sub_units = {
 		}
 		marsh = {
 			attack = -0.30
-			defence = -0.25
+			defence = -0.30
 			movement = -0.25
 		}
 		river = {
 			attack = -0.20
-			defence = -0.15
+			defence = -0.20
 			movement = -0.15
 		}
 		amphibious = {
 			attack = -0.35
-			defence = -0.30
+			defence = -0.35
 			movement = -0.20
 		}
 	}
@@ -148,12 +148,12 @@ sub_units = {
 		}	
 		forest = {
 			attack = -0.10
-			defence = -0.05
+			defence = -0.10
 			movement = -0.20
 		}
 		jungle = {
 			attack = -0.15
-			defence = -0.10
+			defence = -0.15
 			movement = -0.25
 		}
 		hills = {
@@ -161,7 +161,7 @@ sub_units = {
 		}
 		mountain = {
 			attack = -0.30
-			defence = -0.25
+			defence = -0.30
 			movement = -0.40			
 		}
 		urban = {
@@ -171,17 +171,17 @@ sub_units = {
 		}
 		marsh = {
 			attack = -0.30
-			defence = -0.25
+			defence = -0.30
 			movement = -0.30
 		}
 		river = {
 			attack = -0.20
-			defence = -0.15
+			defence = -0.20
 			movement = -0.20
 		}
 		amphibious = {
 			attack = -0.35
-			defence = -0.30
+			defence = -0.35
 			movement = -0.25
 		}
 		
@@ -228,21 +228,21 @@ sub_units = {
 		}	
 		forest = {
 			attack = -0.10
-			defence = -0.05
-			movement = -0.10
-		}
-		jungle = {
-			attack = -0.05
 			defence = -0.10
 			movement = -0.10
 		}
+		jungle = {
+#			attack = -0.05
+#			defence = -0.05
+#			movement = -0.10
+		}
 		hills = {
-			attack = 0.10
-			defence = 0.05
+			attack = 0.20
+			defence = 0.10
 		}
 		mountain = {
-			attack = 0.30
-			defence = 0.10
+			attack = 0.40
+			defence = 0.30
 			movement = -0.10
 		}
 		urban = {
@@ -253,12 +253,12 @@ sub_units = {
 		}
 		marsh = {
 			attack = -0.25
-			defence = -0.20
+			defence = -0.25
 			movement = -0.15
 		}
 		river = {
 			attack = -0.25
-			defence = -0.20
+			defence = -0.25
 			movement = -0.15
 		}
 		amphibious = {
@@ -314,12 +314,12 @@ sub_units = {
 		}	
 		forest = {
 			attack = -0.10
-			defence = -0.05
+			defence = -0.10
 			movement = -0.20
 		}
 		jungle = {
 			attack = -0.05
-			defence = -0.10
+			defence = -0.05
 			movement = -0.20
 		}
 		hills = {
@@ -327,8 +327,8 @@ sub_units = {
 			defence = 0.05
 		}
 		mountain = {
-			attack = 0.30
-			defence = 0.10
+			attack = 0.35
+			defence = 0.15
 			movement = -0.30
 		}
 		urban = {
@@ -339,17 +339,17 @@ sub_units = {
 		}
 		marsh = {
 			attack = -0.25
-			defence = -0.20
+			defence = -0.25
 			movement = -0.30
 		}
 		river = {
 			attack = -0.25
-			defence = -0.20
+			defence = -0.25
 			movement = -0.30
 		}
 		amphibious = {
-			attack = 0.35
-			defence = 0.10
+			attack = 0.40
+			defence = 0.15
 			movement = -0.15
 		}
 	}
@@ -385,58 +385,56 @@ sub_units = {
 		max_organisation = 0
 		default_morale = 0.05
 		weight = 0.75
-		maximum_speed = -0.35
+		maximum_speed = -0.40
 		supply_consumption = 0.30
 				
 		plains = {
-			attack = 0.10
+			attack = 0.05
 			defence = 0.05
-			movement = 0.025
 		}
 		desert = {
-			attack = 0.10
+			attack = 0.05
 			defence = 0.05
-			movement = 0.025
 		}	
 		forest = {
 			attack = -0.35
-			defence = -0.25
+			defence = -0.35
 			movement = -0.15
 		}
 		jungle = {
 			attack = -0.40
-			defence = -0.30
+			defence = -0.40
 			movement = -0.30
 		}
 		hills = {
-			attack = -0.10
-			defence = -0.05
+			attack = -0.20
+			defence = -0.20
 			movement = -0.10
 		}
 		mountain = {
-			attack = -0.50
-			defence = -0.40
+			attack = -0.70
+			defence = -0.70
 			movement = -0.40
 		}
 		urban = {
-			attack = 0.35
+			attack = 0.45
 		}
 		fort = {
 			attack = 0.25
 		}
 		marsh = {
 			attack = -0.50
-			defence = -0.40
+			defence = -0.50
 			movement = -0.30
 		}
 		river = {
 			attack = -0.30
-			defence = -0.20
+			defence = -0.30
 			movement = -0.20
 		}
 		amphibious = {
 			attack = -0.75
-			defence = -0.65
+			defence = -0.75
 			movement = -0.30
 		}
 	}
@@ -478,60 +476,58 @@ sub_units = {
 		max_organisation = 2
 		default_morale = 0.05
 		weight = 0.85
-		maximum_speed = -0.225
+		maximum_speed = -0.275
 		supply_consumption = 0.35
 		
 		can_be_parachuted = no
 		
 		plains = {
-			attack = 0.10
+			attack = 0.05
 			defence = 0.05
-			movement = 0.025
 		}
 		desert = {
-			attack = 0.10
+			attack = 0.05
 			defence = 0.05
-			movement = 0.025
 		}	
 		forest = {
 			attack = -0.35
-			defence = -0.25
+			defence = -0.35
 			movement = -0.20
 		}
 		jungle = {
 			attack = -0.40
-			defence = -0.30
+			defence = -0.40
 			movement = -0.35
 		}
 		hills = {
-			attack = -0.10
-			defence = -0.05
+			attack = -0.20
+			defence = -0.20
 			movement = -0.15
 		}
 		mountain = {
-			attack = -0.50
-			defence = -0.40
+			attack = -0.70
+			defence = -0.70
 			movement = -0.50
 		}
 		urban = {
-			attack = 0.35
+			attack = 0.45
 		}
 		fort = {
 			attack = 0.25
 		}
 		marsh = {
 			attack = -0.50
-			defence = -0.40
+			defence = -0.50
 			movement = -0.35
 		}
 		river = {
 			attack = -0.30
-			defence = -0.20
+			defence = -0.30
 			movement = -0.25
 		}
 		amphibious = {
 			attack = -0.75
-			defence = -0.65
+			defence = -0.75
 			movement = -0.35
 		}
 	}
@@ -572,7 +568,7 @@ sub_units = {
 		
 		forest = {
 			attack = -0.25
-			defence = -0.10
+			defence = -0.25
 			movement = -0.2
 		}
 
@@ -588,21 +584,22 @@ sub_units = {
 		}	
 		forest = {
 			attack = -0.30
-			defence = -0.20
+			defence = -0.30
 			movement = -0.10
 		}
 		jungle = {
 			attack = -0.30
-			defence = -0.20
+			defence = -0.30
 			movement = -0.25
 		}
 		hills = {
-			attack = -0.05
+			attack = -0.15
+			defence = -0.15
 			movement = -0.10
 		}
 		mountain = {
-			attack = -0.40
-			defence = -0.30
+			attack = -0.55
+			defence = -0.55
 			movement = -0.35
 		}
 		urban = {
@@ -613,7 +610,7 @@ sub_units = {
 		}
 		marsh = {
 			attack = -0.40
-			defence = -0.10
+			defence = -0.40
 			movement = -0.30
 		}
 		river = {
@@ -623,7 +620,7 @@ sub_units = {
 		}
 		amphibious = {
 			attack = 0.10
-			defence = 0.15
+			defence = 0.10
 			movement = -0.30
 		}
 	}
@@ -678,21 +675,22 @@ sub_units = {
 		}	
 		forest = {
 			attack = -0.30
-			defence = -0.20
+			defence = -0.30
 			movement = -0.15
 		}
 		jungle = {
 			attack = -0.30
-			defence = -0.20
+			defence = -0.30
 			movement = -0.30
 		}
 		hills = {
-			attack = -0.05
+			attack = -0.15
+			defence = -0.15
 			movement = -0.15
 		}
 		mountain = {
-			attack = -0.40
-			defence = -0.30
+			attack = -0.55
+			defence = -0.55
 			movement = -0.45
 		}
 		urban = {
@@ -703,7 +701,7 @@ sub_units = {
 		}
 		marsh = {
 			attack = -0.40
-			defence = -0.10
+			defence = -0.40
 			movement = -0.35
 		}
 		river = {
@@ -713,7 +711,7 @@ sub_units = {
 		}
 		amphibious = {
 			attack = 0.10
-			defence = 0.05
+			defence = 0.10
 			movement = -0.35
 		}
 	}

@@ -191,10 +191,7 @@ add_ideas = {
 	airandnavy_idea
 	FRA_the_foreign_legion
 	MTG_naval_treaty_adherent
-}
-add_timed_idea = {
-	idea = FRA_devalue_the_franc
-	days = 365
+	low_economic_mobilisation
 }
 if = {
 	limit = {
@@ -203,23 +200,23 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = HOL
-		autonomous_state = autonomy_colony
-		freedom_level = 0.2
-	}
-	else = {
-		puppet = HOL
-
-	}
-}
+#if = {
+#	limit = {
+#		OR = {
+#			has_dlc = "Together for Victory"
+#			has_dlc = "Man the Guns"
+#		}
+#	}
+#	set_autonomy = {
+#		target = HOL
+#		autonomous_state = autonomy_colony
+#		freedom_level = 0.2
+#	}
+#	else = {
+#		puppet = HOL
+#
+#	}
+#}
 
 if = {
 	limit = { has_dlc = "La Resistance" }

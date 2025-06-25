@@ -537,21 +537,6 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	# Frigates #
-	create_equipment_variant = {
-		name = "Gabbiano Class"
-		type = ship_hull_frigate_1
-		name_group = ITA_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_radar_slot_1 = ship_sonar_1
-			fixed_ship_radar_slot_2 = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
 	### Submarine Variants	
 	create_equipment_variant = {
 		name = "Mameli Class"

@@ -1,6 +1,6 @@
 #Category allowed for JAP
-JAP_intervene_in_china = {
 
+JAP_intervene_in_china = {
 	JAP_china_step_up_war_effort = {
 
 		icon = jap_conquer_china

@@ -9,25 +9,10 @@
  #################### 
 
 JAP_osaka_army_arsenal_organization = {
-	
+	include = light_tank_designer
 	icon = GFX_idea_osaka_army_arsenal
 	name = "Osaka Army Arsenal"
 
-
-	tree_header_text = {
-		text = "Armor Designs"
-		x = 1
-	}
-
-	tree_header_text = {
-		text = "Production "
-		x = 4
-	}
-
-	tree_header_text = {
-		text = "Weapon "
-		x = 8
-	}
 
 	allowed = {	
 		OR = {
@@ -35,367 +20,10 @@ JAP_osaka_army_arsenal_organization = {
 			original_tag = MAN
 		}
 	}
-	initial_trait = {
-		name = support_tank_designer
 
-		production_bonus = {
-			production_capacity_factor = 0.05
-		}
-		
-		equipment_bonus = {
-		 defense = -0.75
-		 armor_value = -0.15
-		 reliability = -0.1
-		 
-		}	
-	}
 	equipment_type = { armor }
 	research_categories = { armor }
-	trait = {
-		token = generic_mio_trait_armor_steel_working
-		name = "Plentiful Labour"
-		icon = GFX_generic_mio_trait_icon_efficiency_gain
 
-		position = { x=4 y=0 }
-
-		production_bonus = {
-			production_capacity_factor = 0.02
-		}
-    	
-	}
-	trait = {
-		token = improved_fightingcompartment
-		name = "Improved Fighting Compartment"
-		icon = GFX_generic_mio_trait_icon_max_strength
-
-		position = { x=0 y=1 }
-		relative_position_id = refurbishment
-
-		all_parents = { refurbishment }
-		
-		equipment_bonus = {
-			soft_attack = 0.05
-		}
-	}
-	trait = {
-		token = flexible_line
-		name = "Flexible Production line"
-		icon = GFX_generic_mio_department_icon_tank_general_quality
-
-		position = { x=-2 y=1 }
-		relative_position_id = generic_mio_trait_armor_steel_working
-
-		all_parents = { generic_mio_trait_armor_steel_working }
-		
-		production_bonus = {
-			production_resource_penalty_factor = 0.1
-			production_efficiency_gain_factor = 0.1
-		}
-	}
-	trait = {
-		token = stug_mass
-		name = "Standardise on current models"
-		icon = GFX_generic_mio_department_icon_tank_general_quality
-
-		position = { x=-2 y=1 }
-		relative_position_id = flexible_line
-		all_parents = { flexible_line }
-          mutually_exclusive = { evolution }
-		production_bonus = {
-
-			
-         }
-
-			equipment_bonus = {
-			
-            soft_attack = -0.035
-			defense = 0.1
-		   
-			supply_consumption = -0.05
-
-			breakthrough= -0.05
-			reliability = -0.05
-			 
-			build_cost_ic = -0.1
-		}
-		
-	}
-	trait = {
-		token = evolution
-		name = "Constant Design Evolution"
-		icon = GFX_generic_mio_department_icon_tank_medium_tank_quality
-
-		position = { x=1 y=1 }
-		relative_position_id = flexible_line
-		all_parents = { flexible_line }
-       mutually_exclusive = { stug_mass }
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.15
-			military_industrial_organization_funds_gain= -0.05
-		}
-		production_bonus ={
-			
-		}
-        equipment_bonus = {
-            reliability = 0.10
-			defense = 0.2
-			build_cost_ic =0.05
-		}
-	}
-	trait = {
-		token = generic_mio_trait_wheel_protection
-		name = "Wheel Protection"
-		icon = GFX_generic_mio_department_icon_tank_general_engine
-		
-		position = { x=0 y=1 }
-		relative_position_id = evolution
-		
-		all_parents = { evolution }
-
-		#limit_to_equipment_type = { mio_cat_eq_all_medium_tank mio_cat_eq_all_heavy_tank}
-
-		production_bonus={
-			production_resource_need_factor = 0.05
-			production_resource_penalty_factor = 0.05
-
-		}
-
-		equipment_bonus = {
-			defense = 0.45
-			armor_value= 0.05
-			
-			
-		}
-	}
-
-	trait = {
-		token = generic_mio_trait_advance_wheel_protection
-		name = "Advanced Armor Protection"
-		icon = GFX_generic_mio_department_icon_tank_medium_tank_quality
-		special_trait_background = yes	
-
-
-		available = {
-		JAP = {
-			has_completed_focus = JAP_innovative_theories
-		}
-		}
-
-		position = { x=-1 y=1 }
-		relative_position_id = generic_mio_trait_wheel_protection
-		limit_to_equipment_type ={  armor }
-
-		any_parent = { generic_mio_trait_wheel_protection streamlined}
-
-		production_bonus = {
-			production_resource_need_factor = 0.05
-			production_resource_penalty_factor = 0.05
-		}
-
-			equipment_bonus = {
-			defense = 0.30
-
-			armor_value= 0.10
-
-			build_cost_ic = 0.05
-
-		}
-
-	}
-
-	trait = {
-		token = streamlined
-		name = "Streamlined Cheap Production"
-		icon = GFX_generic_mio_department_icon_tank_general_quality
-		
-		position = { x=-3 y= 1 }
-		relative_position_id = evolution
-
-		all_parents = { stug_mass }
-		
-        production_bonus = {
-			
-         }
-
-		equipment_bonus = {
-			soft_attack = -0.07
-			hard_attack = -0.07
-
-			defense = 0.2
-
-			build_cost_ic = -0.2
-            reliability = -0.05
-
-			
-		    
-			armor_value = -0.1
-			hardness = -0.1
-
-			supply_consumption = -0.15
-			breakthrough= -0.05
-		}
-	}
-
-	trait = {
-		token = refurbishment
-		name = "Expand Tank Refurbishment Workshops"
-		icon = GFX_generic_mio_department_icon_tank_general_technology		
-
-		position = { x=0 y=1 }
-		relative_position_id = generic_mio_trait_armor_steel_working
-		all_parents = { generic_mio_trait_armor_steel_working }
-		organization_modifier = {
-			military_industrial_organization_funds_gain = -0.15
-			military_industrial_organization_research_bonus = 0.1
-		}
-
-		equipment_bonus = {
-			reliability = 0.05
-
-		}
-	}
-	trait = {
-		token = generic_mio_trait_heavy_duty_machine_tools
-		name = generic_mio_trait_heavy_duty_machine_tools
-		icon = GFX_generic_mio_department_icon_tank_general_production
-
-		position = { x=2 y=1 }
-		relative_position_id = generic_mio_trait_armor_steel_working
-
-		all_parents = { generic_mio_trait_armor_steel_working }
-
-		#limit_to_equipment_type = { armor }
-
-		production_bonus = {
-			production_capacity_factor = 0.03
-		}
-	}
-	trait = {
-		token = spanzer
-		name = "Assault Tank Designs"
-		icon = GFX_generic_mio_department_icon_tank_general_spg	
-
-		position = { x= 1 y=1 }
-		relative_position_id = generic_mio_trait_heavy_duty_machine_tools
-
-		all_parents = { generic_mio_trait_heavy_duty_machine_tools  }
-		mutually_exclusive = { waffentrager }
-		limit_to_equipment_type = { medium_tank_chassis }
-		
-		production_bonus = {
-			production_resource_need_factor = 0.15
-		}
-		
-		equipment_bonus = {
-
-			soft_attack = 0.07
-			breakthrough = 0.1
-			supply_consumption = 0.05
-			
-		}
-	}
-
-	trait = {
-		token = waffentrager
-		name = "Oversized Armaments"
-		icon = GFX_generic_mio_department_icon_tank_general_at	
-
-		position = { x=-1 y=1 }
-		relative_position_id = generic_mio_trait_heavy_duty_machine_tools
-
-		all_parents = { generic_mio_trait_heavy_duty_machine_tools  }
-        mutually_exclusive = { spanzer }
-		
-	    production_bonus ={
-
-			production_resource_need_factor = 0.1
-			
-		}
-	
-        equipment_bonus={
-		
-			soft_attack = 0.035
-
-		}
-}
-	trait = {
-		token = generic_mio_gunner_sight_improvements
-		name = generic_mio_gunner_sight_improvements
-		icon = GFX_generic_mio_trait_icon_hard_attack
-
-		position = { x=-2 y=1 }
-		relative_position_id = spanzer
-
-		all_parents = { waffentrager }
-		
-		 production_bonus ={
-			
-			production_resource_need_factor = 0.05
-			
-		}
-
-		equipment_bonus = {
-			soft_attack = 0.07
-			hard_attack = 0.02
-
-			build_cost_ic = 0.03
-		}
-	}
-	trait = {
-		token = generic_mio_trait_Improved_shells
-		name = "Improved Shells"
-		icon = GFX_generic_mio_trait_icon_ap_attack
-
-		position = { x=3 y=1 }
-		relative_position_id = waffentrager
-
-		any_parent = { waffentrager evolution }
-
-		 production_bonus ={
-			production_resource_need_factor = 0.05
-			production_resource_penalty_factor = 0.05
-		}
-
-		equipment_bonus = {
-			
-			soft_attack = 0.035
-			hard_attack = 0.02
-
-			
-
-		}
-		
-	}
-
-	trait = {
-		token = large_shells
-		name = "Advanced Shells"
-		icon = GFX_generic_mio_trait_icon_ap_attack
-		special_trait_background = yes	
-
-
-		available = {
-		JAP = {
-			has_completed_focus = JAP_innovative_theories
-		  }
-		}
-
-		position = { x=0 y=1 }
-		relative_position_id = generic_mio_trait_Improved_shells
-
-		all_parents = { generic_mio_trait_Improved_shells }
-
-		equipment_bonus = {
-			
-			soft_attack = 0.035
-			hard_attack = 0.02
-
-
-			 build_cost_ic = 0.020
-
-		    
-		}
-	}
 }
 
 
@@ -410,6 +38,7 @@ JAP_osaka_army_arsenal_organization = {
 
 
 JAP_mitsu = {
+	include = medium_tank_designer
 	icon = GFX_idea_mitsubishi
 	name = "Mitsubishi Heavy Industries"
 	
@@ -423,416 +52,6 @@ JAP_mitsu = {
 
 	equipment_type = { armor }
 	research_categories = { armor }
-
-	tree_header_text = {
-		text = "Mobility Focus"
-		x = 1
-	}
-	tree_header_text = {
-		text = "Armor Designs & Focus"
-		x = 4
-	}
-	tree_header_text = {
-		text = "Firepower Focus "
-		x = 7
-	}
-
-	initial_trait = {
-		name = "Medium Tank Designer"
-		
-		equipment_bonus = {
-			        breakthrough = 0.05
-					reliability = 0.025
-					hard_attack = -0.07
-					hardness = -0.15
-		}
-	}
-	trait = {
-		token = tank_guns
-		name = "Mass Barrel Production "
-		icon = GFX_generic_mio_trait_icon_resources
-		position = { x=1 y=0}
-		production_bonus = {
-			production_capacity_factor = 0.05
-		}
-	}
-	trait = {
-		token = generic_mio_enlarged_breech
-		name = "Improved Breech Blocks"
-		icon = GFX_generic_mio_department_icon_tank_medium_tank_weapons
-
-		position = { x= 0 y=1 }
-		relative_position_id = tank_guns
-
-		any_parent = { tank_guns}
-
-		
-		
-		equipment_bonus = {
-			reliability = 0.025
-			breakthrough = 0.05
-		}
-	}
-
-	####  NEW TRAIT  ######
-	trait = {
-		token = mg22
-		name = " Wide Tracks "
-		icon = GFX_generic_mio_department_icon_tank_medium_tank_weapons
-
-		position = { x=-1 y=2 }
-		relative_position_id = tank_guns
-
-		any_parent = { generic_mio_enlarged_breech}
-
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-			military_industrial_organization_funds_gain = 0.1
-		}
-
-	
-		
-		equipment_bonus = {
-			
-			breakthrough = 0.05
-		}
-	}
-
-	####  NEW TRAIT  ######
-
-	trait = {
-		token = generic_mio_improved_tracks_and_suspension
-		name = "Imporved Ammunition Storages"
-		icon = GFX_generic_mio_trait_icon_breakthrough
-
-		position = { x=7 y=0 }
-
-		#all_parents = { generic_mio_improved_ventilation }
-
-		
-		production_bonus ={
-			production_resource_need_factor = 0.05
-		}
-
-		equipment_bonus = {
-			hard_attack = 0.035
-			reliability = 0.05
-		
-		}
-	}
-	trait = {
-		token = speeedee
-		name = "Speed Improvements"
-		icon = GFX_generic_mio_trait_icon_maximum_speed
-		
-		position = { x=2 y= 1 }
-		relative_position_id = mg22
-		mutually_exclusive = { quality_qears }
-	
-		any_parent = { mg22 hydraulic }
-		
-		
-		
-		equipment_bonus = {
-			maximum_speed = 0.05
-		}
-	}
-	trait = {
-		token = SPEEEEEEDDD
-		name = "Breakthough Tracks Design"
-		icon = GFX_generic_mio_trait_icon_maximum_speed
-		
-		position = { x=0 y= 1 }
-		relative_position_id = speeedee
-	
-		any_parent = { speeedee  }
-		
-		
-		
-		equipment_bonus = {
-			maximum_speed = 0.1
-			supply_consumption = 0.1
-			fuel_consumption = 0.1
-		}
-	}
-
-
-	trait = {
-		token = quality_qears
-		name = generic_mio_quality_assurance_routines
-		icon = GFX_generic_mio_trait_icon_reliability
-
-		position = { x=-1 y=2 }
-		relative_position_id = generic_mio_enlarged_breech
-	
-		any_parent = { hydraulic mg22 }
-		mutually_exclusive = { speeedee }
-		
-
-		production_bonus = {
-			production_resource_need_factor = 0.05
-		}
-
-		equipment_bonus = {
-			
-			reliability = 0.15
-			build_cost_ic = 0.05
-		}
-	}
-
-	trait = {
-		token = steam
-		name = "Streamlined Production"
-		icon = GFX_generic_mio_department_icon_tank_general_technology		
-
-		position = { x=-2 y=0 }
-		relative_position_id = medium
-		 mutually_exclusive = { medium }
-
-		any_parent = {  hydraulic long_range mg22 meidum_range }
-		
-		production_bonus ={
-			production_efficiency_cap_factor = 0.02
-
-		}
-		
-	}
-	trait = {
-		token = hydraulic
-		name = "Powered traverse"
-		icon = GFX_generic_mio_trait_icon_soft_attack	
-
-		position = { x=1 y=1 }
-		relative_position_id = generic_mio_enlarged_breech
-
-		all_parents = {  generic_mio_enlarged_breech }
-		
-		production_bonus = {
-			production_resource_penalty_factor =  0.05
-		}
-
-		equipment_bonus = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-	}
-
-	trait = {
-		token = meidum_range
-		name = "Medium range firepower"
-		icon = GFX_generic_mio_trait_icon_hard_attack	
-
-
-		position = { x=1 y=2 }
-	 relative_position_id = generic_mio_improved_tracks_and_suspension
-
-	 mutually_exclusive = { long_range }
-
-	 any_parent = { generic_mio_improved_tracks_and_suspension  }
-	
-
-
-		
-
-		equipment_bonus = {
-			hard_attack = 0.07
-			
-
-		}
-	}
-	trait = {
-		token = long_range
-		name = "Long range firepower"
-		icon = GFX_generic_mio_trait_icon_hard_attack	
-
-
-		position = { x=-1 y=2 }
-	 relative_position_id = generic_mio_improved_tracks_and_suspension
-
-	 mutually_exclusive = { meidum_range }
-
-	 any_parent = { generic_mio_improved_tracks_and_suspension  }
-
-	
-
-		equipment_bonus = {
-			hard_attack = 0.14
-			ap_attack = 0.05
-
-			build_cost_ic = 0.05
-		}
-	}
-
-	trait = {
-		token = brake
-		name = " Improved Ammunition Feeding"
-		icon = GFX_generic_mio_trait_icon_hard_attack	
-
-
-		position = { x = 1 y=1 }
-	 relative_position_id = long_range
-
-	 
-
-	 any_parent = { long_range meidum_range }
-
-	
-
-		equipment_bonus = {
-
-			hard_attack = 0.07
-			breakthrough = 0.05
-			build_cost_ic = 0.025
-
-		}
-	}
-
-
-	
-
-	trait = {
-		token = medium
-		name = "Focus on Mainline Tanks"
-		icon = GFX_generic_mio_department_icon_tank_general_technology		
-
-		position = { x=-2 y=3 }
-		relative_position_id = generic_mio_improved_tracks_and_suspension
-         mutually_exclusive = { steam }
-		 any_parent = {  hydraulic long_range mg22 meidum_range }
-		
-
-		production_bonus ={
-			production_efficiency_gain_factor = 0.15
-
-		}
-		
-
-	}
-	trait = {
-		token = spaced
-		name = "Thicker Plates"
-		icon = GFX_generic_mio_department_icon_tank_general_armor	
-
-		position = { x=-2 y=1 }
-		relative_position_id = generic_mio_improved_tracks_and_suspension
-		any_parent = { generic_mio_improved_tracks_and_suspension  tank_guns }
-
-		mutually_exclusive = { spacered }
-		
-
-		production_bonus = {
-			production_resource_penalty_factor = 0.1
-		}
-		
-		equipment_bonus = {
-			
-			
-			reliability = -0.15
-			armor_value = 0.35
-			hardness = 0.25
-			build_cost_ic = 0.10
-
-			
-			
-		}
-	}
-	trait = {
-		token = spacered
-		name = "Spaced Armor"
-		icon = GFX_generic_mio_department_icon_tank_general_armor	
-
-		position = { x=-2 y=0 }
-		relative_position_id = spaced
-		any_parent = { generic_mio_improved_tracks_and_suspension  tank_guns }
-
-		mutually_exclusive = { spaced }
-		
-
-		
-		equipment_bonus = {
-			
-			armor_value = 0.1
-			hardness = 0.05
-
-			
-			
-		}
-	}
-	trait = {
-		token = MELTED
-		name = "All or Nothing"
-		icon = GFX_generic_mio_department_icon_tank_general_armor	
-		special_trait_background = yes
-
-		available = {
-			JAP = {
-				has_completed_focus = JAP_innovative_theories
-			  }
-			}
-
-		position = { x=-1 y=1 }
-		relative_position_id = spaced
-		any_parent = { spacered  spaced }
-
-		production_bonus = {
-			production_resource_penalty_factor = 0.1
-		}
-
-		equipment_bonus = {
-			reliability = -0.25
-			armor_value = 0.5
-			hardness = 0.3
-			build_cost_ic = 0.2
-			
-		}
-		
-	}
-
-
-	trait = {
-		token = flak
-		name = "Mobile Anti-Air"
-		icon = GFX_generic_mio_department_icon_tank_medium_tank_aa	
-
-		position = { x=0 y=2 }
-		relative_position_id = meidum_range
-
-		mutually_exclusive = { tdd }
-
-		all_parents = { meidum_range  }
-		
-    
-
-
-		equipment_bonus ={
-			
-			air_attack = 0.10
-			build_cost_ic = 0.025
-			
-		}
-	}
-	
-	trait = {
-		token = tdd
-		name = "Mobile Anti-Tank"
-		icon = GFX_generic_mio_department_icon_tank_medium_tank_aa	
-
-		position = { x=0 y=2 }
-		relative_position_id = long_range
-
-		mutually_exclusive = { flak }
-
-		all_parents = { long_range  }
-		
-        
-
-
-		equipment_bonus ={
-			
-			ap_attack = 0.15
-			build_cost_ic = 0.025
-		}
-	}
 
 	
 }
@@ -3247,14 +2466,27 @@ JAP_tokyo_arsenal_organization = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_tokyo_arsenal
 	name = "Tokyo Arsenal"
-
 	allowed = {	
-				OR = {
-					original_tag = JAP
-					original_tag = MAN
-				}
+		OR = {
+			original_tag = JAP
+			original_tag = MAN
+		}
 	}
-	
+	add_trait = { 
+		token = japarisakarifle
+		name = "Arisaka Rifle"
+		icon = GFX_smgs2
+		position = { x=0 y=0}
+		
+		limit_to_equipment_type = { 
+			infantry_equipment
+		}
+
+		equipment_bonus = {
+			breakthrough = 1.50
+			reliability = 0.10
+		}		
+	}	
 }
 
 
@@ -3262,13 +2494,34 @@ JAP_osaka_army_arsenal_artillery_organization = {
 	include = generic_artillery_organization
 	icon = GFX_idea_osaka_army_arsenal
 	allowed = {	
-				OR = {
-					original_tag = JAP
-					original_tag = MAN
-				}
+		OR = {
+			original_tag = JAP
+			original_tag = MAN
+		}
 	}
 }
-
+JAP_mitsu_heavy_artillery = {
+	include = generic_heavy_artillery_organization
+	icon = GFX_idea_mitsubishi
+	name = "Mitsubishi Heavy Industry"
+	allowed = {	
+		OR = {
+			original_tag = JAP
+			original_tag = MAN
+		}
+	}
+}
+JAP_tokyo_arsenal_anti_tank_air = {
+	include = generic_anti_tank_air_organization
+	icon = GFX_idea_tokyo_arsenal
+	name = "Tokyo Support Weaponry"
+	allowed = {	
+		OR = {
+			original_tag = JAP
+			original_tag = MAN
+		}
+	}
+}
 JAP_nissan_organization = {
 	include = generic_motorized_mechanized_organization 
 	icon = GFX_idea_nissan
@@ -3589,8 +2842,11 @@ JAP_mech_fuckers = {
 	icon = GFX_idea_Toyota
 	name = "Toyota"
 	allowed = {	
-		
+		OR = {
 			original_tag = JAP
+			original_tag = GER
+			original_tag = ITA
+		}
 		 
 	}
 	
@@ -3605,20 +2861,16 @@ JAP_mech_fuckers = {
 		   
 	
 		any_parent = { ampR21 }
-		available = {
-				
-#				JAP = {
-#					has_tech = amphibious_mechanized_infantry_2_jap
-#				}
-			}
+#		available = {
+#			has_tech = amphibious_mechanized_infantry_2
+#		}
 		
 		equipment_bonus = {
-	
 			
 			
-			soft_attack = 1
+			soft_attack = 0.30
 	
-			breakthrough = 0.5
+			breakthrough = 0.15
 			
 			reliability = 0.10
 			

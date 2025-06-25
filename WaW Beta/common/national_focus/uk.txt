@@ -627,21 +627,21 @@ focus_tree = {
 					126 = { #Greater London Area
 						set_building_level = {
 							type = anti_air_building
-							level = 5
+							level = 10
 							instant_build = yes
 						}
 					}
 					128 = { #West Midlands
 						set_building_level = {
 							type = anti_air_building
-							level = 5
+							level = 10
 							instant_build = yes
 						}
 					}
 					338 = { #Gloucestershire
 						set_building_level = {
 							type = anti_air_building
-							level = 5
+							level = 10
 							instant_build = yes
 						}
 					}
@@ -654,42 +654,42 @@ focus_tree = {
 						126 = { #Greater London Area
 							set_building_level = {
 								type = anti_air_building
-								level = 5
+								level = 10
 								instant_build = yes
 							}
 						}
 						128 = { #West Midlands
 							set_building_level = {
 								type = anti_air_building
-								level = 5
+								level = 10
 								instant_build = yes
 							}
 						}
 						338 = { #Gloucestershire
 							set_building_level = {
 								type = anti_air_building
-								level = 5
+								level = 10
 								instant_build = yes
 							}
 						}
 						127 = { #Sussex
 							set_building_level = {
 								type = anti_air_building
-								level = 5
+								level = 10
 								instant_build = yes
 							}
 						}
 						130 = { #Yorkshire
 							set_building_level = {
 								type = anti_air_building
-								level = 5
+								level = 10
 								instant_build = yes
 							}
 						}
 						132 = { #Lancashire
 							set_building_level = {
 								type = anti_air_building
-								level = 5
+								level = 10
 								instant_build = yes
 							}
 						}
@@ -3063,12 +3063,8 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				if = {
-					limit = {has_country_flag = ENG_artillery_focus_pp}
-					add_political_power = 100
-				}
-				else = {
-					add_ideas = royal_arsenal
+				mio:ENG_royal_arsenal_organization = {
+					add_mio_funds = 5000
 				}
 			}
 			else = {
@@ -3086,6 +3082,9 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
+				}
+				mio:ENG_royal_arsenal_organization = {
+					add_mio_funds = 2000
 				}
 			}
 		}
@@ -3120,6 +3119,9 @@ focus_tree = {
 						instant_build = yes
 					}
 					set_state_flag = ENG_artillery_focus_2AF
+					mio:ENG_royal_arsenal_organization = {
+						add_mio_funds = 2000
+					}
 				}
 				custom_effect_tooltip = ENG_focus_boost_tt
 				effect_tooltip = {
@@ -3145,18 +3147,8 @@ focus_tree = {
 							instant_build = yes
 						}
 					}
-					if = {
-						limit = {
-							OR = {
-								has_idea = rsaf_enfield
-								has_idea = RollsRoyce
-								has_idea = royal_arsenal
-							}
-						}
-						add_political_power = 100
-					}
-					else = {
-						add_ideas = royal_arsenal
+					mio:ENG_royal_arsenal_organization = {
+						add_mio_funds = 5000
 					}
 				}
 			}
@@ -3188,19 +3180,8 @@ focus_tree = {
 					}
 					set_state_flag = ENG_artillery_focus_2AF
 				}
-				if = {
-					limit = {
-						OR = {
-							has_idea = rsaf_enfield
-							has_idea = RollsRoyce
-							has_idea = royal_arsenal
-						}
-					}
-					add_political_power = 100
-					set_country_flag = ENG_artillery_focus_pp
-				}
-				else = {
-					add_ideas = royal_arsenal
+				mio:ENG_royal_arsenal_organization = {
+					add_mio_funds = 5000
 				}
 				set_country_flag = ENG_artillery_focus_boosted
 			}			
@@ -3242,9 +3223,6 @@ focus_tree = {
 				if = {
 					limit = {has_country_flag = ENG_motorized_focus_pp}
 					add_political_power = 100
-				}
-				else = {
-					add_ideas = RollsRoyce
 				}					
 				ENG = {
 					add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500	producer = ENG }
@@ -3323,9 +3301,6 @@ focus_tree = {
 						}
 						add_political_power = 100
 						set_country_flag = ENG_motorized_focus_pp
-					}
-					else = {
-						add_ideas = RollsRoyce
 					}					
 					ENG = {
 						add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500	producer = ENG }
@@ -3361,9 +3336,6 @@ focus_tree = {
 					}
 					add_political_power = 100
 					set_country_flag = ENG_motorized_focus_pp
-				}
-				else = {
-					add_ideas = RollsRoyce
 				}					
 				ENG = {
 					add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500	producer = ENG }
@@ -3391,36 +3363,54 @@ focus_tree = {
 			custom_effect_tooltip = british_money_25_tt
 			if = {
 				limit = {ENG = {has_country_flag = ENG_support_tanks_boosted}}
-				add_tech_bonus = {
-					name = armor_bonus	
-					bonus = 1.5 
-					uses = 3
-					technology = eng_medium_td_1942
-					technology = eng_medium_art_1942
-					technology = eng_medium_spaa_1942
-					technology = eng_medium_td_1940
-					technology = eng_medium_art_1940
-					technology = eng_medium_spaa_1940
-					technology = eng_medium_td_1938
-					technology = eng_medium_art_1938
-					technology = eng_medium_spaa_1938
+				
+				mio:ENG_vickers_mech = {
+					add_mio_funds = 5000
 				}
+				add_doctrine_cost_reduction = {				
+					cost_reduction = 0.75
+					uses = 1 
+					category = land_doctrine
+				}				
+				#add_tech_bonus = {
+				#	name = armor_bonus	
+				#	bonus = 1.5 
+				#	uses = 3
+				#	technology = eng_medium_td_1942
+				#	technology = eng_medium_art_1942
+				#	technology = eng_medium_spaa_1942
+				#	technology = eng_medium_td_1940
+				#	technology = eng_medium_art_1940
+				#	technology = eng_medium_spaa_1940
+				#	technology = eng_medium_td_1938
+				#	technology = eng_medium_art_1938
+				#	technology = eng_medium_spaa_1938
+				#}
 			}
 			else = {
-				add_tech_bonus = {
-					name = armor_bonus	
-					bonus = 1 
-					uses = 3
-					technology = eng_medium_td_1942
-					technology = eng_medium_art_1942
-					technology = eng_medium_spaa_1942
-					technology = eng_medium_td_1940
-					technology = eng_medium_art_1940
-					technology = eng_medium_spaa_1940
-					technology = eng_medium_td_1938
-					technology = eng_medium_art_1938
-					technology = eng_medium_spaa_1938
+			
+				mio:ENG_vickers_mech = {
+					add_mio_funds = 2000
 				}
+				add_doctrine_cost_reduction = {				
+					cost_reduction = 0.5
+					uses = 1 
+					category = land_doctrine
+				}				
+				#add_tech_bonus = {
+				#	name = armor_bonus	
+				#	bonus = 1 
+				#	uses = 3
+				#	technology = eng_medium_td_1942
+				#	technology = eng_medium_art_1942
+				#	technology = eng_medium_spaa_1942
+				#	technology = eng_medium_td_1940
+				#	technology = eng_medium_art_1940
+				#	technology = eng_medium_spaa_1940
+				#	technology = eng_medium_td_1938
+				#	technology = eng_medium_art_1938
+				#	technology = eng_medium_spaa_1938
+				#}
 			}
 		}
 
@@ -3432,36 +3422,52 @@ focus_tree = {
 				limit = { 
 					check_variable = { var = focus_power value = 0 compare = less_than_or_equals }
 				}
-				add_tech_bonus = {
-					name = armor_bonus	
-					bonus = 1 
-					uses = 3
-					technology = eng_medium_td_1942
-					technology = eng_medium_art_1942
-					technology = eng_medium_spaa_1942
-					technology = eng_medium_td_1940
-					technology = eng_medium_art_1940
-					technology = eng_medium_spaa_1940
-					technology = eng_medium_td_1938
-					technology = eng_medium_art_1938
-					technology = eng_medium_spaa_1938
+				mio:ENG_vickers_mech = {
+					add_mio_funds = 2000
 				}
+				add_doctrine_cost_reduction = {				
+					cost_reduction = 0.5
+					uses = 1 
+					category = land_doctrine
+				}				
+				#add_tech_bonus = {
+				#	name = armor_bonus	
+				#	bonus = 1 
+				#	uses = 3
+				#	technology = eng_medium_td_1942
+				#	technology = eng_medium_art_1942
+				#	technology = eng_medium_spaa_1942
+				#	technology = eng_medium_td_1940
+				#	technology = eng_medium_art_1940
+				#	technology = eng_medium_spaa_1940
+				#	technology = eng_medium_td_1938
+				#	technology = eng_medium_art_1938
+				#	technology = eng_medium_spaa_1938
+				#}
 				custom_effect_tooltip = ENG_focus_boost_tt
 				effect_tooltip = {
-					add_tech_bonus = {
-						name = armor_bonus	
-						bonus = 1.5 
-						uses = 3
-						technology = eng_medium_td_1942
-						technology = eng_medium_art_1942
-						technology = eng_medium_spaa_1942
-						technology = eng_medium_td_1940
-						technology = eng_medium_art_1940
-						technology = eng_medium_spaa_1940
-						technology = eng_medium_td_1938
-						technology = eng_medium_art_1938
-						technology = eng_medium_spaa_1938
+					mio:ENG_vickers_mech = {
+						add_mio_funds = 5000
 					}
+					add_doctrine_cost_reduction = {				
+						cost_reduction = 0.75
+						uses = 1 
+						category = land_doctrine
+					}				
+					#add_tech_bonus = {
+					#	name = armor_bonus	
+					#	bonus = 1.5 
+					#	uses = 3
+					#	technology = eng_medium_td_1942
+					#	technology = eng_medium_art_1942
+					#	technology = eng_medium_spaa_1942
+					#	technology = eng_medium_td_1940
+					#	technology = eng_medium_art_1940
+					#	technology = eng_medium_spaa_1940
+					#	technology = eng_medium_td_1938
+					#	technology = eng_medium_art_1938
+					#	technology = eng_medium_spaa_1938
+					#}
 				}
 			}
 			if = { 
@@ -3469,20 +3475,23 @@ focus_tree = {
 					check_variable = { var = focus_power value = 1 compare = greater_than_or_equals }
 				}
 				subtract_from_variable = { var = focus_power value = 1 }
-				add_tech_bonus = {
-					name = armor_bonus	
-					bonus = 1.5 
-					uses = 3
-					technology = eng_medium_td_1942
-					technology = eng_medium_art_1942
-					technology = eng_medium_spaa_1942
-					technology = eng_medium_td_1940
-					technology = eng_medium_art_1940
-					technology = eng_medium_spaa_1940
-					technology = eng_medium_td_1938
-					technology = eng_medium_art_1938
-					technology = eng_medium_spaa_1938
+				mio:ENG_vickers_mech = {
+					add_mio_funds = 5000
 				}
+				#add_tech_bonus = {
+				#	name = armor_bonus	
+				#	bonus = 1.5 
+				#	uses = 3
+				#	technology = eng_medium_td_1942
+				#	technology = eng_medium_art_1942
+				#	technology = eng_medium_spaa_1942
+				#	technology = eng_medium_td_1940
+				#	technology = eng_medium_art_1940
+				#	technology = eng_medium_spaa_1940
+				#	technology = eng_medium_td_1938
+				#	technology = eng_medium_art_1938
+				#	technology = eng_medium_spaa_1938
+				#}
 				set_country_flag = ENG_support_tanks_boosted
 			}
 		}
@@ -3513,7 +3522,7 @@ focus_tree = {
 				}
 				add_doctrine_cost_reduction = {				
 					cost_reduction = 0.75
-					uses = 1 
+					uses = 2 
 					category = land_doctrine
 				}
 			}
@@ -3525,7 +3534,7 @@ focus_tree = {
 				}
 				add_doctrine_cost_reduction = {				
 					cost_reduction = 0.75
-					uses = 1 
+					uses = 2 
 					category = land_doctrine
 				}
 			}
@@ -3546,7 +3555,7 @@ focus_tree = {
 				}
 				add_doctrine_cost_reduction = {				
 					cost_reduction = 0.75
-					uses = 1 
+					uses = 2 
 					category = land_doctrine
 				}
 				custom_effect_tooltip = ENG_focus_boost_tt
@@ -3558,7 +3567,7 @@ focus_tree = {
 					}
 					add_doctrine_cost_reduction = {				
 						cost_reduction = 0.75
-						uses = 1 
+						uses = 2 
 						category = land_doctrine
 					}	
 				}						
@@ -3575,7 +3584,7 @@ focus_tree = {
 				}
 				add_doctrine_cost_reduction = {				
 					cost_reduction = 0.75
-					uses = 1 
+					uses = 2 
 					category = land_doctrine
 				}
 				set_country_flag = ENG_tank_focus_boosted						
@@ -3602,7 +3611,7 @@ focus_tree = {
 			if = {
 				limit = {ENG = {has_country_flag = ENG_the_queen_of_the_desert_boosted}}
 				add_tech_bonus = {				
-					bonus = 1.5
+					bonus = 2.0
 					uses = 1
 					category = cat_heavy_armor
 				}						
@@ -3611,26 +3620,26 @@ focus_tree = {
 					uses = 2
 					category = land_doctrine
 				}
-				if = {
-					limit = {
-						NOT = {has_country_flag = ENG_the_queen_of_the_desert_pp}
+				ENG = {
+					set_technology = { 
+						eng_heavy_tank_1939 = 1
 					}
-					add_ideas = vauxhall
-				}
-				else = {
-					add_political_power = 100
 				}
 			}
+
 			else = {
-				add_tech_bonus = {				
-					bonus = 1
-					uses = 1
-					category = cat_heavy_armor
-				}						
+				#add_tech_bonus = {				
+				#	bonus = 1
+				#	uses = 1
+				#	category = cat_heavy_armor
+				#}						
 				add_doctrine_cost_reduction = {
 					cost_reduction = 0.5
-					uses = 2
+					uses = 1
 					category = land_doctrine
+				}
+				set_technology = { 
+					eng_heavy_tank_1939 = 1
 				}
 			}
 		}
@@ -3644,22 +3653,23 @@ focus_tree = {
 					check_variable = { var = focus_power value = 0 compare = less_than_or_equals }
 				}
 
-				add_tech_bonus = {				
-					bonus = 1
-					uses = 1
-					category = cat_heavy_armor
-				}						
+				#add_tech_bonus = {				
+				#	bonus = 1
+				#	uses = 1
+				#	category = cat_heavy_armor
+				#}						
 				add_doctrine_cost_reduction = {
 					cost_reduction = 0.5
-					uses = 2
+					uses = 1
 					category = land_doctrine
 				}
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = vauxhall
+				set_technology = { 
+					eng_heavy_tank_1939 = 1
+				}
 				custom_effect_tooltip = ENG_focus_boost_tt
 				effect_tooltip = {
 					add_tech_bonus = {				
-						bonus = 1.5
+						bonus = 2.0
 						uses = 1
 						category = cat_heavy_armor
 					}						
@@ -3668,22 +3678,9 @@ focus_tree = {
 						uses = 2
 						category = land_doctrine
 					}
-					if = {
-						limit = {
-							NOT = {
-								OR = {
-									has_idea = Leyland
-									has_idea = vickers_armstrong_eng
-									has_idea = vauxhall
-								}
-							}
-						}
-						add_ideas = vauxhall
-					}
-					else = {
-						add_political_power = 100
-						set_country_flag = ENG_the_queen_of_the_desert_pp
-					}
+				set_technology = { 
+					eng_heavy_tank_1939 = 1
+				}
 				}
 			}
 			if = { 
@@ -3701,26 +3698,13 @@ focus_tree = {
 					uses = 2
 					category = land_doctrine
 				}
-				if = {
-					limit = {
-						NOT = {
-							OR = {
-								has_idea = Leyland
-								has_idea = vickers_armstrong_eng
-								has_idea = vauxhall
-							}
-						}
-					}
-					add_ideas = vauxhall
-				}
-				else = {
-					add_political_power = 100
-					set_country_flag = ENG_the_queen_of_the_desert_pp
+				set_technology = { 
+					eng_heavy_tank_1939 = 1
 				}
 				set_country_flag = ENG_the_queen_of_the_desert_boosted
 			}
 		}
-	}		
+	}
 
 	focus = {
 		id = uk_small_arms_focus
@@ -3747,9 +3731,6 @@ focus_tree = {
 				uses = 2 
 				bonus = 1
 				name = uk_small_arms_focus
-			}
-			hidden_effect = {
-				play_song = "Could You Please Oblige Us with a Bren Gun (Noel Coward)"
 			}
 		}
 	}
@@ -5624,7 +5605,7 @@ focus_tree = {
 			SAF = {
 				exists = no
 			}
-			RAJ = {
+			IDR = {
 				OR = {
 					exists = no
 					NOT = { is_subject_of = ENG }
@@ -5675,7 +5656,7 @@ focus_tree = {
 			    HOL = {
 				    add_ideas = ENG_prepare_for_the_inevitable_idea
 				}
-			    RAJ = {    
+			    IDR = {    
 					add_ideas = ENG_prepare_for_the_inevitable_idea
 				}
 			    CAN = {    
@@ -6119,7 +6100,7 @@ focus_tree = {
 					if = {
 						limit = { 
 						OR = { 
-								RAJ = { controls_state = 434 }
+								IDR = { controls_state = 434 }
 								any_other_country = {
 									is_in_faction_with = ENG
 									controls_state = 640
@@ -6148,7 +6129,7 @@ focus_tree = {
 					if = {
 						limit = { 
 							OR = { 
-								RAJ = { controls_state = 432 }
+								IDR = { controls_state = 432 }
 								any_other_country = {
 									is_in_faction_with = ENG
 									controls_state = 640
@@ -6198,7 +6179,7 @@ focus_tree = {
 					if = {
 						limit = { 
 						OR = { 
-								RAJ = { controls_state = 434 }
+								IDR = { controls_state = 434 }
 								any_other_country = {
 									is_in_faction_with = ENG
 									controls_state = 640
@@ -6217,7 +6198,7 @@ focus_tree = {
 					if = {
 						limit = { 
 							OR = { 
-								RAJ = { controls_state = 432 }
+								IDR = { controls_state = 432 }
 								any_other_country = {
 									is_in_faction_with = ENG
 									controls_state = 640
@@ -6250,7 +6231,7 @@ focus_tree = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
 				country_event = britain.4
 			}
-			RAJ = {
+			IDR = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
 				country_event = britain.5
 			}
@@ -6306,7 +6287,7 @@ focus_tree = {
 					if = {
 						limit = { 
 						OR = { 
-								RAJ = { controls_state = 434 }
+								IDR = { controls_state = 434 }
 								any_other_country = {
 									is_in_faction_with = ENG
 									controls_state = 640
@@ -6325,7 +6306,7 @@ focus_tree = {
 					if = {
 						limit = { 
 							OR = { 
-								RAJ = { controls_state = 432 }
+								IDR = { controls_state = 432 }
 								any_other_country = {
 									is_in_faction_with = ENG
 									controls_state = 640
@@ -6385,7 +6366,7 @@ focus_tree = {
 						if = {
 							limit = { 
 							OR = { 
-									RAJ = { controls_state = 434 }
+									IDR = { controls_state = 434 }
 									any_other_country = {
 										is_in_faction_with = ENG
 										controls_state = 640
@@ -6414,7 +6395,7 @@ focus_tree = {
 						if = {
 							limit = { 
 								OR = { 
-									RAJ = { controls_state = 432 }
+									IDR = { controls_state = 432 }
 									any_other_country = {
 										is_in_faction_with = ENG
 										controls_state = 601
@@ -6480,7 +6461,7 @@ focus_tree = {
 					if = {
 						limit = { 
 						OR = { 
-								RAJ = { controls_state = 434 }
+								IDR = { controls_state = 434 }
 								any_other_country = {
 									is_in_faction_with = ENG
 									controls_state = 640
@@ -6509,7 +6490,7 @@ focus_tree = {
 					if = {
 						limit = { 
 							OR = { 
-								RAJ = { controls_state = 432 }
+								IDR = { controls_state = 432 }
 								any_other_country = {
 									is_in_faction_with = ENG
 									controls_state = 640
@@ -6543,7 +6524,7 @@ focus_tree = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
 				country_event = britain.4
 			}
-			RAJ = {
+			IDR = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
 				country_event = britain.5
 			}
@@ -6601,7 +6582,7 @@ focus_tree = {
 					OR = {
 						has_government = democratic
 						tag = INS
-						TAG = RAJ
+						TAG = IDR
 					}
 				}
 				add_opinion_modifier = { target = JAP modifier = embargo }
@@ -6613,8 +6594,8 @@ focus_tree = {
 	focus = {
 		id = ENG_the_last_line_of_defence
 		available = {
-			country_exists = RAJ 
-			RAJ = {
+			country_exists = IDR
+			IDR = {
 				controls_state = 430
 				controls_state = 431
 			}
@@ -6637,7 +6618,7 @@ focus_tree = {
 				limit = {ENG = {has_country_flag = ENG_the_last_line_of_defence_boosted}}
 				random_country = {
 					limit = {
-						original_tag = RAJ 
+						original_tag = IDR
 						is_in_faction_with = ROOT
 					}
 					every_state = {
@@ -6707,7 +6688,7 @@ focus_tree = {
 			else = {
 				random_country = {
 					limit = {
-						original_tag = RAJ 
+						original_tag = IDR 
 						is_in_faction_with = ROOT
 					}
 					add_opinion_modifier = { target = ENG modifier = aided_industry }
@@ -6784,7 +6765,7 @@ focus_tree = {
 				}
 				random_country = {
 					limit = {
-						original_tag = RAJ 
+						original_tag = IDR 
 						is_in_faction_with = ROOT
 					}
 					add_opinion_modifier = { target = ENG modifier = aided_industry }
@@ -6881,7 +6862,7 @@ focus_tree = {
 				effect_tooltip = {
 					random_country = {
 						limit = {
-							original_tag = RAJ 
+							original_tag = IDR
 							is_in_faction_with = ROOT
 						}
 						add_opinion_modifier = { target = ENG modifier = aided_industry }
@@ -6983,7 +6964,7 @@ focus_tree = {
 				subtract_from_variable = { var = focus_power value = 1 }
 				random_country = {
 					limit = {
-						original_tag = RAJ 
+						original_tag = IDR 
 						is_in_faction_with = ROOT
 					}
 					add_opinion_modifier = { target = ENG modifier = aided_industry }
@@ -7089,6 +7070,7 @@ focus_tree = {
 				CAN = { is_in_faction_with = ENG }
 				SAF = { is_in_faction_with = ENG }
 				RAJ = { is_in_faction_with = ENG }
+				IDR = { is_in_faction_with = ENG }
 				AST = { is_in_faction_with = ENG }
 				NZL = { is_in_faction_with = ENG }
 			}
@@ -7119,7 +7101,7 @@ focus_tree = {
 				}
 				add_political_power = 100 
 			}
-			RAJ = {
+			IDR = {
 				if = {
 					limit = { is_in_faction_with = ENG }
 					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
@@ -7505,14 +7487,14 @@ focus_tree = {
 		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
 			any_country = {
-				original_tag = RAJ
+				original_tag = IDR
 				is_in_faction_with = ROOT
 			}	
 		}
 		bypass = {
 			OR = {
-				RAJ = { exists = no }
-				RAJ = {
+				IDR = { exists = no }
+				IDR = {
 					custom_trigger_tooltip = {
 						tooltip = construction_effort_tt
 						all_owned_state = {
@@ -7548,7 +7530,7 @@ focus_tree = {
 			custom_effect_tooltip = british_money_50_tt
 			if = {
 				limit = {ENG = {has_country_flag = uk_raj_focus_boosted}}
-				RAJ = {
+				IDR = {
 					add_opinion_modifier = { target = ENG modifier = aided_industry }
 					every_state = {
 						limit = {has_state_flag = ENG_uk_raj_focus_2IC}
@@ -7584,7 +7566,7 @@ focus_tree = {
 				}
 			}
 			else = {
-				RAJ = {
+				IDR = {
 					add_opinion_modifier = { target = ENG modifier = aided_industry }
 					every_state = {
 						limit = {has_state_flag = ENG_uk_raj_focus_2IC}
@@ -7628,7 +7610,7 @@ focus_tree = {
 				limit = { 
 					check_variable = { var = focus_power value = 0 compare = less_than_or_equals }
 				}
-				RAJ = {
+				IDR = {
 					add_opinion_modifier = { target = ENG modifier = aided_industry }
 					294 = {
 						add_extra_state_shared_building_slots = 2
@@ -7673,7 +7655,7 @@ focus_tree = {
 				}
 				custom_effect_tooltip = ENG_focus_boost_tt
 				effect_tooltip = {
-					RAJ = {
+					IDR = {
 						add_opinion_modifier = { target = ENG modifier = aided_industry }
 						294 = {
 							add_extra_state_shared_building_slots = 3
@@ -7724,7 +7706,7 @@ focus_tree = {
 					check_variable = { var = focus_power value = 1 compare = greater_than_or_equals }
 				}
 				subtract_from_variable = { var = focus_power value = 1 }
-				RAJ = {
+				IDR = {
 					add_opinion_modifier = { target = ENG modifier = aided_industry }
 					294 = {
 						add_extra_state_shared_building_slots = 3
@@ -8527,6 +8509,7 @@ focus_tree = {
 				CAN = { is_in_faction_with = ENG }
 				SAF = { is_in_faction_with = ENG }
 				RAJ = { is_in_faction_with = ENG }
+				IDR = { is_in_faction_with = ENG }
 				AST = { is_in_faction_with = ENG }
 				NZL = { is_in_faction_with = ENG }
 			}
@@ -8538,7 +8521,7 @@ focus_tree = {
 			    HOL = {
 				    add_ideas = ENG_british_commonwealth_air_training_plan
 				}
-			    RAJ = {    
+			    IDR = {    
 					add_ideas = ENG_british_commonwealth_air_training_plan
 				}
 			    CAN = {    
@@ -9045,7 +9028,7 @@ focus_tree = {
 				remove_idea = ENG_king_edward
 				add_idea = ENG_king_edward_expensive_wife
 				}
-			RAJ = {
+			IDR = {
 				add_timed_idea = {
 					idea = ENG_king_edward_colonies
 					days = 365
@@ -9347,7 +9330,7 @@ focus_tree = {
 
 		available = {
 			SPR = {
-				has_civil_war = NO 
+				has_civil_war = no  
 			}
 		}
 
@@ -9372,7 +9355,7 @@ focus_tree = {
 					OR = {
 						has_government = democratic
 						tag = INS
-						TAG = RAJ
+						TAG = IDR
 					}
 				}
 				add_opinion_modifier = { target = SPR modifier = embargo }
@@ -9865,7 +9848,7 @@ focus_tree = {
 					OR = {
 						has_government = democratic
 						tag = INS
-						TAG = RAJ
+						TAG = IDR
 					}
 				}
 				add_opinion_modifier = { target = SPR modifier = embargo }
@@ -10128,7 +10111,7 @@ focus_tree = {
 			HOL = {
 				    remove_ideas = ENG_prepare_for_the_inevitable_idea
 				}
-			RAJ = {    
+			IDR = {    
 					remove_ideas = ENG_prepare_for_the_inevitable_idea
 				}
 			 CAN = {    
@@ -10412,7 +10395,127 @@ focus_tree = {
 		}
 	}	
 
-	
+	focus = { 
+		id = ENG_joint_airfield_construction
+		icon = GFX_goal_generic_construct_military
+		prerequisite = {
+			focus = ENG_this_was_their_finest_hour
+		}
+		relative_position_id = ENG_general_rearmament
+		x = -2
+		y = 3
+		cost = 5 
+		available = {
+			USA = {
+				has_war_with = GER
+			}
+			GER = {
+				has_completed_focus = GER_the_winter_of_1941
+			}
+		}
+		complete_tooltip = {
+			123 = { #South-West England
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+			125 = { #East Anglia
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+			126 = { #Greater London Area
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+			127 = { #Sussex
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+			338 = { #Gloucestershire
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+			128 = { #West Midlands
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+			129 = { #East Midlands
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			123 = { #South-West England
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+			125 = { #East Anglia
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+			126 = { #Greater London Area
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+			127 = { #Sussex
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+			338 = { #Gloucestershire
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+			128 = { #West Midlands
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+			129 = { #East Midlands
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+		}
+	}	
 	
 	### GLOBAL DEFENSE BRANCH ###
 

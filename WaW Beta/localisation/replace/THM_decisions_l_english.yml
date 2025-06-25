@@ -274,11 +274,6 @@
  SOV_army_recovery_desc:0 "The Red Army has survived the initial fascist onslaught and is now fully operational and ready to drive out the fascist invaders, OOORAH!"
  Guard_unlock:0 "Guards Units"
  SOV_proletariat_divs_tt:0 "12 poorly trained and equipped NKVD divisions will be deployed in Moskow. Use them to plug the gaps."
- SOV_expand_caucasus_garrison:0 "Expand the Caucasus Garrison"
- SOV_expand_urals_garrison:0 "Expand the Urals Garrison"
- SOV_expand_central_asia_garrison:0 "Expand the Central Asian Garrison"
- SOV_expand_omsk_garrison:0 "Expand the Omsk Garrison"
- SOV_expand_vladivostok_garrison:0 "Expand the Vladivostok Garrison"
  SOV_stalins_paranoia:0 "The Great Terror"
  SOV_stalins_paranoia_desc:0 "Stalin leaves no room for opposition within the communist party. Whether a party member was truly a threat or not, Stalin left no room for contemplation. He simply nipped the perceived problem in the bud through murder. A man who rationalizes that stamp collectors could be shot for valuing old foreign stamps over new Soviet ones featuring his own portrait and astronomers could be executed for taking an ideologically incorrect position on sunspots, not even the Red Army is above suspicion.\n\n For this purpose, fifth columnists within the Soviet Union will have to be purged from existence, erased from the history books. Therefore, it is your duty to build up §YPlot Power§! using the £decision_icon_small! §YGreat Terror Decisions§! so that you can hold trials against the accused.\n\nCurrent §YPlot Power§!: [?SOV.SOV_purge_plot_power]\n\n Once all of the purges have been completed, they need to be culminated by eliminating the ultimate threat to comrade Stalin’s reign, Trotsky. Who is currently in hiding, but our NKVD cells abroad and inside of the Soviet Union are continuously looking for him. Thus, once the focus §YAssassinate Trotsky§! has been taken the purges will be completed."
 
@@ -311,6 +306,13 @@
  SOV_force_research_breakthrough:0 "Force a Research Breakthrough"
  SOV_re_education:0 "Re-Education"
  SOV_deploy_penal_division:0 "Deploy Penal Division"
+ 
+ SOV_military_district_garrisons:0 "Soviet Military Districts"
+ SOV_expand_caucasus_garrison:0 "Expand the Caucasus Garrison"
+ SOV_expand_urals_garrison:0 "Expand the Urals Garrison"
+ SOV_expand_central_asia_garrison:0 "Expand the Central Asian Garrison"
+ SOV_expand_omsk_garrison:0 "Expand the Omsk Garrison"
+ SOV_expand_vladivostok_garrison:0 "Expand the Vladivostok Garrison"
 
  SOV_order_arrests:0 "Carry out Mass Arrests"
  SOV_order_arrests_desc:0 "The usual silence of the curfew is only broken by the hum of engines caused by the identical black cars that drive through the night. When they stop, orders are barked and a group men rush towards the location of their targets. Those who were found guilty and have been arrested are then pressed into trucks like cattle, they are never to be seen again."
@@ -471,7 +473,10 @@
  SAF_hulamin_expansion:0 "Hulamin Aluminium Expansion"
  SAF_hulamin_expansion_desc:0 ""
  
- ###RAJ###
+ ###RAJ### IDR as well
+ IDR_imperial_state_of_india:0 "Imperial State Of India"
+ IDR_imperial_state_of_india_desc:0 "We have currently has progressed §Y[?rapid_industrialization]%§! towards achieving rapid industrialization.\n\nThe Princely States of the Raj are currently at level §Y[?RAJ_princely_states_influence]§! out of §Y4§! influence, this can be decreased by Swaying the Princely States through the §Ydecisions§! in the Imperial State of India decision category."
+ 
  RAJ_sway_the_baroda_state:0 "Sway The Baroda Princely State"
  RAJ_sway_the_baroda_state_desc:0 "We must exert our political influence over the rich Baroda princely state to get them to fully intergate into us"
  RAJ_sway_the_hyderabad_state:0 "Sway The Hyderabad Princely State"

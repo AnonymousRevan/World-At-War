@@ -4,8 +4,8 @@ state={
 	name="STATE_46" # Muntenia
 	manpower = 4461400
 	resources={
-		steel = 20
-		chromium = 20
+	#	steel = 20 #moved to 81 - Oltenia
+	#	chromium = 20 #moved to 81 - Oltenia
 		oil= 52
 	}
 

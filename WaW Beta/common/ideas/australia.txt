@@ -16,6 +16,38 @@ ideas = {
 				}
 			}
 		}
+		AST_Advancedship_prod = {
+			picture = eng_preparing_the_second_front
+			removal_cost = -1
+			
+			allowed = { always = no}
+			allowed_civil_war = { always = yes }
+			
+			equipment_bonus = {
+				destroyer = {
+					max_strength = 0.1 sub_detection = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				frigate = {
+					max_strength = 0.1 sub_detection = 0.05 build_cost_ic = 0.05 instant = yes
+				}
+				submarine = {
+					max_strength = 0.1 sub_visibility = -0.1 build_cost_ic = 0.05 instant = yes
+				}
+			}
+		}
+		AST_sub_prod = {
+			picture = raise_the_jolly_roger
+			removal_cost = -1
+			
+			allowed = { always = no}
+			allowed_civil_war = { always = yes }
+			
+			equipment_bonus = {
+				submarine = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
 		AST_air_investments = {
 			allowed = {
 				always = no
@@ -26,7 +58,7 @@ ideas = {
 			picture = generic_air_payment
 
 			modifier = {
-				consumer_goods_factor = 0.12
+				consumer_goods_factor = 0.03
 				political_power_cost = 0.2
 			}
 
@@ -41,6 +73,9 @@ ideas = {
 					build_cost_ic = -0.10 instant = yes
 				}
 				medium_plane_airframe = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				large_plane_airframe = {
 					build_cost_ic = -0.10 instant = yes
 				}
 			}
@@ -185,7 +220,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.03
 			}
 
 			equipment_bonus = {
@@ -255,7 +290,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.075
+				consumer_goods_factor = -0.01
 				industrial_capacity_factory = 0.075
 				industrial_capacity_dockyard = 0.075
 				stability_factor = 0.05
@@ -274,7 +309,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.2
+				consumer_goods_factor = -0.03
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				stability_factor = 0.1
@@ -294,11 +329,10 @@ ideas = {
 			picture = ast_all_in
 			
 			modifier = {
-				consumer_goods_factor = -0.2
-				industrial_capacity_factory = 0.2
-				industrial_capacity_dockyard = 0.2
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.225
+				industrial_capacity_dockyard = 0.225
 				production_speed_arms_factory_factor = 0.1
-				production_speed_dockyard_factor = 0.1
 				stability_factor = 0.1
 			}
 		}
@@ -348,7 +382,7 @@ ideas = {
 			picture = generic_war_preparation
 			
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
 			}
 		}
 		AST_volunteer_defence_corps = {
@@ -418,49 +452,49 @@ ideas = {
 			picture = generic_air_bonus
 
 			equipment_bonus = {
-				small_plane_airframe = {
+				fighter_equipment = {
 					air_range = 0.1
 					air_attack = 0.05
 					instant = yes
 				}
-				cv_small_plane_airframe = {
+				cv_fighter_equipment = {
 					air_range = 0.1
 					air_attack = 0.05
 					instant = yes
 				}
-				small_plane_cas_airframe = {
+				CAS_equipment = {
 					air_range = 0.1
 					air_ground_attack = 0.05
 					instant = yes
 				}
-				cv_small_plane_cas_airframe = {
+				cv_CAS_equipment = {
 					air_range = 0.1
 					air_ground_attack = 0.05
 					instant = yes
 				}
-				cv_small_plane_naval_bomber_airframe = {
+				cv_nav_bomber_equipment = {
 					air_range = 0.1
 					naval_strike_attack = 0.05
 					instant = yes
 				}
-				small_plane_naval_bomber_airframe = {
+				nav_bomber_equipment = {
 					air_range = 0.1
 					naval_strike_attack = 0.05
 					instant = yes
 				}
-				medium_plane_airframe = {
+				tac_bomber_equipment = {
 					air_range = 0.1
 					air_ground_attack = 0.05
 					instant = yes
 				}
-				medium_plane_fighter_airframe = {
+				heavy_fighter_equipment = {
 					air_range = 0.1
 					air_attack = 0.05
 					instant = yes
 				}
-				cv_medium_plane_airframe = {
+				strat_bomber_equipment = {
 					air_range = 0.1
-					air_attack = 0.05
+					air_bombing = 0.05
 					instant = yes
 				}
 				transport_plane_equipment = {
@@ -583,9 +617,9 @@ ideas = {
 			picture = air_war_plans_division_focus
 			
 			modifier = {
-				army_org_Factor = 0.05
-				out_of_supply_factor = -0.2
-				attrition = -0.2
+				supply_consumption_Factor = -0.05
+				out_of_supply_factor = -0.1
+				attrition = -0.1
 			}
 		}
 		cac_local_production_focus = {
@@ -599,10 +633,10 @@ ideas = {
 			removal_cost = -1
 		
 			equipment_bonus = {
-				small_plane_airframe = {
+				fighter_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				medium_plane_fighter_airframe = {
+				heavy_fighter_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -709,9 +743,11 @@ ideas = {
 			picture = generic_volunteer_expedition_bonus
 
 			modifier = {
-				army_org_factor = 0.03
-				army_attack_factor = 0.03
-				army_defence_factor = 0.03
+				weekly_manpower = 500
+				army_org_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				supply_consumption_factor = -0.05
 			}
 		}
 	}
@@ -794,10 +830,6 @@ ideas = {
 					    reliability = 0.05
 					    hard_attack = 0.1
 				    }
-					amphibious_tank_chassis = {
-					    reliability = 0.05
-					    hard_attack = 0.1
-					}
 					mechanized_equipment = {
 					    reliability = 0.05
                         hard_attack = 0.1
@@ -981,9 +1013,6 @@ ideas = {
 					build_cost_ic = -0.05 instant = yes
 				}
 				cv_small_plane_airframe = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				cv_medium_plane_airframe = {
 					build_cost_ic = -0.05 instant = yes
 				}
 				small_plane_cas_airframe = {

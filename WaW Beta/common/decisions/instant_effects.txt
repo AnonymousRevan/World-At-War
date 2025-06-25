@@ -10,7 +10,7 @@ TUR_instant_effect_decisions = {
 		fire_only_once = yes
 
 		available = {	
-			RAJ = {
+			IDR = {
 				check_variable = { 
 					var = rapid_industrialization 
 					value = 50 
@@ -22,7 +22,7 @@ TUR_instant_effect_decisions = {
 		cost = 0
 
 		complete_effect = {
-           RAJ = { 
+           IDR = { 
 		   remove_ideas = RAJ_poor_industrial_infrastructure
 			add_ideas = RAJ_poor_industrial_infrastructure_2 }
 		}
@@ -387,7 +387,7 @@ TUR_instant_effect_decisions = {
 		}
 		available = {	
 		   ENG = { is_ai = no }
-		   RAJ = { is_ai = yes }
+		   IDR = { is_ai = yes }
 		   JAP = { is_ai = no }
 		   GER = {is_ai = no}
 		   NOT = { ENG = { has_idea = ENG_raj_is_ai } }
@@ -413,7 +413,7 @@ TUR_instant_effect_decisions = {
 		}
 		available = {	
 		   ENG = { is_ai = no }
-		   RAJ = { is_ai = no }
+		   IDR = { is_ai = no }
 		   JAP = { is_ai = no }
 		   GER = {is_ai = no}
 		   ENG = { has_idea = ENG_raj_is_ai }
@@ -517,22 +517,22 @@ TUR_instant_effect_decisions = {
 		fire_only_once = yes
 		
 		icon = generic_megaphone
-   
+	
 		allowed = {
 		   tag = TUR
 		}
 		available = {
 			AND = {
-			JAP = { has_war_with = RAJ }
+			JAP = { has_war_with = IDR }
 			}
 		}
-
+	
 		cost = 0
-
+	
 		complete_effect = {
-           RAJ = { country_event = { id = tfv_raj.20 } }
+           IDR = { country_event = { id = tfv_raj.20 } }
 		}
-
+	
 		ai_will_do = {
 			base = 5000
 			

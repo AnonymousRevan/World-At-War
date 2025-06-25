@@ -1149,7 +1149,7 @@ country_event = {
 		}
         hidden_effect = { 
 			news_event = news.454 
-			sound_effect = usa_pearl
+#			sound_effect = usa_pearl
 		}	
 	}	
 }

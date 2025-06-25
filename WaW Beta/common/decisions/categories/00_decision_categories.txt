@@ -139,31 +139,31 @@ political_actions = {
 	visible = {
 		AND = {
 			NOT = {
-				tag = USA
+				tag = SOV
 			}
 			NOT = {
-				tag = ENG
+				tag = PER
 			}
 			NOT = {
 				tag = POR
 			}
 			NOT = {
-				tag = SOV 
+				tag = MAN 
 			}
 			NOT = {
-				tag = HOL
+				tag = USA
 			}
 			NOT = {
 				tag = MON
 			}
 			NOT = {
-				tag = SAF
+				tag = BEL
 			}
 			NOT = {
 				tag = CZE
 			}
 			NOT = {
-				tag = MEX
+				tag = POL
 			}
 		}
 	}
@@ -182,10 +182,10 @@ economy_decisions = {
 				tag = USA
 			}
 			NOT = {
-				tag = ENG
+				tag = BEL
 			}
 			NOT = {
-				tag = SOV 
+				tag = CZE 
 			}
 			NOT = {
 				tag = POR

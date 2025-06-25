@@ -172,7 +172,7 @@ defined_text = { # Country
 	name = GetGermanTechnologyName
 	text = {
 		trigger = {
-			original_tag = RAJ
+			original_tag = IDR
 			is_in_faction_with = JAP
 			NOT = { is_in_faction_with = GER }
 		}
@@ -187,7 +187,7 @@ defined_text = { # Country
 	name = GetJAAFAName
 	text = {
 		trigger = {
-			original_tag = RAJ
+			original_tag = IDR
 			is_in_faction_with = GER
 			NOT = { is_in_faction_with = JAP }
 		}

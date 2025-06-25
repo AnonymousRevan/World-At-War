@@ -38,7 +38,7 @@ SAFR_purchase_planes = {
 		available = {
 		    OR = {
 			tag = SAF
-			tag = RAJ
+			tag = IDR
 			}
 		}
 				
@@ -83,7 +83,7 @@ SAFR_purchase_planes = {
 		available = {
 		    OR = {
 			tag = SAF
-			tag = RAJ
+			tag = IDR
 			}
 		}
 				
@@ -128,7 +128,7 @@ SAFR_purchase_planes = {
 		available = {
 		    OR = {
 			tag = SAF
-			tag = RAJ
+			tag = IDR
 			}
 		}
 				
@@ -173,7 +173,7 @@ SAFR_purchase_planes = {
 		available = {
 		    OR = {
 			tag = SAF
-			tag = RAJ
+			tag = IDR
 			}
 		}
 				

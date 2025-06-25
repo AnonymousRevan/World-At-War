@@ -1,40 +1,69 @@
 sub_unit_categories = {
+
+### Tanks + Motor
 	category_tanks
 	category_motorised
-    category_front_line
-	category_all_infantry
-	category_support_battalions
+	category_cavalry
 	category_all_armor
 	category_light_armor
 	category_medium_armor
 	category_heavy_armor
+	category_amphib_armor
+	category_amphibious_tanks
+	category_light_spg
+	category_medium_spg
+	category_bus
+	category_self_propelled_artillery
+	category_self_propelled_anti_air
+	category_tank_destroyers
+	
+### Infantry + Support
+	category_light_infantry
+    category_front_line
+	category_all_infantry
+	category_militia
 	category_army
-	category_cavalry
+	category_mountaineers
+	category_paratroopers
+	category_marines
+	category_vehicle_infantry
+	category_special_forces_leg_infantry
+	category_infantry_and_bicycle
+	
+### Support
+	category_support_battalions
+	category_logistics
+	category_mobile_and_mobile_combat_sup
+	category_support_artillery
+	category_helicopter_support_companies
+	
+### Artillery
 	category_line_artillery
+	category_artillery
 	category_line_mot_artillery
 	category_pack_artillery
 	category_light_artillery
 	category_heavy_artillery
-	category_light_spg
-	category_medium_spg
 	category_anti_tank
-	category_anti_air	
-	category_mountaineers
-	category_paratroopers
-	category_marines
-	category_support_artillery
-	category_bus
+	category_line_mot_anti_tank
+	category_anti_air
+	category_line_mot_anti_air
+
+### Air
+	category_all_air
 	category_fighter
 	category_heavy_fighter
 	category_cas
-	category_nav_bomber
-	category_strat_bomber
-	category_tac_bomber
-	category_all_air
-	category_all_ships
-	category_all_subs
 	category_special_forces
+	category_nav_bomber
+	category_tac_bomber
+	category_strat_bomber
 	category_scout_plane
 	category_recon
-	category_logistics
+	
+### Navy
+	category_all_ships
+	category_all_subs
+
+### Misc
 }

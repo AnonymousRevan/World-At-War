@@ -833,50 +833,15 @@ focus_tree = {
 				629 = { #Hawaii
 					add_building_construction = {
 						type = air_base
-						level = 2
-						instant_build = yes 
-					}
-					set_building_level = {
-						type = anti_air_building
-						level = 3
-						instant_build = yes 
-					}
-					build_2_infrastructure = yes
-					add_building_construction = {
-						type = fuel_silo 
-						level = 1
-						instant_build = yes 
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes 
-					}
-					set_building_level = {
-						type = naval_base
-						province = 4180 
 						level = 4
 						instant_build = yes 
 					}
-					set_building_level = {
-						type = coastal_bunker
-						province = 4180 
-						level = 3
-						instant_build = yes 
-					}
-				}
-				630 = { #Johnston Atoll
 					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes 
-					}
-					set_building_level = {
 						type = anti_air_building
-						level = 3
+						level = 4
 						instant_build = yes 
 					}
-					build_2_infrastructure = yes
+					build_4_infrastructure = yes
 					add_building_construction = {
 						type = fuel_silo 
 						level = 1
@@ -889,29 +854,80 @@ focus_tree = {
 					}
 					set_building_level = {
 						type = naval_base
-						province = 13051 
-						level = 4 
+						province = 4180 
+						level = 5
 						instant_build = yes 
 					}
 					set_building_level = {
 						type = coastal_bunker
-						province = 13051 
-						level = 3 
+						province = 7112 
+						level = 3
 						instant_build = yes 
 					}
+					set_building_level = {
+						type = coastal_bunker
+						province = 7195 
+						level = 3
+						instant_build = yes 
+					}
+					set_building_level = {
+						type = coastal_bunker
+						province = 4180 
+						level = 5
+						instant_build = yes 
+					}
+					set_building_level = {
+						type = stronghold_network
+						level = 1
+						instant_build = yes 
+					}					
+				}
+				630 = { #Johnston Atoll
+					set_building_level = {
+						type = coastal_bunker
+						province = 13051 
+						level = 5
+						instant_build = yes 
+					}
+					add_building_construction = {
+						type = air_base
+						level = 4
+						instant_build = yes 
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 4
+						instant_build = yes 
+					}
+					build_4_infrastructure = yes
+					add_building_construction = {
+						type = fuel_silo 
+						level = 1
+						instant_build = yes 
+					}
+					add_building_construction = {
+						type = radar_station
+						level = 1
+						instant_build = yes 
+					}
+					set_building_level = {
+						type = stronghold_network
+						level = 1
+						instant_build = yes 
+					}					
 				}
 				631 = { #Midway
 					add_building_construction = {
 						type = air_base
-						level = 2
+						level = 4
 						instant_build = yes 
 					}
-					set_building_level = {
+					add_building_construction = {
 						type = anti_air_building
-						level = 3
+						level = 4
 						instant_build = yes 
 					}
-					build_2_infrastructure = yes
+					build_4_infrastructure = yes
 					add_building_construction = {
 						type = fuel_silo 
 						level = 1
@@ -924,29 +940,46 @@ focus_tree = {
 					}
 					set_building_level = {
 						type = naval_base
-						province = 13052 
-						level = 4 
+						province = 13052
+						level = 5
+						instant_build = yes 
+					}
+					set_building_level = {
+						type = coastal_bunker
+						province = 12943 
+						level = 3
+						instant_build = yes 
+					}
+					set_building_level = {
+						type = coastal_bunker
+						province = 12978 
+						level = 3
 						instant_build = yes 
 					}
 					set_building_level = {
 						type = coastal_bunker
 						province = 13052 
-						level = 3 
+						level = 5
+						instant_build = yes 
+					}
+					set_building_level = {
+						type = stronghold_network
+						level = 1
 						instant_build = yes 
 					}
 				}
 				632 = { #Wake
 					add_building_construction = {
 						type = air_base
-						level = 2
+						level = 4
 						instant_build = yes 
 					}
-					set_building_level = {
+					add_building_construction = {
 						type = anti_air_building
-						level = 3
+						level = 4
 						instant_build = yes 
 					}
-					build_2_infrastructure = yes
+					build_4_infrastructure = yes
 					add_building_construction = {
 						type = fuel_silo 
 						level = 1
@@ -960,13 +993,36 @@ focus_tree = {
 					set_building_level = {
 						type = naval_base
 						province = 13047 
-						level = 4 
+						level = 5
 						instant_build = yes 
 					}
 					set_building_level = {
 						type = coastal_bunker
 						province = 13047 
-						level = 3 
+						level = 5
+						instant_build = yes 
+					}
+					set_building_level = {
+						type = coastal_bunker
+						province = 11001 
+						level = 3
+						instant_build = yes 
+					}
+					set_building_level = {
+						type = coastal_bunker
+						province = 12928
+						level = 3
+						instant_build = yes 
+					}
+					set_building_level = {
+						type = coastal_bunker
+						province = 12922
+						level = 2
+						instant_build = yes 
+					}
+					set_building_level = {
+						type = stronghold_network
+						level = 1
 						instant_build = yes 
 					}
 				}
@@ -1071,6 +1127,18 @@ focus_tree = {
 					set_building_level = {
 						type = coastal_bunker
 						province = 13049 
+						level = 3 
+						instant_build = yes 
+					}
+					set_building_level = {
+						type = coastal_bunker
+						province = 13048 
+						level = 3 
+						instant_build = yes 
+					}
+					set_building_level = {
+						type = coastal_bunker
+						province = 13053 
 						level = 3 
 						instant_build = yes 
 					}
@@ -1315,11 +1383,11 @@ focus_tree = {
 				id = 57
 				picture = "Portrait_USA_Douglas_MacArthur.dds"
 				traits = {  infantry_leader infantry_expert naval_invader naval_liason invader_ii }
-				skill = 6
+				skill = 4
 
-				attack_skill = 4
-				defense_skill = 3
-				planning_skill = 3
+				attack_skill = 5
+				defense_skill = 2
+				planning_skill = 2
 				logistics_skill = 3
 			}
 
@@ -1517,7 +1585,7 @@ focus_tree = {
 		available_if_capitulated = yes		
 		
 		available = { 
-			RAJ = {
+			IDR = {
 				has_idea = RAJ_famine
 			}
 		}
@@ -1634,7 +1702,7 @@ focus_tree = {
 					is_controlled_by = JAP 
 					OR = {
 						is_core_of = CHI
-						is_core_of = RAJ 
+						is_core_of = IDR
 						is_core_of = INS
 					}		
 				}
@@ -2305,7 +2373,7 @@ focus_tree = {
 			    PHI = {
 				    add_ideas = USA_cash_and_carry_foreign_idea
 				}
-			    RAJ = {    
+			    IDR = {    
 					add_ideas = USA_cash_and_carry_foreign_idea
 				}
 			    CAN = {    
@@ -2959,7 +3027,7 @@ focus_tree = {
 			if = {
 				limit = { has_dlc = "Arms Against Tyranny" }
 				mio:USA_army_ordnance_department_organization = {
-					add_mio_funds = 1600
+					add_mio_funds = 4000
 				}
 			}
 			else = {
@@ -2986,13 +3054,13 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_dlc = "Arms Against Tyranny" }
-#				mio:USA_chrysler_organization = {
-#					add_mio_funds = 1600
-#				}
+				mio:USA_bethleham_armaments = {
+					add_mio_funds = 4000
+				}
 			}
 			else = {
 				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = chrysler
+				show_ideas_tooltip = army_ordnance_department
 			}
 		}
 	}						
@@ -4960,6 +5028,7 @@ focus_tree = {
 				uses = 2
 				bonus = 1 
 				name = USA_manhattan_project
+				ahead_reduction = 1.0
 			}
 			SOV = {
 				add_tech_bonus = {
@@ -5103,39 +5172,14 @@ focus_tree = {
 			}
 		}
 	}		
-
 	focus = {
-		id = USA_synthetic_rubber
-		icon = GFX_goal_generic_construction2
+		id = USA_emergency_rubber_production
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = USA_office_of_war_production_management }
 
 		relative_position_id = USA_office_of_war_production_management
 		x = 1
 		y = 1
-		cost = 7.16
-		ai_will_do = {
-			factor = 100 
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_tech_bonus = {
-				category = synth_resources  
-				uses = 2
-				bonus = 2
-				name = USA_synthetic_rubber
-			}
-		}
-	}		
-
-	focus = {
-		id = USA_emergency_rubber_production
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = USA_synthetic_rubber }
-
-		relative_position_id = USA_synthetic_rubber
-		x = 0
-		y = 2
 		cost = 7.16
 		ai_will_do = {
 			factor = 100 
@@ -5156,7 +5200,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = refinery_idea_usa
+			remove_ideas = refinery_idea
 			random_owned_state = {
 				limit = {
 					is_core_of = USA 
@@ -5191,7 +5235,31 @@ focus_tree = {
 				}
 			}
 		}
-	}		
+	}
+	
+	focus = {
+		id = USA_synthetic_rubber
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = USA_emergency_rubber_production }
+
+		relative_position_id = USA_emergency_rubber_production
+		x = 0
+		y = 2
+		cost = 7.16
+		ai_will_do = {
+			factor = 100 
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_tech_bonus = {
+				category = synth_resources  
+				uses = 2
+				bonus = 2
+				name = USA_synthetic_rubber
+			}
+		}
+	}				
 
 
 	focus = {

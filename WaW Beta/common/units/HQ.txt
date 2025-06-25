@@ -21,21 +21,22 @@ sub_units = {
 		combat_width = 0.0
 		
 		#Size Definitions
-		max_strength = 15
-		max_organisation = 100
-		default_morale = 0.6
-		manpower = 400
+		max_strength = 18
+		max_organisation = 110
+		default_morale = 0.8
+		manpower = 250
 
 		#Misc Abilities
-		training_time = 100
+		training_time = 80
 		suppression = 0.5
-		weight = 0.25
+		weight = 0.20
 
 		can_be_parachuted = yes
 
-		supply_consumption = 0.11
+		supply_consumption = 0.06
 
-		initiative = 0.05
+		initiative = 0.06
+		
 		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
 		essential = {
 			support_equipment
@@ -43,48 +44,47 @@ sub_units = {
 		}
 		
 		need = {
-#			radio_equipment = 30
 			infantry_equipment = 30
 			motorized_equipment = 20
 			support_equipment = 40
 		}
 		
-		forest = {
-			defence = 0.025
-			
-		}
-		hills = 	{
-			defence = 0.025
-			
-		}
-		mountain = 	{
-			defence = 0.025
-			
-		}
-		desert = {
-			defence = 0.025
-			
-		}
-		jungle = {
-			defence = 0.025
-			
-		}
-		marsh = {
-			defence = 0.025
-			
-		}
-		urban = {
-			defence = 0.025
-			
-		}
-		river = { 
-			defence = 0.025
-			
-		}
-		amphibious = { 
-			defence = 0.025
-			
-		}
+#		forest = {
+#			defence = 0.025
+#			
+#		}
+#		hills = 	{
+#			defence = 0.025
+#			
+#		}
+#		mountain = 	{
+#			defence = 0.025
+#			
+#		}
+#		desert = {
+#			defence = 0.025
+#			
+#		}
+#		jungle = {
+#			defence = 0.025
+#			
+#		}
+#		marsh = {
+#			defence = 0.025
+#			
+#		}
+#		urban = {
+#			defence = 0.025
+#			
+#		}
+#		river = { 
+#			defence = 0.025
+#			
+#		}
+#		amphibious = { 
+#			defence = 0.025
+#			
+#		}
 	}
 	
 }

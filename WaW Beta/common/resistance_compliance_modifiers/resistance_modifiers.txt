@@ -59,6 +59,7 @@ resistance_25 = {
 	margin = 2
 	state_modifier = {
 		resistance_garrison_penetration_chance = 0.5
+		resistance_damage_to_garrison = 0.5
 	}
 }
 resistance_50 = {
@@ -68,7 +69,7 @@ resistance_50 = {
 	threshold = 50
 	margin = 2
 	state_modifier = {
-		resistance_damage_to_garrison = 1
+		resistance_damage_to_garrison = 1.5
 	}
 }
 
@@ -81,7 +82,8 @@ resistance_75 = {
 	state_modifier = {
 		army_speed_factor_for_controller = -0.5
 		local_supplies_for_controller = -0.5
-		attrition_for_controller = 0.3
+		attrition_for_controller = 0.5
+		resistance_damage_to_garrison = 2.0
 		disable_strategic_redeployment_for_controller = 1
 	}
 }
@@ -97,7 +99,7 @@ resistance_90 = {
 	alert_margin = 20
 	
 	state_modifier = {
-		local_factories = -0.03
+		local_factories = -0.15
 	}
 
 	on_enable = {

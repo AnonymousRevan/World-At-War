@@ -1194,8 +1194,15 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				local_resources_factor = -0.04
-				production_speed_synthetic_rubber_refinery_factor = 0.03
+				industrial_capacity_factory = -0.04
+				local_resources_factor = -0.05
+				production_speed_synthetic_rubber_refinery_factor = 0.04
+			}
+			equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = 0.04
+				}
 			}
 		}
 		allies_air_production_malus_3 = {
@@ -1212,8 +1219,15 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				local_resources_factor = -0.08
-				production_speed_synthetic_rubber_refinery_factor = 0.06
+				industrial_capacity_factory = -0.08
+				local_resources_factor = -0.10
+				production_speed_synthetic_rubber_refinery_factor = 0.08
+			}
+			equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = 0.08
+				}
 			}
 		}
 		allies_air_production_malus_4 = {
@@ -1230,8 +1244,15 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				local_resources_factor = -0.12
-				production_speed_synthetic_rubber_refinery_factor = 0.09
+				industrial_capacity_factory = -0.12
+				local_resources_factor = -0.15
+				production_speed_synthetic_rubber_refinery_factor = 0.12
+			}
+			equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = 0.12
+				}
 			}
 		}
 		allies_air_production_malus_5 = {
@@ -1248,8 +1269,15 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				local_resources_factor = -0.16
-				production_speed_synthetic_rubber_refinery_factor = 0.12
+				industrial_capacity_factory = -0.16
+				local_resources_factor = -0.20
+				production_speed_synthetic_rubber_refinery_factor = 0.16
+			}
+			equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = 0.16
+				}
 			}
 		}
 		allies_air_production_malus_6 = {
@@ -1266,8 +1294,15 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				local_resources_factor = -0.20
-				production_speed_synthetic_rubber_refinery_factor = 0.15
+				industrial_capacity_factory = -0.20
+				local_resources_factor = -0.25
+				production_speed_synthetic_rubber_refinery_factor = 0.20
+			}
+			equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = 0.20
+				}
 			}
 		}
 		
@@ -2133,7 +2168,33 @@ ideas = {
 			picture = generic_tank_manufacturer_1
 			
 			allowed = {
-				NOT = { OR = { tag = BUL tag = POR tag = HOL tag = HUN tag = SPR tag = FIN tag = EFR tag = RAJ tag = GER tag = ENG tag = SOV tag = MON tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = SWE tag = PRC tag = CHI is_reichskommissariat_ger = yes } }
+				NOT = { 
+					OR = { 
+						tag = BUL 
+						tag = POR 
+						tag = HOL 
+						tag = HUN 
+						tag = SPR 
+						tag = FIN 
+						tag = EFR 
+						tag = RAJ
+						tag = IDR
+						tag = GER 
+						tag = ENG 
+						tag = SOV 
+						tag = MON 
+						tag = FRA 
+						tag = ITA 
+						tag = JAP 
+						tag = USA 
+						tag = BEL 
+						tag = CZE 
+						tag = SWE 
+						tag = PRC 
+						tag = CHI 
+						is_reichskommissariat_ger = yes 
+					} 
+				}
 				NOT = {
 					has_available_idea_with_traits = { idea = tank_manufacturer limit = 1 }
 				}
@@ -2190,7 +2251,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = AST tag = CAN tag = NZL tag = RAJ }
+						OR = { tag = AST tag = CAN tag = NZL tag = RAJ tag = IDR }
 						has_dlc = "Together for Victory"
 					}
 				}

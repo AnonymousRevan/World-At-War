@@ -23,7 +23,7 @@ SAFR_purchase_planes = {
 	allowed = {
 	    OR = {
 		tag = SAF
-		tag = RAJ
+		tag = IDR
 		}
 	}
 

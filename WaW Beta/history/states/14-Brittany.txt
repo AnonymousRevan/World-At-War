@@ -8,15 +8,16 @@ state={
 
 	history={
 		owner = FRA
+		set_state_flag = atlantikwall_state
 		victory_points = {
-			3552 20
+			3552 15
 		}
 		victory_points = {
 			6536 5
 		}
-		victory_points = {
-			9495 1
-		}
+#		victory_points = {
+#			9495 1
+#		}
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2

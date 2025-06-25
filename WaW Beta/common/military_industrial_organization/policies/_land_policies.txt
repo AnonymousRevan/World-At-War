@@ -7,7 +7,9 @@ mio_policy_land_armor_welding_specialists = {
 	available = { has_mio_size > 0}
 	equipment_bonus = {
 		same_as_mio = {
-			hardness = -0.04
+			hardness = -0.05
+			armor_value = 0.15
+			build_cost_ic = 0.05
 		}
 	}
 }
@@ -16,11 +18,11 @@ mio_policy_land_aircraft_engines = {
 	allowed = {
 			has_mio_equipment_type = armor
 	}
-	available = { has_mio_size > 2}
+	available = { has_mio_size > 3}
 	equipment_bonus = {
 		same_as_mio = {
 			maximum_speed = 0.1
-			reliability = -0.1
+			reliability = -0.075
 		}
 	}
 }
@@ -31,7 +33,7 @@ mio_policy_land_casting_specialists = {
 	allowed = { 
 			has_mio_equipment_type = armor
 	}
-	available = { has_mio_size > 5}
+	available = { has_mio_size > 4}
 	equipment_bonus = {
 		same_as_mio = {
 			hardness = 0.03	
@@ -46,14 +48,14 @@ mio_policy_land_heavy_gantry_cranes = {
 			has_mio_equipment_type = armor
 		} 
 	 }
-	available = { has_mio_size > 5}
+	available = { has_mio_size > 4}
 	production_bonus = {
 		#heavy_tank_chassis = {
 		#	production_efficiency_cap_factor = 0.05
 		#}
 		same_as_mio = {
-			production_capacity_factor = 0.06
-			production_resource_need_factor = 0.1
+			production_capacity_factor = 0.075
+			production_resource_need_factor = 0.15
 		}
 	}
 }
@@ -63,11 +65,11 @@ mio_policy_land_factory_applied_camouflage  = {
 	allowed = { 
 			has_mio_equipment_type = armor
 	 }
-	available = { has_mio_size > 5}
+	available = { has_mio_size > 4}
 	equipment_bonus = {
 		same_as_mio = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.15
+			breakthrough = 0.05
 		}
 	}
 }
@@ -79,10 +81,9 @@ mio_policy_land_cutting_corners  = {
 			has_mio_equipment_type = armor
 		} 
 	 }
-	available = { has_mio_size > 3}
+	available = { has_mio_size > 1 }
 	organization_modifier = {
-		military_industrial_organization_funds_gain = 0.5
-		military_industrial_organization_research_bonus = -1
+		military_industrial_organization_funds_gain = 0.75
 	}
 	equipment_bonus = {
 		same_as_mio = {
@@ -90,6 +91,142 @@ mio_policy_land_cutting_corners  = {
 			soft_attack = -0.05
 			hard_attack = -0.05
 			armor_value = -0.2
+		}
+	}
+}
+
+mio_policy_army_cutting_corners  = {
+	icon = GFX_mio_policy_cutting_corners
+	allowed = { 
+		OR = {
+			has_mio_equipment_type = infantry_equipment
+		} 
+	 }
+	available = { has_mio_size > 1 }
+	organization_modifier = {
+		military_industrial_organization_funds_gain = 0.5
+	}
+	equipment_bonus = {
+		infantry_equipment = {
+			reliability = -0.3
+			soft_attack = -0.05
+			hard_attack = -0.05
+			ap_attack = -0.05
+			build_cost_ic = -0.15
+		}
+	}
+}
+
+mio_policy_army_experimental_ammo  = {
+	icon = GFX_mio_policy_mechanical_genius
+	allowed = { 
+		OR = {
+			has_mio_equipment_type = anti_tank_equipment
+		} 
+	 }
+	available = { has_mio_size > 6 }
+	organization_modifier = {
+		military_industrial_organization_funds_gain = 0.1
+	}
+	equipment_bonus = {
+		anti_tank_equipment = {
+			reliability = -0.2
+			soft_attack = 0.05
+			hard_attack = 0.10
+			ap_attack = 0.15
+			build_cost_ic = 0.15
+		}
+	}
+}
+
+mio_policy_VT_radio_integration  = {
+	icon = GFX_mio_policy_mechanical_genius
+	allowed = { 
+			has_mio_equipment_type = anti_air_equipment
+	 }
+	available = { has_mio_size > 6}
+	equipment_bonus = {
+		anti_air_equipment = {
+			air_attack = 0.25
+			soft_attack = 0.05
+			build_cost_ic = 0.15
+		}
+		screen_ship = {
+			anti_air_attack = 0.05
+		}
+		capital_ship = {
+			anti_air_attack = 0.05
+		}
+	}
+}
+
+mio_policy_army_experimental_ammoPack  = {
+	icon = GFX_mio_policy_mechanical_genius
+	allowed = { 
+		OR = {
+			has_mio_equipment_type = pack_artillery_equipment
+		} 
+	 }
+	available = { has_mio_size > 5 }
+	organization_modifier = {
+		military_industrial_organization_funds_gain = 0.1
+	}
+	equipment_bonus = {
+		pack_artillery_equipment = {
+			reliability = -0.15
+			soft_attack = 0.1
+			hard_attack = 0.05
+			ap_attack = 0.1
+			build_cost_ic = 0.1
+		}
+	}
+}
+
+mio_policy_army_experimental_methods  = {
+	icon = GFX_mio_policy_mechanical_genius
+	allowed = { 
+		OR = {
+			has_mio_equipment_type = rocket_artillery_equipment
+		} 
+	 }
+	available = { has_mio_size > 5 }
+	organization_modifier = {
+		military_industrial_organization_funds_gain = 0.1
+	}
+	equipment_bonus = {
+		rocket_artillery_equipment = {
+			reliability = -0.15
+			breakthrough = 0.15
+			hard_attack = 4.0
+			build_cost_ic = 0.15
+		}
+		screen_ship = {
+			anti_air_attack = 0.01
+		}
+		capital_ship = {
+			anti_air_attack = 0.02
+		}
+	}
+}
+
+mio_policy_land_bigger_warhead  = {
+	icon = GFX_mio_policy_cutting_corners
+	allowed = { 
+		OR = {
+			has_mio_equipment_type = motorized_rocket_equipment
+		
+		} 
+	 }
+	available = { has_mio_size > 4 }
+	organization_modifier = {
+		military_industrial_organization_funds_gain = 0.05
+	}
+	equipment_bonus = {
+		motorized_rocket_equipment = {
+			reliability = -0.15
+			soft_attack = 0.25
+			breakthrough = 0.15
+			build_cost_ic = 0.15
 		}
 	}
 }

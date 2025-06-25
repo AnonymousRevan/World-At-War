@@ -41,13 +41,13 @@ sub_units = {
 			movement = 0.10
 		}
 		desert = {
-			attack = 0.075
+			attack = 0.15
 			defence = 0.05
 			movement = 0.15
 		}	
 		forest = {
-			attack = -0.20
-			defence = -0.15
+			attack = -0.175
+			defence = -0.125
 			movement = -0.20
 		}
 		jungle = {
@@ -57,7 +57,7 @@ sub_units = {
 		}
 		hills = {
 			attack = -0.125
-			defence = -0.15
+			defence = -0.125
 			movement = -0.10
 		}
 		mountain = {
@@ -67,7 +67,7 @@ sub_units = {
 		}
 		urban = {
 			attack = 0.05
-			defence = -0.15
+			defence = -0.10
 			movement = 0.10
 		}
 		fort = {
@@ -79,7 +79,7 @@ sub_units = {
 			movement = -0.30
 		}
 		river = {
-			attack = -0.25
+			attack = -0.225
 			defence = -0.20
 			movement = -0.25
 		}
@@ -130,13 +130,13 @@ sub_units = {
 			movement = 0.05
 		}
 		desert = {
-			attack = 0.075
-			defence = 0.05
-			movement = 0.05
+			attack = 0.06
+			defence = 0.06
+			movement = 0.06
 		}	
 		forest = {
-			attack = -0.30
-			defence = -0.20
+			attack = -0.28
+			defence = -0.18
 			movement = -0.25
 		}
 		jungle = {
@@ -145,18 +145,18 @@ sub_units = {
 			movement = -0.35
 		}
 		hills = {
-			attack = -0.20
+			attack = -0.18
 			defence = -0.20
 			movement = -0.15
 		}
 		mountain = {
-			attack = -0.50
+			attack = -0.45
 			defence = -0.50
 			movement = -0.50
 		}
 		urban = {
-			attack = 0.065
-			defence = -0.175
+			attack = 0.075
+			defence = -0.15
 			movement = 0.10
 		}
 		fort = {
@@ -168,7 +168,7 @@ sub_units = {
 			movement = -0.40
 		}
 		river = {
-			attack = -0.35
+			attack = -0.30
 			defence = -0.25
 			movement = -0.30
 		}
@@ -226,7 +226,7 @@ sub_units = {
 			movement = 0.05
 		}	
 		forest = {
-			attack = -0.40
+			attack = -0.35
 			defence = -0.25
 			movement = -0.35
 		}
@@ -236,7 +236,7 @@ sub_units = {
 			movement = -0.45
 		}
 		hills = {
-			attack = -0.25
+			attack = -0.20
 			defence = -0.35
 			movement = -0.20
 		}
@@ -246,12 +246,12 @@ sub_units = {
 			movement = -0.60
 		}
 		urban = {
-			attack = 0.08
+			attack = 0.10
 			defence = -0.20
 			movement = 0.10
 		}
 		fort = {
-			attack = 0.125
+			attack = 0.15
 		}
 		marsh = {
 			attack = -0.50
@@ -259,7 +259,7 @@ sub_units = {
 			movement = -0.50
 		}
 		river = {
-			attack = -0.40
+			attack = -0.38
 			defence = -0.35
 			movement = -0.40
 		}
@@ -310,23 +310,23 @@ sub_units = {
 			movement = 0.05
 		}
 		desert = {
-			attack = 0.075
+			attack = 0.10
 			defence = 0.05
 			movement = 0.05
 		}	
 		forest = {
-			attack = -0.27
-			defence = -0.20
-			movement = -0.25
+			attack = -0.15
+			defence = -0.15
+			movement = -0.20
 		}
 		jungle = {
-			attack = -0.35
+			attack = -0.30
 			defence = -0.15
 			movement = -0.35
 		}
 		hills = {
-			attack = -0.20
-			defence = -0.20
+			attack = -0.15
+			defence = -0.15
 			movement = -0.15
 		}
 		mountain = {
@@ -335,8 +335,8 @@ sub_units = {
 			movement = -0.50
 		}
 		urban = {
-			attack = 0.08
-			defence = -0.15
+			attack = 0.10
+			defence = -0.10
 			movement = 0.10
 		}
 		fort = {
@@ -348,7 +348,7 @@ sub_units = {
 			movement = -0.40
 		}
 		river = {
-			attack = -0.35
+			attack = -0.30
 			defence = -0.25
 			movement = -0.30
 		}
@@ -400,14 +400,14 @@ sub_units = {
 			movement = 0.05
 		}
 		desert = {
-			attack = 0.025
+			attack = 0.05
 			defence = 0.025
 			movement = 0.05
 		}	
 		forest = {
-			attack = -0.35
-			defence = -0.25
-			movement = -0.35
+			attack = -0.25
+			defence = -0.225
+			movement = -0.30
 		}
 		jungle = {
 			attack = -0.45
@@ -415,9 +415,9 @@ sub_units = {
 			movement = -0.45
 		}
 		hills = {
-			attack = -0.25
-			defence = -0.35
-			movement = -0.20
+			attack = -0.20
+			defence = -0.30
+			movement = -0.15
 		}
 		mountain = {
 			attack = -0.60
@@ -425,12 +425,12 @@ sub_units = {
 			movement = -0.60
 		}
 		urban = {
-			attack = 0.10
-			defence = -0.20
+			attack = 0.15
+			defence = -0.15
 			movement = 0.10
 		}
 		fort = {
-			attack = 0.20
+			attack = 0.22
 		}
 		marsh = {
 			attack = -0.50
@@ -438,7 +438,7 @@ sub_units = {
 			movement = -0.50
 		}
 		river = {
-			attack = -0.40
+			attack = -0.375
 			defence = -0.35
 			movement = -0.40
 		}
@@ -485,11 +485,11 @@ sub_units = {
 		weight = 0.75
 		supply_consumption = 0.3
 		# Support nerfs to combat abilities
-		defense = -0.5
+		defense = -0.3
 		breakthrough = -0.5
-		soft_attack = -0.4
-		hard_attack = -0.4
-		armor_value = -0.5
+		soft_attack = -0.3
+		hard_attack = -0.3
+		armor_value = -0.4
 
 	}
 	
@@ -529,10 +529,10 @@ sub_units = {
 		supply_consumption = 0.35
 		
 		# Support nerfs to combat abilities
-		defense = -0.4
-		breakthrough = -0.3
-		soft_attack = -0.4
-		hard_attack = -0.4
+		defense = -0.3
+		breakthrough = -0.5
+		soft_attack = -0.3
+		hard_attack = -0.3
 		armor_value = -0.4
 		
 	}

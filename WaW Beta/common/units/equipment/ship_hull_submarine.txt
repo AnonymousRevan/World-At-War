@@ -69,7 +69,7 @@ equipments = {
 		
 		resources = {
 			steel = 5
-			chromium = 3
+			chromium = 2
 		}
 		naval_supremacy_factor = 0.8
 		naval_weather_penalty_factor = 1 #this value gets -1 before its used so 1.5 will increase the effects of weather penalties by 0.5. this is base value is required for MIO stat modifiers
@@ -119,7 +119,7 @@ equipments = {
 		sub_visibility = 20
 		resources = {
 			steel = 10
-			chromium = 3
+			chromium = 4
 		}
 	}
 
@@ -194,7 +194,7 @@ equipments = {
 		sub_visibility = 15
 		resources = {
 			steel = 15
-			chromium = 10
+			chromium = 8
 		}	
 	}
 

@@ -12,7 +12,7 @@ state={
 
 	history={
 		add_core_of = NGA
-		owner = RAJ
+		owner = IDR
 		victory_points = {
 			7960 1 
 		}

@@ -7,11 +7,9 @@ state={
 	state_category = rural
 
 	resources = {
-		aluminium = 65
-		chromium = 15
-	    steel = 140 # was: 4
+		rubber = 35
 	}
-
+	
 	history = {
 
 		owner = BRA

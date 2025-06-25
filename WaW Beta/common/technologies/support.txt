@@ -212,7 +212,7 @@ technologies = {
 				attack = 0.05
 			}
 		}
-		
+	
 		path = {
 			leads_to_tech = tech_engineers4
 			research_cost_coeff = 1
@@ -244,7 +244,22 @@ technologies = {
 		engineer = {
 			entrenchment  = 2
 		}
-      
+	
+		pioneer_support = {
+			entrenchment  = 2
+			marsh = {
+			     attack = 0.1
+				 movement = 0.05
+			}
+			forest = { 
+				attack = 0.1
+				movement = 0.05
+			}
+			fort = {
+				attack = 0.1
+			}
+		}
+		
 		research_cost = 1.25
 		start_year = 1945
 		folder = {
@@ -310,7 +325,6 @@ technologies = {
 			recon = 1
 			initiative = 0.05
 		}
-		
 		path = {
 			leads_to_tech = tech_recon3
 			research_cost_coeff = 1
@@ -349,7 +363,9 @@ technologies = {
 			recon = 1
 			initiative = 0.05
 		}
-		
+		rangers_support = {
+			recon = 1
+		}
 		path = {
 			leads_to_tech = tech_recon4
 			research_cost_coeff = 1
@@ -386,7 +402,9 @@ technologies = {
 			recon = 1
 			initiative = 0.05
 		}
-		
+		rangers_support = {
+			recon = 1
+		}
 		research_cost = 0.75
 		start_year = 1945
 		folder = {

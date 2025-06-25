@@ -13,10 +13,10 @@ equipments = {
 		interface_category = interface_category_land
 		
 		#Misc Abilities
-		reliability = 0.9
+		reliability = 0.75
 
 		#Defensive Abilities
-		defense = 2
+		defense = 5
 		breakthrough = 1
 		hardness = 0.025
 		armor_value = 0
@@ -30,7 +30,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 3
 		
-		build_cost_ic = 7.5
+		build_cost_ic = 7.0
 		resources = {
 			steel = 6
 			tungsten = 2
@@ -54,13 +54,15 @@ equipments = {
 		parent = anti_air_equipment_1
 		priority = 80
 		visual_level = 1
-		defense = 3
+		
+		defense = 6
 		soft_attack = 9
 		hard_attack = 9
 		ap_attack = 36
 		air_attack = 26
 
-		build_cost_ic = 9
+		build_cost_ic = 8.5
+		
 		resources = {
 			steel = 7
 			tungsten = 2
@@ -75,7 +77,8 @@ equipments = {
 		parent = anti_air_equipment_2
 		priority = 80
 		visual_level = 2
-		defense = 4
+		
+		defense = 7
 		soft_attack = 10
 		hard_attack = 15
 		ap_attack = 48
@@ -84,7 +87,7 @@ equipments = {
 			steel = 8
 			tungsten = 3
 		}
-		build_cost_ic = 11.5
+		build_cost_ic = 11.0
 		
 		upgrades = {
 		}

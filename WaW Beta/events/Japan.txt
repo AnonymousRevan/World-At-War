@@ -1079,7 +1079,7 @@ country_event = {
 			annex_country = { target = INS transfer_troops = no }
 		}
 		if = {
-			limit = { 333 = { owner = { original_tag = RAJ } } }
+			limit = { 333 = { owner = { original_tag = MAL } } }
 			set_state_controller = 333
 		}
 	}

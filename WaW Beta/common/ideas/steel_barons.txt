@@ -21,6 +21,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.1
+				#consumer_goods_expected_value = 0.025
 				consumer_goods_factor = 0.075
 				trade_laws_cost_factor = 0.1
 				economy_cost_factor = 0.1

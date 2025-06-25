@@ -38,9 +38,40 @@ ideas = {
 
 	country = {
 
-		RAJ_england_influence = {
+		RAJ_princely_states = {
 
-			picture = generic_coastal_navy
+			picture = hol_caved_to_the_british
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				autonomy_gain = -0.3
+				stability_factor = 0.15
+				war_support_factor = 0.05
+				consumer_goods_factor = 0.2
+				research_speed_factor = -0.15
+				conscription_factor = -0.20				
+			}
+		}
+
+### Start of Left Path Political Ideas
+
+		RAJ_princely_states_imperialism = {
+
+			picture = hol_caved_to_the_british
 
 			allowed = {
 				original_tag = RAJ
@@ -59,6 +90,112 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = -0.2
+				stability_factor = 0.15
+				war_support_factor = 0.05
+				consumer_goods_factor = 0.2
+				research_speed_factor = -0.15
+			    production_speed_infrastructure_factor = 0.2
+				production_speed_rail_way_factor = 0.1
+				industrial_capacity_factory = 0.05
+				conscription_factor = -0.22
+			}
+		}
+
+		RAJ_princely_states_popular_muslims = {
+
+			picture = hol_caved_to_the_british
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.001
+				stability_factor = 0.15
+				war_support_factor = 0.05
+				autonomy_gain = -0.1
+				consumer_goods_factor = 0.16
+				research_speed_factor = -0.15
+			    production_speed_infrastructure_factor = 0.2
+				production_speed_rail_way_factor = 0.1
+				industrial_capacity_factory = 0.05
+				conscription_factor = -0.17
+			}
+		}
+		
+		RAJ_princely_states_two_nation = {
+
+			picture = hol_caved_to_the_british
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.001
+				stability_factor = 0.15
+				war_support_factor = 0.05
+#				autonomy_gain = 0.0
+				consumer_goods_factor = 0.15
+				industrial_capacity_dockyard = 0.05
+				research_speed_factor = -0.15
+				autonomy_gain = -0.2
+			    production_speed_infrastructure_factor = 0.2
+				production_speed_rail_way_factor = 0.1
+				industrial_capacity_factory = 0.05
+				conscription_factor = -0.07
+			}
+		}
+
+		RAJ_princely_states_influence = {
+
+			picture = hol_caved_to_the_british
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.001
+				stability_factor = 0.15
+				war_support_factor = 0.05
+				autonomy_gain = 0.2
+				consumer_goods_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+				research_speed_factor = -0.15
 			    production_speed_infrastructure_factor = 0.2
 				production_speed_rail_way_factor = 0.1
 				industrial_capacity_factory = 0.05
@@ -66,9 +203,9 @@ ideas = {
 			}
 		}
 
-		RAJ_england_influence_2 = {
+		RAJ_princely_states_enforce_influence = {
 
-			picture = generic_coastal_navy
+			picture = hol_caved_to_the_british
 
 			allowed = {
 				original_tag = RAJ
@@ -86,18 +223,24 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				autonomy_gain = -0.20
-				conscription_factor = -0.03
-				local_resources_factor = 0.1
+				stability_weekly = 0.001
+				stability_factor = 0.15
+				war_support_factor = 0.05
+				autonomy_gain = 0.2
+				consumer_goods_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+				research_speed_factor = -0.15
+			    production_speed_infrastructure_factor = 0.2
+				production_speed_rail_way_factor = 0.1
 				industrial_capacity_factory = 0.05
-				production_speed_infrastructure_factor = 0.2
-				production_speed_rail_way_factor = 0.1
+				conscription_factor = -0.03				
+				local_resources_factor = 0.1
 			}
 		}
 
-		RAJ_england_influence_3 = {
+		RAJ_princely_states_indian_labour = {
 
-			picture = generic_coastal_navy
+			picture = hol_caved_to_the_british
 
 			allowed = {
 				original_tag = RAJ
@@ -115,17 +258,60 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				autonomy_gain = -0.2
-				conscription_factor = -0.04
-				local_resources_factor = 0.15
-				production_speed_infrastructure_factor = 0.2
+				stability_weekly = 0.001
+				stability_factor = 0.15
+				war_support_factor = 0.05
+				autonomy_gain = 0.2
+				consumer_goods_factor = 0.05
+				industrial_capacity_dockyard = 0.075
+				research_speed_factor = -0.15
+			    production_speed_infrastructure_factor = 0.2
 				production_speed_rail_way_factor = 0.1
-				production_speed_air_base_factor = 0.1
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.025
+				production_speed_air_base_factor = 0.1				
+				industrial_capacity_factory = 0.10
+				conscription_factor = -0.04				
+				local_resources_factor = 0.15				
 			}
 		}
 
+		RAJ_princely_states_empower = {
+
+			picture = hol_caved_to_the_british
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.05
+				stability_weekly = 0.001
+				autonomy_gain = 0.3
+				consumer_goods_factor = -0.10
+				industrial_capacity_dockyard = 0.15
+				research_speed_factor = -0.05
+			    production_speed_infrastructure_factor = 0.2
+				production_speed_rail_way_factor = 0.1
+				production_speed_air_base_factor = 0.1				
+				industrial_capacity_factory = 0.10
+				conscription_factor = -0.04				
+				local_resources_factor = 0.15				
+			}
+		}
+		
+#### Start of Middle Path Political Ideas
+	
 
 		RAJ_indian_congress = {
 
@@ -148,10 +334,109 @@ ideas = {
 
 			modifier = {
 				stability_weekly = 0.001
-				political_power_factor = 0.05
+				political_power_factor = 0.05				
+				autonomy_gain = -0.3
+				consumer_goods_factor = 0.2
+				research_speed_factor = -0.15
+				conscription_factor = -0.20
+				stability_factor = 0.15
+				war_support_factor = 0.05				
 			}
 		}
 
+		RAJ_indian_congress_muslim = {
+
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.002
+				political_power_factor = 0.05				
+				autonomy_gain = -0.1
+				consumer_goods_factor = 0.2
+				research_speed_factor = -0.15
+				conscription_factor = -0.20	
+				stability_factor = 0.15
+				war_support_factor = 0.05				
+			}
+		}
+
+		RAJ_indian_congress_reduce_princes = {
+
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.002
+				political_power_factor = 0.05				
+#				autonomy_gain = 0.0
+				consumer_goods_factor = 0.1
+				research_speed_factor = -0.15
+				conscription_factor = -0.15	
+				stability_factor = 0.15
+				war_support_factor = 0.05				
+			}
+		}
+
+		RAJ_indian_congress_remove_princes = {
+
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.002
+				political_power_factor = 0.05				
+				autonomy_gain = 0.1
+#				consumer_goods_factor = 0.0
+				research_speed_factor = -0.15
+				conscription_factor = -0.10
+				stability_factor = 0.15
+				war_support_factor = 0.05
+			}
+		}
+		
 		RAJ_indian_congress_expanded = {
 
 			picture = generic_pp_unity_bonus
@@ -172,10 +457,16 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_weekly = 0.001
+				stability_weekly = 0.003
 				political_power_factor = 0.10
-				army_core_attack_factor = 0.01
-				army_core_defence_factor = 0.01
+				stability_factor = 0.15
+				war_support_factor = 0.05				
+				autonomy_gain = 0.1
+#				consumer_goods_factor = 0.0
+				research_speed_factor = -0.15
+				conscription_factor = -0.10
+				army_core_attack_factor = 0.02
+				army_core_defence_factor = 0.02
 			}
 		}
 		
@@ -199,12 +490,22 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_weekly = 0.001
+				stability_weekly = 0.003
 				political_power_factor = 0.10
-				army_core_attack_factor = 0.025
-				army_core_defence_factor = 0.025
+				stability_factor = 0.15
+				war_support_factor = 0.05			
+				autonomy_gain = 0.1
+				consumer_goods_factor = -0.2
+				research_speed_factor = -0.15
+#				conscription_factor = 0.0
+				army_core_attack_factor = 0.035
+				army_core_defence_factor = 0.035
+				
 			}
 		}
+
+### Start of Right Side Political ideas
+
 
 		RAJ_the_princes = {
 
@@ -226,10 +527,45 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.05
 				consumer_goods_factor = 0.2
+				research_speed_factor = -0.15
+				conscription_factor = -0.20		
 			}
 		}
 
+		RAJ_the_princes_sikhism = {
+
+			picture = MEX_revolutionary_army
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.10
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				consumer_goods_factor = 0.2
+				research_speed_factor = -0.15
+				conscription_factor = -0.20	
+				
+			}
+		}
+		
 		RAJ_the_princes_empowered = {
 
 			picture = MEX_revolutionary_army
@@ -250,7 +586,45 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.10
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
 				consumer_goods_factor = 0.2
+				research_speed_factor = -0.15
+				conscription_factor = -0.20
+				production_speed_arms_factory_factor = 0.10
+				production_speed_dockyard_factor = 0.05
+			}
+		}
+
+		RAJ_the_princes_united = {
+
+			picture = MEX_revolutionary_army
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.15
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				consumer_goods_factor = 0.2
+				research_speed_factor = -0.15
+				conscription_factor = -0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.05
 			}
@@ -276,9 +650,15 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.15
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
 				consumer_goods_factor = 0.2
-				production_speed_arms_factory_factor = 0.125
-				production_speed_dockyard_factor = 0.05
+				research_speed_factor = -0.15
+				conscription_factor = -0.10
+				production_speed_arms_factory_factor = 0.14
+				production_speed_dockyard_factor = 0.06
 				min_export = -0.05
 			}
 		}
@@ -302,13 +682,21 @@ ideas = {
 
 			removal_cost = -1
 
-			modifier = {
-				consumer_goods_factor = 0.2
-				production_speed_arms_factory_factor = 0.15
-				production_speed_dockyard_factor = 0.075
-				min_export = -0.05
+			modifier = {			
+				stability_factor = 0.05
+				war_support_factor = 0.15
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+				consumer_goods_factor = 0.175
+				research_speed_factor = -0.15
+				conscription_factor = -0.10
+				production_speed_arms_factory_factor = 0.18
+				production_speed_dockyard_factor = 0.10
+				min_export = -0.075
 			}
 		}
+
+###
 
 		RAJ_prince_war_demands = {
 
@@ -331,7 +719,7 @@ ideas = {
 
 			targeted_modifier = {
 				tag = JAP
-				attack_bonus_against = 0.025
+				attack_bonus_against = 0.04
 			}
 		}
 
@@ -356,8 +744,8 @@ ideas = {
 
 			targeted_modifier = {
 				tag = JAP
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.02
+				attack_bonus_against = 0.065
+				defense_bonus_against = 0.025
 			}
 		}
 
@@ -381,12 +769,12 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_morale_factor = 0.05
-				army_org_factor = 0.03
+				army_morale_factor = 0.06
+				army_org_factor = 0.04
 			}
 			targeted_modifier = {
 				tag = JAP
-				attack_bonus_against = 0.075
+				attack_bonus_against = 0.09
 				defense_bonus_against = 0.04
 			}
 		}
@@ -416,8 +804,8 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = JAP
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.05
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.065
 			}
 		}
 
@@ -565,83 +953,6 @@ ideas = {
 			}
 		}
 
-		RAJ_widespread_illiteracy = {
-
-			picture = prc_low_popular_support3
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				research_speed_factor = -0.15
-			}
-		}
-
-		RAJ_indian_schooling_1 = {
-
-			picture = generic_army_war_college
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				research_speed_factor = 0.05
-			}
-		}
-
-		RAJ_indian_schooling_2 = {
-
-			picture = generic_army_war_college
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				research_speed_factor = 0.01
-				autonomy_gain = 0.6
-			}
-		}
-
-		RAJ_british_help_in_education = {
-
-			picture = eng_the_sun_never_sets
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				research_speed_factor = 0.06
-			}
-		}
-
 		RAJ_poor_industrial_infrastructure = {
 			picture = SPR_anarchist_public_transport
 
@@ -667,12 +978,12 @@ ideas = {
 			}
 			equipment_bonus = {
 				railway_gun_equipment = {
-					build_cost_ic = 0.60 instant = yes
+					build_cost_ic = 0.50 instant = yes
 				}
 			}
 			equipment_bonus = {
 				light_tank_chassis = {
-					build_cost_ic = 0.15 instant = yes 
+					build_cost_ic = 0.10 instant = yes 
 				}
 			}
 			equipment_bonus = {
@@ -715,7 +1026,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				medium_tank_chassis = {
-					build_cost_ic = 0.15 instant = yes
+					build_cost_ic = 0.10 instant = yes
 				}
 			}
 			equipment_bonus = {
@@ -730,7 +1041,7 @@ ideas = {
 			}
 		}
 		
-		RAJ_poor_industrial_infrastructure_3 = {
+		RAJ_poor_industrial_infrastructure_imperial_learning = {
 			picture = SPR_anarchist_public_transport
 
 			allowed = {
@@ -744,11 +1055,20 @@ ideas = {
 			cancel = {
 			    has_capitulated = yes
 			}
-
+			
+			modifier = {
+				research_speed_factor = 0.075
+			}
+			
 			removal_cost = -1
 			equipment_bonus = {
 				railway_gun_equipment = {
 					build_cost_ic = 0.35 instant = yes
+				}
+			}
+			equipment_bonus = {
+				medium_tank_chassis = {
+					build_cost_ic = 0.10 instant = yes
 				}
 			}
 			equipment_bonus = {
@@ -763,132 +1083,43 @@ ideas = {
 			}
 		}
 
-		RAJ_princely_states = {
-
-			picture = hol_caved_to_the_british
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
-				}
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				autonomy_gain = -0.3
-				consumer_goods_factor = 0.2
-			}
-		}
-
-		RAJ_princely_states_2 = {
-
-			picture = hol_caved_to_the_british
+		RAJ_poor_industrial_infrastructure_british_tanks = {
+			picture = SPR_anarchist_public_transport
 
 			allowed = {
 				original_tag = RAJ
 			}
 
 			allowed_civil_war = {
-				NOT = {
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
+				always = yes
+			}
+
+			cancel = {
+			    has_capitulated = yes
+			}
+			
+			modifier = {
+				research_speed_factor = 0.075
+			}
+			
+			removal_cost = -1
+			equipment_bonus = {
+				railway_gun_equipment = {
+					build_cost_ic = 0.25 instant = yes
 				}
 			}
-
-			removal_cost = -1
-
-			modifier = {
-				autonomy_gain = -0.1
-				consumer_goods_factor = 0.1
-				conscription_factor = 0.05
-			}
-		}
-
-		RAJ_princely_states_3 = {
-
-			picture = raj_all_india_forward_bloc
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
+			equipment_bonus = {
+				amphibious_tank_chassis = {
+					build_cost_ic = 0.15 instant = yes
 				}
 			}
-
-			removal_cost = -1
-
-			modifier = {
-				conscription_factor = 0.10
-			}
-		}
-
-		RAJ_princely_states_free = {
-
-			picture = raj_all_india_forward_bloc
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
+			equipment_bonus = {
+				heavy_tank_chassis = {
+					build_cost_ic = 0.20 instant = yes 
 				}
 			}
-
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = -0.2
-				conscription_factor = 0.20
-			}
 		}
-
-		RAJ_princely_states_4 = {
-
-			picture = hol_caved_to_the_british
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
-				}
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				autonomy_gain = -0.2
-				consumer_goods_factor = 0.075
-				conscription_factor = 0.10
-			}
-		}
-
+		
 		RAJ_logistics_elephants_idea = {
 
 			picture = RAJ_logistics_elephants
@@ -980,8 +1211,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				local_resources_factor = 0.15
-				conscription_factor = -0.05
+				local_resources_factor = 0.12
+				conscription_factor = -0.035
 			}
 		}
 
@@ -1005,8 +1236,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_speed_buildings_factor = 0.075
-				conscription_factor = -0.05
+				production_speed_buildings_factor = 0.06
+				local_resources_factor = 0.12
+				conscription_factor = -0.06
 			}
 		}
 
@@ -1176,7 +1408,7 @@ ideas = {
 			modifier = {
 				conscription_factor = -0.70
 				consumer_goods_factor = 0.1
-				industrial_capacity_factory = -0.1
+				industrial_capacity_factory = -0.15
 			}
 		}
 
@@ -1201,7 +1433,8 @@ ideas = {
 			modifier = {
 				conscription_factor = -0.65
 				consumer_goods_factor = 0.075
-				industrial_capacity_factory = -0.05
+				industrial_capacity_factory = -0.10
+				research_speed_factor = 0.05
 			}
 		}
 
@@ -1226,8 +1459,10 @@ ideas = {
 			modifier = {
 				conscription_factor = -0.50
 				consumer_goods_factor = 0.075
-				industrial_capacity_factory = -0.025
+				industrial_capacity_factory = -0.05
+				research_speed_factor = 0.05
 			}
+
 		}
 
 		RAJ_agrarian_society_4 = { #princely society#
@@ -1428,44 +1663,6 @@ ideas = {
 			}
 		}
 
-		RAJ_commits_africa_idea = {
-			picture = SPR_anarchist_public_transport
-			name = RAJ_commits_africa_idea
-			allowed = {
-				original_tag = SAF
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				conscription_factor = 0.10
-				production_speed_buildings_factor = 0.025
-			}
-		}
-
-		RAJ_commits_asia_idea = {
-			picture = SPR_anarchist_public_transport
-			name = RAJ_commits_asia_idea
-			allowed = {
-				original_tag = AST
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				conscription_factor = 0.10
-				production_speed_buildings_factor = 0.025
-			}
-		}
-
 
 		RAJ_corruption_countdown = {
 			picture = chi_hyper_inflation
@@ -1641,96 +1838,6 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.30
-			}
-		}
-
-		RAJ_marginalized_muslim_community_contained = {
-
-			picture = raj_marginalized_muslim_community
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				stability_weekly = 0.001
-				conscription_factor = -0.30
-				autonomy_gain = 0.2
-			}
-		}
-
-		RAJ_marginalized_muslim_community_happy = {
-
-			picture = raj_marginalized_muslim_community_happy
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				stability_weekly = 0.001
-				conscription_factor = -0.25
-				consumer_goods_factor = -0.04
-				autonomy_gain = 0.2
-			}
-		}
-
-		RAJ_marginalized_muslim_community_happy_2 = {
-
-			picture = raj_marginalized_muslim_community_happy
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				industrial_capacity_dockyard = 0.05
-				conscription_factor = -0.15
-				stability_weekly = 0.001
-				consumer_goods_factor = -0.05
-				autonomy_gain = 0.3
-			}
-		}
-
-		RAJ_marginalized_muslim_community_happy_3 = {
-
-			picture = raj_marginalized_muslim_community_happy
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				stability_factor = 0.1
-				industrial_capacity_dockyard = 0.12
-				research_speed_factor = 0.10
-				consumer_goods_factor = -0.2
-				stability_weekly = 0.001
-				autonomy_gain = 0.4
 			}
 		}
 
@@ -1925,11 +2032,78 @@ ideas = {
 				autonomy_gain = 0.5
 				war_support_factor = -0.2
 				surrender_limit = -0.10
-				army_core_attack_factor = -0.05
-				army_core_defence_factor = -0.05
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
 			}
 		}
+		RAJ_quit_india_movement_timed = {
 
+			picture = raj_quit_india_movement
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+
+					}
+				}
+			}
+
+			cancel = {
+			    has_capitulated = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				autonomy_gain = 1.5
+				war_support_factor = -0.1
+				surrender_limit = -0.10
+				conscription_factor = -0.10
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
+			}
+		}
+		
+		RAJ_quit_india_movement_timed_2 = {
+
+			picture = raj_quit_india_movement
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+
+					}
+				}
+			}
+
+			cancel = {
+			    has_capitulated = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				autonomy_gain = 1.0
+				war_support_factor = -0.1
+				surrender_limit = -0.05
+				conscription_factor = -0.05
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+			}
+		}
+		
 		RAJ_british_officers = {
 
 			picture = eng_imperial_conscription
@@ -2017,8 +2191,8 @@ ideas = {
 			picture = generic_exploit_mines
 
 			modifier = {
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.04
+				industrial_capacity_dockyard = 0.04
                 production_factory_efficiency_gain_factor = 0.025
 				consumer_goods_factor = -0.05
 				conscription_factor = -0.04
@@ -2036,8 +2210,8 @@ ideas = {
 			picture = generic_exploit_mines
 
 			modifier = {
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.08
+				industrial_capacity_dockyard = 0.08
                 production_factory_efficiency_gain_factor = 0.05
 				consumer_goods_factor = -0.15
 				conscription_factor = -0.08
@@ -2179,8 +2353,8 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				conscription_factor = -0.05
-				industrial_capacity_dockyard = 0.15
+				conscription_factor = -0.04
+				industrial_capacity_dockyard = 0.125
 			}
 		}
 
@@ -2195,7 +2369,7 @@ ideas = {
 			picture = generic_air_arab_1
 
 			allowed = {
-				original_tag = RAJ
+				original_tag = IDR
 			}
 
 			available = {
@@ -2211,7 +2385,7 @@ ideas = {
 		tata_industrial_concern = {
 
 			allowed = {
-				original_tag = RAJ
+				original_tag = IDR
 			}
 
 			available = {
@@ -2229,15 +2403,14 @@ ideas = {
 			cost = 100
 
 			modifier = {
-				production_speed_buildings_factor = 0.05
-				research_speed_factor = -0.01
+				production_speed_buildings_factor = 0.10
 			}
 		}
 
 		tata_chemical = {
 
 			allowed = {
-				original_tag = RAJ
+				original_tag = IDR
 			}
 
 			available = {
@@ -2329,7 +2502,7 @@ ideas = {
 
 			allowed = {
 				has_dlc = "Together for Victory"
-				original_TAG = RAJ
+				original_TAG = IDR
 			}
 
 			picture = generic_naval_manufacturer_2
@@ -2438,7 +2611,7 @@ ideas = {
 
 			allowed = {
 				has_dlc = "Together for Victory"
-				original_TAG = RAJ
+				original_TAG = IDR
 			}
 
 			picture = generic_air_manufacturer_1
@@ -2543,7 +2716,7 @@ ideas = {
 
 			allowed = {
 				has_dlc = "Together for Victory"
-				original_TAG = RAJ
+				original_TAG = IDR
 			}
 
 			picture = generic_infantry_equipment_manufacturer_2
@@ -2558,7 +2731,7 @@ ideas = {
 
 			allowed = {
 				has_dlc = "Together for Victory"
-				original_TAG = RAJ
+				original_TAG = IDR
 			}
 
 			picture = generic_artillery_manufacturer_2

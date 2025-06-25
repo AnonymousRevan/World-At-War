@@ -9,6 +9,7 @@ state = {
 			317 3 
 		}
 		owner = GER
+		set_state_flag = atlantikwall_state
 		buildings = {
 			infrastructure = 6
 			arms_factory = 4

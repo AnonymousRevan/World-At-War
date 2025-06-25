@@ -129,7 +129,7 @@ bookmarks = {
 				CAN_if_day
 			}
 		}
-		"RAJ"={
+		"IDR"={
 			minor = yes
 			history = "RAJ_GATHERING_STORM_DESC"
 			ideology = neutrality
@@ -153,7 +153,7 @@ bookmarks = {
 				AST_conscript_malus
 			}
 			focuses = {
-				AST_expand_the_raaf
+				AST_Isolation
 				AST_invest_in_victory
 				AST_rats_of_tobruk
 			}

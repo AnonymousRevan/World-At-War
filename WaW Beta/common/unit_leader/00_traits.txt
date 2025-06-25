@@ -93,8 +93,8 @@ leader_traits = {
 		trait_type = personality_trait
 
 		corps_commander_modifier = {
-			max_commander_army_size = 60
-			experience_gain_factor = -0.25
+			max_commander_army_size = 190
+			experience_gain_factor = -0.15
 		}
 		new_commander_weight = {
 			factor = 0
@@ -170,7 +170,7 @@ leader_traits = {
 		}
 		non_shared_modifier = {
 			river = {
-				attack = 0.2
+				attack = 0.225
 			}
 		}
 	}	
@@ -341,7 +341,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		trait_xp_factor = {
-			motorized_leader = 1     #+100%
+			motorized_leader = 1.5     #+150%
 		}
 		
 		attack_skill_factor = 1
@@ -353,7 +353,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		trait_xp_factor = {
-			infantry_leader = 1     #+100%
+			infantry_leader = 1.5     #+150%
 		}
 		
 		
@@ -366,7 +366,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		trait_xp_factor = {
-			cavalry_leader = 1     #+100%
+			cavalry_leader = 1.5     #+150%
 		}
 		
 		attack_skill_factor = 1
@@ -378,7 +378,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		trait_xp_factor = {
-			panzer_leader = 1     #+100%
+			panzer_leader = 1.5     #+150%
 		}
 		
 		attack_skill_factor = 1
@@ -662,7 +662,6 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = is_using_battle_plans
 		
 		cost = 1000
-
 		
 		modifier = {
 			planning_speed = 0.1
@@ -690,7 +689,7 @@ leader_traits = {
 		}
 		custom_gain_xp_trigger_tooltip = cavalary_ratio_over_40
 		
-		cost = 500
+		cost = 700
 
 		modifier = {
 			cavalry_attack_factor = 0.10	
@@ -718,7 +717,7 @@ leader_traits = {
 			check_variable = { cmm > temp }
 		}
 		custom_gain_xp_trigger_tooltip = motorized_ratio_over_35
-		cost = 500
+		cost = 700
 
 		
 		modifier = {
@@ -744,12 +743,12 @@ leader_traits = {
 		}
 		custom_gain_xp_trigger_tooltip = infantry_ratio_over_75
 		
-		cost = 1000
+		cost = 700
 
 		
 		modifier = {
 			army_infantry_defence_factor = 0.10
-			max_commander_army_size = -3
+			max_commander_army_size = 4
 		}
 		
 		slot = high_command
@@ -770,10 +769,10 @@ leader_traits = {
 		}
 		custom_gain_xp_trigger_tooltip = fighting_with_at_least_23_units
 		
-		cost = 1000
+		cost = 700
 		
 		corps_commander_modifier = {
-			max_commander_army_size = 8
+			max_commander_army_size = 12
 		}
 		
 		slot = high_command
@@ -817,7 +816,7 @@ leader_traits = {
 		gain_xp = {
 			temperature < -10
 		}
-		cost = 500
+		cost = 750
 		modifier = {
 			winter_attrition_factor = -0.5
 		}
@@ -985,7 +984,7 @@ leader_traits = {
 		gain_xp = {
 			is_fighting_in_terrain = desert
 		}
-		cost = 700
+		cost = 750
 
 		modifier = {
 			desert = {
@@ -1007,7 +1006,7 @@ leader_traits = {
 		gain_xp = {
 			is_fighting_in_terrain = marsh
 		}
-		cost = 700
+		cost = 750
 
 		modifier = {
 			marsh = {
@@ -1029,7 +1028,7 @@ leader_traits = {
 		gain_xp = {
 			is_fighting_in_terrain = mountain
 		}
-		cost = 700
+		cost = 750
 
 		modifier = {
 			mountain = {
@@ -1051,7 +1050,7 @@ leader_traits = {
 		gain_xp = {
 			is_fighting_in_terrain = hills
 		}
-		cost = 700
+		cost = 750
 
 		modifier = {
 			hills = {
@@ -1073,7 +1072,7 @@ leader_traits = {
 		gain_xp = {
 			is_fighting_in_terrain = jungle
 		}
-		cost = 700
+		cost = 750
 
 		modifier = {
 			jungle = {
@@ -1095,7 +1094,7 @@ leader_traits = {
 		gain_xp = {
 			is_fighting_in_terrain = forest
 		}
-		cost = 700
+		cost = 750
 
 		modifier = {
 			forest = {
@@ -1117,7 +1116,7 @@ leader_traits = {
 		gain_xp = {
 			is_fighting_in_terrain = urban
 		}
-		cost = 350
+		cost = 500
 
 		modifier = {
 			urban = {
@@ -1223,8 +1222,8 @@ leader_traits = {
 
 		modifier = {
 		    army_armor_attack_factor = 0.05
-			mechanized_attack_factor = 0.1
-			motorized_attack_factor = 0.1
+			mechanized_attack_factor = 0.125
+			motorized_attack_factor = 0.125
 			max_commander_army_size = -3
 		}
 		
@@ -1313,7 +1312,7 @@ leader_traits = {
 		cost = 500
 
 		modifier = {
-			equipment_capture = 0.03
+			equipment_capture = 0.05
 		}
 
 		ai_will_do = {
@@ -1336,7 +1335,7 @@ leader_traits = {
 
 		modifier = {
 			army_infantry_attack_factor = 0.15
-			max_commander_army_size = -3
+			max_commander_army_size = 8
 		}
 		
 		ai_will_do = {
@@ -2674,16 +2673,6 @@ leader_traits = {
 		}
 
 		cost = 400
-		gain_xp_leader = {
-			OR = {
-				operative_leader_operation = operation_rescue_operative
-				operative_leader_operation = operation_infiltrate_civilian
-				operative_leader_operation = operation_infiltrate_armed_forces_army
-				operative_leader_operation = operation_infiltrate_armed_forces_navy
-				operative_leader_operation = operation_infiltrate_armed_forces_airforce
-				operative_leader_operation = operation_make_resistance_contacts
-			}
-		}
 
 		modifier = { 
 			operation_infiltrate_outcome = 0.25
@@ -2699,12 +2688,6 @@ leader_traits = {
 		#}
 
 		cost = 400
-		gain_xp_leader = {
-			OR = {
-				operative_leader_mission = root_out_resistance
-				operative_leader_mission = counter_intelligence
-			}
-		}
 
 		modifier = {
 			intelligence_agency_defense = 0.2
@@ -2832,13 +2815,6 @@ leader_traits = {
 		trait_type = basic_trait
 
 		cost = 400
-		gain_xp_leader = {
-			OR = {
-				operative_leader_operation = operation_targeted_sabotage_industry
-				operative_leader_operation = operation_targeted_sabotage_infrastructure
-				operative_leader_operation = operation_targeted_sabotage_resources
-			}
-		}
 
 		modifier = {
 			target_sabotage_factor = 0.25

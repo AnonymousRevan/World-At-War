@@ -18,8 +18,8 @@ ideas = {
 
 			modifier = {
 				fascism_drift = 0.01
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = -0.10
+				industrial_capacity_factory = -0.125
+				industrial_capacity_dockyard = -0.125
 			}
 		}
 
@@ -37,8 +37,8 @@ ideas = {
 			picture = saf_ossewabrandwag_2
 
 			modifier = {
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = -0.10
+				industrial_capacity_factory = -0.125
+				industrial_capacity_dockyard = -0.125
 			}
 		}
 
@@ -198,8 +198,8 @@ ideas = {
 			picture = prc_low_popular_support3
 
 			modifier = {
-				industrial_capacity_factory = 0.03
-				industrial_capacity_dockyard = 0.03
+				industrial_capacity_factory = 0.025
+				industrial_capacity_dockyard = 0.025
 				production_speed_buildings_factor = 0.05
 			}
 
@@ -219,8 +219,8 @@ ideas = {
 			picture = prc_low_popular_support3
 
 			modifier = {
-				industrial_capacity_factory = 0.08
-				industrial_capacity_dockyard = 0.08
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = 0.075
 				production_speed_buildings_factor = 0.075
 			}
 
@@ -240,8 +240,8 @@ ideas = {
 			picture = prc_low_popular_support3
 
 			modifier = {
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = 0.125
+				industrial_capacity_dockyard = 0.125
 				consumer_goods_factor = -0.05
 				production_speed_buildings_factor = 0.075
 			}
@@ -320,8 +320,8 @@ ideas = {
 			picture = ast_all_in
 
 			modifier = {
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.04
+				industrial_capacity_dockyard = 0.04
 			}
 
 		}
@@ -381,45 +381,6 @@ ideas = {
 				army_org_Factor = 0.05
 			}
 		}
-
-		SAF_commits_india_idea = {
-			picture = NOR_planned_economy
-			name = SAF_commits_india_idea
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				research_speed_factor = 0.05
-				local_resources_factor = 0.10
-			}
-		}
-
-		SAF_commits_outback_idea = {
-			picture = NOR_planned_economy
-			name = SAF_commits_outback_idea
-			allowed = {
-				original_tag = AST
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				research_speed_factor = 0.05
-				local_resources_factor = 0.10
-			}
-		}
-
 
 		SAF_support_spain = {
 
@@ -711,8 +672,8 @@ ideas = {
 
 			modifier = {
 				production_factory_max_efficiency_factor = -0.05
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.075
 			}
 
 		}
@@ -733,8 +694,8 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.15
 				production_speed_buildings_factor = 0.05
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.04
+				industrial_capacity_dockyard = 0.04
 			}
 		}
 
@@ -797,8 +758,8 @@ ideas = {
 
 			modifier = {
 				production_speed_infrastructure_factor = 0.15
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.04
+				industrial_capacity_dockyard = 0.04
 			}
 			research_bonus = {
 				industry = 0.1

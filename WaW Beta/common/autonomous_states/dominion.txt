@@ -44,7 +44,7 @@ autonomy_state = {
 	can_take_level = {
 		OR = {
 			NOT = { original_tag = RAJ }
-				RAJ = {
+				IDR = {
 					OR = {
 						has_completed_focus = RAJ_democracy_6
 						has_completed_focus = RAJ_princes_6

@@ -14,7 +14,7 @@ state={
 	}
 
 	history={
-		owner = MAL
+		owner = IDR
 		add_core_of = MAL
 		set_state_flag = USA_controls_air
 		victory_points = {

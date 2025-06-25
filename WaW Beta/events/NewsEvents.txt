@@ -813,7 +813,7 @@ news_event = {
 	id = news.25
 	title = news.25.t
 	desc = news.25.d
-	picture = GFX_news_event_hitler_speech
+	picture = GFX_event_picture_Rhineland_Nora
 	
 	major = yes
 	
@@ -2403,7 +2403,7 @@ news_event = {
 	major = yes
 	
 	is_triggered_only = yes
-	
+
 	option = {
 		name = news.145.a
 		trigger = {
@@ -2412,15 +2412,25 @@ news_event = {
 				TAG = SOV
 			}
 		}
+		hidden_effect ={
+			sound_effect = Nora_Stalingrad_Massengrab
+		}
 	}
 	option = {
 		name = news.100.b
 		trigger = { TAG = GER }
+		hidden_effect ={
+			sound_effect = Nora_Stalingrad_Massengrab
+		}
 	}
 	option = {
 		name = news.103.c
 		trigger = { TAG = SOV }
+		hidden_effect ={
+			sound_effect = Nora_Stalingrad_Massengrab
+		}
 	}
+
 }
 
 # The Fall of Moscow
@@ -11324,7 +11334,7 @@ news_event = { #Panay Incident - initial incident
 	id = news.334
 	title = news.334.t
 	desc = news.334.d
-	picture = GFX_news_event_panay_incident
+	picture = GFX_event_picture_panay_Nora
 
 	trigger = {
 		NOT = { tag = USA }

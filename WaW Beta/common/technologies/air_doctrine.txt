@@ -288,6 +288,7 @@ technologies = {
 
 		# EFFECT ########
 		army_bonus_air_superiority_factor = 0.15
+		air_bombing_targetting = 0.075
 		###########
 		
 		
@@ -459,6 +460,7 @@ technologies = {
 
 		# EFFECT ########
 		air_escort_efficiency = 0.25
+		air_bombing_targetting = 0.075
 		###########
 		
 		path = {

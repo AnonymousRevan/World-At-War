@@ -63,7 +63,7 @@ SOV_military_district_garrisons = {
 		original_tag = SOV
 	}
 
-	visible = {
+	available = {
 		has_completed_focus = SOV_eastern_security
 		NOT = {
 			has_war_with = GER 

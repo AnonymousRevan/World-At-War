@@ -690,8 +690,6 @@ ideas = {
 				experience_gain_carrier_combat_factor = 0.25
 				experience_gain_destroyer_training_factor = 0.25
 				experience_gain_destroyer_combat_factor = 0.25
-				experience_gain_frigate_training_factor = 0.25
-				experience_gain_frigate_combat_factor = 0.25
 				repair_speed_factor = 0.25
 			}
 		}

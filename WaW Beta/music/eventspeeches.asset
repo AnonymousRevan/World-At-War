@@ -1,5 +1,5 @@
 ##### EVENT Speeches #####
-music_station = "event_speeches"
+# music_station = "event_speeches"
 music = {
 	name = "usanyecommittee"
 	file = "event_speeches/Boom.ogg"

@@ -250,7 +250,7 @@ characters={
 		corps_commander = {
 			traits = { armor_officer brilliant_strategist }
 			skill = 4
-			attack_skill = 5
+			attack_skill = 4
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 3
@@ -314,9 +314,9 @@ characters={
 		corps_commander = {
 			traits = { commando infantry_leader }
 			skill = 2
-			attack_skill = 3
+			attack_skill = 2
 			defense_skill = 3
-			planning_skill = 2
+			planning_skill = 1
 			logistics_skill = 2
 		}
 	}
@@ -477,7 +477,7 @@ characters={
 			attack_skill = 2
 			defense_skill = 3
 			planning_skill = 2
-			logistics_skill = 2
+			logistics_skill = 1
 		}
 	}
 	SOV_nikolai_vatutin={
@@ -607,8 +607,8 @@ characters={
 			traits = { brilliant_strategist career_officer infantry_leader }
 			skill = 4
 			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 2
+			defense_skill = 3
+			planning_skill = 3
 			logistics_skill = 2
 		}
 	}
@@ -751,7 +751,7 @@ characters={
 			attack_skill = 3
 			defense_skill = 3
 			planning_skill = 2
-			logistics_skill = 5
+			logistics_skill = 4
 			legacy_id = 4555
 		}
 	}
@@ -1623,7 +1623,7 @@ characters={
 			skill = 2
 			attack_skill = 3
 			defense_skill = 2
-			planning_skill = 2
+			planning_skill = 1
 			logistics_skill = 2
 		}
 	}
@@ -1730,8 +1730,8 @@ characters={
 			traits = { infantry_officer trickster }
 			skill = 2
 			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 3
+			defense_skill = 2
+			planning_skill = 2
 			logistics_skill = 3
 		}
 	}
@@ -1769,7 +1769,7 @@ characters={
 			traits = { infantry_officer reservist }
 			skill = 1
 			attack_skill = 1
-			defense_skill = 1
+			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
 		}
@@ -1809,7 +1809,7 @@ characters={
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
-			logistics_skill = 1
+			logistics_skill = 2
 		}
 	}
 	SOV_markian_popov = {
@@ -1859,10 +1859,10 @@ characters={
 		}
 		corps_commander = {
 			traits = { career_officer infantry_officer reservist }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 2
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
 			logistics_skill = 3
 		}
 	}
@@ -2139,8 +2139,8 @@ characters={
 			traits = { cavalry_officer politically_connected career_officer }
 			skill = 2
 			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
+			defense_skill = 1
+			planning_skill = 1
 			logistics_skill = 3
 			legacy_id = 404
 		}
@@ -2186,7 +2186,7 @@ characters={
 		corps_commander = {
 			traits = { infantry_officer armor_officer trait_cautious }
 			skill = 4
-			attack_skill = 4
+			attack_skill = 3
 			defense_skill = 4
 			planning_skill = 2
 			logistics_skill = 3

@@ -16,7 +16,7 @@ ideas = {
 				heavy_air = 0.15
 			}
 			modifier = {
-				air_bombing_targetting = 0.1
+				air_bombing_targetting = 0.15
 			}
 			ai_will_do = {
 				factor = 1.5
@@ -42,7 +42,7 @@ ideas = {
 				tactical_bomber = 0.15
 			}
 			modifier = {
-				air_bombing_targetting = 0.075
+				air_bombing_targetting = 0.10
 				air_cas_present_factor = 0.075
 				air_nav_efficiency = 0.025
 			}

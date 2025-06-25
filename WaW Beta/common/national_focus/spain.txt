@@ -47,7 +47,11 @@ focus = {
 	x = 4
 	y = 8
 
-
+	available = {
+		NOT = {
+			has_idea = SPA_spanish_civil_war_industry
+		}
+	}
 
 	cost = 10
 
@@ -58,7 +62,6 @@ focus = {
 		air_experience = 100
 		set_party_name = { ideology = fascism long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
 		set_party_name = { ideology = neutrality long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
-		remove_ideas = SPA_spanish_civil_war_industry
 		add_ideas = SPA_recovering_from_civil_war 	
 	}
 }
@@ -254,7 +257,7 @@ technology = construction4
 			}
 			custom_effect_tooltip = SPA_facilitate_pyrenees_freight_transports_tt
 			hidden_effect = {
-				random_owned_controlled_state = {
+				794 = {
 					if = {
 						limit = { is_controlled_by = ROOT }
 						add_building_construction = {
@@ -264,7 +267,7 @@ technology = construction4
 						}
 					}
 				}
-				random_owned_controlled_state = {
+				166 = {
 					if = {
 						limit = { is_controlled_by = ROOT }
 
@@ -297,7 +300,7 @@ technology = construction4
 						}
 					}
 				}
-				random_owned_controlled_state = {
+				793 = {
 					if = {
 						limit = { is_controlled_by = ROOT }
 
@@ -1898,7 +1901,7 @@ technology = construction4
 			
 			add_tech_bonus = {
 				name = SPA_spanish_halftrack
-				bonus = 1
+				bonus = 1.0
 				uses = 1
 				category = cat_mechanized_equipment
 			}
@@ -2067,9 +2070,9 @@ technology = construction4
 		id = SPA_cooperate_with_axis_scientists
 		prerequisite = { focus = SPA_the_condor_legion focus = SPA_the_corpo_truppe_volontarie }
 
-		available = {
-			has_completed_focus = SPA_fuse_the_parties
-		}
+#		available = {
+#			has_completed_focus = SPA_fuse_the_parties
+#		}
 
 		icon = GFX_goal_continuous_research
 		x = 0
@@ -3385,13 +3388,10 @@ technology = construction4
 					type = annex_everything
 				}
 				declare_war_on = {
-					target = RAJ
+					target = IDR
 					type = annex_everything
 				}
-				declare_war_on = {
-					target = NZL
-					type = annex_everything
-				}
+
 		    }		
 		}
 	}

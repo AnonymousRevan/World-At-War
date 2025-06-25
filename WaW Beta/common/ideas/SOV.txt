@@ -10,8 +10,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.175
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_arms_factory_factor = -0.2
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_arms_factory_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.2
 			}
 		}
@@ -34,12 +34,10 @@ ideas = {
 			picture = generic_oppression
 
 			modifier = {
-				army_attack_factor = 0.05
-				army_defence_factor = 0.05
-				conscription = 0.02
-				industrial_capacity_factory = 0.15
-				production_factory_max_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				conscription = 0.1
+				industrial_capacity_factory = 0.2
 			}
 		}
 
@@ -152,15 +150,15 @@ ideas = {
 			}
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.2
 					instant = yes
 				}
 				horse_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.2
 					instant = yes
 				}
 				support_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.2
 					instant = yes
 				}
 			}
@@ -173,7 +171,7 @@ ideas = {
 			}
 			modifier = {
 				army_attack_factor = -0.25
-				army_defence_factor = -0.3
+				army_defence_factor = -0.25
 				army_speed_factor = 0.05
 				max_dig_in = -3
 				dig_in_speed_factor = -0.2
@@ -254,7 +252,7 @@ ideas = {
 			}
 			modifier = {
 
-
+				army_org_Factor = -0.15
 				army_attack_factor = -0.15
 				army_defence_factor = -0.15
 			}
@@ -332,6 +330,69 @@ ideas = {
                 stability_factor = 0.30
             }
         }
+		
+		SOV_grow_resist = {
+
+			picture = anti_soviet_pact
+
+			allowed = {
+				always = no
+			}
+			cancel = {
+				GER = { is_ai = no }
+				SOV = { is_ai = yes }
+			}
+			modifier = {
+
+
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+
+			removal_cost = -1
+		}	
+
+		SOV_fervor = {
+
+			picture = anti_soviet_pact
+
+			allowed = {
+				always = no
+			}
+			cancel = {
+				GER = { is_ai = no }
+				SOV = { is_ai = yes }
+			}
+			modifier = {
+
+
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+			}
+
+			removal_cost = -1
+		}
+
+		SOV_no_fascist = {
+
+			picture = anti_soviet_pact
+
+			allowed = {
+				always = no
+			}
+			cancel = {
+				GER = { is_ai = no }
+				SOV = { is_ai = yes }
+			}
+			modifier = {
+
+
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+			}
+
+			removal_cost = -1
+		}		
 
 		SOV_winter_war_experiences = {
 
@@ -348,10 +409,10 @@ ideas = {
 
 			equipment_bonus = {
 				heavy_assault_gun_equipment = {
-				    build_cost_ic = -0.05 instant = yes
+				    build_cost_ic = -0.15 instant = yes
 				}
 				medium_assault_gun_equipment = {
-				    build_cost_ic = -0.05 instant = yes
+				    build_cost_ic = -0.15 instant = yes
 				}
 			}
 		}
@@ -384,22 +445,45 @@ ideas = {
 
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.05 instant = yes
+					build_cost_ic = -0.10 instant = yes
 				}
 				medium_plane_fighter_airframe  = {
-					build_cost_ic = -0.05 instant = yes
+					build_cost_ic = -0.10 instant = yes
 				}
 				small_plane_cas_airframe  = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.15 instant = yes
 				}
 				medium_plane_airframe= {
-					build_cost_ic = -0.05 instant = yes
+					build_cost_ic = -0.10 instant = yes
 				}
 			}
 
 			removal_cost = -1
 		}
+		SOV_aviation_enthusiasm_2 = {
 
+			allowed = {
+				always = no # Triggered via event
+			}
+			picture = generic_reserve_divisions
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.30 instant = yes
+				}
+				medium_plane_fighter_airframe  = {
+					build_cost_ic = -0.30 instant = yes
+				}
+				small_plane_cas_airframe  = {
+					build_cost_ic = -0.3 instant = yes
+				}
+				medium_plane_airframe= {
+					build_cost_ic = -0.3 instant = yes
+				}
+			}
+
+			removal_cost = -1
+		}
 
 		SOV_Tolkach = {#
 			allowed = { always = no }
@@ -620,10 +704,10 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
 					reliability = -0.1
 					soft_attack = -0.1
-					defense = -0.1
+					defense = -0.15
 					instant = yes
 				}
 			}
@@ -643,7 +727,7 @@ ideas = {
 					build_cost_ic = -0.1
 					reliability = -0.1
 					soft_attack = -0.1
-					defense = -0.1
+					defense = -0.15
 					instant = yes
 				}
 			}
@@ -738,15 +822,15 @@ ideas = {
 			
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.20 instant = yes
 					air_attack = -0.15
-					air_agility = -0.10
+#					air_agility = -0.10
 					maximum_speed = -0.10
 				}
 				medium_plane_fighter_airframe  = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.20 instant = yes
 					air_attack = -0.15
-					air_agility = -0.05
+#					air_agility = -0.05
 					maximum_speed = -0.075
 				}
 			}
@@ -1815,6 +1899,7 @@ ideas = {
 				drift_defence_factor = 0.5
 				resistance_target = -1.0
 				min_export = -0.40
+				army_org_Factor = -0.10
 				army_core_attack_factor = -0.10
 				army_core_defence_factor = -0.05
 			}
@@ -2008,6 +2093,25 @@ ideas = {
 				industrial_capacity_factory = -0.05
 			}
 		}
+		
+		SOV_prepare_for_the_resist_war = {
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = hol_haven_of_tolerance
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05			
+				industrial_capacity_factory = 0.15
+			}		
+		}
 
 		SOV_stakhonovite = {
 			removal_cost = -1
@@ -2127,7 +2231,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.5
+				army_org_factor = -0.55
 				army_morale_factor = -0.2
 				experience_gain_army_factor = -0.1
 				land_doctrine_cost_factor = 5
@@ -2153,7 +2257,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.4
+				army_org_factor = -0.5
 				army_morale_factor = -0.15
 				experience_gain_army_factor = -0.08
 				land_doctrine_cost_factor = 4
@@ -2179,7 +2283,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.3
+				army_org_factor = -0.4
 				army_morale_factor = -0.10
 				experience_gain_army_factor = -0.06
 				land_doctrine_cost_factor = 3
@@ -2205,7 +2309,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.2
+				army_org_factor = -0.30
 				army_morale_factor = -0.05
 				experience_gain_army_factor = -0.04
 				land_doctrine_cost_factor = 2
@@ -2231,7 +2335,7 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.1
+				army_org_factor = -0.20
 				experience_gain_army_factor = -0.02
 				land_doctrine_cost_factor = 1
 				air_doctrine_cost_factor = 0.5
@@ -2987,10 +3091,14 @@ ideas = {
 			modifier = { aircraft_manufacturer_cost_factor = -0.33 }
 			equipment_bonus = {
 				small_plane_cas_airframe = {
-					air_ground_attack = 0.15 reliability = 0.15 air_defence = 0.15 build_cost_ic = -0.1
+					air_ground_attack = 0.15 
+					reliability = 0.15 
+					air_defence = 0.15 
+					build_cost_ic = -0.1
 				}
 				small_plane_airframe = {
-					air_attack = 0.075 air_agility = 0.075
+					air_attack = 0.075 
+					air_agility = 0.075
 				}
 			}
 		}

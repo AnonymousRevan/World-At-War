@@ -2017,7 +2017,7 @@ focus_tree = {
 		}
 		bypass = {
 			has_war_with = INS
-			has_war_with = RAJ
+			has_war_with = IDR
 			OR = {
 				AND = {
 					671 = {
@@ -2132,7 +2132,6 @@ focus_tree = {
 					}
 					add_ideas = allies_air_production_malus_1
 				}
-				play_song = "Shussei Heishi o Okuru Uta"
 		    }
 		}
 	}

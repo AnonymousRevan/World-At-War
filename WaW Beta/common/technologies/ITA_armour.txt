@@ -92,6 +92,7 @@ technologies = {
 		categories = { 
 			all_armour
 			motorized_equipment
+			cat_mechanized_equipment
 			mio_cat_tech_all_motorized_mechanized
 		}
 		
@@ -115,15 +116,16 @@ technologies = {
 		}
 
 		research_cost = 2.0
-		start_year = 1943
+		start_year = 1942
 		folder = {
 			name = ita_armour_folder
-			position = { x = -4 y = @1943 }
+			position = { x = -4 y = @1942 }
 		}
 		
 		categories = { 
 			all_armour
 			motorized_equipment
+			cat_mechanized_equipment
 			mio_cat_tech_all_motorized_mechanized
 		}
 		
@@ -157,6 +159,7 @@ technologies = {
 		categories = { 
 			all_armour
 			motorized_equipment
+			cat_mechanized_equipment
 			mio_cat_tech_all_motorized_mechanized
 		}
 		

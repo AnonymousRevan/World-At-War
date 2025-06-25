@@ -135,6 +135,17 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
 2919;2943;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz
+2998;11156;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+2998;6153;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+2998;6210;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+80;3185;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+80;6210;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+80;7;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+6098;7;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+9074;3073;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+9074;6045;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+74;6128;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+74;6183;impassable;-1;-1;-1;-1;-1;;Finland;;;;
 10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
 10910;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -215,9 +226,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8157;10938;impassable;-1;-1;-1;-1;-1;;Quattara Depression
 8157;13301;impassable;-1;-1;-1;-1;-1;;Quattara Depression
 8157;10952;impassable;-1;-1;-1;-1;-1;;Quattara Depression
-8157;8225;impassable;-1;-1;-1;-1;-1;;Quattara Depression
 8157;7148;impassable;-1;-1;-1;-1;-1;;Quattara Depression
-4057;8069;impassable;-1;-1;-1;-1;-1;;Agheila
+8225;7148;impassable;-1;-1;-1;-1;-1;;Quattara Depression
+8225;10127;impassable;-1;-1;-1;-1;-1;;Quattara Depression
+8225;12930;impassable;-1;-1;-1;-1;-1;;Quattara Depression
+8225;10987;impassable;-1;-1;-1;-1;-1;;Quattara Depression
+8225;10952;impassable;-1;-1;-1;-1;-1;;Quattara Depression
+7076;8069;impassable;-1;-1;-1;-1;-1;;Agheila
+10754;8069;impassable;-1;-1;-1;-1;-1;;Agheila
 2088;1984;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
 12862;1984;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
 12862;2040;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
@@ -233,6 +249,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10859;13245;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
 10859;8019;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
 11145;8019;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+2066;8019;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+2066;13247;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+8133;13247;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+7005;12000;impassable;-1;-1;-1;-1;-1;;Gabes
+4061;11935;impassable;-1;-1;-1;-1;-1;;Kasserine
+4061;1141;impassable;-1;-1;-1;-1;-1;;Kasserine
 7992;10875;impassable;-1;-1;-1;-1;-1;;West Africa
 ### Asian straits ###
 2106;12103;sea;3805;-1;-1;-1;-1;;Peleliu
@@ -291,51 +313,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2047;12243;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
 2047;7415;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
 2047;1404;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
-### Papua ###
-10436;7269;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-10436;1546;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-10436;4552;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-10436;4593;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-7570;4552;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-7570;10396;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-10990;10396;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-10990;12371;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-10990;10423;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-8235;4593;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-8235;1602;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-8250;1602;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-8250;1617;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-11004;1617;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-11004;4635;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-11004;10423;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-2129;4635;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-2129;12107;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-10954;12107;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-10954;12123;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-10954;1222;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-11018;10423;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-11018;12400;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-12428;12400;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-12428;12240;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-12428;1389;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-12428;4393;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-12428;7614;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-5135;1222;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-5135;12931;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-5135;12193;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-5135;12154;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-5135;7614;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-4317;7409;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-4317;4289;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-4317;10974;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-4317;7305;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-7362;4289;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-7362;4329;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-7362;7349;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-7378;7349;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-7378;4346;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-7378;7333;impassable;-1;-1;-1;-1;-1;;Papua Mountains
-7378;7305;impassable;-1;-1;-1;-1;-1;;Papua Mountains
 ### Norway ###
 11198;9170;impassable;-1;-1;-1;-1;-1;;Norway Mountains
 6184;9170;impassable;-1;-1;-1;-1;-1;;Norway Mountains
@@ -344,4 +321,17 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6114;9227;impassable;-1;-1;-1;-1;-1;;Norway Mountains
 6136;11037;impassable;-1;-1;-1;-1;-1;;Norway Mountains
 6136;6216;impassable;-1;-1;-1;-1;-1;;Norway Mountains
+### Georgian Mountain Range
+11617;11664;impassable;-1;-1;-1;-1;-1;;Georgian Range
+11617;6692;impassable;-1;-1;-1;-1;-1;;Georgian Range
+11647;6692;impassable;-1;-1;-1;-1;-1;;Georgian Range
+11647;9674;impassable;-1;-1;-1;-1;-1;;Georgian Range
+11664;9649;impassable;-1;-1;-1;-1;-1;;Georgian Range
+6674;9649;impassable;-1;-1;-1;-1;-1;;Georgian Range
+6674;685;impassable;-1;-1;-1;-1;-1;;Georgian Range
+9632;685;impassable;-1;-1;-1;-1;-1;;Georgian Range
+9632;11614;impassable;-1;-1;-1;-1;-1;;Georgian Range
+6763;7554;impassable;-1;-1;-1;-1;-1;;Georgian Range
+6763;3711;impassable;-1;-1;-1;-1;-1;;Georgian Range
+6763;1450;impassable;-1;-1;-1;-1;-1;;Georgian Range
 -1;-1;;-1;-1;-1;-1;-1;-1

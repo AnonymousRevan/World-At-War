@@ -2438,19 +2438,11 @@ technologies = {
 			level = 6
 		}
 		enable_building = {
-			building = bunker
-			level = 5
-		}
-		enable_building = {
 			building = air_base 
 			level = 5
 		}
 		enable_building = {
 			building = naval_base
-			level = 5
-		}
-		enable_building = {
-			building = coastal_bunker
 			level = 5
 		}
 		ai_research_weights = {
@@ -2463,7 +2455,7 @@ technologies = {
 		industrial_capacity_factory = 0.05
 		industrial_capacity_dockyard = 0.05
 		global_building_slots_factor = 0.20
-		production_factory_start_efficiency_factor = 0.02
+		production_factory_efficiency_gain_factor = 0.03
 		industry_air_damage_factor = 0.05
 		path = {
 			leads_to_tech = concentrated_industry2 
@@ -2528,10 +2520,10 @@ technologies = {
 	
 	concentrated_industry2 = {
 
-		industrial_capacity_factory = 0.075
+		industrial_capacity_factory = 0.08
 		industrial_capacity_dockyard = 0.075
 		global_building_slots_factor = 0.20
-		production_factory_start_efficiency_factor = 0.02
+		production_factory_efficiency_gain_factor = 0.03
 		industry_air_damage_factor = 0.05
 		path = {
 			leads_to_tech = concentrated_industry3 
@@ -2563,10 +2555,10 @@ technologies = {
 	
 	concentrated_industry3 = {
 
-		industrial_capacity_factory = 0.10
+		industrial_capacity_factory = 0.11
 		industrial_capacity_dockyard = 0.10
 		global_building_slots_factor = 0.20
-		production_factory_start_efficiency_factor = 0.02
+		production_factory_efficiency_gain_factor = 0.03
 		industry_air_damage_factor = 0.05
 		path = {
 			leads_to_tech = concentrated_industry4 
@@ -2597,10 +2589,10 @@ technologies = {
 	
 	concentrated_industry4 = {
 
-		industrial_capacity_factory = 0.125
+		industrial_capacity_factory = 0.14
 		industrial_capacity_dockyard = 0.125
 		global_building_slots_factor = 0.20
-		production_factory_start_efficiency_factor = 0.02
+		production_factory_efficiency_gain_factor = 0.03
 		industry_air_damage_factor = 0.05
 		path = {
 			leads_to_tech = concentrated_industry5
@@ -2632,10 +2624,10 @@ technologies = {
 	
 	concentrated_industry5 = {
 
-		industrial_capacity_factory = 0.15
+		industrial_capacity_factory = 0.17
 		industrial_capacity_dockyard = 0.15
 		global_building_slots_factor = 0.20
-		production_factory_start_efficiency_factor = 0.02
+		production_factory_efficiency_gain_factor = 0.03
 		industry_air_damage_factor = 0.05
 		
 		research_cost = 1.5
@@ -2664,7 +2656,7 @@ technologies = {
 	dispersed_industry = {
 
 		industrial_capacity_factory = 0.03
-		industrial_capacity_dockyard = 0.03
+		industrial_capacity_dockyard = 0.05
 		production_factory_start_efficiency_factor = 0.05
 		line_change_production_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
@@ -2734,7 +2726,7 @@ technologies = {
 	dispersed_industry2 = {
 
 		industrial_capacity_factory = 0.05
-		industrial_capacity_dockyard = 0.05
+		industrial_capacity_dockyard = 0.075
 		production_factory_start_efficiency_factor = 0.05
 		line_change_production_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
@@ -2771,7 +2763,7 @@ technologies = {
 	dispersed_industry3 = {
 
 		industrial_capacity_factory = 0.07
-		industrial_capacity_dockyard = 0.07
+		industrial_capacity_dockyard = 0.10
 		production_factory_start_efficiency_factor = 0.05
 		line_change_production_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
@@ -2808,7 +2800,7 @@ technologies = {
 	dispersed_industry4 = {
 
 		industrial_capacity_factory = 0.09
-		industrial_capacity_dockyard = 0.09
+		industrial_capacity_dockyard = 0.125
 		production_factory_start_efficiency_factor = 0.05
 		line_change_production_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
@@ -2844,7 +2836,7 @@ technologies = {
 	dispersed_industry5 = {
 
 		industrial_capacity_factory = 0.11
-		industrial_capacity_dockyard = 0.11
+		industrial_capacity_dockyard = 0.15
 		production_factory_start_efficiency_factor = 0.05
 		line_change_production_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
@@ -3289,19 +3281,11 @@ technologies = {
 			level = 7
 		}
 		enable_building = {
-			building = bunker
-			level = 6
-		}
-		enable_building = {
 			building = air_base 
 			level = 6
 		}
 		enable_building = {
 			building = naval_base
-			level = 6
-		}
-		enable_building = {
-			building = coastal_bunker
 			level = 6
 		}
 		ai_will_do = {
@@ -3313,10 +3297,6 @@ technologies = {
 	excavation1 = {
 		
 		local_resources_factor = 0.075
-		enable_building = {
-			building = steel_refinery
-			level = 1
-		}
 		
 		path = {
 			research_cost_coeff = 1
@@ -3371,10 +3351,6 @@ technologies = {
 			level = 8
 		}
 		enable_building = {
-			building = bunker
-			level = 7
-		}
-		enable_building = {
 			building = air_base 
 			level = 7
 		}
@@ -3391,10 +3367,6 @@ technologies = {
 	excavation2 = {
 		
 		local_resources_factor = 0.075
-		enable_building = {
-			building = steel_refinery
-			level = 2
-		}
 		path = {
 			research_cost_coeff = 1
 		}
@@ -3423,6 +3395,11 @@ technologies = {
 		production_speed_buildings_factor = 0.10
 		industry_repair_factor = 0.075
 		
+		enable_building = {
+			building = steel_refinery
+			level = 1
+		}
+		
 		path = {
 			leads_to_tech = construction4 
 			research_cost_coeff = 1
@@ -3449,10 +3426,6 @@ technologies = {
 			level = 9
 		}
 		enable_building = {
-			building = bunker
-			level = 8
-		}
-		enable_building = {
 			building = air_base 
 			level = 8
 		}
@@ -3470,20 +3443,16 @@ technologies = {
 	excavation3 = {
 		
 		local_resources_factor = 0.075
-		enable_building = {
-			building = steel_refinery
-			level = 3
-		}
 		on_research_complete = {
 			modify_building_resources = {
 			   building = steel_refinery
 			   resource = steel
-			   amount = 10
+			   amount = 50
 			}
 			modify_building_resources = {
 			   building = steel_refinery
 			   resource = aluminium
-			   amount = 5
+			   amount = 25
 			}
 
 		}
@@ -3515,6 +3484,11 @@ technologies = {
 		production_speed_buildings_factor = 0.125
 		industry_repair_factor = 0.10
 		
+		enable_building = {
+			building = steel_refinery
+			level = 2
+		}
+		
 		path = {
 			leads_to_tech = construction5 
 			research_cost_coeff = 1
@@ -3541,10 +3515,6 @@ technologies = {
 			level = 10
 		}
 		enable_building = {
-			building = bunker
-			level = 9
-		}
-		enable_building = {
 			building = air_base 
 			level = 9
 		}
@@ -3560,25 +3530,21 @@ technologies = {
 	excavation4 = {
 		
 		local_resources_factor = 0.075
-		enable_building = {
-			building = steel_refinery
-			level = 4
-		}
 		on_research_complete = {
 			modify_building_resources = {
 			   building = steel_refinery
 			   resource = steel
-			   amount = 10
+			   amount = 50
 			}
 			modify_building_resources = {
 			   building = steel_refinery
 			   resource = aluminium
-			   amount = 5
+			   amount = 25
 			}
 			modify_building_resources = {
 			   building = steel_refinery
 			   resource = tungsten
-			   amount = 5
+			   amount = 25
 			}
 
 		}
@@ -3610,6 +3576,11 @@ technologies = {
 		production_speed_buildings_factor = 0.15
 		industry_repair_factor = 0.10
 		
+		enable_building = {
+			building = steel_refinery
+			level = 3
+		}
+		
 		path = {
 			leads_to_tech = excavation5
 			research_cost_coeff = 1
@@ -3626,10 +3597,6 @@ technologies = {
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 8 }
-		}
-		enable_building = {
-			building = bunker
-			level = 10
 		}
 		enable_building = {
 			building = air_base 
@@ -3649,26 +3616,30 @@ technologies = {
 	excavation5 = {
 		
 		local_resources_factor = 0.075
+		enable_building = {
+			building = steel_refinery
+			level = 4
+		}
 		on_research_complete = {
 			modify_building_resources = {
 			   building = steel_refinery
 			   resource = steel
-			   amount = 10
+			   amount = 50
 			}
 			modify_building_resources = {
 			   building = steel_refinery
 			   resource = aluminium
-			   amount = 5
+			   amount = 25
 			}
 			modify_building_resources = {
 			   building = steel_refinery
 			   resource = tungsten
-			   amount = 5
+			   amount = 25
 			}
 			modify_building_resources = {
 			   building = steel_refinery
 			   resource = chromium
-			   amount = 5
+			   amount = 25
 			}
 		}
 		path = {

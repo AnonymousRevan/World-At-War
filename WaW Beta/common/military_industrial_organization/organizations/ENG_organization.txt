@@ -9,6 +9,8 @@
 
 ENG_vickers_armstrong_eng_organization = {
 	icon = GFX_idea_vickers_armstrong_eng
+	include = ITA_fiat
+	name = "Vickers-Armstrong"
 
 	allowed = {	
 				OR = {
@@ -18,166 +20,168 @@ ENG_vickers_armstrong_eng_organization = {
 					original_tag = AST
 					original_tag = NZL
 					original_tag = RAJ
-					original_tag = MEX
+					original_tag = IDR
 				}
 			}
 
-	equipment_type = { armor }
-	research_categories = { armor }
+	equipment_type = { 
+		armor
+	}
+	research_categories = { mio_cat_eq_all_light_tank }
 
 	initial_trait = {
-		name = infantry_support_tank_designer
+		name = quality_light_tank_designer
 		
 		organization_modifier = {
-			military_industrial_organization_design_team_change_cost = -1.0
+			military_industrial_organization_design_team_change_cost = -0.5
 		}
 		
 		equipment_bonus = {
-					supply_consumption = -0.05
+					supply_consumption = -0.075
 					reliability = 0.1
 		}
 	}
-	trait = {
-		token = simplified_hull
-		name = "Simplified Hull Construction"
-		special_trait_background = yes
-		icon = GFX_generic_mio_department_icon_tank_general_line_efficiency
-
-		position = { x=4 y=0}
-		equipment_bonus = {
-			reliability = 0.05
-		}
-	}
-	trait = {  
-		token = compact_turrets
-		name = "Compact Turrets"
-		icon = GFX_generic_mio_trait_icon_hardness
-
-
-		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis }
-		equipment_bonus = {
-			soft_attack = -0.02
-			hard_attack = -0.02
-		}
-
-		position = { x=0 y=1 }
-		any_parent = { simplified_hull  }
-		relative_position_id = simplified_hull
-	}
-	trait = {
-		token = welding_methods
-		name = "Modern welding methods"
-		icon = GFX_generic_mio_trait_icon_build_cost_ic
-        mutually_exclusive = { cast_components }
-		position = { x=-1 y=1 }
-		relative_position_id = compact_turrets
-		any_parent = { compact_turrets  }
-		equipment_bonus = {
-			build_cost_ic = -0.03
-		}
-	}
-	trait = {
-		token = cast_components
-		name = "Large Castings"
-		icon = GFX_generic_mio_department_icon_tank_general_armor
-        mutually_exclusive = { welding_methods }
-		position = { x=1 y=1 }
-		relative_position_id = compact_turrets
-		any_parent = { compact_turrets  }
-		equipment_bonus = {
-			armor_value = 0.4
-		}
-	}
-
-	trait = {
-		token = barrel_const
-		name = "Prioritize Infantry Support Guns"
-		icon = GFX_generic_mio_trait_icon_soft_attack
-        mutually_exclusive = { recoil_mech }
-		position = { x=-4 y=1 }
-		relative_position_id = simplified_hull
-		any_parent = { simplified_hull  }
-		equipment_bonus = {
-			soft_attack = 0.035
-			build_cost_ic = 0.025
-		}
-	}
-	trait = {
-		token = recoil_mech
-		name = "Prioritize High Velocity Cannons"
-		icon = GFX_generic_mio_trait_icon_hard_attack
-        mutually_exclusive = { barrel_const }
-		any_parent = { simplified_hull  }
-		relative_position_id = simplified_hull
-		position = { x=-2 y=1}
-		equipment_bonus = {
-			ap_attack = 0.05
-			build_cost_ic = 0.025
-		}
-	}
-	trait = {
-		token = long_barrel
-		name = "Advanced ammunition designs"
-		icon = GFX_generic_mio_department_icon_tank_general_weapons
-		position = { x=-1 y=1 }
-		any_parent = { recoil_mech barrel_const }
-		relative_position_id = recoil_mech
-		equipment_bonus = {
-			ap_attack = 0.05
-			build_cost_ic = 0.025
-		}
-	}
-	trait = {
-		token = imp_eq
-		name = "Improved standard equipment"
-		icon = GFX_generic_mio_department_icon_support_production
-		position = { x=3 y=1 }
-		relative_position_id = simplified_hull
-		any_parent = { simplified_hull }
-		equipment_bonus = {
-			build_cost_ic = -0.02
-			defense = 0.05
-		}
-	}
-	trait = {
-		token = rugged_components
-		name = "Rugged components"
-		icon = GFX_generic_mio_department_icon_tank_general_production
-		position = { x=0 y=1 }
-		relative_position_id = imp_eq
-		any_parent = { imp_eq }
-		equipment_bonus = {
-			reliability = 0.05
-			defense = 0.05
-		}
-	}
-	trait = {
-		token = improved_firepower
-		name = "Improved firepower"
-		icon = GFX_generic_mio_department_icon_tank_general_at
-        mutually_exclusive = { production_numbers }
-		position = { x=1 y=3 }
-		all_parents = { rugged_components long_barrel }
-		any_parent = { cast_components welding_methods }
-		relative_position_id = simplified_hull
-		equipment_bonus = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
-	}
-	trait = {
-		token = production_numbers
-		name = "Increase production numbers"
-		icon = GFX_generic_mio_trait_icon_efficiency_cap
-        mutually_exclusive = { improved_firepower }
-		position = { x=-1 y=3 }
-		all_parents = { rugged_components long_barrel }
-		any_parent = { cast_components welding_methods }
-		relative_position_id = simplified_hull
-		equipment_bonus = {
-			build_cost_ic = -0.05
-		}
-	}
+#	trait = {
+#		token = simplified_hull
+#		name = "Simplified Hull Construction"
+#		special_trait_background = yes
+#		icon = GFX_generic_mio_department_icon_tank_general_line_efficiency
+#
+#		position = { x=4 y=0}
+#		equipment_bonus = {
+#			reliability = 0.05
+#		}
+#	}
+#	trait = {  
+#		token = compact_turrets
+#		name = "Compact Turrets"
+#		icon = GFX_generic_mio_trait_icon_hardness
+#
+#
+#		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis }
+#		equipment_bonus = {
+#			soft_attack = -0.02
+#			hard_attack = -0.02
+#		}
+#
+#		position = { x=0 y=1 }
+#		any_parent = { simplified_hull  }
+#		relative_position_id = simplified_hull
+#	}
+#	trait = {
+#		token = welding_methods
+#		name = "Modern welding methods"
+#		icon = GFX_generic_mio_trait_icon_build_cost_ic
+#        mutually_exclusive = { cast_components }
+#		position = { x=-1 y=1 }
+#		relative_position_id = compact_turrets
+#		any_parent = { compact_turrets  }
+#		equipment_bonus = {
+#			build_cost_ic = -0.05
+#		}
+#	}
+#	trait = {
+#		token = cast_components
+#		name = "Large Castings"
+#		icon = GFX_generic_mio_department_icon_tank_general_armor
+#        mutually_exclusive = { welding_methods }
+#		position = { x=1 y=1 }
+#		relative_position_id = compact_turrets
+#		any_parent = { compact_turrets  }
+#		equipment_bonus = {
+#			armor_value = 0.4
+#		}
+#	}
+#
+#	trait = {
+#		token = barrel_const
+#		name = "Prioritize Infantry Support Guns"
+#		icon = GFX_generic_mio_trait_icon_soft_attack
+#        mutually_exclusive = { recoil_mech }
+#		position = { x=-4 y=1 }
+#		relative_position_id = simplified_hull
+#		any_parent = { simplified_hull  }
+#		equipment_bonus = {
+#			soft_attack = 0.04
+#			build_cost_ic = 0.02
+#		}
+#	}
+#	trait = {
+#		token = recoil_mech
+#		name = "Prioritize High Velocity Cannons"
+#		icon = GFX_generic_mio_trait_icon_hard_attack
+#        mutually_exclusive = { barrel_const }
+#		any_parent = { simplified_hull  }
+#		relative_position_id = simplified_hull
+#		position = { x=-2 y=1}
+#		equipment_bonus = {
+#			ap_attack = 0.075
+#			build_cost_ic = 0.02
+#		}
+#	}
+#	trait = {
+#		token = long_barrel
+#		name = "Advanced ammunition designs"
+#		icon = GFX_generic_mio_department_icon_tank_general_weapons
+#		position = { x=-1 y=1 }
+#		any_parent = { recoil_mech barrel_const }
+#		relative_position_id = recoil_mech
+#		equipment_bonus = {
+#			ap_attack = 0.075
+#			build_cost_ic = 0.02
+#		}
+#	}
+#	trait = {
+#		token = imp_eq
+#		name = "Improved standard equipment"
+#		icon = GFX_generic_mio_department_icon_support_production
+#		position = { x=3 y=1 }
+#		relative_position_id = simplified_hull
+#		any_parent = { simplified_hull }
+#		equipment_bonus = {
+#			build_cost_ic = -0.025
+#			defense = 0.10
+#		}
+#	}
+#	trait = {
+#		token = rugged_components
+#		name = "Rugged components"
+#		icon = GFX_generic_mio_department_icon_tank_general_production
+#		position = { x=0 y=1 }
+#		relative_position_id = imp_eq
+#		any_parent = { imp_eq }
+#		equipment_bonus = {
+#			reliability = 0.05
+#			defense = 0.10
+#		}
+#	}
+#	trait = {
+#		token = improved_firepower
+#		name = "Improved firepower"
+#		icon = GFX_generic_mio_department_icon_tank_general_at
+#        mutually_exclusive = { production_numbers }
+#		position = { x=1 y=3 }
+#		all_parents = { rugged_components long_barrel }
+#		any_parent = { cast_components welding_methods }
+#		relative_position_id = simplified_hull
+#		equipment_bonus = {
+#			soft_attack = 0.05
+#			hard_attack = 0.05
+#		}
+#	}
+#	trait = {
+#		token = production_numbers
+#		name = "Increase production numbers"
+#		icon = GFX_generic_mio_trait_icon_efficiency_cap
+#       mutually_exclusive = { improved_firepower }
+#		position = { x=-1 y=3 }
+#		all_parents = { rugged_components long_barrel }
+#		any_parent = { cast_components welding_methods }
+#		relative_position_id = simplified_hull
+#		equipment_bonus = {
+#			build_cost_ic = -0.075
+#		}
+#	}
 }
 ENG_nuffield ={
     name = "Nuffield Mechanizations and Aero"
@@ -192,12 +196,17 @@ ENG_nuffield ={
 					original_tag = AST
 					original_tag = NZL
 					original_tag = RAJ
-					original_tag = MEX
+					original_tag = IDR
 				}
 	}
 
-	equipment_type = { armor }
-	research_categories = { armor }
+	equipment_type = { 
+		armor
+	}
+	research_categories = { 		
+		mio_cat_eq_all_light_tank
+		mio_cat_eq_all_medium_tank 
+	}
 
 	initial_trait = {
 		name = cruiser_tank_designer
@@ -205,12 +214,17 @@ ENG_nuffield ={
 		organization_modifier = {
 			military_industrial_organization_design_team_change_cost = -1.0
 		}
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
-					soft_attack = -0.035
-					hard_attack = -0.035
-                    breakthrough = 0.1
-					reliability = -0.1
+			soft_attack = -0.03
+			hard_attack = -0.03
+			armor_value = -0.18
+            breakthrough = 0.15
+			maximum_speed = 0.10
+			build_cost_ic = 0.05
 		}
 	}
 	trait = {
@@ -218,8 +232,12 @@ ENG_nuffield ={
 		name = "Convert aero-engine plants"
 		icon = GFX_generic_mio_department_icon_facilities
 		position = { x=2 y=0}
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+			mio_cat_eq_all_medium_tank
+		}
 		equipment_bonus = {
-			maximum_speed = 0.1
+			maximum_speed = 0.10
 			reliability = -0.1
 		}
 	}
@@ -231,21 +249,12 @@ ENG_nuffield ={
 		all_parents = { aero_engines  }
 		mutually_exclusive = { current_models }
 		position = { x=3 y=1}
-		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.15
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+			mio_cat_eq_all_medium_tank
 		}
-	}
-	trait = {
-		token = maximize
-		name = "Maximize Production"
-		icon = GFX_generic_mio_trait_icon_build_cost_ic
-
-
-		all_parents = {  new_designs }
-		relative_position_id = new_designs
-		position = { x=0 y=1}
-		equipment_bonus = {
-			build_cost_ic = -0.05
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.30
 		}
 	}
 	trait = {
@@ -257,19 +266,48 @@ ENG_nuffield ={
 		mutually_exclusive = { new_designs }
 		all_parents = {  aero_engines }
 		position = { x=-1 y=1}
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+			mio_cat_eq_all_medium_tank
+		}
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.30
+		}
+	}
+	trait = {
+		token = maximize
+		name = "Maximize Tank Production"
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+
+
+		any_parent = {  new_designs current_models }
+		relative_position_id = new_designs
+		position = { x=0 y=1}
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+			mio_cat_eq_all_medium_tank
+		}
 		equipment_bonus = {
-			reliability = 0.1
+			build_cost_ic = -0.075
 		}
 	}
 	trait = {
 		token = reli
 		name = "Reliablity in extreme conditions"
 		icon = GFX_generic_mio_trait_icon_reliability
-		all_parents = {  current_models }
+		any_parent = {  new_designs current_models }
 		relative_position_id = current_models
 		position = { x=0 y=1}
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+			mio_cat_eq_all_medium_tank
+		}
 		equipment_bonus = {
 			reliability = 0.1
+		}
+		production_bonus = {
+			production_resource_need_factor = 0.075
+			production_efficiency_gain_factor = 0.10
 		}
 	}
 	trait = {
@@ -279,8 +317,12 @@ ENG_nuffield ={
 		position = { x=0 y=3 }
 		relative_position_id = aero_engines
 		any_parent = {  reli maximize }
-		equipment_bonus = {
-			defense = 0.1
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+			mio_cat_eq_all_medium_tank
+		}
+		equipment_bonus = {			
+			defense = 0.30
 		}
 	}
 	trait = {
@@ -288,6 +330,10 @@ ENG_nuffield ={
 		name = "Advanced Suspension Designs"
 		icon = GFX_generic_mio_department_icon_tank_general_engine
 		position = { x=4 y=0}
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+			mio_cat_eq_all_medium_tank
+		}
 		equipment_bonus = {
 			reliability = 0.05
 		}
@@ -301,9 +347,12 @@ ENG_nuffield ={
 		relative_position_id = advanced_suspension
 
 		all_parents = { advanced_suspension }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
-			breakthrough = 0.1
+			breakthrough = 0.075
 		}
 	}
 	trait = {
@@ -311,8 +360,12 @@ ENG_nuffield ={
 		name = "Built to Fire on the Move"
 		icon = GFX_generic_mio_trait_icon_breakthrough
 		position = { x=6 y=0}
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+			mio_cat_eq_all_medium_tank
+		}
 		equipment_bonus = {
-			breakthrough = 0.1
+			breakthrough = 0.075
 		}
 	}	
 	
@@ -324,9 +377,14 @@ ENG_nuffield ={
 		mutually_exclusive = { gene }
 		relative_position_id = fire_on_move
 	    any_parent = { fire_on_move }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+			mio_cat_eq_all_medium_tank
+		}
 		equipment_bonus = {
-			soft_attack = -0.035
-			hard_attack = 0.07
+			soft_attack = -0.025
+			hard_attack = 0.125
+			ap_attack = 0.05
 		}
 	}
 	trait = {
@@ -337,9 +395,13 @@ ENG_nuffield ={
 		mutually_exclusive = { spesh }
 		relative_position_id = fire_on_move
 	    any_parent = { fire_on_move }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+			mio_cat_eq_all_medium_tank
+		}
 		equipment_bonus = {
-			soft_attack = 0.035
-			hard_attack = 0.035
+			soft_attack = 0.05
+			hard_attack = 0.025
 			build_cost_ic = 0.025
 		}
 	}
@@ -349,9 +411,13 @@ ENG_nuffield ={
 		icon = GFX_generic_mio_trait_icon_ap_attack
 		position = { x=0 y=1}
 		relative_position_id = spesh
-	    any_parent = { spesh }
+	    any_parent = { spesh gene }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+			mio_cat_eq_all_medium_tank
+		}
 		equipment_bonus = {
-			ap_attack = 0.1
+			ap_attack = 0.15
 		}
 	}
 	trait = {
@@ -360,17 +426,22 @@ ENG_nuffield ={
 		icon = GFX_generic_mio_department_icon_tank_general_weapons
 		position = { x=0 y=1}
 		relative_position_id = gene
-	    any_parent = { gene }
+	    any_parent = { spesh gene }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+			mio_cat_eq_all_medium_tank
+		}
 		equipment_bonus = {
-			soft_attack = 0.035
-			hard_attack = 0.035
+			soft_attack = 0.04
+			hard_attack = 0.025
 			build_cost_ic = 0.025
 		}
 	}
 }
 birmingham = {
 	name = "Birmingham R&C" 
-	icon = GFX_idea_birmingham_railway_carriage_designer_resize
+	icon = GFX_birmingham_railway_carriage_designer_resize
+	include = medium_tank_designer
 
 	allowed = {	
 				OR = {
@@ -380,181 +451,186 @@ birmingham = {
 					original_tag = AST
 					original_tag = NZL
 					original_tag = RAJ
-					original_tag = MEX
+					original_tag = IDR
 				}
 			}
 
-	equipment_type = { armor }
-	research_categories = { armor }
+	equipment_type = { 
+		armor
+	}
+	research_categories = { mio_cat_eq_all_medium_tank }
 
 	initial_trait = {
 		name = medium_tank_designer
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		organization_modifier = {
 			military_industrial_organization_design_team_change_cost = -1.0
 		}
 		
 		equipment_bonus = {
 					reliability = -0.1
-					build_cost_ic = -0.025
+					build_cost_ic = -0.05
 		}
 	}
-	trait = {
-		token = royal_arsenal
-		name = "Royal Arsenals tank gun innovations"
-		icon = GFX_generic_mio_department_icon_facilities
-		position = { x=5 y=0}
-		equipment_bonus = {
-			soft_attack = 0.02
-			hard_attack = 0.02
-		}
-	}
-	trait = {
-		token = agile_td
-		name = "Agile tank destroyers"
-		icon = GFX_generic_mio_trait_icon_hard_attack
-		position = { x=4 y=1}
-	    any_parent = { royal_arsenal }
-				mutually_exclusive = { flex_for_fire mob_art }
-		equipment_bonus = {
-			hard_attack = 0.035
-		}
-	}
-	trait = {
-		token = flex_for_fire
-		name = "Sacrifice flexibility for firepower"
-		icon = GFX_generic_mio_department_icon_tank_general_at
-		position = { x=5 y=1}
-	    any_parent = { royal_arsenal }
-				mutually_exclusive = { agile_td mob_art }
-		equipment_bonus = {
-			maximum_speed = -0.1
-			hard_attack = 0.035
-			soft_attack = 0.035
-		}
-	}
-	trait = {
-		token = mob_art
-		name = "Mobile artillery"
-		icon = GFX_generic_mio_department_icon_tank_general_spg
-		position = { x=6 y=1}
-	    any_parent = { royal_arsenal }
-		mutually_exclusive = { flex_for_fire agile_td }
-		equipment_bonus = {
-			soft_attack = 0.05
-		}
-	}
-	trait = {
-		token = spaa
-		name = "Armoured Air Defence"
-		icon = GFX_generic_mio_department_icon_tank_general_spg
-		position = { x=5 y=2}
-	    any_parent = { mob_art flex_for_fire agile_td }
-		equipment_bonus = {
-			air_attack = 0.1
-		}
-	}
-	trait = {
-		token = unfair_advantage
-		name = "Unfair Ammunition Advantage"
-		icon = GFX_generic_mio_trait_icon_ap_attack
-		position = { x=5 y=3}
-	    any_parent = { spaa }
-		equipment_bonus = {
-			ap_attack = 0.1
-		}
-	}
-	trait = {
-		token = larger
-		name = "Larger hulls"
-		icon = GFX_generic_mio_department_icon_tank_general_quality
-		position = { x=1 y=0}
-		mutually_exclusive = { limited }
-		equipment_bonus = {
-			soft_attack = 0.035
-			hard_attack = 0.035
-			build_cost_ic = 0.05
-		}
-	}
-	trait = {
-		token = large
-		name = "Large Crew Compartment"
-		icon = GFX_generic_mio_trait_icon_max_strength
-		position = { x=1 y=2}
-	    any_parent = { larger }
-		equipment_bonus = {
-			soft_attack = 0.02
-			hard_attack = 0.02
-		}
-	}
-	trait = {
-		token = limited
-		name = "Size limitations"
-		icon = GFX_generic_mio_department_icon_tank_general_materials
-		position = { x=3 y=0}
-		mutually_exclusive = { larger }
-		equipment_bonus = {
-			soft_attack = -0.02
-			hard_attack = -0.02
-			defense = 0.1
-			breakthrough = 0.1
-		}
-	}
-	trait = {
-		token = spares
-		name = "Common Spares"
-		icon = GFX_generic_mio_trait_icon_reliability
-		position = { x=3 y=2}
-	    any_parent = { limited }
-		equipment_bonus = {
-			reliability = 0.1
-		}
-	}
-	trait = {
-		token = sensible
-		name = "Sensible Powertrain layouts"
-		icon = GFX_generic_mio_department_icon_tank_general_engine
-		position = { x=2 y=1}
-	    any_parent = { limited larger}
-		equipment_bonus = {
-			reliability = 0.05
-		}
-	}
-	trait = {
-		token = burger
-		name = "American Engines"
-		icon = GFX_generic_mio_trait_icon_build_cost_ic
-		position = { x=7 y=0}
-		mutually_exclusive = { merlin }
-	   
-		equipment_bonus = {
-			build_cost_ic = -0.025
-		}
-	}
-	trait = {
-		token = merlin
-		name = "Simplified Merlin"
-		icon = GFX_generic_mio_trait_icon_maximum_speed
-		position = { x=9 y=0}
-		mutually_exclusive = { burger }
-	 
-		equipment_bonus = {
-			maximum_speed = 0.05
-		}
-	}
-	trait = {
-		token = auto_ext
-		name = "Automatic Fire Extinguishers"
-		icon = GFX_generic_mio_trait_icon_fuel_consumption
-		position = { x=8 y=1}
-	    any_parent = { merlin burger }
-		equipment_bonus = {
-			defense = 0.1
-			reliability = 0.05
-		}
-	}
-
-
+#	trait = {
+#		token = royal_arsenal
+#		name = "Royal Arsenals tank gun innovations"
+#		icon = GFX_generic_mio_department_icon_facilities
+#		position = { x=5 y=0}
+#		equipment_bonus = {
+#			soft_attack = 0.02
+#			hard_attack = 0.02
+#		}
+#	}
+#	trait = {
+#		token = agile_td
+#		name = "Agile tank destroyers"
+#		icon = GFX_generic_mio_trait_icon_hard_attack
+#		position = { x=4 y=1}
+#	    any_parent = { royal_arsenal }
+#				mutually_exclusive = { flex_for_fire mob_art }
+#		equipment_bonus = {
+#			hard_attack = 0.075
+#		}
+#	}
+#	trait = {
+#		token = flex_for_fire
+#		name = "Sacrifice flexibility for firepower"
+#		icon = GFX_generic_mio_department_icon_tank_general_at
+#		position = { x=5 y=1}
+#	    any_parent = { royal_arsenal }
+#				mutually_exclusive = { agile_td mob_art }
+#		equipment_bonus = {
+#			maximum_speed = -0.1
+#			hard_attack = 0.035
+#			soft_attack = 0.035
+#		}
+#	}
+#	trait = {
+#		token = mob_art
+#		name = "Mobile artillery"
+#		icon = GFX_generic_mio_department_icon_tank_general_spg
+#		position = { x=6 y=1}
+#	    any_parent = { royal_arsenal }
+#		mutually_exclusive = { flex_for_fire agile_td }
+#		equipment_bonus = {
+#			soft_attack = 0.05
+#		}
+#	}
+#	trait = {
+#		token = spaa
+#		name = "Armoured Air Defence"
+#		icon = GFX_generic_mio_department_icon_tank_general_spg
+#		position = { x=5 y=2}
+#	    any_parent = { mob_art flex_for_fire agile_td }
+#		equipment_bonus = {
+#			air_attack = 0.1
+#		}
+#	}
+#	trait = {
+#		token = unfair_advantage
+#		name = "Unfair Ammunition Advantage"
+#		icon = GFX_generic_mio_trait_icon_ap_attack
+#		position = { x=5 y=3}
+#	    any_parent = { spaa }
+#		equipment_bonus = {
+#			ap_attack = 0.1
+#		}
+#	}
+#	trait = {
+#		token = larger
+#		name = "Larger hulls"
+#		icon = GFX_generic_mio_department_icon_tank_general_quality
+#		position = { x=1 y=0}
+#		mutually_exclusive = { limited }
+#		equipment_bonus = {
+#			soft_attack = 0.035
+#			hard_attack = 0.035
+#			build_cost_ic = 0.05
+#		}
+#	}
+#	trait = {
+#		token = large
+#		name = "Large Crew Compartment"
+#		icon = GFX_generic_mio_trait_icon_max_strength
+#		position = { x=1 y=2}
+#	    any_parent = { larger }
+#		equipment_bonus = {
+#			soft_attack = 0.02
+#			hard_attack = 0.02
+#		}
+#	}
+#	trait = {
+#		token = limited
+#		name = "Size limitations"
+#		icon = GFX_generic_mio_department_icon_tank_general_materials
+#		position = { x=3 y=0}
+#		mutually_exclusive = { larger }
+#		equipment_bonus = {
+#			soft_attack = -0.02
+#			hard_attack = -0.02
+#			defense = 0.2
+#			breakthrough = 0.1
+#		}
+#	}
+#	trait = {
+#		token = spares
+#		name = "Common Spares"
+#		icon = GFX_generic_mio_trait_icon_reliability
+#		position = { x=3 y=2}
+#	    any_parent = { limited }
+#		equipment_bonus = {
+#			reliability = 0.1
+#		}
+#		production_bonus = {
+#			production_resource_need_factor = -0.05
+#		}
+#	}
+#	trait = {
+#		token = sensible
+#		name = "Sensible Powertrain layouts"
+#		icon = GFX_generic_mio_department_icon_tank_general_engine
+#		position = { x=2 y=1}
+#	    any_parent = { limited larger}
+#		equipment_bonus = {
+#			reliability = 0.05
+#		}
+#	}
+#	trait = {
+#		token = burger
+#		name = "American Engines"
+#		icon = GFX_generic_mio_trait_icon_build_cost_ic
+#		position = { x=7 y=0}
+#		mutually_exclusive = { merlin }
+#	   
+#		equipment_bonus = {
+#			build_cost_ic = -0.025
+#		}
+#	}
+#	trait = {
+#		token = merlin
+#		name = "Simplified Merlin"
+#		icon = GFX_generic_mio_trait_icon_maximum_speed
+#		position = { x=9 y=0}
+#		mutually_exclusive = { burger }
+#	 
+#		equipment_bonus = {
+#			maximum_speed = 0.05
+#		}
+#	}
+#	trait = {
+#		token = auto_ext
+#		name = "Automatic Fire Extinguishers"
+#		icon = GFX_generic_mio_trait_icon_fuel_consumption
+#		position = { x=8 y=1}
+#	    any_parent = { merlin burger }
+#		equipment_bonus = {
+#			defense = 0.1
+#			reliability = 0.05
+#		}
+#	}
 
 }
 Vauxhall = {
@@ -568,16 +644,18 @@ Vauxhall = {
 					original_tag = AST
 					original_tag = NZL
 					original_tag = RAJ
-					original_tag = MEX
+					original_tag = IDR
 				}
 			}
 
-	equipment_type = { armor }
+	equipment_type = { mio_cat_eq_all_heavy_tank }
 	research_categories = { armor }
 
 	initial_trait = {
 		name = Infantry_tank_designer
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_heavy_tank
+		}		
 		organization_modifier = {
 			military_industrial_organization_design_team_change_cost = -1.0
 		}
@@ -591,6 +669,9 @@ Vauxhall = {
 		name = "Motor Industry Production Line"
 		icon = GFX_generic_mio_department_icon_facilities
 		position = { x=2 y=0}
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_heavy_tank
+		}
 		production_bonus = {
 			production_efficiency_gain_factor = 0.1
 		}
@@ -601,6 +682,9 @@ Vauxhall = {
 		icon = GFX_generic_mio_department_icon_tank_heavy_tank_materials
 		position = { x=2 y=1}
 	    any_parent = { automotive }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_heavy_tank
+		}
 		equipment_bonus = {
 			fuel_consumption = -0.25
 		}
@@ -611,6 +695,9 @@ Vauxhall = {
 		icon = GFX_generic_mio_department_icon_tank_heavy_tank_engine
 		position = { x=2 y=2}
 	    any_parent = { minimal_engines }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_heavy_tank
+		}
 		equipment_bonus = {
 			breakthrough = 0.1
 		}
@@ -623,6 +710,9 @@ Vauxhall = {
 		position = { x=1 y=3}
 		mutually_exclusive = { mobility }
 	    any_parent = { long_tracks }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_heavy_tank
+		}
 		equipment_bonus = {
 			hardness = 0.05
 			defense = 0.1
@@ -635,9 +725,12 @@ Vauxhall = {
 		position = { x=3 y=3}
 		mutually_exclusive = { slow }
 	    any_parent = { long_tracks }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_heavy_tank
+		}
 		equipment_bonus = {
 			maximum_speed = 0.1
-			defense = -0.2
+			armor_value = -0.20
 		}
 	}
 	trait = {
@@ -645,23 +738,28 @@ Vauxhall = {
 		name = "Improved Internal Layout"
 		icon = GFX_generic_mio_trait_icon_max_strength
 		position = { x=7 y=0}
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_heavy_tank
+		}
 		equipment_bonus = {
-			soft_attack = 0.02
-			hard_attack = 0.02
-			armor_value = -0.25
+			soft_attack = 0.03
+			hard_attack = 0.03
+			armor_value = -0.10
 		}
 	}
 	trait = {
 		token = specialized_variants
-		name = "Specialized variants"
+		name = "Supporting Doctrine"
 		icon = GFX_generic_mio_department_icon_tank_general_spg
 		position = { x=6 y=1}
 		mutually_exclusive = { assault_tanks }
 	    any_parent = { internals } 
-		limit_to_equipment_type = { mio_cat_eq_all_support_tanks }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_heavy_tank
+		}
 		equipment_bonus = {
-			soft_attack = 0.02
-			hard_attack = 0.02
+			soft_attack = 0.05
+			hard_attack = -0.075
 		}
 	}
 	trait = {
@@ -670,7 +768,9 @@ Vauxhall = {
 		icon = GFX_generic_mio_department_icon_tank_heavy_tank_conversion
 		position = { x=5 y=1}
 	    any_parent = { specialized_variants }
-		limit_to_equipment_type = { mio_cat_eq_all_support_tanks }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_heavy_tank
+		}
 		production_bonus = {
 			production_capacity_factor = 0.15
 		}
@@ -682,9 +782,14 @@ Vauxhall = {
 		position = { x=8 y=1}
 		mutually_exclusive = { specialized_variants }
 	    any_parent = { internals }
-		limit_to_equipment_type = { mio_cat_eq_all_assault_guns }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_heavy_tank
+		}
 		equipment_bonus = {
-			soft_attack = 0.07
+			soft_attack = -0.03
+			hard_attack = 0.075
+			defense = 0.25
+			breakthrough = 0.10
 		}
 	}
 	trait = {
@@ -694,6 +799,9 @@ Vauxhall = {
 		position = { x=1 y=0}
 		relative_position_id = assault_tanks
 	    any_parent = { assault_tanks }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_heavy_tank
+		}
 		equipment_bonus = {
 			hardness = 0.1
 		}
@@ -708,6 +816,9 @@ Vauxhall = {
 		position = { x=0 y=1}
 		relative_position_id = specialized_variants
 	    any_parent = { specialized_variants }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_heavy_tank
+		}
 		equipment_bonus = {
 			armor_value = 0.25
 		}
@@ -719,183 +830,203 @@ Vauxhall = {
 		position = { x=0 y=1}
 		relative_position_id = assault_tanks
 	    any_parent = { assault_tanks }
-		equipment_bonus = {
-			soft_attack = 0.02
-			armor_value = 0.6
-			build_cost_ic = 0.05
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_heavy_tank
 		}
-	}
-
-
-}
-Vulcan = {
-	name = "Vulcan Foundry" 
-	icon = GFX_idea_vulcan
-
-	allowed = {	
-				OR = {
-					original_tag = ENG
-					original_tag = CAN
-					original_tag = SAF	
-					original_tag = AST
-					original_tag = NZL
-					original_tag = RAJ
-					original_tag = MEX
-				}
-			}
-
-	equipment_type = { armor }
-	research_categories = { armor }
-
-	initial_trait = {
-		name = Infantry_tank_designer
-		
-		organization_modifier = {
-			military_industrial_organization_design_team_change_cost = -1.0
-		}
-		
 		equipment_bonus = {
-			armor_value = 0.4
-			soft_attack = 0.14
-			maximum_speed = -0.1
-			reliability = -0.1
+			armor_value = 0.50
+			defense = 0.50
 			build_cost_ic = 0.05
 		}
 	}
 	trait = {
-		token = railroad_workers
-		name = "Retrain railroad workers"
-		icon = GFX_generic_mio_trait_icon_conversion_speed
-		position = { x=5 y=0}
-		equipment_bonus = {
-			reliability = 0.05
-		}
-	}
-	trait = {
-		token = familiar_methods
-		name = "Familiar methods"
-		icon = GFX_generic_mio_trait_icon_efficiency_gain
-		position = { x=-3 y=1}
-		mutually_exclusive = { welding }
-		relative_position_id = railroad_workers
-	    any_parent = { railroad_workers }
-		equipment_bonus = {
-			armor_value = -0.2
-			hardness = -0.1
-			build_cost_ic = -0.05
-		}
-	}
-	trait = {
-		token = welding
-		name = "Introduce welding"
-		icon = GFX_generic_mio_trait_icon_efficiency_cap
+		token = tank_supreme
+		name = "British Churchills"
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_quality
 		position = { x=-1 y=1}
-		mutually_exclusive = { familiar_methods }
-		relative_position_id = railroad_workers
-	    any_parent = { railroad_workers }
-		equipment_bonus = {
-			armor_value = 0.1
+		relative_position_id = naval_grade
+	    any_parent = { idlers naval_grade }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_heavy_tank
 		}
-	}
-	trait = {
-		token = three_shifts
-		name = "Three shift labour"
-		icon = GFX_generic_mio_trait_icon_night_penalty
-		position = { x=1 y=1}
-		relative_position_id = familiar_methods
-	    any_parent = { welding familiar_methods }
 		equipment_bonus = {
-			reliability = 0.05
-		}
-	}
-	trait = {
-		token = overspecs
-		name = "Overspecified production line"
-		icon = GFX_generic_mio_trait_icon_hardness
-	    any_parent = { railroad_workers }
-		position = { x=6 y=1}
-		equipment_bonus = {
-			build_cost_ic = 0.025
-		}
-	}
-	trait = {
-		token = utmost_quality
-		name = "Utmost quality in armor"
-		icon = GFX_generic_mio_trait_icon_armor_value
-		position = { x=-1 y=1}
-		mutually_exclusive = { simplified_armor }
-		relative_position_id = overspecs
-	    any_parent = { overspecs }
-		equipment_bonus = {
-			hardness = 0.05
-			armor_value = 0.1
-		}
-	}
-	trait = {
-		token = simplified_armor
-		name = "Simplify armor geometry"
-		icon = GFX_generic_mio_trait_icon_build_cost_ic
-		position = { x=1 y=1}
-		mutually_exclusive = { utmost_quality }
-		relative_position_id = overspecs
-	    any_parent = { overspecs }
-		equipment_bonus = {
+			soft_attack = 0.05
+			ap_attack = -0.05
 			build_cost_ic = -0.05
 		}
 	}
 
-	trait = {
-		token = capacity
-		name = "Focused Designs"
-		icon = GFX_generic_mio_trait_icon_unique
-		position = { x=0 y=1}
-		relative_position_id = utmost_quality
-		any_parent = { utmost_quality simplified_armor }
-		any_parent = {  three_shifts }
-
-		equipment_bonus = {
-			soft_attack = 0.035
-			build_cost_ic = 0.025
-		}
-	}
-	trait = {
-		token = turret
-		name = "Improve turret armor"
-		icon = GFX_generic_mio_trait_icon_armor_value
-		position = { x=1 y=1}
-		mutually_exclusive = { ammo_reserves }
-		relative_position_id = capacity
-	    any_parent = { capacity }
-		equipment_bonus = {
-			armor_value = 0.25
-			build_cost_ic = 0.05
-		}
-	}
-	trait = {
-		token = ammo_reserves
-		name = "Ample ammunition reserves"
-		icon = GFX_generic_mio_department_icon_tank_general_weapons
-		position = { x=-1 y=1}
-		mutually_exclusive = { turret }
-		relative_position_id = capacity
-	    any_parent = { capacity }
-		equipment_bonus = {
-			hard_attack = 0.035
-		}
-	}
-
-	trait = {
-		token = crew_safety
-		name = "Improve crew safety"
-		icon = GFX_generic_mio_department_icon_tank_heavy_tank_armor
-		position = { x=1 y=0}
-		relative_position_id = turret
-	    any_parent = { turret }
-		equipment_bonus = {
-			defense = 0.2
-		}
-	}
 }
+#Vulcan = {
+#	name = "Vulcan Foundry" 
+#	icon = GFX_idea_vulcan
+#
+#	allowed = {	
+#				OR = {
+#					original_tag = ENG
+#					original_tag = CAN
+#					original_tag = SAF	
+#					original_tag = AST
+#					original_tag = NZL
+#					original_tag = RAJ
+#				}
+#			}
+#
+#	equipment_type = {
+#		mio_cat_eq_all_light_tank
+#		mio_cat_eq_all_heavy_tank
+#	}
+#	research_categories = { armor }
+#
+#	initial_trait = {
+#		name = Infantry_tank_designer
+#		
+#		organization_modifier = {
+#			military_industrial_organization_design_team_change_cost = -1.0
+#		}
+#		
+#		equipment_bonus = {
+#			armor_value = 0.4
+#			soft_attack = 0.10
+#			maximum_speed = -0.1
+#			reliability = -0.1
+#			build_cost_ic = 0.05
+#		}
+#	}
+#	trait = {
+#		token = railroad_workers
+#		name = "Retrain railroad workers"
+#		icon = GFX_generic_mio_trait_icon_conversion_speed
+#		position = { x=5 y=0}
+#		equipment_bonus = {
+#			reliability = 0.05
+#		}
+#	}
+#	trait = {
+#		token = familiar_methods
+#		name = "Familiar methods"
+#		icon = GFX_generic_mio_trait_icon_efficiency_gain
+#		position = { x=-3 y=1}
+#		mutually_exclusive = { welding }
+#		relative_position_id = railroad_workers
+#	    any_parent = { railroad_workers }
+#		equipment_bonus = {
+#			armor_value = -0.2
+#			hardness = -0.1
+#			build_cost_ic = -0.05
+#		}
+#	}
+#	trait = {
+#		token = welding
+#		name = "Introduce welding"
+#		icon = GFX_generic_mio_trait_icon_efficiency_cap
+#		position = { x=-1 y=1}
+#		mutually_exclusive = { familiar_methods }
+#		relative_position_id = railroad_workers
+#	    any_parent = { railroad_workers }
+#		equipment_bonus = {
+#			armor_value = 0.1
+#		}
+#	}
+#	trait = {
+#		token = three_shifts
+#		name = "Three shift labour"
+#		icon = GFX_generic_mio_trait_icon_night_penalty
+#		position = { x=1 y=1}
+#		relative_position_id = familiar_methods
+#	    any_parent = { welding familiar_methods }
+#		equipment_bonus = {
+#			reliability = 0.05
+#		}
+#	}
+#	trait = {
+#		token = overspecs
+#		name = "Overspecified production line"
+#		icon = GFX_generic_mio_trait_icon_hardness
+#	    any_parent = { railroad_workers }
+#		position = { x=6 y=1}
+#		equipment_bonus = {
+#			build_cost_ic = 0.025
+#		}
+#	}
+#	trait = {
+#		token = utmost_quality
+#		name = "Utmost quality in armor"
+#		icon = GFX_generic_mio_trait_icon_armor_value
+#		position = { x=-1 y=1}
+#		mutually_exclusive = { simplified_armor }
+#		relative_position_id = overspecs
+#	    any_parent = { overspecs }
+#		equipment_bonus = {
+#			hardness = 0.05
+#			armor_value = 0.1
+#		}
+#	}
+#	trait = {
+#		token = simplified_armor
+#		name = "Simplify armor geometry"
+#		icon = GFX_generic_mio_trait_icon_build_cost_ic
+#		position = { x=1 y=1}
+#		mutually_exclusive = { utmost_quality }
+#		relative_position_id = overspecs
+#	    any_parent = { overspecs }
+#		equipment_bonus = {
+#			build_cost_ic = -0.05
+#		}
+#	}
+#
+#	trait = {
+#		token = capacity
+#		name = "Focused Designs"
+#		icon = GFX_generic_mio_trait_icon_unique
+#		position = { x=0 y=1}
+#		relative_position_id = utmost_quality
+#		any_parent = { utmost_quality simplified_armor }
+#		any_parent = {  three_shifts }
+#
+#		equipment_bonus = {
+#			soft_attack = 0.035
+#			build_cost_ic = 0.025
+#		}
+#	}
+#	trait = {
+#		token = turret
+#		name = "Improve turret armor"
+#		icon = GFX_generic_mio_trait_icon_armor_value
+#		position = { x=1 y=1}
+#		mutually_exclusive = { ammo_reserves }
+#		relative_position_id = capacity
+#	    any_parent = { capacity }
+#		equipment_bonus = {
+#			armor_value = 0.25
+#			build_cost_ic = 0.05
+#		}
+#	}
+#	trait = {
+#		token = ammo_reserves
+#		name = "Ample ammunition reserves"
+#		icon = GFX_generic_mio_department_icon_tank_general_weapons
+#		position = { x=-1 y=1}
+#		mutually_exclusive = { turret }
+#		relative_position_id = capacity
+#	    any_parent = { capacity }
+#		equipment_bonus = {
+#			hard_attack = 0.035
+#		}
+#	}
+#
+#	trait = {
+#		token = crew_safety
+#		name = "Improve crew safety"
+#		icon = GFX_generic_mio_department_icon_tank_heavy_tank_armor
+#		position = { x=1 y=0}
+#		relative_position_id = turret
+#	    any_parent = { turret }
+#		equipment_bonus = {
+#			defense = 0.2
+#		}
+#	}
+#}
  ######  ##     ## #### ########   ######  
 ##    ## ##     ##  ##  ##     ## ##    ## 
 ##       ##     ##  ##  ##     ## ##       
@@ -918,7 +1049,7 @@ ENG_harland_wolff_organization = {
 					original_tag = AST
 					original_tag = NZL
 					original_tag = RAJ
-					original_tag = MEX
+					original_tag = IDR
 				}
 			}
 
@@ -975,7 +1106,7 @@ ENG_cammell_laird_organization = {
 					original_tag = AST
 					original_tag = NZL
 					original_tag = RAJ
-					original_tag = MEX
+					original_tag = IDR
 				}
 			}
 
@@ -1034,7 +1165,7 @@ ENG_yarrow_shipbuilders_organization = {
 					original_tag = AST
 					original_tag = NZL
 					original_tag = RAJ
-					original_tag = MEX
+					original_tag = IDR
 				}
 			}
 	
@@ -1079,7 +1210,7 @@ ENG_john_brown_organization = {
 					original_tag = AST
 					original_tag = NZL
 					original_tag = RAJ
-					original_tag = MEX
+					original_tag = IDR
 				}
 			}
 
@@ -1108,7 +1239,7 @@ ENG_john_brown_organization = {
 ########  ##       ##     ## ## ## ## ######    ######  
 ##        ##       ######### ##  #### ##             ## 
 ##        ##       ##     ## ##   ### ##       ##    ## 
-##        ######## ##     ## ##    ## ########  ######  
+##        ######## ##     ## ##    ## ########  ######  planes
 
 
 ENG_supermarine_organization = {
@@ -1123,7 +1254,7 @@ ENG_supermarine_organization = {
 					original_tag = AST
 					original_tag = NZL
 					original_tag = RAJ
-					original_tag = MEX
+					original_tag = IDR
 				}
 			}
 
@@ -1152,7 +1283,6 @@ ENG_supermarine_organization = {
 		relative_position_id = generic_mio_trait_expanded_production_facilities
 
 		
-
 		equipment_bonus = {
 			air_defence = 0.1	
 		}
@@ -1189,7 +1319,7 @@ ENG_hawker_organization = {
 					original_tag = AST
 					original_tag = NZL
 					original_tag = RAJ
-					original_tag = MEX
+					original_tag = IDR
 				}
 			}
 }
@@ -1229,7 +1359,7 @@ ENG_fairey_aviation_organization = {
 					original_tag = AST
 					original_tag = NZL
 					original_tag = RAJ
-					original_tag = MEX
+					original_tag = IDR
 				}
 			}
 	
@@ -1273,7 +1403,7 @@ ENG_avro_organization = {
 					original_tag = AST
 					original_tag = NZL
 					original_tag = RAJ
-					original_tag = MEX
+					original_tag = IDR
 				}
 			}
 }
@@ -1293,46 +1423,198 @@ ENG_rsaf_enfield_organization = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_rsaf_enfield
 	allowed = {	
-				OR = {
-					original_tag = ENG
-					original_tag = CAN
-					original_tag = SAF	
-					original_tag = AST
-					original_tag = NZL
-					original_tag = MEX
-				}
+		OR = {
+			original_tag = ENG
+			original_tag = CAN
+			original_tag = SAF	
+			original_tag = AST
+			original_tag = RAJ
+			original_tag = IDR
+			original_tag = NZL
+		}
+	}
+}
+ENG_royal_arsenal_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_royal_arsenal
+	allowed = {	
+		OR = {
+			original_tag = ENG
+			original_tag = CAN
+			original_tag = SAF	
+			original_tag = AST
+			original_tag = RAJ
+			original_tag = IDR
+			original_tag = NZL
+		}
+	}
+	
+	add_trait = { 
+		token = timeontarget
+		name = "Time on Target"
+		icon = GFX_generic_mio_department_icon_tank_general_spg
+		position = { x=0 y=0 }
+
+		available = {
+			ENG = {
+				has_completed_focus = ENG_artillery_focus
+			}
+		}
+		
+		limit_to_equipment_type = { 
+			artillery_equipment
+		}
+		equipment_bonus = {
+			soft_attack = 0.05
+			breakthrough = 0.025
+		}
+	}
+	
+	add_trait = { 
+		token = the25pdrfieldmod
+		name = "Dual-Purpose 25pder"
+		icon = GFX_generic_mio_trait_icon_hard_attack
+		position = { x=0 y=1 }
+
+		available = {
+			ENG = {
+				has_completed_focus = ENG_lessons_of_africa
+			}
+		}
+		
+		limit_to_equipment_type = { 
+			artillery_equipment
+		}
+		equipment_bonus = {
+			defense = 0.10
+			hard_attack = 3.5
+			ap_attack = 2.0
+			hardness = 1.0
+		}
+	}
+}
+ENG_birmingham_heavy_artillery = {
+	include = generic_heavy_artillery_organization
+	icon = GFX_birmingham_railway_carriage_designer_resize
+	name = "Birmingham Heavy Industry"
+	allowed = {	
+		OR = {
+			original_tag = ENG
+			original_tag = CAN
+			original_tag = SAF	
+			original_tag = AST
+			original_tag = RAJ
+			original_tag = IDR
+			original_tag = NZL
+		}
+	}
+}
+ENG_royal_arsenal_anti_tank_air = {
+	include = generic_anti_tank_air_organization
+	icon = GFX_idea_royal_arsenal	
+	name = "Royal Arsenal Support Weaponry"
+	allowed = {	
+		OR = {
+			original_tag = ENG
+			original_tag = CAN
+			original_tag = SAF	
+			original_tag = AST
+			original_tag = RAJ
+			original_tag = IDR
+			original_tag = NZL
+		}
+	}
+
+	add_trait = { 
+		token = 17pounds
+		name = "17Pdr"
+		icon = GFX_generic_mio_department_icon_tank_general_spg
+		position = { x=0 y=0 }
+
+		available = {
+			ENG = {
+				has_completed_focus = uk_the_firefly 
+			}
+		}
+		
+		limit_to_equipment_type = { 
+			anti_tank_equipment
+		}
+		equipment_bonus = {
+			hard_attack = 0.15
+			defense = 0.05
+			ap_attack = 0.15
+		}
 	}
 }
 ENG_vickers_mech = {
 	include = generic_mechanized_designer
 	icon = GFX_idea_vickers_armstrong_eng
 	name = "Vickers-Armstrong"
-	
 	allowed = {	
-				OR = {
-					original_tag = ENG
-					original_tag = CAN
-					original_tag = SAF	
-					original_tag = AST
-					original_tag = NZL
-					original_tag = MEX
-				}
+		OR = {
+			original_tag = ENG
+			original_tag = CAN
+			original_tag = SAF	
+			original_tag = AST
+			original_tag = RAJ
+			original_tag = IDR
+			original_tag = NZL
+		}
+	}
+}
+ENG_royal_arsenal2_anti_tank_air = {
+	include = generic_heavy_anti_tank_air_organization
+	icon = GFX_idea_vauxhall	
+	name = "Ordnance Heavy Weaponry"
+	allowed = {	
+		OR = {
+			original_tag = ENG
+			original_tag = CAN
+			original_tag = SAF	
+			original_tag = AST
+			original_tag = RAJ
+			original_tag = IDR
+			original_tag = NZL
+		}
+	}
+
+	add_trait = { 
+		token = 17pounds
+		name = "17Pdr"
+		icon = GFX_generic_mio_department_icon_tank_general_spg
+		position = { x=0 y=0 }
+
+		available = {
+			ENG = {
+				has_completed_focus = uk_the_firefly 
+			}
+		}
+		
+		limit_to_equipment_type = { 
+			anti_tank_equipment
+		}
+		equipment_bonus = {
+			hard_attack = 0.15
+			defense = 0.05
+			ap_attack = 0.15
+		}
 	}
 }
 ENG_AEC = {
 	include = generic_armored_car_organization
 	icon = GFX_idea_ENG_aec
 	name = "AEC"
-	
 	allowed = {	
-				OR = {
-					original_tag = ENG
-					original_tag = CAN
-					original_tag = SAF	
-					original_tag = AST
-					original_tag = NZL
-					original_tag = MEX
-				}
+		OR = {
+			original_tag = ENG
+			original_tag = CAN
+			original_tag = SAF	
+			original_tag = AST
+			original_tag = RAJ
+			original_tag = IDR
+			original_tag = NZL
+		}
 	}
 
 }
@@ -1341,28 +1623,14 @@ ENG_vauxhall_automotive_organization = {
 	icon = GFX_idea_vauxhall
 	name = "Bedford"
 	allowed = {	
-				OR = {
-					original_tag = ENG
-					original_tag = CAN
-					original_tag = SAF	
-					original_tag = AST
-					original_tag = NZL
-					original_tag = MEX
-				}
-	}
-}
-
-ENG_royal_arsenal_organization = {
-	include = generic_artillery_organization
-	icon = GFX_idea_royal_arsenal
-	allowed = {	
-				OR = {
-					original_tag = ENG
-					original_tag = CAN
-					original_tag = SAF	
-					original_tag = AST
-					original_tag = NZL
-					original_tag = MEX
-				}
+		OR = {
+			original_tag = ENG
+			original_tag = CAN
+			original_tag = SAF	
+			original_tag = AST
+			original_tag = RAJ
+			original_tag = IDR
+			original_tag = NZL
+		}
 	}
 }

@@ -1140,7 +1140,7 @@ focus_tree = {
 			x = 0
 			y = 0
 		}
-		prerequisite = {
+		prerequisite = {			
 			focus = FRA_appoint_new_supreme_commander
 		}
 		
@@ -1152,7 +1152,9 @@ focus_tree = {
 		}
 
 		available = {
-			country_exists = D04
+			SPR = {
+				has_completed_focus = SPA_unify_the_nationalist_front
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -2658,7 +2660,7 @@ focus_tree = {
 			}
 			add_equipment_to_stockpile = {
 				type = convoy
-				amount = 100
+				amount = 350
 			}
 			every_state = {
 				limit = {
@@ -2756,7 +2758,7 @@ focus_tree = {
 			}
 			add_equipment_to_stockpile = {
 				type = convoy
-				amount = 100
+				amount = 350
 			}
 			add_timed_idea = {
 				idea = FRA_constitutional_revision

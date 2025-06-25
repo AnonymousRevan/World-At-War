@@ -23,7 +23,7 @@
  
  ##### Doctrine tooltips #####
  width_tt:0 " Conscripts and Garrisons:\n  Equipment Cost: §G-20.00%§!\n  HP: §R-5.00%§!\n  Org: §R-10.00%§!\n  Combat Stats: §R-15.00%§!\n Other Infantry Types:\n  Equipment Cost: §G-20.00%§!\n  HP: §R-5.00%§!\n  Org: §R-10.00%§!\n  Combat Stats: §R-15.00%§!\n Line Artillery:\n  Equipment Cost: §G-10.00%§!\n  Combat Stats: §R-5.00%§!\n"
-
+ mass_equipment_cost_tt:0 "Our equipment requirements on our troops is to be §Grelaxed§! in order to send more to the front.\n Equipment reductions on Infantry, Motorised, Mechanized and Special forces is reduced by §Y15%§!."
  basic_train:0 "Civilian Train"
  camo1:0 "Early Camouflage Kits"
  camo2:0 "Late Camouflage Kits"
@@ -583,3 +583,7 @@
 
 
  embargo_relation:0 "Embargo"
+ ### Fort Techs
+ basic_fortification_tech:0 "General Airfield Expansion"
+ land_fort_tech_1:0 "Expanded Airfield Infrastructure"
+ land_fort_tech_2:0 "Advanced Airfield Infrastructure"

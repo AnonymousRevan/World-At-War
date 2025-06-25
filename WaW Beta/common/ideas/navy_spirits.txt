@@ -4,7 +4,7 @@ ideas = {
 			ledger = navy
 			modifier = {
 				custom_modifier_tooltip = instilled_aggression_spirit_tt
-				naval_damage_factor = 0.025
+				naval_damage_factor = 0.035
 			}
 			ai_will_do = {
 				factor = 1
@@ -274,7 +274,7 @@ ideas = {
 			ledger = navy
 			visible = { has_tech = trade_interdiction }
 			modifier = {
-				screening_without_screens = 0.2
+				convoy_raiding_efficiency_factor = 0.15
 				naval_retreat_speed = 0.1
 				naval_retreat_chance = 0.1
 			}

@@ -88,7 +88,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_idea_bethlehem_steel"
-		texturefile = "gfx/interface/ideas/USA/USA_boilermakers.dds"
+		texturefile = "gfx/interface/ideas/USA/USA_bethlehem_steel.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_general_motors"
@@ -517,6 +517,10 @@ spriteTypes = {
 		name = "GFX_idea_royal_arsenal_research"
 		texturefile = "gfx/interface/ideas/idea_royal_arsenal.dds"
 	}
+	spriteType = {
+		name = "GFX_birmingham_railway_carriage_designer_resize"
+		texturefile = "gfx/interface/ideas/birmingham_railway_carriage_designer_resize.dds"
+	}	
 	spriteType = {
 		name = "GFX_idea_yarrow_shipbuilders_research"
 		texturefile = "gfx/interface/ideas/idea_yarrow_shipbuilders.dds"

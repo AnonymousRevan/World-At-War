@@ -1,3 +1,4 @@
+### SPANISH CIVIL WAR is currently not working the way we intend, old information that is commented out is kept to be resolved at a later date
 SPR_civil_war_operations = {
 	
 	SPR_rescue_franco = {
@@ -56,7 +57,8 @@ SPR_civil_war_operations = {
 			controls_state = 169
 		}
 		
-		days_mission_timeout = 30
+#		days_mission_timeout = 30 #This is the previous count
+		days_mission_timeout = 40
 		selectable_mission = no
 		
 		timeout_effect = {
@@ -116,7 +118,8 @@ SPR_civil_war_operations = {
 			controls_state = 170
 		}
 		
-		days_mission_timeout = 135
+#		days_mission_timeout = 135 #keep for later
+		days_mission_timeout = 175
 		selectable_mission = no
 		
 		timeout_effect = {
@@ -175,7 +178,8 @@ SPR_civil_war_operations = {
 			controls_state = 166
 		}
 		
-		days_mission_timeout = 162
+#		days_mission_timeout = 162
+		days_mission_timeout = 290
 		selectable_mission = no
 		
 		timeout_effect = {
@@ -239,7 +243,8 @@ SPR_civil_war_operations = {
 			controls_state = 792
 		}
 		
-		days_mission_timeout = 128
+#		days_mission_timeout = 128
+		days_mission_timeout = 320
 		selectable_mission = no
 		
 		timeout_effect = {
@@ -298,7 +303,8 @@ SPR_civil_war_operations = {
 			controls_state = 790
 		}
 		
-		days_mission_timeout = 135
+#		days_mission_timeout = 135
+		days_mission_timeout = 455
 		selectable_mission = no
 		
 		timeout_effect = {
@@ -357,7 +363,8 @@ SPR_civil_war_operations = {
 			controls_state = 794
 		}
 
-		days_mission_timeout = 317
+#		days_mission_timeout = 317
+		days_mission_timeout = 770
 		selectable_mission = no
 		
 		timeout_effect = {
@@ -416,7 +423,8 @@ SPR_civil_war_operations = {
 			controls_state = 165
 		}
 
-		days_mission_timeout = 62
+#		days_mission_timeout = 62
+		days_mission_timeout = 835
 		selectable_mission = no
 		
 		timeout_effect = {

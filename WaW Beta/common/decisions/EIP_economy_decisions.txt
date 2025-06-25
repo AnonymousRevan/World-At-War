@@ -1,0 +1,183 @@
+economy_decisions = {
+        Eintd_light_industry = {
+
+		icon = GFX_decision_generic_factory
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               80 = {
+                   country_event = eip_industry.3
+               }
+               10 = {
+                   country_event = eip_industry.1
+               }
+               10 = {
+                   country_event = eip_industry.2
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_civilian_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industry = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               80 = {
+                   country_event = eip_industry.3
+               }
+               10 = {
+                   country_event = eip_industry.4
+               }
+               10 = {
+                   country_event = eip_industry.5
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	 Eintd_Mining = {
+
+		icon = GFX_decision_generic_factory
+
+		days_remove = 45
+		
+		days_re_enable = 15
+		
+		cost = 50
+
+		available = {
+			has_tech = excavation3
+		}		
+
+		visible = {
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_Mining_tt
+		  hidden_effect = {
+		  random_list = {
+               75 = {
+                   country_event = eip_industry.6
+               }
+               25 = {
+                   country_event = eip_industry.R
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_civilian_factories < 1
+           }
+		}
+	}
+	
+	Eintd_construction_sites = {
+
+		icon = GFX_decision_generic_construction
+
+		days_remove = 30
+		
+		days_re_enable = 15
+
+		available = {
+		}		
+
+		visible = {
+		}
+		
+		modifier = {
+			political_power_gain = -1.0
+			stability_weekly = -0.5
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               85 = {
+                   country_event = eip_industry.3
+               }
+			   5 = {
+                   country_event = eip_industry.R
+               }
+               5 = {
+                   country_event = eip_industry.5
+				}
+               5 = {
+                   country_event = eip_industry.2
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+}

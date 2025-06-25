@@ -7,6 +7,7 @@ state = {
 
 	history = {
 		owner = DEN
+		set_state_flag = atlantikwall_state
 		add_core_of = DEN
 		victory_points = {
 			13258 1 

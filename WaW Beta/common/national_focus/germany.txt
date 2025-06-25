@@ -470,7 +470,7 @@ focus_tree = {
 
 			TUR = { give_resource_rights = { receiver = GER state = 342 } } 
 			SWE = { give_resource_rights = { receiver = GER state = 141 } }	
-			SWE = { give_resource_rights = { receiver = GER state = 138 } }
+			SWE = { give_resource_rights = { receiver = GER state = 918 } }
 		}
 	}
 
@@ -2402,6 +2402,7 @@ focus_tree = {
 							is_controlled_by = HOL 
 						}
 					}
+					date > 1941.1.1
 				}
 				OR = {
 					BEL = { has_capitulated = yes }
@@ -2411,6 +2412,7 @@ focus_tree = {
 							is_controlled_by = BEL 
 						}
 					}
+					date > 1941.1.1
 				}
 				OR = {
 					LUX = { has_capitulated = yes }
@@ -2420,6 +2422,7 @@ focus_tree = {
 							is_controlled_by = LUX 
 						}
 					}
+					date > 1941.1.1
 				}
 			}			
 		}
@@ -3085,6 +3088,7 @@ focus_tree = {
 			OR = {
 				POL = { has_capitulated = yes }
 				POL = { is_subject_of = GER }
+				date > 1941.1.1
 			}
 		}
 
@@ -3356,6 +3360,7 @@ focus_tree = {
 						is_controlled_by = YUG 
 					}
 				}
+				date > 1941.1.1
 			}
 			OR = {
 				GRE = { has_capitulated = yes }
@@ -3365,6 +3370,7 @@ focus_tree = {
 						is_controlled_by = GRE 
 					}
 				}
+				date > 1941.1.1
 			}			
 		}
 
@@ -3512,7 +3518,7 @@ focus_tree = {
 						is_core_of = BUL 
 					}
 				}
-				build_1_infrastructure = yes
+				build_2_infrastructure = yes
 			} 
 			add_ideas = TUR_rare_metal_trade_ger
 			TUR = { 
@@ -3593,8 +3599,6 @@ focus_tree = {
 				technology = dispersed_industry3
 				technology = dispersed_industry4
 			}
-			
-			add_stability = -0.10
 		}
 	}
 
@@ -3656,7 +3660,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = radar_focus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = radar_tech
 			}
 			add_tech_bonus = {
@@ -3666,7 +3670,8 @@ focus_tree = {
 				technology = night_fighters1
 				technology = night_fighters2
 			}
-			add_war_support = 0.1
+			add_war_support = 0.10
+			add_stability = 0.10
 		}
 	}
 
@@ -3742,7 +3747,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = GER_four_year_plan
 				bonus = 1
-				uses = 1
+				uses = 2
 				technology = massed1
 				technology = massed2
 				technology = massed3
@@ -3777,7 +3782,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = GER_four_year_plan
 				bonus = 1
-				uses = 1
+				uses = 2
 				technology = quality1
 				technology = quality2
 				technology = quality3
@@ -3801,12 +3806,7 @@ focus_tree = {
 
 		available = {
 			if = {
-				OR = {
-				    has_tech = dispersed_industry4
-				    has_tech = concentrated_industry4
-				}
 				date > 1942.1.1
-				has_tech = excavation4
 				has_war_with = SOV
 				has_idea = GER_economy_of_plunder_6			
 			}
@@ -3908,7 +3908,7 @@ focus_tree = {
 		cost = 5
 		available = {
 			OR = {
-				date > 1943.1.1
+				date > 1942.6.1
 				casualties >2000000
 			}
 			has_war_with = USA
@@ -4848,7 +4848,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no
 		}
 
 		available_if_capitulated = yes
@@ -4871,7 +4871,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no
 		}
 
 		available_if_capitulated = yes
@@ -4893,7 +4893,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no 
 		}
 
 		available_if_capitulated = yes
@@ -4916,7 +4916,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no
 		}
 
 		available_if_capitulated = yes
@@ -4939,7 +4939,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no
 		}
 
 		available_if_capitulated = yes
@@ -4962,7 +4962,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no 
 		}
 
 		available_if_capitulated = yes
@@ -4985,7 +4985,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no 
 		}
 
 		available_if_capitulated = yes
@@ -5008,7 +5008,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no
 		}
 
 		available_if_capitulated = yes
@@ -5031,7 +5031,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no
 		}
 
 		available_if_capitulated = yes
@@ -5053,7 +5053,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no 
 		}
 
 		available_if_capitulated = yes
@@ -5075,7 +5075,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no
 		}
 
 		available_if_capitulated = yes
@@ -5098,7 +5098,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no 
 		}
 
 		available_if_capitulated = yes
@@ -5121,7 +5121,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no
 		}
 
 		available_if_capitulated = yes
@@ -5145,7 +5145,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no 
 		}
 
 		available_if_capitulated = yes
@@ -5168,7 +5168,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no 
 		}
 
 		available_if_capitulated = yes
@@ -5190,7 +5190,7 @@ focus_tree = {
 		}
 
 		available = {
-			always = NO 
+			always = no 
 		}
 
 		available_if_capitulated = yes
@@ -6754,7 +6754,7 @@ focus_tree = {
 	
 		completion_reward = {
 			custom_effect_tooltip = GER_invest_aircraft_tt
-            add_ideas = GER_air_investments
+			add_ideas = GER_air_investments
 			if = {
 				limit = { 
 					has_tech = ger_fighter_1936
@@ -6868,16 +6868,10 @@ focus_tree = {
 		completion_reward = { 
 			air_experience = 50
 			if = {
-				limit = { has_dlc = "Arms Against Tyranny" }
-				mio:GER_focke_wulf_organization = {
-					add_mio_funds = 800
+				swap_ideas = {
+					remove_idea = GER_air_innovations_1_idea
+					add_idea = GER_air_innovations_2_idea
 				}
-			}
-			else = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = focke_wulf
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = henschel_aircraft
 			}
 		}
 	}
@@ -7364,24 +7358,7 @@ focus_tree = {
 				}
 				set_state_flag = GER_prepare_the_kriegsmarine_1dockyard
 			}
-			random_owned_controlled_state = {
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = GER_prepare_the_kriegsmarine_1dockyard
-			}
+
 			add_tech_bonus = {
 				name = GER_ships
 				uses = 2 
@@ -7409,10 +7386,10 @@ focus_tree = {
 		complete_tooltip = {
 			random_state = {
 				limit = { has_state_flag = GER_mad_lads_target }
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard 
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -7435,17 +7412,17 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = GER_mad_lads_target
 			}
 			add_tech_bonus = {
 				name = GER_mad_lads_focus
-				bonus = 2.0
+				bonus = 1.0
 				uses = 1
 				category = cl_tech
 				ahead_reduction = 1
@@ -7691,10 +7668,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = GER_naval_expansion_target
@@ -7734,10 +7711,10 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = GER_carrier_focus
-				bonus = 2.0
+				bonus = 1.0
 				uses = 1
 				category = cv_tech
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 			}
 			custom_effect_tooltip = GER_carrier_tt
 		}
@@ -7761,10 +7738,10 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = GER_battleship_focus
-				bonus = 2.0
+				bonus = 1.0
 				uses = 1
 				category = bb_tech
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 			}
 			custom_effect_tooltip = GER_bismarck_tt
 		}

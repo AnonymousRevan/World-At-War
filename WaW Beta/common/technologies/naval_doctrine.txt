@@ -172,10 +172,6 @@ technologies = {
 			max_organisation = 20
 			sub_detection = 0.1
 		}
-		frigate = {
-			max_organisation = 16
-			sub_detection = 0.1
-		}
 		light_cruiser = {
 			max_organisation = 10
 			sub_detection = 0.2
@@ -399,10 +395,6 @@ technologies = {
 			max_organisation = 10
 			sub_detection = 0.05
 		}
-		frigate = {
-			max_organisation = 8
-			sub_detection = 0.05
-		}
 		convoy_escort_efficiency = 0.05
 		#####
 
@@ -448,10 +440,6 @@ technologies = {
 		# EFFECT #############
 		destroyer = {
 			max_organisation = 10
-			sub_detection = 0.05
-		}
-		frigate = {
-			max_organisation = 8
 			sub_detection = 0.05
 		}
 		convoy_escort_efficiency = 0.1
@@ -561,10 +549,6 @@ technologies = {
 		# EFFECT #############
 		destroyer = {
 			max_organisation = 20
-			sub_detection = 0.1
-		}
-		frigate = {
-			max_organisation = 16
 			sub_detection = 0.1
 		}
 		light_cruiser = {
@@ -1468,10 +1452,6 @@ technologies = {
 			max_organisation = 10
 			sub_detection = 0.05
 		}
-		frigate = {
-			max_organisation = 8
-			sub_detection = 0.05
-		}
 		convoy_escort_efficiency = 0.05
 
 
@@ -2190,10 +2170,6 @@ technologies = {
 			max_organisation = 10
 			sub_detection = 0.05
 		}
-		frigate = {
-			max_organisation = 8
-			sub_detection = 0.05
-		}
 		convoy_escort_efficiency = 0.1
 
 
@@ -2243,10 +2219,6 @@ technologies = {
 		# EFFECT ##############
 		destroyer = {
 			max_organisation = 10
-			sub_detection = 0.05
-		}
-		frigate = {
-			max_organisation = 8
 			sub_detection = 0.05
 		}
 		light_cruiser = {
@@ -2314,10 +2286,6 @@ technologies = {
 			max_organisation = 10
 			sub_detection = 0.05
 		}
-		frigate = {
-			max_organisation = 8
-			sub_detection = 0.05
-		}
 		convoy_escort_efficiency = 0.05
 		#####
 
@@ -2373,10 +2341,6 @@ technologies = {
 		# EFFECT #############
 		destroyer = {
 			max_organisation = 20
-			sub_detection = 0.10
-		}
-		frigate = {
-			max_organisation = 16
 			sub_detection = 0.10
 		}
 		light_cruiser = {

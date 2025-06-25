@@ -108,7 +108,7 @@ equipments = {
 		
 		resources = {
 			steel = 9
-			chromium = 6
+			chromium = 4
 		}
 
 		# (Describes combat behaviour - hidden stat)
@@ -180,7 +180,7 @@ equipments = {
 		naval_range = 4000
 		resources = {
 			steel = 14
-			chromium = 7
+			chromium = 5
 		}
 	}
 
@@ -215,7 +215,7 @@ equipments = {
 		naval_range = 4500
 		resources = {
 			steel = 18
-			chromium = 8
+			chromium = 6
 		}
 	}
 
@@ -259,7 +259,7 @@ equipments = {
 		naval_range = 4000
 		resources = {
 			steel = 8
-			chromium = 4
+			chromium = 3
 		}
 	}
 

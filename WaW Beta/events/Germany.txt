@@ -5176,6 +5176,11 @@ country_event = {
 			transfer_state = 911
 			transfer_state = 912
 		}
+		ENG = {
+			transfer_state = 337
+			transfer_state = 100
+			transfer_state = 101
+		}
 	}
 }
 

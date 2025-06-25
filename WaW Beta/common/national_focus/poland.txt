@@ -398,13 +398,6 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 10 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-						include_locked = yes
-					}
-				}
 				add_extra_state_shared_building_slots = 1
 				build_2_infrastructure = yes
 				set_state_flag = POL_warsaw_main_railway_station_1

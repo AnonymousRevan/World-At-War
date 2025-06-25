@@ -1,0 +1,169 @@
+﻿l_english:
+ ## Идеи и Динамические Модификаторы/Ideas and Dynamic Modifiers ##
+ 
+ Eintdm_sending_troops:0 "Sending reserves"
+ Eintdm_sending_troops1:0 "Sending reserves"
+ Eintdm_sending_troops2:0 "Sending reserves"
+ Eintdm_sending_troops3:0 "Sending reserves"
+ Eintis_sanctions:0 "Sanctions [FROM.GetName]"
+ Eintdm_sanctions:0 "Sanctions"
+ Eintdm_industry_rental:0 "Rental of factories"
+ Eintdm_industry_rental1:0 "Rental of factories"
+ Eintdm_industry_rental2:0 "Rental of factories"
+ Eintdm_foreign_scientists:0 "Foreign scientists"
+ Eintdm_official_visit:0 "Official visit"
+ Eintdm_official_visit1:0 "Official visit"
+ 
+ ## Решения/Decisions ##
+ 
+ Eintd_sending_troops:0 "Request troops [FROM.GetName]"
+ Eintd_sending_troops_desc:0 "We will request man reserves from [FROM.GetName]"
+ Eintd_sending_troops1:0 "Request troops [FROM.GetName]"
+ Eintd_sending_troops1_desc:0 "We will request man reserves from [FROM.GetName]"
+ Eintd_sending_troops2:0 "Request troops [FROM.GetName]"
+ Eintd_sending_troops2_desc:0 "We will request man reserves from [FROM.GetName]"
+ Eintd_sending_troops3:0 "Request troops [FROM.GetName]"
+ Eintd_sending_troops3_desc:0 "We will request man reserves from [FROM.GetName]"
+ Eintd_industry_rental:0 "Rental of factories [FROM.GetName]"
+ Eintd_industry_rental_desc:0 "We will get factories from [FROM.GetName] for temporary use"
+ Eintd_industry_rental2:0 "Rental of factories [FROM.GetName]"
+ Eintd_industry_rental2_desc:0 "We will get factories from [FROM.GetName] for temporary use"
+ Eintd_industry_rental3:0 "Rental of factories [FROM.GetName]"
+ Eintd_industry_rental3_desc:0 "We will get factories from [FROM.GetName] for temporary use"
+ Eintd_foreign_scientists:0 "Send scientists [FROM.GetName]"
+ Eintd_foreign_scientists_desc:0 "We will support [FROM.GetName] by sending our scientists there"
+ Eintd_official_visit:0 "Official visit [FROM.GetName]"
+ Eintd_official_visit_desc:0 "We will go to [FROM.GetName] on an official visit"
+ Eintd_light_industry:0 "Invest in light industry"
+ Eintd_heavy_industry:0 "Invest in heavy industry"
+ Eintd_construction_sites:0 "Crippling addiction"
+ Eintd_construction_to_industry:0 "Factories for production"
+ Eintd_industry_to_construction:0 "Factories for construction"
+ Eintd_national_goods:0 "National goods"
+ Eintd_foreign_goods:0 "Foreign goods"
+ Eintd_support_fascists:0 "Support «[THIS.GetFascistParty]»"
+ Eintd_support_fascists_desc:0 "We will direct our resources to support «[THIS.GetFascistParty]»"
+ Eintd_support_communists:0 "Support «[THIS.GetCommunistParty]»"
+ Eintd_support_communists_desc:0 "We will direct our resources to support «[THIS.GetCommunistParty]»"
+ Eintd_support_democrats:0 "Support «[THIS.GetDemocraticParty]»"
+ Eintd_support_democrats_desc:0 "We will direct our resources to support «[THIS.GetDemocraticParty]»"
+ Eintd_support_neutrals:0 "Support «[THIS.GetNeutralParty]»"
+ Eintd_support_neutrals_desc:0 "We will direct our resources to support «[THIS.GetNeutralParty]»"
+ Eintd_fascist_power:0 "Power to fascists"
+ Eintd_fascist_power_desc:0 "Positions «[THIS.GetFascistParty]» they are already strong and they are ready to take power, it remains only to prepare papers and announce to the people."
+ Eintd_communism_power:0 "Power to communists"
+ Eintd_communism_power_desc:0 "Positions «[THIS.GetCommunistParty]» they are already strong and they are ready to take power, it remains only to prepare papers and announce to the people."
+ Eintd_democratic_power:0 "The power of democracy"
+ Eintd_democratic_power_desc:0 "Positions «[THIS.GetDemocraticParty]» they are already strong and they are ready to take power, it remains only to prepare papers and announce to the people."
+ Eintd_neutrality_power:0 "The power of neutrality"
+ Eintd_neutrality_power_desc:0 "Positions «[THIS.GetNeutralParty]» they are already strong and they are ready to take power, it remains only to prepare papers and announce to the people."
+ Eintd_Mining:0 "Geological survey"
+ Eintd_Mining2:0 "Search for Tungsten"
+ 
+ ## Тул-типы/ToolTips ##
+ 
+ event1a_eip_puppet_tt:0 "§GEverything going according to plan.§!"
+ event1b_eip_puppet_tt:0 "§RThey will be unhappy with this!§!"
+ 
+ event2a_eip_puppet_tt:0 "§YWe will refuse the request and will not impose sanctions§!"
+ event2b_eip_puppet_tt:0 "§YWe will impose sanctions against them so they will definitely know about our protest!§!"
+ 
+ event3a_eip_puppet_tt:0 "Natural ending"
+ 
+ event4a_eip_puppet_tt:0 "Everything went smoothly"
+ 
+ event7b_eip_puppet_tt:0 "§RThey will be unhappy with this!§! §GBut we can disrupt their visit.§!"
+ 
+ event8a_eip_puppet_tt:0 "§GWe will get everything we need without any problems§!"
+ 
+ decision_eip_industry_tt:0 "Our investments will help the emergence of new enterprises, §Rbut there is a risk that they will burn out.§! May win §G2 to 4 Civilian (light) or 2 to 4 Military (heavy) factories§"
+ 
+ decision_eip_Mining_tt:0 "Our geologists will attempt to exploit previously undiscovered resources. May win §Gset amount of resources (all except rubber)§"
+ 
+ ## Ивенты/Events ##
+ 
+  # Названия/Name #
+  
+  eip_puppet.1.t:0 "Request for reserves [FROM.GetName]"
+  eip_puppet.2.t:0 "[FROM.GetName] refuse"
+  eip_puppet.3.t:0 "Sanctions [FROM.GetName]"
+  eip_puppet.4.t:0 "[FROM.GetAdjective] government ignored our refusal"
+  eip_puppet.5.t:0 "[FROM.GetAdjective] government asks for factory leases"
+  eip_puppet.6.t:0 "[FROM.GetAdjective] government sends scientists"
+  eip_puppet.7.t:0 "[FROM.GetAdjective] official visit"
+  eip_puppet.8.t:0 "[FROM.GetAdjective] government agrees to cooperate"
+  
+  eip_industry.1.t:0 "Investments in light industry - Success"
+  eip_industry.2.t:0 "Investments in light industry - Steady Success"
+  eip_industry.3.t:0 "Investments in industry - Failure"
+  eip_industry.4.t:0 "Investments in heavy industry - Success"
+  eip_industry.5.t:0 "Investments in heavy industry - Steady Success"
+  eip_industry.6.t:0 "Geological survey - Failure"
+  eip_industry.R.t:0 "Investments in Mining - Steady Success"
+  eip_industry.S.t:0 "Investments in light industry - Success"
+  eip_industry.S1.t:0 "Investments in light industry - Steady Success"
+  
+  eip_politics.1.t:0 "Power passes to «[THIS.GetFascistParty]»"
+  eip_politics.2.t:0 "Power passes to «[THIS.GetCommunistParty]»"
+  eip_politics.3.t:0 "Power passes to «[THIS.GetDemocraticParty]»"
+  eip_politics.4.t:0 "Power passes to «[THIS.GetNeutralParty]»"
+  
+  # Описание/Desc #
+  
+  eip_puppet.1.d:0 "[FROM.GetAdjective] government is requesting part of our man reserves. We have already started sends."
+  eip_puppet.2.d:0 "[FROM.GetAdjective] government refuses us our request."
+  eip_puppet.3.d:0 "[FROM.GetAdjective] government decided to impose sanctions in connection with our refusal. Now for 3 months access to foreign goods is difficult and approval of construction projects is slow."
+  eip_puppet.4.d:0 "[FROM.GetAdjective] government it did not react to our refusal in any way, let's hope that this is for the best."
+  eip_puppet.5.d:0 "[FROM.GetAdjective] government requests the lease of our factories. We have already started the paperwork."
+  eip_puppet.6.d:0 "[FROM.GetAdjective] government offers to send us their scientists. Some of them have already arrived."
+  eip_puppet.7.d:0 "[FROM.GetAdjective] government preparing an official visit, they are about to arrive."
+  eip_puppet.8.d:0 "[FROM.GetAdjective] government agreed to complete our request."
+  
+  eip_industry.1.d:0 "Our investments were successful and a new light industry enterprise was opened in our country."
+  eip_industry.2.d:0 "Our investments have been a sure success and several new light industry enterprises have opened in our country."
+  eip_industry.3.d:0 "We have not been able to find an entrepreneur willing to open a production that is useful to us and our investments have burned down."
+  eip_industry.4.d:0 "Our investments were successful and a new heavy industry enterprise was opened in our country."
+  eip_industry.5.d:0 "Our investments have been a sure success and several new heavy industry enterprises have opened in our country."
+  eip_industry.6.d:0 "We have not been able to find an entrepreneur willing to open a production that is useful to us and our investments have burned down."
+  eip_industry.R.d:0 "We have found more deposits."
+  
+  eip_politics.1.d:0 "Today [THIS.GetFascistLeader] announces that his party is now the dominant one in the country, there is nothing we can do, their popularity among the people is high." 
+  eip_politics.2.d:0 "Today [THIS.GetCommunistLeader] announces that his party is now the dominant one in the country, there is nothing we can do, their popularity among the people is high." 
+  eip_politics.3.d:0 "Today [THIS.GetDemocraticLeader] announces that his party is now the dominant one in the country, there is nothing we can do, their popularity among the people is high." 
+  eip_politics.4.d:0 "Today [THIS.GetNeutralLeader] announces that his party is now the dominant one in the country, there is nothing we can do, their popularity among the people is high." 
+  
+  # Опции/Options #
+  
+  eip_puppet.1.a:0 "Continue to complete the requirements"
+  eip_puppet.1.b:0 "Stop it immediately!"
+  
+  eip_puppet.2.a:0 "Okay, leave them"
+  eip_puppet.2.b:0 "Announce our protest to them!"
+  
+  eip_puppet.3.a:0 "Vile"
+  
+  eip_puppet.4.a:0 "With God"
+  
+  eip_puppet.5.a:0 "Continue to complete the requirements"
+  eip_puppet.5.b:0 "Stop the transfer!"
+  
+  eip_puppet.6.a:0 "Two-faced support"
+  eip_puppet.6.b:0 "We'll manage on our own"
+  
+  eip_puppet.7.a:0 "We will be happy to receive guests"
+  eip_puppet.7.b:0 "Let's have a party!"
+  
+  eip_puppet.8.a:0 "Great"
+  
+  eip_industry.1.a:0 "Fine"
+  eip_industry.2.a:0 "Wonderful!"
+  eip_industry.3.a:0 "Damn it"
+  eip_industry.4.a:0 "Fine"
+  eip_industry.5.a:0 "Wonderful!"
+  eip_industry.6.a:0 "We failed to extract more resources"
+  
+  eip_politics.1.a:0 "There's nothing we can do..." 
+  eip_politics.2.a:0 "There's nothing we can do..." 
+  eip_politics.3.a:0 "There's nothing we can do..." 
+  eip_politics.4.a:0 "There's nothing we can do..." 
+  

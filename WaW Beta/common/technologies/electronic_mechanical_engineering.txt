@@ -1031,10 +1031,10 @@ technologies = {
 			name = electronics_folder
 			position = { x = 1 y = 0 }
 		}
-		folder = {
-			name = secret_weapons_folder
-			position = { x = 10 y = 0 }
-		}
+#		folder = {
+#			name = secret_weapons_folder
+#			position = { x = 10 y = 0 }
+#		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1299,7 +1299,7 @@ technologies = {
 		# can build reactors
 		
 		start_year = 1943
-		research_cost = 3
+		research_cost = 3.00
 		
 		folder = {
 			name = electronics_folder
@@ -1328,13 +1328,43 @@ technologies = {
 			building = nuclear_reactor
 			level = 1
 		}
+		enable_building = {
+			building = nuclear_reactor_heavy_water
+			level = 1
+		}
 	}
 
 	nukes = {
 	
 		start_year = 1944
-		research_cost = 7.5
+		research_cost = 6.0
 		
+		enable_building = {
+			building = mega_gun_emplacement
+			level = 1
+		}
+
+		enable_building = {
+			building = commercial_nuclear_reactor
+			level = 1
+		}
+
+		enable_building = {
+			building = nuclear_facility
+			level = 1
+		}
+		enable_building = {
+			building = air_facility
+			level = 1
+		}
+		enable_building = {
+			building = land_facility
+			level = 1
+		}
+		enable_building = {
+			building = naval_facility
+			level = 1
+		}
 		folder = {
 			name = electronics_folder
 			position = { x = 2 y = 4 }
@@ -1350,6 +1380,11 @@ technologies = {
 		}
 		
 		nuclear_production = 1
+		on_research_complete = {
+			hidden_effect = {
+				sound_effect = Nuke
+			}
+		}
 		
 		categories = {
 			nuclear

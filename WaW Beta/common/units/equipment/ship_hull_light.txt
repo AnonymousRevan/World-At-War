@@ -88,7 +88,7 @@ equipments = {
 		fuel_consumption = 0
 		
 		max_strength = 30
-		armor_value = 0
+		armor_value = 1
 		reliability = 0.75
 		naval_speed = 25
 

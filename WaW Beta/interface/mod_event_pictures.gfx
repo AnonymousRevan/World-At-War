@@ -48,4 +48,16 @@ spriteTypes = {
          looping = yes
          play_on_show = yes
      }
+	 SpriteType = {
+		name = "GFX_event_picture_Rhineland_Nora"
+		texturefile = "gfx/event_pictures/News_Event_Rhineland_Nora.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_event_picture_panay_Nora"
+		texturefile = "gfx/event_pictures/News_Event_panay_Nora.dds"
+	 }
+	 SpriteType = {
+		name = "GFX_event_picture_Nuke_Nora"
+		texturefile = "gfx/event_pictures/News_Event_Nuke_Nora.dds"
+	 }
 }

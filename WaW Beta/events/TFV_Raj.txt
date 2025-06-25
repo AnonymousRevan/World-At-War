@@ -107,7 +107,15 @@ country_event = {
 			
 	option = {
 		name = tfv_raj.20.a
-		add_ideas = RAJ_quit_india_movement
+			add_timed_idea = {
+				idea = RAJ_quit_india_movement_timed
+				days = 100
+			}
+			add_timed_idea = {
+				idea = RAJ_quit_india_movement_timed_2
+				days = 200
+			}
+		add_ideas = RAJ_quit_india_movement_3
 		set_country_flag = RAJ_quit_india_movement
 		custom_effect_tooltip = "tfv_raj_quit_india_unrest_tt"
 		hidden_effect = {

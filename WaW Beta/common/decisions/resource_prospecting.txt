@@ -967,7 +967,7 @@ prospect_for_resources = {
 			543 = {
 				add_resource = {
 					type = rubber
-					amount = 50
+					amount = 60
 				}
 			}
 		}
@@ -1335,7 +1335,6 @@ prospect_for_resources = {
 	develop_quebec_steel = { #466
 		
 		icon = steel
-
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 2
@@ -1379,6 +1378,7 @@ prospect_for_resources = {
 					amount = 160
 				}
 			}
+
 		}
 
 		ai_will_do = {
@@ -1421,7 +1421,10 @@ prospect_for_resources = {
 		modifier = {
 			civilian_factory_use = 12
 		}
-
+		ai_will_do = {
+			factor = 1
+		}
+		
 		remove_effect = {
 			custom_effect_tooltip = repeatable_decision_tt
 			add_to_variable = { var = USA_arkansas_aluminium_duration value = 30 }
@@ -1452,10 +1455,6 @@ prospect_for_resources = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
-
 		complete_effect = {
 			if = {
 				limit = {
@@ -1465,6 +1464,7 @@ prospect_for_resources = {
 			}
 		}
 	}
+	
 	develop_new_york_aluminium_deposits = { #358
 		
 		icon = aluminium
@@ -1499,11 +1499,10 @@ prospect_for_resources = {
 		modifier = {
 			civilian_factory_use = 12
 		}
-
 		ai_will_do = {
 			factor = 1
 		}
-
+		
 		remove_effect = {
 			custom_effect_tooltip = repeatable_decision_tt
 			add_to_variable = { var = USA_new_york_aluminium_duration value = 30 }
@@ -1533,7 +1532,7 @@ prospect_for_resources = {
 				}
 			}
 		}
-
+		
 		complete_effect = {
 			if = {
 				limit = {
@@ -1573,7 +1572,6 @@ prospect_for_resources = {
 			}
 		}
 
-		fire_only_once = yes
 
 		cost = 25
 		days_remove = USA_tennessee_aluminium_duration
@@ -1655,8 +1653,6 @@ prospect_for_resources = {
 			}
 		}
 
-		fire_only_once = yes
-
 		cost = 25
 		days_remove = USA_washington_aluminium_duration
 
@@ -1735,8 +1731,6 @@ prospect_for_resources = {
 				}
 			}
 		}
-
-		fire_only_once = yes
 
 		cost = 25
 		days_remove = USA_idaho_tungsten_duration
@@ -1902,8 +1896,6 @@ prospect_for_resources = {
 			}
 		}
 
-		fire_only_once = yes
-
 		cost = 25
 		days_remove = USA_minnesota_steel_duration
 
@@ -1982,8 +1974,6 @@ prospect_for_resources = {
 				}
 			}
 		}
-
-		fire_only_once = yes
 
 		cost = 25
 		days_remove = USA_pennsylvania_steel_duration
@@ -2065,8 +2055,6 @@ prospect_for_resources = {
 			}
 		}
 
-		fire_only_once = yes
-
 		cost = 25
 		days_remove = USA_ohio_steel_duration
 
@@ -2145,8 +2133,6 @@ prospect_for_resources = {
 				}
 			}
 		}
-
-		fire_only_once = yes
 
 		cost = 25
 		days_remove = USA_indiana_steel_duration
@@ -2229,8 +2215,6 @@ prospect_for_resources = {
 			}
 		}
 
-		fire_only_once = yes
-
 		cost = 25
 		days_remove = USA_montana_chromium_duration
 
@@ -2312,8 +2296,6 @@ prospect_for_resources = {
 				}
 			}
 		}
-
-		fire_only_once = yes
 
 		cost = 25
 		days_remove = USA_california_chromium_duration

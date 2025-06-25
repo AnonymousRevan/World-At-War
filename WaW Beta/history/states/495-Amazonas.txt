@@ -3,12 +3,9 @@ state={
 	id=495
 	name="STATE_495"
 	manpower = 159900
-	
+	impassable = yes
 	state_category = pastoral
 	
-	resources = {
-		rubber = 50 # was: 30, then 23
-	}
 	
 	history={
 		owner = BRA

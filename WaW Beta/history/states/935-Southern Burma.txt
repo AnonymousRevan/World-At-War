@@ -7,7 +7,7 @@ state={
 	
 	history={
 		add_core_of = NGA
-		owner = RAJ
+		owner = IDR
 		buildings = {
 			infrastructure = 4
 			air_base = 1

@@ -52,56 +52,59 @@ country_event = {
 	option = { # Support Nationalists
 		name = spain.1.a
 		hidden_effect = {
-			set_capital = { state = 176 }
-			start_civil_war = {
-				ruling_party = fascism
-				ideology = communism
-				size = 0.5
-				capital = 41
-				states = { 41 165 166 167 168 169 170 173 175 789 790 792 793 794 }
-			}
-			random_other_country = {
-				limit = {
-					original_tag = SPR
-					has_government = communism
-				}
-				set_equipment_fraction = 0.8
-				set_stability = 0.5
-				set_war_support = 0.4
-				add_ideas = SPA_no_navy 
-				remove_ideas = SPR_military_disloyalty
-				remove_ideas = SPA_no_navy
-				remove_ideas = SPR_political_violence
-		        remove_ideas = SPR_national_strikes_1
-				remove_ideas = SPA_carlism_1
-				add_popularity = {
-					ideology = democratic
-					popularity = 0.35
-				}
-				    delete_units = {
-					    division_template = "División de Infantería"
-					    disband = yes
-					}
-					delete_units = {
-					    division_template = "División de Caballería"
-					    disband = yes
-					}
-					#Error: Unit doesn't exist
-					#delete_units = {
-					#    division_template = "División de Montaña"
-					#    disband = yes
-					#}
-					delete_units = {
-					    division_template = "Brigada de Infantería"
-					    disband = yes
-					}
-			}
+#			set_capital = { state = 176 }
+#			start_civil_war = {
+#				ruling_party = fascism
+#				ideology = communism
+#				size = 0.5
+#				capital = 41
+#				states = { 41 165 166 167 168 169 170 173 175 789 790 792 793 794 }
+#			}
+#			random_other_country = {
+#				limit = {
+#					original_tag = SPR
+#					has_government = communism
+#				}
+#				set_equipment_fraction = 0.8
+#				set_stability = 0.5
+#				set_war_support = 0.4
+#				add_ideas = SPA_no_navy 
+#				remove_ideas = SPR_military_disloyalty
+#				remove_ideas = SPR_political_violence
+#		        remove_ideas = SPR_national_strikes_1
+#				remove_ideas = SPA_carlism_1
+#				add_popularity = {
+#					ideology = democratic
+#					popularity = 0.35
+#				}
+#				    delete_units = {
+#					    division_template = "División de Infantería"
+#					    disband = yes
+#					}
+#					delete_units = {
+#					    division_template = "División de Caballería"
+#					    disband = yes
+#					}
+#					#Error: Unit doesn't exist
+#					#delete_units = {
+#					#    division_template = "División de Montaña"
+#					#    disband = yes
+#					#}
+#					delete_units = {
+#					    division_template = "Brigada de Infantería"
+#					    disband = yes
+#					}
+#			}
 			news_event = { hours = 6 id = news.63 }
 			set_global_flag = spanish_civil_war
 			set_equipment_fraction = 0.85
 			set_stability = 0.55
-			set_war_support = 0.5
-			add_ideas = SPA_spanish_civil_war_industry
+			set_war_support = 0.6
+			add_timed_idea = {
+				idea = SPA_spanish_civil_war_industry
+				days = 780
+			}
+			add_ideas = partial_economic_mobilisation
 		    remove_ideas = SPR_military_disloyalty
 		    remove_ideas = SPR_political_violence
 		    remove_ideas = SPR_national_strikes_1
@@ -131,13 +134,13 @@ country_event = {
 				ideology = fascism
 				popularity = 0.50
 			}
-			random_other_country = {
-				limit = {
-					original_tag = SPR
-					has_government = communism
-				}
-				set_cosmetic_tag = SPR_civil_war
-			}
+#			random_other_country = {
+#				limit = {
+#					original_tag = SPR
+#					has_government = communism
+#				}
+#				set_cosmetic_tag = SPR_civil_war
+#			}
 
 		}
 		custom_effect_tooltip = nationalists_chosen

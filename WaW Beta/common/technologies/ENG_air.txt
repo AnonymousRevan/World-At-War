@@ -700,7 +700,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.7
+		research_cost = 1.2
 		start_year = 1936
 		folder = {
 			name = eng_air_techs_folder

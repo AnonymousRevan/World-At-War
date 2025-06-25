@@ -12,6 +12,7 @@ state={
 
 	history={
 		owner = HOL
+		set_state_flag = atlantikwall_state
 		add_core_of = HOL
 		buildings = {
 			infrastructure = 7

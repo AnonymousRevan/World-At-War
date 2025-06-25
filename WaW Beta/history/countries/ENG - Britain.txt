@@ -169,8 +169,8 @@ if = {
 		}
 	}
 	set_autonomy = {
-		target = RAJ
-		autonomous_state = autonomy_colony
+		target = IDR
+		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
 	set_autonomy = {
@@ -188,21 +188,6 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
-	set_autonomy = {
-		target = NZL
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.2
-	}
-	set_autonomy = {
-		target = IRE
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.2
-	}
-	set_autonomy = {
-		target = MAL
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.2
-	}
     
 	else = {
 		puppet = RAJ
@@ -217,11 +202,9 @@ if = {
 
 add_to_faction = CAN
 add_to_faction = AST
-add_to_faction = NZL
+add_to_faction = IDR
 add_to_faction = SAF
 add_to_faction = FRA
-add_to_faction = IRE
-give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
 
 recruit_character = ENG_stanley_baldwin
@@ -602,21 +585,6 @@ if = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
 			fixed_ship_engine_slot = sub_ship_engine_1
 			rear_1_custom_slot = ship_torpedo_sub_1
-		}
-	}
-	# Frigates #
-	create_equipment_variant = {
-		name = "Black Swan Class"
-		type = ship_hull_frigate_1
-		name_group = ENG_DE_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_radar_slot_1 = ship_sonar_1
-			fixed_ship_radar_slot_2 = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
 	# Destroyers #

@@ -549,6 +549,7 @@ ENG_budget_decisions = {
 		modifier = {
 			production_speed_bunker_factor = 0.35
 			production_speed_coastal_bunker_factor = 0.35
+			production_speed_air_base_factor = 0.15
 			production_speed_anti_air_building_factor = 0.35
 			production_speed_radar_station_factor = 0.35
 			production_speed_infrastructure_factor = 0.25
@@ -1149,7 +1150,7 @@ ENG_budget_decisions = {
 		visible = {
 			has_completed_focus = uk_burma_focus
 			NOT = { has_global_flag = CHI_burma_3 }
-			country_exists = RAJ
+			country_exists = IDR
 			OR = {
 				has_focus_tree = china_nationalist_focus
 				has_focus_tree = china_communist_focus 
@@ -2104,7 +2105,7 @@ operations = {
 			BEL = { is_ai = yes }
 			country_exists = BEL
 			BEL = { has_capitulated = yes }
-			has_capitulated = yes
+			date > 1941.1.1
 		}
 
 		cost = 0
@@ -2149,7 +2150,7 @@ operations = {
 			LUX = { is_ai = yes }
 			country_exists = LUX
 			LUX = { has_capitulated = yes }
-			has_capitulated = yes
+			date > 1941.1.1
 		}
 
 		cost = 0
@@ -2194,7 +2195,7 @@ operations = {
 			DEN = { is_ai = yes }
 			country_exists = DEN
 			DEN = { has_capitulated = yes }
-			has_capitulated = yes
+			date > 1941.1.1
 		}
 
 		cost = 0
@@ -2239,7 +2240,7 @@ operations = {
 			NOR = { is_ai = yes }
 			country_exists = NOR
 			NOR = { has_capitulated = yes }
-			has_capitulated = yes
+			date > 1941.1.1
 		}
 
 		cost = 0
@@ -2284,7 +2285,7 @@ operations = {
 			POL = { is_ai = yes }
 			country_exists = POL
 			POL = { has_capitulated = yes }
-			has_capitulated = yes
+			date > 1941.1.1
 		}
 
 		cost = 0
@@ -2329,7 +2330,7 @@ operations = {
 			YUG = { is_ai = yes }
 			country_exists = YUG
 			YUG = { has_capitulated = yes }
-			has_capitulated = yes
+			date > 1941.1.1
 		}
 
 		cost = 0
@@ -2374,7 +2375,7 @@ operations = {
 			GRE = { is_ai = yes }
 			country_exists = GRE
 			GRE = { has_capitulated = yes }
-			has_capitulated = yes
+			date > 1941.1.1
 		}
 
 		cost = 0

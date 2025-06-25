@@ -84,19 +84,19 @@ SOV_kharkov_diesel = {
 			}
     }
 	equipment_type = { armor }
-	research_categories = { armor }
+	research_categories = { mio_cat_eq_all_medium_tank  }
 
 	initial_trait = {
 		name = medium_tank_designer
 		
-		organization_modifier = {
-			military_industrial_organization_design_team_change_cost = -1.0
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank 
 		}
 		
 		equipment_bonus = {
-					soft_attack = 0.07
-					hard_attack = 0.07
-					build_cost_ic = 0.05
+			soft_attack = 0.07
+			hard_attack = 0.07
+			build_cost_ic = 0.05
 		}
 	}
 	trait = {
@@ -105,9 +105,11 @@ SOV_kharkov_diesel = {
 		icon = GFX_generic_mio_department_icon_tank_general_engine
 		all_parents = { morozovs_genious }
 		position = { x=1 y=1 }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank 
+		}		
 		equipment_bonus = {
-			maximum_speed = 0.05
+			maximum_speed = 0.025
 			reliability = 0.05
 		}
 		production_bonus = {
@@ -126,9 +128,11 @@ SOV_kharkov_diesel = {
 		all_parents = { aluminum_block }
 
 		mutually_exclusive = { generic_mio_lighter_materials }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank 
+		}		
 		equipment_bonus = {
-			maximum_speed = 0.05
+			maximum_speed = 0.025
 		}
 	}
 
@@ -143,9 +147,11 @@ SOV_kharkov_diesel = {
 		all_parents = { aluminum_block }
 
 		mutually_exclusive = { generic_mio_engine_optimization }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank 
+		}		
 		production_bonus = {
-			production_resource_penalty_factor = -0.3
+			production_resource_penalty_factor = -0.25
 		}
 	}
 	trait = {
@@ -157,9 +163,11 @@ SOV_kharkov_diesel = {
 		relative_position_id = generic_mio_engine_optimization
 
 		any_parent = { generic_mio_engine_optimization generic_mio_lighter_materials }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank 
+		}		
 		equipment_bonus = {
-			defense = 0.05
+			defense = 0.15
 		}
 	}
 
@@ -172,10 +180,12 @@ SOV_kharkov_diesel = {
 		relative_position_id = generic_mio_improved_ventilation
 
 		all_parents = { generic_mio_improved_ventilation }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank 
+		}		
 		equipment_bonus = {
-			breakthrough = 0.05
-			maximum_speed = 0.05
+			breakthrough = 0.15
+			maximum_speed = 0.025
 		}
 	}
 
@@ -187,9 +197,12 @@ SOV_kharkov_diesel = {
 
 		position = { x=2 y=-1 }
 		relative_position_id = aluminum_block
-
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank 
+		}
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.06
+			military_industrial_organization_research_bonus = 0.15
+			military_industrial_organization_funds_gain = 0.1
 		}
 	}
 
@@ -202,9 +215,13 @@ SOV_kharkov_diesel = {
 		relative_position_id = morozovs_genious
 
 		all_parents = { morozovs_genious }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank 
+		}		
 		equipment_bonus = {
-			hardness = 0.05
+			breakthrough = 0.05
+			hardness = 0.025
+			build_cost_ic = 0.025
 		}
 	}
 	trait = {
@@ -218,12 +235,14 @@ SOV_kharkov_diesel = {
 		all_parents = { break_though }
 
 		mutually_exclusive = { armored_cav }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank 
+		}		
 		equipment_bonus = {
 			
-			soft_attack = 0.035
+			soft_attack = 0.04
 			hardness = 0.05
-			build_cost_ic =0.025
+			build_cost_ic = 0.05
 		}
 	}
 	trait = {
@@ -237,10 +256,12 @@ SOV_kharkov_diesel = {
 		all_parents = { break_though }
 
 		mutually_exclusive = { prot_fire }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank 
+		}		
 		equipment_bonus = {
 			breakthrough = 0.15
-			build_cost_ic =0.025
+			build_cost_ic = 0.03
 		}
 	}
 	trait = {
@@ -257,11 +278,13 @@ SOV_kharkov_diesel = {
 				has_completed_focus = SOV_morozov_will_show_the_way
 			}
 		}
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank 
+		}		
 		equipment_bonus = {
-			ap_attack = 0.1
-			hard_attack = 0.035
-			build_cost_ic =0.025
+			ap_attack = 0.15
+			hard_attack = 0.05
+			build_cost_ic = 0.03
 		}
 	}
 
@@ -279,12 +302,14 @@ SOV_kharkov_diesel = {
 				has_completed_focus = SOV_morozov_will_show_the_way
 			}
 		}
-
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank 
+		}
 		equipment_bonus = {
 			breakthrough = 0.05
-			defense = 0.05
+			defense = 0.25
 			reliability = 0.05
-			build_cost_ic =0.025
+			build_cost_ic = 0.03
 		}
 	}
 
@@ -297,7 +322,9 @@ SOV_kharkov_diesel = {
 		relative_position_id = destroyer
 		mutually_exclusive = { improved_crew }
 		any_parent = { advanced_internals destroyer}
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank 
+		}		
 		equipment_bonus = {
 			build_cost_ic = -0.05
 		}
@@ -312,9 +339,13 @@ SOV_kharkov_diesel = {
 		relative_position_id = advanced_internals
 		mutually_exclusive = { improved_prod }
 		any_parent = { advanced_internals destroyer}
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank 
+		}
 		equipment_bonus = {
-			soft_attack = 0.035
-			hard_attack = 0.035
+			soft_attack = 0.04
+			hard_attack = 0.04
+			build_cost_ic = 0.04
 		}
 	}
 }
@@ -329,13 +360,14 @@ SOV_plant174 = {
 			}
     }
 	equipment_type = { armor }
-	research_categories = { armor }
+	research_categories = { mio_cat_eq_all_light_tank }
 
 	initial_trait = {
 		name = light_tank_designer
 		
-
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		organization_modifier = {
 			military_industrial_organization_funds_gain = 1
 			military_industrial_organization_design_team_change_cost = -1.0
@@ -359,7 +391,9 @@ SOV_plant174 = {
 		icon = GFX_generic_mio_department_icon_tank_light_tank_line_efficiency
 
 		position = { x=4 y=0 }
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		equipment_bonus = {
 			build_cost_ic = -0.05
 		}
@@ -373,11 +407,13 @@ SOV_plant174 = {
 		relative_position_id = mass_prod
 		position = { x=1 y=1 }
 		mutually_exclusive = { standards }	
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}	
 		equipment_bonus = {
 			defense = 0.1
 			air_attack = 0.05
-			breakthrough = -0.2
+			breakthrough = -0.15
 		}
 		production_bonus = {
 			production_resource_penalty_factor = 0.1
@@ -390,7 +426,9 @@ SOV_plant174 = {
 		all_parents = { specialized }
 		relative_position_id = specialized
 		position = { x=1 y=0 }
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		equipment_bonus = {
 			soft_attack = 0.07
 		}
@@ -404,7 +442,9 @@ SOV_plant174 = {
 		relative_position_id = mass_prod
 		position = { x=-1 y=1 }
 		mutually_exclusive = { specialized }	
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}	
 		equipment_bonus = {
 			reliability = 0.075
 		}
@@ -416,7 +456,9 @@ SOV_plant174 = {
 		all_parents = { standards }
 		relative_position_id = standards
 		position = { x=-1 y=0 }
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}	
 		equipment_bonus = {
 			build_cost_ic = -0.05
 		}
@@ -428,9 +470,10 @@ SOV_plant174 = {
 
 		position = { x=0 y=2 }
 		relative_position_id = mass_prod
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }
 		any_parent = { standards specialized }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}		
 		production_bonus = {
 		    production_capacity_factor  = -0.05
 			production_efficiency_gain_factor = 0.15
@@ -444,7 +487,9 @@ SOV_plant174 = {
 		relative_position_id = retool
 		position = { x=1 y=1 }
 		mutually_exclusive = { astrov }		
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		equipment_bonus = {
 			maximum_speed = 0.05
 			reliability = 0.05
@@ -461,7 +506,9 @@ SOV_plant174 = {
 		all_parents = { ginzburg }
 		relative_position_id = ginzburg
 		position = { x=1 y=0 }
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}	
 		equipment_bonus = {
 			hard_attack = 0.07
 			hardness = 0.1
@@ -477,7 +524,9 @@ SOV_plant174 = {
 		all_parents = { mt }
 		relative_position_id = mt
 		position = { x=1 y=0 }
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		equipment_bonus = {
 			maximum_speed = 0.15
 			reliability = -0.15
@@ -491,7 +540,9 @@ SOV_plant174 = {
 		all_parents = { ae mt }
 		relative_position_id = mt
 		position = { x=0 y=1 }
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}	
 		equipment_bonus = {
 			soft_attack = 0.035
 			hard_attack = 0.035
@@ -506,7 +557,9 @@ SOV_plant174 = {
 		relative_position_id = retool
 		position = { x=-1 y=1 }
 		mutually_exclusive = { ginzburg }
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}	
 		equipment_bonus = {
 			build_cost_ic = -0.05
 			reliability = -0.05
@@ -522,10 +575,12 @@ SOV_plant174 = {
 		all_parents = { astrov }
 		relative_position_id = retool
 		position = { x=-2 y=1 }
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}	
 		equipment_bonus = {
 			hardness = -0.05
-			armor_value = -0.4
+			armor_value = -0.20
 		}
 		production_bonus = {
 			production_capacity_factor = 0.1
@@ -538,12 +593,15 @@ SOV_plant174 = {
 		all_parents = { astrov }
 		relative_position_id = astrov
 		position = { x=-2 y=0 }
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}	
 		equipment_bonus = {
 			maximum_speed = -0.05
 		}
 		production_bonus = {
-			production_resource_penalty_factor = -0.2
+			production_resource_need_factor = -0.20
+			production_resource_penalty_factor = -0.20
 		}
 	}
 	trait = {
@@ -553,7 +611,9 @@ SOV_plant174 = {
 		all_parents = { t_e l_t }
 		relative_position_id = l_t
 		position = { x=0 y=1 }
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}	
 		equipment_bonus = {
 			maximum_speed = 0.05
 			reliability = 0.05
@@ -579,19 +639,22 @@ SOV_stalingrad_tractor = {
 		}
 	}
 	equipment_type = { armor }
-	research_categories = { armor }
+	research_categories = { mio_cat_eq_all_medium_tank }
 
 
 	initial_trait = {
 		name = converted_tractor_factory
-
-		organization_modifier = {
-			military_industrial_organization_design_team_change_cost = -1.0
+		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
 		}
 		
 		equipment_bonus = {
-			build_cost_ic = -0.05
-			reliability = -0.05
+			build_cost_ic = -0.075
+			reliability = -0.075
+		}
+		production_bonus = {
+			production_resource_need_factor = 0.10
 		}
 	}
 	trait = {
@@ -600,10 +663,12 @@ SOV_stalingrad_tractor = {
 		icon = GFX_generic_mio_department_icon_facilities
 
 		position = { x=2 y=0 }
-		
-		equipment_bonus = {
-			reliability = 0.05
-		}
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
+        production_bonus = {
+            production_cost_factor = -0.05
+        }
 	}
 	trait = {
 		token = import_e
@@ -611,9 +676,11 @@ SOV_stalingrad_tractor = {
 		icon = GFX_generic_mio_department_icon_facilities
 
 		position = { x=6 y=0 }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
-			reliability = 0.05
+			build_cost_ic = -0.025
 		}
 	}
 	trait = {
@@ -622,9 +689,11 @@ SOV_stalingrad_tractor = {
 		icon = GFX_generic_mio_department_icon_tank_general_armor
 
 		position = { x=4 y=0 }
-
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}
 		equipment_bonus = {
-			build_cost_ic = -0.025
+			armor_value = 0.05
 		}
 	}
 	trait = {
@@ -633,7 +702,10 @@ SOV_stalingrad_tractor = {
 		icon = GFX_generic_mio_department_icon_tank_general_line_efficiency
 
 		position = { x=4 y=1 }
-		all_parents = { tractor_lines import_e armor_r}				
+		all_parents = { tractor_lines import_e armor_r}	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
 			build_cost_ic = -0.025
 		}
@@ -644,12 +716,13 @@ SOV_stalingrad_tractor = {
 		icon = GFX_generic_mio_trait_icon_efficiency_cap
 		mutually_exclusive = { simp_e }
 		position = { x=5 y=2 }
-		any_parent = { decentralize_c}				
+		any_parent = { decentralize_c}	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		production_bonus = {
-			production_capacity_factor = 0.05
-	#production_capacity_factor
-	#production_efficiency_cap_factor
-	#production_efficiency_gain_factor
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.10
 		}
 	}
 	trait = {
@@ -658,10 +731,16 @@ SOV_stalingrad_tractor = {
 		icon = GFX_generic_mio_trait_icon_build_cost_ic
 		mutually_exclusive = { rapid_e }
 		position = { x=3 y=2 }
-		any_parent = { decentralize_c}				
+		any_parent = { decentralize_c}	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}	
+		equipment_bonus = {
+			reliability = -0.05
+		}	
 		production_bonus = {
-			production_cost_factor = -0.05
-			production_efficiency_gain_factor = -0.15
+			production_cost_factor = -0.075
+			production_efficiency_gain_factor = -0.10
 		}
 	}
 
@@ -669,11 +748,13 @@ SOV_stalingrad_tractor = {
 		token = existing_
 		name = "Modify Existing Designs"
 		icon = GFX_generic_mio_trait_icon_conversion_speed
-
 		position = { x=6 y=2 }
-		any_parent = { rapid_e}				
+		any_parent = { rapid_e}
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.15
+			military_industrial_organization_research_bonus = 0.20
 		}
 		production_bonus = {
 			production_efficiency_gain_factor = 0.15
@@ -685,11 +766,13 @@ SOV_stalingrad_tractor = {
 		icon = GFX_generic_mio_trait_icon_efficiency_gain
 
 		position = { x=2 y=2 }
-		any_parent = { simp_e}				
+		any_parent = { simp_e}	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		production_bonus = {
-			production_efficiency_cap_factor = 0.05
-			production_capacity_factor = -0.05
-			production_efficiency_gain_factor = -0.15
+			production_capacity_factor = 0.05
+			production_efficiency_gain_factor = 0.10
 		}
 	}
 	trait = {
@@ -698,7 +781,13 @@ SOV_stalingrad_tractor = {
 		icon = GFX_generic_mio_trait_icon_unique
 		mutually_exclusive = { three_shifts }
 		position = { x=3 y=3 }
-		any_parent = { decentralize_c rapid_e}				
+		any_parent = { decentralize_c rapid_e}
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}
+		equipment_bonus = {
+			reliability = -0.05
+		}		
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
@@ -709,7 +798,10 @@ SOV_stalingrad_tractor = {
 		icon = GFX_generic_mio_trait_icon_night_penalty
 		mutually_exclusive = { auto_tools }
 		position = { x=5 y=3 }
-		any_parent = { decentralize_c rapid_e}				
+		any_parent = { decentralize_c rapid_e}	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		production_bonus = {
 			production_efficiency_gain_factor = 0.15
 		}
@@ -720,10 +812,15 @@ SOV_stalingrad_tractor = {
 		icon = GFX_generic_mio_trait_icon_efficiency_gain
 		special_trait_background = yes
 		position = { x=4 y=4 }
-		any_parent = { three_shifts auto_tools }				
+		any_parent = { three_shifts auto_tools }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		production_bonus = {
 			production_capacity_factor = 0.05
+			production_resource_need_factor = 0.10			
 		}
+
 	}
 }
 SOV_chelyabinsk_tractor_plant = {
@@ -741,25 +838,33 @@ SOV_chelyabinsk_tractor_plant = {
 			has_war_with = GER
 		}
 	}
-	equipment_type = { armor }
-	research_categories = { armor }
+	equipment_type = {
+		armor
+	}
+	research_categories = { 
+		mio_cat_eq_all_light_tank
+		mio_cat_eq_all_medium_tank
+	}
 
 
 	initial_trait = {
 		name = tankograd
 
 		organization_modifier = {
-			military_industrial_organization_design_team_change_cost = -1.0
+			military_industrial_organization_design_team_change_cost = -0.5
 		}
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
-			soft_attack = 0.035
-			hard_attack = 0.035
+			soft_attack = 0.06
+			hard_attack = 0.06
+			build_cost_ic = 0.05
 		}
 	}
 	trait = {
 		token = reorg
-		name = "Reorganize Evacuated Factories"
+		name = "Reorganize Tank Manufacturing"
 		icon = GFX_generic_mio_trait_icon_conversion_speed
 		available = {
 			SOV = {
@@ -767,9 +872,13 @@ SOV_chelyabinsk_tractor_plant = {
 			}
 		}
 		position = { x=4 y=0 }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
-			build_cost_ic = -0.06
+			soft_attack = 0.04
+			hard_attack = 0.04
+			build_cost_ic = -0.05
 		}
 	}
 	trait = {
@@ -778,10 +887,14 @@ SOV_chelyabinsk_tractor_plant = {
 		icon = GFX_generic_mio_department_icon_facilities
 
 		position = { x=5 y=1 }
-		any_parent = {reorg }			
-		equipment_bonus = {
-			build_cost_ic = -0.06
+		any_parent = {reorg }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
 		}
+        production_bonus = {
+			production_capacity_factor = 0.05
+			production_efficiency_cap_factor = 0.025
+        }
 	}
 	trait = {
 		token = max_l
@@ -789,9 +902,12 @@ SOV_chelyabinsk_tractor_plant = {
 		icon = GFX_generic_mio_trait_icon_production_capacity
 
 		position = { x=3 y=1 }
-		any_parent = {reorg}			
+		any_parent = {reorg}	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
-			build_cost_ic = -0.06
+			build_cost_ic = -0.05
 		}
 	}
 	trait = {
@@ -801,11 +917,14 @@ SOV_chelyabinsk_tractor_plant = {
 
 		position = { x=5 y=2 }
 		mutually_exclusive = { reasonable_q }
-		all_parents = {max_l massive_e}			
+		all_parents = {max_l massive_e}	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
-			soft_attack = -0.035
-			hard_attack = -0.035
-			build_cost_ic = -0.11
+			soft_attack = -0.05
+			hard_attack = -0.05
+			build_cost_ic = -0.10
 			reliability = -0.1
 		}
 	}
@@ -816,9 +935,14 @@ SOV_chelyabinsk_tractor_plant = {
 
 		position = { x=3 y=2 }
 		mutually_exclusive = { drop_n }
-		all_parents = {max_l massive_e}		
+		all_parents = {max_l massive_e}	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
-			reliability = 0.12
+			soft_attack = 0.03
+			hard_attack = 0.03			
+			reliability = 0.10
 		}
 	}
 	trait = {
@@ -827,9 +951,13 @@ SOV_chelyabinsk_tractor_plant = {
 		icon = GFX_generic_mio_department_icon_tank_heavy_tank_technology
 		special_trait_background = yes
 		position = { x=4 y=3 }
-		any_parent = {reasonable_q drop_n }			
+		any_parent = {reasonable_q drop_n }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
-			build_cost_ic = -0.06
+			breakthrough = 0.10
+			build_cost_ic = -0.05
 		}
 	}
 
@@ -845,12 +973,18 @@ SOV_ordzhonikidze = {
 			}
     }
 	equipment_type = { armor }
-	research_categories = { armor }
+	research_categories = { 
+		mio_cat_eq_all_medium_tank
+		mio_cat_eq_all_heavy_tank 
+	}
 
 
 	initial_trait = {
 		name = heavy_machinery_producer
-
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+			mio_cat_eq_all_heavy_tank 
+		}
 		organization_modifier = {
 			military_industrial_organization_design_team_change_cost = -1.0
 		}
@@ -867,7 +1001,10 @@ SOV_ordzhonikidze = {
 		icon = GFX_generic_mio_department_icon_tank_general_armor
 
 		position = { x=4 y=0 }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+			mio_cat_eq_all_heavy_tank 
+		}		
 		equipment_bonus = {
 			hardness = 0.05
 		}
@@ -879,7 +1016,11 @@ SOV_ordzhonikidze = {
 
 		position = { x=3 y=1 }
 		mutually_exclusive = { final_ass }
-		any_parent = { heavy_components }		
+		any_parent = { heavy_components }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+			mio_cat_eq_all_heavy_tank 
+		}		
 		equipment_bonus = {
 			soft_attack =-0.015
 			hard_attack = -0.015
@@ -893,7 +1034,11 @@ SOV_ordzhonikidze = {
 
 		position = { x=5 y=1 }
 		mutually_exclusive = { streamlined_comp }
-		any_parent = { heavy_components  }		
+		any_parent = { heavy_components  }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+			mio_cat_eq_all_heavy_tank 
+		}		
 		equipment_bonus = {
 			reliability = -0.05
 			build_cost_ic = -0.05
@@ -906,7 +1051,10 @@ SOV_ordzhonikidze = {
 		icon = GFX_generic_mio_trait_icon_production_capacity
 
 		position = { x=0 y=0 }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+			mio_cat_eq_all_heavy_tank 
+		}		
 		equipment_bonus = {
 			reliability = 0.05
 		}
@@ -917,7 +1065,11 @@ SOV_ordzhonikidze = {
 		icon = GFX_generic_mio_department_icon_tank_general_conversion
 
 		position = { x=1 y=1 }
-		any_parent = { quality_tooling } 	
+		any_parent = { quality_tooling } 
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+			mio_cat_eq_all_heavy_tank 
+		}		
 		production_bonus = {
 			production_efficiency_gain_factor = 0.1
 			production_resource_need_factor = -0.1
@@ -930,7 +1082,11 @@ SOV_ordzhonikidze = {
 		icon = GFX_generic_mio_trait_icon_reliability
 
 		position = { x=0 y=1 }
-		any_parent = { quality_tooling  }			
+		any_parent = { quality_tooling  }	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+			mio_cat_eq_all_heavy_tank 
+		}		
 		production_bonus = {
 			production_capacity_factor = 0.1
 		}
@@ -943,7 +1099,11 @@ SOV_ordzhonikidze = {
 		position = { x=1 y=1 }
 		relative_position_id = final_ass
 		mutually_exclusive = { tank_guns }
-		any_parent = { final_ass streamlined_comp }		
+		any_parent = { final_ass streamlined_comp }	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+			mio_cat_eq_all_heavy_tank 
+		}		
 		equipment_bonus = {
 			hardness = 0.05
 		}
@@ -956,7 +1116,11 @@ SOV_ordzhonikidze = {
 		position = { x=1 y=1 }
 		relative_position_id = hull_production_experts
 		mutually_exclusive = { cemented }
-		any_parent = { hull_production_experts }		
+		any_parent = { hull_production_experts }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+			mio_cat_eq_all_heavy_tank 
+		}		
 		equipment_bonus = {
 			hardness = -0.15
 			armor_value = 0.4
@@ -971,9 +1135,13 @@ SOV_ordzhonikidze = {
 		position = { x=-1 y=1 }
 		relative_position_id = hull_production_experts
 		mutually_exclusive = { overhardened }
-		any_parent = { hull_production_experts  }		
+		any_parent = { hull_production_experts  }	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+			mio_cat_eq_all_heavy_tank 
+		}		
 		equipment_bonus = {
-			armor_value = 0.8
+			armor_value = 0.6
 			build_cost_ic = 0.05
 		}
 	}
@@ -985,7 +1153,11 @@ SOV_ordzhonikidze = {
 		position = { x=-3 y=1 }
 		relative_position_id = final_ass
 		mutually_exclusive = { hull_production_experts }
-		any_parent = { final_ass streamlined_comp }		
+		any_parent = { final_ass streamlined_comp }	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+			mio_cat_eq_all_heavy_tank 
+		}		
 		equipment_bonus = {
 			soft_attack = 0.035
 			hard_attack = 0.035
@@ -1003,6 +1175,10 @@ SOV_ordzhonikidze = {
 		position = { x=-1 y=1 }
 		relative_position_id = tank_guns
 		any_parent = { tank_guns  }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+			mio_cat_eq_all_heavy_tank 
+		}		
 		equipment_bonus = {
 			soft_attack =0.05
 			build_cost_ic = -0.02
@@ -1016,6 +1192,10 @@ SOV_ordzhonikidze = {
 		position = { x=1 y=1 }
 		relative_position_id = tank_guns
 		any_parent = { tank_guns  }	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+			mio_cat_eq_all_heavy_tank 
+		}
 		equipment_bonus = {
 			air_attack = 0.1
 		}
@@ -1073,13 +1253,13 @@ SOV_mytishchy_machine_building_plant_organization = {
 		#	military_industrial_organization_design_team_change_cost = -1.0
 		#}
 
-		#production_bonus = {
-		#	production_conversion_speed_factor = 0.15
-		#	production_cost_factor = -0.05
-		#}
-		#equipment_bonus = {
-		#	reliability = 0.05
-		#}
+		production_bonus = {
+			production_conversion_speed_factor = 0.15
+			production_cost_factor = -0.05
+		}
+		equipment_bonus = {
+			reliability = 0.05
+		}
 	}
 
 	trait = {
@@ -1089,7 +1269,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 
 		position = { x=1 y=0 }
 
-		limit_to_equipment_type = { armor }
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank_support }
 
 		equipment_bonus = {
 			reliability = 0.1
@@ -1108,20 +1288,20 @@ SOV_mytishchy_machine_building_plant_organization = {
 
 		any_parent = { generic_mio_trait_enemy_tank_refitting }
 
-		limit_to_equipment_type = { armor }
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank_support }
 
-		#equipment_bonus = {
-		#	hardness = -0.06
-		#}
+		equipment_bonus = {
+			hardness = -0.05
+		}
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.1
+			production_efficiency_gain_factor = 0.50
 		}
 	}
 
 	trait = {
 		token = generic_mio_trait_high_volume_smelter
-		name = generic_mio_trait_high_volume_smelter
+		name = "Crack German Steel at Any Cost"
 		icon = GFX_generic_mio_department_icon_tank_general_production
 		
 		position = { x=0 y=1 }
@@ -1129,10 +1309,13 @@ SOV_mytishchy_machine_building_plant_organization = {
 
 		any_parent = { generic_mio_trait_efficient_scrap_recycling }
 
-		limit_to_equipment_type = { armor }
-
-		production_bonus = {
-			production_efficiency_gain_factor = 0.1
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank_support }
+		
+		equipment_bonus = {
+			hard_attack = 0.10
+			soft_attack = 0.10
+			ap_attack = 0.25
+			hardness = -0.05
 		}
 	}
 
@@ -1146,7 +1329,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 
 		any_parent = { generic_mio_trait_enemy_tank_refitting }
 
-		limit_to_equipment_type = { armor }
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank_support }
 
 		equipment_bonus = {
 			maximum_speed = 0.1
@@ -1155,7 +1338,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 
 	trait = {
 		token = generic_mio_trait_heavy_duty_machine_tools
-		name = generic_mio_trait_heavy_duty_machine_tools
+		name = "Refit Anything to Fight"
 		icon = GFX_generic_mio_department_icon_tank_general_production
 
 		position = { x=1 y=1 }
@@ -1163,7 +1346,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 
 		all_parents = { generic_mio_trait_high_powered_engine_production generic_mio_trait_high_volume_smelter }
 
-		limit_to_equipment_type = { armor }
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank_support }
 
 		#equipment_bonus = {
 		#	maximum_speed = 0.1
@@ -1173,6 +1356,8 @@ SOV_mytishchy_machine_building_plant_organization = {
 			production_resource_need_factor = 0.2
 		}
 		equipment_bonus = {
+			hard_attack = 0.05
+			air_attack = 0.10
 			reliability = 0.1
 		}
 	}
@@ -1187,9 +1372,10 @@ SOV_mytishchy_machine_building_plant_organization = {
 
 		any_parent = { generic_mio_trait_heavy_duty_machine_tools }
 
-		limit_to_equipment_type = { armor }
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank_support }
 
 		equipment_bonus = {
+			build_cost_ic = -0.10
 			supply_consumption = -0.1
 			fuel_consumption = -0.15
 		}
@@ -1239,27 +1425,27 @@ SOV_mytishchy_machine_building_plant_organization = {
 		
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_standardized_secondary_armament
-
+		limit_to_equipment_type = { armor }
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.08
+			military_industrial_organization_research_bonus = 0.10
 		}
 	}
 
 
-#	trait = {
-#		token = generic_mio_trait_24h_rotation_shifts
-#		name = generic_mio_trait_24h_rotation_shifts
-#		icon = GFX_generic_mio_trait_icon_production_capacity
-#
-#		position = { x=0 y=2 }
-#		relative_position_id = generic_mio_trait_plant_tech_exchange
-#	
-#		any_parent = { generic_mio_trait_plant_tech_exchange }
-#
-	#	production_bonus = {
-	#		production_capacity_factor = 0.06
-	#	}
-	#}
+	trait = {
+		token = generic_mio_trait_24h_rotation_shifts
+		name = generic_mio_trait_24h_rotation_shifts
+		icon = GFX_generic_mio_trait_icon_production_capacity
+
+		position = { x=0 y=2 }
+		relative_position_id = generic_mio_trait_plant_tech_exchange
+	
+		any_parent = { generic_mio_trait_plant_tech_exchange }
+
+		production_bonus = {
+			production_capacity_factor = 0.06
+		}
+	}
 
 	trait = {
 		token = generic_mio_trait_dual_plant_main_armament_production
@@ -1295,7 +1481,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 
 		equipment_bonus = {
 			armor_value = 0.5
-			build_cost_ic = 0.1
+			build_cost_ic = 0.05
 		}
 	}
 
@@ -1311,13 +1497,12 @@ SOV_mytishchy_machine_building_plant_organization = {
 
 		all_parents = { generic_mio_trait_plant_tech_exchange generic_mio_trait_long_distance_escort }
 		production_bonus = {
-			production_capacity_factor = 0.15
+			production_capacity_factor = 0.20
 		}
 	}
 }
 ###okmo in kirov factory
 SOV_kirov_organization = {
-	include = heavy_tank_designer
 	icon = GFX_idea_SOV_kirov
     name = "Kirov Plant"	
 	allowed = {	
@@ -1326,16 +1511,12 @@ SOV_kirov_organization = {
 			original_tag = MON
 			}
 	}
-	equipment_type = { armor }
+	equipment_type = { mio_cat_eq_all_heavy_tank }
 	research_categories = { armor }
 
 
 	initial_trait = {
 		name = heavy_tank_designer
-
-		organization_modifier = {
-			military_industrial_organization_design_team_change_cost = -1.0
-		}
 		
 		equipment_bonus = {
 			soft_attack =0.05
@@ -1684,7 +1865,7 @@ SOV_sevastopol_marine_plant_organization = {
 ########  ##       ##     ## ## ## ## ######    ######  
 ##        ##       ######### ##  #### ##             ## 
 ##        ##       ##     ## ##   ### ##       ##    ## 
-##        ######## ##     ## ##    ## ########  ######  
+##        ######## ##     ## ##    ## ########  ######  planes
 
 SOV_mig_design_bureau_organization = {
 	include = generic_light_aircraft_organization
@@ -1695,6 +1876,24 @@ SOV_mig_design_bureau_organization = {
 			original_tag = SOV
 			original_tag = MON
 			}
+	}
+	
+	add_trait = { 
+		token = sov_design_and_agility
+		name = "Improved Fighter Design"
+		icon = GFX_generic_mio_trait_icon_unique
+		special_trait_background = yes
+
+		position = { x=7 y=0 }
+
+		available = {
+			SOV = {
+				has_completed_focus = SOV_expand_air_corps_tactical_school
+			}
+		}
+		equipment_bonus = {
+			build_cost_ic = -0.075	
+		}
 	}
 }
 SOV_ilyushin_design_bureau_organization = {
@@ -1758,9 +1957,25 @@ SOV_tupolev_design_bureau_organization = {
 		text = mio_header_operational_department
 		x = 7
 	}
+	add_trait = { 
+		token = sov_design_and_agility
+		name = "Improved Fighter Design"
+		icon = GFX_generic_mio_trait_icon_unique
+		special_trait_background = yes
 
+		position = { x=0 y=1 }
+
+
+		available = {
+			SOV = {
+				has_completed_focus = SOV_expand_air_corps_tactical_school
+			}
+		}
+		equipment_bonus = {
+			build_cost_ic = -0.05	
+		}
+	}
 	
-
 }
 
 
@@ -1777,7 +1992,18 @@ SOV_tupolev_design_bureau_organization = {
 ##     ## ##     ##    ##    ######## ##     ## #### ######## ######## 
 
 
+SOV_tula_arms_plant_organization = {
+	include = generic_infantry_equipment_organization	
+	icon = GFX_idea_tula_arms_plant
+	
+	allowed = {
+		OR = {
+			original_tag = SOV
+			original_tag = MON
+		}
+	}
 
+}
 SOV_grabin_design_bureau_organization = {
 	include = generic_artillery_organization
 	icon = GFX_idea_grabin_design_bureau
@@ -1788,11 +2014,33 @@ SOV_grabin_design_bureau_organization = {
 			original_tag = MON
 		}
 	}
+	add_trait = { 
+		token = sovlightartbreak
+		name = "Direct Fire"
+		icon = GFX_generic_mio_department_icon_tank_general_spg
+		position = { x=0 y=0 }
+
+		available = {
+			SOV = {
+				has_completed_focus = SOV_shock_and_awe
+			}
+		}
+		
+		limit_to_equipment_type = { 
+			artillery_equipment
+		}
+		equipment_bonus = {
+			breakthrough = 0.30
+		}
+		production_bonus = {
+			production_resource_need_factor = 0.10
+		}		
+	}
 }
-SOV_tula_arms_plant_organization = {
-	include = generic_infantry_equipment_organization	
-	icon = GFX_idea_tula_arms_plant
-	
+SOV_grabin_design_heavy_artillery = {
+	include = generic_heavy_artillery_organization
+	icon = GFX_idea_grabin_design_bureau
+	name = "Grabin Design Heavy Industry"
 	allowed = {	
 		OR = {
 			original_tag = SOV
@@ -1800,8 +2048,100 @@ SOV_tula_arms_plant_organization = {
 		}
 	}
 
-}
+	add_trait = { 
+		token = sovheavyguns
+		name = "Bigger is Better"
+		icon = GFX_generic_mio_department_icon_tank_general_spg
+		position = { x=0 y=0 }
 
+		available = {
+			SOV = {
+				has_completed_focus = SOV_heavy_assault_guns
+			}
+		}
+		
+		limit_to_equipment_type = { 
+			heavy_artillery_equipment
+		}
+		equipment_bonus = {
+			hard_attack = 1.50
+			ap_attack = 1.00
+			breakthrough = 0.05
+			build_cost_ic = 0.15
+		}
+		production_bonus = {
+			production_efficiency_gain_factor = -0.10
+			production_resource_need_factor = 0.15
+		}		
+	}
+}
+SOV_grabin_design_anti_tank_air = {
+	include = generic_anti_tank_air_organization
+	icon = GFX_idea_grabin_design_bureau	
+	name = "Grabin Design Support Weaponry"
+	allowed = {	
+		OR = {
+			original_tag = SOV
+			original_tag = MON
+		}
+	}
+}
+SOV_grabin_design_motor_rocket_arty = {
+	include = generic_motorized_rocket_artillery_organization
+	icon = GFX_idea_grabin_design_bureau	
+	name = "Grabin Rocket Weaponry"
+	allowed = {	
+		OR = {
+			original_tag = SOV
+			original_tag = MON
+		}
+	}
+	
+	add_trait = { 
+		token = sovkatyusha
+		name = "Katyusha Rocket"
+		icon = GFX_generic_mio_department_icon_tank_general_at
+		position = { x=8 y=0 }
+
+		available = {
+			SOV = {
+				has_completed_focus = SOV_the_katyusha
+			}
+		}
+		
+		limit_to_equipment_type = { 
+			motorized_rocket_equipment
+		}
+		equipment_bonus = {
+			soft_attack = 0.05
+			breakthrough = 0.05
+		}		
+	}
+	
+	add_trait = { 
+		token = sovkatyushaarmor
+		name = "Armored Katyusha"
+		icon = GFX_generic_mio_department_icon_tank_general_at
+		position = { x=8 y=1 }
+		any_parent = { sovkatyusha }
+		available = {
+			SOV = {
+				has_completed_focus = SOV_the_katyusha
+			}
+		}
+		
+		limit_to_equipment_type = { 
+			motorized_rocket_equipment
+		}
+		equipment_bonus = {
+			defense = 0.05
+			breakthrough = 0.05
+			hardness = 0.50
+			armor_value = 0.50
+			build_cost_ic = 0.10
+		}		
+	}
+}
 SOV_gaz_organization = {
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_gaz

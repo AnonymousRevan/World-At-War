@@ -116,21 +116,25 @@ spriteTypes = {
 		name = "GFX_small_box1"
 		textureFile = "gfx/interface/small_box1.dds"
 	}	
-
+	
 	spriteType = {
-		name = "GFX_stateview_bg_2"
-		textureFile = "gfx/interface/stateview_bg2.tga"
+		name = "GFX_stateview_bg"
+		textureFile = "gfx/interface/stateview/stateview_bg.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
+	
 	spriteType = {
-		name = "GFX_stateview_bg_3"
-		textureFile = "gfx/interface/stateview_bg3.tga"
+		name = "GFX_ww_stateview_bg"
+		textureFile = "gfx/interface/stateview/ww_stateview_bg.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
-	SpriteType = {
-		name = "GFX_province_modifiers_header"
-		texturefile = "gfx/interface/province_modifiers_header.dds"
-	}	
+#	#### I want this to be the new view soon
+#	spriteType = {
+#		name = "GFX_stateview_bg_2"
+#		textureFile = "gfx/interface/stateview/ww_stateview_bg_2.dds"
+#		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+#	}
+	
 	spriteType = {
 		name = "GFX_stateview_resource_transp_bg"
 		textureFile = "gfx/interface/stateview_resource_transp_bg.dds"
@@ -146,6 +150,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_building_standing_entry_stateview"
 		textureFile = "gfx/interface/stateview/building_standing_entry_stateview.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
+		name = "GFX_ww_building_standing_entry_stateview"
+		textureFile = "gfx/interface/stateview/ww_building_standing_entry_stateview.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
+		name = "GFX_province_landmark_bg"
+		textureFile = "gfx/interface/stateview/province_landmark_bg.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 	
@@ -170,12 +186,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_buildings_strip"
 		textureFile = "gfx/interface/buildings/building_icon_strip.dds"
-		noOfFrames = 18
+		noOfFrames = 29
 	}
 	
 	spriteType = {
 		name = "GFX_buildings_railway_gun"
 		textureFile = "gfx/interface/buildings/building_railway_gun.dds"
+	}
+
+	spriteType = {
+		name = "GFX_building_fort_icon"
+		textureFile = "gfx/interface/buildings/building_fort_icon.dds"
 	}
 
 	spriteType = {
@@ -205,18 +226,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/building_level_bar.dds"
 		noOfFrames = 4
 	}
-
-	spriteType = {
-		name = "GFX_occupation_policy"
-		textureFile = "gfx/interface/occupation_policy.dds"
-		noOfFrames = 4
-	}
-	spriteType = {
-		name = "GFX_occupation_policy_selected"
-		textureFile = "gfx/interface/occupation_policy_selected.dds"
-		noOfFrames = 4
-	}
-
 
 	# TERRAIN		
 	spriteType = {
@@ -473,11 +482,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/terrains/terrain_shallow_sea_night.dds"
 	}
 
-	spriteType = {
-		name = "GFX_terrain_water_shallow_sea_rain"
-		textureFile = "gfx/interface/terrains/terrain_shallow_sea_rain.dds"
-	}
-
 	# Archipelago	
 	spriteType = {
 		name = "GFX_terrain_water_fjords_day"
@@ -542,6 +546,16 @@ spriteTypes = {
 		effectFile = "gfx/FX/progress_startend.lua"
 	}
 
+	progressbartype = {
+		name = "GFX_province_landmark_damage_bar"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/stateview/province_landmark_damage_bar.dds"
+		textureFile2 = "gfx/interface/stateview/province_landmark_damage_bar_bg.dds"
+		size = { x = 5 y = 27 }
+		effectFile = "gfx/FX/progress_startend.lua"
+	}
+
 	spriteType = {
 		name = "GFX_nuke_button"
 		textureFile = "gfx/interface/stateview_nuke_button.dds"
@@ -550,6 +564,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_modifiers_sabotaged_resource"
 		textureFile = "gfx/interface/occupation/sabotaged_resource.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_scorched_earth_state"
+		texturefile = "gfx/interface/stateview/destroy_railway.dds"
 	}
 	
 	### STATE MODIFIERS ###
@@ -654,55 +673,215 @@ spriteTypes = {
 		name = "GFX_modifiers_SOV_capital_of_the_tsars"
 		textureFile = "gfx/interface/state_modifiers/modifiers_SOV_capital_of_the_tsars.dds"
 	}
-	SpriteType = {
-		name = "GFX_generic_text_bg_50"
-		texturefile = "gfx/interface/generic_text_bg_50.dds"
+	spriteType = {
+		name = "GFX_modifiers_ETH_state_decentralization"
+		textureFile = "gfx/interface/state_modifiers/modifiers_ETH_state_decentralization.dds"
 	}
-	###
-#	corneredTileSpriteType = {
-#		name = "GFX_tiled_header_scimpro"
-#		size= { x=45 y=22 }
-#		textureFile = "gfx//interface//tiles//tiled_header_scimpro.dds"
-#		borderSize = { x=8 y=8 }
-#		tilingCenter = yes
-#		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-#	}
-	progressbartype = {
-		name = "GFX_damage_bar_large"
-		color = { 1.0 1.0 1.0 }
-		colortwo = { 1.0 1.0 1.0 }
-		textureFile1 = "gfx/interface/building_damage_bar_large.dds"
-		textureFile2 = "gfx/interface/building_damage_bar_large_bg.dds"
-		size = { x = 55 y = 9 }
-		effectFile = "gfx/FX/progress_startend.lua"
+	spriteType = {
+		name = "GFX_modifiers_ETH_state_development"
+		textureFile = "gfx/interface/state_modifiers/modifiers_ETH_state_development.dds"
 	}
-	progressbartype = {
-		name = "GFX_damage_bar_small"
-		color = { 1.0 1.0 1.0 }
-		colortwo = { 1.0 1.0 1.0 }
-		textureFile1 = "gfx/interface/building_damage_bar_small.dds"
-		textureFile2 = "gfx/interface/building_damage_bar_small_bg.dds"
-		size = { x = 23 y = 4 }
-		effectFile = "gfx/FX/progress_startend.lua"
-	}	
-	progressbartype = {
-		name = "GFX_damage_bar"
-		color = { 1.0 1.0 1.0 }
-		colortwo = { 1.0 1.0 1.0 }
-		textureFile1 = "gfx/interface/building_damage_bar.dds"
-		textureFile2 = "gfx/interface/building_damage_bar_bg.dds"
-		size = { x = 38 y = 5 }
-		effectFile = "gfx/FX/progress_startend.lua"
+	spriteType = {
+		name = "GFX_modifiers_demilitarize_zone"
+		textureFile = "gfx/interface/state_modifiers/modifiers_demilitarize_zone.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_ETH_arranged_territorial_expansion"
+		textureFile = "gfx/interface/state_modifiers/modifiers_ETH_arranged_territorial_expansion.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_generic_fascist_corporatism"
+		textureFile = "gfx/interface/state_modifiers/modifiers_generic_fascist_corporatism.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_generic_railways"
+		textureFile = "gfx/interface/state_modifiers/modifiers_generic_railways.dds"
+	}
+		spriteType = {
+		name = "GFX_modifiers_generic_military_industry"
+		textureFile = "gfx/interface/state_modifiers/modifiers_generic_military_industry.dds"
+	}
+		spriteType = {
+		name = "GFX_modifiers_SWI_attack_from_the_mountains"
+		textureFile = "gfx/interface/state_modifiers/modifiers_SWI_attack_from_the_mountains.dds"
+	}
+		spriteType = {
+		name = "GFX_modifiers_generic_defense"
+		textureFile = "gfx/interface/state_modifiers/modifiers_generic_defense.dds"
+	}
+		spriteType = {
+		name = "GFX_modifiers_SWI_spiritual_resistance"
+		textureFile = "gfx/interface/state_modifiers/modifiers_SWI_spiritual_resistance.dds"
+	}
+		spriteType = {
+		name = "GFX_modifiers_generic_supply"
+		textureFile = "gfx/interface/state_modifiers/modifiers_generic_supply.dds"
+	}
+		spriteType = {
+		name = "GFX_modifiers_ITA_mafia_on_the_rise"
+		textureFile = "gfx/interface/state_modifiers/modifiers_ITA_mafia_on_the_rise.dds"
+	}
+		spriteType = {
+		name = "GFX_modifiers_ITA_established_mafia"
+		textureFile = "gfx/interface/state_modifiers/modifiers_ITA_established_mafia.dds"
 	}
 
+
+		#####  ##    ##  #####
+		  #   #  #  #  #   #
+		  #   ####  ####   #
+		  #   #  #  #  #   #
+		  #   #  #  #  #   #
+
+	### SWE ####
 	spriteType = {
-		name = "GFX_nuke_button"
-		textureFile = "gfx/interface/stateview_nuke_button.dds"
+		name = "GFX_modifiers_SWE_hygienic_housing"
+		textureFile = "gfx/interface/state_modifiers/modifiers_SWE_hygienic_housing.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_SWE_sami_trackers"
+		textureFile = "gfx/interface/state_modifiers/modifiers_SWE_sami_trackers.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_SWE_per_albin_bus"
+		textureFile = "gfx/interface/state_modifiers/modifiers_SWE_per_albin_bus.dds"
 	}
 
+	### FIN ####
 	spriteType = {
-		name = "GFX_modifiers_sabotaged_resource"
-		textureFile = "gfx/interface/occupation/sabotaged_resource.dds"
+		name = "GFX_modifiers_FIN_motti_tactics_modifier"
+		textureFile = "gfx/interface/state_modifiers/modifiers_FIN_motti_tactics_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_FIN_weapon_caches"
+		textureFile = "gfx/interface/state_modifiers/modifiers_FIN_weapon_caches.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_FIN_confederated_finno_russian_republics"
+		textureFile = "gfx/interface/state_modifiers/modifiers_FIN_confederated_finno_russian_republics.dds"
+	}
+
+	### NOR ####
+	spriteType = {
+		name = "GFX_modifiers_NOR_monarchism"
+		textureFile = "gfx/interface/state_modifiers/modifiers_NOR_monarchism.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_NOR_fascism"
+		textureFile = "gfx/interface/state_modifiers/modifiers_NOR_fascism.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_generic_resistance"
+		textureFile = "gfx/interface/state_modifiers/modifiers_generic_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_generic_construction"
+		textureFile = "gfx/interface/state_modifiers/modifiers_generic_construction.dds"
+	}
+
+
+
+
+
+ ####### #######    #    
+    #    #     #   # #   
+    #    #     #  #   #  
+    #    #     # #     # 
+    #    #     # ####### 
+    #    #     # #     # 
+    #    ####### #     # 
+                         
+
+
+
+
+	###########
+	### BRA ###
+	###########
+
+
+	spriteType = {
+		name = "GFX_modifiers_BRA_cangaco_state"
+		textureFile = "gfx/interface/state_modifiers/modifiers_BRA_cangaco_state.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_BRA_neglected_state"
+		textureFile = "gfx/interface/state_modifiers/modifiers_BRA_neglected_state.dds"
+	}
+
+
+	###########
+	### CHL ###
+	###########
+
+
+	spriteType = {
+		name = "GFX_modifiers_generic_immigration_promoted"
+		textureFile = "gfx/interface/state_modifiers/modifiers_generic_immigration_promoted.dds"
+	}
+
+
+
+ #     #     #     # 
+ #  #  #     #  #  # 
+ #  #  #     #  #  # 
+ #  #  #     #  #  # 
+ #  #  # ### #  #  # 
+ #  #  # ### #  #  # 
+  ## ##  ###  ## ##  
+              
+
+### BELGIUM ###
+
+	spriteType = {
+		name = "GFX_modifiers_COG_state_loyal_to_free_congo"
+		textureFile = "gfx/interface/state_modifiers/modifiers_COG_state_loyal_to_free_congo.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_COG_state_loyal_to_belgium"
+		textureFile = "gfx/interface/state_modifiers/modifiers_COG_state_loyal_to_belgium.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_COG_rwandan_separatism"
+		textureFile = "gfx/interface/state_modifiers/modifiers_COG_rwandan_separatism.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_COG_katanga_separatism"
+		textureFile = "gfx/interface/state_modifiers/modifiers_COG_katanga_separatism.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_COG_kasai_separatism"
+		textureFile = "gfx/interface/state_modifiers/modifiers_COG_kasai_separatism.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_COG_burundian_separatism"
+		textureFile = "gfx/interface/state_modifiers/modifiers_COG_burundian_separatism.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_BEL_eben_emael_raided"
+		textureFile = "gfx/interface/state_modifiers/modifiers_BEL_eben_emael_raided.dds"
+	}
+
+### GERMANY ###
+
+	spriteType = {
+		name = "GFX_modifiers_GER_blitzkrieg"
+		textureFile = "gfx/interface/state_modifiers/modifiers_GER_blitzkrieg.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_GER_lokot_autonomy"
+		textureFile = "gfx/interface/state_modifiers/modifiers_GER_lokot_autonomy.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_GER_socialist_movement"
+		textureFile = "gfx/interface/state_modifiers/modifiers_GER_socialist_movement.dds"
+	}
+
+### Misc ###
+
+	spriteType = {
+		name = "GFX_modifiers_radiation"
+		textureFile = "gfx/interface/state_modifiers/modifiers_radiation.dds"
 	}
 
 }

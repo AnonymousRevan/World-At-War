@@ -3634,7 +3634,7 @@ early_ship_hull_carrier = {
 
 		#set at gamestart
 		allow = {
-			always = no
+			always = yes
 		}
 	}
 	coastal_defense_ships = {
@@ -3648,7 +3648,7 @@ early_ship_hull_carrier = {
 
 		#set at gamestart
 		allow = {
-			always = no
+			always = yes
 		}
 	}
 	cruiser_submarines = {

@@ -61,7 +61,7 @@ on_actions = {
 				country_event = { id = usa.9 days = 3225 } #1944.11.01, election
 				country_event = { id = usa.14 days = 3372 } #1945.03.29, death of Roosevelt
 			}
-			RAJ = {
+			IDR = {
 				country_event = { id = tfv_raj.210 days = 2191 } #1942.01.01, Quit India
 			}
 			ENG = {
@@ -91,8 +91,8 @@ on_actions = {
 					give_resource_rights = { receiver = HOL state = 668 }
 				}
 				MAL = {
-					give_resource_rights = { receiver = RAJ state = 336 }
-					give_resource_rights = { receiver = RAJ state = 333 }
+					give_resource_rights = { receiver = IDR state = 336 }
+					give_resource_rights = { receiver = IDR state = 333 }
 				}
 				
 			}
@@ -582,7 +582,7 @@ on_actions = {
 				CAN = { country_event = { id = britain.38 days = 7 } }
 				AST = { country_event = { id = britain.38 days = 7 } }
 				NZL = { country_event = { id = britain.38 days = 7 } }
-				RAJ = { country_event = { id = britain.38 days = 7 } }		
+				IDR = { country_event = { id = britain.38 days = 7 } }		
 				FRA = {
 					add_timed_idea = {
 						idea = FRA_saarland
@@ -756,6 +756,12 @@ on_actions = {
 						days = 180 
 					}
 				}
+				ENG = {
+					add_timed_idea = {
+						idea = ENG_phoney 
+						days = 180 
+					}
+				}
 			}
 			if = {
 				limit = {
@@ -774,13 +780,16 @@ on_actions = {
 					}
 					remove_ideas = FRA_phoney
 				}
+				ENG = {
+					remove_ideas = ENG_phoney
+				}
 				hidden_effect = {
 					play_song = "Boum (Charles Trenet)"
 				}
 			}
 			if = {
 				limit = {
-					ROOT = { original_tag = RAJ }
+					ROOT = { original_tag = IDR }
 					FROM = {
 						OR = {
 							original_tag = JAP
@@ -1265,7 +1274,7 @@ on_actions = {
 					diplomatic_relation = { country = FRA relation = non_aggression_pact }
 					diplomatic_relation = { country = SAF relation = non_aggression_pact }
 					diplomatic_relation = { country = CAN relation = non_aggression_pact }
-					diplomatic_relation = { country = RAJ relation = non_aggression_pact }
+					diplomatic_relation = { country = IDR relation = non_aggression_pact }
 					diplomatic_relation = { country = AST relation = non_aggression_pact }
 					diplomatic_relation = { country = NZL relation = non_aggression_pact }
 					diplomatic_relation = { country = GER relation = non_aggression_pact }					
@@ -1335,7 +1344,7 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					ROOT = { original_tag = RAJ }
+					ROOT = { original_tag = IDR }
 				}
 				USA = { remove_ideas = raj_capitulated }
 				USA =  { country_event = { id = usa.68 } }

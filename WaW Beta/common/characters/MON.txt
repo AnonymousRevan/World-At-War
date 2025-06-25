@@ -25,11 +25,11 @@ characters={
 		}
 		field_marshal={
 			traits={ inflexible_strategist logistics_wizard }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
 			legacy_id=-1
 		}
 	}
@@ -45,11 +45,11 @@ characters={
 		}
 		corps_commander={
 			traits={ infantry_leader skilled_staffer }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
 			legacy_id=-1
 		}
 	}
@@ -65,11 +65,11 @@ characters={
 		}
 		corps_commander={
 			traits={ skilled_staffer panzer_leader }
-			skill=4
+			skill=3
 			attack_skill=4
-			defense_skill=4
+			defense_skill=1
 			planning_skill=4
-			logistics_skill=4
+			logistics_skill=1
 			legacy_id=-1
 		}
 	}

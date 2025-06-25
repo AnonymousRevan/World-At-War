@@ -19,17 +19,18 @@ ITA_ansaldo = {
     }
 	equipment_type = { armor }
 	research_categories = { 
-		armor 
+		mio_cat_eq_all_medium_tank
 	}
 
 
 
 	initial_trait = {
 		name = industrial_conglomerate
-
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}
 		organization_modifier = {
-			military_industrial_organization_research_bonus = -1.0
-			military_industrial_organization_design_team_change_cost = -1.0
+			military_industrial_organization_design_team_change_cost = 0.5
 		}
 		
 		
@@ -45,10 +46,12 @@ ITA_ansaldo = {
 		icon = GFX_generic_mio_trait_icon_production_capacity
 
 		position = { x=5 y=0 }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
-			maximum_speed = 0.1
-			build_cost_ic = -0.02
+			maximum_speed = 0.05
+			build_cost_ic = -0.025
 		}
 	}
 	trait = {
@@ -58,7 +61,9 @@ ITA_ansaldo = {
 
 		position = { x=3 y=1 }
 		any_parent = { heavy_components }
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
 			soft_attack = 0.03
 			hard_attack = 0.03
@@ -74,7 +79,9 @@ ITA_ansaldo = {
 
 		position = { x=7 y=1 }
 		any_parent = { heavy_components  }		
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
 	
 		}
@@ -90,7 +97,10 @@ ITA_ansaldo = {
 
 		position = { x=0 y=1 }
 		relative_position_id = final_ass
-		any_parent = { final_ass  }		
+		any_parent = { final_ass  }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
 			reliability = 0.05
 		}
@@ -103,13 +113,16 @@ ITA_ansaldo = {
 		token = overhardened
 		name = "Quality Plates"
 		icon = GFX_generic_mio_trait_icon_hardness
-
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}
 		position = { x=1 y=1 }
 		relative_position_id = hull_production_experts
 		mutually_exclusive = { cemented }
 		any_parent = { hull_production_experts }		
 		equipment_bonus = {
-			defense = 0.05
+			armor_value = 0.07
+			hardness = 0.025
 		}
 	}
 	trait = {
@@ -120,10 +133,13 @@ ITA_ansaldo = {
 		position = { x=-1 y=1 }
 		relative_position_id = hull_production_experts
 		mutually_exclusive = { overhardened }
-		any_parent = { hull_production_experts  }		
+		any_parent = { hull_production_experts  }	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
-			maximum_speed = 0.05
-			
+			defense = 0.10
+			breakthrough = 0.05
 		}
 	}
 	trait = {
@@ -134,7 +150,9 @@ ITA_ansaldo = {
 		position = { x=-4 y=1 }
 		relative_position_id = final_ass
 		any_parent = { streamlined_comp }		
-		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
 			soft_attack = 0.035
 			hard_attack = 0.035
@@ -152,7 +170,6 @@ ITA_ansaldo = {
 		relative_position_id = tank_guns
 		any_parent = { tank_guns  }
 		limit_to_equipment_type = { 
-			mio_cat_eq_all_spg
 			mio_cat_eq_all_assault_guns
 
 		}
@@ -185,7 +202,9 @@ ITA_ansaldo = {
 		icon = GFX_generic_mio_department_icon_tank_heavy_tank_line_efficiency
 		any_parent = { heavy_components }	
 		position = { x=1 y=1 }
-			
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}			
 		equipment_bonus = {
 			reliability = 0.05
 			soft_attack = 0.02
@@ -198,7 +217,10 @@ ITA_ansaldo = {
 		icon = GFX_generic_mio_trait_icon_unique
 			
 		position = { x=2 y=2 }
-		any_parent = { quality_tooling } 	
+		any_parent = { quality_tooling } 
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
 			hard_attack = 0.06
 			soft_attack = 0.035
@@ -212,9 +234,12 @@ ITA_ansaldo = {
 		icon = GFX_generic_mio_trait_icon_efficiency_gain
 			
 		position = { x=0 y=2 }
-		any_parent = { quality_tooling  }			
+		any_parent = { quality_tooling  }	
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_medium_tank
+		}		
 		equipment_bonus = {
-			armor_value = 0.25
+			armor_value = 0.15
 		}
 		production_bonus = {
 			production_capacity_factor = 0.04
@@ -232,39 +257,58 @@ ITA_fiat = {
 			tag = ITA
     }
 	equipment_type = { armor }
-	research_categories = { armor }
+	research_categories = { mio_cat_eq_all_light_tank }
 
 
 	initial_trait = {
-		name = infantry_support_tank_designer
-
+		name = quality_light_tank_designer
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-			military_industrial_organization_design_team_change_cost = -1.0
+			military_industrial_organization_research_bonus = 0.10
+			military_industrial_organization_design_team_change_cost = -0.20
 		}
 		
 		equipment_bonus = {
-			soft_attack = 0.035
-			hard_attack = 0.035
+			soft_attack = 0.03
+			hard_attack = 0.03
 			reliability = -0.1
 			
 		}
 	}
 	
 	trait = {
-		token = generic_mio_trait_production_division
-		name = "Improve Worker Output"
-		icon = GFX_generic_mio_department_icon_tank_general_line_efficiency
+		token = ita_traditional
+		name = "Traditional Armor"
+		icon = GFX_generic_mio_department_icon_tank_light_tank_conversion
 		
-		position = { x=4 y=0 }
-		
-
-		
+		position = { x=3 y=0 }
+		mutually_exclusive = { ita_go_bold }		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}		
 		equipment_bonus = {
-			build_cost_ic = -0.03
+			build_cost_ic = -0.05
 		}
 	}
-
+	trait = {
+		token = ita_go_bold
+		name = "Remove Funding Limits"
+		icon = GFX_generic_mio_department_icon_tank_light_tank_line_efficiency
+		
+		position = { x=5 y=0 }
+		mutually_exclusive = { ita_traditional }		
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}	
+		equipment_bonus = {
+			soft_attack = 0.02
+			hard_attack = 0.02
+			armor_value = 0.10
+			build_cost_ic = 0.05
+		}
+	}
 
 
 
@@ -273,18 +317,21 @@ ITA_fiat = {
 		name = "Compact Powerplants"
 		icon = GFX_generic_mio_department_icon_tank_general_engine
 		
-		position = { x=-1 y=1 }
-		relative_position_id = generic_mio_trait_production_division
+		position = { x=4 y=1 }
 
-		any_parent = { generic_mio_trait_production_division }
 
+		any_parent = { ita_traditional ita_go_bold }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		equipment_bonus = {
-			soft_attack = 0.035
+			soft_attack = 0.03
 			defense = 0.05
 		}
 
 		production_bonus = {
-			production_cost_factor = 0.03
+			production_cost_factor = 0.025
+			production_resource_need_factor = -0.10
 		}
 	}
 	trait = {
@@ -292,11 +339,12 @@ ITA_fiat = {
 		name = generic_mio_trait_gun_improvements
 		icon = GFX_generic_mio_trait_icon_ap_attack
 		
-		position = { x=-2 y=1 }
-		relative_position_id = generic_mio_trait_production_division
+		position = { x=4 y=2 }
 
-		any_parent = { generic_mio_trait_production_division}
-		
+		any_parent = { generic_mio_trait_standardized_turrets }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}		
 
 		equipment_bonus = {
 			hard_attack = 0.035
@@ -308,14 +356,16 @@ ITA_fiat = {
 		name = "Improve Armor Plate Rolling"
 		icon = GFX_generic_mio_trait_icon_armor_value
 		
-		position = { x=-3 y=1 }
-		relative_position_id = generic_mio_trait_production_division
+		position = { x=5 y=1 }
 
-		any_parent = { generic_mio_trait_production_division }
-
+		any_parent = { ita_go_bold }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		equipment_bonus = {
-			armor_value = 0.1
+			armor_value = 0.15
 			hardness = 0.05
+			build_cost_ic = 0.03
 		}
 	}
 	trait = {
@@ -325,22 +375,21 @@ ITA_fiat = {
 		
 		position = { x=0 y=1 }
 		relative_position_id = armor_r
-		available = {
 
-			}
 		any_parent = { armor_r }
-
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		equipment_bonus = {
-			armor_value = 0.1
+			armor_value = 0.15
 			hardness = 0.05
-			build_cost_ic = -0.03
+			build_cost_ic = 0.03
 		}
 
 		production_bonus = {
 				
 		}
 	}
-
 
 
 	trait = {
@@ -351,13 +400,16 @@ ITA_fiat = {
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_improved_protection
 	
-		any_parent = { generic_mio_trait_standardized_turrets }
-		
-		mutually_exclusive = { generic_mio_trait_improved_protection }
+		any_parent = { armor_r }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}		
 		
 		equipment_bonus = {
 			maximum_speed = 0.05
-			breakthrough = 0.05
+			defense = 0.10
+			breakthrough = 0.15
+			build_cost_ic = 0.03
 		}
 	}
 
@@ -370,12 +422,37 @@ ITA_fiat = {
 		relative_position_id =terni 
 		
 		any_parent = {armor_r }
-		
-		mutually_exclusive= { generic_mio_trait_speed_improvements }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}		
 
 		equipment_bonus = {
 			armor_value = 0.15
 			defense = 0.05
+			build_cost_ic = 0.03
+		}
+	}
+	trait = {
+		token = ita_high_quality_light
+		name = "M13/40 Hull Improvements"
+		icon = GFX_generic_mio_department_icon_tank_light_tank_quality
+		
+		position = { x=7 y=3 }
+		
+		all_parents = { generic_mio_trait_improved_protection generic_mio_trait_speed_improvements }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}		
+
+		equipment_bonus = {
+			soft_attack = 0.15
+			hard_attack = 0.03
+			ap_attack = 0.20
+			fuel_consumption = 0.10
+			build_cost_ic = 0.075
+		}
+		production_bonus = {
+			production_resource_need_factor = 0.25
 		}
 	}
 	trait = {
@@ -383,11 +460,12 @@ ITA_fiat = {
 		name = "Bolted Construction"
 		icon = GFX_generic_mio_department_icon_tank_general_technology
 		
-		position = { x=2 y=1 }
-		relative_position_id = generic_mio_trait_production_division
+		position = { x=3 y=1 }
 		
-		any_parent = { generic_mio_trait_production_division }
-
+		any_parent = { ita_traditional }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}	
 		production_bonus = {
 			production_efficiency_gain_factor = 0.15
 		}
@@ -397,289 +475,71 @@ ITA_fiat = {
 		name = generic_mio_trait_light_tank_improvements
 		icon = GFX_generic_mio_department_icon_tank_light_tank_weapons
 
-		position = { x=-1 y=1 }
-		relative_position_id = generic_mio_trait_modular_construction		
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }
-		any_parent = { generic_mio_trait_modular_construction }
-		equipment_bonus = {
-			soft_attack = 0.02
-			hard_attack = 0.02
-			armor_value = 0.05
-		}
-	}
-
-	trait = {
-		token = generic_mio_trait_medium_tank_improvements
-		name = generic_mio_trait_medium_tank_improvements
-		icon = GFX_generic_mio_department_icon_tank_medium_tank_weapons
-
-		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
-		any_parent = { generic_mio_trait_modular_construction }
-		position = { x=1 y=0 }
-		relative_position_id = generic_mio_trait_light_tank_improvements
-		
-		equipment_bonus = {
-			soft_attack = 0.02
-			hard_attack = 0.02
-			armor_value = 0.05
-		}
-
-
-	}
-	trait = {
-		token = generic_mio_trait_heavy_tank_improvements
-		name = generic_mio_trait_heavy_tank_improvements
-		icon = GFX_generic_mio_department_icon_tank_heavy_tank_weapons
-
-		position = { x=1 y=0 }
-		relative_position_id = generic_mio_trait_medium_tank_improvements
+		position = { x=2 y=2 }
 		any_parent = { generic_mio_trait_modular_construction }		
-		limit_to_equipment_type = { mio_cat_eq_all_heavy_tank }
-
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		equipment_bonus = {
 			soft_attack = 0.02
 			hard_attack = 0.02
 			armor_value = 0.05
 		}
 	}
+
 	trait = {
 		token = generic_mio_trait_light_tank_specialization
-		name = generic_mio_trait_light_tank_specialization
+		name = "L6/40 Chassis"
 		icon = GFX_generic_mio_department_icon_tank_light_tank_production
 		
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_light_tank_improvements
 		
 		any_parent = { generic_mio_trait_light_tank_improvements }
-		
-		mutually_exclusive= { generic_mio_trait_medium_tank_specialization generic_mio_trait_heavy_tank_specialization }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 
-		limit_to_equipment_type = { mio_cat_eq_all_light_tank }
-
-		production_bonus = {
-			production_cost_factor = -0.05
+		equipment_bonus = {
+			soft_attack = 0.02
+			hard_attack = 0.02
+			build_cost_ic = -0.025
 		}
 	}
 	trait = {
-		token = generic_mio_trait_medium_tank_specialization
-		name = generic_mio_trait_medium_tank_specialization
-		icon = GFX_generic_mio_department_icon_tank_medium_tank_production
-		
-		position = { x=0 y=1 }
-		relative_position_id = generic_mio_trait_medium_tank_improvements
-
-		any_parent = { generic_mio_trait_medium_tank_improvements }
-		
-		mutually_exclusive= { generic_mio_trait_light_tank_specialization generic_mio_trait_heavy_tank_specialization }
-		
-		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
-
-		production_bonus = {
-			production_cost_factor = -0.05
-		}
-	}
-
-	trait = {
-		token = generic_mio_trait_heavy_tank_specialization
-		name = generic_mio_trait_heavy_tank_specialization
-		icon = GFX_generic_mio_department_icon_tank_heavy_tank_production
-		
-		position = { x=0 y=1 }
-		relative_position_id = generic_mio_trait_heavy_tank_improvements
-
-		any_parent = { generic_mio_trait_heavy_tank_improvements }
-		
-		mutually_exclusive= { generic_mio_trait_light_tank_specialization generic_mio_trait_medium_tank_specialization }
-		
-		limit_to_equipment_type = { mio_cat_eq_all_heavy_tank }
-
-		production_bonus = {
-			production_cost_factor = -0.05
-		}
-	}
-}
-ITA_terni = {
-	icon = GFX_idea_terni
-	name = "Terni"
-	allowed = {	
-		tag = ITA 
-	}
-	available = {
-		ITA = {
-			has_completed_focus = ITA_Innovative_theories
-		}
-			
-	}
-	equipment_type = { armor }
-	research_categories = { armor }
-
-	initial_trait = {
-		name = affordable_tank_manufacturer
-		
-		organization_modifier = {
-			military_industrial_organization_funds_gain = 0.5
-			military_industrial_organization_design_team_change_cost = -1.0
-		}
-		equipment_bonus = {
-			
-		}
-	}
-	add_trait = { 
-		token = maximize_c
-		name = "Retrain Steel Workers"
-		icon = GFX_generic_mio_department_icon_facilities
-		position = { x=4 y=0 }  
-		
-		equipment_bonus = {
-			build_cost_ic = -0.03
-		}
-	}
-	add_trait = { 
-		token = SS
-		name = "Strict Size Limits"
-		icon = GFX_generic_mio_trait_icon_weight
- 		position = { x=4 y=1 }  
-		any_parent = { maximize_c }
-		equipment_bonus = {
-			hard_attack = -0.02
-			soft_attack = -0.02
-			build_cost_ic = -0.07
-		}  
-		
-	}
-	add_trait = { 
-		token = v_i
-		name = "Supply Chain Optimization"
-		icon = GFX_generic_mio_department_icon_tank_general_materials
-		position = { x=4 y=2 }  
-		any_parent = { SS }
-		production_bonus = {
-			production_resource_penalty_factor = 0.05
-			production_resource_need_factor = -0.05
-		}
-	}
-	add_trait = { 
-		token = u_a
-		name = "Utilize Automobile Components"
-		icon = GFX_generic_mio_department_icon_tank_general_engine
-		any_parent = { maximize_c }
-		position = { x=2 y=1 }  
-		equipment_bonus = {
-			reliability = 0.05
-			maximum_speed = -0.05
-		}  
-	}
-	add_trait = { 
-		token = m_p
-		name = "Minimize Powertrain Requirements"
-		icon = GFX_generic_mio_trait_icon_build_cost_ic
-		any_parent = { u_a }
-		relative_position_id = u_a
-				mutually_exclusive = { m_a }
-		position = { x=1 y=1 }  
-		equipment_bonus = {
-			reliability = 0.15
-			maximum_speed = -0.05
-		}  
-	}
-	add_trait = { 
-		token = ba_t
-		name = "Barebones Transmission"
-		icon = GFX_generic_mio_trait_icon_resources
-		any_parent = { m_p m_a}
-		relative_position_id = m_p
-		position = { x=1 y=1 }  
-		equipment_bonus = {
-			build_cost_ic = -0.03
-			breakthrough = -0.05
-		}  
-		production_bonus = {
-			production_resource_need_factor = -0.1
-
-		}
-	}
-	add_trait = { 
-		token = out_g
-		name = "Outsource Gun Production"
-		icon = GFX_generic_mio_trait_icon_efficiency_gain
-		any_parent = { m_p m_a }
-		relative_position_id = m_p
-		mutually_exclusive = { re_w }
-		position = { x=-1 y=1 }  
-		 
-		production_bonus = {
-			production_capacity_factor= 0.05
-			production_resource_need_factor = 0.1
-		}  
-	}
-	add_trait = { 
-		token = m_a
-		name = "Minimize Armament Requirements"
-		icon = GFX_generic_mio_trait_icon_build_cost_ic
-		any_parent = { u_a }
-		relative_position_id = u_a
-				mutually_exclusive = { m_p }
-		position = { x=-1 y=1 }  
-		equipment_bonus = {
-			hard_attack = -0.02
-			soft_attack = -0.02
-			ap_attack = -0.1
-			build_cost_ic = -0.1
-		}  
-		
-	}
-	add_trait = { 
-		token = re_w
-		name = "Refurbish Existing Weaponry"
+		token = ita_light_tank_factory
+		name = "Specialized Factories"
 		icon = GFX_generic_mio_trait_icon_efficiency_cap
-		any_parent = { m_a m_p}
-		relative_position_id = m_a
-		mutually_exclusive = { out_g }
-		position = { x=0 y=1 }  
-		equipment_bonus = {
-			build_cost_ic = -0.1
-			hard_attack = -0.035
-			soft_attack = -0.035
-		}  
-	}
-
-	add_trait = { 
-		token = I_p
-		name = "Increase Production Numbers"
-		icon = GFX_generic_mio_trait_icon_production_capacity
-		any_parent = { maximize_c }
-				mutually_exclusive = { en_r }
-		relative_position_id = maximize_c
-		position = { x=1 y=1 }  
 		
+		position = { x=1 y=2 }
+		
+		any_parent = { generic_mio_trait_modular_construction }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}	
 		production_bonus = {
 			production_efficiency_cap_factor = 0.04
-			production_efficiency_gain_factor = -0.3
+			production_efficiency_gain_factor = 0.10
 		}
 	}
-	add_trait = { 
-		token = en_r
-		name = "Ensure reliability of mechanical components"
+	trait = {
+		token = top_it_off
+		name = "Extra Repair Supples"
 		icon = GFX_generic_mio_trait_icon_reliability
-		any_parent = { maximize_c }
-		relative_position_id = maximize_c
-				mutually_exclusive = { I_p }
-		position = { x=3 y=1 } 
+		
+		position = { x=1 y=3 }
+		
+		any_parent = { ita_light_tank_factory }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_light_tank
+		}
 		equipment_bonus = {
-			breakthrough = 0.05
-			reliability = 0.1
-		}  
-	}
-	add_trait = { 
-		token = sa_t
-		name = "Shared Turret Designs"
-		icon = GFX_generic_mio_trait_icon_lg_attack
-		any_parent = { I_p en_r }
-		relative_position_id = I_p
-		position = { x=1 y=1 }  
-		equipment_bonus = {
-			hardness = 0.05
-		}  
+			reliability = 0.15
+			fuel_consumption = -0.10
+		}		
+		production_bonus = {
+			production_resource_need_factor = -0.15
+		}
 	}
 
 }
@@ -809,8 +669,9 @@ ITA_cantieri_navali_tosi_organization = {
 	icon = GFX_idea_ITA_cantieri_navali_tosi
 	
 	allowed = {	
+		OR = {
 			tag = ITA 
-
+		}
 	}
 }
 
@@ -991,38 +852,100 @@ ITA_beretta_organization = {
 	icon = GFX_idea_beretta
 
 	allowed = {	
-			tag = ITA 
+		original_tag = ITA
 
 	}
 }
-ITA_armaguerra = {
-	include = advanced_inf_eq_manufacturer
-	icon = GFX_idea_armaguerra
-	name = "SA Revelli Armiguerra"
-
+ITA_breda_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_breda
 	allowed = {	
-			tag = ITA 
-
+		original_tag = ITA
 	}
-	available = {
-		ITA = {
-			has_completed_focus = ITA_6_Million_Bayonets
+	add_trait = { 
+		token = italightart
+		name = "Cannone da 75/32 Grande Boom 37"
+		icon = GFX_generic_mio_department_icon_tank_general_spg
+		position = { x=0 y=1 }
+
+		available = {
+			ITA = {
+				has_completed_focus = ITA_Artillery_Modernisation
+			}
 		}
+		limit_to_equipment_type = { 
+			artillery_equipment
+		}
+		equipment_bonus = {
+			soft_attack = 0.05
+			defense = 0.15
+			breakthrough = 0.15
+		}	
+	}
+	
+	add_trait = { 
+		token = itapackat
+		name = "Cannone da 47/32"
+		icon = GFX_generic_mio_department_icon_tank_general_spg
+		position = { x=8 y=1 }
+
+		available = {
+			ITA = {
+				has_completed_focus = ITA_Artillery_Modernisation
+			}
+		}
+		mutually_exclusive = { itapackmountain }
+		limit_to_equipment_type = { 
+			pack_artillery_equipment
+		}
+		equipment_bonus = {
+			soft_attack = 0.05
+			hard_attack = 17.00
+			ap_attack = 4.00
+		}	
+	}
+	
+	add_trait = { 
+		token = itapackmountain
+		name = "Cannone da 65/17"
+		icon = GFX_generic_mio_trait_icon_defense
+		position = { x=9 y=1 }
+
+		available = {
+			ITA = {
+				has_completed_focus = ITA_Alpini
+			}
+		}
+		mutually_exclusive = { itapackat }
+		limit_to_equipment_type = { 
+			pack_artillery_equipment
+		}
+		equipment_bonus = {
+			soft_attack = 0.3
+			breakthrough = 0.50
+		}	
+	}
+}
+ITA_armaguerra_heavy_artillery = {
+	include = generic_heavy_artillery_organization
+	icon = GFX_idea_armaguerra
+	name = "Armaguerra Heavy Industry"
+	allowed = {	
+		original_tag = ITA
+	}
+}
+ITA_breda_anti_tank_air = {
+	include = generic_anti_tank_air_organization
+	icon = GFX_idea_breda	
+	name = "Breda Support Weaponry"
+	allowed = {	
+		original_tag = ITA
 	}
 }
 ITA_lancia_organization = {
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_lancia
 	
-	allowed = {	
-			tag = ITA 
-
-	}
-}
-
-ITA_breda_organization = {
-	include = generic_artillery_organization
-	icon = GFX_idea_breda
 	allowed = {	
 			tag = ITA 
 
