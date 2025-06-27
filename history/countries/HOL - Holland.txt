@@ -29,6 +29,7 @@ if = {
 		HOL_weak_government
 		HOL_aloof_neutralit
 		HOL_neutral
+		refinery_idea
 	}
 }
 

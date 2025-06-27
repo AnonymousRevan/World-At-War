@@ -12568,6 +12568,9 @@ news_event = { #INS Capitulation
 			BRA = {    
 				remove_ideas = refinery_idea
 			}
+			HOL = {    
+				remove_ideas = refinery_idea
+			}
 			RAJ = {    
 				remove_ideas = refinery_idea
 			}
