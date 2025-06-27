@@ -617,6 +617,7 @@ ideas = {
 			visible = {
 			    OR = {
 				tag = FRA
+				tag = HOL
 				}
 			}
 
