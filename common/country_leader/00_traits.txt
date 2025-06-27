@@ -1,4 +1,4 @@
-x@tier1 = 15
+@tier1 = 15
 @tier2 = 10
 @tier3 = 5
 
@@ -6,7 +6,7 @@ x@tier1 = 15
 @xp2 = 0.00
 @xp3 = 0.00
 
-@tier1_cp_cap_increase = 10x
+@tier1_cp_cap_increase = 10
 @tier2_cp_cap_increase = 20
 @tier3_cp_cap_increase = 30
 
