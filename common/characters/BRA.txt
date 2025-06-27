@@ -1262,7 +1262,7 @@ characters={
 				}
 			}
 			advisor={
-			    cost = 5
+			    cost = 150
 				slot = political_advisor
 				idea_token = BRA_afranio_de_mello_franco
 				allowed  = {
@@ -1275,12 +1275,9 @@ characters={
 					}
 				}
 				traits  = {
-					BRA_nobel_peace_prize_nominee
+					backroom_backstabber_2
 				}
 
-				on_add = {
-					BRA = { set_rule = { can_send_volunteers = yes } }
-				}
 			}	
 			name=BRA_afranio_de_mello_franco
 		}

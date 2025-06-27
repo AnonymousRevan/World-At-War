@@ -1,4 +1,4 @@
-@tier1 = 15
+x@tier1 = 15
 @tier2 = 10
 @tier3 = 5
 
@@ -6,7 +6,7 @@
 @xp2 = 0.00
 @xp3 = 0.00
 
-@tier1_cp_cap_increase = 10
+@tier1_cp_cap_increase = 10x
 @tier2_cp_cap_increase = 20
 @tier3_cp_cap_increase = 30
 
@@ -6862,8 +6862,8 @@ leader_traits = {
 		random = no
 		sprite = 10 
 		#power_balance_daily = 0.003
-		production_factory_max_efficiency_factor = 0.1
-		production_lack_of_resource_penalty_factor = -0.3
+		production_factory_max_efficiency_factor = 0.05
+		production_lack_of_resource_penalty_factor = -0.15
 	}
 	ICE_german_consul = {
 		random = no
