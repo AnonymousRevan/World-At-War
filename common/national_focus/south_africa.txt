@@ -363,7 +363,6 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_completed_focus = SAF_open_engineering_schools }
 		}
 
 		cancel_if_invalid = no
@@ -615,7 +614,6 @@ focus_tree = {
 		available = {
 			AND = {
 				has_idea = SAF_jan_hendrik_hofmeyr
-				NOT = { has_completed_focus = SAF_native_representation_act }
                 NOT = { has_idea = SAF_king_edward }				
 			}	  
 		}
@@ -1093,7 +1091,6 @@ focus_tree = {
 		id = SAF_native_representation_act
 		icon = GFX_focus_usa_voter_registration_act
 		prerequisite = { focus = SAF_support_the_policy_of_appeasement }
-		mutually_exclusive = { focus = SAF_open_engineering_schools }
 		x = 8
 		y = 1
 		relative_position_id = SAF_support_the_policy_of_appeasement
@@ -1110,7 +1107,6 @@ focus_tree = {
 		} 
 
 		available = {
-			NOT = { has_completed_focus = SAF_hofmeyrs_reforms }
 		}
 		
 		completion_reward = {
