@@ -187,7 +187,6 @@ focus_tree = {
 		}
 		
 		bypass = {
-			has_completed_focus = SAF_free_elections
 		}
 
 
@@ -197,7 +196,6 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = SAF_history_of_segregation_3
-			add_ideas = SAF_rural_volunteers
 		}
 	}
 	
@@ -647,7 +645,6 @@ focus_tree = {
 		}
 		
 		bypass = {
-			has_completed_focus = SAF_relax_worker_restrictions
 		}
 
 		cancel_if_invalid = yes
@@ -655,7 +652,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {				
-			remove_ideas = SAF_worker_restrictions
+			add_ideas = SAF_rural_volunteers
 		}
 	}
 	
@@ -1412,7 +1409,6 @@ focus_tree = {
 		}
 		
 		bypass = {
-			has_completed_focus = SAF_repeal_job_reservation_act
 		}
 
 		cancel_if_invalid = yes
