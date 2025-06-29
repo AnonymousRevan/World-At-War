@@ -97,8 +97,8 @@ focus_tree = {
 			}
 			ENG = { add_ideas = ENG_foreign_indian_labour_force }
 			add_political_power = 75 
-		    RAJ = { complete_national_focus = RAJ_bengal_dockyards }
-		    RAJ = { complete_national_focus = RAJ_import_british_design }
+		    IDR = { complete_national_focus = RAJ_bengal_dockyards }
+		    IDR = { complete_national_focus = RAJ_import_british_design }
 		}
 	}
 	

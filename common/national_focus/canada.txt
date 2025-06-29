@@ -911,8 +911,7 @@ focus_tree = {
 		x = 11
 		y = 3
 
-		cost = 7.16
-
+		cost = 5
 		ai_will_do = {
 			factor = 25
 		}
@@ -1219,7 +1218,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_commit_to_the_war
 
-		cost = 7.16
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1359,12 +1358,11 @@ focus_tree = {
 		id = CAN_forced_quebec_conscription
 		icon = GFX_goal_tfv_can_forced_quebec_conscription 
 		prerequisite = { focus = CAN_long_branch_arsenal focus = CAN_independent_command }
-		mutually_exclusive = { focus =  CAN_compromise_with_quebec }
-		x = 1
+		x = 0
 		y = 3
 		relative_position_id = CAN_commit_to_the_war
 
-		cost = 7.16
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1383,37 +1381,6 @@ focus_tree = {
 			custom_effect_tooltip = "CAN_ANGERED_WORKERS"
 			
 			# Opens up the MTTH events tfv_canada.50 - tfv_canada.53
-		}
-	}
-
-	focus = {
-		id = CAN_compromise_with_quebec
-		icon = GFX_goal_tfv_can_compromise_with_quebec
-		prerequisite = { focus = CAN_long_branch_arsenal focus = CAN_independent_command }
-		mutually_exclusive = { focus =  CAN_forced_quebec_conscription }
-		x = -1
-		y = 3
-		relative_position_id = CAN_commit_to_the_war
-
-		cost = 7.16
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-            has_idea = CAN_conscription_crisis
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = CAN_conscription_crisis
-				add_idea = CAN_conscription_crisis_mended
-			}
 		}
 	}
 
@@ -1911,6 +1878,7 @@ focus_tree = {
 
 		completion_reward = {
             add_country_leader_trait = the_silver_president
+			add_country_leader_trait = indomitable_perseverance
 			transfer_state = 331 
 		    transfer_state = 332
    			modify_tech_sharing_bonus = {
@@ -2010,6 +1978,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		    add_ideas = SAF_civil_industrial_infrastructure
 			swap_ideas = {
 				remove_idea = CAN_conscription_crisis
 				add_idea = CAN_conscription_crisis_healed
@@ -2042,29 +2011,27 @@ focus_tree = {
 
 		completion_reward = {
 			331 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			332 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			FRA = {
-				730 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
+			730 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
 			}					
 		}
@@ -2089,7 +2056,25 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		    add_ideas = CAN_hour
+		    add_ideas = CAN_hour	
+			682 = {
+				add_resource = {
+					type = chromium
+					amount = 50
+				}
+			}
+			470 = {
+				add_resource = {
+					type = tungsten
+					amount = 50
+				}
+			}	
+			276 = {
+				add_resource = {
+					type = steel
+					amount = 60
+				}
+			}			
 			add_tech_bonus = {
 				name = CAN_supply_the_empire
 				bonus = 1.0
@@ -3072,6 +3057,70 @@ focus_tree = {
 				}
 				set_state_flag = CAN_halifax_shipyards_DY
 			}
+			set_technology = {
+				basic_ship_hull_light = 1
+				early_ship_hull_submarine = 1
+				early_ship_hull_cruiser = 1
+				basic_ship_hull_cruiser = 1
+				early_ship_hull_heavy = 1
+				basic_ship_hull_heavy = 1
+				early_ship_hull_carrier = 1
+				basic_ship_hull_carrier = 1
+				basic_light_battery = 1
+				basic_medium_battery = 1
+				basic_heavy_battery = 1
+				sonar = 1
+				basic_cruiser_armor_scheme = 1
+				basic_heavy_armor_scheme = 1
+				mtg_transport = 1
+				improved_secondary_battery = 1
+				basic_fire_control_system = 1
+			}
+	create_equipment_variant = {
+		name = "S Class"
+		type = ship_hull_submarine_1
+		name_group = RAJ_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	create_equipment_variant = {
+		name = "E/F/G/H Class"
+		type = ship_hull_light_2
+		name_group = RAJ_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Leander Class"
+		type = ship_hull_cruiser_2
+		name_group = RAJ_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			front_1_custom_slot = ship_light_medium_battery_2
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_light_medium_battery_2
+		}
+	}
 		}
 	}
 
@@ -3164,7 +3213,6 @@ focus_tree = {
 				category = cv_tech
 			}
 				set_technology = {
-					early_ship_hull_carrier = 1
 					cv_fighter_1936 = 1 
 				}
 				add_equipment_to_stockpile = {

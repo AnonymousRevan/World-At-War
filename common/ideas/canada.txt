@@ -120,7 +120,11 @@ ideas = {
 			
 			modifier = {
 				conscription_factor = 0.10
+				production_speed_dockyard_factor = 0.2
+				industrial_capacity_dockyard = 0.05
 				special_forces_cap = 0.05
+				special_forces_attack_factor = 0.02
+				special_forces_defence_factor = 0.02
 			}
 		}
 		
@@ -181,6 +185,8 @@ ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.25
+				fuel_gain_factor = 0.2
 
 			}
 		}
@@ -389,6 +395,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
+				conscription = 0.015
 				conscription_factor = 0.05
 			}
 
@@ -410,7 +417,7 @@ ideas = {
 			
 			modifier = {
 				conscription_factor = 0.05
-				conscription = 0.01
+				conscription = 0.025
 			}
 		}
 		

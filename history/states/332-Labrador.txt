@@ -2,7 +2,7 @@ state={
 	id=332
 	name="STATE_332"
 	
-	state_category = wasteland
+	state_category = rural
 
 	history={
 		owner = ENG
@@ -14,13 +14,14 @@ state={
 			}
 		}
 		add_core_of = CAN
+		add_core_of = NGA
 
 	}
 
 	provinces={
 		1426 1785 4720 4787 12503 13165 13180 
 	}
-	manpower=22179
+	manpower=322179
 	buildings_max_level_factor=1.000
 
 	local_supplies=0.0 

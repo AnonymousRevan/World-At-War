@@ -651,10 +651,12 @@ characters={
 			idea_token = newton_weasely_rowell
 			ledger = civilian
 			picture = generic_political_advisor_europe_5
+			cost = 100
 			
 			allowed = {
 				original_tag = CAN
 			}
+			
 			
 			traits = { railroad_enthusiast }
 		}

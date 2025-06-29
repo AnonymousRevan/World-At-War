@@ -44,6 +44,7 @@ focus_tree = {
 				threat > 0.2
 				ENG = { has_completed_focus = ENG_no_further_appeasement }
 				has_completed_focus = SAF_force_parliament_debate
+				JAP = { has_completed_focus = JAP_intervene_in_china }
 			}
 		}
 
@@ -230,125 +231,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SAF_support_appeasement
-		icon = GFX_goal_COS_Peace
-		prerequisite = { focus = SAF_support_the_policy_of_appeasement }
-		mutually_exclusive = { focus = SAF_force_parliament_debate focus = SAF_hofmeyrs_reforms }
-		x = 1
-		y = 1
-		relative_position_id = SAF_support_the_policy_of_appeasement 
-
-		cost = 7.16
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			ENG = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = AST_support_the_policy_of_appeasement
-				}
-			}
-			add_political_power = 50
-			add_ideas = SAF_civil_industrial_infrastructure
-		}
-	}
-	
-	focus = {
-		id = SAF_civil_investment
-		icon = GFX_goal_DOM_End_Judicial_Corruption
-		prerequisite = { focus = SAF_support_appeasement }
-		x = 0
-		y = 1
-		relative_position_id = SAF_support_appeasement
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_stability = 0.1		
-			add_tech_bonus = {
-				name = SAF_civil_investment
-				bonus = 1.0
-				uses = 1
-				category = industry
-				category = electronics
-			}
-			275 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}	
-		}
-	}
-	
-	focus = {
-		id = SAF_yield_to_smuts
-		icon = GFX_focus_attack_germany
-		prerequisite = { focus = SAF_civil_investment }
-		x = 0
-		y = 1
-		relative_position_id = SAF_civil_investment
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		} 
-		
-		bypass = {
-			has_country_leader = {
-				name = "Jan Smuts"
-				ruling_only = yes
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {			
-			hidden_effect = {
-				retire_country_leader = yes
-			}
-			create_country_leader = {
-				name = "Jan Smuts"
-				desc = "POLITICS_JAN_SMUTS_DESC"
-				picture = "Portrait_SouthAfrica_Jan_Smuts.dds"  
-				expire = "1965.1.1"
-				ideology = conservatism
-				traits = {
-					indomitable_perseverance 
-					finance_graduate
-				}
-			}
-			remove_opinion_modifier = { target = ENG modifier = SAF_anti_british_sentiment }
-			add_political_power = 50
-		}
-	}
-	
-	focus = {
 		id = SAF_force_parliament_debate  
 		icon = GFX_goal_government_centralised_icon 
 		prerequisite = { focus = SAF_support_the_policy_of_appeasement }
-		mutually_exclusive = { focus = SAF_support_appeasement focus = SAF_hofmeyrs_reforms } 
-		x = -1
+		mutually_exclusive = { focus = SAF_hofmeyrs_reforms }
+		x = 1
 		y = 1
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
@@ -382,6 +269,7 @@ focus_tree = {
 			}
 		}
 			add_stability = -0.1
+			add_war_support = 0.1
 			add_ideas = low_economic_mobilisation
 			add_ideas = SAF_kickstarting_rearmament
 			remove_opinion_modifier = { target = ENG modifier = SAF_anti_british_sentiment }
@@ -414,7 +302,7 @@ focus_tree = {
 			add_ideas = partial_economic_mobilisation 
 			add_ideas = limited_conscription
 			add_stability = -0.1
-			add_war_support = 0.3
+			add_war_support = 0.2
 			add_tech_bonus = {
 				name = SAF_kickstart_rearmament
 				bonus = 1.0
@@ -466,10 +354,10 @@ focus_tree = {
 	focus = {
 		id = SAF_yield
 		icon = GFX_focus_phasetwo
-		prerequisite = { focus = SAF_yield_to_smuts focus = SAF_propose_joint_exercises }
-		x = -1
+		prerequisite = { focus = SAF_propose_joint_exercises }
+		x = 0
 		y = 1
-		relative_position_id = SAF_yield_to_smuts
+		relative_position_id = SAF_propose_joint_exercises
 
 		cost = 7.16
 
@@ -596,7 +484,7 @@ focus_tree = {
 		id = SAF_hofmeyrs_reforms
 		icon = GFX_goal_ideology_social_liberal
 		prerequisite = { focus = SAF_support_the_policy_of_appeasement }
-		mutually_exclusive = { focus = SAF_support_appeasement focus = SAF_force_parliament_debate }
+		mutually_exclusive = { focus = SAF_force_parliament_debate }
 		x = -4
 		y = 1
 		relative_position_id = SAF_support_the_policy_of_appeasement
@@ -612,10 +500,7 @@ focus_tree = {
 		} 
 
 		available = {
-			AND = {
-				has_idea = SAF_jan_hendrik_hofmeyr
-                NOT = { has_idea = SAF_king_edward }				
-			}	  
+             NOT = { has_idea = SAF_king_edward }					  
 		}
 
 		cancel_if_invalid = yes
@@ -625,6 +510,7 @@ focus_tree = {
 		completion_reward = {										
 			add_political_power = 80
 			add_ideas = SAF_workforce
+			add_country_leader_trait = indomitable_perseverance
 		}
 	}
 	
@@ -636,7 +522,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_hofmeyrs_reforms  
 
-		cost = 7.16
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -649,7 +535,15 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {				
+		completion_reward = {		
+			275 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}	
 			add_ideas = SAF_rural_volunteers
 		}
 	}
@@ -673,7 +567,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.1
+			add_stability = -0.05
+			add_ideas = POR_afr		
 			add_timed_idea = { idea = SAF_freedom_from_oppression days = 365 } 
 		}
 	}
@@ -705,6 +600,9 @@ focus_tree = {
 				picture = "gfx/leaders/SAF/Portrait_Africa_Generic_new_1.tga"
 				expire = "1965.1.1"
 				ideology = socialism
+			    traits = {
+			    	indomitable_perseverance
+		    	}
 			} 	
 			set_cosmetic_tag = SAF_ANC
 			custom_effect_tooltip = SAF_african_commanders_tt 
@@ -1312,7 +1210,6 @@ focus_tree = {
 		} 
 
 		available = {
-		    NOT = { has_completed_focus = SAF_force_parliament_debate }
 		}
 
 		cancel_if_invalid = yes
@@ -1377,7 +1274,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}

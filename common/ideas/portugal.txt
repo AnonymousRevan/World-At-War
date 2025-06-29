@@ -108,12 +108,14 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = POR_africa
+			picture = por_unstable_republic
 			
 			modifier = {
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
-				local_resources_factor = 0.05
+		      	production_speed_infrastructure_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_steel_refinery_factor = 0.10
+				production_speed_synthetic_rubber_refinery_factor = 0.10
+				production_speed_synthetic_refinery_factor = 0.10
 			}
 		}
 		POR_aid1 = {

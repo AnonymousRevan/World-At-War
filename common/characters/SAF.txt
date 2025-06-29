@@ -589,9 +589,6 @@ characters={
 					not  = {
 						has_completed_focus  = SAF_force_parliament_debate 
 					}
-					not  = {
-						has_completed_focus  = SAF_support_appeasement 
-					}
 				}
 				traits  = {
 					silent_workhorse_2 social_reformer_2 

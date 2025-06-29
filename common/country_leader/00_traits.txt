@@ -1380,7 +1380,7 @@ leader_traits = {
 		random = no
 		sprite = 5
 		army_morale_factor = 0.04
-		war_support_weekly = 0.001
+		war_support_weekly = 0.002
 
 		ai_will_do = {
 			factor = 1
