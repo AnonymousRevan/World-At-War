@@ -108,7 +108,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = por_unstable_republic
+			picture = hol_caved_to_the_british
 			
 			modifier = {
 		      	production_speed_infrastructure_factor = 0.10
