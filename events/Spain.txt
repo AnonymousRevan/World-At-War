@@ -164,7 +164,6 @@ country_event = {
 		name = spain.8.a
 		set_capital = { state = 41 }
 		add_ideas = airandnavy_idea
-#		load_oob = SPR_fleet
 	}
 }
 
@@ -187,7 +186,6 @@ country_event = {
 		effect_tooltip = {
 			SPR = {
 				add_ideas = { SPR_prepare_for_war }
-				load_oob = SPR_fleet
 				if = {
 					limit = { POR = { is_ai = yes } }
 					transfer_state = 179
@@ -239,7 +237,6 @@ country_event = {
 		hidden_effect = {
 			SPR = {
 				add_ideas = { SPR_prepare_for_war }
-				load_oob = SPR_fleet
 				if = {
 					limit = { POR = { is_ai = yes } }
 					POR = {
