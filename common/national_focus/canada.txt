@@ -2073,7 +2073,7 @@ focus_tree = {
 			276 = {
 				add_resource = {
 					type = steel
-					amount = 60
+					amount = 100
 				}
 			}			
 			add_tech_bonus = {
