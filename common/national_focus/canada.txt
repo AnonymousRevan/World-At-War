@@ -3223,7 +3223,7 @@ focus_tree = {
 					producer = CAN 
 				}
 				add_equipment_to_stockpile = {
-					type = cv_fighter_equipment_1936
+					type = cv_nav_bomber_equipment_1936
 					amount = 60
 					producer = CAN 
 				}
