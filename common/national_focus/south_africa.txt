@@ -398,13 +398,13 @@ focus_tree = {
 			719 = {
 				add_resource = {
 					type = steel
-					amount = 50
+					amount = 60
 				}
 			}		
 			541 = {
 				add_resource = {
 					type = oil
-					amount = 10
+					amount = 15
 				}
 			}	
 		}
@@ -675,7 +675,18 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {		
-			add_timed_idea = { idea = SAF_expanding_workforce days = 180 }
+			719 = {
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}		
+			541 = {
+				add_resource = {
+					type = oil
+					amount = 10
+				}
+			}	
 		}
 	}
 	
@@ -990,6 +1001,7 @@ focus_tree = {
 		id = SAF_native_representation_act
 		icon = GFX_focus_usa_voter_registration_act
 		prerequisite = { focus = SAF_support_the_policy_of_appeasement }
+		mutually_exclusive = { focus = SAF_open_engineering_schools }
 		x = 8
 		y = 1
 		relative_position_id = SAF_support_the_policy_of_appeasement
