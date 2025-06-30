@@ -256,7 +256,8 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
-		completion_reward = {			
+		completion_reward = {		
+            add_political_power = 50		
 			create_country_leader = {
 			name = "Jan Smuts"
 			desc = "POLITICS_JAN_SMUTS_DESC"

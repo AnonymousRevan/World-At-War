@@ -1877,6 +1877,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		    add_political_power = 50
             add_country_leader_trait = the_silver_president
 			add_country_leader_trait = indomitable_perseverance
 			transfer_state = 331 
@@ -2197,7 +2198,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		    add_political_power = 50
+		    add_political_power = 75
 		    add_ideas = low_economic_mobilisation
             add_ideas = CAN_darkest
 	    add_stability = -0.15
