@@ -100,6 +100,11 @@ focus_tree = {
 		    IDR = { complete_national_focus = RAJ_bengal_dockyards }
 			IDR = { complete_national_focus = RAJ_dockyard_construction_efforts }
 		    IDR = { complete_national_focus = RAJ_import_british_design }
+		    add_state_core = 765
+			add_state_core = 658
+			add_state_core = 294
+			add_state_core = 293
+			add_state_core = 659
 		}
 	}
 	

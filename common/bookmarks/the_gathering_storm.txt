@@ -153,9 +153,9 @@ bookmarks = {
 				AST_conscript_malus
 			}
 			focuses = {
-				AST_Isolation
+				AST_upholding_integrity
 				AST_invest_in_victory
-				AST_rats_of_tobruk
+				AST_defending_our_land
 			}
 		}
 		"SAF"={

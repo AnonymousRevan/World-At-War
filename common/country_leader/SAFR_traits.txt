@@ -51,7 +51,7 @@ leader_traits = {
 
 	silent_workhorse_2 = {
 		sprite = 13
-		political_power_factor = 0.2
+		political_power_factor = 0.25
 		
 		
 		ai_will_do = {

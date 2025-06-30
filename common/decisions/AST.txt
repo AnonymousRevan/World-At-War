@@ -93,7 +93,7 @@ operations = {
 			tag = AST
 		}
 		available = {
-			has_completed_focus = AST_Indo_pacific
+			has_completed_focus = AST_defence_of_the_pacific
 		}
 	
 		visible = {
@@ -145,7 +145,7 @@ operations = {
 		}
 
 		visible = {
-			has_completed_focus = AST_cockatoo_island_shipyards
+			has_completed_focus = AST_establish_advisory_war_council
 		}
 		cost = 10
 		

@@ -1192,6 +1192,7 @@ focus_tree = {
 		
 		completion_reward = {
 			navy_experience = 25
+			add_timed_idea = { idea = RAJ_dockyard_effort days = 365 }
 			random_owned_controlled_state = {
 				prioritize = { 285 }
 				limit = {
@@ -1210,7 +1211,6 @@ focus_tree = {
 					level = 5
 					instant_build = yes
 				}
-				add_timed_idea = { idea = RAJ_dockyard_effort days = 365 }
 				 
 				}
 			}
@@ -1631,15 +1631,6 @@ focus_tree = {
 				}
 				set_state_flag = AST_cockatoo_island_shipyards_DY
 				}
-			}
-		}
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = naval_equipment
-				bonus = 1.5
-				uses = 1
-				category = naval_equipment
 			}
 		}
 	

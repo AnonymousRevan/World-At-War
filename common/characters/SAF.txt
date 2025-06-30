@@ -23,14 +23,14 @@ characters={
 				}
 				available  = {
 					SAF = {
-						has_completed_focus  = SAF_support_appeasement 
+						has_completed_focus  = SAF_hofmeyrs_reforms 
 					}
 				}
 				traits  = {
 					technocrat 
 				}
 				modifier  = {
-					political_power_factor  = 0.05
+					political_power_factor  = 0.1
 				}
 		}
 		portraits={
