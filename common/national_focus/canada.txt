@@ -2061,19 +2061,19 @@ focus_tree = {
 			682 = {
 				add_resource = {
 					type = chromium
-					amount = 60
+					amount = 65
 				}
 			}
 			470 = {
 				add_resource = {
 					type = tungsten
-					amount = 60
+					amount = 65
 				}
 			}	
 			276 = {
 				add_resource = {
 					type = steel
-					amount = 100
+					amount = 60
 				}
 			}			
 			add_tech_bonus = {
