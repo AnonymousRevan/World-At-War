@@ -2106,6 +2106,23 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = FRA_morane_saulnier_goal
+		prerequisite = { focus = FRA_reorganize_the_aviation_industry }
+		icon = GFX_idea_morane_saulnier
+		x = 0
+		y = 2
+		relative_position_id = FRA_reorganize_the_aviation_industry
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 15
+			add_ideas = morane_saulnier2
+		}
+	}
+	
+	focus = {
 		id = FRA_air2
 		icon = GFX_focus_usa_escort_fighters
 		x = -1
@@ -2186,7 +2203,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = FRA_air2 }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = FRA_air2
 
 		cost = 5
@@ -2216,7 +2233,7 @@ focus_tree = {
 		id = FRA_air4
 		icon = GFX_goal_generic_CAS
 		x = 0
-		y = 1
+		y = 2
 		offset = {
 			x = 0
 			y = 0
@@ -2243,23 +2260,6 @@ focus_tree = {
 				uses = 1
 				category = cas_bomber
 			}
-		}
-	}
-	
-	focus = {
-		id = FRA_morane_saulnier_goal
-		prerequisite = { focus = FRA_air4 focus = FRA_air6 }
-		icon = GFX_idea_morane_saulnier
-		x = 1
-		y = 1
-		relative_position_id = FRA_air6
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			air_experience = 15
-			add_ideas = morane_saulnier2
 		}
 	}
 	
@@ -2316,10 +2316,11 @@ focus_tree = {
 	focus = {
 		id = FRA_modernize_the_air_fleet
 		prerequisite = { focus = FRA_morane_saulnier_goal }
+		prerequisite = { focus = FRA_air6 focus = FRA_air4 }
 		icon = GFX_goal_generic_air_production
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = FRA_morane_saulnier_goal
+		relative_position_id = FRA_air6
 		cost = 5
 		
 		available = {
@@ -2369,12 +2370,12 @@ focus_tree = {
 			}	
 			add_equipment_to_stockpile = {
 				type = cv_fighter_equipment_1936
-				amount = 40
+				amount = 100
 				producer = FRA 
 			}
 			add_equipment_to_stockpile = {
 				type = cv_nav_bomber_equipment_1936
-				amount = 40
+				amount = 100
 				producer = FRA 
 			}			
 			if = {
@@ -2409,35 +2410,29 @@ focus_tree = {
 						progress = 0.4
 						amount = 1
 					}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_1
+							creator = "FRA" 
+							version_name = "Joffre Class"
+						}
+						name = "Joffre" 
+						requested_factories = 1
+						progress = 0.10
+						amount = 1
+					}
 				}	
 			}
 		}
 	}
 	
 	focus = {
-		id = FRA_fleet
-		icon = GFX_goal_generic_build_navy
-	 	prerequisite = { focus = FRA_naval_rearmament }
-		mutually_exclusive = { focus = FRA_prioritize_the_joffr }
-		x = -1
-		y = 1
-		relative_position_id = FRA_naval_rearmament
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		    add_ideas = RAJ_coastal_defence_fleet_idea
-		}
-	}
-	
-	focus = {
 		id = FRA_carrier_focus
 		icon = GFX_goal_generic_navy_carrier
-	 	prerequisite = { focus = FRA_fleet }
-		x = 0
+	 	prerequisite = { focus = FRA_naval_rearmament }
+		x = -2
 		y = 1
-		relative_position_id = FRA_fleet
+		relative_position_id = FRA_naval_rearmament
 		cost = 5
 
 		available_if_capitulated = yes
@@ -2453,79 +2448,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = FRA_improved_screen_ships
-		icon = GFX_focus_generic_cruiser2
-	 	prerequisite = { focus = FRA_fleet }
-		x = -2
-		y = 1
-		relative_position_id = FRA_fleet
-		cost = 5
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_improved_screen_ships
-				bonus = 2.0
-				uses = 1
-				category = cl_tech
-				category = ca_tech
-			}
-		}
-	}
-	
-	focus = {
-		id = FRA_carrier_planes
-		icon = GFX_goal_generic_air_fighter
-
-	 	prerequisite = { focus = FRA_carrier_focus }
-		prerequisite = {focus =  FRA_improved_screen_ships }
-		x = -1
-		y = 1
-		relative_position_id = FRA_carrier_focus
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = cv_fighter_equipment_1936
-				amount = 60
-				producer = FRA 
-			}
-			add_equipment_to_stockpile = {
-				type = cv_nav_bomber_equipment_1936
-				amount = 60
-				producer = FRA 
-			}
-		}
-	}
-
-	
-	focus = {
-		id = FRA_prioritize_the_joffr
-		icon = GFX_goal_generic_navy_cruiser
-	 	prerequisite = { focus = FRA_naval_rearmament }
-		mutually_exclusive = { focus = FRA_fleet }
-		x = 2
-		y = 1
-		relative_position_id = FRA_naval_rearmament
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		    add_ideas = FRA_the_young_school
-		}
-	}
-	
-	focus = {
 		id = FRA_capital_ship_focus
 		icon = GFX_goal_generic_navy_battleship
-	 	prerequisite = { focus = FRA_fleet focus = FRA_prioritize_the_joffr }
-		x = 2
+	 	prerequisite = { focus = FRA_naval_rearmament }
+		x = 0
 		y = 1
-		relative_position_id = FRA_fleet
+		relative_position_id = FRA_naval_rearmament
 		cost = 5
 
 		available_if_capitulated = yes
@@ -2542,12 +2470,34 @@ focus_tree = {
 	}	
 	
 	focus = {
+		id = FRA_improved_screen_ships
+		icon = GFX_focus_generic_cruiser2
+	 	prerequisite = { focus = FRA_naval_rearmament }
+		x = 2
+		y = 1
+		relative_position_id = FRA_naval_rearmament
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_improved_screen_ships
+				bonus = 2.0
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+	
+	focus = {
 		id = FRA_surface_combat
 		icon = GFX_focus_generic_destroyer
-	 	prerequisite = { focus = FRA_prioritize_the_joffr  }
-		x = 1
+	 	prerequisite = { focus = FRA_carrier_focus focus = FRA_capital_ship_focus focus = FRA_improved_screen_ships }
+		x = -1
 		y = 1
-		relative_position_id =  FRA_prioritize_the_joffr 
+		relative_position_id =  FRA_capital_ship_focus 
 		cost = 5
 
 		available_if_capitulated = yes
@@ -2567,10 +2517,7 @@ focus_tree = {
 		id = FRA_undersea_combat
 		icon = GFX_goal_generic_navy_submarine
 	 	prerequisite = { 
-			focus = FRA_capital_ship_focus
-	 	}
-	 	prerequisite = { 
-	 		focus = FRA_surface_combat
+			focus = FRA_carrier_focus focus = FRA_capital_ship_focus focus = FRA_improved_screen_ships
 	 	}
 		x = 1
 		y = 1
@@ -2593,10 +2540,10 @@ focus_tree = {
 		id = FRA_naval_doctrine
 		icon = GFX_goal_generic_navy_doctrines_tactics
 	 	prerequisite = { 
-	 		focus = FRA_carrier_planes
+	 		focus = FRA_surface_combat
 			focus = FRA_undersea_combat
 	 	}
-		x = -2
+		x = -1
 		y = 2
 		relative_position_id = FRA_capital_ship_focus
 		cost = 5
@@ -2619,10 +2566,10 @@ focus_tree = {
 		icon = GFX_focus_generic_navy_battleship2
 
 	 	prerequisite = { 
-	 		focus = FRA_carrier_planes
+	 		focus = FRA_surface_combat
 			focus = FRA_undersea_combat
 	 	}
-		x = 0
+		x = 1
 		y = 2
 		relative_position_id = FRA_capital_ship_focus
 		cost = 5

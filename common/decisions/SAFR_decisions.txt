@@ -967,7 +967,7 @@ SAFR_building_surface_fleet = {
 			civilian_factory_use = 10
 		}
 		
-		cost = 25
+		cost = 10
 		days_remove = 120
 		
 		fire_only_once = yes
@@ -1017,7 +1017,7 @@ SAFR_building_surface_fleet = {
 			has_tech = basic_ship_hull_carrier
 		}
 		
-		cost = 25
+		cost = 10
 		
 		fire_only_once = yes
 		
@@ -1052,7 +1052,7 @@ SAFR_building_surface_fleet = {
 			has_tech = basic_ship_hull_heavy
 		}
 		
-		cost = 25
+		cost = 10
 		
 		fire_only_once = yes
 		
@@ -1166,7 +1166,7 @@ SAFR_building_surface_fleet = {
 		
 		fire_only_once = yes
 		
-		cost = 25
+		cost = 10
 		
 		ai_will_do = {
 			factor = 1
@@ -1181,6 +1181,8 @@ SAFR_building_surface_fleet = {
 				basic_medium_battery = 1
 				basic_cruiser_armor_scheme = 1
 				improved_secondary_battery = 1
+				cv_fighter_1936 = 1 
+				cv_naval_bomber_1936 = 1
 			}
 			create_equipment_variant = {
 				name = "Pensacola Class"			# Pensacola and Northampton classes
@@ -1227,7 +1229,7 @@ SAFR_building_surface_fleet = {
 		
 		fire_only_once = yes
 		
-		cost = 25
+		cost = 10
 		
 		ai_will_do = {
 			factor = 1

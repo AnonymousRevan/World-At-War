@@ -244,9 +244,29 @@ ideas = {
 				naval_equipment = 0.05
 			}
 			
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+			
 			modifier = {
-			    production_speed_dockyard_factor = 0.05
+			    production_speed_dockyard_factor = 0.1
 			    naval_doctrine_cost_factor = -0.05
+				experience_gain_navy = 0.05
+				experience_gain_navy_factor = 0.1
 			}
 		}		
 		FRA_industry = {
