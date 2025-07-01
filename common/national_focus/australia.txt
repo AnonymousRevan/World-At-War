@@ -426,7 +426,7 @@ focus_tree = {
 				ENG = { add_ideas = AST_Support_empire }
 				CAN = { add_ideas = AST_Support_empire }
 				SAF = { add_ideas = AST_Support_empire }
-				RAJ = { add_ideas = AST_Support_empire }
+				IDR = { add_ideas = AST_Support_empire }
 				NZL = { add_ideas = AST_Support_empire }
 		}			
 	}
@@ -1689,7 +1689,7 @@ focus_tree = {
 			ENG = { add_ideas = AST_CMW_school }
 				CAN = { add_ideas = AST_CMW_school }
 				SAF = { add_ideas = AST_CMW_school }
-				RAJ = { add_ideas = AST_CMW_school }
+				IDR = { add_ideas = AST_CMW_school }
 				NZL = { add_ideas = AST_CMW_school }
 		}
 	}
