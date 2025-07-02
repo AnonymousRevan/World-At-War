@@ -817,7 +817,6 @@ ideas = {
 		designer = yes
 		new_south_wales_rc = {
 		    available = {
-                has_completed_focus = AST_tanks_main3
             }
 	    	allowed = { original_tag = AST }		
 			picture = generic_tank_manufacturer_1
