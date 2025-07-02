@@ -68,7 +68,7 @@ no_garrison = {
 	sound_effect = "Martial_Law_Interface_No_Garrison"
 	
 	state_modifier = {
-		resistance_target = 0.4
+		resistance_target = 0.6
 		no_compliance_gain = 1
 		required_garrison_factor = -1
 	}
@@ -120,7 +120,7 @@ foreign_civilian_oversight = {
 	state_modifier = {
 		resistance_target 				= -0.10
 		required_garrison_factor 		= -0.50	
-		resistance_damage_to_garrison 	= -0.25	
+		resistance_damage_to_garrison 	= -0.15	
 		compliance_gain 				= 0.01
 		local_factories 				= 0.00
 		local_resources 				= 0.00
@@ -144,7 +144,7 @@ local_police_force_garrison = {
 	state_modifier = {
 		resistance_target 				= -0.20
 		compliance_gain 				= -0.02
-		required_garrison_factor 		= -0.65
+		required_garrison_factor 		= -0.45
 		resistance_damage_to_garrison	= -0.5
 		local_factories 				= 0.00
 		local_resources 				= 0.00
@@ -374,7 +374,7 @@ harsh_quotas_occupation = {
 	
 	state_modifier = {
 		resistance_target 				= -0.40
-		compliance_gain 				= -0.08
+		compliance_gain 				= -0.03
 		required_garrison_factor 		= 0.60
 		resistance_damage_to_garrison 	= 0.50		
 	

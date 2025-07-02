@@ -191,7 +191,10 @@ add_ideas = {
 	airandnavy_idea
 	FRA_the_foreign_legion
 	MTG_naval_treaty_adherent
-	low_economic_mobilisation
+}
+add_timed_idea = {
+	idea = FRA_devalue_the_franc
+	days = 365
 }
 if = {
 	limit = {

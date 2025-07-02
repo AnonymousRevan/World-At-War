@@ -71,7 +71,7 @@ buildings = {
 
 	industrial_complex = {
 		show_on_map = 1
-		base_cost = 10000
+		base_cost = 9800
 		base_cost_conversion = 8400
 		general_production = 1
 		icon_frame = 1
@@ -303,8 +303,8 @@ buildings = {
 		base_cost = 20000
 		per_level_extra_cost = 10000
 		icon_frame = 29
-		local_resources_steel = 100
-		local_resources_aluminium = 30
+		local_resources_steel = 75
+		local_resources_aluminium = 25
         local_resources_chromium = 5
         local_resources_tungsten = 15
 		refinery = yes
@@ -315,7 +315,7 @@ buildings = {
 		
 		country_modifiers = {
 			modifiers = {
-				research_speed_factor = 0.015
+				research_speed_factor = 0.01
 			}
 		}
 		

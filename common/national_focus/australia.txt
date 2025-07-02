@@ -426,7 +426,7 @@ focus_tree = {
 				ENG = { add_ideas = AST_Support_empire }
 				CAN = { add_ideas = AST_Support_empire }
 				SAF = { add_ideas = AST_Support_empire }
-				IDR = { add_ideas = AST_Support_empire }
+				RAJ = { add_ideas = AST_Support_empire }
 				NZL = { add_ideas = AST_Support_empire }
 		}			
 	}
@@ -1192,7 +1192,6 @@ focus_tree = {
 		
 		completion_reward = {
 			navy_experience = 25
-			add_timed_idea = { idea = RAJ_dockyard_effort days = 365 }
 			random_owned_controlled_state = {
 				prioritize = { 285 }
 				limit = {
@@ -1211,6 +1210,7 @@ focus_tree = {
 					level = 5
 					instant_build = yes
 				}
+				add_timed_idea = { idea = RAJ_dockyard_effort days = 365 }
 				 
 				}
 			}
@@ -1633,6 +1633,15 @@ focus_tree = {
 				}
 			}
 		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_equipment
+				bonus = 1.5
+				uses = 1
+				category = naval_equipment
+			}
+		}
 	
 	#G'Day Mate
 	focus = {
@@ -1689,7 +1698,7 @@ focus_tree = {
 			ENG = { add_ideas = AST_CMW_school }
 				CAN = { add_ideas = AST_CMW_school }
 				SAF = { add_ideas = AST_CMW_school }
-				IDR = { add_ideas = AST_CMW_school }
+				RAJ = { add_ideas = AST_CMW_school }
 				NZL = { add_ideas = AST_CMW_school }
 		}
 	}

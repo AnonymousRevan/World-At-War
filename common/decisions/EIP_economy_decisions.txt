@@ -146,7 +146,7 @@ economy_decisions = {
 		
 		modifier = {
 			political_power_gain = -1.0
-			stability_weekly = -0.5
+			stability_weekly = -0.005
 		}
 		
 		remove_effect = {

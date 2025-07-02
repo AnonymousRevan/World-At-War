@@ -50,7 +50,7 @@ equipments = {
 		hg_attack = 0
 		torpedo_attack = 0
 		sub_attack = 0
-		anti_air_attack = 0
+		anti_air_attack = 1
 
 		build_cost_ic = 225
 		manpower = 200

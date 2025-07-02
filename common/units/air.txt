@@ -23,10 +23,10 @@ sub_units = {
 		sprite = medium_plane
 		priority = 1
 		active = yes
-		type = heavy_fighter
+		type = { heavy_fighter }
 		need = { medium_plane_fighter_airframe = 1 }
 		categories = { category_heavy_fighter category_all_air }
-		land_air_wing_size = 100
+		land_air_wing_size = 50
 	}
 	
 	cas = {

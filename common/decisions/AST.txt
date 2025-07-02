@@ -93,7 +93,7 @@ operations = {
 			tag = AST
 		}
 		available = {
-			has_completed_focus = AST_defence_of_the_pacific
+			has_completed_focus = AST_Indo_pacific
 		}
 	
 		visible = {
@@ -111,26 +111,26 @@ operations = {
 		remove_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 1000
+				amount = 100000
 				producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
-				amount = 100
+				amount = 10000
 				producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = support_equipment
-				amount = 200
+				amount = 20000
 				producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = motorized_equipment
-				amount = 100
+				amount = 10000
 				producer = USA
 			}
 #			USA = {
-#				add_offsite_building = { type = arms_factory level = 3 }
+#				add_offsite_building = { type = arms_factory level = 30 }
 #			}
 		}		
 	}
@@ -145,7 +145,7 @@ operations = {
 		}
 
 		visible = {
-			has_completed_focus = AST_establish_advisory_war_council
+			has_completed_focus = AST_cockatoo_island_shipyards
 		}
 		cost = 10
 		

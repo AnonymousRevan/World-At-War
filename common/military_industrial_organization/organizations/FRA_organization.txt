@@ -1154,6 +1154,17 @@ FRA_schneider_heavy_artillery = {
 		} 
 	}
 }
+FRA_Stat_organization = {
+	include = generic_LowCal_anti_tank_air_organization
+	icon = GFX_idea_schneider
+	allowed = {	
+		OR = {
+			original_tag = FRA
+			original_tag = EFR		
+			original_tag = HUN
+		} 
+	}
+}
 FRA_schneider_anti_tank_air = {
 	include = generic_anti_tank_air_organization
 	icon = GFX_idea_schneider
