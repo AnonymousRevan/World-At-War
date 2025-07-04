@@ -544,9 +544,9 @@ ideas = {
 				consumer_goods_expected_value = 0.05
 				stability_weekly = 0.002
 				industry_repair_factor = 0.1
-				production_speed_arms_factory_factor = 1.00
-				production_speed_industrial_complex_factor = 1.00
-				production_speed_dockyard_factor = 1.00
+				production_speed_arms_factory_factor = 0.75
+				production_speed_industrial_complex_factor = 0.75
+				production_speed_dockyard_factor = 0.75
 				production_speed_synthetic_refinery_factor = 0.4
 				production_speed_synthetic_rubber_refinery_factor = 0.4
 				production_speed_steel_refinery_factor = 0.2
@@ -554,8 +554,8 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = -0.5
 				production_factory_max_efficiency_factor = 0.2
 				research_speed_factor = 0.20
-				industrial_capacity_factory = 0.8
-				industrial_capacity_dockyard = 0.8
+				industrial_capacity_factory = 0.6
+				industrial_capacity_dockyard = 0.6
 				global_building_slots_factor = 0.3
 				political_power_factor = 0.1	
 			}
@@ -577,6 +577,24 @@ ideas = {
 
 			cancel_if_invalid = yes
 		}
+		
+				consumer_goods_expected_value = 0.20
+				conscription = -0.01
+				stability_weekly = -0.001
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.05
+				production_speed_synthetic_rubber_refinery_factor = 0.05
+				production_speed_steel_refinery_factor = 0.05
+				conversion_cost_civ_to_mil_factor= -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+				production_factory_max_efficiency_factor = 0.05
+				research_speed_factor = 0.075
+				industrial_capacity_factory = 0.05
+				global_building_slots_factor = 0.05		
+				political_power_factor = 0.05		
+				
+				
         FRA_exiles = {
 
             picture = SPR_collectivized_society
@@ -591,23 +609,23 @@ ideas = {
 			removal_cost = -1
 
             modifier = {
-                consumer_goods_expected_value = 0.1
+			    stability_weekly = -0.001
+                consumer_goods_expected_value = 0.2
 				conscription = 0.015
-				stability_weekly = 0.001
-                production_speed_industrial_complex_factor = 0.25
-                production_speed_arms_factory_factor = 0.125
-				production_speed_dockyard_factor = 0.125
+                production_speed_industrial_complex_factor = 0.125
+                production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
 				production_speed_synthetic_refinery_factor = 0.1
 				production_speed_synthetic_rubber_refinery_factor = 0.1
 				production_speed_steel_refinery_factor = 0.1
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
                 conversion_cost_civ_to_mil_factor= -0.1
                 conversion_cost_mil_to_civ_factor = -0.1
                 global_building_slots_factor = 0.2
                 industry_free_repair_factor = 0.1
                 industrial_capacity_factory = 0.05
                 industrial_capacity_dockyard = 0.05
-                research_speed_factor = 0.025
+                research_speed_factor = 0.075
             }	
 			
 			ai_will_do = {
@@ -616,8 +634,8 @@ ideas = {
 
 			visible = {
 			    OR = {
-				tag = FRA
 				tag = HOL
+				tag = FRA
 				}
 			}
 

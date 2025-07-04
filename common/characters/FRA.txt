@@ -494,7 +494,10 @@ characters={
 					original_tag  = FRA
 				}
 				available  = {
+				OR = {
 					has_completed_focus  = FRA_nationalize_the_banking_sector 
+					has_capitulated = yes	
+					}
 				}
 				traits  = {
 					financial_expert 

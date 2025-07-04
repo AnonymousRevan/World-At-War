@@ -1757,10 +1757,10 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 
 		add_stats = {
-			carrier_size = 3
+			carrier_size = 2
 			surface_detection = 5
 			sub_detection = 2
-			build_cost_ic = 3500
+			build_cost_ic = 3000
 		}
 		manpower = 500 #outside the add_stats section for code reasons
 		multiply_stats = {
@@ -1784,6 +1784,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			build_cost_ic = 0.1
+			anti_air_attack = 0.07
 			naval_speed = -0.05
 			max_strength = 0.18
 		}

@@ -167,10 +167,37 @@ mio_policy_air_stripped = {
 	equipment_bonus = {
 		same_as_mio = {
 			air_agility = 0.05
-			air_defence = -0.12
+			air_defence = -0.1
 			maximum_speed = 0.05
 			reliability = -0.12
 			build_cost_ic = -0.08
+		}
+	}
+}
+
+mio_policy_air_reduction = {
+	icon = GFX_mio_policy_modular_assembly
+	allowed = {
+		OR = {
+			has_mio_equipment_type = small_plane_airframe
+			has_mio_equipment_type = small_plane_airframe_0
+			has_mio_equipment_type = fighter_equipment_0
+			has_mio_equipment_type = medium_plane_airframe
+			has_mio_equipment_type = large_plane_airframe
+			has_mio_equipment_type = small_plane_cas_airframe
+			has_mio_equipment_type = small_plane_naval_bomber_airframe
+			has_mio_equipment_type = medium_plane_fighter_airframe
+			has_mio_equipment_type = medium_plane_scout_plane_airframe
+			has_mio_equipment_type = large_plane_maritime_patrol_plane_airframe
+		}
+	}
+	available = { has_mio_size > 7}
+	equipment_bonus = {
+		same_as_mio = {
+			maximum_speed = -0.05
+			build_cost_ic = -0.025
+			air_range = -0.15
+			fuel_consumption = -0.25
 		}
 	}
 }
@@ -197,7 +224,7 @@ mio_policy_air_octane = {
 			maximum_speed = 0.12
 			build_cost_ic = 0.05
 			reliability = -0.15
-			fuel_consumption = 0.5
+			fuel_consumption = 0.35
 		}
 	}
 }

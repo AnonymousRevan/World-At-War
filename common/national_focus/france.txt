@@ -593,8 +593,8 @@ focus_tree = {
 				category = industry
 			}
 			random_owned_controlled_state = {
+			    prioritize = { 539 }
 				limit = {
-					is_core_of = ROOT
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -627,8 +627,8 @@ focus_tree = {
 				set_state_flag = FRA_develop_the_countryside_2IC
 			}
 			random_owned_controlled_state = {
+			prioritize = { 539 }
 				limit = {
-					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -682,8 +682,8 @@ focus_tree = {
 				category = industry
 			}
 			random_owned_controlled_state = {
+			prioritize = { 539 }
 				limit = {
-					is_core_of = ROOT
 					free_building_slots = {
 						building = industrial_complex
 						size > 3
@@ -1761,9 +1761,9 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_state = {
+			prioritize = { 539 }
 				limit = {
 					is_controlled_by = ROOT
-					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
 						size > 1
@@ -1797,9 +1797,9 @@ focus_tree = {
 				set_state_flag = FRA_national_champions_2AF
 			}
 			random_owned_state = {
+			    prioritize = { 539 }
 				limit = {
 					is_controlled_by = ROOT
-					is_core_of = ROOT
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -1881,9 +1881,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			random_owned_state = {
+			    prioritize = { 539 }
 				limit = {
 					is_controlled_by = ROOT
-					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
 						size > 1

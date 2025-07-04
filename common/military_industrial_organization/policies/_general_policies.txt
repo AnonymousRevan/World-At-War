@@ -89,7 +89,7 @@ mio_policy_cheaper  = {
 	available = { has_mio_size > 4 }
 	equipment_bonus = {
 		same_as_mio = {
-			reliability = -0.25
+			reliability = -0.4
 			build_cost_ic = -0.075
 		}
 	}

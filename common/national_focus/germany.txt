@@ -3920,7 +3920,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			add_ideas = tot_economic_mobilisation
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = joseph_goebbels
 			add_political_power = 150
