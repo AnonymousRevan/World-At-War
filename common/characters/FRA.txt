@@ -996,7 +996,7 @@ characters={
 					original_tag  = FRA
 				}
 				traits  = {
-					railroad_enthusiast 
+					backroom_backstabber
 				}
 				ai_will_do  = {
 					factor  = 0.000
@@ -1140,7 +1140,10 @@ characters={
 			}
 
 			available = {
-				has_completed_focus = FRA_free_france
+			     OR = {
+		     		has_completed_focus = FRA_free_france
+		    		has_completed_focus = FRA_free_france1
+				}
 			}
 			
 			traits = { colonial_organizer }

@@ -299,7 +299,8 @@ ideas = {
 			modifier = {
 				non_core_manpower = 0.05
 				global_building_slots_factor = 0.05
-				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.15
+				production_speed_supply_node_factor = 0.1
 			}
 		}
 		FRA_buildup2 = {
@@ -317,8 +318,9 @@ ideas = {
 			
 			modifier = {
 				non_core_manpower = 0.1
-				production_speed_infrastructure_factor = 0.1
 				global_building_slots_factor = 0.1
+				production_speed_rail_way_factor = 0.25
+				production_speed_supply_node_factor = 0.15
 			}
 		}
 		FRA_the_young_school = {
