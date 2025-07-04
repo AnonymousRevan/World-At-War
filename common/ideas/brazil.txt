@@ -346,6 +346,7 @@ ideas = {
 			modifier = {
 				lend_lease_tension = -0.5
 				send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -1.0
 				send_volunteer_size = 12
 				air_volunteer_cap = 12
 			}

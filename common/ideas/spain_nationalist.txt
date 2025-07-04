@@ -21,8 +21,9 @@ ideas = {
 				communism_acceptance = -20
 				democratic_acceptance = -20
 				fascism_acceptance = 10
-				enemy_justify_war_goal_time = 10
-				send_volunteer_size = 11
+				enemy_justify_war_goal_time = 10\
+				send_volunteer_divisions_required = -1.0
+				send_volunteer_size = 18
 				air_volunteer_cap = 20
 			}
 		}
