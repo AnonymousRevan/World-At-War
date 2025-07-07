@@ -2487,7 +2487,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HOL_ship_a_day_sinking_quotas
-				bonus = 1.0
+				bonus = 0.25
 				uses = 1
 				category = ss_tech
 			}
