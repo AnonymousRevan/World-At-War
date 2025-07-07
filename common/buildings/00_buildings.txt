@@ -86,8 +86,8 @@ buildings = {
 
 	air_base = {
 		show_on_map = 1
-		base_cost = 2100
-		per_level_extra_cost = 300
+		base_cost = 2000
+		per_level_extra_cost = 200
 		icon_frame = 5
 		air_base = yes
 		value = 1

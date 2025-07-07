@@ -23,6 +23,7 @@ ideas = {
 				conscription = 0.01
 				stability_factor = 0.1
 				war_support_factor = -0.1
+				mobilization_speed = -0.2
 			}
 			cancel_if_invalid = no
 		}
@@ -54,6 +55,7 @@ ideas = {
 				conscription = 0.02
 				stability_factor = 0.05
 				war_support_factor = -0.05 
+				mobilization_speed = -0.1
 			}
 
 			default = yes
@@ -147,6 +149,7 @@ ideas = {
 				industrial_capacity_dockyard = -0.05
 				production_speed_buildings_factor = -0.05
 				training_time_factor = 0.1
+				mobilization_speed = 0.1
 			}
 
 			
@@ -200,6 +203,7 @@ ideas = {
 				industrial_capacity_dockyard = -0.1
 				production_speed_buildings_factor = -0.1
 				training_time_factor = 0.2
+				mobilization_speed = 0.2
 			}
 			
 			ai_will_do = {
@@ -250,11 +254,12 @@ ideas = {
 			level = 2
 
 			modifier = {
-				conscription = 0.13
+				conscription = 0.15
 				industrial_capacity_factory = -0.3
 				industrial_capacity_dockyard = -0.3
 				production_speed_buildings_factor = -0.3
 				training_time_factor = 0.3
+				mobilization_speed = 0.4
 			}
 			ai_will_do = {
    				factor = 0
@@ -294,11 +299,12 @@ ideas = {
 			removal_cost = -1
 			level = 1
             modifier = {
-				conscription = 0.16
+				conscription = 0.25
 				industrial_capacity_factory = -0.4
 				industrial_capacity_dockyard = -0.4
 				production_speed_buildings_factor = -0.4
 				training_time_factor = 0.4
+				mobilization_speed = 0.5
 			}
 			
 			ai_will_do = {
