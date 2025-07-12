@@ -862,7 +862,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			ENG = { set_autonomy = { target = RAJ autonomy_state = autonomy_free } }
+			ENG = { set_autonomy = { target = IDR autonomy_state = autonomy_free } }
 			set_country_leader_name = {
 				ideology = neutrality
 				name = POLITICS_B_P_SITARAMAYYA_DESC
@@ -878,7 +878,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			ENG = { set_autonomy = { target = RAJ autonomy_state = autonomy_free } }
+			ENG = { set_autonomy = { target = IDR autonomy_state = autonomy_free } }
 			set_country_leader_name = {
 				ideology = neutrality
 				name = POLITICS_B_P_SITARAMAYYA_DESC
@@ -5517,7 +5517,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				RAJ = { surrender_progress > 0.1 }
+				IDR = { surrender_progress > 0.1 }
 				date > 1942.01.01
 			}
 		}
@@ -5557,7 +5557,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				RAJ = { surrender_progress > 0.25 }
+				IDR = { surrender_progress > 0.25 }
 				date > 1942.06.01
 			}
 		}
