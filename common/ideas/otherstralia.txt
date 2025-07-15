@@ -233,7 +233,7 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = USA
-				war_support_factor = 0.05
+				trade_cost_for_target_factor = -0.25
 			}
 		}
 	
@@ -521,15 +521,15 @@ ideas = {
 			}
 			
 			modifier = {
-				production_speed_industrial_complex_factor = -0.05
-				production_speed_infrastructure_factor = -0.05
+				production_speed_industrial_complex_factor = 0.025
+				production_speed_infrastructure_factor = 0.025
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
 				stability_weekly = 0.002
 			}
 			targeted_modifier = {
 				tag = USA
-				war_support_factor = 0.1
+				trade_cost_for_target_factor = -0.5
 			}
 		}
 		
@@ -706,7 +706,7 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = USA
-				war_support_factor = 0.15
+				trade_cost_for_target_factor = -0.75
 			}
 		}
 	

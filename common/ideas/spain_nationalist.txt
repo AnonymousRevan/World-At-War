@@ -23,7 +23,7 @@ ideas = {
 				fascism_acceptance = 10
 				enemy_justify_war_goal_time = 10\
 				send_volunteer_divisions_required = -1.0
-				send_volunteer_size = 30
+				send_volunteer_size = 18
 				air_volunteer_cap = 20
 			}
 		}
@@ -88,11 +88,10 @@ ideas = {
                 can_join_factions = no 
             }
 			modifier = {
-				production_speed_industrial_complex_factor = 0.05
 				stability_factor = -0.2
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_speed_buildings_factor = -0.15
 				consumer_goods_factor = 0.75
 			}
 		}
@@ -277,7 +276,6 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_industrial_complex_factor = 0.05
 				stability_factor = -0.1
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
@@ -420,10 +418,9 @@ ideas = {
 				can_join_factions = no 
 			}
 			modifier = {
-				production_speed_industrial_complex_factor = 0.1
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_speed_buildings_factor = -0.15
 				consumer_goods_factor = 0.5
 			}
 		}
@@ -450,11 +447,10 @@ ideas = {
 				can_join_factions = no 
 			}
 			modifier = {
-				production_speed_industrial_complex_factor = 0.15
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
 				production_speed_buildings_factor = -0.1
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.25
 			}
 
 		}
@@ -481,10 +477,9 @@ ideas = {
 				can_join_factions = no 
 			}
 			modifier = {
-				production_speed_industrial_complex_factor = 0.2
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = -0.05
-				production_speed_buildings_factor = -0.05
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_speed_buildings_factor = -0.1
 			}
 		}
 

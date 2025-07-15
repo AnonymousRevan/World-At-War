@@ -577,6 +577,8 @@ ideas = {
 
 			cancel_if_invalid = yes
 		}
+				
+				
         FRA_exiles = {
 
             picture = SPR_collectivized_society
@@ -591,23 +593,23 @@ ideas = {
 			removal_cost = -1
 
             modifier = {
-                consumer_goods_expected_value = 0.1
+                consumer_goods_expected_value = 0.2
 				conscription = 0.015
-				stability_weekly = 0.001
-                production_speed_industrial_complex_factor = 0.25
-                production_speed_arms_factory_factor = 0.125
-				production_speed_dockyard_factor = 0.125
+				production_speed_infrastructure_factor = 0.25
+                production_speed_industrial_complex_factor = 0.10
+                production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
 				production_speed_synthetic_refinery_factor = 0.1
 				production_speed_synthetic_rubber_refinery_factor = 0.1
 				production_speed_steel_refinery_factor = 0.1
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
                 conversion_cost_civ_to_mil_factor= -0.1
                 conversion_cost_mil_to_civ_factor = -0.1
                 global_building_slots_factor = 0.2
                 industry_free_repair_factor = 0.1
                 industrial_capacity_factory = 0.05
                 industrial_capacity_dockyard = 0.05
-                research_speed_factor = 0.025
+                research_speed_factor = 0.075
             }	
 			
 			ai_will_do = {
@@ -617,6 +619,7 @@ ideas = {
 			visible = {
 			    OR = {
 				tag = HOL
+				tag = FRA
 				}
 			}
 
