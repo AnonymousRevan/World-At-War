@@ -196,20 +196,20 @@ ideas = {
 			removal_cost = -1
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.3 instant = yes
+					build_cost_ic = -0.2 instant = yes
 				}
 				support_equipment = {
-					build_cost_ic = -0.3 instant = yes
+					build_cost_ic = -0.2 instant = yes
 				}
-				fighter_equipment = {
+				small_plane_airframe = {
 					air_agility = 0.1 instant = yes
 					air_range = 0.1  instant = yes
-					build_cost_ic = -0.25 instant = yes
+					build_cost_ic = -0.15 instant = yes
 				}
-				heavy_fighter_equipment = {
+				medium_plane_fighter_airframe = {
 					air_agility = 0.05 instant = yes
 					air_range = 0.05  instant = yes
-					build_cost_ic = -0.25 instant = yes
+					build_cost_ic = -0.15 instant = yes
 				}
 			}
 			modifier = {
@@ -1757,10 +1757,10 @@ ideas = {
 
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 				medium_plane_fighter_airframe = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 			modifier = {

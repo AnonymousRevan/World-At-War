@@ -563,7 +563,7 @@ technologies = {
 		enable_equipments = {
 			cv_heavy_fighter_equipment_1940
 		}
-
+		
 		research_cost = 0.8
 		start_year = 1936
 
