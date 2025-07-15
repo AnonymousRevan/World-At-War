@@ -332,7 +332,7 @@ characters={
 				}
 			}
 			advisor={
-				cost = 100
+				cost = 200
 				slot = theorist
 				idea_token = BRA_eduardo_gomes
 				ledger = air
@@ -341,7 +341,7 @@ characters={
 				}
 				
 				traits = {
-					air_warfare_theorist
+					victory_through_airpower
 				}
 			}	
 		}

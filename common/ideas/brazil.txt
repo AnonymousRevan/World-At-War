@@ -100,7 +100,7 @@ ideas = {
 			picture = generic_the_london_naval_treaty
 			
 			modifier = {
-				production_speed_dockyard_factor = 0.1
+				production_speed_dockyard_factor = 0.2
 			}
 		}
 

@@ -2420,6 +2420,7 @@ shared_focus = {
 				add_mio_size = 1
 			}
 		}
+		add_ideas = FRA_air_dominance
 		random_core_state = {
 			limit = {
 				free_building_slots = {

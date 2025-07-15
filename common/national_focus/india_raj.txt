@@ -1657,6 +1657,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
+		    custom_effect_tooltip = RAJ_attempt_industrialization_tt_2
+			add_to_variable = {
+				var = rapid_industrialization
+				value = 5
+			}
 			294 = {
 				build_2_infrastructure = yes
 			}
@@ -1675,6 +1680,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		    custom_effect_tooltip = RAJ_attempt_industrialization_tt_2
+			add_to_variable = {
+				var = rapid_industrialization
+				value = 5
+			}
    			294 = {
 				build_2_infrastructure = yes
 			}
@@ -3666,14 +3676,18 @@ focus_tree = {
 		x = -17
 		y = 1
 
-		cost = 1.5
+		cost = 1
 
 		ai_will_do = {
 			factor = 90
 		}
 
 		available = {
+		    OR = {
 			threat > 0.15
+		    ENG = { has_completed_focus = ENG_no_further_appeasement }
+			JAP = { has_completed_focus = JAP_intervene_in_china }
+			}
 		}
 
 		bypass = {
@@ -3973,7 +3987,7 @@ focus_tree = {
 		x = 3
 		y = 1
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 100
@@ -4018,7 +4032,7 @@ focus_tree = {
 		x = 4
 		y = 2
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 100
@@ -4067,7 +4081,7 @@ focus_tree = {
 		x = 2
 		y = 2
 
-		cost = 10
+		cost = 7.16
 
 		ai_will_do = {
 			factor = 100
@@ -6002,7 +6016,7 @@ focus_tree = {
 		x = -2
 		y = 4
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -6038,7 +6052,7 @@ focus_tree = {
 		x = 2
 		y = 4
 
-		cost = 2.9
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -6085,11 +6099,10 @@ focus_tree = {
 		icon = GFX_focus_generic_navy_battleship2
 		relative_position_id = RAJ_bengal_dockyards
 		prerequisite = { focus = RAJ_a_raiding_fleet }
-		mutually_exclusive = { focus = RAJ_submarine_warfare }
 		x = 1
 		y = 5
 
-		cost = 2.9
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -6113,11 +6126,10 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_weapon
 		relative_position_id = RAJ_bengal_dockyards
 		prerequisite = { focus = RAJ_a_raiding_fleet }
-		mutually_exclusive = { focus = RAJ_capital_ship_raiders }
 		x = 3
 		y = 5
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -6156,7 +6168,7 @@ focus_tree = {
 		x =-2
 		y = 5
 
-		cost = 2.9
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -6206,7 +6218,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -6276,7 +6288,7 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
