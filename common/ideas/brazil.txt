@@ -342,13 +342,20 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+			
+			rule = {
+				can_join_factions = no 
+				can_send_volunteers = yes 
+			}
+
 
 			modifier = {
 				lend_lease_tension = -0.5
 				send_volunteers_tension = -0.5
 				send_volunteer_divisions_required = -1.0
-				send_volunteer_size = 12
+				send_volunteer_size = 18
 				air_volunteer_cap = 12
+				special_forces_min = 150
 			}
 		}
 
