@@ -26,7 +26,7 @@ sub_units = {
 		type = { heavy_fighter }
 		need = { medium_plane_fighter_airframe = 1 }
 		categories = { category_heavy_fighter category_all_air }
-		land_air_wing_size = 50
+		land_air_wing_size = 100
 	}
 	
 	cas = {
@@ -126,7 +126,17 @@ sub_units = {
 		carrier_air_wing_size = 10
 		land_air_wing_size = 100
 	}
-
+	
+	escort_bomber = {
+		sprite = heavy_plane
+		priority = 5
+		active = yes
+		type = strategic_bomber
+		need = { large_plane_airframe  = 1 }
+		categories = { category_strat_bomber category_all_air }
+		land_air_wing_size = 100
+	}
+	
 	cv_nav_bomber = {
 		sprite = light_plane
 		priority = 3

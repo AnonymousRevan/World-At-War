@@ -1427,7 +1427,7 @@ technologies = {
 		}
 
 		#planning max bonus increase
-		max_planning = 0.10
+		max_planning = 0.075
 		supply_consumption_factor = -0.05
 
 		xp_research_type = army
@@ -1569,7 +1569,7 @@ technologies = {
 
 	assault_concentration = {
 
-		max_planning = 0.1
+		max_planning = 0.075
 		planning_speed = 0.1
 
 		enable_tactic = tactic_overwhelming_fire
@@ -1713,8 +1713,7 @@ technologies = {
 
 		land_reinforce_rate = 0.03
 		dig_in_speed_factor = 0.15
-		amphibious_invasion_defence = 0.10
-		naval_invasion_planning_bonus_speed = 0.15
+		amphibious_invasion_defence = 0.15
 		
 		category_all_infantry = {
 			max_organisation = 7
@@ -1747,7 +1746,7 @@ technologies = {
 
 	infantry_offensive = {
 
-	    land_reinforce_rate = 0.01
+	    land_reinforce_rate = 0.02
 		xor = {
 			grand_mechanized_offensive
 		}
@@ -1788,7 +1787,7 @@ technologies = {
 
 	central_planning = {
 
-		max_planning = 0.1
+		max_planning = 0.05
 		planning_speed = 0.1
 
 		path = {
@@ -1853,7 +1852,7 @@ technologies = {
 
 		#reduce land night combat penalty
 		land_night_attack = 0.20 # negates base penalty
-		naval_invasion_planning_bonus_speed = 0.05
+		amphibious_invasion_defence = 0.075
 
 		path = {
 			leads_to_tech = attritional_containment

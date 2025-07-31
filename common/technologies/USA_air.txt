@@ -1377,6 +1377,11 @@ technologies = {
 			air_equipment
 			mio_cat_all_medium_aircraft_and_modules
 		}
+		
+		sub_technologies = {
+			usa_Doolittle
+		}
+		
 		ai_will_do = {
 			factor = 4
 			modifier = {
@@ -1385,7 +1390,31 @@ technologies = {
 			}
 		}
 	}
+	
+	usa_Doolittle = {
 
+		enable_equipments = {
+			tac_bomberDoo_equipment_1941
+		}
+
+		research_cost = 0.8
+		start_year = 1941
+
+		categories = {
+			naval_air
+			mio_cat_all_medium_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				num_of_military_factories > 29
+			}
+		}
+	}
+	
 	usa_tactical_bomber_1943 = {
 
 		enable_equipments = {
@@ -1513,13 +1542,37 @@ technologies = {
 			cat_strategic_bomber
 			mio_cat_all_heavy_aircraft_and_modules
 		}
-
+		
+		sub_technologies = {
+			usa_escort_bomber_1940
+		}
+		
 		ai_will_do = {
 			factor = 5
 
 		}
 	}
+	
+	usa_escort_bomber_1940 = {
 
+		enable_equipments = {
+			escort_bomber_equipment_1940
+		}
+
+		research_cost = 0.4
+		start_year = 1938
+
+		categories = {
+			all_air
+			mio_cat_all_light_fighter_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 5
+
+		}
+	}
+	
 	usa_strategic_bomber_1942 = {
 
 		enable_equipments = {

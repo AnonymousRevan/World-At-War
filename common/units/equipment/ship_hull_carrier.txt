@@ -306,11 +306,72 @@ equipments = {
 		reliability = 0.65
 		naval_speed = 22
 		naval_range = 4000
+		sub_detection = 12
 		resources = {
 			steel = 4
 		}
 	}
+	
+	ship_hull_carrier_CVL = {
+		year = 1940
+		visual_level = 1
+		archetype = ship_hull_carrier
+		priority = 1000
+		parent = ship_hull_carrier_1
 
+		module_slots = {
+			fixed_ship_deck_slot_1 = inherit
+			fixed_ship_deck_slot_2 = inherit
+			fixed_ship_anti_air_slot = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_engine_slot = inherit
+			fixed_ship_secondaries_slot = inherit
+			fixed_ship_armor_slot = inherit
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_secondaries
+					ship_light_battery
+					ship_medium_battery
+					ship_deck_space
+					ship_carrier_armor
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_secondaries
+					ship_light_battery
+					ship_medium_battery
+					ship_deck_space
+					ship_anti_air
+					ship_carrier_armor
+				}
+			}
+		}
+
+		default_modules = {
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_3
+		}
+
+		build_cost_ic = 8000
+		manpower = 7500
+		max_strength = 420
+		reliability = 0.75
+		naval_speed = 25
+		naval_range = 3750
+		anti_air_attack = 8
+		fuel_consumption = 88
+		
+		resources = {
+			steel = 20
+			chromium = 10
+		}
+	}
+	
 ###Prescripted designs for people without MtG
 
 	carrier_1 = {

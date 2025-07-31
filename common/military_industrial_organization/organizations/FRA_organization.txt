@@ -1165,15 +1165,3 @@ FRA_Stat_organization = {
 		} 
 	}
 }
-FRA_schneider_anti_tank_air = {
-	include = generic_anti_tank_air_organization
-	icon = GFX_idea_schneider
-	name = "Schneider Support Weapons"
-	allowed = {	
-		OR = {
-			original_tag = FRA
-			original_tag = EFR
-			original_tag = HOL			
-		} 
-	}
-}	

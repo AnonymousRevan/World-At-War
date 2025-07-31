@@ -542,7 +542,7 @@ characters={
 					}
 				}
 				traits  = {
-					backroom_backstabber_2 
+					backroom_backstabber_2 military_theorist 
 				}
 		}
 		name="SAF_e_g_jansen"
@@ -561,7 +561,7 @@ characters={
 					original_tag  = SAF
 				}
 				traits  = {
-					army_infantry_3 
+					army_cavalry_2
 				}
 				ai_will_do  = {
 					factor  = 1.000

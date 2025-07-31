@@ -43,7 +43,7 @@ NDefines.NProduction.BASE_FACTORY_EFFICIENCY_GAIN = 0.95		-- Base efficiency fac
 NDefines.NProduction.ANNEX_STOCKPILES_RATIO = 0.85		-- How much stockpiled equipment will be transferred on annexation
 NDefines.NProduction.ANNEX_FIELD_EQUIPMENT_RATIO = 0.25	-- How much equipment from deployed divisions will be transferred on annexation
 NDefines.NProduction.ANNEX_FUEL_RATIO = 0.25	-- How much fuel will be transferred on annexation
-NDefines.NProduction.ANNEX_CONVOYS_RATIO = 0.25			-- How many convoys will be transferred on annexation
+NDefines.NProduction.ANNEX_CONVOYS_RATIO = 0.5			-- How many convoys will be transferred on annexation
 NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 1 		-- Building in a state with higher infrastructure will reduce the cost of shared buildings.
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 200000	-- How many deployment lines minimum can be training
 NDefines.NProduction.LICENSE_EQUIPMENT_BASE_SPEED = -0.1				-- base MIC speed modifier for licensed equipment
@@ -234,8 +234,8 @@ NDefines.NAir.STRATEGIC_BOMBER_NUKE_AIR_SUPERIORITY = 0.80		-- How much air supe
 NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 10               	        -- biggest bonus we can get from having a small wing with an ace on
 NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.2               -- % how many max disrupted only planes are allowed to die in a single combat
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.05				-- 10x levels = 50% defense from bombing
-NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.35		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
-NDefines.NAir.NAVAL_RECON_DETECTION_BALANCE_FACTOR = 0.7			-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam spotting.
+NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.25		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
+NDefines.NAir.NAVAL_RECON_DETECTION_BALANCE_FACTOR = 0.5			-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam spotting.
 NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.65					-- Anti Air Gun Damage factor
 NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.11					-- Anti Air Gun hit chance
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.7	-- Maximum damage reduction factor applied to incoming air attacks against units with AA.
@@ -283,8 +283,8 @@ NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.24								-- casting damage value
 NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.4								-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
 NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 14								-- Before we resign chasing enemy, give them some minimum time so the combat doesn't end instantly.
 NDefines.NNavy.COMBAT_MIN_DURATION = 14										-- Min combat duration before we can retreat. It's a balancing variable so it's not possible to always run with our weak ships agains big flotillas.
-NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.5						-- Balancing value to convert averaged equipment stats (anti_air_targetting and naval_strike_agility) to probability chances of airplane being hit by navies AA.
-NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005								-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
+NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.4						-- Balancing value to convert averaged equipment stats (anti_air_targetting and naval_strike_agility) to probability chances of airplane being hit by navies AA.
+NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.004								-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
 NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.75								-- amphibious landing penalty
 NDefines.NNavy.AMPHIBIOUS_INVADE_MOVEMENT_COST = 20.0 						-- total progress cost of movement while amphibious invading
 NDefines.NNavy.AMPHIBIOUS_INVADE_ATTACK_LOW = 0.4 							-- low and high cap of attack modifier scale. Scale interpolated by invasion progress.
@@ -320,9 +320,9 @@ NDefines.NNavy.MISSION_SPREADS = {  -- mission spreads in the case a ship join c
 	}
 NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
 		1000,     -- do not engage
-		15,   -- low
-		3.0,   -- medium
-		1.0,   -- high
+		10,   -- low
+		1.0,   -- medium
+		0.5,   -- high
 		1.0,   -- I am death incarnate!
 	}
 NDefines.NNavy.ORG_COST_WHILE_MOVING = { -- org cost while the ships are moving
@@ -449,7 +449,7 @@ NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 8.0 -- penalty to flow per d
 NDefines.NSupply.RAILWAY_MIN_FLOW = 10.0 		-- minimum railway flow can be reduced to
 NDefines.NSupply.NAVAL_BASE_FLOW = 10.0 -- max output/input of a naval node is limited by this base value + additional ratio for each level
 NDefines.NSupply.NAVAL_FLOW_PER_LEVEL = 5.5 -- max output/input of a naval node is limited by previous base value + this define per its level
-NDefines.NSupply.INFRA_TO_SUPPLY = 0.5							-- each level of infra gives this many supply
+NDefines.NSupply.INFRA_TO_SUPPLY = 0.6							-- each level of infra gives this many supply
 NDefines.NSupply.VP_TO_SUPPLY_BASE = 0.2							-- Bonus to supply from a VP, no matter the level
 NDefines.NSupply.VP_TO_SUPPLY_BONUS_CONVERSION = 0.1			-- Bonus to supply local supplies from Victory Points, multiplied by this aspect and rounded to closest integer
 NDefines.NSupply.SUPPLY_FROM_DAMAGED_INFRA = 0.25                -- damaged infrastructure counts as this in supply calcs
@@ -461,9 +461,9 @@ NDefines.NIndustrialOrganisation.ASSIGN_INDUSTRIAL_MANUFACTURER_PP_COST_PER_DAY 
 NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 700									-- Funds needed for a MIO to increment its size and get points to unlock traits
 NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 100 						-- How much each level mutliplies the funds for size up 
 NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 0							-- Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
-NDefines.NIndustrialOrganisation.FUNDS_FOR_RESEARCH_COMPLETION_PER_RESEARCH_COST = 300     	-- Funds added to MIO when the Design Team has completed a research, multiplied by research_cost in technology template
+NDefines.NIndustrialOrganisation.FUNDS_FOR_RESEARCH_COMPLETION_PER_RESEARCH_COST = 150     	-- Funds added to MIO when the Design Team has completed a research, multiplied by research_cost in technology template
 NDefines.NIndustrialOrganisation.FUNDS_FROM_MANUFACTURER_PER_IC_PER_DAY = 0.25				-- Funds added to MIO when a manufacturer is attached to a production line. Added every day proportional to IC produced.
-NDefines.NIndustrialOrganisation.MAX_FUNDS_FROM_MANUFACTURER_PER_DAY = 75					-- Max funds generated per manufacturer per day. Set to 0 for no Maximum.
+NDefines.NIndustrialOrganisation.MAX_FUNDS_FROM_MANUFACTURER_PER_DAY = 50					-- Max funds generated per manufacturer per day. Set to 0 for no Maximum.
 NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_POLICY_ATTACH_COST = 50					-- Default start attach cost in PP for policies
 
 NDefines.NRaids.RAID_DEFAULT_TARGET_COOLDOWN_DAYS = 120           -- The default cooldown (in days) for raiding the same target, can be overriden for specific raid types through script

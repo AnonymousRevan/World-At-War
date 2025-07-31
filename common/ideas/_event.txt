@@ -212,6 +212,23 @@ ideas = {
 			}
 		}
 		
+		Gamblers_regret = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = -0.8
+				stability_weekly = -0.005
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+			}
+		}
+		
 		political_turmoil = {
 			
 			allowed = {

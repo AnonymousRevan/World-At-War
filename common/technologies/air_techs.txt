@@ -218,6 +218,7 @@ technologies = {
 
 		enable_equipments = {
 			fighter_equipment_1940
+			hyfighter_equipment_1944
 		}
 
 		path = {

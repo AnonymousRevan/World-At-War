@@ -8,8 +8,8 @@ units= {
 		task_force = {				
 			name = "Service Command"
 			location = 1349 
-			ship = { name = "Gandhi" definition = destroyer start_experience_factor = 0 equipment = { ship_hull_light_1 = { amount = 1 owner = IDR version_name = "Gandhi Class" } } }				
-			ship = { name = "Slanet" definition = destroyer start_experience_factor = 0 equipment = { ship_hull_light_1 = { amount = 1 owner = IDR version_name = "Gandhi Class" } } }					
+			ship = { name = "Gandhi" definition = destroyer start_experience_factor = 0 equipment = { ship_hull_light_1 = { amount = 1 owner = RAJ version_name = "Gandhi Class" } } }				
+			ship = { name = "Slanet" definition = destroyer start_experience_factor = 0 equipment = { ship_hull_light_1 = { amount = 1 owner = RAJ version_name = "Gandhi Class" } } }					
 		}
 	}
 } 

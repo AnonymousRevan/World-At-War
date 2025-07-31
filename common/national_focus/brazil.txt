@@ -1483,7 +1483,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = BRA_international_crisis 
-			USA = { set_autonomy = { target = BRA autonomy_state = autonomy_free } }
+			set_rule = { can_send_volunteers = yes }
 		}
 	}
 
@@ -1740,6 +1740,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
+			is_in_faction_with = USA
 		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -1781,6 +1782,7 @@ focus_tree = {
 		relative_position_id = BRA_natal_naval_base
 		cost = 5
 		available = {
+			is_in_faction_with = USA
 		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }

@@ -1563,44 +1563,6 @@ ENG_vickers_mech = {
 		}
 	}
 }
-ENG_royal_arsenal2_anti_tank_air = {
-	include = generic_heavy_anti_tank_air_organization
-	icon = GFX_idea_vauxhall	
-	name = "Ordnance Heavy Weaponry"
-	allowed = {	
-		OR = {
-			original_tag = ENG
-			original_tag = CAN
-			original_tag = SAF	
-			original_tag = AST
-			original_tag = RAJ
-			original_tag = IDR
-			original_tag = NZL
-		}
-	}
-
-	add_trait = { 
-		token = 17pounds
-		name = "17Pdr"
-		icon = GFX_generic_mio_department_icon_tank_general_spg
-		position = { x=0 y=0 }
-
-		available = {
-			ENG = {
-				has_completed_focus = uk_the_firefly 
-			}
-		}
-		
-		limit_to_equipment_type = { 
-			anti_tank_equipment
-		}
-		equipment_bonus = {
-			hard_attack = 0.15
-			defense = 0.05
-			ap_attack = 0.15
-		}
-	}
-}
 ENG_AEC = {
 	include = generic_armored_car_organization
 	icon = GFX_idea_ENG_aec

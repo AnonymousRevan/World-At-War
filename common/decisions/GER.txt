@@ -89,9 +89,6 @@ special_projects = {
 
 		available = { 
 			has_tech = improved_ship_hull_heavy
-			has_tech = basic_heavy_armor_scheme
-			has_tech = improved_heavy_battery
-			has_tech = improved_fire_control_system
 		}
 
 		visible = {
@@ -136,7 +133,7 @@ special_projects = {
 						version_name = "Bismarck Class"
 					}
 					name = "Bismarck" 
-					requested_factories = 5
+					requested_factories = 10
 					progress = 0.55
 					amount = 1
 				}
@@ -147,7 +144,7 @@ special_projects = {
 						version_name = "Bismarck Class"
 					}
 					name = "Tirpitz" 
-					requested_factories = 5
+					requested_factories = 10
 					progress = 0.40
 					amount = 1
 				}
@@ -201,7 +198,7 @@ special_projects = {
 						version_name = "Graf Zeppelin Class"
 					}
 					name = "Graf Zeppelin" 
-					requested_factories = 5
+					requested_factories = 10
 					progress = 0.75
 					amount = 1
 				}
@@ -1675,7 +1672,7 @@ operations = {
 			date > 1939.1.1
 		}
 		available = {
-			date > 1939.1.1
+			date > 1940.1.1
 		}
 
 		cost = 0
@@ -2581,7 +2578,7 @@ GER_case_anton_category = {
 		available = {
 			has_government = fascism
 			country_exists = EFR
-			date > 1942.9.1
+			date > 1942.1.1
 			EFR = { is_ai = yes }
 			USA = { has_war = yes }
 		}
@@ -2622,7 +2619,7 @@ GER_case_anton_category = {
 					}
 				}
 				set_resistance = 5
-				set_compliance = 40
+				set_compliance = 75
 			}
 			EFR = {
 			  set_capital = { state = 459 }

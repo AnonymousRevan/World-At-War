@@ -951,6 +951,8 @@ sound = {
 sound = {
     name = "nuke_big_light_flash"
     file = "animations/nuke_big_light_flash.wav"
+	file = "audiofiles/Nuke.wav"
+	always_load = no
 }
 
 #################GENERIC EXPLOSION#######################################

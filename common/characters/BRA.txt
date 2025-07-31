@@ -332,7 +332,7 @@ characters={
 				}
 			}
 			advisor={
-				cost = 200
+				cost = 100
 				slot = theorist
 				idea_token = BRA_eduardo_gomes
 				ledger = air
@@ -341,7 +341,7 @@ characters={
 				}
 				
 				traits = {
-					victory_through_airpower
+					air_warfare_theorist
 				}
 			}	
 		}
@@ -1262,7 +1262,7 @@ characters={
 				}
 			}
 			advisor={
-			    cost = 150
+			    cost = 5
 				slot = political_advisor
 				idea_token = BRA_afranio_de_mello_franco
 				allowed  = {
@@ -1275,9 +1275,12 @@ characters={
 					}
 				}
 				traits  = {
-					backroom_backstabber_2
+					BRA_nobel_peace_prize_nominee
 				}
 
+				on_add = {
+					BRA = { set_rule = { can_send_volunteers = yes } }
+				}
 			}	
 			name=BRA_afranio_de_mello_franco
 		}

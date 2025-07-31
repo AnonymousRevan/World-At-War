@@ -320,3 +320,11 @@ category_exile_forces = {
 		has_dlc = "Man the Guns"
 	}
 }
+
+Experimental_weapons = {
+	icon = GFX_decision_category_generic_crisis
+
+	allowed = {
+		always = yes
+	}
+}

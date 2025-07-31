@@ -1,6 +1,6 @@
 ﻿capital = 500
 
-set_research_slots = 4
+set_research_slots = 3
 
 oob = "BRA_1936"
 every_core_state = {

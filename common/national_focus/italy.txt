@@ -283,12 +283,12 @@ focus_tree = {
 			}
 			add_equipment_to_stockpile = {
 				type = cv_fighter_equipment_1936
-				amount = 60
+				amount = 20
 				producer = ITA 
 			}
 			add_equipment_to_stockpile = {
 				type = cv_nav_bomber_equipment_1936
-				amount = 60
+				amount = 20
 				producer = ITA 
 			}
 			navy_experience = 25

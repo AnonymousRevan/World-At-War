@@ -5200,7 +5200,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = refinery_idea
+			remove_ideas = refinery_idea_usa
 			random_owned_state = {
 				limit = {
 					is_core_of = USA 

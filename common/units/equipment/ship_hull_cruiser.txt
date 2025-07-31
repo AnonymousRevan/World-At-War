@@ -177,7 +177,74 @@ equipments = {
 			steel = 14
 		}
 	}
+	
+	ship_hull_cruiser_monitor = {
+		year = 1936
+		visual_level = 1
+		archetype = ship_hull_cruiser
+		priority = 1900
+		parent = ship_hull_cruiser_1
 
+		module_slots = {
+			fixed_ship_battery_slot = inherit
+			fixed_ship_anti_air_slot = inherit
+			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_engine_slot = inherit
+			fixed_ship_secondaries_slot = inherit
+			fixed_ship_armor_slot = inherit
+			front_1_custom_slot = {
+			required = no
+			allowed_module_categories = {
+				ship_anti_air
+				ship_secondaries
+				ship_heavy_battery
+				
+				}
+			}
+		
+		rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_heavy_battery
+					ship_secondaries
+					
+				}
+			}
+		}
+		
+		module_count_limit = {
+			category = ship_radar
+			count < 2
+		}
+
+		module_count_limit = {
+			category = ship_sonar
+			count < 2
+		}
+		
+		default_modules = {
+			rear_2_custom_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_3
+		}
+
+		build_cost_ic = 750
+		manpower = 1500
+		max_strength = 50
+		reliability = 0.90
+		naval_speed = 3
+		naval_range = 2000
+		hg_armor_piercing = -20
+		hg_attack = 30
+		naval_heavy_gun_hit_chance_factor = -0.85
+		resources = {
+			steel = 6
+			chromium = 1
+			tungsten = 2
+		}
+	}
+	
 	ship_hull_cruiser_3 = {
 		year = 1940
 		visual_level = 1
@@ -215,7 +282,104 @@ equipments = {
 			steel = 20
 		}
 	}
+	
+	ship_hull_cruiser_aa = {
+		year = 1940
+		visual_level = 1
+		archetype = ship_hull_cruiser
+		priority = 1900
+		parent = ship_hull_cruiser_2
 
+		module_slots = {
+			fixed_ship_battery_slot = inherit
+			fixed_ship_anti_air_slot = inherit
+			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_engine_slot = inherit
+			fixed_ship_secondaries_slot = inherit
+			fixed_ship_armor_slot = inherit
+			front_1_custom_slot = {
+			required = no
+			allowed_module_categories = {
+				ship_torpedo
+				ship_anti_air
+				ship_secondaries
+				ship_light_battery
+				
+				}
+			}
+		
+		mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					ship_anti_air
+					ship_light_battery
+					ship_secondaries
+					ship_airplane_launcher
+				}
+			}
+			
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					ship_anti_air
+					ship_secondaries
+					ship_depth_charge
+					ship_airplane_launcher
+				}
+			}
+			
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_light_battery
+					ship_airplane_launcher
+					ship_depth_charge
+				}
+			}
+			
+			rear_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_light_battery
+					ship_airplane_launcher
+					ship_depth_charge
+				}
+			}
+		}
+		
+		module_count_limit = {
+			category = ship_radar
+			count < 2
+		}
+
+		module_count_limit = {
+			category = ship_sonar
+			count < 2
+		}
+		
+		default_modules = {
+			rear_2_custom_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_3
+		}
+
+		build_cost_ic = 2500
+		manpower = 1500
+		max_strength = 138
+		reliability = 0.90
+		naval_speed = 27
+		naval_range = 4000
+		anti_air_attack = 15
+		lg_attack = 5
+		resources = {
+			steel = 15
+		}
+	}
+	
 	ship_hull_cruiser_4 = {
 		year = 1944
 		visual_level = 1

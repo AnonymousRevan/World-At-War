@@ -1265,6 +1265,314 @@ generic_task_force_ship_organization = {
 }
 
 
+#TASK FORCE MANUFACTURER - Based on funny moustache mans insanity
+Kriegsmental_organization = {
+	icon = GFX_idea_generic_naval_manufacturer_1
+
+	allowed = {
+		always = no # Archetype only - countries using it have their own verisons
+	}
+
+	equipment_type = {
+		mio_cat_eq_all_carrier
+	}
+	research_categories = {
+		naval_equipment
+	}
+
+	
+
+	tree_header_text = {
+		text = mio_header_systems
+		x = 1
+	}
+
+	tree_header_text = {
+		text = mio_header_weapons
+		x = 5
+	}
+
+	
+	initial_trait = {
+		name = generic_mio_initial_trait_task_force_ship_builders
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = -0.1
+			refit_speed = -0.75
+		}
+		equipment_bonus = {
+			build_cost_ic = 0.05
+			
+		}
+	}
+
+	trait = {
+		token = British
+		name = "British carrier build"
+		icon = GFX_generic_mio_trait_icon_naval_range
+
+		position = { x=2 y=0 }
+		
+		mutually_exclusive = { American Japanese German }
+
+		equipment_bonus = {
+			max_strength = 0.5
+			carrier_size = -1
+			build_cost_ic = 0.1
+		}
+	}
+
+	trait = {
+		token = American
+		name = "American Carrier build"
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		position = { x=3 y=0 }
+		relative_position_id = British
+		
+		mutually_exclusive = { British German Japanese }
+		
+		equipment_bonus = {
+			naval_speed = 0.15
+			carrier_size = 1
+			build_cost_ic = 0.1
+		}
+	}
+	
+	trait = {
+		token = Japanese
+		name = "Japanese carrier build"
+		icon = GFX_generic_mio_trait_icon_naval_range
+
+		position = { x=4 y=0 }
+		
+		mutually_exclusive = { American British German }
+
+		equipment_bonus = {
+			max_strength = -0.25
+			build_cost_ic = -0.1
+		}
+	}
+
+	trait = {
+		token = German
+		name = "German Carrier build"
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		position = { x=1 y=0 }
+		relative_position_id = British
+		
+		mutually_exclusive = { Japanese American British }
+		
+		equipment_bonus = {
+			naval_speed = 0.1
+			surface_visibility = -0.1
+			build_cost_ic = 0.1
+		}
+	}
+	
+	trait = {
+		token = generic_mio_trait_splinter_protection
+		name = "Fuhrers indecision"
+		icon = GFX_generic_mio_trait_icon_armor_value
+
+		position = { x=1 y=2 }
+		relative_position_id = British
+		
+		any_parent = { British American Japanese German }
+
+		limit_to_equipment_type = { mio_cat_eq_all_carrier }
+
+		equipment_bonus = {
+			build_cost_ic = 0.2
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_transom_stern
+		name = "Raeders navy"
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		position = { x=-1 y=2 }
+		relative_position_id = generic_mio_trait_splinter_protection
+		
+		any_parent = { generic_mio_trait_splinter_protection }
+
+		mutually_exclusive = { generic_mio_trait_underway_replenishment_equipment }
+
+		equipment_bonus = {
+			lg_attack = 0.15
+			anti_air_attack = 0.15
+			carrier_size = 1
+			fuel_consumption = -0.1
+			build_cost_ic = 0.2
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_underway_replenishment_equipment
+		name = "Donitz navy"
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
+
+		position = { x=1 y=2 }
+		relative_position_id = generic_mio_trait_splinter_protection
+		
+		any_parent = { generic_mio_trait_splinter_protection }
+
+		mutually_exclusive = { generic_mio_trait_transom_stern }
+
+		equipment_bonus = {
+			surface_detection = 0.15
+			surface_visibility = -0.15
+			naval_speed = 0.15
+			naval_range = 0.15
+			build_cost_ic = 0.2
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_secondary_fire_director_control
+		name = generic_mio_trait_secondary_fire_director_control
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+
+		position = { x=6 y=0 }
+		relative_position_id = British
+		
+		limit_to_equipment_type = { carrier }
+
+		equipment_bonus = {
+			anti_air_attack = 0.05
+			naval_light_gun_hit_chance_factor = 0.05
+			build_cost_ic = 0.03
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_flight_deck_edge_aa_mounts
+		name = generic_mio_trait_flight_deck_edge_aa_mounts
+		icon = GFX_generic_mio_department_icon_ship_carrier_offense
+
+		position = { x=-1 y=1 }
+		relative_position_id = generic_mio_trait_secondary_fire_director_control
+		
+		any_parent = { generic_mio_trait_secondary_fire_director_control }
+
+		limit_to_equipment_type = { mio_cat_eq_all_carrier }
+
+		equipment_bonus = {
+			anti_air_attack = 0.05
+			build_cost_ic = 0.02
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_gyro_stabilized_mounts
+		name = generic_mio_trait_gyro_stabilized_mounts
+		icon = GFX_generic_mio_trait_icon_lg_attack
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_flight_deck_edge_aa_mounts
+		
+		any_parent = { generic_mio_trait_flight_deck_edge_aa_mounts }
+		
+		equipment_bonus = {
+			anti_air_attack = 0.05
+			lg_attack = 0.05
+			build_cost_ic = 0.02
+		}
+	}
+
+	trait = {
+		token = USAAA
+		name = "American Armament"
+		icon = GFX_generic_mio_department_icon_ship_general_offense
+
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_secondary_fire_director_control
+		
+		any_parent = { generic_mio_trait_secondary_fire_director_control }
+
+		mutually_exclusive = { generic_mio_trait_high_velocity_guns }
+
+		equipment_bonus = {
+			anti_air_attack = 0.15
+			lg_attack = 0.05
+			build_cost_ic = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_advanced_fitting_works
+		name = generic_mio_trait_advanced_fitting_works
+		icon = GFX_generic_mio_department_icon_ship_general_production
+
+		position = { x=1 y=3 }
+		relative_position_id = USAAA
+		
+		any_parent = { GermanAA USAAA }
+		
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_carrier_flight_operations_center
+		name = generic_mio_trait_carrier_flight_operations_center
+		icon = GFX_generic_mio_trait_icon_max_strength
+
+		position = { x=1 y=2 } #MM: This one could be moved up (4th row) so that it is visually clear which traits are the parents
+		relative_position_id = generic_mio_trait_gyro_stabilized_mounts
+		limit_to_equipment_type = {
+			mio_cat_eq_all_carrier
+		}
+		all_parents = { generic_mio_trait_gyro_stabilized_mounts generic_mio_trait_advanced_fitting_works generic_mio_trait_splinter_protection }
+		
+		equipment_bonus = {
+			carrier_size = 1
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_primary_fire_director_control
+		name = generic_mio_trait_primary_fire_director_control
+		icon = GFX_generic_mio_trait_icon_hg_attack
+
+		position = { x=3 y=0 }
+		relative_position_id = generic_mio_trait_secondary_fire_director_control
+		
+		limit_to_equipment_type = { mio_cat_eq_all_carrier }
+
+		equipment_bonus = {
+			lg_attack = 0.05
+			build_cost_ic = 0.02
+		
+		}
+	}
+
+	trait = {
+		token = GermanAA
+		name = "German Armament"
+		icon = GFX_generic_mio_trait_icon_ap_attack
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_primary_fire_director_control
+		
+		any_parent = { generic_mio_trait_primary_fire_director_control }
+
+		mutually_exclusive = { USAAA }
+
+		limit_to_equipment_type = { mio_cat_eq_all_carrier }
+
+		equipment_bonus = {
+			lg_armor_piercing = 0.15
+			lg_attack = 0.05
+			build_cost_ic = 0.1
+			
+		}
+	}
+}
+
 #BATTLE LINE SHIP MANUFACTURER - Based on Cammell Laird (ENG)
 generic_battle_line_ship_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_2
@@ -4565,6 +4873,7 @@ Fighter_medium_aircraft_organization = {
 
 	equipment_type = {
 		medium_plane_fighter_airframe
+		mio_cat_eq_all_medium_plane 
 		transport_plane_equipment
 	}
 
@@ -6406,7 +6715,7 @@ generic_artillery_organization = {
 		equipment_bonus = {
 			soft_attack = 0.025
 			defense = 0.05
-			hard_attack = 2.00
+			hard_attack = 0.50
 			ap_attack = 0.75
 		}
 		production_bonus = {
@@ -7206,6 +7515,49 @@ generic_anti_tank_air_organization = {
 			production_efficiency_gain_factor = -0.15
 		}
 	}
+	
+	trait = {
+		token = modernass
+		name = "Modern Assembly"
+		icon = GFX_generic_mio_trait_icon_breakthrough
+		position = { x=1 y=5 }
+	    any_parent = { atspecial }
+		limit_to_equipment_type = { 
+			anti_tank_equipment
+		}
+		available = {
+			owner = {
+				has_tech = assembly_line_production
+				has_tech = antitank2
+				has_tech = artillery_radio
+			}
+		}
+		equipment_bonus = {
+			defense = 0.12
+			breakthrough = 0.06
+			reliability = 0.05
+			build_cost_ic = 0.075
+		}
+	}
+	
+	trait = {
+		token = highvelocityammo
+		name = "Modern Ammunition"
+		icon = GFX_generic_mio_trait_icon_breakthrough
+		position = { x=1 y=6 }
+	    any_parent = { modernass }
+		limit_to_equipment_type = { 
+			anti_tank_equipment
+		}
+
+		equipment_bonus = {
+			hard_attack = 0.12
+			ap_attack = 0.15
+			reliability = -0.25
+			build_cost_ic = 0.1
+		}
+	}
+	
 	trait = {
 		token = antitankandairbonus
 		name = "Balanced Army Recommendations"
@@ -7252,8 +7604,33 @@ generic_anti_tank_air_organization = {
 			production_efficiency_gain_factor = -0.15
 		}
 	}
+	
+	trait = {
+		token = VTint
+		name = "VT Integration"
+		icon = GFX_generic_mio_trait_icon_breakthrough
+		position = { x=7 y=5 }
+	    any_parent = { aaspecial }
+		limit_to_equipment_type = { 
+			anti_air_equipment
+		}
+		available = {
+			owner = {
+				has_tech = assembly_line_production
+				has_tech = antiair2
+				has_tech = centimetric_radar
+			}
+		}
+		equipment_bonus = {
+			defense = 0.15
+			hard_attack = 1.5
+			soft_attack = 0.75
+			air_attack = 0.5
+			reliability = -0.15
+			build_cost_ic = 0.12
+		}
+	}
 }
-
 ### Anti Tank special ###
 
 generic_anti_tank_US_organization = {
@@ -7643,7 +8020,6 @@ generic_heavy_anti_tank_air_organization = {
 		always = no # Archetype only - countries using it have their own verisons
 	}
 	equipment_type = {
-		anti_tank_equipment
 		anti_air_equipment
 	}
 
@@ -7674,7 +8050,7 @@ generic_heavy_anti_tank_air_organization = {
 		position = { x=1 y=0 }
 		mutually_exclusive = { supercharges }
 		limit_to_equipment_type = { 
-			anti_tank_equipment
+			anti_air_equipment
 		}
 		equipment_bonus = {
 			defense = 0.15
@@ -7691,7 +8067,7 @@ generic_heavy_anti_tank_air_organization = {
 		position = { x=3 y=0 }
 		mutually_exclusive = { stablerecoil }
 		limit_to_equipment_type = { 
-			anti_tank_equipment
+			anti_air_equipment
 		}
 		equipment_bonus = {
 			breakthrough = 0.15
@@ -7707,7 +8083,7 @@ generic_heavy_anti_tank_air_organization = {
 		position = { x=2 y=2 }
 	    any_parent = { stablerecoil supercharges }
 		limit_to_equipment_type = { 
-			anti_tank_equipment
+			anti_air_equipment
 		}
 		available = {
 			owner = {
@@ -7729,7 +8105,7 @@ generic_heavy_anti_tank_air_organization = {
 		position = { x=0 y=3 }
 	    any_parent = { aprounds }
 		limit_to_equipment_type = { 
-			anti_tank_equipment
+			anti_air_equipment
 		}
 
 		production_bonus = {
@@ -7746,7 +8122,7 @@ generic_heavy_anti_tank_air_organization = {
 		position = { x=0 y=4 }
 	    any_parent = { antitankproduction }
 		limit_to_equipment_type = { 
-			anti_tank_equipment
+			anti_air_equipment
 		}
 		available = {
 			owner = {
@@ -7766,7 +8142,7 @@ generic_heavy_anti_tank_air_organization = {
 		mutually_exclusive = { streamlinedatproduction }
 	    any_parent = { aprounds }
 		limit_to_equipment_type = { 
-			anti_tank_equipment
+			anti_air_equipment
 		}
 		available = {
 			owner = {
@@ -7792,7 +8168,7 @@ generic_heavy_anti_tank_air_organization = {
 		mutually_exclusive = { reduceresourceforhighercost }
 	    any_parent = { aprounds }
 		limit_to_equipment_type = { 
-			anti_tank_equipment
+			anti_air_equipment
 		}
 		available = {
 			owner = {
@@ -7958,7 +8334,7 @@ generic_heavy_anti_tank_air_organization = {
 		mutually_exclusive = { antitankandairbonus aaspecial }
 	    any_parent = { reduceresourceforhighercost streamlinedatproduction }
 		limit_to_equipment_type = { 
-			anti_tank_equipment
+			anti_air_equipment
 		}
 
 		equipment_bonus = {
@@ -7980,7 +8356,6 @@ generic_heavy_anti_tank_air_organization = {
 		mutually_exclusive = { atspecial aaspecial }
 	    any_parent = { reduceresourceforhighercost streamlinedatproduction aaexplosive battlefieldmodifications }
 		limit_to_equipment_type = { 
-			anti_tank_equipment
 			anti_air_equipment
 		}
 

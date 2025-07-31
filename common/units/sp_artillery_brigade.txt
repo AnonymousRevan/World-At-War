@@ -305,7 +305,7 @@ sub_units = {
 		suppression = 2
 		
 		plains = {
-			attack = 0.05
+			attack = 0.10
 			defence = 0.05
 			movement = 0.05
 		}
@@ -335,12 +335,12 @@ sub_units = {
 			movement = -0.50
 		}
 		urban = {
-			attack = 0.10
+			attack = 0.15
 			defence = -0.10
 			movement = 0.10
 		}
 		fort = {
-			attack = 0.15
+			attack = 0.20
 		}
 		marsh = {
 			attack = -0.40
@@ -395,7 +395,7 @@ sub_units = {
 		suppression = 2
 
 		plains = {
-			attack = 0.05
+			attack = 0.15
 			defence = 0.05
 			movement = 0.05
 		}
@@ -425,12 +425,12 @@ sub_units = {
 			movement = -0.60
 		}
 		urban = {
-			attack = 0.15
+			attack = 0.25
 			defence = -0.15
 			movement = 0.10
 		}
 		fort = {
-			attack = 0.22
+			attack = 0.4
 		}
 		marsh = {
 			attack = -0.50

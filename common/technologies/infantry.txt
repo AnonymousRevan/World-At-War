@@ -398,6 +398,7 @@ technologies = {
 		}
 		enable_subunits = {
 			bicycle_battalion
+			marine_commando
 		}	
 		path = {
 			leads_to_tech = improved_infantry_weapons_2
@@ -1177,23 +1178,6 @@ technologies = {
 			}
 		}
 		
-		marines_commando = {
-			max_organisation = 1
-			
-			jungle = {
-				attack = 0.02
-			}
-			marsh = {
-				attack = 0.02
-			}
-			river = {
-				attack = 0.02
-			}
-			urban = {
-				attack = 0.025
-			}
-		}
-		
 		path = {
 			leads_to_tech = marines3
 			research_cost_coeff = 1
@@ -1239,26 +1223,6 @@ technologies = {
 			}
 		}
 		
-		marines_commando = {
-			max_organisation = 1
-			
-			jungle = {
-				attack = 0.025
-				defence = 0.05
-			}
-			marsh = {
-				attack = 0.025
-				defence = 0.05
-			}
-			river = {
-				attack = 0.025
-				defence = 0.05
-			}
-			urban = {
-				attack = 0.025
-				defence = 0.05
-			}
-		}
 		path = {
 			leads_to_tech = marines4
 			research_cost_coeff = 1
@@ -1308,27 +1272,6 @@ technologies = {
 			}
 		}
 		
-		marines_commando = {
-			max_organisation = 3
-			
-			jungle = {
-				attack = 0.05
-				defence = 0.05
-			}
-			marsh = {
-				attack = 0.05
-				defence = 0.05
-			}
-			river = {
-				attack = 0.05
-				defence = 0.05
-			}
-			urban = {
-				attack = 0.05
-				defence = 0.05
-			}
-		}
-		
 		research_cost = 1.5
 		start_year = 1942
 		folder = {
@@ -1374,28 +1317,6 @@ technologies = {
 				attack = 0.10
 				defence = 0.075
 				movement = 0.05
-			}
-		}
-		
-		marines_commando = {
-			max_organisation = 2
-			soft_attack = 0.03
-			
-			jungle = {
-				attack = 0.075
-				defence = 0.05
-			}
-			marsh = {
-				attack = 0.075
-				defence = 0.05
-			}
-			river = {
-				attack = 0.075
-				defence = 0.05
-			}
-			urban = {
-				attack = 0.075
-				defence = 0.05
 			}
 		}
 		

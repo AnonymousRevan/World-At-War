@@ -52,7 +52,10 @@ country_event = {
 
 	option = {
 		name = eip_industry.3.a
- 		
+ 		add_timed_idea = { 
+			idea = Gamblers_regret
+			days = 30 
+		}	
 	}	
 }
 

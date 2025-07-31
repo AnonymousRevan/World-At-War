@@ -270,7 +270,7 @@ technologies = {
 			naval_air
 			mio_cat_all_light_fighter_and_modules
 		}
-
+		
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -280,7 +280,7 @@ technologies = {
 			}
 		}
 	}
-
+	
 	ger_fighter_1942 = {
 
 		enable_equipments = {
@@ -478,6 +478,7 @@ technologies = {
 			}
 		}
 	}
+	
 	ger_fighter_1943 = {
 
 		enable_equipments = {
@@ -1679,6 +1680,37 @@ technologies = {
 			name = ger_air_techs_folder
 			position = { x = 7 y = @1941 }
 		}
+		
+		categories = { 
+			all_air
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+			mio_cat_all_heavy_aircraft_and_modules
+		}
+		
+		sub_technologies = {
+			ger_Amerika_bomber
+		}
+		
+		ai_will_do = {
+			factor = 0
+
+		}
+	}
+	
+	ger_Amerika_bomber = {
+
+		enable_equipments = {
+			stratLong_bomber_equipment_1941
+		}
+
+		research_cost = 2.5
+		start_year = 1941
+		folder = {
+			name = ger_air_techs_folder
+			position = { x = 7 y = @1941 }
+		}
 
 		categories = { 
 			all_air
@@ -1693,7 +1725,7 @@ technologies = {
 
 		}
 	}
-
+	
 	ger_strategic_bomber_1943 = {
 
 		enable_equipments = {

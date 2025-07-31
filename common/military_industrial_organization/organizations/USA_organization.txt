@@ -11,10 +11,7 @@ USA_td_board = {
 	icon = GFX_idea_usa_tank_destroyer_board
     name = "Tank Destroyer Board"	
 	allowed = {	
-	    OR = {
 		original_tag = USA
-		original_tag = BRA
-		}
 	}
 	equipment_type = { armor }
 	research_categories = { armor }
@@ -423,10 +420,7 @@ USA_Chrysler_Corporation = {
 	include = mass_production_facility
 	icon = GFX_idea_chrysler
 	allowed = {	
-	    OR = {
-		original_tag = USA
-		original_tag = BRA
-		}
+		tag = USA
 	}
     name = "Chrysler Corporation"	
 	
@@ -821,10 +815,7 @@ USA_army_ordnance_department_organization = {
 	}
 	
 	allowed = {	
-	    OR = {
-		original_tag = USA
-		original_tag = BRA
-		}
+		tag = USA
 	}
 	equipment_type = { armor }
 	research_categories = { armor }
@@ -1304,10 +1295,7 @@ USA_bethleham_armaments = {
 	icon = GFX_idea_bethlehem_steel
 	name = "Bethleham Armaments"
 	allowed = {	
-	    OR = {
-		original_tag = USA
-		original_tag = BRA
-		}
+		tag = USA
 	}
 	
 	initial_trait = {
@@ -1893,10 +1881,7 @@ USA_norfolk_naval_yard_organization = {
 	icon = GFX_idea_norfolk_naval_yard
 	allowed = {	
 
-	    OR = {
-		original_tag = USA
-		original_tag = BRA
-		}
+		tag = USA 
 			
 		
 	}
@@ -2299,10 +2284,7 @@ USA_electric_boat_company_organization = {
 	include = generic_raider_ship_organization
 	icon = GFX_idea_electric_boat_company
 	allowed = {	
-	    OR = {
-		original_tag = USA
-		original_tag = BRA
-		}
+		tag = USA 
 	}
 }
 
@@ -2313,10 +2295,7 @@ USA_brooklyn_naval_yard_organization = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_brooklyn_naval_yard
 	allowed = {	
-	    OR = {
-		original_tag = USA
-		original_tag = BRA
-		}
+		original_tag = USA 
 	}
 	
 	initial_trait = {
@@ -2392,10 +2371,7 @@ USA_newport_news_shipbuilding_organization = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_newport_news_shipbuilding
 	allowed = {	
-	    OR = {
-		original_tag = USA
-		original_tag = BRA
-		}
+		tag = USA 
 	}
 
 	trait = {
@@ -2448,10 +2424,7 @@ USA_north_american_aviation_organization = {
 	
 
 	allowed = {	
-	    OR = {
-		original_tag = USA
-		original_tag = BRA
-		}
+		tag = USA 
 	}
 
 
@@ -2981,10 +2954,7 @@ USA_lockheed_organization = {
 	icon = GFX_idea_lockheed
 	
 	allowed = {	
-	    OR = {
-		original_tag = USA
-		original_tag = BRA
-		}
+		tag = USA 
 	}
 	
 	equipment_type = {
@@ -3034,10 +3004,16 @@ USA_douglas_aircraft_company_organization = {
 	icon = GFX_idea_douglas_aircraft_company
 	
 	allowed = {	
-	    OR = {
-		original_tag = USA
-		original_tag = BRA
-		}
+		tag = USA 
+	}
+}
+
+USA_Republic_aircraft_company_organization = {
+	include = Fighter_medium_aircraft_organization
+	icon = GFX_idea_bethlehem_steel
+	
+	allowed = {	
+		tag = USA 
 	}
 }
 
@@ -3046,10 +3022,7 @@ USA_boeing_organization = {
 	icon = GFX_idea_boeing
 	
 	allowed = {	
-	    OR = {
-		original_tag = USA
-		original_tag = BRA
-		}
+		tag = USA 
 	}
 	available = {
 		USA = {
@@ -3093,10 +3066,7 @@ USA_grumman_organization = {
 	icon = GFX_idea_grumman
 	
 	allowed = {	 
-	    OR = {
-		original_tag = USA
-		original_tag = BRA
-		}
+		tag = USA 
 	}
 	
 	add_trait = {
@@ -3313,9 +3283,9 @@ USA_rock_island_arsenal_anti_tank_air = {
 	}
 }
 USA_rock_island2_arsenal_anti_tank_air = {
-	include = generic_anti_tank_US_organization
+	include = generic_support_equipment_organization
 	icon = GFX_idea_rock_island_arsenal
-	name = "Anti-Tank Company"
+	name = "Misc equipment"
 	allowed = {	
 		OR = {
 			original_tag = USA 
@@ -3329,10 +3299,7 @@ USA_ford_motor_company_organization = {
 	icon = GFX_idea_ford_motor_company
 	
 	allowed = {	 
-	    OR = {
-		original_tag = USA
-		original_tag = BRA
-		}
+		tag = USA 
 
 	}
 
@@ -3349,10 +3316,7 @@ USA_white = {
 	name = "White Motor Corporation"
 	
 	allowed = {	
-	    OR = {
-		original_tag = USA
-		original_tag = BRA
-		}
+			tag = USA
 
 	}
 }

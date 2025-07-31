@@ -88,7 +88,7 @@ ideas = {
                 can_join_factions = no 
             }
 			modifier = {
-				production_speed_industrial_complex_factor = 0.05
+				production_speed_industrial_complex_factor = 0.25
 				stability_factor = -0.2
 				industrial_capacity_factory = -0.15
 				industrial_capacity_dockyard = -0.15
@@ -277,7 +277,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_industrial_complex_factor = 0.05
+				production_speed_industrial_complex_factor = 0.15
 				stability_factor = -0.1
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
@@ -344,7 +344,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.33
+				consumer_goods_factor = -0.45
 			}
 		}
 
@@ -420,7 +420,7 @@ ideas = {
 				can_join_factions = no 
 			}
 			modifier = {
-				production_speed_industrial_complex_factor = 0.1
+				production_speed_industrial_complex_factor = 0.2
 				industrial_capacity_factory = -0.15
 				industrial_capacity_dockyard = -0.15
 				production_speed_buildings_factor = -0.1
@@ -450,7 +450,7 @@ ideas = {
 				can_join_factions = no 
 			}
 			modifier = {
-				production_speed_industrial_complex_factor = 0.15
+				production_speed_industrial_complex_factor = 0.4
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
 				production_speed_buildings_factor = -0.1
@@ -481,7 +481,7 @@ ideas = {
 				can_join_factions = no 
 			}
 			modifier = {
-				production_speed_industrial_complex_factor = 0.2
+				production_speed_industrial_complex_factor = 0.5
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = -0.05
 				production_speed_buildings_factor = -0.05

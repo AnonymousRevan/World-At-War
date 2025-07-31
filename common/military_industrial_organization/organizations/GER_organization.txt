@@ -1352,6 +1352,15 @@ GER_blohm_und_voss_organization = {
 	}
 }
 
+GER_Kriegsmarinewunderwaffe = {
+	include = Kriegsmental_organization
+	icon = GFX_idea_newport_news_shipbuilding
+	
+	allowed = {	
+			tag = GER
+	}
+}
+
 ###########################
 
 ###  #    ##  #  # ###  ## 
@@ -1646,7 +1655,7 @@ GER_haenel_anti_tank_air = {
 
 }
 GER_auto_union = {
-	include = generic_heavy_anti_tank_air_organization
+	include = generic_armored_car_organization
 	icon = GFX_idea_rheinmetall
 	
 	allowed = {	

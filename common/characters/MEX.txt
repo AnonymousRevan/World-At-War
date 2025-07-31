@@ -833,8 +833,11 @@ characters={
 			allowed = {
 				original_tag = MEX
 			}
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.1
+			}
 			cost = 200
-			traits = { victory_through_airpower }
+			traits = { carpet_bomber }
 		}
 	}
 	MEX_manuel_avila = {

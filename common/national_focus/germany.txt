@@ -7716,20 +7716,6 @@ focus_tree = {
 				category = cv_tech
 				ahead_reduction = 0.5
 			}
-				set_technology = {
-					ger_cv_fighter_1936 = 1 
-					ger_cv_naval_bomber_1936 = 1
-				}
-				add_equipment_to_stockpile = {
-					type = cv_fighter_equipment_1936
-					amount = 60
-					producer = GER 
-				}
-				add_equipment_to_stockpile = {
-					type = cv_nav_bomber_equipment_1936
-					amount = 60
-					producer = GER 
-				}
 			custom_effect_tooltip = GER_carrier_tt
 		}
 	}

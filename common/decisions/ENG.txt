@@ -2105,7 +2105,7 @@ operations = {
 			BEL = { is_ai = yes }
 			country_exists = BEL
 			BEL = { has_capitulated = yes }
-			date > 1941.1.1
+			date > 1942.1.1
 		}
 
 		cost = 0
@@ -2150,7 +2150,7 @@ operations = {
 			LUX = { is_ai = yes }
 			country_exists = LUX
 			LUX = { has_capitulated = yes }
-			date > 1941.1.1
+			date > 1942.1.1
 		}
 
 		cost = 0
@@ -2195,7 +2195,7 @@ operations = {
 			DEN = { is_ai = yes }
 			country_exists = DEN
 			DEN = { has_capitulated = yes }
-			date > 1941.1.1
+			date > 1942.1.1
 		}
 
 		cost = 0
@@ -2240,7 +2240,7 @@ operations = {
 			NOR = { is_ai = yes }
 			country_exists = NOR
 			NOR = { has_capitulated = yes }
-			date > 1941.1.1
+			date > 1942.1.1
 		}
 
 		cost = 0
@@ -2285,7 +2285,7 @@ operations = {
 			POL = { is_ai = yes }
 			country_exists = POL
 			POL = { has_capitulated = yes }
-			date > 1941.1.1
+			date > 1942.1.1
 		}
 
 		cost = 0
@@ -2330,7 +2330,7 @@ operations = {
 			YUG = { is_ai = yes }
 			country_exists = YUG
 			YUG = { has_capitulated = yes }
-			date > 1941.1.1
+			date > 1942.1.1
 		}
 
 		cost = 0
@@ -2375,7 +2375,7 @@ operations = {
 			GRE = { is_ai = yes }
 			country_exists = GRE
 			GRE = { has_capitulated = yes }
-			date > 1941.1.1
+			date > 1942.1.1
 		}
 
 		cost = 0

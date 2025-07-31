@@ -1627,7 +1627,11 @@ technologies = {
 			air_equipment
 			mio_cat_all_medium_aircraft_and_modules
 		}
-
+		
+		sub_technologies = {
+			eng_maritime_1934
+		}
+		
 		ai_will_do = {
 			factor = 4
 			modifier = {
@@ -1636,7 +1640,31 @@ technologies = {
 			}
 		}
 	}
+	
+	eng_maritime_1934 = {
 
+		enable_equipments = {
+			mar_bomber_equipment_1934
+		}
+
+		research_cost = 0.8 #Carrier Variant
+		start_year = 1936
+
+		categories = {
+			naval_air
+			mio_cat_all_light_fighter_and_modules
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 4
+				has_navy_size = { size > 0 type = carrier }
+				num_of_military_factories > 39
+			}
+		}
+	}
+	
 	eng_tactical_bomber_1938 = {
 
 		enable_equipments = {
