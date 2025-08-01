@@ -329,9 +329,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		custom_effect_tooltip = france.20.a_tt
-		retire_country_leader = yes
-		promote_character = FRA_charles_de_gaulle
 		add_ideas = FRA_exile
 		name = france.20.a
 	}

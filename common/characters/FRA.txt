@@ -52,9 +52,8 @@ characters={
 					original_tag  = FRA 
 				}
 				available  = {
-					has_completed_focus  = FRA_aggressive_focus 
 				}
-				cost  = 50.000
+				cost  = 150.000
 				traits  = {
 					army_chief_offensive_2 
 				}
@@ -88,9 +87,8 @@ characters={
 					original_tag  = FRA 
 				}
 				available  = {
-					has_completed_focus  = FRA_defensive_focus 
 				}
-				cost  = 50.000
+				cost  = 150.000
 				traits  = {
 					army_chief_defensive_2 
 				}
@@ -627,6 +625,17 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_francois_darlan"
+			}
+		    civilian={
+				large=GFX_portrait_FRA_francois_darlan
+			}
+		}
+		country_leader={
+			desc = "POLITICS_FRANCOIS_DARLAN_DESC"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				national_integralist
 			}
 		}
 	}

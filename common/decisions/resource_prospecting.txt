@@ -967,7 +967,7 @@ prospect_for_resources = {
 			543 = {
 				add_resource = {
 					type = rubber
-					amount = 60
+					amount = 40
 				}
 			}
 		}
@@ -1024,7 +1024,7 @@ prospect_for_resources = {
 			543 = {
 				add_resource = {
 					type = rubber
-					amount = 75
+					amount = 50
 				}
 			}
 		}
