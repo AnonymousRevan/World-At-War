@@ -273,9 +273,10 @@ leader_traits = {
 
 	special_operations_specialist = {
 		sprite = 3
-		paradrop_organization_factor = 0.1
-		paratrooper_aa_defense = 0.25
-		no_supply_grace = 72
+		
+		stability_factor = 0.05
+		stability_weekly = 0.001
+		special_forces_min = 50
 	}
 	well_mannered_iman = {
 		sprite = 13

@@ -26,7 +26,8 @@ HOL_historical_plan = {
 		HOL_the_crown_jewel_colony					
 		HOL_the_western_possessions					#July 30 1936	
 		HOL_expand_curacao_oil_refineries				#September 20 1938
-		HOL_Jav
+		HOL_open_second_paranam_bauxite_mine	
+		HOL_jav
         HOL_sumatr	
 		HOL_borneo_and_the_grote_oos	
 		HOL_continue_the_war_in_batavi

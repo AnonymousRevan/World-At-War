@@ -635,7 +635,7 @@ characters={
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
-				national_integralist
+				special_operations_specialist
 			}
 		}
 	}

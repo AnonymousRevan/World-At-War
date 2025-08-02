@@ -16,7 +16,6 @@ bookmarks = {
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
-				FRA_germany_is_the_greater_threat
 				FRA_matignon_agreements
 				FRA_free_france
 			}
