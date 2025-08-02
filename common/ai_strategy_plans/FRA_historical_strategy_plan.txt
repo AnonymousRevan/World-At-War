@@ -10,7 +10,6 @@ FRA_historical_plan = {
 	ai_national_focuses = {
 		FRA_la_front_du_popular
 		FRA_matignon_agreements
-		FRA_public_works
 		FRA_develop_the_countryside
 		FRA_regulate_the_banking_sector
 		FRA_devaluate_the_franc
@@ -27,7 +26,6 @@ FRA_historical_plan = {
 		FRA_resistance_in_the_metropolitan
 		FRA_national_council_of_resistance
 		FRA_the_casablanca_conference
-		FRA_liberation
 		FRA_middle_eastern_possessions
 		FRA_north_african_development
 	}

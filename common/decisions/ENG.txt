@@ -1840,12 +1840,12 @@ operations = {
 
 
 		complete_effect = {
-			transfer_state = 695
 			transfer_state = 309
 			FRA = {
 				 transfer_state = 692
 	 	     	 transfer_state = 689
 			     transfer_state = 308
+				 transfer_state = 695
 			     every_state = {
 			        limit = { is_core_of = HOL }
 			     	set_resistance = 0

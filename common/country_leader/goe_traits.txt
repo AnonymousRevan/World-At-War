@@ -519,10 +519,10 @@ leader_traits = {
 
 	RAJ_freedom_fighter = {
 		sprite = 13
-		army_attack_against_major_factor = 0.08
-		army_defence_against_major_factor = 0.1
-		supply_consumption_factor = -0.03
-		communism_drift = 0.03
+		stability_factor = 0.05
+		stability_weekly = 0.001
+		army_armor_attack_factor = 0.02
+	    army_armor_defence_factor = 0.02
 	}
 
 	RAJ_trade_union_leader = {

@@ -1,3 +1,12 @@
 ﻿l_english:
   acl_researcha:0 "ACL"
-  FFspecops:0 "Special Forces Focus"
+  FFspecops:0 "American Assisted Special Forces"
+  FRA_colonial_recruitment2:0 "Desert Equipment"
+  FRA_colonial_recruitment2_desc:0 ""
+  FRA_colonial_recruitment3:0 "Desert Training"
+  FRA_colonial_recruitment3_desc:0 ""
+  FRA_colonial_recruitment4:0 "Armor R&D"
+  FRA_colonial_recruitment4_desc:0 ""
+  FRA_the_free_french_navy2:0 "American Spec Ops Observers"
+  FRA_the_free_french_navy2_desc:0 ""
+  FFspecops_tt:0 "Mountaineers gain 10% amphibious att/def/move, and 5% mountain att/def/move. Marines gain 10% mountzain att/def/move, and 5% amphibious att/def/move."

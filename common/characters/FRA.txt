@@ -425,7 +425,7 @@ characters={
 					has_government  = democratic
 				    OR = {
 					    has_completed_focus  = FRA_regulate_the_banking_sector 
-						has_completed_focus  = FRA_free_france 
+						has_capitulated = yes	
 					}
 					}
 				}
@@ -927,7 +927,7 @@ characters={
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
-				national_integralist
+				RAJ_freedom_fighter
 			}
 		}
 	}

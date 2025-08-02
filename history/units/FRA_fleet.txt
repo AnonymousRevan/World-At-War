@@ -1,0 +1,55 @@
+
+units= {
+
+	##### NAVAL UNITS #####
+	### METRPOLITAN FRANCE ###
+	### NORTH AFRICA ###				
+	fleet = {
+		name = "Amiral Afrique"			
+		naval_base = 4948 # Oran
+		task_force = {				
+			name = "Flottille de Haute Mers"			
+			location = 4948 # Oran		
+			ship = { name = "Béarn" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = FRA version_name = "Béarn Class" } } } 			
+			ship = { name = "Dunkerque" definition = battle_cruiser equipment = { ship_hull_heavy_2 = { amount = 1 owner = FRA version_name = "Dunkerque Class" } } }					
+			ship = { name = "Strasbourg"  pride_of_the_fleet = yes definition = battle_cruiser equipment = { ship_hull_heavy_2 = { amount = 1 owner = FRA version_name = "Dunkerque Class" } } }			
+			ship = { name = "Jeanne d'Arc" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = FRA version_name = "De Grasse Class" } } }	
+			ship = { name = "Duguay-Trouin" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = FRA version_name = "De Grasse Class" } } }		
+			ship = { name = "Joken" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Mogador Class" } } }
+			ship = { name = "Forena" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Mogador Class" } } }
+			ship = { name = "Noveta" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Mogador Class" } } }
+			ship = { name = "Lateya" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Mogador Class" } } }
+			ship = { name = "Colonias" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Mogador Class" } } }
+			ship = { name = "Brests" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Mogador Class" } } }
+			ship = { name = "Lions" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Mogador Class" } } }
+			ship = { name = "Cyclones" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Mogador Class" } } }
+			ship = { name = "Brestoiss" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Mogador Class" } } }
+			ship = { name = "Frondeurs" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Mogador Class" } } }	
+		}										
+		task_force = {				
+			name = "6ème Escadron Sous-Marins"			
+			location = 4948 # Bizerte, Tunisia	
+			# 9e Division des Sous-Marins
+			ship = { name = "Le Centaure" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
+			ship = { name = "Argo" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
+			ship = { name = "Pascal" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
+			ship = { name = "Henri Poincaré" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }	
+			ship = { name = "Le Centaure II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
+			ship = { name = "Argo II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
+			ship = { name = "Pascal II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
+			ship = { name = "Henri Poincaré II" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }	
+			ship = { name = "Le Centaure III" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
+			ship = { name = "Argo III" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
+			ship = { name = "Pascal III" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
+			ship = { name = "Henri Poincaré III" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }			
+		}				
+	}
+} 
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+#####################
