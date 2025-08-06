@@ -776,10 +776,9 @@ characters={
 					original_tag  = FRA
 				}
 				available  = {
-				    has_government = communism
 				}
 				traits  = {
-					communist_revolutionary 
+					quartermaster_general 
 				}
 				ai_will_do  = {
 					factor  = 1.000

@@ -920,7 +920,6 @@ focus_tree = {
 				category = land_doctrine
 			}
 			add_war_support = 0.05
-			add_ideas = FRA_victors
 		}
 	}
 	
@@ -1010,6 +1009,7 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = FRA_war_on_pacifism
 			custom_effect_tooltip = FRA_army_reform_tt
+		    add_ideas = FRA_victors
 		}
 	}
 
@@ -2323,7 +2323,7 @@ focus_tree = {
 
 	focus = {
 		id = FRF_gold_reserve1
-		icon = GFX_focus_usa_reestablish_the_gold_standard
+		icon = GFX_focus_mex_privatisation
 		prerequisite = { focus = FRA_free_france }
 		x = -6
 		y = 1
@@ -2362,7 +2362,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		539 = {
+		773 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = dockyard
@@ -2375,7 +2375,7 @@ focus_tree = {
 	
 	focus = {
 		id = FRF_rebuild_military_production1
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = FRF_gold_reserve1 }
 		
 		x = -2
@@ -2399,7 +2399,7 @@ focus_tree = {
 	
 		focus = {
 			id = FRF_restart_production1 
-			icon = GFX_goal_generic_construct_mil_factory
+			icon = GFX_goal_generic_construct_civilian
 			prerequisite = { focus = FRF_rebuild_military_production1 }
 			relative_position_id = FRF_rebuild_military_production1
 			x = 0
@@ -2422,7 +2422,7 @@ focus_tree = {
 		
 	focus = {
 		id = FRF_revive_civilian_construction1
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = FRF_gold_reserve1 }
 		x = 2
 		y = 1
@@ -2432,7 +2432,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			773 = {
+			772 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
@@ -2445,7 +2445,7 @@ focus_tree = {
 
 		focus = {
 			id = FRF_restart_construction1
-			icon = GFX_goal_generic_construct_civ_factory
+			icon = GFX_focus_generic_industry_3 	
 			prerequisite = { focus = FRF_revive_civilian_construction1 }
 			relative_position_id = FRF_revive_civilian_construction1
 			x = 0
@@ -2480,7 +2480,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-		cost = 5
+		cost = 7.16
 		relative_position_id = FRF_gold_reserve1
 
 		available_if_capitulated = yes
@@ -2505,7 +2505,7 @@ focus_tree = {
 
 		focus = {
 			id = FRF_guinea_bauxite1
-			icon = GFX_goal_generic_construct_civilian
+			icon = GFX_goal_generic_construct_infrastructure
 			prerequisite = { focus = FRF_develop_our_resources1 }
 			relative_position_id = FRF_develop_our_resources1
 			x = -2
@@ -2520,7 +2520,7 @@ focus_tree = {
 			available_if_capitulated = yes
 	
 			completion_reward = {
-				780 = {
+				773 = {
 					add_resource = {
 						type = chromium
 						amount = 35
@@ -2531,7 +2531,7 @@ focus_tree = {
 
 		focus = {
 			id = FRF_rwanda_tungsten1
-			icon = GFX_goal_generic_construct_civilian
+			icon = GFX_focus_generic_coal_mining
 			prerequisite = { focus = FRF_develop_our_resources1 }
 			relative_position_id = FRF_develop_our_resources1
 			x = 0
@@ -2556,7 +2556,7 @@ focus_tree = {
 
 		focus = {
 			id = FRF_african_iron1
-			icon = GFX_goal_generic_construct_civilian
+			icon = GFX_focus_generic_steel
 			prerequisite = { focus = FRF_develop_our_resources1 }
 			relative_position_id = FRF_develop_our_resources1
 			x = 2
@@ -2761,7 +2761,7 @@ focus_tree = {
 
 	focus = {
 		id = FRF_naval_production
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = FRF_gold_reserve }
 		relative_position_id = FRF_gold_reserve
 		x = 0
@@ -2885,7 +2885,7 @@ focus_tree = {
 		
 	focus = {
 		id = FRF_develop_our_resources
-		icon = GFX_goal_generic_construction2
+		icon = GFX_focus_BRA_rubber_war
 		prerequisite = {
 			focus = FRF_rebuild_military_production
 			focus = FRF_revive_civilian_construction
@@ -2893,7 +2893,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-		cost = 7/16
+		cost = 7.16
 		relative_position_id = FRF_gold_reserve
 
 		available_if_capitulated = yes
@@ -2918,12 +2918,12 @@ focus_tree = {
 
 		focus = {
 			id = FRF_guinea_bauxite
-			icon = GFX_goal_generic_construct_civilian
+			icon = GFX_focus_generic_aluminum
 			prerequisite = { focus = FRF_develop_our_resources }
 			relative_position_id = FRF_develop_our_resources
 			x = -2
 			y = 1
-			cost = 5
+			cost = 7.16
 
 			ai_will_do = {
 				factor = 1000
@@ -2943,12 +2943,12 @@ focus_tree = {
 
 		focus = {
 			id = FRF_rwanda_tungsten
-			icon = GFX_goal_generic_construct_civilian
+			icon = GFX_goal_generic_oil_refinery
 			prerequisite = { focus = FRF_develop_our_resources }
 			relative_position_id = FRF_develop_our_resources
 			x = 0
 			y = 1
-			cost = 5
+			cost = 7.16
 
 			ai_will_do = {
 				factor = 1000
@@ -2968,7 +2968,7 @@ focus_tree = {
 
 		focus = {
 			id = FRF_african_iron
-			icon = GFX_goal_generic_construct_civilian
+			icon = GFX_focus_generic_steel
 			prerequisite = { focus = FRF_develop_our_resources }
 			relative_position_id = FRF_develop_our_resources
 			x = 2
@@ -3302,7 +3302,7 @@ focus_tree = {
 			has_full_control_of_state = 680
 		}
 		prerequisite = { focus = FRA_colonies1 }
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_generic_consumer_goods
 		x = 1
 		y = 1
 		relative_position_id = FRA_colonies1
@@ -3360,7 +3360,7 @@ focus_tree = {
 			has_full_control_of_state = 680
 		}
 		prerequisite = { focus = FRA_middle_eastern_possession }
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_goal_generic_build_tank
 		x = 0
 		y = 2
 		relative_position_id = FRA_middle_eastern_possession

@@ -466,9 +466,9 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.075
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.125
+				industrial_capacity_dockyard = -0.125
 			}
 		}
 		FRA_inefficient_economy_2 = {
@@ -490,9 +490,9 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.15
-				industrial_capacity_factory = -0.20
-				industrial_capacity_dockyard = -0.20
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
 			}
 		}
 		FRA_political_violence = {
