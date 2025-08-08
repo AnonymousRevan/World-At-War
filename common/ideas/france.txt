@@ -60,7 +60,7 @@ ideas = {
 			modifier = {
 			consumer_goods_factor = -0.2
 			production_speed_arms_factory_factor = 0.15
-			production_speed_infrastructure_factor = 0.3`
+			production_speed_infrastructure_factor = 0.3
 			production_speed_industrial_complex_factor = 0.1
 			production_speed_dockyard_factor = 0.1
 			production_speed_steel_refinery_factor = 0.1
@@ -1574,18 +1574,18 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_factory_donations = 20
-				military_factory_donations = 10
+				industrial_factory_donations = 10
+				military_factory_donations = 5
 				dockyard_donations = 5
 				war_support_weekly = 0.001
 				stability_weekly = 0.001
-				weekly_manpower = 10000
+				weekly_manpower = 5000
 				conscription = 0.03
-				state_resource_steel = 300
-				state_resource_rubber = 200
+				state_resource_steel = 	200
+				state_resource_rubber = 150
 			    state_resource_tungsten = 100
-			    state_resource_chromium = 100
-				state_resource_aluminium = 50
+				state_resource_aluminium = 100
+			    state_resource_chromium = 50
 				state_resource_oil = 25
 				
 			}
