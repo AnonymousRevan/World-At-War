@@ -273,9 +273,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE }
 		completion_reward = {
-			add_ideas = { FRA_communism_banned }
+			add_popularity = { ideology = democratic popularity = 1.00 }
 			set_temp_variable = { communism_temp = party_popularity@communism }
-			multiply_temp_variable = { communism_temp = -0.25 }
+			multiply_temp_variable = { communism_temp = -0.35 }
 			add_stability = communism_temp
             FRA_disjointed_government_level_up = yes
 			add_timed_idea = {
@@ -747,10 +747,6 @@ focus_tree = {
 
 		completion_reward = {
 			298 = {
-				build_2_infrastructure = yes
-				set_state_flag = FRA_public_works_01
-			}
-			543 = {
 				build_2_infrastructure = yes
 				set_state_flag = FRA_public_works_01
 			}
@@ -1271,8 +1267,8 @@ focus_tree = {
 				technology = dispersed_industry4
 				technology = concentrated_industry3
 				technology = concentrated_industry4
-				technology = advanced_machine_tools
-				technology = assembly_line_production
+				technology = advanced_machine_tools 
+				technology = assembly_line_production 
 				technology = construction3
 				technology = construction4
 				bonus = 1 
@@ -1573,12 +1569,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			air_experience = 15
+		    add_ideas = morane_saulnier2
 			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_north show_effect_tooltip = yes }
 			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_west show_effect_tooltip = yes }
 			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_center show_effect_tooltip = yes }
 			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_south_east show_effect_tooltip = yes }
 			unlock_decision_tooltip = { decision = FRA_reorganize_aviation_industry_south_west show_effect_tooltip = yes }
-			add_ideas = morane_saulnier2
 		}
 	}
 	
@@ -1705,7 +1701,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			air_experience = 15
-			add_ideas = FRA_flying_artillery
 			add_tech_bonus = {
 				name = FRA_protect_the_mainland
 				bonus = 1.0
@@ -2338,6 +2333,7 @@ focus_tree = {
 				technology = dispersed_industry5
 				technology = concentrated_industry5
 				technology = construction5
+				technology = modern_tools
 				bonus = 1 
 				ahead_reduction = 1
 				uses = 1
@@ -2387,10 +2383,10 @@ focus_tree = {
 
 		completion_reward = {
 			539 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 7
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 7
 					instant_build = yes
 				}
 			}
@@ -2410,10 +2406,10 @@ focus_tree = {
 	
 			completion_reward = {
 				772 = {
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 7
 					add_building_construction = {
 						type = arms_factory
-						level = 5
+						level = 7
 						instant_build = yes
 					}
 				}
@@ -2751,6 +2747,7 @@ focus_tree = {
 				technology = dispersed_industry5
 				technology = concentrated_industry5
 				technology = construction5
+				technology = modern_tools
 				bonus = 1 
 				ahead_reduction = 1
 				uses = 1
@@ -2846,10 +2843,10 @@ focus_tree = {
 
 		completion_reward = {
 			272 = {
-				add_extra_state_shared_building_slots = 7
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
-					level = 7
+					level = 8
 					instant_build = yes
 				}
 			}
@@ -2873,10 +2870,10 @@ focus_tree = {
 	
 			completion_reward = {
 				700 = {
-					add_extra_state_shared_building_slots = 7
+					add_extra_state_shared_building_slots = 8
 					add_building_construction = {
 						type = industrial_complex
-						level = 7
+						level = 8
 						instant_build = yes
 					}
 				}

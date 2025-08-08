@@ -1822,11 +1822,17 @@ operations = {
 		icon = generic_political_discourse
 
 		allowed = {
-			tag = ENG			
+		OR = {
+			tag = ENG	
+			tag = FRA
+             }			
 		}
 
 		visible = {
-			tag = ENG
+		OR = {
+			tag = ENG	
+			tag = FRA
+             }	
 			country_exists = HOL
 			HOL = { is_ai = yes }
 		}
@@ -1840,7 +1846,6 @@ operations = {
 
 
 		complete_effect = {
-			transfer_state = 309
 			FRA = {
 				 transfer_state = 692
 	 	     	 transfer_state = 689
@@ -1852,10 +1857,13 @@ operations = {
 			     	set_compliance = 70
 			     }
 			}
-			every_state = {
-			    limit = { is_core_of = HOL }
-				set_resistance = 0
-				set_compliance = 70
+			ENG = {
+			    transfer_state = 309
+				every_state = {
+				    limit = { is_core_of = HOL }
+					set_resistance = 0
+					set_compliance = 70
+				}
 			}
 		}		
 	}
