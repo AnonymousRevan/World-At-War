@@ -1008,7 +1008,7 @@ FRA_morane_saulnier_organization = {
 }
 
 FRA_bloch_organization = {
-	include = generic_medium_aircraft_organization
+	include = Fighter_medium_aircraft_organization
 	icon = GFX_idea_bloch
 	allowed = {	
 		OR = {

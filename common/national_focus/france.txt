@@ -1784,7 +1784,7 @@ focus_tree = {
 		relative_position_id = FRA_appoint_new_supreme_commander
 		x = 6
 		y = 1
-		cost = 7.16
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
