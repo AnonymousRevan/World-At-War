@@ -337,13 +337,12 @@ ideas = {
 
 			picture = generic_navy_bonus
 			
-			research_bonus = {
-				naval_equipment = 0.05
-			}
-			
 			modifier = {
 			    naval_doctrine_cost_factor = -0.05
 				experience_gain_navy = 0.05
+				industrial_capacity_dockyard = 0.1
+				refit_speed = 0.2
+				repair_speed_factor = 0.15
 			}
 		}		
 		FRA_industry = {
@@ -1537,7 +1536,7 @@ ideas = {
         	picture = chi_wargaming_division
 
         	modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.075
         	}
         }
 
@@ -1569,6 +1568,10 @@ ideas = {
 
 			allowed_civil_war = {
 				has_government = democratic
+			}
+			
+			cancel = {
+			    controls_state = 539
 			}
 
 			removal_cost = -1

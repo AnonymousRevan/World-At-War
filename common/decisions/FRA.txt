@@ -965,7 +965,6 @@ economy_decisions = {
 		complete_effect = {
 			FRA = {
 				add_ideas = postpostcapidea
-				
 				add_ideas = tot_economic_mobilisation
 			}
 		}
