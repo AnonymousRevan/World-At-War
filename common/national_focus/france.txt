@@ -2390,10 +2390,10 @@ focus_tree = {
 
 		completion_reward = {
 			539 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 7
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 7
 					instant_build = yes
 				}
 			}
@@ -2413,10 +2413,10 @@ focus_tree = {
 	
 			completion_reward = {
 				772 = {
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 7
 					add_building_construction = {
 						type = arms_factory
-						level = 5
+						level = 7
 						instant_build = yes
 					}
 				}
@@ -2850,10 +2850,10 @@ focus_tree = {
 
 		completion_reward = {
 			272 = {
-				add_extra_state_shared_building_slots = 7
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
-					level = 7
+					level = 8
 					instant_build = yes
 				}
 			}
@@ -2877,10 +2877,10 @@ focus_tree = {
 	
 			completion_reward = {
 				700 = {
-					add_extra_state_shared_building_slots = 7
+					add_extra_state_shared_building_slots = 8
 					add_building_construction = {
 						type = industrial_complex
-						level = 7
+						level = 8
 						instant_build = yes
 					}
 				}
