@@ -1175,7 +1175,6 @@ on_actions = {
 					FRA_charles_huntziger = { remove_unit_leader_role = yes }
 					FRA_antoinemariebenoît_besson = { remove_unit_leader_role = yes }
 					FRA_rené_olry = { remove_unit_leader_role = yes }
-					FRA_rené_prioux = { remove_unit_leader_role = yes }
 					FRA_georges_blanchard = { remove_unit_leader_role = yes }
 					FRA_charlesmarie_condé = { remove_unit_leader_role = yes }
 					FRA_paul_legentilhomme = { remove_unit_leader_role = yes }

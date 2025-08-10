@@ -1986,6 +1986,16 @@ focus_tree = {
 					planning_skill = 4
 					logistics_skill = 5
 				}
+				corps_commander={
+					name = "René Prioux"
+					picture = "Portrait_France_Rene_Prioux.dds"
+					traits={ motorized_leader trickster }
+					skill=4
+					attack_skill=4
+					defense_skill=4
+					planning_skill=4
+					logistics_skill=4
+				}
 				create_corps_commander = {
 					name = "Marie-Pierre Koenig"
 					picture = "Portrait_France_Marie_Pierre_Koenig.dds"
@@ -2105,6 +2115,16 @@ focus_tree = {
 					defense_skill = 4
 					planning_skill = 4
 					logistics_skill = 5
+				}
+				corps_commander={
+					name = "René Prioux"
+					picture = "Portrait_France_Rene_Prioux.dds"
+					traits={ motorized_leader trickster }
+					skill=4
+					attack_skill=4
+					defense_skill=4
+					planning_skill=4
+					logistics_skill=4
 				}
 				create_corps_commander = {
 					name = "Marie-Pierre Koenig"
