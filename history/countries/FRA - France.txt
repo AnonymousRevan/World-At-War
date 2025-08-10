@@ -79,6 +79,7 @@ if = {
 		early_battlecruiser = 1
 		basic_battlecruiser = 1
 		early_carrier = 1
+		basic_carrier = 1
 		transport = 1 
 	}
 }
@@ -95,6 +96,7 @@ if = {
 		early_ship_hull_heavy = 1
 		basic_ship_hull_heavy = 1
 		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
 		basic_battery = 1
 		basic_light_battery = 1
 		basic_medium_battery = 1
@@ -646,7 +648,7 @@ if = {
 			fixed_ship_radar_slot = empty
 		    fixed_ship_engine_slot = carrier_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_2
-		   front_1_custom_slot = ship_deck_space
+		    front_1_custom_slot = ship_deck_space
 		}
 	}
 }

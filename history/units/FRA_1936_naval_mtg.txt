@@ -74,8 +74,8 @@ instant_effect = {
 			version_name = "Joffre Class"
 		}
 		name = "Joffre" 
-		requested_factories = 1
+		requested_factories = 10
 		progress = 0.4
-		amount = 10
+		amount = 1
 	}
 }

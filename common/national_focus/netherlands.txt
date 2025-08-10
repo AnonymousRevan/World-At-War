@@ -516,6 +516,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
 		    HOL_de_crisisjaren_level_down = yes
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 700
+			}
 		}
 	}
 

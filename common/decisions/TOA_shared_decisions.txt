@@ -756,7 +756,7 @@ improving_our_army_category = {
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.75
 				uses = 2
-				category = cat_superior_firepower
+				category = cat_mobile_warfare
 			}
 
 			hidden_effect = {

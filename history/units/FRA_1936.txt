@@ -769,8 +769,8 @@ air_wings = {
 	### Carrier Command ###
 	14 = { 
 		cv_fighter_equipment_1936 = {
-			owner = "ENG"			
-			amount = FRA
+			owner = "FRA"			
+			amount = 100
 		}
 		cv_nav_bomber_equipment_1936 = {
 			owner = "FRA"			
@@ -928,6 +928,24 @@ instant_effect = { #player
 		progress = 0.9
 		efficiency = 15
 	}
+	add_equipment_production = {
+		equipment = {
+			type = cv_fighter_equipment_1936
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.9
+		efficiency = 15
+	}
+	add_equipment_production = {
+		equipment = {
+			type = cv_nav_bomber_equipment_1936
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.9
+		efficiency = 15
+	}
 	
 	############### Equipment stockpile
 	add_equipment_to_stockpile = {
@@ -983,7 +1001,7 @@ instant_effect = { #player
 	}
 	add_equipment_to_stockpile = {
 		type = heavy_tank_equipment_1934
-			amount = 650
+			amount = 750
 			producer = FRA
 	}
 	add_equipment_to_stockpile = {
