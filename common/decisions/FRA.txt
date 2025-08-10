@@ -947,7 +947,7 @@ economy_decisions = {
 
 		available = {
 		    FRA = {
-		      	NOT = { has_full_control_of_state = 539 }
+		      	NOT = { controls_state = 539 }
 			}
 		}
 

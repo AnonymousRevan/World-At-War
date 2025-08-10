@@ -1800,54 +1800,7 @@ focus_tree = {
 			    }
 				set_state_flag = FRA_naval_rearmament_2NB
 			}
-			add_ideas = FRA_navy
-		    set_technology = {
-			    basic_ship_hull_carrier = 1
-			}	
-			add_equipment_to_stockpile = {
-				type = cv_fighter_equipment_1936
-				amount = 100
-				producer = FRA 
-			}
-			add_equipment_to_stockpile = {
-				type = cv_nav_bomber_equipment_1936
-				amount = 100
-				producer = FRA 
-			}			
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				custom_effect_tooltip = FRA_prioritize_the_joffre_tt
-				hidden_effect = {
-					create_equipment_variant = {
-						name = "Joffre Class"
-						type = ship_hull_carrier_1
-						name_group = FRA_CV_HISTORICAL
-						parent_version = 0
-						modules = {
-							fixed_ship_deck_slot_1 = ship_deck_space
-							fixed_ship_deck_slot_2 = ship_deck_space
-							fixed_ship_anti_air_slot = ship_anti_air_2
-							fixed_ship_radar_slot = empty
-							fixed_ship_engine_slot = carrier_ship_engine_2
-							fixed_ship_secondaries_slot = ship_secondaries_2
-							front_1_custom_slot = ship_deck_space
-						}
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_carrier_1
-							creator = "FRA" 
-							version_name = "Joffre Class"
-						}
-						name = "Joffre" 
-						requested_factories = 1
-						progress = 0.4
-						amount = 1
-					}
-				}	
-			}
+			add_ideas = FRA_navy			
 		}
 	}
 	

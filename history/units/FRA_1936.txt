@@ -766,6 +766,17 @@ air_wings = {
 			amount = 100
 		}
 	}
+	### Carrier Command ###
+	14 = { 
+		cv_fighter_equipment_1936 = {
+			owner = "ENG"			
+			amount = FRA
+		}
+		cv_nav_bomber_equipment_1936 = {
+			owner = "FRA"			
+			amount = 100
+		}
+	}
 }
 
 #########################

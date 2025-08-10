@@ -276,7 +276,8 @@ leader_traits = {
 		
 		stability_factor = 0.05
 		stability_weekly = 0.001
-		special_forces_min = 50
+		war_support_weekly = 0.001
+		special_forces_min = 75
 	}
 	well_mannered_iman = {
 		sprite = 13
@@ -522,6 +523,7 @@ leader_traits = {
 		sprite = 13
 		stability_factor = 0.05
 		stability_weekly = 0.001
+		war_support_weekly = 0.001
 		army_armor_attack_factor = 0.02
 	    army_armor_defence_factor = 0.02
 	}

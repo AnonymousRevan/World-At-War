@@ -609,13 +609,22 @@ characters={
 	}
 	FRA_francois_darlan={
 		advisor={
-			slot = navy_chief
+			slot = theorist
 			idea_token = francois_darlan
+			ledger  = navy 
+			cost  = 200.00
 			allowed  = {
 					original_tag  = FRA 
 				}
+				available = {
+				NOT = {
+					OR = {
+						has_idea = jean_decoux
+					}
+				}
+				}	
 				traits  = {
-					navy_chief_decisive_battle_1 
+					grand_fleet_proponent 
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -861,13 +870,13 @@ characters={
 	}
 	FRA_henri_marie_auguste_bineau={
 		advisor={
-			slot = army_chief
+			slot = high_command
 			idea_token = FRA_henri_marie_auguste_bineau
 			allowed  = {
 					original_tag  = FRA 
 				}
 				traits  = {
-					army_chief_offensive_1 
+					army_cavalry_2 
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -1019,13 +1028,13 @@ characters={
 	}
 	FRA_pierre_alombert_goget={
 		advisor={
-			slot = army_chief
+			slot = navy_chief
 			idea_token = FRA_pierre_alombert_goget
 			allowed  = {
 					original_tag  = FRA 
 				}
 				traits  = {
-					army_chief_defensive_1 
+					navy_chief_decisive_battle_1 
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -1061,7 +1070,13 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
-			
+				available = {
+				NOT = {
+					OR = {
+						has_idea = francois_darlan
+					}
+				}
+				}		
 			
 			
 			traits = { naval_theorist }

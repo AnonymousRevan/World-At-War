@@ -1578,7 +1578,7 @@ ideas = {
 			
 			modifier = {
 				industrial_factory_donations = 20
-				military_factory_donations = 5
+				military_factory_donations = 10
 				dockyard_donations = 5
 				war_support_weekly = 0.001
 				stability_weekly = 0.001
@@ -1588,7 +1588,7 @@ ideas = {
 				state_resource_rubber = 150
 			    state_resource_tungsten = 100
 				state_resource_aluminium = 100
-			    state_resource_chromium = 50
+			    state_resource_chromium = 100
 				state_resource_oil = 25
 				
 			}
@@ -2759,6 +2759,9 @@ ideas = {
 					build_cost_ic = -0.05 instant = yes
 				}
 				amphibious_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				armored_cars_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
 				mechanized_equipment = {
