@@ -1577,7 +1577,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_factory_donations = 10
+				industrial_factory_donations = 20
 				military_factory_donations = 5
 				dockyard_donations = 5
 				war_support_weekly = 0.001

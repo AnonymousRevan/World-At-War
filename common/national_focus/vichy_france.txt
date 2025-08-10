@@ -1489,7 +1489,7 @@
         	}
 			add_trait = {
 				character = EFR_philippe_pétain
-				slot = country_leader
+				ideology = fascism_ideology
 			    trait = master_armorer
 		   }
 		}

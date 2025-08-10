@@ -3325,27 +3325,6 @@ shared_focus = {
 
 	completion_reward = {
 		random_owned_controlled_state = {
-			limit = { 
-				is_coastal = yes 
-				free_building_slots = {
-					building = dockyard
-					size > 1
-					include_locked = yes
-				}
-			}
-			set_state_flag = SMB_expanded_naval_bases
-			IF = {
-				limit = { naval_base < 8 }
-				add_building_construction = {
-					type = naval_base
-					level = 1
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-				    }
-				}
-			}
 			IF = {
 				limit = { 
 					dockyard < 8
@@ -3883,27 +3862,6 @@ shared_focus = {
 			tooltip = repair_speed_factor_tt
 		}
 		random_owned_controlled_state = {
-			limit = { 
-				is_coastal = yes 
-				free_building_slots = {
-					building = dockyard
-					size > 1
-					include_locked = yes
-				}
-				#has_state_flag = SMB_expanded_naval_bases
-			}
-			IF = {
-				limit = { naval_base < 8 }
-				add_building_construction = {
-					type = naval_base
-					level = 1
-					instant_build = yes
-						province = {
-							all_provinces = yes
-							limit_to_coastal = yes
-					    }
-				}
-			}
 			IF = {
 				limit = { 
 					dockyard < 8
@@ -4058,27 +4016,6 @@ shared_focus = {
 
 	completion_reward = {
 		random_owned_controlled_state = {
-			limit = { 
-				is_coastal = yes 
-				free_building_slots = {
-					building = dockyard
-					size > 1
-					include_locked = yes
-				}
-				#has_state_flag = SMB_expanded_naval_bases
-			}
-			IF = {
-				limit = { naval_base < 8 }
-				add_building_construction = {
-					type = naval_base
-					level = 1
-					instant_build = yes
-						province = {
-							all_provinces = yes
-							limit_to_coastal = yes
-					    }
-				}
-			}
 			IF = {
 				limit = { 
 					dockyard < 8
