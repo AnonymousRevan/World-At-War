@@ -1584,12 +1584,12 @@ ideas = {
 				stability_weekly = 0.001
 				weekly_manpower = 5000
 				conscription = 0.03
-				state_resource_steel = 	200
-				state_resource_rubber = 150
-			    state_resource_tungsten = 100
-				state_resource_aluminium = 100
-			    state_resource_chromium = 100
-				state_resource_oil = 25
+				country_resource_steel = 	200
+				country_resource_rubber = 150
+			    country_resource_tungsten = 100
+				country_resource_aluminium = 100
+			    country_resource_chromium = 100
+				country_resource_oil = 25
 				
 			}
 		}
