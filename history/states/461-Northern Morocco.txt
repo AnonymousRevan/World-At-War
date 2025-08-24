@@ -18,11 +18,11 @@ state={
 			7069 5 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			industrial_complex = 1
 			air_base = 4
 			7069 = {
-				naval_base = 4
+				naval_base = 8
 			}
 		}
 	}

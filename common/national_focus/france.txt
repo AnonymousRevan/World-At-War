@@ -29,6 +29,10 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = france_la_front_du_popular_tt
 			hidden_effect = { news_event = { id = news.344 hours = 12 } }	
+			modify_tech_sharing_bonus = {
+ 				id = commonwealth_research
+ 				bonus = 0.03
+			}
 			add_political_power = 100
 			add_stability = 0.1 			
 		}
@@ -850,7 +854,7 @@ focus_tree = {
 				controller_priority = {
 					base = 1
 				}
-				start_province = 1145
+				start_province = 7069
 				target_province = 9994
 			}
 			# Syria
@@ -1187,7 +1191,7 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
-				bonus = 1.0
+				bonus = 1.5
 				uses = 1
 				category = cat_light_armor
 				category = cat_medium_armor
@@ -2076,6 +2080,20 @@ focus_tree = {
 			add_state_core = 898
 			add_state_core = 899
 			add_state_core = 556
+			
+			add_state_core = 708
+			add_state_core = 543
+			add_state_core = 706
+			add_state_core = 635
+			add_state_core = 641
+			add_state_core = 713
+			add_state_core = 268
+			add_state_core = 734
+			add_state_core = 671
+			add_state_core = 670
+			add_state_core = 741
+			add_state_core = 286
+			add_state_core = 728
 			539 = {
 				add_victory_points = {
 					province = 5139 
@@ -2137,13 +2155,6 @@ focus_tree = {
 					value = 4
 				}
 			}			
-			every_state = {
-				limit = {
-					is_core_of = SEN
-					has_resistance = yes
-				}
-				add_compliance = 100
-			}
 			add_popularity = { ideology = democratic popularity = 1.00 }
 			add_war_support = 0.30					
 			add_doctrine_cost_reduction = {
@@ -2285,6 +2296,20 @@ focus_tree = {
 			add_state_core = 898
 			add_state_core = 899
 			add_state_core = 556
+			
+			add_state_core = 708
+			add_state_core = 543
+			add_state_core = 706
+			add_state_core = 635
+			add_state_core = 641
+			add_state_core = 713
+			add_state_core = 268
+			add_state_core = 734
+			add_state_core = 671
+			add_state_core = 670
+			add_state_core = 741
+			add_state_core = 286
+			add_state_core = 728
 			539 = {
 				add_victory_points = {
 					province = 5139 
@@ -2345,13 +2370,6 @@ focus_tree = {
 					province = 2080
 					value = 4
 				}
-			}
-			every_state = {
-				limit = {
-					is_core_of = SEN
-					has_resistance = yes
-				}
-				add_compliance = 100
 			}
 			add_popularity = { ideology = democratic popularity = 1.00 }
 			add_war_support = 0.30					
@@ -3289,10 +3307,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 		    add_ideas = FRA_buildup1
-			modify_tech_sharing_bonus = {
- 				id = commonwealth_research
- 				bonus = 0.03
-			}
 		}
 	}
 	focus = {
@@ -3363,11 +3377,21 @@ focus_tree = {
 				build_2_infrastructure = yes
 			}
 			462 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2				
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes 
+				}
 				build_3_infrastructure = yes
 			}
 			513 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2			
+				add_building_construction = {
+					type = arms_factory 
+					level = 2
+					instant_build = yes 
+				}
 				build_3_infrastructure = yes
 			}
 		}
@@ -3578,6 +3602,15 @@ focus_tree = {
 				build_2_infrastructure = yes
 			}
 			680 = {
+				add_extra_state_shared_building_slots = 3		
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				build_2_infrastructure = yes
+			}
+			799 = {
 				add_extra_state_shared_building_slots = 3		
 				add_building_construction = {
 					type = arms_factory

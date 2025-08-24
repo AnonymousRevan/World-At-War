@@ -412,7 +412,7 @@ characters={
 					original_tag  = SAF
 				}
 				traits  = {
-					army_artillery_1 
+					army_infantry_2 
 				}
 				ai_will_do  = {
 					factor  = 1.000

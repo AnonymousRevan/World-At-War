@@ -37,6 +37,27 @@ ideas = {
 	}
 
 	country = {
+	
+	    Funnyidea = {
+		 
+		    picture = generic_research_bonus
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				nuclear = 0.35
+				jet_technology = 0.25
+				rocketry = 0.15
+			}
+		}
 
 		RAJ_princely_states = {
 
@@ -1095,7 +1116,6 @@ ideas = {
 			}
 
 			cancel = {
-			    has_capitulated = yes
 			}
 			
 			modifier = {
@@ -1103,6 +1123,11 @@ ideas = {
 			}
 			
 			removal_cost = -1
+			equipment_bonus = {
+				medium_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
 			equipment_bonus = {
 				railway_gun_equipment = {
 					build_cost_ic = 0.25 instant = yes

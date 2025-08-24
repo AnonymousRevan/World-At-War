@@ -636,7 +636,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = nuclear_bonus
-				ahead_reduction = 0.8
+				bonus = 0.5
+				uses = 2
 				category = nuclear
 			}
 		}

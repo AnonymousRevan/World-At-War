@@ -1884,7 +1884,7 @@ focus_tree = {
 		    transfer_state = 332
    			modify_tech_sharing_bonus = {
          		id = commonwealth_research
-         		bonus = 0.03
+         		bonus = 0.08
 			}
 			ENG = {
 				add_opinion_modifier = {
@@ -1920,12 +1920,6 @@ focus_tree = {
 
 		completion_reward = {
 		    add_research_slot = 1
-			CAN = {
-   				 modify_tech_sharing_bonus = {
-        			id = commonwealth_research
-        			bonus = 0.05 
-    			}
-			}
 		}
 	}
 
@@ -2201,11 +2195,15 @@ focus_tree = {
 		    add_political_power = 75
 		    add_ideas = low_economic_mobilisation
             add_ideas = CAN_darkest
-	    add_stability = -0.15
+	        add_stability = -0.15
 			add_war_support = 0.2
 
 			remove_state_core = 331 
 		    remove_state_core = 332
+			modify_tech_sharing_bonus = {
+ 				id = commonwealth_research
+ 				bonus = 0.02
+			}
 			USA = {
 				add_opinion_modifier = {
 					target = ROOT

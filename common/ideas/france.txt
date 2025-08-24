@@ -90,8 +90,8 @@ ideas = {
 			production_speed_dockyard_factor = 0.1
 			production_speed_steel_refinery_factor = 0.1
 			production_speed_synthetic_rubber_refinery_factor = 0.15
-			production_factory_efficiency_gain_factor = 0.03
-			production_factory_max_efficiency_factor = 0.03
+			production_factory_efficiency_gain_factor = 0.05
+			production_factory_max_efficiency_factor = 0.05
 			
 			}
 		}
@@ -109,7 +109,7 @@ ideas = {
 			picture = generic_license_production
 
 			modifier = {
-				license_air_purchase_cost = -0.5
+				license_air_purchase_cost = -1
 				license_production_speed = 0.35
 			}
 		}
