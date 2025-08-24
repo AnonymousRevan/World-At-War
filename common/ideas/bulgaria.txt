@@ -504,6 +504,66 @@ ideas = {
 			}
 			removal_cost = -1
 
+			targeted_modifier = {
+				tag = SOV
+				# counter war support
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = MON
+				# counter war support
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = ENG
+				# counter war support
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = USA
+				# counter war support
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = FRA
+				# counter war support
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = CAN
+				# counter war support
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = IDR
+				# counter war support
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = AST
+				# counter war support
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SAF
+				# counter war support
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = BRA
+				# counter war support
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
 			modifier = {
 				weekly_manpower = 500
 			}
@@ -546,6 +606,7 @@ ideas = {
 				stability_weekly = 0.002
 				political_power_gain = 0.3
 				compliance_gain = 0.01
+				acclimatization_cold_climate_gain_factor = 0.1
 			}
 		}
 
@@ -580,8 +641,7 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.02
-				production_factory_max_efficiency_factor = 0.02
+				industrial_capacity_factory = 0.05
 				consumer_goods_factor = 0.2
 			}
 		}
@@ -601,8 +661,7 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.05
-				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.1
 				consumer_goods_factor = 0.4
 			}
 		}
@@ -622,10 +681,9 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
-				production_factory_max_efficiency_factor = 0.1
 				global_building_slots_factor = 0.2
 				consumer_goods_factor = 0.075
+				industrial_capacity_factory = 0.2
 			}
 		}
 
@@ -642,7 +700,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_factory = 0.1
+			    production_speed_industrial_complex_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
 				consumer_goods_factor = -0.15
 			}
 		}
@@ -660,7 +720,10 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_factory = 0.1
+			    production_speed_industrial_complex_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -1101,7 +1164,7 @@ ideas = {
 
 			modifier = {
 				production_speed_nuclear_reactor_factor = 0.1
-				nuclear_production_factor = 0.1
+				nuclear_production_factor = 0.05
 			}
 			research_bonus = {
 				nuclear = 0.05
@@ -1630,6 +1693,66 @@ ideas = {
 				fascism_drift = 0.02
 				conscription_factor = 0.1
 			}
+			targeted_modifier = {
+				tag = SOV
+				# counter war support
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = MON
+				# counter war support
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ENG
+				# counter war support
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = USA
+				# counter war support
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = FRA
+				# counter war support
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = CAN
+				# counter war support
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = IDR
+				# counter war support
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = AST
+				# counter war support
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = SAF
+				# counter war support
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
+			}
+			targeted_modifier = {
+				tag = BRA
+				# counter war support
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
+			}
 		}
 
 		BUL_government_reforms_fascists_01 = {
@@ -1696,6 +1819,77 @@ ideas = {
 			modifier = {
 				economy_cost_factor = -0.5
 				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = -0.25
+				trade_laws_cost_factor = 0.5
+				min_export = -0.15
+				local_resources_factor = 0.15
+			}
+		}
+		
+		BUL_government_reforms_fascists_04 = {
+			name = BUL_government_reforms_communists_01
+
+			picture = generic_political_support
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				economy_cost_factor = -0.5
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+
+		BUL_government_reforms_fascists_05 = {
+			name = BUL_government_reforms_communists_01
+
+			picture = FRA_market_dynamism
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			on_add = {
+				add_ideas = limited_exports
+			}
+
+			modifier = {
+				economy_cost_factor = -0.5
+				production_speed_arms_factory_factor = 0.075
+				consumer_goods_factor = -0.1
+				trade_laws_cost_factor = 0.5
+				min_export = -0.15
+			}
+		}
+
+		BUL_government_reforms_fascists_06 = {
+			name = BUL_government_reforms_communists_01
+
+			picture = FRA_market_dynamism
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				economy_cost_factor = -0.5
+				production_speed_arms_factory_factor = 0.1
 				consumer_goods_factor = -0.25
 				trade_laws_cost_factor = 0.5
 				min_export = -0.15

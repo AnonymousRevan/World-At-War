@@ -882,7 +882,7 @@ characters={
 				available  = {
 				}
 				traits  = {
-					quartermaster
+					quartermaster_general
 				}
 				ai_will_do  = {
 					base  = 1.000
@@ -1114,7 +1114,7 @@ characters={
 					}
 				}
 				traits  = {
-					#tsars_puppet 
+					rearmament_proponent 
 				}
 		}
 		name="BUL_georgi_ivanov_kyoseivanov"
@@ -1132,12 +1132,9 @@ characters={
 					original_tag  = BUL
 				}
 				available  = {
-					not  = {
-						has_completed_focus  = BUL_power_to_the_tsar 
-					}
 				}
 				traits  = {
-					communist_revolutionary 
+					adventurous_daredevil 
 				}
 				ai_will_do  = {
 					base  = 1.000

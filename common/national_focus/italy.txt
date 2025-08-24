@@ -2901,6 +2901,12 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = ITA_german_millitary_cooperation_focus
 			add_ideas = ITA_idea_license
+			add_tech_bonus = {
+				name = HOL_the_ultimate_deterrent
+				bonus = 0.85
+				uses = 2
+				category = nuclear
+			}
 		}
 	}
 	focus = {

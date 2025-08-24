@@ -7226,6 +7226,10 @@ focus_tree = {
 				uses = 2
 				category = nuclear
 			}
+			add_ideas = BUL_buhovo_uranium_mines
+			ITA = {
+			     add_ideas = BUL_buhovo_uranium_mines
+			}
 			hidden_effect = { news_event = { id = news.174 } }						
 		}
 	}
@@ -7244,7 +7248,6 @@ focus_tree = {
 		available_if_capitulated = yes	
 
 		available = {
-			nuclear_reactor > 9
 		}
 		completion_reward = {
 			add_tech_bonus = {

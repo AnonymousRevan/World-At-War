@@ -530,8 +530,109 @@ FRA_vichy_france = {
 			factor = 1
 		}
 	}
+	postpostcap = {
+		icon = generic_political_discourse
+
+		available = {
+		    FRA = {
+		      	NOT = { controls_state = 539 }
+			}
+		}
+
+        visible = {
+			tag = FRA
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		complete_effect = {
+			add_ideas = postpostcapidea
+			add_ideas = tot_economic_mobilisation
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	capitala = {
+		icon = generic_civil_support
+
+		available = {
+		    539 = { is_controlled_by = FRA }
+		}
+
+        visible = {
+			tag = FRA
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+		
+		days_remove = 15
+
+		remove_effect = {
+			set_capital = { state = 539 }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	capitalb = {
+		icon = generic_civil_support
+
+		available = {
+		    272 = { is_controlled_by = FRA }
+		}
+
+        visible = {
+			tag = FRA
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+		
+		days_remove = 15
+
+		remove_effect = {
+			set_capital = { state = 272 }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	capitalc = {
+		icon = generic_civil_support
+
+		available = {
+		    310 = { is_controlled_by = FRA }
+		}
+
+        visible = {
+			tag = FRA
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+		
+		days_remove = 15
+
+		remove_effect = {
+			set_capital = { state = 310 }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
 	FRA_invade_syria = {
-        icon = generic_civil_support
+        icon = generic_operation
  		fire_only_once = yes
 		
 		allowed = {
@@ -561,7 +662,7 @@ FRA_vichy_france = {
 		}	
 	}
 	FRA_invade_north_africa = {
-        icon = generic_civil_support
+        icon = generic_operation
  		fire_only_once = yes
 		
 		allowed = {
@@ -634,12 +735,11 @@ FRA_war_on_pacifism = {
 
 		days_remove = 80
 		modifier = {
-			war_support_weekly = 0.001
-			stability_weekly = -0.002
+			war_support_weekly = 0.002
+			stability_weekly = -0.001
 		}
 
 		visible = {
-		has_completed_focus = FRA_army_reform
 		}
 
 		remove_effect = {
@@ -685,14 +785,12 @@ FRA_war_on_pacifism = {
 
 		days_remove = 80
 		modifier = {
-			war_support_weekly = 0.001
-			political_power_factor = -0.05
+			war_support_weekly = 0.002
 			industrial_capacity_factory = -0.1
 			industrial_capacity_dockyard = -0.1
 		}
 
 		visible = {
-			has_completed_focus = FRA_army_reform
 		}
 
 		remove_effect = {
@@ -740,12 +838,11 @@ FRA_war_on_pacifism = {
 		days_remove = 80
 		
 		modifier = {
-			war_support_weekly = 0.001
-			political_power_factor = -0.30
+			war_support_weekly = 0.002
+			political_power_factor = -0.20
 		}
 
 		visible = {
-			has_completed_focus = FRA_army_reform
 		}
 
 		remove_effect = {
@@ -942,37 +1039,6 @@ FRA_weapons_purchases_category = {
 }
 
 economy_decisions = {
-	postpostcap = {
-		icon = generic_political_discourse
-
-		available = {
-		    FRA = {
-		      	NOT = { controls_state = 539 }
-			}
-		}
-
-        visible = {
-			OR = {
-				is_in_faction_with = ENG
-				tag = FRA
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 0
-
-		complete_effect = {
-			FRA = {
-				add_ideas = postpostcapidea
-				add_ideas = tot_economic_mobilisation
-			}
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-	}
 	FRA_reorganize_aviation_industry_north = {
 
 		visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }

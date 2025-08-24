@@ -573,9 +573,22 @@ focus_tree = {
 			add_tech_bonus = {
 				category = nuclear 
 				uses = 2
-				bonus = 1 
+				bonus = 1.25
 				name = USA_manhattan_project
 			}	
+			add_ideas = FRA_uranium_mines
+			USA = {
+			    add_ideas = FRA_uranium_mines
+			}
+			ENG = {
+			    add_ideas = FRA_uranium_mines
+			}
+			SOV = {
+			    add_ideas = FRA_uranium_mines
+			}
+			CAN = {
+			    add_ideas = FRA_uranium_mines
+			}
 		}
 	}
 
@@ -767,10 +780,11 @@ focus_tree = {
 					base = 1
 				}
 				fallback = yes
-				path = { 5139 10948 3109 6008 12830 11108 3165 12719 10764 4033 12744 10851 10795 12806 }
+				path = { 5139 10948 2080 5054 11012 12830 11108 3165 12719 10764 4033 12744 10851 10795 12806 }
 				start_province = 5139
 				target_province = 12806
 			}
+			#Libreville - Khartoum 2
 			build_railway = {
 				level = 2
 				build_only_on_allied = yes
@@ -778,9 +792,58 @@ focus_tree = {
 					base = 1
 				}
 				fallback = yes
-				start_province = 4948
-				target_province = 12830
+				path = { 2080 9137 11194 7963 2081 4897 4978 1473 5060 10739 8084 2016 10795}
+				start_province = 2080
+				target_province = 10795
 			}
+			#West Africa
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+				}
+				fallback = yes
+				path = { 4948 12710 8015 2012 10829 12751 4927 8116 12851 10836	8096 12787 10862 12785 1951 10919 2050 4952 8034 10831 6039 2080 }
+				start_province = 4948
+				target_province = 2080
+			}
+			#West Africa 2
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+				}
+				fallback = yes
+				path = { 4948 7972 13213 12834 12747 12858 1909 2038 2094 7959 8006 10762 10803 12742 10862 }
+				start_province = 4948
+				target_province = 10862
+			}
+			#West Africa 3
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+				}
+				fallback = yes
+				path = { 10836 7950 12707 2056 1891 1969 4972 5028 4997 7963 }
+				start_province = 10836
+				target_province = 7963
+			}
+			# Caribbean
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+				}
+				path = { 12885 10906 12828 4982 }
+				start_province = 12885
+				target_province = 4982 
+			}
+			# Algiers
 			build_railway = {
 				level = 1
 				build_only_on_allied = yes
@@ -790,6 +853,7 @@ focus_tree = {
 				start_province = 1145
 				target_province = 9994
 			}
+			# Syria
 			build_railway = {
 				level = 1
 				build_only_on_allied = yes
@@ -798,6 +862,46 @@ focus_tree = {
 				}
 				start_province = 12473
 				target_province = 792
+			}
+			774 = {
+				add_building_construction = {
+					type = supply_node
+					province = 2081
+					level = 1
+					instant_build = yes
+				}	
+			}
+			660 = {
+				add_building_construction = {
+					type = supply_node
+					province = 12830
+					level = 1
+					instant_build = yes
+				}	
+			}
+			773 = {
+				add_building_construction = {
+					type = supply_node
+					province = 2080
+					level = 1
+					instant_build = yes
+				}	
+			}
+			274 = {
+				add_building_construction = {
+					type = supply_node
+					province = 10862
+					level = 1
+					instant_build = yes
+				}	
+			}
+			778 = {
+				add_building_construction = {
+					type = supply_node
+					province = 10836
+					level = 1
+					instant_build = yes
+				}	
 			}
 		}
 	}
@@ -912,7 +1016,7 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
-			add_war_support = 0.05
+			add_war_support = 0.1
 		}
 	}
 	
@@ -999,8 +1103,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_category_tooltip = FRA_war_on_pacifism
-			custom_effect_tooltip = FRA_army_reform_tt
 		    add_ideas = FRA_victors
 		}
 	}
@@ -1940,6 +2042,9 @@ focus_tree = {
 		    retire_country_leader = yes
 	    	promote_character = FRA_charles_de_gaulle
 			set_capital = { state = 539 }
+			custom_effect_tooltip = FRA_cores_tt
+			
+			hidden_effect = {
 			add_state_core = 539
 			add_state_core = 774
 			add_state_core = 660
@@ -1955,6 +2060,90 @@ focus_tree = {
 			add_state_core = 689
 			add_state_core = 694
 			add_state_core = 730
+			
+			add_state_core = 557
+			add_state_core = 701
+			add_state_core = 296
+			add_state_core = 780
+			add_state_core = 700
+			add_state_core = 298
+			add_state_core = 779
+			add_state_core = 274
+			add_state_core = 777
+			add_state_core = 776
+			add_state_core = 781
+			add_state_core = 778
+			add_state_core = 898
+			add_state_core = 899
+			add_state_core = 556
+			539 = {
+				add_victory_points = {
+					province = 5139 
+					value = 15
+				}
+			}
+			272 = {
+				add_victory_points = {
+					province = 4948 
+					value = 15
+				}
+			}	
+			310 = {
+				add_victory_points = {
+					province = 12885
+					value = 10
+				}
+			}	
+			461 = {
+				add_victory_points = {
+					province = 7069
+					value = 5
+				}
+			}	
+			458 = {
+				add_victory_points = {
+					province = 11969
+					value = 5
+				}
+			}
+
+			778 = {
+				add_victory_points = {
+					province = 10836 
+					value = 4
+				}
+			}
+			274 = {
+				add_victory_points = {
+					province = 10862 
+					value = 4
+				}
+			}	
+			774 = {
+				add_victory_points = {
+					province = 2081
+					value = 4
+				}
+			}	
+			660 = {
+				add_victory_points = {
+					province = 12830
+					value = 4
+				}
+			}	
+			773 = {
+				add_victory_points = {
+					province = 2080
+					value = 4
+				}
+			}			
+			every_state = {
+				limit = {
+					is_core_of = SEN
+					has_resistance = yes
+				}
+				add_compliance = 100
+			}
 			add_popularity = { ideology = democratic popularity = 1.00 }
 			add_war_support = 0.30					
 			add_doctrine_cost_reduction = {
@@ -1967,14 +2156,6 @@ focus_tree = {
 				type = convoy
 				amount = 350
 			}
-			every_state = {
-				limit = {
-					is_core_of = SEN
-					has_resistance = yes
-				}
-				add_compliance = 100
-			}
-			hidden_effect = {
 				news_event = { id = news.342 hours = 12 } 
 				create_corps_commander = {
 					name = "Charles de Gaulle"
@@ -2070,7 +2251,9 @@ focus_tree = {
 				coordination_skill=2
 			}
 		    set_capital = { state = 272 }
-			add_state_core = 272
+			custom_effect_tooltip = FRA_cores_tt
+			
+			hidden_effect = {
 			add_state_core = 539
 			add_state_core = 774
 			add_state_core = 660
@@ -2078,6 +2261,7 @@ focus_tree = {
 			add_state_core = 772
 			add_state_core = 297
 			add_state_core = 796
+			add_state_core = 272
 			add_state_core = 695
 			add_state_core = 310
 			add_state_core = 692
@@ -2085,6 +2269,90 @@ focus_tree = {
 			add_state_core = 689
 			add_state_core = 694
 			add_state_core = 730
+			
+			add_state_core = 557
+			add_state_core = 701
+			add_state_core = 296
+			add_state_core = 780
+			add_state_core = 700
+			add_state_core = 298
+			add_state_core = 779
+			add_state_core = 274
+			add_state_core = 777
+			add_state_core = 776
+			add_state_core = 781
+			add_state_core = 778
+			add_state_core = 898
+			add_state_core = 899
+			add_state_core = 556
+			539 = {
+				add_victory_points = {
+					province = 5139 
+					value = 15
+				}
+			}
+			272 = {
+				add_victory_points = {
+					province = 4948 
+					value = 15
+				}
+			}	
+			310 = {
+				add_victory_points = {
+					province = 12885
+					value = 10
+				}
+			}	
+			461 = {
+				add_victory_points = {
+					province = 7069
+					value = 5
+				}
+			}	
+			458 = {
+				add_victory_points = {
+					province = 11969
+					value = 5
+				}
+			}
+			
+			778 = {
+				add_victory_points = {
+					province = 10836 
+					value = 4
+				}
+			}
+			274 = {
+				add_victory_points = {
+					province = 10862 
+					value = 4
+				}
+			}	
+			774 = {
+				add_victory_points = {
+					province = 2081
+					value = 4
+				}
+			}	
+			660 = {
+				add_victory_points = {
+					province = 12830
+					value = 4
+				}
+			}	
+			773 = {
+				add_victory_points = {
+					province = 2080
+					value = 4
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = SEN
+					has_resistance = yes
+				}
+				add_compliance = 100
+			}
 			add_popularity = { ideology = democratic popularity = 1.00 }
 			add_war_support = 0.30					
 			add_doctrine_cost_reduction = {
@@ -2097,14 +2365,6 @@ focus_tree = {
 				type = convoy
 				amount = 350
 			}
-			every_state = {
-				limit = {
-					is_core_of = SEN
-					has_resistance = yes
-				}
-				add_compliance = 100
-			}
-			hidden_effect = {
 				news_event = { id = news.342 hours = 12 } 
 				create_corps_commander = {
 					name = "Charles de Gaulle"

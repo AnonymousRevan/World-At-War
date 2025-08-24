@@ -1822,17 +1822,11 @@ operations = {
 		icon = generic_political_discourse
 
 		allowed = {
-		OR = {
-			tag = ENG	
-			tag = FRA
-             }			
+			tag = ENG		
 		}
 
 		visible = {
-		OR = {
 			tag = ENG	
-			tag = FRA
-             }	
 			country_exists = HOL
 			HOL = { is_ai = yes }
 		}

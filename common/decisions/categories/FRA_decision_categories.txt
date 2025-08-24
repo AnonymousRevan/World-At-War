@@ -11,7 +11,6 @@ FRA_war_on_pacifism = {
 	}
 
 	visible = {
-		has_completed_focus = FRA_army_reform
 		OR = {
 			has_idea = FRA_victors_of_wwi
 			hidden_trigger = {
@@ -36,7 +35,6 @@ FRA_vichy_france = {
 		original_tag = FRA
 	}
 	visible = {
-		has_capitulated = yes
 	}
 }
 

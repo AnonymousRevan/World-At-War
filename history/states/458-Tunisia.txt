@@ -15,7 +15,7 @@ state={
 		add_core_of = FRA
 		set_state_flag = GER_atlantikwall
 		victory_points = {
-			11969 10 
+			11969 5 
 		}
 		victory_points = {
 			9994 1 

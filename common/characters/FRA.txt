@@ -804,7 +804,7 @@ characters={
 				}
 				cost  = 150.000
 				traits  = {
-					propaganda_expert 
+					capitalist 
 				}
 				ai_will_do  = {
 					factor  = 1.000
