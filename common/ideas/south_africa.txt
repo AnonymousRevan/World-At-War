@@ -799,6 +799,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 
 			modifier = {
+			    production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_steel_refinery_factor = 0.10
 				production_speed_synthetic_rubber_refinery_factor = 0.10

@@ -35,6 +35,7 @@ FRA_vichy_france = {
 		original_tag = FRA
 	}
 	visible = {
+	    has_capitulated = yes
 	}
 }
 

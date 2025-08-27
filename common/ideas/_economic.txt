@@ -583,9 +583,12 @@ ideas = {
 
 			
 		    available = {
+			    AND = {
+				has_capitulated = yes
 			    OR = {
 			        has_decision = postpostcap
 					459 = { is_controlled_by = FRA }
+				}
 				}
 		    }
 	    		

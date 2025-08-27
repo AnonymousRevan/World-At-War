@@ -407,6 +407,7 @@ ideas = {
 				production_speed_anti_air_building_factor = 0.1
 				production_speed_radar_station_factor = 0.1
 				global_building_slots_factor = 0.05
+				conscription = 0.01
 			}
 		}
 		FRA_buildup2 = {
@@ -432,6 +433,7 @@ ideas = {
 				production_speed_coastal_bunker_factor = 0.15
 				production_speed_anti_air_building_factor = 0.15
 				production_speed_radar_station_factor = 0.15
+				conscription = 0.025
 			}
 		}
 		FRA_the_young_school = {

@@ -2094,6 +2094,12 @@ focus_tree = {
 			add_state_core = 741
 			add_state_core = 286
 			add_state_core = 728
+			459 = {
+				add_victory_points = {
+					province = 1145 
+					value = 15
+				}
+			}
 			539 = {
 				add_victory_points = {
 					province = 5139 
@@ -2310,6 +2316,12 @@ focus_tree = {
 			add_state_core = 741
 			add_state_core = 286
 			add_state_core = 728
+			459 = {
+				add_victory_points = {
+					province = 1145 
+					value = 15
+				}
+			}
 			539 = {
 				add_victory_points = {
 					province = 5139 
