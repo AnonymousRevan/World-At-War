@@ -312,7 +312,7 @@ equipments = {
 		}
 	}
 	
-	ship_hull_carrier_CVL = {
+	ship_hull_carrier_battle = {
 		year = 1940
 		visual_level = 1
 		archetype = ship_hull_carrier
@@ -331,10 +331,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
-					ship_secondaries
-					ship_light_battery
-					ship_medium_battery
-					ship_deck_space
 					ship_carrier_armor
 				}
 			}
@@ -342,9 +338,57 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_secondaries
-					ship_light_battery
-					ship_medium_battery
-					ship_deck_space
+					ship_carrier_armor
+				}
+			}
+		}
+
+		default_modules = {
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_3
+		}
+
+		build_cost_ic = 5000
+		manpower = 5000
+		max_strength = 400
+		hg_armor_piercing = 40
+		hg_attack = 24
+		reliability = 0.75
+		naval_speed = 24
+		naval_range = 4000
+		resources = {
+			steel = 14
+			chromium = 8
+		}
+	}
+	
+	ship_hull_carrier_mega = {
+		year = 1940
+		visual_level = 1
+		archetype = ship_hull_carrier
+		priority = 1000
+		parent = ship_hull_carrier_1
+
+		module_slots = {
+			fixed_ship_deck_slot_1 = inherit
+			fixed_ship_deck_slot_2 = inherit
+			fixed_ship_anti_air_slot = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_engine_slot = inherit
+			fixed_ship_secondaries_slot = inherit
+			fixed_ship_armor_slot = inherit
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_carrier_armor
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_secondaries
 					ship_anti_air
 					ship_carrier_armor
 				}
@@ -357,18 +401,16 @@ equipments = {
 			fixed_ship_engine_slot = carrier_ship_engine_3
 		}
 
-		build_cost_ic = 8000
-		manpower = 7500
-		max_strength = 420
+		build_cost_ic = 3500
+		manpower = 5000
+		max_strength = 550
+		carrier_size = 5
 		reliability = 0.75
-		naval_speed = 25
-		naval_range = 3750
-		anti_air_attack = 8
-		fuel_consumption = 88
-		
+		naval_speed = 20
+		naval_range = 4000
 		resources = {
-			steel = 20
-			chromium = 10
+			steel = 18
+			chromium = 5
 		}
 	}
 	

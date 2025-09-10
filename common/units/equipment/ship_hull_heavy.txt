@@ -413,7 +413,7 @@ equipments = {
 			chromium = 12
 		}
 	}
-
+	
 	battleship_1 = {
 		year = 1922
 		archetype = ship_hull_heavy

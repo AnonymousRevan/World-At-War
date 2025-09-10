@@ -52,6 +52,7 @@ set_technology = { #player
 	
 	################# economy ############
 	starting_industry = 1
+	electronic_mechanical_engineering = 1
 	basic_train = 1
 	
 }

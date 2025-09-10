@@ -80,14 +80,14 @@ characters={
 		country_leader={
 			desc="POLITICS_MIKLOS_HORTHY_DESC"
 			ideology=fascism_ideology
-			traits={ anti_communist }
+			traits={ anti_communist naval_theorist }
 			expire="1965.1.1.1"
 			id=-1
 		}
 		country_leader={
 			desc="POLITICS_MIKLOS_HORTHY_DESC"
 			ideology=oligarchism
-			traits={ fascist_sympathies anti_communist }
+			traits={ fascist_sympathies naval_theorist anti_communist }
 			expire="1965.1.1.1"
 			id=500
 		}
@@ -412,7 +412,7 @@ characters={
 			allowed = {
 				original_tag = HUN
 			}
-			traits = { navy_chief_reform_2 }
+			traits = { naval_theorist }
 			
 			ai_will_do = {
 				factor = 1

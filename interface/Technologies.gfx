@@ -10487,6 +10487,26 @@ texturefile = "gfx/interface/technologies/prc_adv_heavy_tank.dds"
 		texturefile = "gfx/interface/technologies/air/usa/b25_j20.tga"
 	}
 	
+	SpriteType = {
+		name = "GFX_mar_bomber_equipment_1934_medium"
+		texturefile = "gfx/interface/technologies/air/spec/NSR.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_heavy_tank_equipment_1941_medium"
+		texturefile = "gfx/interface/technologies/land/spec/m6a1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_anti_air_heavy_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/spec/128mm_flak.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_anti_tank_heavy_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/spec/17pounder.dds"
+	}
+	
 	##USA Strat Bombers
 	##Equipment
 	
@@ -10535,6 +10555,10 @@ texturefile = "gfx/interface/technologies/prc_adv_heavy_tank.dds"
 		texturefile = "gfx/interface/technologies/air/usa/b29.tga"
 	}
 		
+	SpriteType = {
+		name = "GFX_escort_bomber_equipment_1940_medium"
+		texturefile = "gfx/interface/technologies/air/usa/b17c.tga"
+	}
 	
 	##USA Armoured Cars
 	SpriteType = {
@@ -11612,7 +11636,76 @@ texturefile = "gfx/interface/technologies/prc_adv_heavy_tank.dds"
 		texturefile = "gfx/interface/technologies/transport.dds"
 	}
 
-
+	SpriteType = {
+		name = "GFX_ship_hull_super_dd_medium"
+		texturefile = "gfx/interface/technologies/navy/super_dd.PNG"
+	}
+	
+	SpriteType = {
+		name = "GFX_ship_hull_carrier_battle_medium"
+		texturefile = "gfx/interface/technologies/navy/battlecarrier.PNG"
+	}
+	
+	SpriteType = {
+		name = "GFX_ship_hull_carrier_mega_medium"
+		texturefile = "gfx/interface/technologies/navy/mega.PNG"
+	}
+	
+	SpriteType = {
+		name = "GFX_ship_hull_destroyer_leader_medium"
+		texturefile = "gfx/interface/technologies/navy/ddl.PNG"
+	}
+	
+	SpriteType = {
+		name = "GFX_medium_fsv_artillery_equipment_medium"
+		texturefile = "gfx/interface/technologies/land/spec/RocketTank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_logi_bomber_equipment_1934_medium"
+		texturefile = "gfx/interface/technologies/air/spec/logib.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hyfighter_equipment_1944_medium"
+		texturefile = "gfx/interface/technologies/air/spec/j7w.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_HCAS_equipment_medium"
+		texturefile = "gfx/interface/technologies/air/spec/do335.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_mechanized_rocket_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/land/spec/mechrock.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_super_heavy_tank_equipment_usa_medium"
+		texturefile = "gfx/interface/technologies/land/spec/t95.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_super_heavy_tank_equipment_ger_medium"
+		texturefile = "gfx/interface/technologies/land/spec/maus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_special_bomber_equipment_1934_medium"
+		texturefile = "gfx/interface/technologies/air/spec/guided.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_Bareback_Bomber_medium"
+		texturefile = "gfx/interface/technologies/air/spec/ENG_logib.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_suicide_bomber_equipment_medium"
+		texturefile = "gfx/interface/technologies/air/spec/ohka.dds"
+	}
+	
 	######
 	#added air units
 	######

@@ -773,6 +773,14 @@ JAP_yokosuka_naval_arsenal_organization = {
 	}
 }
 
+JAP_yokosuka_naval_arsenal_organization2 = {
+	include = Kriegsmental_organization2
+	icon = GFX_idea_FRA_aeb
+	allowed = {	
+		tag = JAP
+	}
+}
+
 JAP_maizuru_naval_arsenal_organization = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_maizuru_naval_arsenal
@@ -1148,7 +1156,7 @@ JAP_mitsubishi_organization = {
 				}
 	}
 	equipment_type = {
-		mio_cat_eq_only_light_fighter
+		mio_cat_eq_all_small_plane
 		cas
 		
 	}
@@ -2228,7 +2236,7 @@ JAP_yokosuka_organization_air= {
 
 		equipment_bonus = {
 			naval_strike_attack = 0.05
-			air_defence = -0.10
+			air_superiority = -0.15
 		}
 	}
 
@@ -2271,10 +2279,10 @@ JAP_yokosuka_organization_air= {
 		limit_to_equipment_type = { small_plane_naval_bomber_airframe mio_cat_all_medium_aircraft_and_modules }
 
 		equipment_bonus = {
-			naval_strike_attack = 0.15
-			naval_strike_targetting = 0.04
+			naval_strike_attack = 0.3
+			naval_strike_targetting = 0.05
 			air_defence = -0.30
-			air_range = -0.1
+			air_range = -0.15
 		}
 	}
 

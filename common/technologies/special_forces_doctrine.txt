@@ -234,7 +234,7 @@ technologies = {
 			supply_consumption = -0.025
 		}
 #		mountaineers = {
-#			combat_width = -0.2
+#			max_strength = 0.3
 #		}
 		
 		path = {

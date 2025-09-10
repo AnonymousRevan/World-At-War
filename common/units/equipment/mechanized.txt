@@ -25,12 +25,12 @@ equipments = {
 			rubber = 3
 	    }
 		
-#		upgrades = {
-#			mot_iccost_upgrade
-#			mec_armor_upgrade
-#			mec_hard_upgrade
-#			mec_soft_upgrade
-#		}
+		upgrades = {
+			mot_iccost_upgrade
+			mec_armor_upgrade
+			mec_hard_upgrade
+			mec_soft_upgrade
+		}
 		fuel_consumption = 2.5
     }
 	

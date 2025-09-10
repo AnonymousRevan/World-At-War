@@ -37,6 +37,8 @@ equipments = {
 		}
 
 		upgrades = {
+			art_cost_upgrade
+			art_aa_upgrade
 		}
 	}
 

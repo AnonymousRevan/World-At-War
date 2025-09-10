@@ -35,6 +35,7 @@ equipments = {
 		
 		upgrades = {
 			mot_iccost_upgrade
+			mec_soft_upgrade
 		}
 	}
 	motorized_equipment_1 = {

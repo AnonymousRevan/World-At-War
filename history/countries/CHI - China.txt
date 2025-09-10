@@ -29,6 +29,7 @@ set_technology = { #player
 	fighter_1934 = 1
 	tactical_bomber_1934 = 1
 	trench_warfare = 1
+	superior_firepower = 1
 	################# economy ################
 	starting_industry = 1
 	basic_train = 1
@@ -56,6 +57,7 @@ add_ideas = {
 	german_advisors
 	airandnavy_idea
 	CHI_defensive_nation
+	partial_economic_mobilisation
 }
 
 add_opinion_modifier = { target = MON modifier = HOL_caved_to_the_british_ger }

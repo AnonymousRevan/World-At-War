@@ -1361,6 +1361,15 @@ GER_Kriegsmarinewunderwaffe = {
 	}
 }
 
+GER_Kriegsmarinewunderwaffe2 = {
+	include = Kriegsmental_organization2
+	icon = GFX_idea_newport_news_shipbuilding
+	
+	allowed = {	
+			tag = GER
+	}
+}
+
 ###########################
 
 ###  #    ##  #  # ###  ## 
@@ -1378,7 +1387,7 @@ GER_messerschmitt_organization = {
 	allowed = {
 		OR = {
 			tag = GER
-			#tag = EFR 
+			#tag = ROM
 		}	
 			
 
@@ -1471,6 +1480,18 @@ GER_focke_wulf_organization = {
 	}
 }
 
+GER_kurt_tank_organization = {
+	include = Fighter_medium_aircraft_organization
+	icon = GFX_idea_fokker
+	
+	allowed = {	
+		OR = {
+			tag = GER
+			#tag = EFR  
+		}
+	}
+}
+
 GER_heinkel_organization = {
 	include = generic_medium_aircraft_organization
 	icon = GFX_idea_heinkel
@@ -1483,7 +1504,7 @@ GER_heinkel_organization = {
 	}
 }
 GER_dornier_organization = {
-	include = Fighter_medium_aircraft_organization
+	include = generic_naval_aircraft_organization
 	icon = GFX_idea_dornier
 	
 	allowed = {	

@@ -22,3 +22,5 @@
  SOV_dp_light_battery:0 "130mm/50 B13 B-2-U"
  SOV_dp_ship_secondaries:0 "130mm/50 B13 B-2-U"
  HOL_dp_light_battery:0 "120mm/50 W-F Mk 10 DP"
+ ship_armour_deck_space:0 "Armoured Deck Space"
+ ship_deck_space_large:0 "Large Deck Space"

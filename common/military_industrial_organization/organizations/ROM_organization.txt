@@ -144,7 +144,7 @@ ROM_iar_organization = {
 }
 
 ROM_icar_organization = {
-	include = generic_general_aircraft_organization
+	include = generic_cas_aircraft_organization
 	icon = GFX_idea_ROM_ICAR
 	allowed = { 
 		tag = ROM

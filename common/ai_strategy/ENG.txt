@@ -256,7 +256,7 @@ ENG_garrison_home = {
 
 	ai_strategy = {
 		type = put_unit_buffers
-		ratio = 0.60
+		ratio = 0.80
 		states = { 
 			127#South England
 			126

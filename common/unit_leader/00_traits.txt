@@ -1939,11 +1939,10 @@ leader_traits = {
 		gui_row = 6
 		gui_column = 1
 	}
-	mine_sweeper = { 
+	Vet = { 
 		type = navy
 		modifier = {
-			mines_sweeping_by_fleets_factor = 0.25
-			naval_mines_effect_reduction = 0.25
+			naval_morale_factor = 0.2
 		}
 				
 		ai_will_do = {
@@ -1953,14 +1952,15 @@ leader_traits = {
 		trait_type = assignable_trait
 		any_parent = { spotter blockade_runner }
 
-		mutually_exclusive = mine_layer
+		mutually_exclusive = Legacy
 		gui_row = 7
 		gui_column = 1
 	}
-	mine_layer = { 
+	Legacy = { 
 		type = navy
 		modifier = {
-			mines_planting_by_fleets_factor = 0.25
+			naval_has_potf_in_combat_attack = 0.1
+			naval_has_potf_in_combat_defense = 0.1
 		}
 				
 		ai_will_do = {
@@ -1970,7 +1970,7 @@ leader_traits = {
 		trait_type = assignable_trait
 		any_parent = { spotter blockade_runner }
 
-		mutually_exclusive = mine_sweeper
+		mutually_exclusive = Vet
 		gui_row = 8
 		gui_column = 1
 	}
@@ -2113,8 +2113,11 @@ leader_traits = {
 	}
 	fighter_director = { 
 		type = navy
-		modifier = {
-			fighter_sortie_efficiency = 0.2
+		sub_unit_modifiers = {
+			cv_fighter = {
+				air_attack_factor = 0.25
+				air_mission_efficiency = 0.15
+			}
 		}
 				
 		ai_will_do = {
@@ -2133,7 +2136,8 @@ leader_traits = {
 		type = navy
 		sub_unit_modifiers = {
 			cv_cas = {
-				air_attack_factor = 0.1
+				ground_attack_factor = 0.1
+				naval_strike_attack_factor = 0.05
 				air_mission_efficiency = 0.1
 			}
 		}	
@@ -2159,7 +2163,7 @@ leader_traits = {
 		type = navy
 		sub_unit_modifiers = {
 			cv_nav_bomber = {
-				air_attack_factor = 0.1
+				maval_strike_attack_factor = 0.1
 				air_mission_efficiency = 0.1
 			}
 		}		

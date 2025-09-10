@@ -228,8 +228,6 @@ technology_folders = {
 		ledger = army
         available = {
 			OR  = {
-			original_tag = HUN
-			original_tag = ROM
 			original_tag = SPR
 			original_tag = BUL
 			original_tag = FIN
@@ -243,6 +241,7 @@ technology_folders = {
         available = {
 			OR  = {
 			original_tag = ITA
+			original_tag = ROM
 			}
 		}
     }
@@ -251,6 +250,7 @@ technology_folders = {
         available = {
 		    OR  = {
 				original_tag = GER
+				original_tag = HUN
 				original_tag = CZE
 		    }
         }
@@ -324,7 +324,7 @@ technology_folders = {
 			original_tag = NZL			
 			original_tag = MAL
 			original_tag = IRE
-			original_tag = CZE
+			original_tag = HUN
 			original_tag = HOL
 			original_tag = PHI
 			original_tag = MEX
@@ -376,7 +376,7 @@ technology_folders = {
         available = {
 			OR  = {
 			original_tag = GER
-			original_tag = CZE
+			original_tag = HUN
 			}
 		}
     }

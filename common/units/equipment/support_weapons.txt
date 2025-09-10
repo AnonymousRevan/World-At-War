@@ -31,6 +31,10 @@ equipments = {
 		resources = {
 			steel = 1
 		}
+		
+		upgrades = {
+			i_forgot_a_designer
+		}
 	}
 	
 	# Regular heavy weapons
@@ -59,6 +63,9 @@ equipments = {
 			steel = 6
 		}
 		
+		upgrades = {
+			i_forgot_a_designer
+		}
 	}
 
 	# Improved heavy weapons

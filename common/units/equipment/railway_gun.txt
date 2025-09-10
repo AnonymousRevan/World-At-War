@@ -11,7 +11,7 @@ equipments = {
 		interface_category = interface_category_land
 		
 		active = yes
-
+		
 		#Misc Abilities
 		reliability = 0.8
 		maximum_speed = 6

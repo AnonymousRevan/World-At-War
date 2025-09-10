@@ -12,7 +12,7 @@ upgrades = {
 		build_cost_ic = 0.025
 	}
 	tank_armor_upgrade = {
-		max_level = 4
+		max_level = 3
 
 		cost = land
 		armor_value = 0.125
@@ -65,7 +65,7 @@ upgrades = {
 		build_cost_ic = 0.025
 	}
 	at_arty_upgrade = {
-		max_level = 3
+		max_level = 5
 
 		cost = land
 
@@ -74,7 +74,7 @@ upgrades = {
 		build_cost_ic = 0.15
 	}
 	ac_engine_upgrade = {
-		max_level = 3
+		max_level = 5
 		cost = land
 		maximum_speed = 0.025
 		build_cost_ic = 0.025
@@ -83,14 +83,14 @@ upgrades = {
 	##ARTY##
 	
 	art_cost_upgrade = {
-		max_level = 2
+		max_level = 5
 
 		cost = land
 		build_cost_ic = -0.025
 		reliability = -0.03
 	}
 	art_off_upgrade = {
-		max_level = 2
+		max_level = 5
 
 		cost = land
 		soft_attack = 0.05
@@ -99,7 +99,7 @@ upgrades = {
 		reliability = -0.03
 	}
 	art_aa_upgrade = {
-		max_level = 2
+		max_level = 5
 
 		cost = land
 		air_attack = 0.05
@@ -112,7 +112,7 @@ upgrades = {
 	### AT ###
 	
 	art_at_upgrade = {
-		max_level = 2
+		max_level = 5
 
 		cost = land
 		hard_attack = 0.075
@@ -121,7 +121,7 @@ upgrades = {
 		reliability = -0.05
 	}
 	art_at_hvy_upgrade = {
-		max_level = 3
+		max_level = 5
 
 		cost = land
 		ap_attack = 0.1
@@ -132,14 +132,14 @@ upgrades = {
 	### Motor, Mech, and Amtracs###
 	
 	mot_iccost_upgrade = {
-		max_level = 2
+		max_level = 5
 
 		cost = land
 		hardness = -0.05
 		build_cost_ic = -0.05
 	}
 	mot_hardness_upgrade = {
-		max_level = 2
+		max_level = 5
 
 		cost = land
 		hardness = 0.05
@@ -147,7 +147,7 @@ upgrades = {
 	}
 	
 	mec_armor_upgrade = {
-		max_level = 3
+		max_level = 5
 
 		cost = land
 		armor_value = 0.25
@@ -156,7 +156,7 @@ upgrades = {
 		reliability = -0.04
 	}
 	mec_hard_upgrade = {
-		max_level = 2
+		max_level = 5
 		
 		cost = land
 		breakthrough = 0.10
@@ -167,7 +167,7 @@ upgrades = {
 		build_cost_ic = 0.05
 	}
 	mec_soft_upgrade = {
-		max_level = 2
+		max_level = 5
 
 		cost = land	
 		
@@ -181,11 +181,21 @@ upgrades = {
 	### MISC ###
 	
 	i_forgot_a_designer = {
-		max_level = 1
+		max_level = 5
 
 		cost = land
 		
-		build_cost_ic = 0.01
+		build_cost_ic = -0.03
+		reliability = -0.01
+	}
+	
+	boom = {
+		max_level = 10
+
+		cost = land
+		
+		build_cost_ic = 0.05
+		railway_gun_attack = 0.15
 	}
 	
 	tank_nsb_engine_upgrade = {

@@ -42,6 +42,7 @@ technologies = {
 		ai_will_do = {
 			factor = 20
 		}
+		special_project_specialization = { specialization_land }
 	}
 	pack_artillery1 = {
 
@@ -75,6 +76,7 @@ technologies = {
 		ai_will_do = {
 			factor = 10
 		}
+		special_project_specialization = { specialization_land }
 	}
 	pack_artillery2 = {
 	    
@@ -105,6 +107,7 @@ technologies = {
 		ai_will_do = {
 			factor = 10
 		}
+		special_project_specialization = { specialization_land }
 	}
 	pack_artillery3 = {
 
@@ -133,6 +136,7 @@ technologies = {
 		ai_will_do = {
 			factor = 10
 		}
+		special_project_specialization = { specialization_land }
 	}
 	artillery1 = {
 		###################### light artillery
@@ -174,6 +178,7 @@ technologies = {
 		ai_will_do = {
 			factor = 20
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	###### Gun carriage
@@ -212,6 +217,7 @@ technologies = {
 		ai_will_do = {
 			factor = 20
 		}
+		special_project_specialization = { specialization_land }
 	}
 	########### Gun barrel
 	artillery4 = {
@@ -245,6 +251,7 @@ technologies = {
 		ai_will_do = {
 			factor = 20
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	
@@ -282,6 +289,7 @@ technologies = {
 		ai_will_do = {
 			factor = 20
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	artillery5 = {
@@ -310,6 +318,7 @@ technologies = {
 		ai_will_do = {
 			factor = 20
 		}
+		special_project_specialization = { specialization_land }
 	}
 	heavy_artillery1 = {
 		###################### 
@@ -342,6 +351,7 @@ technologies = {
 		ai_will_do = {
 			factor = 10	
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	heavy_artillery2 = {
@@ -462,6 +472,7 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	heavy_artillery5 = {
@@ -490,6 +501,7 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 		}
+		special_project_specialization = { specialization_land }
 	}
     # Artillery Gun upgrade
 	heavy_artillery6 = {
@@ -518,6 +530,7 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	rocket_artillery = {
@@ -530,6 +543,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_rocket_launcher
+			ship_rocket_launcher
 		}
 		
 		path = {
@@ -556,6 +570,7 @@ technologies = {
 			artillery
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 	motorized_rocket_unit = {
 
@@ -580,8 +595,10 @@ technologies = {
 		
 		categories = {
 		    rocketry
+			artillery
 			mot_rockets
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 	rocket_artillery2 = {
 
@@ -612,6 +629,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 	rocket_artillery3 = {
 
@@ -645,6 +663,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 	rocket_artillery4 = {
 	
@@ -672,6 +691,7 @@ technologies = {
 			artillery
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 	###### Anti-tank
 	interwar_antitank = {
@@ -712,6 +732,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	antitank1 = {
@@ -750,6 +771,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 	antitank2 = {
 		
@@ -782,6 +804,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 	antitank3 = {
 
@@ -820,6 +843,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 	antitank4 = {
 
@@ -857,6 +881,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 	antitank5 = {
 		
@@ -892,6 +917,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 	interwar_antiair = {
    
@@ -940,6 +966,7 @@ technologies = {
 			artillery
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	antiair1 = {
@@ -976,6 +1003,7 @@ technologies = {
 			artillery
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	antiair2 = {
@@ -1019,6 +1047,7 @@ technologies = {
 			artillery
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	antiair3 = {
@@ -1056,6 +1085,7 @@ technologies = {
 			artillery
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	antiair4 = {
@@ -1092,6 +1122,7 @@ technologies = {
 			artillery
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	antiair5 = {
@@ -1135,6 +1166,7 @@ technologies = {
 			artillery
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 	antiair6 = {
 
@@ -1163,6 +1195,7 @@ technologies = {
 			artillery
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 	mountain_gun = {
 

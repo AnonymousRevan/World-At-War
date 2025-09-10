@@ -28,6 +28,10 @@ equipments = {
 			steel = 5
 			chromium = 2
 		}
+		
+		upgrades = {
+			i_forgot_a_designer
+		}
 	}
 	
 	support_equipment_1 = {

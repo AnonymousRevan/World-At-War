@@ -264,6 +264,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_battery_icn_5.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_SMI_ship_rocket_launcher"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_rocket_launcher.png"
+	}
 
 ######## Secondaries
 	
@@ -668,6 +672,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_SMI_ship_deck_space"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/deck_space_icn.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_ship_armour_deck_space"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_deck_space_armored.png"
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_ship_deck_space_large"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_deck_space_big.png"
 	}
 	###
 	

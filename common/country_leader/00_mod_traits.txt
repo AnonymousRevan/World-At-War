@@ -382,25 +382,25 @@ leader_traits = {
 			factor = 50
 		}
 		equipment_bonus  = {
-			fighter_equipment  = {
+			small_plane_airframe  = {
 				build_cost_ic  = -0.050
 				instant  = yes 
 			}
 		}
 		equipment_bonus  = {
-			CAS_equipment  = {
+			small_plane_cas_airframe  = {
 				build_cost_ic  = -0.050
 				instant  = yes 
 			}
 		}
 		equipment_bonus  = {
-			nav_bomber_equipment  = {
+			small_plane_naval_bomber_airframe  = {
 				build_cost_ic  = -0.050
 				instant  = yes 
 			}
 		}
 		equipment_bonus  = {
-			tac_bomber_equipment  = {
+			medium_plane_airframe  = {
 				build_cost_ic  = -0.050
 				instant  = yes 
 			}
@@ -699,19 +699,16 @@ leader_traits = {
 		}
 
 		equipment_bonus = {
-			fighter_equipment = {
+			small_plane_airframe = {
 				build_cost_ic = -0.05 instant = yes 
 			}
-			heavy_fighter_equipment = {
+			medium_plane_airframe = {
+				build_cost_ic = -0.1 instant = yes 
+			}
+			small_plane_cas_airframe = {
 				build_cost_ic = -0.05 instant = yes 
 			}
-			CAS_equipment = {
-				build_cost_ic = -0.05 instant = yes 
-			}
-			nav_bomber_equipment = {
-				build_cost_ic = -0.05 instant = yes 
-			}
-			tac_bomber_equipment = {
+			small_plane_naval_bomber_airframe = {
 				build_cost_ic = -0.05 instant = yes 
 			}
 		}
@@ -793,7 +790,7 @@ leader_traits = {
 
 		production_speed_synthetic_refinery_factor = 0.15
 		production_speed_synthetic_rubber_refinery_factor = 0.15
-		local_resources_factor = 0.15 
+		local_resources_factor = 0.25 
 		fuel_gain_factor_from_states = 0.05 
 		max_fuel_factor = 0.05
 	}

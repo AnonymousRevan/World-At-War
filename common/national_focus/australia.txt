@@ -1192,7 +1192,6 @@ focus_tree = {
 		
 		completion_reward = {
 			navy_experience = 25
-			add_timed_idea = { idea = RAJ_dockyard_effort days = 365 }
 			random_owned_controlled_state = {
 				prioritize = { 285 }
 				limit = {
@@ -1213,6 +1212,7 @@ focus_tree = {
 				}
 				 
 				}
+				add_timed_idea = { idea = RAJ_dockyard_effort days = 365 }
 			}
 		}
 		

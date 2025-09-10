@@ -35,6 +35,8 @@ equipments = {
 			steel = 4
 		}
 		upgrades = {
+			art_cost_upgrade
+			art_at_upgrade
 		}
 	}
 	# 1936

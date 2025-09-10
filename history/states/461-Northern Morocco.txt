@@ -13,16 +13,15 @@ state={
 	history={
 		owner = FRA
 		add_core_of = SEN
-		add_core_of = FRA
 		victory_points = {
-			7069 5 
+			7069 10 
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 1
 			air_base = 4
 			7069 = {
-				naval_base = 8
+				naval_base = 4
 			}
 		}
 	}

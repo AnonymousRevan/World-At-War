@@ -1543,30 +1543,6 @@ technologies = {
 			mio_cat_all_heavy_aircraft_and_modules
 		}
 		
-		sub_technologies = {
-			usa_escort_bomber_1940
-		}
-		
-		ai_will_do = {
-			factor = 5
-
-		}
-	}
-	
-	usa_escort_bomber_1940 = {
-
-		enable_equipments = {
-			escort_bomber_equipment_1940
-		}
-
-		research_cost = 0.4
-		start_year = 1938
-
-		categories = {
-			all_air
-			mio_cat_all_light_fighter_and_modules
-		}
-		
 		ai_will_do = {
 			factor = 5
 

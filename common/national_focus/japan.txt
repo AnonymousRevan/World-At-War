@@ -1815,7 +1815,6 @@ focus_tree = {
 	focus = {
 		id = JAP_prepare_landward_strike
 		icon = GFX_goal_generic_construct_military
-		mutually_exclusive = { focus = JAP_prepare_seaward_strike }
 		x = 3
 		y = 0
 		relative_position_id = JAP_strengthen_the_kwantung_army
@@ -1837,7 +1836,7 @@ focus_tree = {
 				build_3_infrastructure = yes
 				add_building_construction = {
 					type = air_base
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1845,6 +1844,11 @@ focus_tree = {
 					province = 7408
 					level = 5
 					instant_build = yes
+				}
+				set_building_level = {
+						type = stronghold_network
+						level = 1
+						instant_build = yes
 				}
 			}
 			#Northern Malay
@@ -1855,13 +1859,17 @@ focus_tree = {
 					level = 3
 					instant_build = yes
 				}
+				set_building_level = {
+						type = stronghold_network
+						level = 1
+						instant_build = yes
+				}
 			}
 		}
 	}
 	focus = {
 		id = JAP_prepare_seaward_strike
 		icon = GFX_focus_generic_coastal_fort
-		mutually_exclusive = { focus = JAP_prepare_landward_strike }
 		x = 2
 		y = 0
 		relative_position_id = JAP_prepare_landward_strike
@@ -1891,6 +1899,11 @@ focus_tree = {
 					level = 3
 					instant_build = yes
 				}
+				set_building_level = {
+						type = stronghold_network
+						level = 1
+						instant_build = yes 
+				}
 			}
 			#Marshall Islands
 			633 = {
@@ -1905,6 +1918,49 @@ focus_tree = {
 					level = 3
 					instant_build = yes
 				}
+				set_building_level = {
+						type = stronghold_network
+						level = 1
+						instant_build = yes
+				}
+			}
+			#Okinawa
+			526 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 13046
+					level = 3
+					instant_build = yes
+				}
+				set_building_level = {
+						type = stronghold_network
+						level = 1
+						instant_build = yes
+				}
+			}
+			#Iwo Jima
+			645 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 13046
+					level = 3
+					instant_build = yes
+				}
+				set_building_level = {
+						type = stronghold_network
+						level = 1
+						instant_build = yes
+				}
 			}
 			#Marcus Island
 			648 = {
@@ -1918,6 +1974,11 @@ focus_tree = {
 					province = 13026
 					level = 3
 					instant_build = yes
+				}
+				set_building_level = {
+						type = stronghold_network
+						level = 1
+						instant_build = yes
 				}
 			}
 		}
@@ -2139,7 +2200,7 @@ focus_tree = {
 		id = JAP_reach_for_resources_focus
 		icon = GFX_goal_oil
 		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = JAP_strike_on_the_southern_resource_area
 
@@ -2172,7 +2233,7 @@ focus_tree = {
 		id = JAP_operation_z
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = JAP_strike_on_the_southern_resource_area
 
@@ -3434,6 +3495,11 @@ focus_tree = {
 					province = 1136
 					instant_build = yes
 				}
+				set_building_level = {
+						type = stronghold_network
+						level = 1
+						instant_build = yes
+				}
 			}
 			529 = {
 				set_building_level = {
@@ -3441,6 +3507,11 @@ focus_tree = {
 					level = 5
 					province = 529
 					instant_build = yes
+				}
+				set_building_level = {
+						type = stronghold_network
+						level = 1
+						instant_build = yes
 				}
 			}
 			528 = {
@@ -3450,6 +3521,11 @@ focus_tree = {
 					province = 9950
 					instant_build = yes
 				}
+				set_building_level = {
+						type = stronghold_network
+						level = 1
+						instant_build = yes
+				}
 			}
 			282 = {
 				set_building_level = {
@@ -3457,6 +3533,11 @@ focus_tree = {
 					level = 5
 					province = 9998
 					instant_build = yes
+				}
+				set_building_level = {
+						type = stronghold_network
+						level = 1
+						instant_build = yes
 				}
 			}
 			533 = {
@@ -3466,6 +3547,11 @@ focus_tree = {
 					province = 9859
 					instant_build = yes
 				}
+				set_building_level = {
+						type = stronghold_network
+						level = 1
+						instant_build = yes
+				}
 			}
 			555 = {
 				set_building_level = {
@@ -3473,6 +3559,11 @@ focus_tree = {
 					level = 5
 					province = 1399
 					instant_build = yes
+				}
+				set_building_level = {
+						type = stronghold_network
+						level = 1
+						instant_build = yes
 				}
 			}
 		}
@@ -4307,7 +4398,7 @@ focus_tree = {
 		id = JAP_strategic_bomber_effort
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = JAP_strengthen_the_divine_wind }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = JAP_strengthen_the_divine_wind
 
@@ -4331,14 +4422,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = JAP_jet_prototypes
-		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = JAP_strengthen_the_divine_wind }
-		x = 1
+		id = JAP_homeland
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
+		x = 2
 		y = 1
-		relative_position_id = JAP_strengthen_the_divine_wind
+		relative_position_id = JAP_strike_on_the_southern_resource_area
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -4347,13 +4438,34 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		
+		available = { 
+			OR = {
+			645 = {
+				controller = {
+					OR = {
+						tag = USA
+						is_in_faction_with = USA
+					}
+				}
+			526 = {
+				controller = {
+					OR = {
+						tag = USA
+						is_in_faction_with = USA
+					}
+				}
+			}
+		}
+	}
+}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_jet_prototypes
-				bonus = 1
-				uses = 2
-				category = jet_technology
+			add_ideas = {
+				AST_middle_path
+				for_the_emperor_idea
+				JAP_homeland_defense
+			
 			}
 		}
 	}

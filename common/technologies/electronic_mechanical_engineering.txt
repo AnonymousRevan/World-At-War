@@ -30,6 +30,7 @@ technologies = {
 		categories = {
 			electronics
 		}
+		special_project_specialization = { specialization_air specialization_nuclear }
 	}
 	#### Radios
 	
@@ -72,6 +73,7 @@ technologies = {
 		categories = {
 			electronics
 		}
+		special_project_specialization = { specialization_land specialization_nuclear }
 	}
 	#recon radio
 	recon_radio = {
@@ -129,6 +131,7 @@ technologies = {
 		categories = {
 			electronics
 		}
+		special_project_specialization = { specialization_land specialization_nuclear }
 	}
 	vehicle_radio = {
 	
@@ -171,6 +174,7 @@ technologies = {
 		categories = {
 			electronics
 		}
+		special_project_specialization = { specialization_land specialization_nuclear }
 	}
 	plane_radio = {
 	
@@ -200,6 +204,7 @@ technologies = {
 		categories = {
 			electronics
 		}
+		special_project_specialization = { specialization_air specialization_nuclear }
 	}
 	# tank radio
 	tank_radio = {
@@ -243,6 +248,7 @@ technologies = {
 		categories = {
 			electronics
 		}
+		special_project_specialization = { specialization_land specialization_nuclear }
 	}
 	# tank radio
 	tank_radio2 = {
@@ -316,6 +322,7 @@ technologies = {
 		categories = {
 			electronics
 		}
+		special_project_specialization = { specialization_land specialization_nuclear }
 	}
 	#infantry radio
 	infantry_radio = {
@@ -359,6 +366,7 @@ technologies = {
 		categories = {
 			electronics
 		}
+		special_project_specialization = { specialization_land specialization_nuclear }
 	}
 	# artillery radio
 	artillery_radio = {
@@ -392,6 +400,7 @@ technologies = {
 		categories = {
 			electronics
 		}
+		special_project_specialization = { specialization_land specialization_nuclear }
 	}
 	
 	# radar
@@ -424,6 +433,7 @@ technologies = {
 			electronics
 			radar_tech
 		}
+		special_project_specialization = { specialization_air specialization_nuclear }
 	}
 	
 	decimetric_radar = {
@@ -458,6 +468,7 @@ technologies = {
 			building = radar_station
 			level = 2
 		}
+		special_project_specialization = { specialization_air specialization_nuclear }
 	}
 	
 	centimetric_radar = {
@@ -496,6 +507,7 @@ technologies = {
 			electronics
 			radar_tech
 		}
+		special_project_specialization = { specialization_air specialization_nuclear }
 	}
 	
 	advanced_centimetric_radar = {
@@ -530,6 +542,7 @@ technologies = {
 			electronics
 			radar_tech
 		}
+		special_project_specialization = { specialization_air specialization_nuclear }
 	}
 	night_fighters1 = {
 		
@@ -577,6 +590,7 @@ technologies = {
 		categories = {
 			electronics
 		}
+		special_project_specialization = { specialization_air specialization_nuclear }
 	}
 	mechanical_computing = {
 
@@ -606,6 +620,7 @@ technologies = {
 			electronics
 			computing_tech
 		}
+		special_project_specialization = { specialization_air specialization_nuclear }
 	}
 	
 	computing_machine = {
@@ -647,6 +662,7 @@ technologies = {
 			decryption_tech
 			computing_tech
 		}
+		special_project_specialization = { specialization_air specialization_nuclear }
 	}
 	
 	improved_computing_machine = {
@@ -687,6 +703,7 @@ technologies = {
 			decryption_tech
 			computing_tech
 		}
+		special_project_specialization = { specialization_air specialization_nuclear }
 	}
 	
 	advanced_computing_machine = {
@@ -721,6 +738,7 @@ technologies = {
 			decryption_tech
 			computing_tech
 		}
+		special_project_specialization = { specialization_air specialization_nuclear }
 	}
 	
 	basic_encryption = {
@@ -920,6 +938,7 @@ technologies = {
 			mio_cat_tech_all_destroyer_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval specialization_nuclear }
 	}
 
 	improved_fire_control_system = {
@@ -968,6 +987,7 @@ technologies = {
 			mio_cat_tech_all_destroyer_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval specialization_nuclear }
 	}
 
 	advanced_fire_control_system = {
@@ -1011,6 +1031,7 @@ technologies = {
 			mio_cat_tech_all_destroyer_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval specialization_nuclear }
 	}
 	experimental_rockets = {
 
@@ -1299,7 +1320,7 @@ technologies = {
 		# can build reactors
 		
 		start_year = 1943
-		research_cost = 2.75
+		research_cost = 3.00
 		
 		folder = {
 			name = electronics_folder
@@ -1328,20 +1349,20 @@ technologies = {
 			building = nuclear_reactor
 			level = 1
 		}
+		
+		enable_building = {
+			building = commercial_nuclear_reactor
+			level = 1
+		}
 	}
 
 	nukes = {
 	
 		start_year = 1944
-		research_cost = 4.0
+		research_cost = 6.0
 		
 		enable_building = {
 			building = mega_gun_emplacement
-			level = 1
-		}
-
-		enable_building = {
-			building = commercial_nuclear_reactor
 			level = 1
 		}
 		
@@ -1349,23 +1370,8 @@ technologies = {
 			building = nuclear_reactor_heavy_water
 			level = 1
 		}
+
 		
-		enable_building = {
-			building = nuclear_facility
-			level = 1
-		}
-		enable_building = {
-			building = air_facility
-			level = 1
-		}
-		enable_building = {
-			building = land_facility
-			level = 1
-		}
-		enable_building = {
-			building = naval_facility
-			level = 1
-		}
 		folder = {
 			name = electronics_folder
 			position = { x = 2 y = 4 }
@@ -1384,7 +1390,7 @@ technologies = {
 		thermonuclear_production = 1
 		on_research_complete = {
 			hidden_effect = {
-				sound_effect = Nuke
+				sound_effect = nuke_big_light_flash
 			}
 		}
 		

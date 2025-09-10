@@ -617,7 +617,7 @@ ideas = {
 
 			modifier = {
 				army_org = 5
-				army_morale_factor = 0.1
+				army_morale_factor = 0.25
 			}
 		}
 
@@ -1580,7 +1580,7 @@ ideas = {
 			picture = generic_navy_carrier_bonus
 
 			targeted_modifier = {
-				tag = PHI
+				tag = USA
 				attack_bonus_against = 0.15
 				defense_bonus_against = 0.1
 			}

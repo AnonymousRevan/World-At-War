@@ -10574,7 +10574,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = naval_doc_bonus
 				cost_reduction = 0.5
-				uses = 3
+				uses = 5
 				category = naval_doctrine
 			}
 			FRA = {
@@ -10626,7 +10626,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
-				uses = 2
+				uses = 3
 				category = land_doctrine
 			}
 			GER = {

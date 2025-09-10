@@ -76,6 +76,10 @@ leader_traits = {
 
 		production_speed_industrial_complex_factor = 0.05
 		research_speed_factor = 0.075
+		production_speed_nuclear_facility_factor = 0.5
+		production_speed_land_facility_factor = 0.5
+		production_speed_air_facility_factor = 0.5
+		production_speed_naval_facility_factor = 0.5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1978,6 +1982,7 @@ leader_traits = {
 		production_speed_arms_factory_factor = -0.1
 		production_speed_infrastructure_factor = 0.10
 		production_speed_synthetic_refinery_factor = 0.1
+		production_speed_synthetic_rubber_refinery_factor = 0.1
 		production_speed_steel_refinery_factor = 0.075
 		local_resources_factor = 0.05
 
@@ -2177,7 +2182,7 @@ leader_traits = {
 		experience_gain_army = 0.30
 		cat_grand_battle_plan_cost_factor = -0.15
 
-		max_planning = 0.05
+		max_planning = 0.1
 
 		ai_will_do = {
 			factor = 10
@@ -2287,6 +2292,7 @@ leader_traits = {
 			large_plane_airframe = {
 				instant = yes
 				build_cost_ic = -0.05
+				air_bombing = 0.05
 				reliability = 0.1
 			}
 		}

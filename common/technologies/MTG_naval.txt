@@ -55,6 +55,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	basic_ship_hull_light = {
@@ -101,13 +102,13 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	improved_ship_hull_light = {
 
 		enable_equipments = { 
 			ship_hull_light_3
-			ship_hull_destroyer_leader
 		}
 		enable_equipment_modules = { 
 			light_ship_engine_3
@@ -148,6 +149,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	advanced_ship_hull_light = {
@@ -189,6 +191,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
 	smoke_generator = {
@@ -222,6 +225,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
  ##  #  # ### ###      ## #  # ###  #   #  ##  ###  ### #  # ### 
@@ -372,6 +376,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	improved_depth_charges = {
 
@@ -419,6 +424,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	advanced_depth_charges = {
 
@@ -469,6 +475,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	modern_depth_charges = {
 
@@ -515,6 +522,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	sonar = {
 		enable_equipment_modules = { 
@@ -558,6 +566,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
 	improved_sonar = {
@@ -602,6 +611,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
  ##  ###  #  # ###  ## ### ###   ## 
@@ -664,6 +674,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
 	basic_ship_hull_cruiser = {
@@ -719,6 +730,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	improved_ship_hull_cruiser = {
@@ -770,13 +782,13 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	ship_hull_aacruiser = {
 
 		enable_equipments = {
 			ship_hull_cruiser_aa
-			ship_hull_cruiser_monitor
 		}
 		
 		research_cost = 1.1
@@ -841,6 +853,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
 	improved_airplane_launcher = {
@@ -887,6 +900,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
 	basic_cruiser_armor_scheme = {
@@ -938,6 +952,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
 	improved_cruiser_armor_scheme = {
@@ -992,6 +1007,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	advanced_cruiser_armor_scheme = {
 
@@ -1040,6 +1056,7 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
 #  # ###  ##  #   # #   #      ## #  # ### ###   ## 
@@ -1107,6 +1124,7 @@ technologies = {
 			bc_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
 	basic_ship_hull_heavy = {
@@ -1191,6 +1209,7 @@ technologies = {
 			bc_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
 	improved_ship_hull_heavy = {
@@ -1236,6 +1255,7 @@ technologies = {
 			bc_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
 	advanced_ship_hull_heavy = {
@@ -1277,6 +1297,7 @@ technologies = {
 			bc_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 	basic_heavy_armor_scheme = {
 
@@ -1326,6 +1347,7 @@ technologies = {
 			bc_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
 	improved_heavy_armor_scheme = {
@@ -1379,6 +1401,7 @@ technologies = {
 			bc_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
  ##   ##  ###  ###  ### ### ###   ## 
@@ -1432,6 +1455,7 @@ early_ship_hull_carrier = {
 			cv_tech
 			mio_cat_tech_all_carrier_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
 	basic_ship_hull_carrier = {
@@ -1474,6 +1498,7 @@ early_ship_hull_carrier = {
 			cv_tech
 			mio_cat_tech_all_carrier_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
 	improved_ship_hull_carrier = {
@@ -1500,10 +1525,6 @@ early_ship_hull_carrier = {
 			position = {  x = -1 y = 13 }
 		}
 		
-		sub_technologies = {
-			ship_hull_cvl
-		}
-		
 		ai_will_do = {
 			factor = 1
 			
@@ -1522,32 +1543,7 @@ early_ship_hull_carrier = {
 			cv_tech
 			mio_cat_tech_all_carrier_and_modules
 		}
-	}
-	
-	ship_hull_cvl = {
-
-		enable_equipments = {
-			ship_hull_carrier_CVL
-		}
-		
-		research_cost = 1.5
-
-		start_year = 1936
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 25
-				tag = USA
-			}
-		}
-		
-		categories = {
-			naval_equipment
-			cv_tech
-			mio_cat_tech_all_carrier_and_modules
-		}
+		special_project_specialization = { specialization_naval }
 	}
 	
 	advanced_ship_hull_carrier = {
@@ -1587,6 +1583,7 @@ early_ship_hull_carrier = {
 			cv_tech
 			mio_cat_tech_all_carrier_and_modules
 		}
+		special_project_specialization = { specialization_naval }
 	}
 
 ###  ##  ###  ###  ### ###   ##      #   #  ##  ###   ##  ### ###  ###                  ## #  # ###  #   #  ##  ###  ### #  # ###  ## 

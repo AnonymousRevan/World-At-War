@@ -1093,6 +1093,22 @@ ENG_harland_wolff_organization = {
 	}
 }
 
+ENG_Nora_industries = {
+	include = generic_black_sea_fleet_organization
+	icon = GFX_idea_FRA_aeb
+	allowed = {	
+		OR = {
+				original_tag = ENG
+				original_tag = CAN
+				original_tag = SAF	
+				original_tag = AST
+				original_tag = FRA
+				original_tag = USA
+				original_tag = IDR
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+}
 
 ENG_cammell_laird_organization = {
 	include = generic_battle_line_ship_organization

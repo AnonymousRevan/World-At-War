@@ -617,6 +617,45 @@ ENG_budget_decisions = {
 			}
 		}
 	}
+	
+	ENG_procure_armaments_2 = {
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_completed_focus = ENG_global_defense
+		}
+
+		visible = {
+			has_completed_focus = ENG_containment
+		}
+		
+		custom_cost_trigger = {
+			check_variable = {
+    			var = british_money
+   				value = 600
+    			compare = greater_than_or_equals
+			}
+		}
+
+		custom_cost_text = ENG_200_british_money 
+		
+		days_remove = 180
+		days_re_enable = 90 
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			add_offsite_building = { type = arms_factory level = 5 }
+			subtract_from_variable = {
+				var = british_money
+				value = 600
+			}
+		}
+	}
 
 	ENG_loans_to_shipyards = {
 		icon = generic_prepare_civil_war
@@ -667,10 +706,10 @@ ENG_budget_decisions = {
 					}
 					is_core_of = USA
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 5
 					instant_build = yes
 				}
 				set_state_flag = ENG_naval_rearmament_focus_1dockyard

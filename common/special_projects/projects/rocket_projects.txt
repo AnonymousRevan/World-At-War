@@ -1,0 +1,92 @@
+sp_air_a2a_rockets = {
+    specialization = specialization_air
+    project_tags = sp_tag_aircraft
+
+    ai_will_do = { base = 1 }
+
+    allowed = { 
+        OR = {
+            original_tag = GER
+            original_tag = ITA
+            original_tag = HUN
+        }
+    }
+    available = {
+        FROM = { has_tech = rocket_artillery }
+    }
+    prototype_time = sp_time.prototype.short
+    complexity = sp_complexity.small
+    breakthrough_cost = { specialization_air = 1 }
+    
+    project_output = {
+        equipment_bonus = {
+            medium_plane_fighter_airframe = {
+                air_attack = 0.15
+                air_agility = -0.07
+                maximum_speed = -0.12
+				instant = yes
+            }
+        }
+    }
+
+    generic_prototype_rewards = {
+        sp_air_political_interference_generic_reward
+        sp_air_generic_aerodynamics_advancements_reward
+        sp_air_generic_reward_scientist_xp_1
+        sp_air_generic_reward_scientist_xp_2
+        sp_air_generic_reward_scientist_xp_3
+        sp_air_generic_reward_air_xp_1
+        sp_air_generic_reward_air_xp_2
+        sp_air_generic_reward_air_xp_3
+        sp_air_generic_reward_major_progress_1
+        sp_air_generic_reward_major_progress_2
+        sp_air_generic_reward_major_progress_3
+        sp_air_generic_reward_test_failure_1
+        sp_air_generic_reward_test_failure_2
+        sp_air_generic_reward_test_failure_3	
+    }
+}
+
+sp_air_guided = {
+    specialization = specialization_air
+    project_tags = sp_tag_aircraft
+
+    ai_will_do = { base = 1 }
+
+    allowed = { 
+        OR = {
+            original_tag = USA
+            original_tag = BRA
+			original_tag = GER
+			original_tag = ITA
+        }
+    }
+    available = {
+        FROM = { has_tech = experimental_rockets }
+    }
+    prototype_time = sp_time.prototype.medium
+    complexity = sp_complexity.insane
+    breakthrough_cost = { specialization_air = 1 }
+    
+    project_output = {
+        enable_equipments = { special_bomber_equipment_1934 }
+		
+    }
+
+    generic_prototype_rewards = {
+        sp_air_political_interference_generic_reward
+        sp_air_generic_aerodynamics_advancements_reward
+        sp_air_generic_reward_scientist_xp_1
+        sp_air_generic_reward_scientist_xp_2
+        sp_air_generic_reward_scientist_xp_3
+        sp_air_generic_reward_air_xp_1
+        sp_air_generic_reward_air_xp_2
+        sp_air_generic_reward_air_xp_3
+        sp_air_generic_reward_major_progress_1
+        sp_air_generic_reward_major_progress_2
+        sp_air_generic_reward_major_progress_3
+        sp_air_generic_reward_test_failure_1
+        sp_air_generic_reward_test_failure_2
+        sp_air_generic_reward_test_failure_3	
+    }
+}

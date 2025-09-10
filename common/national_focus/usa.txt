@@ -1407,7 +1407,7 @@ focus_tree = {
 		relative_position_id = USA_appoint_mcaurther_as_commander
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 100 
 		}
@@ -1507,7 +1507,7 @@ focus_tree = {
 		relative_position_id = USA_bases_in_anzac
 		x = 0
 		y = 2
-		cost = 7.16
+		cost = 3
 		ai_will_do = {
 			factor = 100 
 		}
@@ -1531,7 +1531,7 @@ focus_tree = {
 		relative_position_id = USA_semper_fi
 		x = 0
 		y = 1
-		cost = 7.16
+		cost = 3
 		ai_will_do = {
 			factor = 100 
 		}
@@ -1578,7 +1578,7 @@ focus_tree = {
 		relative_position_id = USA_bases_in_anzac
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 100 
 		}
@@ -1607,7 +1607,7 @@ focus_tree = {
 		relative_position_id = USA_appoint_mcaurther_as_commander
 		x = 2
 		y = 1
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 100 
 		}
@@ -1637,7 +1637,7 @@ focus_tree = {
 		relative_position_id = USA_appoint_mcaurther_as_commander
 		x = 4
 		y = 1
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 100 
 		}
@@ -1686,7 +1686,7 @@ focus_tree = {
 		relative_position_id = USA_secure_supply_chains
 		x = 1
 		y = 1
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 100 
 		}
@@ -1707,7 +1707,7 @@ focus_tree = {
 					}		
 				}
 				add_resistance_target = {
-					amount = 15
+					amount = 45
 					tooltip = intelligency_agency_resistance_boost_tt
 				}
 			}
@@ -3142,7 +3142,7 @@ focus_tree = {
 				bonus = 1
 			}
 			add_doctrine_cost_reduction = {
-				category = cat_superior_firepower
+				category = land_doctrine
 				uses = 1
 				cost_reduction = 0.5
 			}
@@ -3165,7 +3165,7 @@ focus_tree = {
 		available = {
 			OR = {
 				USA = {
-					has_tech = forward_observers
+					has_tech = artillery_radio
 				}
 				USA = {
 					has_tech = combined_arms

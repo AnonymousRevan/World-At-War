@@ -1,0 +1,398 @@
+sp_air_intercontinental_bomber = {
+    specialization = specialization_air
+    project_tags = sp_tag_aircraft
+
+    ai_will_do = { base = 1 }
+
+    allowed = {
+        OR = {
+            original_tag = GER
+        }
+    }
+    available = {
+        FROM = { has_tech = ger_strategic_bomber_1941 }
+    }
+    prototype_time = sp_time.prototype.medium
+    complexity = sp_complexity.insane
+    breakthrough_cost = { specialization_air = 1 }
+    
+    project_output = {
+        enable_equipments = { stratLong_bomber_equipment_1941 }
+
+    }
+
+    generic_prototype_rewards = {
+        sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3	
+    }
+}
+
+sp_air_search_radar = {
+    specialization = specialization_air
+    project_tags = sp_tag_aircraft
+
+    ai_will_do = { base = 1 }
+
+    allowed = { }
+
+    available = {
+        FROM = { has_tech = centimetric_radar }
+    }
+    prototype_time = sp_time.prototype.medium
+    complexity = sp_complexity.small
+    breakthrough_cost = { specialization_air = 1 }
+    
+    project_output = {
+        enable_equipments = { mar_bomber_equipment_1934 }
+			
+    }
+
+    generic_prototype_rewards = {
+        sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3	
+    }
+}
+
+sp_air_grand_slam = {
+    specialization = specialization_air
+    project_tags = sp_tag_aircraft
+
+    ai_will_do = { base = 1 }
+
+    allowed = { 
+        OR = {
+            original_tag = ENG
+            original_tag = CAN
+            original_tag = FRA
+            original_tag = AST
+        }
+    }
+
+    available = {
+        FROM = { has_tech = eng_strategic_bomber_1941 }
+    }
+    prototype_time = sp_time.prototype.medium
+    complexity = sp_complexity.insane
+    breakthrough_cost = { specialization_air = 2 }
+    project_output = {
+        enable_equipments = { Bareback_Bomber }
+
+    }
+
+    generic_prototype_rewards = {
+        sp_air_political_interference_generic_reward
+        sp_air_generic_aerodynamics_advancements_reward
+        sp_air_generic_reward_scientist_xp_1
+        sp_air_generic_reward_scientist_xp_2
+        sp_air_generic_reward_scientist_xp_3
+        sp_air_generic_reward_air_xp_1
+        sp_air_generic_reward_air_xp_2
+        sp_air_generic_reward_air_xp_3
+        sp_air_generic_reward_major_progress_1
+        sp_air_generic_reward_major_progress_2
+        sp_air_generic_reward_major_progress_3
+        sp_air_generic_reward_test_failure_1
+        sp_air_generic_reward_test_failure_2
+        sp_air_generic_reward_test_failure_3	
+    }
+}
+
+sp_air_napalm = {
+    specialization = specialization_air
+    project_tags = sp_tag_aircraft
+
+    ai_will_do = { base = 1 }
+
+    allowed = { 
+        OR = {
+            original_tag = ENG
+            original_tag = USA
+        }
+    }
+
+    available = {
+        FROM = { has_tech = assembly_line_production }
+    }
+    prototype_time = sp_time.prototype.medium
+    complexity = sp_complexity.small
+    project_output = {
+        enable_equipments = { logi_bomber_equipment_1934 }
+
+    }
+
+    generic_prototype_rewards = {
+        sp_air_political_interference_generic_reward
+        sp_air_generic_aerodynamics_advancements_reward
+        sp_air_generic_reward_scientist_xp_1
+        sp_air_generic_reward_scientist_xp_2
+        sp_air_generic_reward_scientist_xp_3
+        sp_air_generic_reward_air_xp_1
+        sp_air_generic_reward_air_xp_2
+        sp_air_generic_reward_air_xp_3
+        sp_air_generic_reward_major_progress_1
+        sp_air_generic_reward_major_progress_2
+        sp_air_generic_reward_major_progress_3
+        sp_air_generic_reward_test_failure_1
+        sp_air_generic_reward_test_failure_2
+        sp_air_generic_reward_test_failure_3	
+    }
+}
+
+sp_air_experimental_fighter = {
+    specialization = specialization_air
+    project_tags = sp_tag_aircraft
+
+    ai_will_do = { base = 1 }
+
+allowed = { 
+    OR = {
+        original_tag = ITA
+		original_tag = FRA
+		original_tag = JAP
+    }
+}
+
+    available = {
+        FROM = { 
+            AND = {
+                has_tech = fighter_1940
+                has_tech = assembly_line_production
+            }
+        }
+    }
+    prototype_time = sp_time.prototype.medium
+    complexity = sp_complexity.small
+    breakthrough_cost = { specialization_air = 2 }
+    
+    project_output = {
+        enable_equipments = { hyfighter_equipment_1944 }
+    }
+
+    generic_prototype_rewards = {
+        sp_air_political_interference_generic_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3	
+    }
+}
+
+sp_air_escort_bomber = {
+    specialization = specialization_air
+    project_tags = sp_tag_aircraft
+
+    ai_will_do = { base = 1 }
+
+allowed = { 
+    OR = {
+        original_tag = USA
+		original_tag = BRA
+    }
+}
+
+    available = {
+        FROM = { 
+            AND = {
+                has_tech = usa_strategic_bomber_1940
+                has_tech = usa_plane_ammo
+            }
+        }
+    }
+    prototype_time = sp_time.prototype.medium
+    complexity = sp_complexity.small
+    breakthrough_cost = { specialization_air = 1 }
+    
+    project_output = {
+        enable_equipments = { escort_bomber_equipment_1940 }
+
+    }
+
+    generic_prototype_rewards = {
+        sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3	
+    }
+}
+
+sp_air_heavy_cas = {
+    specialization = specialization_air
+    project_tags = sp_tag_aircraft
+
+    ai_will_do = { base = 1 }
+
+allowed = { 
+    OR = {
+        original_tag = GER
+		original_tag = HUN
+    }
+}
+
+    available = {
+        FROM = { 
+            AND = {
+                has_tech = ger_fighter_1940
+                has_tech = ger_CAS_1939
+            }
+        }
+    }
+    prototype_time = sp_time.prototype.medium
+    complexity = sp_complexity.small
+    breakthrough_cost = { specialization_air = 2 }
+    
+    project_output = {
+        enable_equipments = { HCAS_equipment }
+
+    }
+
+    generic_prototype_rewards = {
+        sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3	
+    }
+}
+
+sp_air_ohka = {
+    specialization = specialization_air
+    project_tags = sp_tag_aircraft
+
+    ai_will_do = { base = 1 }
+
+allowed = { 
+    OR = {
+        original_tag = JAP
+    }
+}
+
+    available = { }
+	
+    prototype_time = sp_time.prototype.medium
+    complexity = sp_complexity.insane
+    breakthrough_cost = { specialization_air = 2 }
+    
+    project_output = {
+        enable_equipments = { suicide_bomber_equipment }
+
+    }
+
+    generic_prototype_rewards = {
+        sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3	
+    }
+}
+
+sp_air_Modern_radar = {
+    specialization = specialization_air
+    project_tags = sp_tag_aircraft
+
+    ai_will_do = { base = 1 }
+
+allowed = { }
+
+    available = { 
+		FROM = { has_tech = advanced_centimetric_radar }
+	}
+    prototype_time = sp_time.prototype.medium
+    complexity = sp_complexity.insane
+    breakthrough_cost = { specialization_air = 2 }
+    
+    project_output = {
+			sub_unit_bonus = {
+				nav_bomber = {
+					surface_detection = 1.0
+					sub_detection = 0.75
+				}
+				cv_nav_bomber = {
+					surface_detection = 0.75
+					sub_detection = 0.5
+				}
+				tac_bomber = {
+					surface_detection = 1.5
+					sub_detection = 1.0
+				}
+				maritime_patrol = {
+					surface_detection = 2.0
+					sub_detection = 1.5
+				}
+			}
+		}
+
+    generic_prototype_rewards = {
+        sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3	
+    }
+}

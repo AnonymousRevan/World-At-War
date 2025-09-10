@@ -206,7 +206,12 @@ spriteTypes = {
 		name = "GFX_antitank5_medium"
 		texturefile = "gfx/interface/technologies/land/artillery/Art_AT_3_GEN_88mm.dds"
 	}	
-
+	
+	SpriteType = {
+		name = "GFX_anti_tank_heavy_equipment"
+		texturefile = "gfx/interface/technologies/ENG_hvart_2.dds"
+	}
+	
 	### Anti - Air ###
 
 	SpriteType = {
@@ -243,6 +248,12 @@ spriteTypes = {
 		name = "GFX_antiair6_medium"
 		texturefile = "gfx/interface/technologies/land/artillery/antiair5.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_anti_air_heavy_equipment"
+		texturefile = "gfx/interface/technologies/land/artillery/Art_AA_3_GEN_50mm.dds"
+	}	
+	
     ##GERMANY
 	
 	SpriteType = {

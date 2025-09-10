@@ -12,24 +12,23 @@ equipments = {
 		interface_category = interface_category_other_ships
 
 		# Unused by convoys
-		surface_detection = 10
-		sub_detection = 0
+		surface_detection = 5
+		sub_detection = 1
 
 		fuel_consumption = 0
 
 		# Combat abilities
-		lg_armor_piercing = 1
 		armor_value = 0
 		reliability = 0.8
 		surface_visibility = 14
 
-		torpedo_attack = 0
-		lg_attack = 0.4
+		torpedo_attack = 0.5
+		lg_attack = 0.5
 		naval_speed = 15
 		max_strength = 25
 		max_organisation = 30
 		anti_air_attack = 0.2
-
+		sub_attack = 0.5
 
         #Space taken in convoy
         lend_lease_cost = 0
@@ -41,6 +40,12 @@ equipments = {
 		resources = {
 			#oil = 1
 			steel = 4
+		}
+		
+		upgrades = {
+			ship_ASW_upgrade
+			ship_anti_air_upgrade
+			ship_reliability_upgrade
 		}
 	}
 

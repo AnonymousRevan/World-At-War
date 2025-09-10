@@ -45,6 +45,12 @@
  heavy_armor:0 "Heavy Tank Battalion"
  motorized:0 "Motorized Infantry Battalion"
  mechanized:0 "Mechanized Infantry Battalion"
+ anti_tank_mech_brigade_mot:0 "Mechanized Anti-tank"
+ anti_air_mech:0 "Mechanized Anti-air"
+ artillery__mech_brigade_mot:0 "Mechanized Artillery"
+ medium_sp_rocket_brigade:0 "Medium SP Rocket"
+ shock_HQ:0 "Sthurmoviki Detachment"
+ cruiser_monitor:0 "Monitor"
 
  #special forces
  group_special_infantry_title:0 "Special Forces"
@@ -289,3 +295,9 @@
  GER_heavy_sp_artillerY:0 "Scwhere Geschützwagen"
  frigate:0 "Frigate"
  USA_frigate:0 "Destroyer Escort"
+ anti_tank_heavy_brigade_mot:0 "Heavy AT"
+ anti_air_heavy_mot:0 "Heavy AA"
+ medium_fsv_artillery_brigade:0 "Fire Support Brigade"
+ mechanized_rocket_brigade:0 "Mechanized Rocket Artillery"
+ heavy_garrison:0 "VolksGrenadier"
+ goliath:0 "Demolition Engineers"

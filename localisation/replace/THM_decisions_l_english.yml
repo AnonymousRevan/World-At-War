@@ -835,3 +835,4 @@ ROM_force_bulgarian_steel_expansion:0 "Force Bulgarian Steel Expansion"
  ENG_request_azores_lease:0 "Request Azores Lease"
  ENG_aid_china:0 "Aid China"
  burma_road_expansion_tt:0 "Has completed either §YThe Burma Road§! or §YBurma Road§! focus, or is in a faction or a subject of a country that has." #NOTE: these are names of uk_burma_focus and CHI_burma_road
+ ENG_procure_armaments_2:0 "Permanent Arms Investment"

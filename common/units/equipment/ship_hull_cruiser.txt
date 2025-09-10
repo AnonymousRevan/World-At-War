@@ -198,7 +198,6 @@ equipments = {
 			allowed_module_categories = {
 				ship_anti_air
 				ship_secondaries
-				ship_heavy_battery
 				
 				}
 			}
@@ -207,7 +206,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
-					ship_heavy_battery
 					ship_secondaries
 					
 				}
@@ -229,19 +227,19 @@ equipments = {
 			fixed_ship_engine_slot = cruiser_ship_engine_3
 		}
 
-		build_cost_ic = 750
+		build_cost_ic = 2750
 		manpower = 1500
 		max_strength = 50
 		reliability = 0.90
 		naval_speed = 3
 		naval_range = 2000
-		hg_armor_piercing = -20
-		hg_attack = 30
+		hg_attack = 50
+		hg_armor_piercing = 5
 		naval_heavy_gun_hit_chance_factor = -0.85
 		resources = {
-			steel = 6
-			chromium = 1
-			tungsten = 2
+			steel = 20
+			chromium = 10
+			tungsten = 8
 		}
 	}
 	
@@ -374,7 +372,7 @@ equipments = {
 		naval_speed = 27
 		naval_range = 4000
 		anti_air_attack = 15
-		lg_attack = 5
+		naval_light_gun_hit_chance_factor = 0.3
 		resources = {
 			steel = 15
 		}

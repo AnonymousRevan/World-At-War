@@ -290,7 +290,7 @@ ITA_hold_africa = {
 			NOT = { country_exists = ETH }
 			ETH = { is_puppet_of = ITA }
 		}
-		date < 1941.1.1
+		date < 1939.1.1
 	}
 	abort = {
 		any_owned_state = { 
@@ -363,10 +363,10 @@ ITA_template_design_1 = {
 	}
 	enable = {
 		original_tag = ITA
-		date < 1940.1.1				
+		date < 1938.1.1				
 	}
 	abort = { 
-		date > 1940.1.1
+		date > 1942.1.1
 	}
 
 	ai_strategy = {
@@ -406,7 +406,7 @@ ITA_template_design_2 = {
 	}
 	enable = {
 		original_tag = ITA
-		date > 1940.1.1				
+		date > 1938.1.1				
 	}
 	abort_when_not_enabled = yes
 

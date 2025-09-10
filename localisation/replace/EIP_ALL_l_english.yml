@@ -80,6 +80,8 @@
  
  decision_eip_Mining_tt:0 "Our geologists will attempt to exploit previously undiscovered resources. May win §Gset amount of resources (all except rubber)§"
  
+ decision_eip_industryc_tt:0 "Chance to win factory speed modifiers"
+ 
  ## Ивенты/Events ##
  
   # Названия/Name #
@@ -166,4 +168,5 @@
   eip_politics.2.a:0 "There's nothing we can do..." 
   eip_politics.3.a:0 "There's nothing we can do..." 
   eip_politics.4.a:0 "There's nothing we can do..." 
+  Eintd_agricultural_investment:0 "Construction Gambling"
   

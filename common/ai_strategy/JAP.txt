@@ -18,7 +18,7 @@ JAP_wants_civ = {
 		has_war = no
 	}
 	abort = {
-		date > 1938.1.1
+		date > 1939.1.1
 	}
 	ai_strategy = {
 		type = building_target
@@ -32,7 +32,7 @@ JAP_wants_mils = {
 	}
 	enable = {
 		tag = JAP
-		date > 1938.1.2
+		date > 1939.1.2
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
@@ -132,7 +132,7 @@ JAP_build_some_factories_jeez = {
 	}
 	enable = {
 		tag = JAP
-		date > 1939.1.2
+		date > 1938.1.2
 	}
 	abort = { 
 		OR = {
@@ -427,6 +427,11 @@ strike_usa = {
 		id = "PHI"			
 		value = 200
 	}
+	ai_strategy = {
+		type = conquer
+		id = "USA"			
+		value = 200
+	}
 }
 # "I can run wild for six months… after that, I have no expectation of success"
 jap_hush_yamamoto_its_gonna_be_ok = {
@@ -452,7 +457,7 @@ jap_hush_yamamoto_its_gonna_be_ok = {
 	ai_strategy = {
 		type = consider_weak
 		id = "USA"
-		value = 75
+		value = 200
 	}
 }
 jap_conserve_fuel_for_usa_fight = {

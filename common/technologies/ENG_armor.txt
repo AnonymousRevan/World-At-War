@@ -66,6 +66,9 @@ technologies = {
 		enable_subunits = {
 			mechanized
 			logistics_company_mech
+			anti_air_mech
+			anti_tank_mech_brigade_mot
+			artillery__mech_brigade_mot
 		}
 		
 		path = {
@@ -302,7 +305,7 @@ technologies = {
 		}
 
 		enable_equipments = {
-			light_tank_equipment_1934 
+			light_tank_equipment_1934
 		}
 				
 		path = {

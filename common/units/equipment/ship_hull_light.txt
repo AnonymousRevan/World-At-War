@@ -222,20 +222,67 @@ equipments = {
 			fixed_ship_engine_slot = light_ship_engine_3
 		}
 
-		build_cost_ic = 650
+		build_cost_ic = 700
 		manpower = 475
 		max_strength = 70
 		reliability = 0.90
 		naval_speed = 28
 		naval_range = 3500
-		sub_detection = 10
+		sub_detection = 15
 		lg_attack = -5
 		torpedo_attack = -8
 		resources = {
 			steel = 10
 		}
 	}
+	
+	ship_hull_super_dd = {
+		year = 1940
 
+		archetype = ship_hull_light
+		priority = 2000
+		parent = ship_hull_light_2
+		#alias = destroyer_3
+
+		module_slots = {
+			fixed_ship_battery_slot = inherit
+			fixed_ship_anti_air_slot = inherit
+			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_torpedo_slot = inherit
+			fixed_ship_engine_slot = inherit
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_depth_charge
+					ship_anti_air
+					ship_light_battery
+				}
+			}
+			mid_1_custom_slot = inherit
+			rear_1_custom_slot = inherit
+		}
+
+		default_modules = {
+			front_1_custom_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_3
+		}
+
+		build_cost_ic = 1400
+		manpower = 600
+		max_strength = 100
+		reliability = 0.90
+		naval_speed = 26
+		naval_range = 3500
+		sub_detection = 0
+		anti_air_attack = 4
+		naval_light_gun_hit_chance_factor = 0.15
+		naval_torpedo_hit_chance_factor = 0.15
+		resources = {
+			steel = 14
+		}
+	}
+	
 	ship_hull_light_4 = {
 		year = 1944
 

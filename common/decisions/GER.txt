@@ -5436,19 +5436,19 @@ GER_military_buildup = {
 		available = {
 			has_navy_size = {
 				archetype = ship_hull_heavy
-				size > 9
+				size > 5
 			}
 			has_navy_size = {
 				archetype = ship_hull_carrier
-				size > 3
+				size > 2
 			}
 			has_navy_size = {
 				archetype = ship_hull_cruiser
-				size > 29
+				size > 18
 			}
 			has_navy_size = {
 				archetype = ship_hull_light
-				size > 99
+				size > 50
 			}
 		}
 

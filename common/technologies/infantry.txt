@@ -43,6 +43,7 @@ technologies = {
 			factor = 10
 			
 		}
+		special_project_specialization = { specialization_land }
 	}
 	support_weapon_equipment2 = {
 
@@ -75,6 +76,7 @@ technologies = {
 			
 			
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	support_weapon_equipment3 = {
@@ -108,6 +110,7 @@ technologies = {
 			
 			
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	support_weapon_equipment4 = {
@@ -140,6 +143,7 @@ technologies = {
 			
 			
 		}
+		special_project_specialization = { specialization_land }
 	}
 	support_weapon_equipment5 = {
 
@@ -168,6 +172,7 @@ technologies = {
 			
 			
 		}
+		special_project_specialization = { specialization_land }
 	}
 	#HMG+MORTAR equipment
 	
@@ -193,6 +198,7 @@ technologies = {
 			factor = 10
 			
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	support_weapons2 = {
@@ -218,6 +224,7 @@ technologies = {
 			
 			
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	support_weapons3 = {
@@ -243,6 +250,7 @@ technologies = {
 			
 			
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	support_weapons4 = {
@@ -268,6 +276,7 @@ technologies = {
 			
 			
 		}
+		special_project_specialization = { specialization_land }
 	}
 	support_weapons5 = {
 
@@ -292,6 +301,7 @@ technologies = {
 			
 			
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	#Rifles
@@ -330,6 +340,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 
@@ -358,6 +369,7 @@ technologies = {
 		ai_will_do = {
 			factor = 100
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	
@@ -389,6 +401,7 @@ technologies = {
 		ai_will_do = {
 			factor = 10
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	improved_infantry_weapons = {
@@ -398,7 +411,6 @@ technologies = {
 		}
 		enable_subunits = {
 			bicycle_battalion
-			marine_commando
 		}	
 		path = {
 			leads_to_tech = improved_infantry_weapons_2
@@ -420,6 +432,7 @@ technologies = {
 		ai_will_do = {
 			factor = 6
 		}
+		special_project_specialization = { specialization_land }
 	}
 	improved_infantry_weapons_2 = {
 
@@ -447,6 +460,7 @@ technologies = {
 		ai_will_do = {
 			factor = 10
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	advanced_infantry_weapons = {
@@ -480,6 +494,7 @@ technologies = {
 		ai_will_do = {
 			factor = 8
 		}
+		special_project_specialization = { specialization_land }
 	}
 	advanced_infantry_weapons2 = {
 
@@ -511,6 +526,7 @@ technologies = {
 		ai_will_do = {
 			factor = 10
 		}
+		special_project_specialization = { specialization_land }
 	}
 	modern_infantry_weapons = {
 
@@ -533,6 +549,7 @@ technologies = {
 		categories = {
 			infantry_weapons
 		}
+		special_project_specialization = { specialization_land }
 	}
 	#night
 	
@@ -561,6 +578,7 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	night_vision2 = {
@@ -583,6 +601,7 @@ technologies = {
 		ai_will_do = {
 			factor = 4
 		}
+		special_project_specialization = { specialization_land }
 	}
 	####################### Radio
 	tech_radio_1 = {
@@ -611,6 +630,7 @@ technologies = {
 		ai_will_do = {
 			factor = 8
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	tech_radio_2 = {
@@ -638,6 +658,7 @@ technologies = {
 		ai_will_do = {
 			factor = 8
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	tech_radio_3 = {
@@ -660,6 +681,7 @@ technologies = {
 		ai_will_do = {
 			factor = 8
 		}
+		special_project_specialization = { specialization_land }
 	}
 	## Field Equipment
 	field_equipment = {
@@ -691,6 +713,7 @@ technologies = {
 		ai_will_do = {
 			factor = 10
 		}
+		special_project_specialization = { specialization_land }
 	}
 	field_equipment_2 = {
 		
@@ -719,6 +742,7 @@ technologies = {
 		ai_will_do = {
 			factor = 10
 		}
+		special_project_specialization = { specialization_land }
 	}
 	field_equipment_3 = {
 		
@@ -748,6 +772,7 @@ technologies = {
 		ai_will_do = {
 			factor = 9
 		}
+		special_project_specialization = { specialization_land }
 	}
 	field_equipment_4 = {
 		
@@ -778,6 +803,7 @@ technologies = {
 		ai_will_do = {
 			factor = 9
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	field_equipment_5 = {
@@ -802,6 +828,7 @@ technologies = {
 		ai_will_do = {
 			factor = 9
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	#camo
@@ -834,6 +861,7 @@ technologies = {
 		ai_will_do = {
 			factor = 9
 		}
+		special_project_specialization = { specialization_land }
 	}
 	camo_upgrade_2  = {
 		
@@ -863,6 +891,7 @@ technologies = {
 		ai_will_do = {
 			factor = 9
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	
@@ -893,6 +922,7 @@ technologies = {
 			factor = 5
 			
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	infantry_at2 = {
@@ -920,6 +950,7 @@ technologies = {
 			factor = 5
 			
 		}
+		special_project_specialization = { specialization_land }
 	}
 	infantry_at3 = {
 
@@ -947,6 +978,7 @@ technologies = {
 		ai_will_do = {
 			factor = 5	
 		}
+		special_project_specialization = { specialization_land }
 	}
 	infantry_at4 = {
 
@@ -971,6 +1003,7 @@ technologies = {
 		ai_will_do = {
 			factor = 5						
 		}
+		special_project_specialization = { specialization_land }
 	}
 	
 	#dig

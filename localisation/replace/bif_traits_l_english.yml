@@ -150,3 +150,5 @@
  infantry_ratio_over_75:0 "Infantry ratio > §H75%§!"
  fighting_with_at_least_23_units:0 "Controlling at least §H24§! armies"
  operative_demolition_expert_desc:0 "This Operative is proficient with all the different ways in which one can blow stuff up."
+ Vet:0 "Veteran crew"
+ Legacy:0 "Legacy crew"

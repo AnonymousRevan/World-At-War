@@ -150,7 +150,7 @@ germany_enemy = {
 	enable = {
 		country_exists = GER
 		OR = {
-			date > 1942.1.1
+			date > 1941.1.1
 			has_war_with = GER 
 		}
 	}
