@@ -2540,7 +2540,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
-		    add_ideas = FRA_infantry_focus
 			custom_effect_tooltip = sons_of_the_outback_tt
 			hidden_effect = {
 				set_technology = { sons_of_the_outback = 1 }

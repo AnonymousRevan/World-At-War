@@ -2,6 +2,11 @@ spriteTypes = {
 
 
 	## Pack Arty for mOuntaineers and shit ###
+	
+    spriteType = {
+		name = "GFX_idea_FRA_exilelaw"
+		texturefile = "gfx/interface/ideas/FRA_exilelaw.DDS"
+	}
 
 	SpriteType = {
 		name = "GFX_gw_pack_artillery_medium"
