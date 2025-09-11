@@ -48,7 +48,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_la_front_du_popular
-		cost = 7.16
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -91,7 +91,7 @@ focus_tree = {
 		}
 		
 		relative_position_id = FRA_matignon_agreements
-		cost = 7.16
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2540,6 +2540,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+		    add_ideas = FRA_infantry_focus
 			custom_effect_tooltip = sons_of_the_outback_tt
 			hidden_effect = {
 				set_technology = { sons_of_the_outback = 1 }
@@ -2759,7 +2760,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 60
+					amount = 40
 				}
 				add_resource = {
 					type = rubber
@@ -2840,7 +2841,7 @@ focus_tree = {
 				772 = {
 					add_resource = {
 						type = steel
-						amount = 45
+						amount = 35
 					}
 				}
 			}
@@ -3169,7 +3170,7 @@ focus_tree = {
 			272 = {
 				add_resource = {
 					type = steel
-					amount = 100
+					amount = 70
 				}
 				add_resource = {
 					type = chromium

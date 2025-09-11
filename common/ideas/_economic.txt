@@ -613,40 +613,31 @@ ideas = {
 
 			
 		    available = {
-			    AND = {
 				has_capitulated = yes
-			    OR = {
-			        has_decision = postpostcap
-					459 = { is_controlled_by = FRA }
-				}
-				}
 		    }
 	    		
 			cost = 0
 			removal_cost = -1
 
             modifier = {
-				consumer_goods_expected_value = 0.15
-				stability_weekly = -0.001
-				industry_repair_factor = 0.1
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_arms_factory_factor = 0.2
-				production_speed_dockyard_factor = 0.1
-				production_speed_synthetic_refinery_factor = 0.1
-				production_speed_synthetic_rubber_refinery_factor = 0.1
-				production_speed_steel_refinery_factor = 0.1
-				production_speed_naval_facility_factor = 0.1
-				production_speed_land_facility_factor = 0.1
-				production_speed_air_facility_factor = 0.1
-				production_speed_nuclear_facility_factor = 0.1
-				conversion_cost_civ_to_mil_factor= -0.2
-				conversion_cost_mil_to_civ_factor = -0.2
-			    production_factory_efficiency_gain_factor = 0.05
-			    production_factory_max_efficiency_factor = 0.05
-				research_speed_factor = 0.1
+				consumer_goods_expected_value = 0.20
+				conscription = -0.02
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.05
+				production_speed_synthetic_rubber_refinery_factor = 0.05
+				production_speed_steel_refinery_factor = 0.05
+				production_speed_naval_facility_factor = 0.2
+				production_speed_land_facility_factor = 0.2
+				production_speed_air_facility_factor = 0.2
+				production_speed_nuclear_facility_factor = 0.2
+				conversion_cost_civ_to_mil_factor= -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+				production_factory_max_efficiency_factor = 0.05
+				research_speed_factor = 0.075
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
-				political_power_factor = 0.1
+				political_power_factor = 0.05		
             }	
 			
 			ai_will_do = {

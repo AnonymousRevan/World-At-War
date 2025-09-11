@@ -10,7 +10,7 @@ units= {
 		task_force = {				
 			name = "Flottille de Haute Mers"			
 			location = 4948 # Oran		
-			ship = { name = "Béarn" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = FRA version_name = "Béarn Class" } } } 			
+			ship = { name = "Béarn" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_1 = { amount = 1 owner = FRA version_name = "Joffre Class" } } } 			
 			ship = { name = "Dunkerque" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = FRA version_name = "Dunkerque Class" } } }					
 			ship = { name = "Strasbourg" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = FRA version_name = "Dunkerque Class" } } }			
 			ship = { name = "Jeanne d'Arc" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = FRA version_name = "De Grasse Class" } } }	
@@ -30,18 +30,18 @@ units= {
 			name = "6ème Escadron Sous-Marins"			
 			location = 4948 # Bizerte, Tunisia	
 			# 9e Division des Sous-Marins
-			ship = { name = "Le Centaure" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
-			ship = { name = "Argo" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
-			ship = { name = "Pascal" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
-			ship = { name = "Henri Poincaré" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }	
-			ship = { name = "Le Centaure II" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
-			ship = { name = "Argo II" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
-			ship = { name = "Pascal II" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
-			ship = { name = "Henri Poincaré II" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }	
-			ship = { name = "Le Centaure III" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
-			ship = { name = "Argo III" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
-			ship = { name = "Pascal III" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }
-			ship = { name = "Henri Poincaré III" definition = start_experience_factor = 0.25 submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = EFR version_name = "Redoutable Class" } } }			
+			ship = { name = "Le Centaure" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Argo" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Pascal" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Henri Poincaré" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }	
+			ship = { name = "Le Centaure II" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Argo II" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Pascal II" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Henri Poincaré II" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }	
+			ship = { name = "Le Centaure III" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Argo III" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Pascal III" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Henri Poincaré III" definition = start_experience_factor = 0.25 submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }			
 		}				
 	}
 } 

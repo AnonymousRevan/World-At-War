@@ -2425,27 +2425,6 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = RAJ_funny
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = RAJ_adopt_the_british_teaching_method }
-		relative_position_id = RAJ_adopt_the_british_teaching_method
-		x = 0
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		    add_ideas = Funnyidea
-			add_trait = {
-				character = RAJ_lord_linlithgow
-				ideology = despotism
-			    trait = destroyer_of_worlds
-		   }
-		}
-	}
-	
 	###########################
 	#### Congress Industry ####
 	###########################

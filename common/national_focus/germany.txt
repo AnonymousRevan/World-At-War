@@ -5244,7 +5244,7 @@ focus_tree = {
                 name = land_doc_bonus
                 cost_reduction = 0.5
                 uses = 3
-                category = land_doctrine
+                category = cat_mobile_warfare
             }
 		custom_effect_tooltip = available_chief_of_army
 		show_ideas_tooltip = guderian_coa

@@ -549,7 +549,6 @@ FRA_vichy_france = {
 
 		complete_effect = {
 			add_ideas = postpostcapidea
-			add_ideas = FRA_exiles
 		}
 
 		ai_will_do = {

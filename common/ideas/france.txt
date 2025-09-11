@@ -61,7 +61,7 @@ ideas = {
 			consumer_goods_factor = -0.2
 			production_speed_industrial_complex_factor = 0.3
 			production_speed_arms_factory_factor = 0.05
-			production_speed_infrastructure_factor = 0.40
+			production_speed_infrastructure_factor = 0.25
 			production_speed_dockyard_factor = 0.30
 			production_speed_steel_refinery_factor = 0.1
 			production_speed_synthetic_rubber_refinery_factor = 0.15
@@ -85,7 +85,7 @@ ideas = {
 			modifier = {
 			consumer_goods_factor = -0.2
 			production_speed_arms_factory_factor = 0.15
-			production_speed_infrastructure_factor = 0.3
+			production_speed_infrastructure_factor = 0.25
 			production_speed_industrial_complex_factor = 0.1
 			production_speed_dockyard_factor = 0.1
 			production_speed_steel_refinery_factor = 0.1
@@ -398,16 +398,14 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_rail_way_factor = 0.15
-				production_speed_supply_node_factor = 0.15
-				production_speed_air_base_factor = 0.1	
-				production_speed_naval_base_factor = 0.1
-				production_speed_bunker_factor = 0.10
-				production_speed_coastal_bunker_factor = 0.1
-				production_speed_anti_air_building_factor = 0.1
-				production_speed_radar_station_factor = 0.1
-				global_building_slots_factor = 0.05
-				conscription = 0.01
+				production_speed_rail_way_factor = 0.1
+				production_speed_supply_node_factor = 0.1
+				production_speed_air_base_factor = 0.05
+				production_speed_naval_base_factor = 0.05
+				production_speed_bunker_factor = 0.05
+				production_speed_coastal_bunker_factor = 0.05
+				production_speed_anti_air_building_factor = 0.05
+				production_speed_radar_station_factor = 0.05
 			}
 		}
 		FRA_buildup2 = {
@@ -424,16 +422,14 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				global_building_slots_factor = 0.1
-				production_speed_rail_way_factor = 0.25
-				production_speed_supply_node_factor = 0.25
+				production_speed_rail_way_factor = 0.15
+				production_speed_supply_node_factor = 0.15
 				production_speed_air_base_factor = 0.15
 				production_speed_naval_base_factor = 0.15
 				production_speed_bunker_factor = 0.15
 				production_speed_coastal_bunker_factor = 0.15
 				production_speed_anti_air_building_factor = 0.15
 				production_speed_radar_station_factor = 0.15
-				conscription = 0.025
 			}
 		}
 		FRA_the_young_school = {
@@ -720,7 +716,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				non_core_manpower = 0.015
+				non_core_manpower = 0.025
 			}
 		}
 		FRA_france_undividable = {
@@ -1613,20 +1609,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_factory_donations = 20
+				industrial_factory_donations = 15
 				military_factory_donations = 10
-				dockyard_donations = 10
-				war_support_weekly = 0.001
-				stability_weekly = 0.001
-				weekly_manpower = 10000
-				conscription = 0.05	
-				country_resource_steel = 	200
-				country_resource_rubber = 150
-			    country_resource_tungsten = 100
-				country_resource_aluminium = 100
-			    country_resource_chromium = 100
-				country_resource_oil = 25
-				
+				dockyard_donations = 5
 			}
 		}
 
@@ -1930,18 +1915,9 @@ ideas = {
 			
 			removal_cost = -1
 
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				support_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				special_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
 			}
 		}
 

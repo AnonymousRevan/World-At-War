@@ -39,6 +39,53 @@ operations = {
 			}
 		}		
 	}
+	ROM_annex_hun = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ROM
+		}
+		visible = {
+			tag = ROM
+			HUN = { is_ai = yes }
+			country_exists = HUN
+		}
+		available = {
+			date > 1939.2.1
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+
+		complete_effect = {
+			HUN = {
+				transfer_navy = {
+					target = ROM
+				}
+				every_unit_leader = {
+					set_nationality = ROM
+				}
+			}
+				ROM = {
+				transfer_state = 664
+				transfer_state = 43
+				transfer_state = 154
+				transfer_state = 155
+				
+				add_state_core = 664
+				add_state_core = 43
+				add_state_core = 154
+				add_state_core = 155
+				}
+			annex_country = {
+              target = HUN
+              transfer_troops = yes
+			}
+		}		
+	}
 	ROM_Nav_Rearm = {
 
 			icon = generic_naval
