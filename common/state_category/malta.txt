@@ -1,8 +1,0 @@
-state_categories={
-malta = {
-	local_building_slots = 15
-	local_supplies = 0.50
-	color = { 240 230 2 }
-
-}
-}
