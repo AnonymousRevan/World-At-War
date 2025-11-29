@@ -65,3 +65,5 @@
  MAPMODE_ALL_ENTRY_DETAILS: "§GLPM§!, żeby wybrać.\n§GPPM§!, żeby wybrać i zamknąć."
  MAPMODE_TOOLTIP_INFRASTRUCTURE: "£infrastructure_texticon  Infrastruktura $INF|Y$"
  MAPMODE_TOOLTIP_MANPOWER: "£population_texticon  Populacja $MP|*Y$"
+ MAPMODE_DEBUG_NAVAL_ACCESSIBILITY: "Przytrzymaj §GALT§!, aby wyświetlić skrytkę dostępności okrętów podwodnych\nPrzytrzymaj §GSHIFT§!, aby wyświetlić skrytkę dostępności okrętów nawodnych"
+ STRATEGIC_LOCATION_MAPICON: "§HMiejsca strategiczne§!"

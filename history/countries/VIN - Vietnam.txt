@@ -16,9 +16,11 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	trench_warfare = 1
-	fleet_in_being = 1
 }
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+
 if = {
 	limit = {
 		NOT = { has_dlc = "By Blood Alone" }
@@ -106,49 +108,22 @@ set_popularities = {
 
 #NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
 
-create_country_leader = {
-	name = "Phan Bôi Châu" 
-	desc = ""
-	picture = GFX_portrait_Phan_Boi_Chau
-	expire = "1953.3.1"
-	ideology = fascism_ideology 
-	traits = {
-		
-	}
-}
+#create_country_leader = {
+#	name = "Phan Bôi Châu" 
+#	desc = ""
+#	picture = GFX_portrait_Phan_Boi_Chau
+#	expire = "1953.3.1"
+#	ideology = fascism_ideology 
+#	traits = {
+#		
+#	}
+#}
 
-create_country_leader = {
-	name = "Ho Chí Minh" 
-	desc = ""
-	picture = GFX_portrait_Ho_Chi_Minh
-	expire = "1953.3.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
+recruit_character = VIN_bao_dai
+recruit_character = VIN_ngo_dinh_diem
+recruit_character = VIN_ho_chi_minh
 
-create_country_leader = {
-	name = "Ngô Đình Diêm"
-	desc = ""
-	picture = GFX_portrait_Ngo_Đinh_Diem
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
 
-create_country_leader = {
-	name = "Nguyen Tuong Tam"
-	desc = ""
-	picture = GFX_portrait_Nguyen_Tuong_Tam
-	expire = "1953.3.1"
-	ideology = moderatism
-	traits = {
-		
-	}
-}
 
 
 

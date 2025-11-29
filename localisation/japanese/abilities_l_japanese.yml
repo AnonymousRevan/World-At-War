@@ -47,3 +47,6 @@
  ABILITY_ON_DAILY: "毎日:"
  ABILITY_QUININE: "キニーネ配布"
  ABILITY_QUININE_DESC: "軍隊にキニーネと追加物資が調達される。"
+ ABILITY_CHI_force_attack_no_entrenchment_loss: "$ABILITY_FORCE_ATTACK$"
+ ABILITY_CHI_force_attack_no_entrenchment_loss_TOOLTIP: "強攻（$LEADER$）"
+ ABILITY_CHI_force_attack_no_entrenchment_loss_TOOLTIP_DESC: "多少の損失と引き換えに攻撃ボーナスを得る。"

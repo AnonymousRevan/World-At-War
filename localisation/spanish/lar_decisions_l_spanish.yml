@@ -41,6 +41,7 @@
  SPA_suppress_the_strikes: "Reprimir las huelgas"
  SPA_suppress_the_strikes_desc: "Las huelgas están causando una gran agitación y perjudican económicamente a la nación. Enviaremos a nuestras milicias para disolverlas y asegurarnos de que la gente vuelva al trabajo."
  SPA_suppress_the_strikes_tt: "Ha suprimido los ataques nacionales por completo"
+ SPA_suppress_the_strikes_tt_NOT: "No: Ha suprimido los ataques nacionales por completo"
  SPR_concessions_to_the_left: "Concesiones ante la izquierda"
  SPR_concessions_to_the_left_desc: "Los manifestantes están en su derecho de protestar. Les prometeremos abordar sus problemas y, mientras tanto, nos mostraremos transigentes con la ocupación ilegal de propiedades, los hurtos y demás crímenes sociales menores. De este modo, deberíamos aplacar el malestar general."
  SPA_concessions_to_the_left_tt: "Ha hecho concesiones ante la izquierda"

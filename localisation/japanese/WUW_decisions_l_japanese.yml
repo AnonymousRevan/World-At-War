@@ -555,7 +555,7 @@
  GER_demand_communist_subjugation_decision: "[FROM.GetNameDef]の服従を要請"
  GER_proletarian_solidarity_decision: "[FROM.GetNameDef]でのプロレタリアの団結を奨励"
  GER_industrial_relocation_cat: "産業移転"
- GER_industrial_relocation_catdesc: "[SOV.GetNameDef]を対象とした産業移転計画により、我々の産業基盤は一時的には縮小するかもしれない。しかし、引き換えに得られる原材料はその損失を補ってもまだ有り余るほどだ。我が国の生産ラインを強化できるだろう。"
+ GER_industrial_relocation_cat_desc: "[SOV.GetNameDef]を対象とした産業移転計画により、我々の産業基盤は一時的には縮小するかもしれない。しかし、引き換えに得られる原材料はその損失を補ってもまだ有り余るほどだ。我が国の生産ラインを強化できるだろう。"
  GER_currently_relocating_industry_flag: "現在、工場移転中"
  GER_industrial_relocation_oil_decision: "石油のために、産業を[FROM.GetName]から[FROM.CONTROLLER.GetNameDef]へ移転する"
  GER_industrial_relocation_tungsten_decision: "タングステンのために、産業を[FROM.GetName]から[FROM.CONTROLLER.GetNameDef]へ移転する"

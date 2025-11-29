@@ -60,6 +60,7 @@
  enclave: "Enclave"
  small_island: "Ilha pequena"
  tiny_island: "Ilhota"
+ large_island: "Ilha grande"
  pastoral: "Região pastoral"
  OCCUPATION_BREAKDOWN: "Resultado da ocupação:"
  OCCUPATION_BREAKDOWN_ENTRY: "\n$COUNTRY|Y$: $OCCUPATION|Y%0$"

@@ -408,7 +408,7 @@ entity = {
 	state = { name = "explode" animation = "idle" 
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 	}
-	scale = 0.145
+	scale = 0.135
 
 }
 #J9 CLONE

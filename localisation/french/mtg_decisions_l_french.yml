@@ -597,6 +597,8 @@
  MTG_abandon_treaty_democratic_desc: "Les tentatives faites pour empêcher le réarmement naval ont été un échec. [Root.GetLeLaLNPCap] [Root.GetName] doi[Root.GetTVentNP] être autorisé[Root.GetXENP] à réarmer pour pouvoir faire face aux menaces à venir."
  MTG_abandon_treaty_fascist: "Se retirer des traités navals"
  MTG_abandon_treaty_fascist_desc: "Par les traités navals, les démocraties décadentes ont elles-mêmes choisi d'avoir les mains liées. Mais dans cette lutte gigantesque entre les nations, il n'existe qu'une loi : celle de la nature, qui fait que seul le plus fort survit.\n   Et rien ne fera renoncer [Root.GetLeLaLNP] [Root.GetName] à [Root.GetSonLeurNP] désir d'aligner une flotte puissante !"
+ MTG_abandon_treaty_japanese: "Se retirer des traités navals"
+ MTG_abandon_treaty_japanese_desc: "Par les traités navals, les démocraties décadentes ont elles-mêmes choisi d'avoir les mains liées. Mais dans cette lutte gigantesque entre les nations, il n'existe qu'une loi : celle de la nature, qui fait que seul le plus fort survit. Et rien ne nous fera renoncer à notre désir d'aligner une flotte puissante !"
  MTG_cheat_on_treaty: "Enfreindre les traités"
  MTG_cheat_on_treaty_desc: "Les restrictions imposées par les traités navals sur la conception des navires sont bien trop contraignantes. Peut-être qu'avec un peu d'imagination nous pourrions oublier de compter certains éléments, et libérer un peu de poids pour quelque chose qui soit... utile."
  MTG_second_london_conference: "Deuxième conférence de désarmement naval de Londres en cours"

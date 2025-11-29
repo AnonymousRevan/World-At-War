@@ -858,7 +858,7 @@
  PER_imperial_events.2.a: "素晴らしい報せだ。"
  PER_imperial_events.3.t: "[SOU.GetNameDefCap]が我が国の提案を拒否"
  PER_imperial_events.3.desc: "残念ながら、[SOU.GetNameDef]の説得に失敗し、不可侵条約の締結は叶わなかった。これにより、戦線の拡大を継続するには、北からの脅威を警戒しなければならない。"
- PER_imperial_events.3.a: "残念な事態だ…"
+ PER_imperial_events.3.a: "残念な事態だ……"
  PER_imperial_events.10.t: "[FROM.GetNameDefCap]がバルチスタンの領土を要求"
  PER_imperial_events.10.desc: "本日、[PER.GetNameDef]国王より、バルチスタン地域の支配権を彼らに譲渡するよう要求があった。[PER.GetAdjective]政府は、この地域は神の権利により彼らのものだと主張している。彼らを刺激すると宣戦布告される可能性があるため、慎重に対処しなければならない。"
  PER_imperial_events.10.a: "従うしかない。"

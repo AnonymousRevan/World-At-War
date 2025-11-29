@@ -1,8 +1,8 @@
 {
 	"gameId": "hoi4",
 	"displayName": "Hearts of Iron IV",
-	"version": "Countenance v1.16.10.5638 (99dc)",
-	"rawVersion": "1.16.10",
+	"version": "Musketeer v1.17.1.1.bbcd (e990)",
+	"rawVersion": "1.17.1.1",
 	"distPlatform": "steam",
 	"ingameSettingsPath": "pdx_settings.json",
 	"gameDataPath": "%USER_DOCUMENTS%/Paradox Interactive/Hearts of Iron IV",

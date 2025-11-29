@@ -188,6 +188,26 @@ entity = {
 }
 
 #################################################
+###     	    BELGIUM RANGER    		 	  ###
+#################################################
+#USES THE SAME MODEL AS THE BELGIAN MOUNTAINEER
+
+entity = {
+	clone = "BEL_mountaineers_entity"
+	name = "BEL_ranger_battalion_entity"
+}
+
+entity = {
+	clone = "BEL_mountaineers_2_entity"
+	name = "BEL_ranger_battalion_2_entity"
+}
+
+entity = {
+	clone = "BEL_mountaineers_3_entity"
+	name = "BEL_ranger_battalion_3_entity"
+}
+
+#################################################
 ###   	 	     BELGIUM MARINE    	    	  ###
 #################################################
 

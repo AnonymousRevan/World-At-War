@@ -12,7 +12,7 @@ set_stability = 0.8
 
 recruit_character = BHU_jigme_wangchuck
 recruit_character = BHU_tsarong_wangyal
-recruit_character = BHU_gendün_rinpoche
+recruit_character = BHU_gendun_rinpoche
 recruit_character = BHU_andruk_tashi
 recruit_character = BHU_reginald_b_stevens
 recruit_character = BHU_jigme_dorji_wangchuck
@@ -54,11 +54,6 @@ recruit_character = BHU_mang_pos_bhur_bai
 		infantry_weapons = 1
 		tech_mountaineers = 1
 
-		#doctrines
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
@@ -72,6 +67,9 @@ recruit_character = BHU_mang_pos_bhur_bai
 		construction1 = 1
 		dispersed_industry = 1
 	}
+
+set_grand_doctrine = mass_assault
+
 }
 
 set_politics = {

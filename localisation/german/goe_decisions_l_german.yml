@@ -1,7 +1,7 @@
 ﻿l_german:
  AFG_oil_concessions_category: "Ölbohrrechte"
- AFG_propose_oil_concession_deal: "Schlägt [FROM.GetName] Ölbohrrechte vor"
- AFG_oil_deal_negotiation_in_progress: "Verhandlungen zum Ausbau der Ölindustrie bereits im Gang"
+ AFG_propose_oil_concession_deal: "§Y[FROM.GetName]§! einen Ölkonzessionsvertrag vorschlagen"
+ AFG_oil_deal_negotiation_in_progress: " Verhandlungen zum Ausbau der Ölindustrie bereits im Gang"
  AFG_signed_oil_deal_flag: "Vereinbarung über Ölbohrrechte unterzeichnet"
  AFG_nationalize_oil: "Nationalisierung der Ölindustrie"
  AFG_oil_concession_here_flag: "Öl von fremder Macht kontrolliert"
@@ -464,7 +464,7 @@
  united_arab_republic_cat: "$IRQ_proclaim_united_arab_republic$"
  united_arab_republic_cat_desc: "$IRQ_proclaim_united_arab_republic_desc$"
  remove_flooding_tt: "§RÜberflutungsmodifikatoren§! werden entfernt"
- IRQ_flood_the_plains_cat: "Waffe der Bewässerung"
+ IRQ_flood_the_plains_cat: "Bewässerung als Waffe"
  IRQ_flood_the_plains: "Die Ebenen fluten"
  IRQ_flood_the_plains_desc: "Euphrat und Tigris sind die Lebensadern unserer Wirtschaft und damit auch unseres Wohlstands. Dank der umfangreichen Bewässerungsmaßnahmen, die wir in den letzten Jahrzehnten durchführten, haben wir nun die Möglichkeit, ihre Nebenflüsse zu kontrollieren. Eine koordinierte Überschwemmung könnte niedrig gelegene Regionen für eine begrenzte Zeit in einen Sumpf verwandeln, der leichter zu verteidigen ist."
  can_flood_plains_tt: "Schaltet die Entscheidung „§Y$IRQ_flood_the_plains$§!“ frei, die im Fall einer Invasion gegen uns genutzt werden kann."

@@ -14,6 +14,7 @@
     # liberate
 
 peace_ai_desires = {
+
     # French Yalta wants
     FRA_yalta_puppet = {
         peace_action_type = puppet
@@ -27,14 +28,12 @@ peace_ai_desires = {
                 original_tag = GER
             }
             FROM.FROM.FROM = {
-                OR = {
-                    state = 42 #MOSELLAND
-                    #state = 50
-                }
+                state = 42 #MOSELLAND
             }
         }
         ai_desire = 250
     }
+
     # American Yalta wants
     USA_yalta_puppet = {
         peace_action_type = puppet
@@ -154,16 +153,16 @@ peace_ai_desires = {
                 NOT = { original_tag = FRA }
                #has_government = democratic
                #is_in_faction_with = FRA
-                FRA = { has_war_with = GER }
+                any_country_with_original_tag = {
+                    original_tag_to_check = FRA
+                    has_war_with = GER
+                }
             }
             FROM.FROM = {
                 original_tag = GER
             }
             FROM.FROM.FROM = {
-                OR = {
-                    state = 42 #MOSELLAND
-                    #state = 50
-                }
+                state = 42 #MOSELLAND 
             }
         }
         ai_desire = -250

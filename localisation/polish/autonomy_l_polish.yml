@@ -33,6 +33,7 @@
  CONTINUOUS_AUTONOMY_EFFECT: "$REASON$: £autonomy_texticon $VAL|+=2$"
  EVENT_AUTONOMY_EFFECT: "$REASON$: £autonomy_texticon $VAL|+=2$"
  LL_TO_OVERLORD_FREEDOM_EFFECT: "Poddany udziela władcy lend-lease."
+ SUBJECT_OF_NAME: "Poddany:\n$VALUE|H$"
  LL_TO_PUPPET_FREEDOM_EFFECT: "Władca udziela poddanemu lend-lease."
  MONTHLY_LL_FREEDOM_TO_PUPPET: "$FLAG$ $VALUE|-2$"
  MONTHLY_LL_FREEDOM_TO_MASTER: "$VALUE|+2$"
@@ -72,3 +73,5 @@
  autonomy_volkskommissariat: "Volkskommissariat"
  autonomy_eu_member: "Państwo członkowskie UE"
  AUTONOMY_NOT_ENOUGH_TIME: "§RPoziom autonomii można zmieniać tylko co §Y$DURATION$ dni§! (zostało §Y$REMAINDER$ dni§!)§!"
+ autonomy_sea_warlord_subject: "Poddany watażki"
+ autonomy_sea_integrated_warlord_subject: "Zintegrowany poddany watażki"

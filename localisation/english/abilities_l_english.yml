@@ -47,4 +47,7 @@
  ABILITY_ON_DAILY:0 "On Each Day:"
  ABILITY_QUININE: "Distribute Quinine"
  ABILITY_QUININE_DESC: "Quinine and extra supplies are acquired for the troops."
+ ABILITY_CHI_force_attack_no_entrenchment_loss: "$ABILITY_FORCE_ATTACK$"
+ ABILITY_CHI_force_attack_no_entrenchment_loss_TOOLTIP: "Force Attack ($LEADER$)"
+ ABILITY_CHI_force_attack_no_entrenchment_loss_TOOLTIP_DESC: "Your armies will get an offensive bonus at the expense of some disadvantages."
  

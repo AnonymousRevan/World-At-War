@@ -244,7 +244,7 @@
  add_to_faction_tt: "Adicionar à facção"
  form_north_sea_empire_norway_required_states_tt: "Controla todos os estados §Ynoruegueses§! continentais."
  form_north_sea_empire_swedish_required_states_tt: "Controla §Y$STATE_138$§! e §Y$STATE_915$§!."
- form_north_sea_empire_english_required_states_tt: "Controla todos estados §Yingleses§!."
+ form_north_sea_empire_english_required_states_tt: "Controla todos os estados §Yingleses§!."
  form_north_sea_empire_swedish_coring_states_tt: "Ganha estados centrais em §Y$STATE_138$§! e §Y$STATE_915$§!."
  form_north_sea_empire_english_coring_states_tt: "Ganha estados centrais em todos os estados §Yingleses§!."
  form_nordic_nation_flag: "NÃO tomou a decisão de formar o §YImpério do Mar do Norte§!, a §YUnião Nórdica§! ou o §YDomínio do Mar Báltico§!"

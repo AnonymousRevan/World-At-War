@@ -241,7 +241,7 @@
  RAJ_go_into_hiding_desc: "独立に向けた戦いを継続するには、スバス・チャンドラ・ボースをイギリスの監視の目から逃がさなければならない。彼を潜伏させることで、指導者が無傷のまま、しかるべき時に攻勢をしかけることができる。"
  RAJ_trade_protection: "貿易保護"
  RAJ_trade_protection_desc: "経済の発展を確実なものとするために、主要な貿易経路と産業を外国の搾取から守らなければならない。貿易保護の強化により、インドの資源は確保され、国内成長が促進され、外部の脅威から市場を保護することができる。"
- RAJ_seek_japanese_support_tt: "独立戦争が始まれば、[JAP.GetName]は以下のものを提供してくれる: \nB4Y対艦攻撃機§Y120機§!\n[Jap.GetAdjective]キ10戦闘機§Y135機§!\nこれらに対応する設計図および\n"
+ RAJ_seek_japanese_support_tt: "独立戦争が始まれば、[JAP.GetNameDef]は以下のものを提供してくれる:\nB4Y対艦攻撃機§Y120機§!\n[Jap.GetAdjective]キ10戦闘機§Y135機§!\nこれらに対応する設計図および\n"
  RAJ_the_enemy_of_my_enemy_tt: "§Y[JAP.GetAdjective]§!政府は内戦で敵側に宣戦布告し、我々を援助してくれるだろう。"
  RAJ_the_enemy_of_my_enemy_tt_2: "§Y[JAP.GetAdjective]§!はまた、§Y[733.GetName]§!に侵攻し、それを我々に引き渡そうとするだろう。"
  RAJ_azad_hind_dlc_tt: "以下を獲得:  "
@@ -484,6 +484,7 @@
  RAJ_a_permanent_muslim_governmental_seat_desc: "我が国ではイスラム教徒は少数派といえども大規模な集団だ。彼らが統一インドに対して抱く不安を払拭するために、彼らには政府内に常任の役職を設けるつもりだ。"
  RAJ_pledge_for_the_allies: "同盟国への誓約"
  RAJ_pledge_for_the_allies_desc: "ファシズムや共産主義が世界中で台頭する中、インドが単独で独り立ちするのは不可能だ。[ENG.GetName]はこれまでインドに友好的でなかったかもしれないが、その他の国は明らかに我々の敵である。"
+ RAJ_indian_prosperity_sphere: "インド繁栄圏"
  RAJ_sideline_the_conflict: "紛争は二の次だ"
  RAJ_sideline_the_conflict_desc: "[ROOT.GetName]がなぜ他者の誤った判断や領土への侵略で苦しまなければならないのか明らかではない。我々は外部ではなく内部に焦点を当てるべきだ。"
  RAJ_india_indivisible: "不可分なインド"
@@ -971,7 +972,7 @@
  RAJ_concessions_to_the_industrialists_chances_tt: "§Y$RAJ_investments_from_local_leaders$§!は主に§Y民需産業§!に焦点を当てており、§Y軍需産業§!にはそこまで注力していない。"
  RAJ_empower_provincial_authorities_chances_tt: "§Y$RAJ_investments_from_local_leaders$§!は§Y民需産業§!、§Y軍需産業§!、§Y防衛インフラ§!にそれぞれ均等に焦点を当てている。"
  RAJ_his_majestys_loyal_government_break_free_tt: "完全な独立を果たすには、最終的な3つの国家方針、§Y$RAJ_the_dominion_of_india$§!、§Y$RAJ_keep_calm_and_carry_on$§!、§Y$RAJ_holding_the_gates_of_india$§!をすべて完了させなければならない。"
- RAJ_loyalist_branch_capstone_focuses_become_free_tt: "3つの国家方針、§Y$RAJ_the_dominion_of_india$§!、§Y$RAJ_keep_calm_and_carry_on$§!、§Y$RAJ_holding_the_gates_of_india$§!がすべて完了されれば、§G自治レベルの変更に関する制限が解除され、§!§Y自由§!となる。"
+ RAJ_loyalist_branch_capstone_focuses_become_free_tt: "3つの国家方針、§Y$RAJ_the_dominion_of_india$§!、§Y$RAJ_keep_calm_and_carry_on$§!、§Y$RAJ_holding_the_gates_of_india$§!がすべて完了されれば、§G自治度の変更に関する制限が解除され、§!§Y自由§!となる。"
  ############
  #####RAJ####
  ############
@@ -2316,7 +2317,7 @@
  IRQ_regional_economic_integration: "地域経済の統合"
  IRQ_regional_economic_integration_desc: "この地域のインフラに対する大規模投資を計画化し、地域の全員が長期的な経済的恩恵を受けられるようにしなければならない。"
  IRQ_regional_military_integration: "地域軍事統合"
- IRQ_regional_military_integration_desc: "我が国は大国のような軍事生産能力を持っていないが、地域に対する投資を募れば追随することができるだろう。"
+ IRQ_regional_military_integration_desc: "我が国は大国のような軍需生産能力を持っていないが、地域に対する投資を募れば追随することができるだろう。"
  IRQ_regional_military_integration_tt: "ヨルダンが我が国の従属国の場合、または我々がヨルダンを支配している場合、この国家方針を完了するとヨルダンに軍需工場を2つ追加する。"
  IRQ_demand_palestine: "パレスチナを要求"
  IRQ_demand_palestine_desc: "イギリスは委任統治領内のパレスチナ人保護に関して信頼できないことが証明された。世界の注目が彼らに向かうなか、委任統治を我々に移譲するよう要求すれば、彼らはやむなく従う可能性がある。"

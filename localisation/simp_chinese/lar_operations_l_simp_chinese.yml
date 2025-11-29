@@ -284,7 +284,7 @@
  exfiltration_go_to_ground_outcome_fail: "§R到目前为止，在预定时间内，我们都没有收到任何来自小队的消息。我们无法知道小队目前究竟发生了什么。§!"
  OPERATION_OUTLOOK_LABEL: "预期"
  OPERATION_RISK_HEADER: "§H风险：§!$VAL|-%0$"
- OPERATION_OUTCOME_HEADER: "§H奖励成果：§!$VAL|+%0$"
+ OPERATION_OUTCOME_HEADER: "§H额外成果：§!$VAL|+%0$"
  OPERATION_BASE: "行动： "
  RISK_LOW: "§G安全§!"
  RISK_MID: "§R危险§!"

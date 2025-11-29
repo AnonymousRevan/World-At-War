@@ -67,7 +67,10 @@
  MIN_INTEL_REQUIRED_FOR_TECH_COUNT:0 "Required intel for displaying number of researches: $MIN|H.0%$"
  MIN_INTEL_REQUIRED_FOR_RESEARCHED_TECH:0 "Required intel for displaying finished researches: $MIN|H.0%$"
  MIN_INTEL_REQUIRED_FOR_RESEARCHED_TECH_AND_CURRENT:0 "Required intel for displaying ongoing researches: $MIN|H.0%$"
- 
+ MIN_INTEL_REQUIRED_FOR_GRAND_DOCTRINE: "Required intel for displaying Grand Doctrine: $MIN|H.0%$"
+ MIN_INTEL_REQUIRED_FOR_SUBDOCTRINES: "Required intel for displaying Subdoctrines: $MIN|H.0%$"
+ MIN_INTEL_REQUIRED_FOR_MASTERY: "Required intel for displaying £doctrine_mastery Mastery levels: $MIN|H.0%$"
+
  CURRENT_CIVILIAN_INTEL:0 "Civilian Intel: $AMOUNT|H.0%$"
  INTEL_MIN_MAX_FUZZY_TOOLTIP_TEXT_NO_MIN:1 "$INTEL_TYPE|H$ : $INTEL_RATIO|H.0%$\n  $MIN|H.0%$ - $MAX|H.0%$ : Approximate Information\n  More than $MAX|H.0%$ : Full Information"
  INTEL_MIN_MAX_FUZZY_TOOLTIP_TEXT:1 "$INTEL_TYPE|H$ : $INTEL_RATIO|H.0%$\n  Less than $MIN|H.0%$ : No Information\n  $MIN|H.0%$ - $MAX|H.0%$ : Approximate Information\n  More than $MAX|H.0%$ : Full Information"
@@ -142,8 +145,8 @@
  
  CURRENT_AIR_INTEL:0 "Air Intel: $AMOUNT|H.0%$"
  LEDGER_TOTAL_PLANE_COUNT:0 "Total Plane Count: $RANGE|H$"
- INTEL_LEDGER_DEPLOYED_AIR_MANPOWER_COUNT:0 "Deployed Airforce Manpower: $AMOUNT|H$"
- INTEL_LEDGER_DEPLOYED_AIR_MANPOWER_COUNT_WITH_CAP:0 "Deployed Airforce Manpower: $AMOUNT|H$ (Requires Air Intel: $MIN|H.0%$)"
+ INTEL_LEDGER_DEPLOYED_AIR_MANPOWER_COUNT:0 "Deployed Air Force Manpower: $AMOUNT|H$"
+ INTEL_LEDGER_DEPLOYED_AIR_MANPOWER_COUNT_WITH_CAP:0 "Deployed Air Force Manpower: $AMOUNT|H$ (Requires Air Intel: $MIN|H.0%$)"
  LEDGER_TOTAL_PLANE_TYPE_COUNT:0 "Number of planes with this type: $RANGE|H$"
  NO_AIR_INTEL_WITH_CAP:0 "No Intel (Requires Air Intel: $MIN|H.0%$)"
  TEMPLATE_DETAILED_PLANE_COUNT_TITLE:0 "Plane Counts:"
@@ -210,7 +213,7 @@
  INTEL_THRESHOLD_HEADER_NAVY:0 "§HNavy Intel Reports:§!\n\n"
  NAVY_LEDGER_THRESHOLD_FUZZY_TOTAL_FLEET_COUNT:1 "Approximate Total Fleet Count"
  NAVY_LEDGER_THRESHOLD_TOTAL_FLEET_COUNT:0 "Fleet Count"
- NAVY_LEDGER_THRESHOLD_FULL_SUPREMACY:0 "No Penalties to Naval Supremacy"
+ NAVY_LEDGER_THRESHOLD_FULL_DOMINANCE:0 "No Penalties to Naval Dominance"
  NAVY_LEDGER_THRESHOLD_FUZZY_TOTAL_TASKFORCE_COUNT:1 "Approximate Taskforce Count"
  NAVY_LEDGER_THRESHOLD_TOTAL_TASKFORCE_COUNT:0 "Taskforce Count"
  NAVY_LEDGER_THRESHOLD_FUZZY_TOTAL_SHIP_COUNT:1 "Approximate Total Ship Count"

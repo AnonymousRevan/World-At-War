@@ -555,7 +555,7 @@
  GER_demand_communist_subjugation_decision: "Exiger la soumission [FROM.GetDuDelaDelNP] [FROM.GetName]"
  GER_proletarian_solidarity_decision: "Encourager la solidarité prolétaire [FROM.GetAuEnANP] [FROM.GetName]"
  GER_industrial_relocation_cat: "Délocalisation industrielle"
- GER_industrial_relocation_catdesc: "Notre programme de délocalisation industrielle avec [SOV.GetLeLaLNP] [SOV.GetName] va sûrement réduire notre capacité dans un premier temps, mais au profit d'un surplus conséquent de matières premières qui devrait très vite redynamiser nos lignes de production."
+ GER_industrial_relocation_cat_desc: "Notre programme de délocalisation industrielle avec [SOV.GetLeLaLNP] [SOV.GetName] va sûrement réduire notre capacité dans un premier temps, mais au profit d'un surplus conséquent de matières premières qui devrait très vite redynamiser nos lignes de production."
  GER_currently_relocating_industry_flag: "En train de délocaliser des usines"
  GER_industrial_relocation_oil_decision: "Délocaliser l'industrie pétrolière [FROM.GetDuDelaDelNP] [FROM.GetName] vers [FROM.CONTROLLER.GetLeLaLNP] [FROM.CONTROLLER.GetName]"
  GER_industrial_relocation_tungsten_decision: "Délocaliser l'industrie du tungstène [FROM.GetDuDelaDelNP] [FROM.GetName] vers [FROM.CONTROLLER.GetLeLaLNP] [FROM.CONTROLLER.GetName]"

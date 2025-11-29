@@ -97,7 +97,7 @@
  light_mg_2x: "2 mitrailleuses légères"
  light_mg_2x_desc: "Un dispositif de deux mitrailleuses du même calibre qu'un fusil. Cela confère une puissance de feu modeste face aux cibles aériennes, mais le coût reste très modique."
  light_mg_4x: "4 mitrailleuses légères"
- light_mg_4x_desc: "Chaque mitrailleuse légère est du même calibre qu'un fusil, ce qui n'est pas très destructeur en tant que tel. Ce n'est pas la même chose lorsqu'il y en a quatre."
+ light_mg_4x_desc: "Chaque mitrailleuse légère est du même calibre qu'un fusil, ce qui n'est pas très destructeur en soi. C'est une autre histoire lorsqu'il y en a quatre."
  aircraft_cannon_1_1x: "1 canon I"
  aircraft_cannon_1_1x_desc: "Un canon automatique offre une capacité de tir importante face aux cibles aériennes, mais son poids rend l'appareil à la fois plus lent et moins manœuvrable."
  aircraft_cannon_1_2x: "2 canons I"

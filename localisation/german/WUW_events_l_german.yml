@@ -1189,7 +1189,8 @@
  #To GER/FRA/ENG: Exiled Belgium Requests equipment
  ww_BEL_event_diplomatic.15.t: "[FROM.GetNameDefCap] erbittet Ausrüstung"
  ww_BEL_event_diplomatic.15.desc: "Uns hat soeben eine Botschaft von der [FROM.GetAdjective]en Exilregierung erreicht. Sie bittet um Ausrüstung, um die wenigen Truppen, die sie noch hat, ausbilden zu können und so irgendwann in der Lage zu sein, ihr Heimatland zurückzuerobern."
- ww_BEL_event_diplomatic.15.a: "Wir werden sie unterstützen."
+ ww_BEL_event_diplomatic.15.a: "Wir werden ihnen $infantry_equipment$ zukommen lassen!"
+ ww_BEL_event_diplomatic.15.c: "Wir werden ihnen $support_equipment$ zukommen lassen!"
  ww_BEL_event_diplomatic.15.b: "Sie hat edle Ambitionen, doch wir können ihr nicht helfen."
  #To GER/FRA/ENG: Exiled Belgium Requests factories
  ww_BEL_event_diplomatic.16.t: "[FROM.GetNameDefCap] erbittet Fabriken"

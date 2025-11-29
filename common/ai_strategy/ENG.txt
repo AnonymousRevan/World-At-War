@@ -742,18 +742,10 @@ ENG_ALLIES_careful_with_early_invasions = {
 	enable = {
 		date < 1942.8.1
 		NOT = { original_tag = USA }
-		#if = { # commented in case we want to add it back
-		#	limit = { NOT = { has_dlc = "Man the Guns"} }
-		#	NOT = { has_tech = landing_craft }
-		#}
-		#else = {
-		#	NOT = { has_tech = mtg_landing_craft }
-		#}
-
 		OR = {
+			original_tag = ENG
 			is_in_faction_with = ENG # anyone in allies
 		}
-
 		NOT = {
 			SOV = {
 				has_war_with = GER
@@ -762,10 +754,6 @@ ENG_ALLIES_careful_with_early_invasions = {
 		}
 	}
 	abort = {
-		#OR = { # commented in case we want to add it back
-		#	has_tech = landing_craft
-		#	has_tech = mtg_landing_craft
-		#}
 		OR = {
 			SOV = {
 				has_war_with = GER
@@ -812,19 +800,9 @@ ENG_USA_careful_with_early_invasions = { #Same as above, alter in tandem
 
 	enable = {
 		date < 1942.5.1
-
-		#if = { # commented in case we want to add it back
-		#	limit = { NOT = { has_dlc = "Man the Guns"} }
-		#	NOT = { has_tech = landing_craft }
-		#}
-		#else = {
-		#	NOT = { has_tech = mtg_landing_craft }
-		#}
-
 		OR = {
 			is_in_faction_with = ENG # anyone in allies
 		}
-
 		NOT = {
 			SOV = {
 				has_war_with = GER
@@ -833,10 +811,6 @@ ENG_USA_careful_with_early_invasions = { #Same as above, alter in tandem
 		}
 	}
 	abort = {
-		#OR = { # commented in case we want to add it back
-		#	has_tech = landing_craft
-		#	has_tech = mtg_landing_craft
-		#}
 		OR = {
 			SOV = {
 				has_war_with = GER
@@ -1185,6 +1159,7 @@ ENG_home_guard = {
 			125
 	    }
 	    subtract_fronts_from_need = no
+		subtract_invasions_from_need = yes
 	}
 
 	abort_when_not_enabled = yes
@@ -1225,6 +1200,7 @@ ENG_home_guard_2 = { #we are being invaded help help
 			125
 	    }
 	    subtract_fronts_from_need = yes
+		subtract_fronts_from_need = yes
 	}
 
 	ai_strategy = {
@@ -1488,6 +1464,20 @@ ENG_lifeline_of_the_empire = {
 		type = area_priority
 		id = suez
 		value = 80 # this is extra on top of 50 base (now equal to other territory)
+	}
+}
+
+ENG_commit_to_the_lifeline = {
+	allowed = { original_tag = ENG }
+	enable = {
+		is_historical_focus_on = yes
+		date < 1943.1.1 #We either won or we can't realistically win now
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = front_unit_request
+		area = suez
+		value = 10
 	}
 }
 
@@ -1761,7 +1751,7 @@ ENG_please_stop_stomping_italy_so_hard_in_africa_ty = {
    	ai_strategy = {
 		type = put_unit_buffers
 		area = UK
-		ratio = 0.5
+		ratio = 0.25
 		subtract_invasions_from_need = no
 		subtract_fronts_from_need = yes
 	}
@@ -2026,7 +2016,7 @@ ENG_unit_buffer_for_african_defense = {
 
 		area = suez
 
-		subtract_invasions_from_need = no
+		subtract_invasions_from_need = yes
 		subtract_fronts_from_need = yes
 	}
 }
@@ -2712,20 +2702,10 @@ ENG_ethiopian_continuation_war = {
 ENG_no_naval_landings_in_libya_yet = {
 	allowed = { original_tag = ENG }
 	enable = {
-		is_historical_focus_on = yes  # Don't like locking it behind a checkbox...
-		date < 1943.5.1  # Historically, the North African campaign concluded May 1943. If Allies have not won there yet at this point, let them invade.
-		OR = {
-			date < 1941.8.1 # If Tobruk hasn't fallen by this time, maybe it's time to start thinking about going around
-			451 = { is_controlled_by_ROOT_or_ally = yes } # Tobruk is in our hands, we can continue on land
-		}
-		OR = {
-			date > 1939.9.1
-			has_war = yes
-		}
+		is_historical_focus_on = yes
+		date < 1942.1.1
 		has_war_with = ITA
-		ITA = {
-			has_navy_size = { size > 39 }  # Maybe want to look at fleet composition, not just total size
-		}
+		# More complex conditions will already be handled by the AI planning system
 	}
 	abort_when_not_enabled = yes
 
@@ -2739,11 +2719,9 @@ ENG_no_naval_landings_in_libya_yet = {
 ENG_to_tobruk = {
 	allowed = { original_tag = ENG }
 	enable = {
-		# NOTE: make sure these conditions are largely the same as for ENG_supply_for_tobruk_push below
 		is_historical_focus_on = yes
-		date > 1940.12.1 # Operation Compass
+		date > 1940.12.1
 		date < 1943.6.1
-		451 = { is_controlled_by = ITA }
 		ITA = { is_ai = yes }
 	}
 	abort_when_not_enabled = yes
@@ -2758,6 +2736,19 @@ ENG_to_tobruk = {
 		priority = 100
 		ordertype = front
 		execution_type = rush
+		execute_order = yes
+	}
+	
+	ai_strategy = {
+		type = front_control
+
+		state = 452 #matrouh
+
+		ratio = 0.1
+
+		priority = 100
+		ordertype = front
+		execution_type = rush_weak
 		execute_order = yes
 	}
 
@@ -2778,17 +2769,16 @@ ENG_navy_to_tobruk = {
 	allowed = { original_tag = ENG }
 	enable = {
 		is_historical_focus_on = yes
-		date > 1941.8.1 # We should have taken it by land route by now...
+		date > 1941.4.1 # We should have taken it by land route by now...
 		date < 1943.6.1
 		451 = { is_controlled_by = ITA }
-		ITA = { is_ai = yes }
 	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = invasion_unit_request
 		area = north_africa
-		value = 15
+		value = 50
 	}
 }
 
@@ -2969,5 +2959,99 @@ ENG_i_like_raj = {
 		type = alliance
 		id = "RAJ"
 		value = 200
+	}
+}
+
+ENG_become_head_of_crypto = {
+	allowed = {	
+		original_tag = ENG 
+		has_dlc = "No Compromise, No Surrender"
+		has_dlc = "La Resistance"
+	}
+	enable = {
+		has_done_agency_upgrade  = upgrade_form_department
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = become_head_of_crypto
+		value = 8
+	}
+}
+
+ENG_become_supreme_commander = {
+	allowed = {	
+		original_tag = ENG 
+		has_dlc = "No Compromise, No Surrender"
+	}
+	enable = {
+		date > 1938.1.1
+		date < 1940.1.1 
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = spent_faction_initiative_priority
+		id = unlock_faction_commander
+		value = 5
+	}
+}
+
+ENG_dominate_the_home_islands = {
+	allowed = {
+		original_tag = ENG
+	}
+	
+	enable = {
+		has_war_with = JAP
+		date > 1943.8.1
+		NOT = { has_war_with = GER }
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = naval_dominance
+		id = home_islands_control_zone
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = naval_dominance
+		id = micronesia_pacific_control_zone
+		value = 80
+	}
+	
+	ai_strategy = {
+		type = naval_dominance
+		id = mariana_pacific_control_zone
+		value = 80
+	}
+	
+}
+
+ENG_develop_mediterranean_supremacy = {
+	allowed = {
+		original_tag = ENG
+	}
+	
+	enable = {
+		OR = {
+			has_war_with = ITA
+			has_war_with = SOU
+		}
+		date > 1940.1.1
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = naval_dominance
+		id = western_med_control_zone
+		value = 30
+	}
+	
+	ai_strategy = {
+		type = naval_dominance
+		id = eastern_med_control_zone
+		value = 80
 	}
 }

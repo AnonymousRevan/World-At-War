@@ -1,4 +1,4 @@
-﻿capital = 757
+﻿capital = 757 # Lhasa
 
 oob = "TIB_1936"
 
@@ -27,6 +27,17 @@ recruit_character = TIB_khemey_sonam_wangdi
 recruit_character = TIB_jigme_taring
 recruit_character = TIB_reting_rimpoche
 recruit_character = TIB_taktra_rinpoche
+recruit_character = TIB_lungshar
+recruit_character = TIB_phuntsok_wangyal
+recruit_character = TIB_langdun
+recruit_character = TIB_thubten_kunpela
+recruit_character = TIB_tsarong_dzasa
+
+### Starting Ideas ###
+add_ideas = {
+	TIB_tibetan_politics_idea
+	TIB_tibetan_army_idea
+}
 
 1939.1.1 = {
 
@@ -48,11 +59,7 @@ recruit_character = TIB_taktra_rinpoche
 	oob = "TIB_1939"
 	set_technology = {
 		#doctrines
-		air_superiority = 1
-
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
+		#air_superiority = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -66,6 +73,10 @@ recruit_character = TIB_taktra_rinpoche
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
+
+set_grand_doctrine = mass_assault
+set_grand_doctrine = new_strategic_destruction
+
 	complete_special_project = {
 		project = sp:sp_air_radar
 	}

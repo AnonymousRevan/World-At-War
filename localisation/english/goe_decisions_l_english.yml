@@ -1,8 +1,8 @@
 ﻿l_english:
  
  AFG_oil_concessions_category: "Oil Concessions"
- AFG_propose_oil_concession_deal: "Propose oil concession agreement to [FROM.GetName]"
- AFG_oil_deal_negotiation_in_progress: "Oil development negotiations in progress"
+ AFG_propose_oil_concession_deal: "Propose an Oil Concession Agreement to §Y[FROM.GetName]§!"
+ AFG_oil_deal_negotiation_in_progress: " Oil development negotiations in progress"
  AFG_signed_oil_deal_flag: "Oil concession agreement signed"
  AFG_nationalize_oil: "Nationalize the Oil Industry"
  AFG_oil_concession_here_flag: "Oil controlled by foreign power"

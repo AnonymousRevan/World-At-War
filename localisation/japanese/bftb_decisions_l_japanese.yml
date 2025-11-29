@@ -310,7 +310,7 @@
  TUR_pacify_kurdish_state_effect_tt: "§Y[TUR_kurdish_state_event_target.GetName]§!における£faction_tur_kurdish §Yクルド人反政府勢力§!が鎮圧される。"
  TUR_placate_kurdish_state_effect_tt: "§Y[TUR_kurdish_state_event_target.GetName]§!における£faction_tur_kurdish §Yクルド人反政府勢力§!が鎮静化される。"
  TUR_kurdish_modifiers_trigger_tt: "£faction_tur_kurdish §Yクルド§!の州がすべて§Y中核州§!になるか、§Y分離主義者の疲労§!補正を有する。"
- TUR_no_current_integration_targets_available_tt: "a£faction_tur_kurdish §Yクルド§!の州が中核化される前に、§Y迎合度§!が§Y70%§!以上に上昇し、§YRレジスタンス§!が§Y30%§!以下に低下していなけばならない。"
+ TUR_no_current_integration_targets_available_tt: "a£faction_tur_kurdish §Yクルド§!の州が中核州化される前に、§Y迎合度§!が§Y70%§!以上に上昇し、§YRレジスタンス§!が§Y30%§!以下に低下していなけばならない。"
  TUR_integrate_kurdish_state_effect_tt: "£faction_tur_kurdish §Yクルド§!の州が州補正を失い、§Y[TUR.GetNameDef]§!の中核州となる。"
  TUR_counter_the_rebels_in_diyarbakir: "ディヤルバクル反乱軍との対決"
  TUR_counter_the_rebels_in_diyarbakir_desc: "ディヤルバクルの反政府勢力は、常時は他地域の反政府勢力ほど厄介ではない。これはディヤルバクルの発展度合いによるものだと思われる。"

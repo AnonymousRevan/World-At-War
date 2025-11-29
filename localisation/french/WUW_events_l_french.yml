@@ -1189,7 +1189,8 @@
  #To GER/FRA/ENG: Exiled Belgium Requests equipment
  ww_BEL_event_diplomatic.15.t: "[FROM.GetLeLaLNPCap] [FROM.GetName] demand[FROM.GetEEntNP]\ndu matériel"
  ww_BEL_event_diplomatic.15.desc: "\nLe gouvernement [FROM.GetAdjMS] en exil vient de nous faire parvenir une demande d'équipement, afin que leurs maigres troupes puissent s'entraîner et tenter de récupérer leurs terres."
- ww_BEL_event_diplomatic.15.a: "Nous allons les aider"
+ ww_BEL_event_diplomatic.15.a: "Nous leur enverrons l'équipement suivant : $infantry_equipment$ !"
+ ww_BEL_event_diplomatic.15.c: "Nous leur enverrons l'équipement suivant : $support_equipment$ !"
  ww_BEL_event_diplomatic.15.b: "Nous ne pouvons pas aider"
  #To GER/FRA/ENG: Exiled Belgium Requests factories
  ww_BEL_event_diplomatic.16.t: "[FROM.GetLeLaLNPCap] [FROM.GetName] demand[FROM.GetEEntNP]\ndes usines"

@@ -56,3 +56,4 @@
  has_flame_tank_units: "火炎放射戦車ユニットの有無"
  tactic_sf_fortify: "要塞化された防衛"
  tactic_sf_ambush: "市街地待機戦術"
+ tactic_grand_banzai_charge: "大バンザイ突撃"

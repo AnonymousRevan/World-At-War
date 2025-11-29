@@ -23,13 +23,13 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	
-	trench_warfare = 1
-
-	fleet_in_being = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
 }
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+
 complete_special_project = {
 	project = sp:sp_air_radar
 }
@@ -149,12 +149,7 @@ set_cosmetic_tag = MAL_UK # British Malaya
 		support_weapons = 1
 
 		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
+		#air_superiority = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -172,4 +167,8 @@ set_cosmetic_tag = MAL_UK # British Malaya
 		dispersed_industry2 = 1
 	}
 }
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+set_grand_doctrine = new_strategic_destruction
 

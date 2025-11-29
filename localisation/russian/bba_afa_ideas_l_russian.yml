@@ -1,7 +1,7 @@
 ﻿l_russian:
  bba_AFA_skilled_desert_warriors: "Мастера войны в условиях пустыни"
  bba_AFA_skilled_desert_warriors_desc: "Афарские воины всегда славились своим умением воевать в условиях пустыни. Именно оно наряду с суровым климатом пустыни Данакиль помогает Ауссе так долго избегать аннексии Эфиопской империей."
- HOA_state_bank_idea: "Государственный банк государства [ROOT.GetNameDef]"
+ HOA_state_bank_idea: "Государственный банк [ROOT.GetNameRuGen]"
  HOA_state_funded_projects_idea: "Проекты с госфинансированием"
  HOA_improved_irregulars_idea: "Улучшенная тактика нерегулярных войск"
  HOA_every_man_a_warrior_idea: "Каждый человек — воин"

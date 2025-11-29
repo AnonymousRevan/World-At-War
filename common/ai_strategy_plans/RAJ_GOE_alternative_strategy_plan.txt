@@ -165,6 +165,7 @@ RAJ_bose = {
 	}
 
 	ai_national_focuses = {		
+
 		#Early Rush
 		RAJ_local_recruitment_offices
 		RAJ_provincial_autonomy						
@@ -172,6 +173,7 @@ RAJ_bose = {
 		RAJ_uplifting_the_people_of_india
 		RAJ_tenancy_reforms
 		RAJ_debt_relief
+		
 		####
 		RAJ_league_against_gandhism
 		RAJ_forward_bloc

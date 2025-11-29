@@ -555,7 +555,7 @@
  GER_demand_communist_subjugation_decision: "Exigir la sumisión de [FROM.GetNameDef]"
  GER_proletarian_solidarity_decision: "Fomentar la solidaridad del proletariado en [FROM.GetNameDef]"
  GER_industrial_relocation_cat: "Traslado industrial"
- GER_industrial_relocation_catdesc: "A corto plazo, nuestro programa de traslado industrial a [SOV.GetNameDef] reducirá nuestra base industrial, pero las materias primas que obtendremos lo compensarán con creces y reforzarán nuestras cadenas de producción."
+ GER_industrial_relocation_cat_desc: "A corto plazo, nuestro programa de traslado industrial a [SOV.GetNameDef] reducirá nuestra base industrial, pero las materias primas que obtendremos lo compensarán con creces y reforzarán nuestras cadenas de producción."
  GER_currently_relocating_industry_flag: "Actualmente reubicando fábricas"
  GER_industrial_relocation_oil_decision: "Trasladar la industria del petróleo de [FROM.GetName] a [FROM.CONTROLLER.GetNameDef]"
  GER_industrial_relocation_tungsten_decision: "Trasladar la industria del tungsteno de [FROM.GetName] a [FROM.CONTROLLER.GetNameDef]"

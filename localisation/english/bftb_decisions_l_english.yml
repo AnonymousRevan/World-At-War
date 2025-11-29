@@ -37,7 +37,7 @@
  GRE_go_to_paris_to_negotiate_investment_talks:0 "Go to Paris to Negotiate Investment Talks"
  GRE_go_to_paris_to_negotiate_investment_talks_desc:0 "An audience with the right people in Paris where we can show off the vast potential of our people and manufacturing sector could yield considerable gains for our nation."
  GRE_hold_national_showcase_for_investors_fra:0 "Hold National Showcase for [FROM.GetAdjective] Investors"
- GRE_hold_national_showcase_for_investors_fra_desc:0 ""We shall hold a grand showcase here in the cradle of Western civilization in the hopes of luring investment into our impoverished industrial sector."
+ GRE_hold_national_showcase_for_investors_fra_desc:0 "We shall hold a grand showcase here in the cradle of Western civilization in the hopes of luring investment into our impoverished industrial sector."
  GRE_bribe_french_trade_unions_to_pressure_government_into_investment:0 "Bribe [FROM.GetAdjective] Trade Unions to Harass Their Government"
  GRE_bribe_french_trade_unions_to_pressure_government_into_investment_desc:0 "[FROM.GetNameDef] has been enslaved by their trade unions for quite a long time, so by helping the trade unions to forment instability we better our bargaining position by using blackmail."
  GRE_rebuke_french_investment:0 "Rebuke [FROM.GetAdjective] Investment"

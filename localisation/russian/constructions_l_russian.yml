@@ -108,6 +108,7 @@
  EQUIPMENT_CONVERSION_SPEED_MODIFIERS: "§HНа скорость конверсии влияет:§!"
  EQUIPMENT_CONVERSION_COST_MODIFIERS: "§HНа стоимость конверсии влияет:§!"
  INFRASTRUCTURE_COST_EFFECT: "£GFX_infrastructure_texticon Инфраструктура региона: ×$VAL|2H$"
+ LACK_OF_POWER_DESC: "Дефицит энергии: $VAL|R%$"
  CIC_BANK_HEADER: "Избыток объема производства"
  CIC_BANK_HIGHLIGHT: "§HИзбыток объема производства§!"
  CIC_BANK_DESC: "$CIC_BANK_HEADER$ включает в себя §Hпромышленный потенциал§!, создаваемый договорами на §Hмеждународном рынке§! или другими источниками. Он влияет на скорость строительства."

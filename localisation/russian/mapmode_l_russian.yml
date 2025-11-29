@@ -65,3 +65,5 @@
  MAPMODE_ALL_ENTRY_DETAILS: "§GЩелкните§!, чтобы выбрать.\n§GПравый щелчок§! — выбрать и закрыть."
  MAPMODE_TOOLTIP_INFRASTRUCTURE: "£infrastructure_texticon  Инфраструктура $INF|Y$"
  MAPMODE_TOOLTIP_MANPOWER: "£population_texticon  Население $MP|*Y$"
+ MAPMODE_DEBUG_NAVAL_ACCESSIBILITY: "Удерживайте §GALT§! для доступа к арсеналу подводных лодок.\nУдерживайте §GSHIFT§! для доступа к арсеналу надводных кораблей."
+ STRATEGIC_LOCATION_MAPICON: "§HСтратегические расположения§!"

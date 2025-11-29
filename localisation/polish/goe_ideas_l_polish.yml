@@ -137,7 +137,7 @@
  IRQ_ITA_attack_bonus: "Szkolenie antywłoskie"
  IRQ_generic_attack_bonus: "Szkolenie sojusznicze"
  IRQ_ENG_attack_bonus: "Szkolenie antybrytyjskie"
- IRQ_generic_attack_bonus_axis: "Szkolenie Osi"
+ IRQ_generic_attack_bonus_axis: "Szkolenie przez Oś"
  IRQ_USA_attack_bonus: "Szkolenie antyamerykańskie"
  IRQ_pan_arab_crackdown: "Atak na panarabizm"
  IRQ_pan_arab_crackdown_desc: "$IRQ_curtail_arabism_desc$"
@@ -165,7 +165,7 @@
  #### TRAITS ####
  ################
  museum_curator: "Kustosz muzeum"
- feminist_minister: "Feministyczny minister"
+ feminist_minister: "Feministyczna minister"
  dynasty_founder: "Założyciel dynastii"
  renaissance_man: "Człowiek renesansu"
  dynastic_reformer: "Dynastyczny reformator"

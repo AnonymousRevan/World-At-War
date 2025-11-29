@@ -618,7 +618,7 @@ reintegrate_posen_west_prussia: "Reintegrate Posen-Westpreußen"
  GER_proletarian_solidarity_decision: "Encourage Proletarian Solidarity in [FROM.GetNameDef]"
 
  GER_industrial_relocation_cat: "Industrial Relocation"
- GER_industrial_relocation_catdesc: "Our Industrial Relocation Program with [SOV.GetNameDef] might see our industrial basis shrink in the short term, but the raw resources we will gain will more than make up for it and bolster our production lines."
+ GER_industrial_relocation_cat_desc: "Our Industrial Relocation Program with [SOV.GetNameDef] might see our industrial basis shrink in the short term, but the raw resources we will gain will more than make up for it and bolster our production lines."
  GER_currently_relocating_industry_flag: " Currently Relocating Factories"
  GER_industrial_relocation_oil_decision: "Relocate Industry to [FROM.CONTROLLER.GetNameDef] for Oil from [FROM.GetName]"
  GER_industrial_relocation_tungsten_decision: "Relocate Industry to [FROM.CONTROLLER.GetNameDef] for Tungsten from [FROM.GetName]"

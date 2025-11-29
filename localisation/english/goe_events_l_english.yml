@@ -801,7 +801,7 @@
  GOE_RAJ_loyalist.06.desc: "With the establishment of the South East Asia Command, we now stand at a crossroads. We have a limited number of resources that we can dedicate to this operation, and we must decide what we should focus on to support the war effort in tandem with [ENG.GetNameDef]."
  GOE_RAJ_loyalist.06.a: "We must bolster our defense funding."
  GOE_RAJ_loyalist.06.b: "We should focus on our offensive capabilities."
- GOE_RAJ_loyalist.06.c: "The [RAJ.GetAdjective] airforce needs support."
+ GOE_RAJ_loyalist.06.c: "The [RAJ.GetAdjective] air force needs support."
  GOE_RAJ_loyalist.06.d: "Let us upscale our naval operations."
  GOE_RAJ_loyalist.07.t: "The Defense of Malaya"
  GOE_RAJ_loyalist.07.desc: "In the name of protection, [FROM.GetNameDefCap] proposes to put [event_target:RAJ.RAJ_annexing_country_target.GetName] under [FROM.GetAdjective] administration to ensure the development of its defenses. Whilst this scenario may not be ideal in terms of our sovereignty, we can only assume that this is a temporary measure. Or at least, we hope."

@@ -47,3 +47,6 @@
  ABILITY_ON_DAILY: "每日中："
  ABILITY_QUININE: "分发奎宁"
  ABILITY_QUININE_DESC: "为部队提供奎宁和额外的补给。"
+ ABILITY_CHI_force_attack_no_entrenchment_loss: "$ABILITY_FORCE_ATTACK$"
+ ABILITY_CHI_force_attack_no_entrenchment_loss_TOOLTIP: "强行进攻（$LEADER$）"
+ ABILITY_CHI_force_attack_no_entrenchment_loss_TOOLTIP_DESC: "你的军队将在付出一定不利代价的情况下获得进攻加成。"

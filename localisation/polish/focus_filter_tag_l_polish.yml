@@ -1,6 +1,6 @@
 ﻿l_polish:
  FOCUS_ALTERNATE_ICONS: "§0Alternatywne ikony§!"
- FOCUS_FILTER_POLITICAL: "£pol_power£Polit."
+ FOCUS_FILTER_POLITICAL: "Polityka"
  FOCUS_FILTER_RESEARCH: "£research_icon£Badania"
  FOCUS_FILTER_INDUSTRY: "£industry_texticon£Przemysł"
  FOCUS_FILTER_STABILITY: "£stability_icon£Stabilność"
@@ -35,3 +35,5 @@
  FOCUS_FILTER_FOLKHEMMET: "Folkhemmet"
  FOCUS_FILTER_HISTORICAL: "Historycznie"
  FOCUS_FILTER_INNER_CIRCLE: "Wewnętrzny krąg"
+ FOCUS_FILTER_IMPERIAL_INFLUENCE: "Wpływy cesarskie"
+ FOCUS_FILTER_COMPLETED_BY_EVENT: "Ukończone dzięki wydarzeniom"

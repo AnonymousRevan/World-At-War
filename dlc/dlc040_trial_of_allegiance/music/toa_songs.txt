@@ -7,8 +7,19 @@ music = {
 	chance = { 
 		factor = 1 
 		modifier = {
-			factor = 2
+			factor = 1.25
 			tag = ARG
+		}
+		modifier = {
+			factor = 0.05
+			should_play_south_american_music = no
+		}
+		modifier = {
+			factor = 3
+			should_play_south_american_music = no
+			any_enemy_country = {
+				should_play_south_american_music = yes
+			}
 		}
 	}
 }
@@ -18,12 +29,19 @@ music = {
 	chance = { 
 		factor = 1 
 		modifier = {
-			factor = 2
+			factor = 1.25
 			tag = ARG
 		}
 		modifier = {
+			factor = 0.05
+			should_play_south_american_music = no
+		}
+		modifier = {
 			factor = 3
-			has_war = yes
+			should_play_south_american_music = no
+			any_enemy_country = {
+				should_play_south_american_music = yes
+			}
 		}
 	}
 }
@@ -35,8 +53,23 @@ music = {
 	chance = { 
 		factor = 1 
 		modifier = {
-			factor = 2
+			factor = 1.25
 			tag = BRA
+		}
+		modifier = {
+			factor = 0.05
+			should_play_south_american_music = no
+		}
+		modifier = {
+			factor = 3
+			should_play_south_american_music = no
+			any_enemy_country = {
+				should_play_south_american_music = yes
+			}
+		}
+		modifier = {
+			factor = 1.5
+			tag = POR
 		}
 	}
 }
@@ -46,12 +79,23 @@ music = {
 	chance = { 
 		factor = 1 
 		modifier = {
-			factor = 2
+			factor = 1.25
 			tag = BRA
 		}
 		modifier = {
-			factor = 3
+			factor = 1.5
 			has_war = yes
+		}
+		modifier = {
+			factor = 0.05
+			should_play_south_american_music = no
+		}
+		modifier = {
+			factor = 3
+			should_play_south_american_music = no
+			any_enemy_country = {
+				should_play_south_american_music = yes
+			}
 		}
 	}
 }
@@ -61,10 +105,21 @@ music = {
 music = {
 	song = "chile_civilian"
 	chance = { 
-		factor = 1 
+		factor = 1
 		modifier = {
-			factor = 2
+			factor = 1.25
 			tag = CHL
+		}
+		modifier = {
+			factor = 0.05
+			should_play_south_american_music = no
+		}
+		modifier = {
+			factor = 3
+			should_play_south_american_music = no
+			any_enemy_country = {
+				should_play_south_american_music = yes
+			}
 		}
 	}
 }
@@ -74,12 +129,23 @@ music = {
 	chance = { 
 		factor = 1 
 		modifier = {
-			factor = 2
+			factor = 1.25
 			tag = CHL
 		}
 		modifier = {
-			factor = 3
+			factor = 1.5
 			has_war = yes
+		}
+		modifier = {
+			factor = 0.05
+			should_play_south_american_music = no
+		}
+		modifier = {
+			factor = 3
+			should_play_south_american_music = no
+			any_enemy_country = {
+				should_play_south_american_music = yes
+			}
 		}
 	}
 }

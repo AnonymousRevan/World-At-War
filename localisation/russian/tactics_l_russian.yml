@@ -56,3 +56,4 @@
  has_flame_tank_units: "Есть огнеметный танк"
  tactic_sf_fortify: "Заблаговременная оборона"
  tactic_sf_ambush: "Тактика городских засад"
+ tactic_grand_banzai_charge: "Мощная отчаянная атака"

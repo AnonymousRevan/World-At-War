@@ -2811,7 +2811,7 @@
  GER_reverse_the_brain_drain_ww_desc: "$GER_reverse_the_brain_drain_desc$"
  GER_shared_rd_programs_ww: "$GER_shared_rd_programs$"
  GER_shared_rd_programs_ww_desc: "$GER_shared_rd_programs_desc$"
- GER_shared_rd_programs_ww_tt: "Le bonus de vitesse de recherche de §Y$GER_rnd_programs_modifier$§! augmente de §G1%§! pour chaque nouveau membre de la faction (max §G10%§!)"
+ GER_shared_rd_programs_ww_tt: "Le bonus de vitesse de recherche de §Y$GER_rnd_programs_modifier$§! augmente de §G+1%§! pour chaque nouveau membre de la faction (max §G+10%§!)"
  GER_shared_rd_programs_2_tt: "Chaque §Ynation§! membre de notre §Yfaction§! rejoindra également le §Ygroupe de partage technologique d'Europe centrale§!."
  GER_pool_technical_know_how_ww: "$GER_pool_technical_know_how$"
  GER_pool_technical_know_how_ww_desc: "$GER_pool_technical_know_how_desc$"

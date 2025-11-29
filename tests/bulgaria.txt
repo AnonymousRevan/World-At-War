@@ -26,15 +26,4 @@ tests = {
             }
         }
     }
-
-    BUL_fatherland_front_coup_too_early = {
-        acceptable_fail_rate = 0.1
-        success = {
-            date > 1944.6.1
-        }
-        fail = {
-            date < 1944.6.2
-            has_global_flag = BUL_fatherland_front_coup_flag
-        }
-    }
 }

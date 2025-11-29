@@ -1,0 +1,41 @@
+last_date = 1948.1.1
+
+tests = {
+    
+    Manila_didnt_fall_by_July_1942 = {
+        acceptable_fail_rate = 0.1
+
+        success = {
+            date > 1942.7.1 
+            327 = {
+                controller = {
+                    NOT = {
+                        original_tag = PHI
+                    }
+                }
+            }
+        }
+
+        fail = {
+            date > 1942.7.1 
+            327 = {
+                controller = {
+                    original_tag = PHI
+                }
+            } 
+        } 
+    }
+
+    PHI_have_not_capitulated_by_1943 = {
+        acceptable_fail_rate = 0.3
+
+        success = {
+            date < 1943.1.1
+                PHI = { has_capitulated = yes }  
+        }
+
+        fail = {
+            date > 1943.1.1
+        }
+    }
+}

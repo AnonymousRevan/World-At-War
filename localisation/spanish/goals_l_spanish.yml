@@ -70,7 +70,7 @@
  south_pacific_mandate_SUCCEEDED_DESC: "Nuestros ingenieros han fortificado nuestras islas del Mandato del Pacífico Sur. Los atacantes lo tendrán complicado para expulsar a nuestras fuerzas."
  demand_indochina_focus: "Exigir la Indochina francesa"
  demand_indochina_focus_desc: "Tras caer derrotada en Europa, el dominio de Francia sobre sus colonias de ultramar es débil en el mejor de los casos. Presiona al nuevo gobierno francés para que conceda a Japón pleno acceso a sus bases en Indochina. Esta región servirá de trampolín para futuras campañas."
- demand_indochina_focus_tt: "Francia tiene Indochina."
+ demand_indochina_focus_tt: "Francia tiene §YIndochina§!."
  demand_indochina_focus_short_desc: "§LPresiona al nuevo gobierno francés para que ceda Indochina.§!"
  demand_french_indochina_SUCCEEDED: "Exigencias enviadas"
  demand_french_indochina_SUCCEEDED_DESC: "Nuestras fuerzas están colocadas en las fronteras de la Indochina francesa para dejar claro que las consecuencias de rechazar nuestra propuesta serán graves."

@@ -12,8 +12,6 @@ objectTypes = {
 		animation = { id = "attack"			type = "AFG_light_armor_0_attack_animation" }
 		animation = { id = "idle"			type = "AFG_light_armor_0_idle_animation" }
 		animation = { id = "move"			type = "AFG_light_armor_0_moving_animation" }
-		
-		scale = 0.6
 
 		meshsettings = {
 			name = "AFG_light_armor_0Shape"

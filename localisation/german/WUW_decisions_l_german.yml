@@ -555,7 +555,7 @@
  GER_demand_communist_subjugation_decision: "Die Unterwerfung von [FROM.GetName] fordern"
  GER_proletarian_solidarity_decision: "Zur Solidarität innerhalb des Proletariats von [FROM.GetName] aufrufen"
  GER_industrial_relocation_cat: "Verlagerung der Industrie"
- GER_industrial_relocation_catdesc: "Unser Programm zur Verlagerung der Industrie, das wir mit der [SOV.GetAdjective]en Regierung aufgesetzt haben, könnte kurzfristig unsere industrielle Basis verkleinern, aber die gewonnenen Rohstoffe werden dies mehr als ausgleichen und unseren Produktionsanlagen langfristig sehr zugutekommen."
+ GER_industrial_relocation_cat_desc: "Unser Programm zur Verlagerung der Industrie, das wir mit der [SOV.GetAdjective]en Regierung aufgesetzt haben, könnte kurzfristig unsere industrielle Basis verkleinern, aber die gewonnenen Rohstoffe werden dies mehr als ausgleichen und unseren Produktionsanlagen langfristig sehr zugutekommen."
  GER_currently_relocating_industry_flag: " Verlagert derzeit Fabriken"
  GER_industrial_relocation_oil_decision: "Die Ölindustrie von [FROM.GetName] nach [FROM.CONTROLLER.GetName] verlegen"
  GER_industrial_relocation_tungsten_decision: "Die Wolframindustrie von [FROM.GetName] nach [FROM.CONTROLLER.GetName] verlegen"

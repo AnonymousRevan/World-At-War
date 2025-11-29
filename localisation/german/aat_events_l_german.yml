@@ -741,7 +741,7 @@
  AAT_Sweden_flashpoints.82.a: "Notwendige Kosten."
  AAT_Sweden_flashpoints.83.t: "[SWE.GetNameDefCap] lehnt ab"
  AAT_Sweden_flashpoints.83.desc: "[SWE.GetNameDefCap] hat beschlossen, dass man nicht bereit ist, so viel von den eigenen Goldreserven für die Übertragung der Åland-Inseln auszugeben."
- AAT_Sweden_flashpoints.83.a: "[SWE.GetNameDefCap] möchte es scheinbar nicht genug."
+ AAT_Sweden_flashpoints.83.a: "Dann wollen sie es scheinbar nicht genug."
  AAT_Sweden_BoP.10.t: "Wahlkampf: Wirtschaftspolitik"
  AAT_Sweden_BoP.10.desc: "Die Wahlsaison hat wieder einmal begonnen, und die Parteien konkurrieren um die Kontrolle über den Riksdag. Das Hauptthema, das dieses Mal die Aufmerksamkeit der Wählerschaft auf sich gezogen zu haben scheint, ist die Wirtschaft. Während die einen für die Fortsetzung der derzeitigen Politik plädieren, wollen andere einen radikalen Wandel, doch nur eine Option scheint in dieser Frage gewinnen zu können."
  AAT_Sweden_BoP.10.a: "Die Wirtschaft muss von der und für die Arbeiterklasse gelenkt werden."
@@ -1321,7 +1321,7 @@
  denmark_protection_event.201.t: "Marinedrill"
  denmark_protection_event.201.desc: "Im Angesicht des bevorstehenden Krieges ist es wichtig, die Marine auf alle Eventualitäten vorzubereiten. Indem wir die Ausbildung fördern, werden unsere Seeleute mehr als nur bereit sein, die [DEN.GetAdjective]en Gewässer zu verteidigen, wann immer dies erforderlich ist."
  denmark_protection_event.201.a: "Dejligt!"
- denmark_protection_event.202.t: "Luftwaffendrill"
+ denmark_protection_event.202.t: "Luftwaffenübungen"
  denmark_protection_event.202.desc: "Im Angesicht des bevorstehenden Krieges ist es wichtig, die Luftwaffe auf alle Eventualitäten vorzubereiten. Indem wir die Ausbildung fördern, werden unsere Piloten mehr als nur bereit sein, den [DEN.GetAdjective]en Luftraum zu verteidigen, wann immer dies erforderlich ist."
  denmark_protection_event.202.a: "Dejligt!"
  #Conquest Events

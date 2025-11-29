@@ -150,7 +150,7 @@
 		
 		attach = { 	name = "infantry_unit"			Saddle_Node = "CHI_infantry_2_rider_entity" }
 		
-		
+		scale = 0.65
 	}
 
 	
@@ -306,7 +306,7 @@
 		
 		attach = { 	name = "infantry_unit"			Saddle_Node = "PRC_infantry_2_rider_entity" }
 
-		
+		scale = 0.65
 	}
 	
 ############
@@ -461,7 +461,7 @@
 		
 		attach = { 	name = "infantry_unit"			Saddle_Node = "GXC_infantry_2_rider_entity" }
 		
-		
+		scale = 0.65
 	}
 	
 
@@ -775,8 +775,9 @@
 		
 		attach = { 	name = "infantry_unit"			Saddle_Node = "XSM_infantry_2_rider_entity" }
 		
-		
+		scale = 0.65
 	}
+
 
 ############
 #
@@ -931,6 +932,632 @@
 		
 		attach = { 	name = "infantry_unit"			Saddle_Node = "YUN_infantry_2_rider_entity" }
 		
+		scale = 0.65
+	}
+
+	##############################################
+	#####  GSM CAVALRY                       #####
+	##############################################
+
+	########## RIFLE ##########
+		
+	entity = {
+		clone = "XSM_infantry_rider_entity"
+		name = "GSM_infantry_rider_entity"
+		pdxmesh = "GSM_cavalry_mesh"	
+	}
+
+	entity = {
+		clone = "XSM_cavalry_rifle_combined_entity"
+		name = "GSM_cavalry_rifle_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "GSM_infantry_rider_entity" }
 		
 	}
+
+	entity = {
+		clone = "XSM_cavalry_entity"
+		name = "GSM_cavalry_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "GSM_infantry_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "GSM_cavalry_rifle_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+		
+	########## MG ##########
+		
+	entity = {
+		clone = "XSM_infantry_2_rider_entity"
+		name = "GSM_infantry_mg_rider_entity"
+		pdxmesh = "GSM_cavalry_2_mesh"				
+	}
+
+	entity = {
+		clone = "XSM_cavalry_2_combined_entity"
+		name = "GSM_cavalry_mg_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "GSM_infantry_mg_rider_entity" }
+	}
+
+	entity = {
+		clone = "XSM_cavalry_2_entity"
+		name = "GSM_cavalry_2_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "GSM_infantry_mg_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "GSM_cavalry_mg_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+
+	entity = { #This is necessary otherwise the latest infantry tech will make the 3D model to go back to rifle
+		clone = "GSM_cavalry_2_entity"
+		name = "GSM_cavalry_3_entity"
+	}
+
+	##############################################
+	#####  NXM CAVALRY                       #####
+	##############################################
+
+	########## RIFLE ##########
+		
+	entity = {
+		clone = "XSM_infantry_rider_entity"
+		name = "NXM_infantry_rider_entity"
+		pdxmesh = "NXM_cavalry_mesh"					
+	}
+
+	entity = {
+		clone = "XSM_cavalry_rifle_combined_entity"
+		name = "NXM_cavalry_rifle_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "NXM_infantry_rider_entity" }
+		
+	}
+
+	entity = {
+		clone = "XSM_cavalry_entity"
+		name = "NXM_cavalry_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "NXM_infantry_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "NXM_cavalry_rifle_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+		
+	########## MG ##########
+		
+	entity = {
+		clone = "XSM_infantry_2_rider_entity"
+		name = "NXM_infantry_mg_rider_entity"
+		pdxmesh = "NXM_cavalry_2_mesh"						
+	}
+
+	entity = {
+		clone = "XSM_cavalry_2_combined_entity"
+		name = "NXM_cavalry_mg_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "NXM_infantry_mg_rider_entity" }
+	}
+
+	entity = {
+		clone = "XSM_cavalry_2_entity"
+		name = "NXM_cavalry_2_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "NXM_infantry_mg_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "NXM_cavalry_mg_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+
+	entity = { #This is necessary otherwise the latest infantry tech will make the 3D model to go back to rifle
+		clone = "NXM_cavalry_2_entity"
+		name = "NXM_cavalry_3_entity"
+	}
+
+	##############################################
+	#####  KHM CAVALRY                       #####
+	##############################################
+
+	########## RIFLE ##########
+		
+	entity = {
+		clone = "XSM_infantry_rider_entity"
+		name = "KHM_infantry_rider_entity"
+		pdxmesh = "KHM_cavalry_mesh"			
+	}
+
+	entity = {
+		clone = "XSM_cavalry_rifle_combined_entity"
+		name = "KHM_cavalry_rifle_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "KHM_infantry_rider_entity" }
+		
+	}
+
+	entity = {
+		clone = "XSM_cavalry_entity"
+		name = "KHM_cavalry_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "KHM_infantry_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "KHM_cavalry_rifle_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+		
+	########## MG ##########
+		
+	entity = {
+		clone = "XSM_infantry_2_rider_entity"
+		name = "KHM_infantry_mg_rider_entity"
+		pdxmesh = "KHM_cavalry_2_mesh"					
+	}
+
+	entity = {
+		clone = "XSM_cavalry_2_combined_entity"
+		name = "KHM_cavalry_mg_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "KHM_infantry_mg_rider_entity" }
+	}
+
+	entity = {
+		clone = "XSM_cavalry_2_entity"
+		name = "KHM_cavalry_2_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "KHM_infantry_mg_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "KHM_cavalry_mg_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+
+	entity = { #This is necessary otherwise the latest infantry tech will make the 3D model to go back to rifle
+		clone = "KHM_cavalry_2_entity"
+		name = "KHM_cavalry_3_entity"
+	}
+
+
+############
+#
+#
+# Hebei–Chahar
+#
+#
+############
+
+	########## RIFLE ##########
+		
+	entity = {
+		clone = "SHX_infantry_rider_entity"
+		name = "HBC_infantry_rider_entity"
+		pdxmesh = "HBC_cavalry_mesh"			
+	}
+
+	entity = {
+		clone = "SHX_cavalry_rifle_combined_entity"
+		name = "HBC_cavalry_rifle_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "HBC_infantry_rider_entity" }
+		
+	}
+
+	entity = {
+		clone = "SHX_cavalry_entity"
+		name = "HBC_cavalry_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "HBC_infantry_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "HBC_cavalry_rifle_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+		
+	########## MG ##########
+		
+	entity = {
+		clone = "SHX_infantry_2_rider_entity"
+		name = "HBC_infantry_mg_rider_entity"
+		pdxmesh = "HBC_cavalry_2_mesh"					
+	}
+
+	entity = {
+		clone = "SHX_cavalry_2_combined_entity"
+		name = "HBC_cavalry_mg_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "HBC_infantry_mg_rider_entity" }
+	}
+
+	entity = {
+		clone = "SHX_cavalry_2_entity"
+		name = "HBC_cavalry_2_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "HBC_infantry_mg_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "HBC_cavalry_mg_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+
+	entity = { #This is necessary otherwise the latest infantry tech will make the 3D model to go back to rifle
+		clone = "HBC_cavalry_2_entity"
+		name = "HBC_cavalry_3_entity"
+	}
+
+	############
+	#
+	#
+	# SND
+	#
+	#
+	############
+
+		########## RIFLE ##########
+			
+		entity = {
+			clone = "SHX_infantry_rider_entity"
+			name = "SND_infantry_rider_entity"
+			pdxmesh = "SND_cavalry_mesh"			
+		}
+
+		entity = {
+			clone = "SHX_cavalry_rifle_combined_entity"
+			name = "SND_cavalry_rifle_combined_entity"
+			pdxmesh = "infantry_cavalry_horse_mesh"		
+			
+			attach = { 	name = "infantry_unit"			Saddle_Node = "SND_infantry_rider_entity" }
+			
+		}
+
+		entity = {
+			clone = "SHX_cavalry_entity"
+			name = "SND_cavalry_entity"
+			pdxmesh = "infantry_cavalry_horse_frame_mesh"
+			attach = { 	name = "infantry"			infantry = "SND_infantry_rider_entity" }
+			attach = { 	name = "cavalry"			cavalry = "SND_cavalry_rifle_combined_entity" }
+			attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+		}
+			
+		########## MG ##########
+			
+		entity = {
+			clone = "SHX_infantry_2_rider_entity"
+			name = "SND_infantry_mg_rider_entity"
+			pdxmesh = "SND_cavalry_2_mesh"					
+		}
+
+		entity = {
+			clone = "SHX_cavalry_2_combined_entity"
+			name = "SND_cavalry_mg_combined_entity"
+			pdxmesh = "infantry_cavalry_horse_mesh"		
+			
+			attach = { 	name = "infantry_unit"			Saddle_Node = "SND_infantry_mg_rider_entity" }
+		}
+
+		entity = {
+			clone = "SHX_cavalry_2_entity"
+			name = "SND_cavalry_2_entity"
+			pdxmesh = "infantry_cavalry_horse_frame_mesh"
+			attach = { 	name = "infantry"			infantry = "SND_infantry_mg_rider_entity" }
+			attach = { 	name = "cavalry"			cavalry = "SND_cavalry_mg_combined_entity" }
+			attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+		}
+
+		entity = { #This is necessary otherwise the latest infantry tech will make the 3D model to go back to rifle
+			clone = "SND_cavalry_2_entity"
+			name = "SND_cavalry_3_entity"
+		}
+
+############
+#
+#
+# Xinjiang clique
+#
+#
+############
+
+	########## RIFLE ##########
+		
+	entity = {
+		clone = "SHX_infantry_rider_entity"
+		name = "XIC_infantry_rider_entity"
+		pdxmesh = "XIC_cavalry_mesh"			
+	}
+
+	entity = {
+		clone = "SHX_cavalry_rifle_combined_entity"
+		name = "XIC_cavalry_rifle_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "XIC_infantry_rider_entity" }
+		
+	}
+
+	entity = {
+		clone = "SHX_cavalry_entity"
+		name = "XIC_cavalry_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "XIC_infantry_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "XIC_cavalry_rifle_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+		
+	########## MG ##########
+		
+	entity = {
+		clone = "SHX_infantry_2_rider_entity"
+		name = "XIC_infantry_mg_rider_entity"
+		pdxmesh = "XIC_cavalry_2_mesh"					
+	}
+
+	entity = {
+		clone = "SHX_cavalry_2_combined_entity"
+		name = "XIC_cavalry_mg_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "XIC_infantry_mg_rider_entity" }
+	}
+
+	entity = {
+		clone = "SHX_cavalry_2_entity"
+		name = "XIC_cavalry_2_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "XIC_infantry_mg_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "XIC_cavalry_mg_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+
+	entity = { #This is necessary otherwise the latest infantry tech will make the 3D model to go back to rifle
+		clone = "XIC_cavalry_2_entity"
+		name = "XIC_cavalry_3_entity"
+	}
+
+############
+#
+#
+# GDC
+#
+#
+############
+
+	########## RIFLE ##########
+		
+	entity = {
+		clone = "GXC_infantry_rider_entity"
+		name = "GDC_infantry_rider_entity"
+		pdxmesh = "GDC_cavalry_mesh"			
+	}
+
+	entity = {
+		clone = "GXC_cavalry_rifle_combined_entity"
+		name = "GDC_cavalry_rifle_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "GDC_infantry_rider_entity" }
+		
+	}
+
+	entity = {
+		clone = "GXC_cavalry_entity"
+		name = "GDC_cavalry_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "GDC_infantry_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "GDC_cavalry_rifle_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+		
+	########## MG ##########
+		
+	entity = {
+		clone = "GXC_infantry_2_rider_entity"
+		name = "GDC_infantry_mg_rider_entity"
+		pdxmesh = "GDC_cavalry_2_mesh"					
+	}
+
+	entity = {
+		clone = "GXC_cavalry_2_combined_entity"
+		name = "GDC_cavalry_mg_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "GDC_infantry_mg_rider_entity" }
+	}
+
+	entity = {
+		clone = "GXC_cavalry_2_entity"
+		name = "GDC_cavalry_2_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "GDC_infantry_mg_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "GDC_cavalry_mg_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+
+	entity = { #This is necessary otherwise the latest infantry tech will make the 3D model to go back to rifle
+		clone = "GDC_cavalry_2_entity"
+		name = "GDC_cavalry_3_entity"
+	}
+
+############
+#
+#
+# SIC
+#
+#
+############
+
+	########## RIFLE ##########
+		
+	entity = {
+		clone = "YUN_infantry_rider_entity"
+		name = "SIC_infantry_rider_entity"
+		pdxmesh = "SIC_cavalry_mesh"			
+	}
+
+	entity = {
+		clone = "YUN_cavalry_rifle_combined_entity"
+		name = "SIC_cavalry_rifle_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "SIC_infantry_rider_entity" }
+		
+	}
+
+	entity = {
+		clone = "YUN_cavalry_entity"
+		name = "SIC_cavalry_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "SIC_infantry_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "SIC_cavalry_rifle_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+		
+	########## MG ##########
+		
+	entity = {
+		clone = "YUN_infantry_2_rider_entity"
+		name = "SIC_infantry_mg_rider_entity"
+		pdxmesh = "SIC_cavalry_2_mesh"					
+	}
+
+	entity = {
+		clone = "YUN_cavalry_2_combined_entity"
+		name = "SIC_cavalry_mg_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "SIC_infantry_mg_rider_entity" }
+	}
+
+	entity = {
+		clone = "YUN_cavalry_2_entity"
+		name = "SIC_cavalry_2_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "SIC_infantry_mg_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "SIC_cavalry_mg_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+
+	entity = { #This is necessary otherwise the latest infantry tech will make the 3D model to go back to rifle
+		clone = "SIC_cavalry_2_entity"
+		name = "SIC_cavalry_3_entity"
+	}
+
+############
+#
+#
+# SIK
+#
+#
+############
+
+	########## RIFLE ##########
+		
+	entity = {
+		clone = "YUN_infantry_rider_entity"
+		name = "SIK_infantry_rider_entity"
+		pdxmesh = "SIK_cavalry_2_mesh"			
+	}
+
+	entity = {
+		clone = "YUN_cavalry_rifle_combined_entity"
+		name = "SIK_cavalry_rifle_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "SIK_infantry_rider_entity" }
+		
+	}
+
+	entity = {
+		clone = "YUN_cavalry_entity"
+		name = "SIK_cavalry_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "SIK_infantry_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "SIK_cavalry_rifle_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+		
+	########## MG ##########
+		
+	entity = {
+		clone = "YUN_infantry_2_rider_entity"
+		name = "SIK_infantry_mg_rider_entity"
+		pdxmesh = "SIK_cavalry_2_mesh"					
+	}
+
+	entity = {
+		clone = "YUN_cavalry_2_combined_entity"
+		name = "SIK_cavalry_mg_combined_entity"
+		pdxmesh = "infantry_cavalry_horse_mesh"		
+		
+		attach = { 	name = "infantry_unit"			Saddle_Node = "SIK_infantry_mg_rider_entity" }
+	}
+
+	entity = {
+		clone = "YUN_cavalry_2_entity"
+		name = "SIK_cavalry_2_entity"
+		pdxmesh = "infantry_cavalry_horse_frame_mesh"
+		attach = { 	name = "infantry"			infantry = "SIK_infantry_mg_rider_entity" }
+		attach = { 	name = "cavalry"			cavalry = "SIK_cavalry_mg_combined_entity" }
+		attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+	}
+
+	entity = { #This is necessary otherwise the latest infantry tech will make the 3D model to go back to rifle
+		clone = "SIK_cavalry_2_entity"
+		name = "SIK_cavalry_3_entity"
+	}
+
+
+
+#SNOW VERSION
+	########## RIFLE ##########
+		
+		entity = {
+			clone = "YUN_infantry_rider_entity"
+			name = "SIK_infantry_rider_entity_snow"
+			pdxmesh = "SIK_infantry_rifle_snow_mesh" 				
+		}
+	
+		entity = {
+			clone = "YUN_cavalry_rifle_combined_entity"
+			name = "SIK_cavalry_rifle_combined_entity_snow"
+			pdxmesh = "infantry_cavalry_horse_mesh"		
+			
+			attach = { 	name = "infantry_unit"			Saddle_Node = "SIK_infantry_rider_entity_snow" }
+			
+		}
+	
+		entity = {
+			clone = "YUN_cavalry_entity"
+			name = "SIK_cavalry_entity_snow"
+			pdxmesh = "infantry_cavalry_horse_frame_mesh"
+	
+			attach = { 	name = "infantry"			infantry = "SIK_infantry_rider_entity_snow" }
+			attach = { 	name = "cavalry"			cavalry = "SIK_cavalry_rifle_combined_entity_snow" }
+			attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+		}
+		
+	########## MG ##########
+		
+		entity = {
+			clone = "YUN_infantry_2_rider_entity"
+			name = "SIK_infantry_mg_rider_entity_snow"
+			pdxmesh = "SIK_infantry_mg_snow_mesh"					
+		}
+	
+		entity = {
+			clone = "YUN_cavalry_2_combined_entity"
+			name = "SIK_cavalry_mg_combined_entity_snow"
+			pdxmesh = "infantry_cavalry_horse_mesh"		
+			
+			attach = { 	name = "infantry_unit"			Saddle_Node = "SIK_infantry_mg_rider_entity_snow" }
+		}
+	
+		entity = {
+			clone = "YUN_cavalry_2_entity"
+			name = "SIK_cavalry_2_entity_snow"
+			pdxmesh = "infantry_cavalry_horse_frame_mesh"
+	
+			attach = { 	name = "infantry"			infantry = "SIK_infantry_mg_rider_entity_snow" }
+			attach = { 	name = "cavalry"			cavalry = "SIK_cavalry_mg_combined_entity_snow" }
+			attach = { 	name = "horse"				horse = "infantry_cavalry_horse_entity" }
+		}
+	
+		entity = { #This is necessary otherwise the latest infantry tech will make the 3D model to go back to rifle
+			clone = "SIK_cavalry_2_entity_snow"
+			name = "SIK_cavalry_3_entity_snow"
+		}
 	

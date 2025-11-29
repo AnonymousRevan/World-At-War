@@ -1510,9 +1510,13 @@ spriteTypes = {
 
 
 
-###############
-##### TOA #####
-###############
+########  #######     ###    
+   ##    ##     ##   ## ##   
+   ##    ##     ##  ##   ##  
+   ##    ##     ## ##     ## 
+   ##    ##     ## ######### 
+   ##    ##     ## ##     ## 
+   ##     #######  ##     ## 
 
 
 
@@ -1579,9 +1583,16 @@ spriteTypes = {
 
 
 
-###############
-##### GTD #####
-###############
+ ######   ######## ########  
+##    ##     ##    ##     ## 
+##           ##    ##     ## 
+##   ####    ##    ##     ## 
+##    ##     ##    ##     ## 
+##    ##     ##    ##     ## 
+ ######      ##    ########  
+
+
+
 
 	SpriteType = {
 		name = "GFX_portrait_AUS_erwin_von_lahousen"
@@ -1647,6 +1658,40 @@ spriteTypes = {
 		name = "GFX_portrait_FRA_marcel_deat"
 		texturefile = "gfx/leaders/FRA/portrait_FRA_marcel_deat.dds"
 	}
+
+
+
+
+ ######  ########    ###    
+##    ## ##         ## ##   
+##       ##        ##   ##  
+ ######  ######   ##     ## 
+      ## ##       ######### 
+##    ## ##       ##     ## 
+ ######  ######## ##     ## 
+
+
+	SpriteType = {
+		name = "GFX_portrait_JAP_yoshio_kodama_operative"
+		texturefile = "gfx/leaders/JAP/portrait_JAP_yoshio_kodama_operative.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRC_li_kenong"
+		texturefile = "gfx/leaders/PRC/portrait_PRC_li_kenong.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRC_xiong_xianghui"
+		texturefile = "gfx/leaders/PRC/portrait_PRC_xiong_xianghui.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CHI_zheng_pingru"
+		texturefile = "gfx/leaders/PRC/portrait_CHI_zheng_pingru.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CHI_xu_lai"
+		texturefile = "gfx/leaders/CHI/portrait_CHI_xu_lai.dds"
+	}
+
 
 }
 

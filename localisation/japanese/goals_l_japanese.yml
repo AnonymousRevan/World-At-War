@@ -70,7 +70,7 @@
  south_pacific_mandate_SUCCEEDED_DESC: "我々の工兵は南洋委任統治領を要塞化した。我が軍を追い払うことがいかに困難であるかは誰の目にも明らかだ。"
  demand_indochina_focus: "仏領インドシナの要求"
  demand_indochina_focus_desc: "フランスの欧州での敗北後、フランスの海外植民地は支配が弱まっている。インドシナの統治を日本に譲るようフランスの新政府に圧力をかける。この地域は今後の作戦の踏み台として役に立つだろう。"
- demand_indochina_focus_tt: "フランスがインドシナを領有している。"
+ demand_indochina_focus_tt: "フランスが§Yインドシナ§!を領有"
  demand_indochina_focus_short_desc: "§Lフランスの新政府にインドシナの支配を手放すよう圧力をかけよ。§!"
  demand_french_indochina_SUCCEEDED: "要求の通達"
  demand_french_indochina_SUCCEEDED_DESC: "我々の軍隊が仏領インドシナの国境に沿って配置された。このことは我々の提案を拒否すれば深刻な結果が待ち受けることを示すこととなる。"

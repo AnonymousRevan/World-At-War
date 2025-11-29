@@ -552,6 +552,38 @@ spanish_civil_war_SOV_resistance = {
 	}
 }
 
+manchukuo_soviet_aid = {
+	allowed = {
+		original_tag = SOV
+		has_dlc = "No Compromise, No Surrender"
+	}
+	enable = {
+		has_government = communism
+		country_exists = MAN
+		MAN = {
+			has_completed_focus = MAN_tsr_soviet_aid
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = befriend
+		id = MAN
+		value = 100
+	}
+	ai_strategy = {
+		type = support
+		id = MAN
+		value = 100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = MAN
+		value = 100
+	}
+}
+
+
+
 SOV_template_design_1 = {
 	allowed = {
 		original_tag = SOV
@@ -952,6 +984,71 @@ SOV_dont_send_volunteers_that_early_to_china = {
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = "PRC"
+		value = -800
+	}
+}
+
+SOV_send_volunteers_to_sinkiang = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		SIK = { has_war_with = KHM }
+		country_exists = SIK
+	}
+
+	abort = {
+		NOT = {
+			SIK = { has_war_with = KHM }
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SIK"
+		value = 999
+	}
+}
+
+SOV_dont_send_volunteers_to_japan = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		JAP = { 
+			has_war_with = CHI 
+			NOT = { has_government = communism }
+		}
+		SOV = {
+			has_government = communism
+		}
+	}
+
+	abort_when_not_enabled = yes 
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "JAP"
+		value = -800
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "MAN"
+		value = -800
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "MEN"
+		value = -800
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "KOR"
+		value = -800
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "RNG"
 		value = -800
 	}
 }
@@ -2495,6 +2592,7 @@ SOV_cant_stop_wont_stop = {
 	allowed = { original_tag = SOV }
 	enable = {
 		is_historical_focus_on = yes
+		date > 1941.9.1
 	}
 	abort_when_not_enabled = yes
 

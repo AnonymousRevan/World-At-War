@@ -47,6 +47,14 @@ bitmapfonts = {
 		languages = { "l_simp_chinese" }
 	}
 
+		bitmapfont_override = {
+		name = "loadscreen_header"
+		fontfiles = {
+			"gfx/fonts/korean/hoi_30header_kor"
+		}
+		languages = { "l_korean" }
+	}
+
 	bitmapfont = {
 		name = "loadscreen_tip"
 #		path = "gfx/fonts/hoi_24header"
@@ -95,5 +103,12 @@ bitmapfonts = {
 		}
 		languages = { "l_simp_chinese" }
 	}
-	
+
+	bitmapfont_override = {
+		name = "loadscreen_tip"
+		fontfiles = { 
+			"gfx/fonts/korean/hoi_24header_kor"
+		}
+		languages = { "l_korean" } 
+	}
 }

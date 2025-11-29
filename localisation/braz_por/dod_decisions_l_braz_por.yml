@@ -22,7 +22,7 @@
  YUG_weak_communists: "§RFraca§!"
  YUG_average_communists: "§HMédia§!"
  YUG_strong_communists: "§GForte§!"
- YUG_very_strong_communists: "§MMuito Forte§!"
+ YUG_very_strong_communists: "§GMuito forte§!"
  HUN_closer_ties_to_CZE: "Laços mais próximos com [CZE.GetNameDef]"
  ROM_change_sides: "Troca de Aliança"
  ROM_dividing_yugo: "A Partição da Iugoslávia"
@@ -59,3 +59,4 @@
  ROM_change_sides_to_axis: "Entrar para o Eixo"
  ROM_change_sides_to_axis_desc: "Mudanças em nosso governo facilitaram uma troca do nosso alinhamento na guerra. Ao entrar para o Eixo, nossos \"companheiros\" atuais nesse conflito global ficarão confusos quando as balas romenas encontrarem um novo alvo."
  ROM_present_ultimatum: "Apresente o ultimato"
+ ROM_country_and_all_subjects_trigger: "[Country.GetName] e todos os seus súditos"

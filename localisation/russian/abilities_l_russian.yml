@@ -47,3 +47,6 @@
  ABILITY_ON_DAILY: "Каждый день:"
  ABILITY_QUININE: "Раздавать хинин"
  ABILITY_QUININE_DESC: "Войска получают хинин и дополнительное снабжение."
+ ABILITY_CHI_force_attack_no_entrenchment_loss: "$ABILITY_FORCE_ATTACK$"
+ ABILITY_CHI_force_attack_no_entrenchment_loss_TOOLTIP: "Вынужденная атака ($LEADER$)"
+ ABILITY_CHI_force_attack_no_entrenchment_loss_TOOLTIP_DESC: "Ваши армии получают бонус к наступлению за счет некоторых уязвимостей."

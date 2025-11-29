@@ -1503,7 +1503,8 @@
  #To GER/FRA/ENG: Exiled Belgium Requests equipment
  ww_BEL_event_diplomatic.15.t: "[FROM.GetNameDefCap] Requests Equipment"
  ww_BEL_event_diplomatic.15.desc: "A request from the exiled [FROM.GetAdjective] leadership has just reached us. They wish to have some equipment from us to train what troops they still have in hopes that they will at some point be able to retake their homeland."
- ww_BEL_event_diplomatic.15.a: "We will support them!"
+ ww_BEL_event_diplomatic.15.a: "We will send them $infantry_equipment$!"
+ ww_BEL_event_diplomatic.15.c: "We will send them $support_equipment$!"
  ww_BEL_event_diplomatic.15.b: "Their ambition is noble but we can't help"
 
  #To GER/FRA/ENG: Exiled Belgium Requests factories
@@ -1575,7 +1576,7 @@
  ww_BEL_event_diplomatic.29.b: "The Habsburgs belong in the past."
 
  ww_BEL_event_diplomatic.30.t: "[FROM.GetNameDefCap] Requests to join the [ROOT.GetFactionName]"
- ww_BEL_event_diplomatic.30.desc: "Following the [FROM.GetAdjective] decision to abolish their aspirations for neutrality the leadership of [FROM.GetNameDef]" has aligned all the more closely to our political agenda. They have now reached out to us with a request to join [ROOT.GetFactionName] proper. Their help could be useful, allowing us new ways to strategize for our future expansion."
+ ww_BEL_event_diplomatic.30.desc: "Following the [FROM.GetAdjective] decision to abolish their aspirations for neutrality the leadership of [FROM.GetNameDef] has aligned all the more closely to our political agenda. They have now reached out to us with a request to join [ROOT.GetFactionName] proper. Their help could be useful, allowing us new ways to strategize for our future expansion."
  ww_BEL_event_diplomatic.30.a: "They are welcome here"
  ww_BEL_event_diplomatic.30.b: "We have no need of them"
 

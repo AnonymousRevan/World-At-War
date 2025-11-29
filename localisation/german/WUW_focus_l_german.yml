@@ -2811,7 +2811,7 @@
  GER_reverse_the_brain_drain_ww_desc: "$GER_reverse_the_brain_drain_desc$"
  GER_shared_rd_programs_ww: "$GER_shared_rd_programs$"
  GER_shared_rd_programs_ww_desc: "$GER_shared_rd_programs_desc$"
- GER_shared_rd_programs_ww_tt: "Der Forschungsgeschwindigkeitsbonus von „§Y$GER_rnd_programs_modifier$§!“ wird für jedes neue Bündnismitglied um §G1%§! (maximal §G10%§!) erhöht."
+ GER_shared_rd_programs_ww_tt: "Der Forschungsgeschwindigkeitsbonus von „§Y$GER_rnd_programs_modifier$§!“ wird für jedes neue Bündnismitglied um §G+1.00%§! (maximal §G+10.00%§!) erhöht."
  GER_shared_rd_programs_2_tt: "Jede §YNation§! in unserem §YBündnis§! tritt auch der §Yzentraleuropäischen§! Forschungsaustauschgruppe bei."
  GER_pool_technical_know_how_ww: "$GER_pool_technical_know_how$"
  GER_pool_technical_know_how_ww_desc: "$GER_pool_technical_know_how_desc$"

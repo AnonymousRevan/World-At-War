@@ -56,3 +56,4 @@
  has_flame_tank_units: "Tiene cualquier unidad de tanque lanzallamas"
  tactic_sf_fortify: "Defensa fortificada"
  tactic_sf_ambush: "Tácticas de emboscada urbana"
+ tactic_grand_banzai_charge: "Gran carga Banzai"

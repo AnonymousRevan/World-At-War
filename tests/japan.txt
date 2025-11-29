@@ -3,6 +3,7 @@ last_date = 1948.1.1
 tests = {
     JAP_didnt_take_beijing_by_1939 = {
         acceptable_fail_rate = 0.3
+
         success = {
             date < 1939.1.1
             608 = { # Beijing
@@ -15,11 +16,27 @@ tests = {
         }
     }
 
-    JAP_didnt_take_nanjing_by_1941 = {
+    JAP_didnt_take_nanjing_by_1940 = {
         acceptable_fail_rate = 0.3
+
+        success = {
+            date < 1940.1.1
+            1035 = { # Nanjing
+                is_controlled_by = JAP
+            }
+        }
+
+        fail = {
+            date > 1940.1.1
+        }
+    }
+
+    JAP_didnt_take_guangzhou_by_1941 = {
+        acceptable_fail_rate = 1.0  # This is actually desired now, but I still want to see how often it happens
+
         success = {
             date < 1941.1.1
-            613 = { # Nanjing
+            592 = { # Guangzhou
                 is_controlled_by = JAP
             }
         }
@@ -29,21 +46,8 @@ tests = {
         }
     }
 
-    JAP_didnt_take_guangzhou_by_1943 = {
-        acceptable_fail_rate = 1.0  # This is actually desired now, but I still want to see how often it happens
-        success = {
-            date < 1943.1.1
-            592 = { # Guangzhou
-                is_controlled_by = JAP
-            }
-        }
-
-        fail = {
-            date > 1943.1.1
-        }
-    }
-
     JAP_lost_north_korea_before_42 = {
+
         success = {
             date > 1942.1.1
         }
@@ -51,24 +55,44 @@ tests = {
         fail = {
             date < 1942.1.1
             527 = { # North Korea
-                NOT = { is_controlled_by = JAP }
+                NOT = {
+                    controller = {
+                        OR = {
+                            tag = JAP
+                            is_subject_of = JAP
+                        }
+                    }
+                }
+            }
+
+            1028 = { #North Korea
+                NOT = {
+                    controller = {
+                        OR = {
+                            tag = JAP
+                            is_subject_of = JAP 
+                        }
+                    }            
+                }
             }
         }
-    }
+    }    
 
     JAP_didnt_design_garrison = {
-         success = {
-             date > 1939.1.1
-             date < 1945.1.1
-             JAP = { ai_has_role_template = garrison }
-         }
+
+        success = {
+            date > 1939.1.1
+            date < 1945.1.1
+            JAP = { ai_has_role_template = garrison }
+        }
 
          fail = {
             date > 1941.1.1
-         }
+        }
     }
 
     JAP_war_with_china_too_late = {
+
         success = {
             JAP = { has_war_with = CHI }
         }
@@ -79,15 +103,17 @@ tests = {
     }
 
     JAP_not_at_war_with_uk = {
+
         success = {
             JAP = { has_war_with = ENG }
         }
         fail = {
-            date > 1948.6.6
+            date > 1942.6.6
         }
     }
 
     JAP_didnt_capitulate_by_48 = {
+
         success = {
             JAP = {
                 OR = {
@@ -97,12 +123,13 @@ tests = {
             }
         }
         fail = {
-            date > 1948.6.6
+            date > 1947.12.31
         }
     }
 
     JAP_capitulated_too_early = {
         acceptable_fail_rate = 0.2
+
         success = {
             date > 1944.1.1
         }
@@ -112,7 +139,7 @@ tests = {
                 OR = {
                     has_capitulated = yes
                     exists = no
-                    is_subject_of = USA
+                    is_subject = yes
                 }
             }
         }
@@ -120,6 +147,7 @@ tests = {
 
     JAP_indonesia_not_invaded_before_43 = {
         acceptable_fail_rate = 0.5
+
         success = {
             JAP = {
                 has_war_with = INS
@@ -137,6 +165,7 @@ tests = {
 
     JAP_too_high_casualties = {
         acceptable_fail_rate = 0.1
+
         success = {
             date > 1940.1.1
             JAP = {
@@ -153,6 +182,7 @@ tests = {
 
     JAP_homeland_invaded_by_usa_too_early = {
         acceptable_fail_rate = 0.2
+
         success = {
             date > 1943.1.1
         }
@@ -169,4 +199,32 @@ tests = {
             }
         }
     }
+
+    MEN_is_not_JAP_puppet_by_january_1937 = {
+        acceptable_fail_rate = 0.1
+
+        success = {
+            MEN = { is_subject_of = JAP }
+        }
+
+        fail = {
+            date > 1937.1.1      
+        }
+    }
+
+    JAP_lost_Iwo_Jima_before_january_1944 = {
+        acceptable_fail_rate = 0.1
+
+        success = {
+            date > 1944.2.1 
+        }
+
+        fail = {
+            date < 1944.1.1
+            645 = { # Iwo Jima
+                NOT = { is_controlled_by = JAP }
+            }    
+        }
+    }   
 }
+

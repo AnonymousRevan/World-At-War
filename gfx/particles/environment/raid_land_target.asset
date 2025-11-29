@@ -1,0 +1,85 @@
+particle={
+	name="raid_land_target_file"
+	subsystem={
+		name="target"
+		max_amount=1
+		slave_particles=0
+		sort="depth"
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/target.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=255
+			y=255
+			z=255
+			alpha={ 255,magnify_fade 0 }
+		}
+		position={
+			x=0
+			y=1.6
+			z=0
+		}
+		start=0
+		duration=1
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 0 0 }
+		velocity_yaw={ 0 0 }
+		velocity={ 0 0 }
+		life=100
+		emission=1
+		size=7,scale_anim
+		particle_pitch=90
+		rotation=0
+		rotation_speed=20
+	}
+	animation={
+		name="magnify_fade"
+		start=0
+		duration=5
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 0 0.22647 1 0.92647 1 1 0 
+		}
+		op="MUL"
+		time="life_abs"
+	}
+	animation={
+		name="scale_anim"
+		start=0
+		duration=1
+		repeat=yes
+		minValue=0
+		maxValue=1
+		curve={
+			0 0.64063 0.50882 1 1 0.67969 
+		}
+		op="MUL"
+		time="life_abs"
+	}
+	force={
+		type="planar"
+		name="force0"
+		position={
+			0 0 0 
+		}
+		direction={
+			0 1 0 
+		}
+		local_force=yes
+		yaw=0
+		division=16
+		amount=5
+	}
+}

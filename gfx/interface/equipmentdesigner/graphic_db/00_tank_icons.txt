@@ -3432,6 +3432,7 @@ JAP = {
 	super_heavy_tank_chassis = {
 		pool = {
 			icons = { 
+				GFX_JAP_improved_heavy_tank_medium
 				GFX_JAP_super_heavy_tank_medium
 			}
 		}
@@ -7661,19 +7662,18 @@ CHI = {
 	light_tank_chassis = {
 		pool = {
 			icons = { 
-				#GFX_CHI_gwtank_medium #Don't show GW tank in modern techs
-				GFX_CHI_basic_light_tank_medium
-				GFX_CHI_improved_light_tank_medium
-				GFX_CHI_advanced_light_tank_medium
+				#GFX_CHI_gwtank_1_medium #Don't show GW tank in modern techs
+				GFX_CHI_basic_light_tank_1_medium
+				GFX_CHI_improved_light_tank_1_medium
+				GFX_CHI_advanced_light_tank_1_medium
 			}
 		}
 	}
 
 	light_tank_chassis_0 = {
 		pool = {
-			weight = 2
 			icons = {
-				GFX_CHI_gwtank_medium
+				GFX_CHI_gwtank_1_medium
 			}
 		}
 	}
@@ -7682,7 +7682,7 @@ CHI = {
 	light_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_light_tank_medium
+				GFX_CHI_basic_light_tank_1_medium
 			}
 		}
 	}
@@ -7690,7 +7690,7 @@ CHI = {
 	light_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_CHI_improved_light_tank_medium
+				GFX_CHI_improved_light_tank_1_medium
 			}
 		}
 	}
@@ -7698,7 +7698,7 @@ CHI = {
 	light_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_CHI_advanced_light_tank_medium
+				GFX_CHI_advanced_light_tank_1_medium
 			}
 		}
 	}
@@ -7706,9 +7706,9 @@ CHI = {
 	medium_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_medium_tank_medium
-				GFX_CHI_improved_medium_tank_medium
-				GFX_CHI_advanced_medium_tank_medium
+				GFX_CHI_basic_medium_tank_1_medium
+				GFX_CHI_improved_medium_tank_1_medium
+				GFX_CHI_advanced_medium_tank_1_medium
 			}
 		}
 	}
@@ -7716,7 +7716,7 @@ CHI = {
 	medium_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_medium_tank_medium
+				GFX_CHI_basic_medium_tank_1_medium
 			}
 		}
 	}
@@ -7724,7 +7724,7 @@ CHI = {
 	medium_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_CHI_improved_medium_tank_medium
+				GFX_CHI_improved_medium_tank_1_medium
 			}
 		}
 	}
@@ -7732,7 +7732,7 @@ CHI = {
 	medium_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_CHI_advanced_medium_tank_medium
+				GFX_CHI_advanced_medium_tank_1_medium
 			}
 		}
 	}
@@ -7740,9 +7740,9 @@ CHI = {
 	heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_heavy_tank_medium
-				GFX_CHI_improved_heavy_tank_medium
-				GFX_CHI_advanced_heavy_tank_medium
+				GFX_CHI_advanced_heavy_tank_1_medium
+				GFX_CHI_improved_heavy_tank_1_medium
+				GFX_CHI_basic_heavy_tank_1_medium
 			}
 		}
 	}
@@ -7750,7 +7750,7 @@ CHI = {
 	heavy_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_heavy_tank_medium
+				GFX_CHI_basic_heavy_tank_1_medium
 			}
 		}
 	}
@@ -7758,7 +7758,7 @@ CHI = {
 	heavy_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_CHI_improved_heavy_tank_medium
+				GFX_CHI_improved_heavy_tank_1_medium
 			}
 		}
 	}
@@ -7766,7 +7766,7 @@ CHI = {
 	heavy_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_CHI_advanced_heavy_tank_medium
+				GFX_CHI_advanced_heavy_tank_1_medium
 			}
 		}
 	}
@@ -7774,7 +7774,7 @@ CHI = {
 	super_heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_CHI_super_heavy_tank_medium
+				GFX_CHI_super_heavy_tank_1_medium
 			}
 		}
 	}
@@ -7782,7 +7782,7 @@ CHI = {
 	modern_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_CHI_main_battle_tank_medium
+				GFX_CHI_main_battle_tank_1_medium
 			}
 		}
 	}	
@@ -7792,28 +7792,26 @@ PRC = {
 	light_tank_chassis = {
 		pool = {
 			icons = { 
-				#GFX_CHI_gwtank_medium #Don't show GW tank in modern techs
-				GFX_PRC_basic_light_tank_medium
-				GFX_PRC_improved_light_tank_medium
-				GFX_PRC_advanced_light_tank_medium
+				GFX_PRC_advanced_light_tank_1_medium
+				GFX_PRC_improved_light_tank_1_medium
+				GFX_PRC_basic_light_tank_1_medium
+				GFX_PRC_gwtank_1_medium #Don't show GW tank in modern techs
 			}
 		}
-	}
+	}	
 
 	light_tank_chassis_0 = {
 		pool = {
-			weight = 2
-			icons = {
-				GFX_CHI_gwtank_medium
+			icons = { 
+				GFX_PRC_gwtank_1_medium
 			}
 		}
 	}
-	
 
 	light_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_light_tank_medium
+				GFX_PRC_basic_light_tank_1_medium
 			}
 		}
 	}
@@ -7821,7 +7819,7 @@ PRC = {
 	light_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_PRC_improved_light_tank_medium
+				GFX_PRC_improved_light_tank_1_medium
 			}
 		}
 	}
@@ -7829,7 +7827,7 @@ PRC = {
 	light_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_PRC_advanced_light_tank_medium
+				GFX_PRC_advanced_light_tank_1_medium
 			}
 		}
 	}
@@ -7837,9 +7835,9 @@ PRC = {
 	medium_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_medium_tank_medium
-				GFX_PRC_improved_medium_tank_medium
-				GFX_PRC_advanced_medium_tank_medium
+				GFX_PRC_advanced_medium_tank_1_medium
+				GFX_PRC_improved_medium_tank_1_medium
+				GFX_PRC_basic_medium_tank_1_medium
 			}
 		}
 	}
@@ -7847,7 +7845,7 @@ PRC = {
 	medium_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_medium_tank_medium
+				GFX_PRC_basic_medium_tank_1_medium
 			}
 		}
 	}
@@ -7855,7 +7853,7 @@ PRC = {
 	medium_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_PRC_improved_medium_tank_medium
+				GFX_PRC_improved_medium_tank_1_medium
 			}
 		}
 	}
@@ -7863,7 +7861,7 @@ PRC = {
 	medium_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_PRC_advanced_medium_tank_medium
+				GFX_PRC_advanced_medium_tank_1_medium
 			}
 		}
 	}
@@ -7871,9 +7869,9 @@ PRC = {
 	heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_heavy_tank_medium
-				GFX_PRC_improved_heavy_tank_medium
-				GFX_PRC_advanced_heavy_tank_medium
+				GFX_PRC_advanced_heavy_tank_1_medium
+				GFX_PRC_improved_heavy_tank_1_medium
+				GFX_PRC_basic_heavy_tank_1_medium
 			}
 		}
 	}
@@ -7881,7 +7879,7 @@ PRC = {
 	heavy_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_heavy_tank_medium
+				GFX_PRC_basic_heavy_tank_1_medium
 			}
 		}
 	}
@@ -7889,7 +7887,7 @@ PRC = {
 	heavy_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_PRC_improved_heavy_tank_medium
+				GFX_PRC_improved_heavy_tank_1_medium
 			}
 		}
 	}
@@ -7897,7 +7895,7 @@ PRC = {
 	heavy_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_PRC_advanced_heavy_tank_medium
+				GFX_PRC_advanced_heavy_tank_1_medium
 			}
 		}
 	}
@@ -7905,7 +7903,7 @@ PRC = {
 	super_heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_super_heavy_tank_medium
+				GFX_PRC_super_heavy_tank_1_medium
 			}
 		}
 	}
@@ -7913,7 +7911,7 @@ PRC = {
 	modern_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_main_battle_tank_medium
+				GFX_PRC_main_battle_tank_1_medium
 			}
 		}
 	}	
@@ -7923,13 +7921,13 @@ SIK = {
 	light_tank_chassis = {
 		pool = {
 			icons = { 
-				#GFX_CHI_gwtank_medium #Don't show GW tank in modern techs
-				GFX_CHI_basic_light_tank_medium
-				GFX_CHI_improved_light_tank_medium
-				GFX_CHI_advanced_light_tank_medium
-				GFX_PRC_basic_light_tank_medium
-				GFX_PRC_improved_light_tank_medium
-				GFX_PRC_advanced_light_tank_medium
+				#GFX_CHI_gwtank_1_medium #Don't show GW tank in modern techs
+				GFX_CHI_basic_light_tank_1_medium
+				GFX_CHI_improved_light_tank_1_medium
+				GFX_CHI_advanced_light_tank_1_medium
+				GFX_PRC_basic_light_tank_1_medium
+				GFX_PRC_improved_light_tank_1_medium
+				GFX_PRC_advanced_light_tank_1_medium
 			}
 		}
 	}
@@ -7938,7 +7936,7 @@ SIK = {
 		pool = {
 			weight = 2
 			icons = {
-				GFX_CHI_gwtank_medium
+				GFX_CHI_gwtank_1_medium
 			}
 		}
 	}
@@ -7947,7 +7945,7 @@ SIK = {
 	light_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_light_tank_medium
+				GFX_PRC_basic_light_tank_1_medium
 			}
 		}
 	}
@@ -7955,7 +7953,7 @@ SIK = {
 	light_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_PRC_improved_light_tank_medium
+				GFX_PRC_improved_light_tank_1_medium
 			}
 		}
 	}
@@ -7963,7 +7961,7 @@ SIK = {
 	light_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_PRC_advanced_light_tank_medium
+				GFX_PRC_advanced_light_tank_1_medium
 			}
 		}
 	}
@@ -7971,12 +7969,12 @@ SIK = {
 	medium_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_medium_tank_medium
-				GFX_CHI_improved_medium_tank_medium
-				GFX_CHI_advanced_medium_tank_medium
-				GFX_PRC_basic_medium_tank_medium
-				GFX_PRC_improved_medium_tank_medium
-				GFX_PRC_advanced_medium_tank_medium
+				GFX_CHI_basic_medium_tank_1_medium
+				GFX_CHI_improved_medium_tank_1_medium
+				GFX_CHI_advanced_medium_tank_1_medium
+				GFX_PRC_basic_medium_tank_1_medium
+				GFX_PRC_improved_medium_tank_1_medium
+				GFX_PRC_advanced_medium_tank_1_medium
 			}
 		}
 	}
@@ -7984,7 +7982,7 @@ SIK = {
 	medium_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_medium_tank_medium
+				GFX_PRC_basic_medium_tank_1_medium
 			}
 		}
 	}
@@ -7992,7 +7990,7 @@ SIK = {
 	medium_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_PRC_improved_medium_tank_medium
+				GFX_PRC_improved_medium_tank_1_medium
 			}
 		}
 	}
@@ -8000,7 +7998,7 @@ SIK = {
 	medium_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_PRC_advanced_medium_tank_medium
+				GFX_PRC_advanced_medium_tank_1_medium
 			}
 		}
 	}
@@ -8008,12 +8006,12 @@ SIK = {
 	heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_heavy_tank_medium
-				GFX_CHI_improved_heavy_tank_medium
-				GFX_CHI_advanced_heavy_tank_medium
-				GFX_PRC_basic_heavy_tank_medium
-				GFX_PRC_improved_heavy_tank_medium
-				GFX_PRC_advanced_heavy_tank_medium
+				GFX_CHI_basic_heavy_tank_1_medium
+				GFX_CHI_improved_heavy_tank_1_medium
+				GFX_CHI_advanced_heavy_tank_1_medium
+				GFX_PRC_basic_heavy_tank_1_medium
+				GFX_PRC_improved_heavy_tank_1_medium
+				GFX_PRC_advanced_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8021,7 +8019,7 @@ SIK = {
 	heavy_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_heavy_tank_medium
+				GFX_PRC_basic_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8029,7 +8027,7 @@ SIK = {
 	heavy_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_PRC_improved_heavy_tank_medium
+				GFX_PRC_improved_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8037,7 +8035,7 @@ SIK = {
 	heavy_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_PRC_advanced_heavy_tank_medium
+				GFX_PRC_advanced_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8045,8 +8043,8 @@ SIK = {
 	super_heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_CHI_super_heavy_tank_medium
-				GFX_PRC_super_heavy_tank_medium
+				GFX_CHI_super_heavy_tank_1_medium
+				GFX_PRC_super_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8054,8 +8052,8 @@ SIK = {
 	modern_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_CHI_main_battle_tank_medium
-				GFX_PRC_main_battle_tank_medium
+				GFX_CHI_main_battle_tank_1_medium
+				GFX_PRC_main_battle_tank_1_medium
 			}
 		}
 	}	
@@ -8065,13 +8063,13 @@ YUN = {
 	light_tank_chassis = {
 		pool = {
 			icons = { 
-				#GFX_CHI_gwtank_medium #Don't show GW tank in modern techs
-				GFX_PRC_basic_light_tank_medium
-				GFX_PRC_improved_light_tank_medium
-				GFX_PRC_advanced_light_tank_medium
-				GFX_CHI_basic_light_tank_medium
-				GFX_CHI_improved_light_tank_medium
-				GFX_CHI_advanced_light_tank_medium
+				#GFX_CHI_gwtank_1_medium #Don't show GW tank in modern techs
+				GFX_PRC_basic_light_tank_1_medium
+				GFX_PRC_improved_light_tank_1_medium
+				GFX_PRC_advanced_light_tank_1_medium
+				GFX_CHI_basic_light_tank_1_medium
+				GFX_CHI_improved_light_tank_1_medium
+				GFX_CHI_advanced_light_tank_1_medium
 			}
 		}
 	}
@@ -8080,7 +8078,7 @@ YUN = {
 		pool = {
 			weight = 2
 			icons = {
-				GFX_CHI_gwtank_medium
+				GFX_CHI_gwtank_1_medium
 			}
 		}
 	}
@@ -8089,7 +8087,7 @@ YUN = {
 	light_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_light_tank_medium
+				GFX_CHI_basic_light_tank_1_medium
 			}
 		}
 	}
@@ -8097,7 +8095,7 @@ YUN = {
 	light_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_CHI_improved_light_tank_medium
+				GFX_CHI_improved_light_tank_1_medium
 			}
 		}
 	}
@@ -8105,7 +8103,7 @@ YUN = {
 	light_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_CHI_advanced_light_tank_medium
+				GFX_CHI_advanced_light_tank_1_medium
 			}
 		}
 	}
@@ -8113,12 +8111,12 @@ YUN = {
 	medium_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_medium_tank_medium
-				GFX_PRC_improved_medium_tank_medium
-				GFX_PRC_advanced_medium_tank_medium
-				GFX_CHI_basic_medium_tank_medium
-				GFX_CHI_improved_medium_tank_medium
-				GFX_CHI_advanced_medium_tank_medium
+				GFX_PRC_basic_medium_tank_1_medium
+				GFX_PRC_improved_medium_tank_1_medium
+				GFX_PRC_advanced_medium_tank_1_medium
+				GFX_CHI_basic_medium_tank_1_medium
+				GFX_CHI_improved_medium_tank_1_medium
+				GFX_CHI_advanced_medium_tank_1_medium
 			}
 		}
 	}
@@ -8126,7 +8124,7 @@ YUN = {
 	medium_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_medium_tank_medium
+				GFX_CHI_basic_medium_tank_1_medium
 			}
 		}
 	}
@@ -8134,7 +8132,7 @@ YUN = {
 	medium_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_CHI_improved_medium_tank_medium
+				GFX_CHI_improved_medium_tank_1_medium
 			}
 		}
 	}
@@ -8142,7 +8140,7 @@ YUN = {
 	medium_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_CHI_advanced_medium_tank_medium
+				GFX_CHI_advanced_medium_tank_1_medium
 			}
 		}
 	}
@@ -8150,12 +8148,12 @@ YUN = {
 	heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_heavy_tank_medium
-				GFX_PRC_improved_heavy_tank_medium
-				GFX_PRC_advanced_heavy_tank_medium
-				GFX_CHI_basic_heavy_tank_medium
-				GFX_CHI_improved_heavy_tank_medium
-				GFX_CHI_advanced_heavy_tank_medium
+				GFX_PRC_basic_heavy_tank_1_medium
+				GFX_PRC_improved_heavy_tank_1_medium
+				GFX_PRC_advanced_heavy_tank_1_medium
+				GFX_CHI_basic_heavy_tank_1_medium
+				GFX_CHI_improved_heavy_tank_1_medium
+				GFX_CHI_advanced_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8163,7 +8161,7 @@ YUN = {
 	heavy_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_heavy_tank_medium
+				GFX_CHI_basic_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8171,7 +8169,7 @@ YUN = {
 	heavy_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_CHI_improved_heavy_tank_medium
+				GFX_CHI_improved_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8179,7 +8177,7 @@ YUN = {
 	heavy_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_CHI_advanced_heavy_tank_medium
+				GFX_CHI_advanced_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8187,8 +8185,8 @@ YUN = {
 	super_heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_super_heavy_tank_medium
-				GFX_CHI_super_heavy_tank_medium
+				GFX_PRC_super_heavy_tank_1_medium
+				GFX_CHI_super_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8196,8 +8194,8 @@ YUN = {
 	modern_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_main_battle_tank_medium
-				GFX_CHI_main_battle_tank_medium
+				GFX_PRC_main_battle_tank_1_medium
+				GFX_CHI_main_battle_tank_1_medium
 			}
 		}
 	}	
@@ -8207,13 +8205,13 @@ XSM = {
 	light_tank_chassis = {
 		pool = {
 			icons = { 
-				#GFX_CHI_gwtank_medium #Don't show GW tank in modern techs
-				GFX_PRC_basic_light_tank_medium
-				GFX_PRC_improved_light_tank_medium
-				GFX_PRC_advanced_light_tank_medium
-				GFX_CHI_basic_light_tank_medium
-				GFX_CHI_improved_light_tank_medium
-				GFX_CHI_advanced_light_tank_medium
+				#GFX_CHI_gwtank_1_medium #Don't show GW tank in modern techs
+				GFX_PRC_basic_light_tank_1_medium
+				GFX_PRC_improved_light_tank_1_medium
+				GFX_PRC_advanced_light_tank_1_medium
+				GFX_CHI_basic_light_tank_1_medium
+				GFX_CHI_improved_light_tank_1_medium
+				GFX_CHI_advanced_light_tank_1_medium
 			}
 		}
 	}
@@ -8222,7 +8220,7 @@ XSM = {
 		pool = {
 			weight = 2
 			icons = {
-				GFX_CHI_gwtank_medium
+				GFX_CHI_gwtank_1_medium
 			}
 		}
 	}
@@ -8231,7 +8229,7 @@ XSM = {
 	light_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_light_tank_medium
+				GFX_CHI_basic_light_tank_1_medium
 			}
 		}
 	}
@@ -8239,7 +8237,7 @@ XSM = {
 	light_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_CHI_improved_light_tank_medium
+				GFX_CHI_improved_light_tank_1_medium
 			}
 		}
 	}
@@ -8247,7 +8245,7 @@ XSM = {
 	light_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_CHI_advanced_light_tank_medium
+				GFX_CHI_advanced_light_tank_1_medium
 			}
 		}
 	}
@@ -8255,12 +8253,12 @@ XSM = {
 	medium_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_medium_tank_medium
-				GFX_PRC_improved_medium_tank_medium
-				GFX_PRC_advanced_medium_tank_medium
-				GFX_CHI_basic_medium_tank_medium
-				GFX_CHI_improved_medium_tank_medium
-				GFX_CHI_advanced_medium_tank_medium
+				GFX_PRC_basic_medium_tank_1_medium
+				GFX_PRC_improved_medium_tank_1_medium
+				GFX_PRC_advanced_medium_tank_1_medium
+				GFX_CHI_basic_medium_tank_1_medium
+				GFX_CHI_improved_medium_tank_1_medium
+				GFX_CHI_advanced_medium_tank_1_medium
 			}
 		}
 	}
@@ -8268,7 +8266,7 @@ XSM = {
 	medium_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_medium_tank_medium
+				GFX_CHI_basic_medium_tank_1_medium
 			}
 		}
 	}
@@ -8276,7 +8274,7 @@ XSM = {
 	medium_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_CHI_improved_medium_tank_medium
+				GFX_CHI_improved_medium_tank_1_medium
 			}
 		}
 	}
@@ -8284,7 +8282,7 @@ XSM = {
 	medium_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_CHI_advanced_medium_tank_medium
+				GFX_CHI_advanced_medium_tank_1_medium
 			}
 		}
 	}
@@ -8292,12 +8290,12 @@ XSM = {
 	heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_heavy_tank_medium
-				GFX_PRC_improved_heavy_tank_medium
-				GFX_PRC_advanced_heavy_tank_medium
-				GFX_CHI_basic_heavy_tank_medium
-				GFX_CHI_improved_heavy_tank_medium
-				GFX_CHI_advanced_heavy_tank_medium
+				GFX_PRC_basic_heavy_tank_1_medium
+				GFX_PRC_improved_heavy_tank_1_medium
+				GFX_PRC_advanced_heavy_tank_1_medium
+				GFX_CHI_basic_heavy_tank_1_medium
+				GFX_CHI_improved_heavy_tank_1_medium
+				GFX_CHI_advanced_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8305,7 +8303,7 @@ XSM = {
 	heavy_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_heavy_tank_medium
+				GFX_CHI_basic_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8313,7 +8311,7 @@ XSM = {
 	heavy_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_CHI_improved_heavy_tank_medium
+				GFX_CHI_improved_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8321,7 +8319,7 @@ XSM = {
 	heavy_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_CHI_advanced_heavy_tank_medium
+				GFX_CHI_advanced_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8329,8 +8327,8 @@ XSM = {
 	super_heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_super_heavy_tank_medium
-				GFX_CHI_super_heavy_tank_medium
+				GFX_PRC_super_heavy_tank_1_medium
+				GFX_CHI_super_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8338,8 +8336,8 @@ XSM = {
 	modern_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_main_battle_tank_medium
-				GFX_CHI_main_battle_tank_medium
+				GFX_PRC_main_battle_tank_1_medium
+				GFX_CHI_main_battle_tank_1_medium
 			}
 		}
 	}	
@@ -8349,13 +8347,13 @@ GXC = {
 	light_tank_chassis = {
 		pool = {
 			icons = { 
-				#GFX_CHI_gwtank_medium #Don't show GW tank in modern techs
-				GFX_PRC_basic_light_tank_medium
-				GFX_PRC_improved_light_tank_medium
-				GFX_PRC_advanced_light_tank_medium
-				GFX_CHI_basic_light_tank_medium
-				GFX_CHI_improved_light_tank_medium
-				GFX_CHI_advanced_light_tank_medium
+				#GFX_CHI_gwtank_1_medium #Don't show GW tank in modern techs
+				GFX_PRC_basic_light_tank_1_medium
+				GFX_PRC_improved_light_tank_1_medium
+				GFX_PRC_advanced_light_tank_1_medium
+				GFX_CHI_basic_light_tank_1_medium
+				GFX_CHI_improved_light_tank_1_medium
+				GFX_CHI_advanced_light_tank_1_medium
 			}
 		}
 	}
@@ -8364,7 +8362,7 @@ GXC = {
 		pool = {
 			weight = 2
 			icons = {
-				GFX_CHI_gwtank_medium
+				GFX_CHI_gwtank_1_medium
 			}
 		}
 	}
@@ -8373,7 +8371,7 @@ GXC = {
 	light_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_light_tank_medium
+				GFX_CHI_basic_light_tank_1_medium
 			}
 		}
 	}
@@ -8381,7 +8379,7 @@ GXC = {
 	light_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_CHI_improved_light_tank_medium
+				GFX_CHI_improved_light_tank_1_medium
 			}
 		}
 	}
@@ -8389,7 +8387,7 @@ GXC = {
 	light_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_CHI_advanced_light_tank_medium
+				GFX_CHI_advanced_light_tank_1_medium
 			}
 		}
 	}
@@ -8397,12 +8395,12 @@ GXC = {
 	medium_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_medium_tank_medium
-				GFX_PRC_improved_medium_tank_medium
-				GFX_PRC_advanced_medium_tank_medium
-				GFX_CHI_basic_medium_tank_medium
-				GFX_CHI_improved_medium_tank_medium
-				GFX_CHI_advanced_medium_tank_medium
+				GFX_PRC_basic_medium_tank_1_medium
+				GFX_PRC_improved_medium_tank_1_medium
+				GFX_PRC_advanced_medium_tank_1_medium
+				GFX_CHI_basic_medium_tank_1_medium
+				GFX_CHI_improved_medium_tank_1_medium
+				GFX_CHI_advanced_medium_tank_1_medium
 			}
 		}
 	}
@@ -8410,7 +8408,7 @@ GXC = {
 	medium_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_medium_tank_medium
+				GFX_CHI_basic_medium_tank_1_medium
 			}
 		}
 	}
@@ -8418,7 +8416,7 @@ GXC = {
 	medium_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_CHI_improved_medium_tank_medium
+				GFX_CHI_improved_medium_tank_1_medium
 			}
 		}
 	}
@@ -8426,7 +8424,7 @@ GXC = {
 	medium_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_CHI_advanced_medium_tank_medium
+				GFX_CHI_advanced_medium_tank_1_medium
 			}
 		}
 	}
@@ -8434,12 +8432,12 @@ GXC = {
 	heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_heavy_tank_medium
-				GFX_PRC_improved_heavy_tank_medium
-				GFX_PRC_advanced_heavy_tank_medium
-				GFX_CHI_basic_heavy_tank_medium
-				GFX_CHI_improved_heavy_tank_medium
-				GFX_CHI_advanced_heavy_tank_medium
+				GFX_PRC_basic_heavy_tank_1_medium
+				GFX_PRC_improved_heavy_tank_1_medium
+				GFX_PRC_advanced_heavy_tank_1_medium
+				GFX_CHI_basic_heavy_tank_1_medium
+				GFX_CHI_improved_heavy_tank_1_medium
+				GFX_CHI_advanced_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8447,7 +8445,7 @@ GXC = {
 	heavy_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_heavy_tank_medium
+				GFX_CHI_basic_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8455,7 +8453,7 @@ GXC = {
 	heavy_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_CHI_improved_heavy_tank_medium
+				GFX_CHI_improved_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8463,7 +8461,7 @@ GXC = {
 	heavy_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_CHI_advanced_heavy_tank_medium
+				GFX_CHI_advanced_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8471,8 +8469,8 @@ GXC = {
 	super_heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_super_heavy_tank_medium
-				GFX_CHI_super_heavy_tank_medium
+				GFX_PRC_super_heavy_tank_1_medium
+				GFX_CHI_super_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8480,8 +8478,8 @@ GXC = {
 	modern_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_main_battle_tank_medium
-				GFX_CHI_main_battle_tank_medium
+				GFX_PRC_main_battle_tank_1_medium
+				GFX_CHI_main_battle_tank_1_medium
 			}
 		}
 	}	
@@ -8491,13 +8489,13 @@ SHX = {
 	light_tank_chassis = {
 		pool = {
 			icons = { 
-				#GFX_CHI_gwtank_medium #Don't show GW tank in modern techs
-				GFX_PRC_basic_light_tank_medium
-				GFX_PRC_improved_light_tank_medium
-				GFX_PRC_advanced_light_tank_medium
-				GFX_CHI_basic_light_tank_medium
-				GFX_CHI_improved_light_tank_medium
-				GFX_CHI_advanced_light_tank_medium
+				#GFX_CHI_gwtank_1_medium #Don't show GW tank in modern techs
+				GFX_PRC_basic_light_tank_1_medium
+				GFX_PRC_improved_light_tank_1_medium
+				GFX_PRC_advanced_light_tank_1_medium
+				GFX_CHI_basic_light_tank_1_medium
+				GFX_CHI_improved_light_tank_1_medium
+				GFX_CHI_advanced_light_tank_1_medium
 			}
 		}
 	}
@@ -8506,7 +8504,7 @@ SHX = {
 		pool = {
 			weight = 2
 			icons = {
-				GFX_CHI_gwtank_medium
+				GFX_CHI_gwtank_1_medium
 			}
 		}
 	}
@@ -8515,7 +8513,7 @@ SHX = {
 	light_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_light_tank_medium
+				GFX_CHI_basic_light_tank_1_medium
 			}
 		}
 	}
@@ -8523,7 +8521,7 @@ SHX = {
 	light_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_CHI_improved_light_tank_medium
+				GFX_CHI_improved_light_tank_1_medium
 			}
 		}
 	}
@@ -8531,7 +8529,7 @@ SHX = {
 	light_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_CHI_advanced_light_tank_medium
+				GFX_CHI_advanced_light_tank_1_medium
 			}
 		}
 	}
@@ -8539,12 +8537,12 @@ SHX = {
 	medium_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_medium_tank_medium
-				GFX_PRC_improved_medium_tank_medium
-				GFX_PRC_advanced_medium_tank_medium
-				GFX_CHI_basic_medium_tank_medium
-				GFX_CHI_improved_medium_tank_medium
-				GFX_CHI_advanced_medium_tank_medium
+				GFX_PRC_basic_medium_tank_1_medium
+				GFX_PRC_improved_medium_tank_1_medium
+				GFX_PRC_advanced_medium_tank_1_medium
+				GFX_CHI_basic_medium_tank_1_medium
+				GFX_CHI_improved_medium_tank_1_medium
+				GFX_CHI_advanced_medium_tank_1_medium
 			}
 		}
 	}
@@ -8552,7 +8550,7 @@ SHX = {
 	medium_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_medium_tank_medium
+				GFX_CHI_basic_medium_tank_1_medium
 			}
 		}
 	}
@@ -8560,7 +8558,7 @@ SHX = {
 	medium_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_CHI_improved_medium_tank_medium
+				GFX_CHI_improved_medium_tank_1_medium
 			}
 		}
 	}
@@ -8568,7 +8566,7 @@ SHX = {
 	medium_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_CHI_advanced_medium_tank_medium
+				GFX_CHI_advanced_medium_tank_1_medium
 			}
 		}
 	}
@@ -8576,12 +8574,12 @@ SHX = {
 	heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_basic_heavy_tank_medium
-				GFX_PRC_improved_heavy_tank_medium
-				GFX_PRC_advanced_heavy_tank_medium
-				GFX_CHI_basic_heavy_tank_medium
-				GFX_CHI_improved_heavy_tank_medium
-				GFX_CHI_advanced_heavy_tank_medium
+				GFX_PRC_basic_heavy_tank_1_medium
+				GFX_PRC_improved_heavy_tank_1_medium
+				GFX_PRC_advanced_heavy_tank_1_medium
+				GFX_CHI_basic_heavy_tank_1_medium
+				GFX_CHI_improved_heavy_tank_1_medium
+				GFX_CHI_advanced_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8589,7 +8587,7 @@ SHX = {
 	heavy_tank_chassis_1 = {
 		pool = {
 			icons = { 
-				GFX_CHI_basic_heavy_tank_medium
+				GFX_CHI_basic_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8597,7 +8595,7 @@ SHX = {
 	heavy_tank_chassis_2 = {
 		pool = {
 			icons = { 
-				GFX_CHI_improved_heavy_tank_medium
+				GFX_CHI_improved_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8605,7 +8603,7 @@ SHX = {
 	heavy_tank_chassis_3 = {
 		pool = {
 			icons = { 
-				GFX_CHI_advanced_heavy_tank_medium
+				GFX_CHI_advanced_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8613,8 +8611,8 @@ SHX = {
 	super_heavy_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_super_heavy_tank_medium
-				GFX_CHI_super_heavy_tank_medium
+				GFX_PRC_super_heavy_tank_1_medium
+				GFX_CHI_super_heavy_tank_1_medium
 			}
 		}
 	}
@@ -8622,8 +8620,8 @@ SHX = {
 	modern_tank_chassis = {
 		pool = {
 			icons = { 
-				GFX_PRC_main_battle_tank_medium
-				GFX_CHI_main_battle_tank_medium
+				GFX_PRC_main_battle_tank_1_medium
+				GFX_CHI_main_battle_tank_1_medium
 			}
 		}
 	}	
@@ -11385,6 +11383,631 @@ BEL = {
 			}
 			models = {
 				BEL_light_tank_destroyer_brigade_0_entity
+			}
+		}
+	}
+}
+
+PHI = { 
+	light_tank_chassis = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = {
+				GFX_USA_basic_light_tank_medium #M2
+				GFX_USA_improved_light_tank_medium #M3 Stuart
+				GFX_USA_advanced_light_tank_medium #Chaffee
+			}
+			models = {
+				USA_light_armor_entity #M3 Stuart (Improved light tank)
+			}
+		}
+	}
+	light_tank_chassis_0 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = { 
+				GFX_USA_basic_light_tank_medium #M2 Basic Light Tank -> Take oldest tank
+			}
+		}
+	}
+	light_tank_chassis_1 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = { 
+				GFX_USA_basic_light_tank_medium #M2
+			}
+		}
+		pool = { #MM: "B" series are based on M3 Stuart chassis (Improved LT) but the "A" series are based on a M5 which goes between M3 Stuart (Improved) and Chaffee (Advanced), so moving "B" series here as Basic
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_light_BCC_camo
+				GFX_USA_light_BCC
+				GFX_USA_light_BCB_camo
+				GFX_USA_light_BCB
+				GFX_USA_light_BCA_camo
+				GFX_USA_light_BCA
+				GFX_USA_light_BBC_camo
+				GFX_USA_light_BBC
+				GFX_USA_light_BBA_camo
+				GFX_USA_light_BBA
+				GFX_USA_light_BAC_camo
+				GFX_USA_light_BAC
+				GFX_USA_light_BAB_camo
+				GFX_USA_light_BAB
+				GFX_USA_light_BAA_camo
+				GFX_USA_light_BAA
+			}
+		}
+	}
+	light_tank_chassis_2 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = { 
+				GFX_USA_improved_light_tank_medium #M3 Stuart
+			}
+			models = {
+				USA_light_armor_entity #M3 Stuart (Improved light tank)
+			}
+		}
+		pool = { #MM: "A" series are based on M5 chassis (would be something like Advanced LT) but the "C" series are based on Chaffee which is used as Advanced LT so moving "A" series (M5) here as Improved and "B" series (M3 Stuart - should be Improved) as Basic
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = { 
+				GFX_USA_light_ACC_camo
+				GFX_USA_light_ACC
+				GFX_USA_light_ACB_camo
+				GFX_USA_light_ACB
+				GFX_USA_light_ACA_camo
+				GFX_USA_light_ACA
+				GFX_USA_light_ABC_camo
+				GFX_USA_light_ABC
+				GFX_USA_light_ABB_camo
+				GFX_USA_light_ABB
+				GFX_USA_light_ABA_camo
+				GFX_USA_light_ABA
+				GFX_USA_light_AAC_camo
+				GFX_USA_light_AAC
+				GFX_USA_light_AAB_camo
+				GFX_USA_light_AAB
+			}
+		}
+	}
+	light_tank_chassis_3 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = { 
+				GFX_USA_advanced_light_tank_medium #Chaffee
+			}
+		}
+		pool = { #MM: "C" series based on Chaffee (Advanced LT)
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_light_CCB_camo
+				GFX_USA_light_CCB
+				GFX_USA_light_CCA_camo
+				GFX_USA_light_CCA
+				GFX_USA_light_CBC_camo
+				GFX_USA_light_CBC
+				GFX_USA_light_CBB_camo
+				GFX_USA_light_CBB
+				GFX_USA_light_CBA_camo
+				GFX_USA_light_CBA
+				GFX_USA_light_CAC_camo
+				GFX_USA_light_CAC
+				GFX_USA_light_CAB_camo
+				GFX_USA_light_CAB
+				GFX_USA_light_CAA_camo
+				GFX_USA_light_CAA
+			}
+		}
+	}
+
+	light_tank_artillery_chassis = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.9
+			models = {
+				USA_light_armor_entity #M3 Stuart (Improved light tank) // Basic Fallback Option 
+			}
+		}
+	}
+
+	light_tank_aa_chassis_0 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_light_AA_B #Basic Light AA Tank -> Take oldest tank
+			}
+		}
+	}
+	light_tank_aa_chassis_1 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_light_AA_B #Basic Light AA Tank
+			}
+		}
+	}
+	light_tank_aa_chassis_2 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_light_AA_A #Improved Light AA Tank
+			}
+		}
+	}
+	light_tank_aa_chassis_3 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_light_AA_C #Advanced Light AA Tank
+			}
+		}
+	}
+	
+	light_tank_amphibious_chassis = { #This is the chassis from NSB modules, not the one in the tech tree
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = { 
+				GFX_USA_light_amphibious_AAA
+				GFX_USA_light_amphibious_AAB
+				GFX_USA_light_amphibious_AAC
+				GFX_USA_light_amphibious_ABA
+				GFX_USA_light_amphibious_ABB
+				GFX_USA_light_amphibious_ABC
+				GFX_USA_light_amphibious_ACA
+				GFX_USA_light_amphibious_ACB
+				GFX_USA_light_amphibious_ACC
+			}
+		}
+	}
+
+
+	medium_tank_chassis = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = { 
+				GFX_USA_basic_medium_tank_medium #M3 Lee
+				GFX_USA_improved_medium_tank_medium #M4 Sherman
+				GFX_USA_advanced_medium_tank_medium #T20 M27
+			}
+			models = {
+				USA_medium_armor_entity #M4 Sherman (Improved Medium Tank)
+			}
+		}
+	}
+	medium_tank_chassis_0 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = {
+				GFX_USA_basic_medium_tank_medium #M3 Lee (Basic Medium Tank) -> Take oldest tank
+			}
+		}
+	}
+	medium_tank_chassis_1 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = { 
+				GFX_USA_basic_medium_tank_medium #M3 Lee
+			}
+		}
+		pool = { #MM: "B" series based on M3 Lee (Basic MT)
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_medium_BCC_camo
+				GFX_USA_medium_BCC
+				GFX_USA_medium_BCB_camo
+				GFX_USA_medium_BCB
+				GFX_USA_medium_BCA_camo
+				GFX_USA_medium_BCA
+				GFX_USA_medium_BBC_camo
+				GFX_USA_medium_BBC
+				GFX_USA_medium_BBA_camo
+				GFX_USA_medium_BBA
+				GFX_USA_medium_BAC_camo
+				GFX_USA_medium_BAC
+				GFX_USA_medium_BAB_camo
+				GFX_USA_medium_BAB
+				GFX_USA_medium_BAA_camo
+				GFX_USA_medium_BAA
+			}
+		}
+	}
+	medium_tank_chassis_2 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = { 
+				GFX_USA_improved_medium_tank_medium #M4 Sherman
+			}
+			models = {
+				USA_medium_armor_entity #M4 Sherman (Improved Medium Tank)
+			}
+		}
+		pool = { #MM: "C" series based on M4 Sherman (Improved MT)
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = { 
+				GFX_USA_medium_CCB_camo
+				GFX_USA_medium_CCB
+				GFX_USA_medium_CCA_camo
+				GFX_USA_medium_CCA
+				GFX_USA_medium_CBC_camo
+				GFX_USA_medium_CBC
+				GFX_USA_medium_CBB_camo
+				GFX_USA_medium_CBB
+				GFX_USA_medium_CBA_camo
+				GFX_USA_medium_CBA
+				GFX_USA_medium_CAC_camo
+				GFX_USA_medium_CAC
+				GFX_USA_medium_CAB_camo
+				GFX_USA_medium_CAB
+				GFX_USA_medium_CAA_camo
+				GFX_USA_medium_CAA
+			}
+		}
+	}
+	medium_tank_chassis_3 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = { 
+				GFX_USA_advanced_medium_tank_medium #T20 M27
+			}
+		}
+		pool = { #MM: "A" series based on M36 Jackson (Advanced M SP AT)
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_medium_ACC_camo
+				GFX_USA_medium_ACC
+				GFX_USA_medium_ACB_camo
+				GFX_USA_medium_ACB
+				GFX_USA_medium_ACA_camo
+				GFX_USA_medium_ACA
+				GFX_USA_medium_ABC_camo
+				GFX_USA_medium_ABC
+				GFX_USA_medium_ABB_camo
+				GFX_USA_medium_ABB
+				GFX_USA_medium_ABA_camo
+				GFX_USA_medium_ABA
+				GFX_USA_medium_AAC_camo
+				GFX_USA_medium_AAC
+				GFX_USA_medium_AAB_camo
+				GFX_USA_medium_AAB
+			}
+		}
+	}
+	medium_tank_aa_chassis = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.9 
+			models = {
+				USA_medium_armor_entity #M4 Sherman (Improved Medium Tank) // basic Fallback Option 
+			}
+		}
+	}
+
+
+	medium_tank_aa_chassis_0 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_medium_AA_B #Basic Medium AA Tank -> Take oldest tank
+			}
+		}
+	}
+	medium_tank_aa_chassis_1 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_medium_AA_B #Basic Medium AA Tank
+			}
+		}
+	}
+	medium_tank_aa_chassis_2 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_medium_AA_C #Improved Medium AA Tank
+			}
+		}
+	}
+	medium_tank_aa_chassis_3 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_medium_AA_A #Advanced Medium AA Tank
+			}
+		}
+	}
+
+	medium_tank_destroyer_chassis = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.9 
+			models = {
+				USA_medium_armor_entity #M4 Sherman (Improved Medium Tank) // basic Fallback Option 
+			}
+		}
+	}
+
+
+	heavy_tank_chassis = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = {
+				GFX_USA_basic_heavy_tank_medium	#T1
+				GFX_USA_improved_heavy_tank_medium #M6A1
+				GFX_USA_advanced_heavy_tank_medium #M 26 Pershing
+			}
+			models = {
+				USA_heavy_armor_entity #M 26 Pershing (Advanced Heavy Tank)
+			}
+		}
+	}
+	heavy_tank_chassis_0 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = {
+				GFX_USA_basic_heavy_tank_medium	#T1 (Basic Heavy Tank) -> Pick oldest tank
+			}
+		}
+	}
+	heavy_tank_chassis_1 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = { 
+				GFX_USA_basic_heavy_tank_medium	#T1
+			}
+		}
+		pool = { #MM: "A" series based on M43 (Improved H SP ART)
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = { 
+				GFX_USA_heavy_ACC_camo
+				GFX_USA_heavy_ACC
+				GFX_USA_heavy_ACB_camo
+				GFX_USA_heavy_ACB
+				GFX_USA_heavy_ACA_camo
+				GFX_USA_heavy_ACA
+				GFX_USA_heavy_ABC_camo
+				GFX_USA_heavy_ABC
+				GFX_USA_heavy_ABB_camo
+				GFX_USA_heavy_ABB
+				GFX_USA_heavy_ABA_camo
+				GFX_USA_heavy_ABA
+				GFX_USA_heavy_AAC_camo
+				GFX_USA_heavy_AAC
+				GFX_USA_heavy_AAB_camo
+				GFX_USA_heavy_AAB
+			}
+		}
+	}
+	heavy_tank_chassis_2 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = { 
+				GFX_USA_improved_heavy_tank_medium #M6A1
+			}
+		}
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = { #MM: "C" series based on M6A1 (Improved HT)
+				GFX_USA_heavy_CCB_camo
+				GFX_USA_heavy_CCB
+				GFX_USA_heavy_CCA_camo
+				GFX_USA_heavy_CCA
+				GFX_USA_heavy_CBC_camo
+				GFX_USA_heavy_CBC
+				GFX_USA_heavy_CBB_camo
+				GFX_USA_heavy_CBB
+				GFX_USA_heavy_CBA_camo
+				GFX_USA_heavy_CBA
+				GFX_USA_heavy_CAC_camo
+				GFX_USA_heavy_CAC
+				GFX_USA_heavy_CAB_camo
+				GFX_USA_heavy_CAB
+				GFX_USA_heavy_CAA_camo
+				GFX_USA_heavy_CAA
+			}
+		}
+	}
+	heavy_tank_chassis_3 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = { 
+				GFX_USA_advanced_heavy_tank_medium #M 26 Pershing
+			}
+			models = {
+				USA_heavy_armor_entity #M 26 Pershing (Advanced Heavy Tank)
+			}
+		}
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = { #MM: "B" series based on M26 Pershing (Advanced HT)
+				GFX_USA_heavy_BCC_camo
+				GFX_USA_heavy_BCC
+				GFX_USA_heavy_BCB_camo
+				GFX_USA_heavy_BCB
+				GFX_USA_heavy_BCA_camo
+				GFX_USA_heavy_BCA
+				GFX_USA_heavy_BBC_camo
+				GFX_USA_heavy_BBC
+				GFX_USA_heavy_BBA_camo
+				GFX_USA_heavy_BBA
+				GFX_USA_heavy_BAC_camo
+				GFX_USA_heavy_BAC
+				GFX_USA_heavy_BAB_camo
+				GFX_USA_heavy_BAB
+				GFX_USA_heavy_BAA_camo
+				GFX_USA_heavy_BAA
+			}
+		}
+	}
+
+	heavy_tank_aa_chassis_0 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_heavy_AA_B #Basic Heavy AA Tank -> Take oldest tank
+			}
+		}
+	}
+	heavy_tank_aa_chassis_1 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_heavy_AA_B #Basic Heavy AA Tank
+			}
+		}
+	}
+	heavy_tank_aa_chassis_2 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_heavy_AA_C #Improved Heavy AA Tank
+			}
+		}
+	}
+	heavy_tank_aa_chassis_3 = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			weight = 0.5
+			icons = {
+				GFX_USA_heavy_AA_A #Advanced Heavy AA Tank
+			}
+		}
+	}
+
+	super_heavy_tank_chassis = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = { 
+				GFX_USA_super_heavy_tank_medium
+			}
+		}
+	}
+
+	modern_tank_chassis = {
+		pool = {
+			limit = {
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = { 
+				GFX_USA_main_battle_tank_medium
+			}
+		}
+	}
+
+	amphibious_tank_chassis = { # No need to check for MTG, these chassis won't show up without the DLC, (But it throws errors, so please still do or the error dog will be sad!)
+		pool = {
+			limit = {
+				has_dlc = "Man the Guns"
+				has_dlc = "No Compromise, No Surrender"
+			}
+			icons = {
+				GFX_USA_amphibious_tank_2_medium #Sherman DD (Amphibious Tank II) #Sorted like this so that by default 2D icon and 3D model match (Amphibious Tank I)
+				GFX_USA_amphibious_tank_medium #LVT-1(A) (Amphibious Tank I)
+			}
+			models = {
+				USA_amphibious_armor_entity #LVT-1(A) (Amphibious Tank I)
 			}
 		}
 	}

@@ -86,6 +86,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_JAP_communist_sympathizer"
 		texturefile = "gfx/interface/traits/personal/trait_communist_sympathizer.dds"
-	}	
+	}
+	spriteType = {
+		name = "GFX_trait_motivated"
+		texturefile = "gfx/interface/traits/personal/trait_cuts_corners.dds"
+	}
 }
 

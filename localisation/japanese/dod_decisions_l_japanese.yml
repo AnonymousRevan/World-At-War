@@ -22,7 +22,7 @@
  YUG_weak_communists: "§R弱い§!"
  YUG_average_communists: "§H標準§!"
  YUG_strong_communists: "§G強い§!"
- YUG_very_strong_communists: "§Mとても強い§!"
+ YUG_very_strong_communists: "§Gとても強い§!"
  HUN_closer_ties_to_CZE: "[CZE.GetNameDef]との親密な関係"
  ROM_change_sides: "忠誠の変化"
  ROM_dividing_yugo: "ユーゴスラビアの分割"
@@ -59,3 +59,4 @@
  ROM_change_sides_to_axis: "枢軸国加盟"
  ROM_change_sides_to_axis_desc: "政府の変化は、戦争のおける我々の連携に変化を促した。枢軸に合流することで、世界的な紛争における現在の「同志」は、ルーマニアの弾丸が新しい標的を見つけて混乱することになるだろう。"
  ROM_present_ultimatum: "最後通牒の提示"
+ ROM_country_and_all_subjects_trigger: "[Country.GetName]とそのすべての属国"

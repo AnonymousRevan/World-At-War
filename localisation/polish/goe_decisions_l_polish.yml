@@ -1,6 +1,6 @@
 ﻿l_polish:
  AFG_oil_concessions_category: "Koncesje na ropę"
- AFG_propose_oil_concession_deal: "Przedstawienie rządowi [FROM.GetAdjective] propozycji umowy o koncesjach na ropę"
+ AFG_propose_oil_concession_deal: "Przedstawienie rządowi §Y[FROM.GetAdjective]§! propozycji umowy o koncesjach na ropę"
  AFG_oil_deal_negotiation_in_progress: "Trwają negocjacje w sprawie wydobycia ropy naftowej"
  AFG_signed_oil_deal_flag: "Podpisano umowę o koncesjach na ropę"
  AFG_nationalize_oil: "Nacjonalizacja przemysłu naftowego"

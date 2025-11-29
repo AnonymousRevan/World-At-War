@@ -555,7 +555,7 @@
  GER_demand_communist_subjugation_decision: "Żądanie podporządkowania państwa [FROM.GetAdjective]"
  GER_proletarian_solidarity_decision: "[FROM.GetNameDef]: Wspieranie proletariackiej solidarności"
  GER_industrial_relocation_cat: "Relokacja przemysłowa"
- GER_industrial_relocation_catdesc: "Nasz program relokacji przemysłowej z państwa [SOV.GetNameDef] może spowodować, że krótkoterminowo nasza baza przemysłu skurczy się, ale surowce, które zdobędziemy w ten sposób, z nawiązką to zrekompensują i zasilą nasze linie montażowe."
+ GER_industrial_relocation_cat_desc: "Nasz program relokacji przemysłowej z państwa [SOV.GetNameDef] może spowodować, że krótkoterminowo nasza baza przemysłu skurczy się, ale surowce, które zdobędziemy w ten sposób, z nawiązką to zrekompensują i zasilą nasze linie montażowe."
  GER_currently_relocating_industry_flag: "W tej chwili przenosi fabryki"
  GER_industrial_relocation_oil_decision: "[FROM.GetName]: Relokacja przemysłu do [FROM.CONTROLLER.GetNameDef] w celu pozyskiwania ropy "
  GER_industrial_relocation_tungsten_decision: "[FROM.GetName]: Relokacja przemysłu do [FROM.CONTROLLER.GetNameDef] w celu pozyskiwania wolframu"

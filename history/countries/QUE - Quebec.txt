@@ -27,10 +27,12 @@ set_technology = {
 	tech_recon = 1
 	tech_trucks = 1
 	gw_artillery = 1
-	trench_warfare = 1
-	fleet_in_being = 1
 	basic_train = 1
 }
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+
 if = {
 	limit = {
 		NOT = { has_dlc = "By Blood Alone" }
@@ -104,7 +106,7 @@ if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
 	create_equipment_variant = {
-		name = "Sanguenay Class"
+		name = "Saguenay Class"
 		type = destroyer_1
 		upgrades = {
 			ship_torpedo_upgrade = 1
@@ -137,7 +139,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Sanguenay Class"
+		name = "Saguenay Class"
 		type = ship_hull_light_1
 		name_group = CAN_DD_HISTORICAL
 		parent_version = 0

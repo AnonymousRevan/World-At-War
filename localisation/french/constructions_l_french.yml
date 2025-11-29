@@ -108,6 +108,7 @@
  EQUIPMENT_CONVERSION_SPEED_MODIFIERS: "§HVitesse de conversion modifiée par :§!"
  EQUIPMENT_CONVERSION_COST_MODIFIERS: "§HCoût de conversion modifié par :§!"
  INFRASTRUCTURE_COST_EFFECT: "£GFX_infrastructure_texticon£Infrastructure de l'État : x $VAL|2H$"
+ LACK_OF_POWER_DESC: "Manque d'énergie : $VAL|R%$"
  CIC_BANK_HEADER: "Surplus de capacité économique"
  CIC_BANK_HIGHLIGHT: "§H$CIC_BANK_HEADER$§!"
  CIC_BANK_DESC: "Le surplus en £civ_factory_output£capacité économique comprend toute la §Hcapacité industrielle§! tirée des contrats sur le §Hmarché international§! et d'autres sources, et contribue à la vitesse de construction."

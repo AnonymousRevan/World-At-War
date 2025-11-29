@@ -39,7 +39,7 @@
  tactic_defender_hb_skillful_defence: "Defender ponte"
  tactic_guerrilla_tactics: "Táticas de guerrilha"
  tactic_human_wave_tactics: "Carga em massa"
- tactic_banzai_charge: "Carga banzai"
+ tactic_banzai_charge: "Ataque Banzai"
  tactic_infantry_charge: "Ataque de infiltração"
  tactic_planned_attack: "Ataque bem planejado"
  tactic_relentless_assault: "Ataque incessante"
@@ -56,3 +56,4 @@
  has_flame_tank_units: "Tem qualquer unidade de tanque lança-chamas"
  tactic_sf_fortify: "Defesa fortificada"
  tactic_sf_ambush: "Táticas de emboscada urbana"
+ tactic_grand_banzai_charge: "Grande Ataque Banzai"

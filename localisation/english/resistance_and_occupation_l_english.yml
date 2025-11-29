@@ -84,6 +84,7 @@
  colonial_police_improved:0 "$colonial_police$"
  colonial_police_final:0 "$colonial_police$"
  secretaries_general: "Secretaries General"
+ senbu_occupation_law: "Senbu"
  
  COMPLIANCE_ADDITIONAL_DAILY_GAIN:0 "Additional Daily Compliance Gain: $GAIN$"
  COMPLIANCE_GAIN_IS_DISABLED:1 "§RDisabled due to insufficient garrison§!"
@@ -174,6 +175,7 @@
  sabotage_tungsten:0 "Sabotage Tungsten Resources"
  sabotage_steel:0 "Sabotage Steel Resources"
  sabotage_chromium:0 "Sabotage Chromium Resources"
+ sabotage_coal:0 "Sabotage Coal Resources"
  
  RESISTANCE_CHANCE_FOR_ACTIVITY:0 "Chance for resistance activity: $CHANCE|%.1H$"
  RESISTANCE_CHANCE_FOR_GARRISON_PENETRATE:0 "Chance for resistance to penetrate garrisons: $CHANCE|%.0H$"

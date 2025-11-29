@@ -108,6 +108,7 @@
  EQUIPMENT_CONVERSION_SPEED_MODIFIERS: "§H転換速度補正:§!"
  EQUIPMENT_CONVERSION_COST_MODIFIERS: "§H転換コスト補正:§!"
  INFRASTRUCTURE_COST_EFFECT: "州のインフラ: x$VAL|2H$"
+ LACK_OF_POWER_DESC: "電力不足: $VAL|R%$"
  CIC_BANK_HEADER: "経済キャパシティの超過"
  CIC_BANK_HIGHLIGHT: "§H経済キャパシティの超過§!"
  CIC_BANK_DESC: "$CIC_BANK_HEADER$には§H国際市場§!等の契約から得られる§H産業キャパシティ§!が含まれ、建設速度に貢献します。"

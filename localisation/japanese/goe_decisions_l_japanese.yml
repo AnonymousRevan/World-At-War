@@ -1,7 +1,7 @@
 ﻿l_japanese:
  AFG_oil_concessions_category: "石油利権"
- AFG_propose_oil_concession_deal: "[FROM.GetName]に石油利権協定を提案"
- AFG_oil_deal_negotiation_in_progress: "石油開発交渉が進行中"
+ AFG_propose_oil_concession_deal: "§Y[FROM.GetName]に石油利権協定を提案§!"
+ AFG_oil_deal_negotiation_in_progress: " 石油開発交渉が進行中"
  AFG_signed_oil_deal_flag: "石油利権協定を締結"
  AFG_nationalize_oil: "石油産業の国有化"
  AFG_oil_concession_here_flag: "海外勢力に支配された石油資源"

@@ -108,6 +108,7 @@
  EQUIPMENT_CONVERSION_SPEED_MODIFIERS: "§HModyfikatory tempa przekształcania:§!"
  EQUIPMENT_CONVERSION_COST_MODIFIERS: "§HKoszt przekształcania zmodyfikowany o:§!"
  INFRASTRUCTURE_COST_EFFECT: "Infrastruktura regionu: x$VAL|2H$"
+ LACK_OF_POWER_DESC: "Brak siły: $VAL|R%$"
  CIC_BANK_HEADER: "Nadwyżka potencjału gospodarczego"
  CIC_BANK_HIGHLIGHT: "§HNadwyżka potencjału gospodarczego§!"
  CIC_BANK_DESC: "$CIC_BANK_HEADER$ zawiera §Hpotencjał przemysłowy§! dzięki kontraktom z §Hrynku międzynarodowego§! lub innych źródeł i ma wpływ na nasze tempo budowy."

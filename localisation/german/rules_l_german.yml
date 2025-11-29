@@ -9,7 +9,7 @@
  CAN_BOOST_OTHER_IDEOLOGIES: "Kann die Beliebtheit anderer Ideologien steigern"
  CAN_JOIN_FACTIONS: "Kann Gruppierungen beitreten"
  CAN_JOIN_FACTIONS_NOT_ALLOWED_DIPLOMACY: "$COUNTRY|H$ darf keinen Fraktionen beitreten"
- CAN_BE_SPYMASTER: "Kann Nachrichtenoffizier sein"
+ CAN_BE_SPYMASTER: "Kann im Nachrichtendienst arbeiten"
  CONTRIBUTES_OPERATIVES: "Stellt Agenten an Nachrichtenoffizier ab: Ja"
  CAN_BOOST_OWN_IDEOLOGY: "Kann die Beliebtheit der eigenen Partei in anderen Ländern verbessern"
  CAN_GENERATE_FEMALE_UNIT_LEADERS: "Kann weibliche Einheitenanführer generieren"

@@ -330,3 +330,26 @@ animation = {
 	name = "ship_hull_super_carrier_idle_animation"
 	file = "ship_hull_super_carrier_idle.anim"
 }
+
+####
+# SUBMARINE CARRIER
+####
+animation = {
+	name = "submarine_carrier_death_animation"
+	file = "submarine_carrier_death.anim"
+}
+
+animation = {
+	name = "submarine_carrier_attack_animation"
+	file = "submarine_carrier_attack.anim"
+}
+
+animation = {
+	name = "submarine_carrier_defend_animation"
+	file = "submarine_carrier_defend.anim"
+}
+
+animation = {
+	name = "submarine_carrier_idle_animation"
+	file = "submarine_carrier_idle.anim"
+}

@@ -101,7 +101,7 @@
  AUS_currently_reintegrating_state_flag: "Reintegrando um estado ao território [ROOT.GetAdjective]"
  ###### HUNGARY  ######
  HUN_tap_the_nagylengyel_oil_field: "Explorar o campo de petróleo de Nagylengyel"
- HUN_explore_the_oil_fields_around_nagykanizsa: "Explorar os campos de petróleo ao redor de Nagykanizsa"
+ HUN_explore_the_oil_fields_around_nagykanizsa: "Explorar os campos petrolíferos ao redor de Nagykanizsa"
  expand_the_rudabanya_iron_mine: "Expandir a mina de ferro de Rudabánya"
  HUN_national_academy_of_sciences_category: "A Academia de Ciências do Governo [ROOT.GetAdjective]"
  HUN_national_academy_of_sciences_category_desc: "Para promover o desenvolvimento e o progresso da nação, devemos nos concentrar na expansão de nossa Academia Nacional de Ciências."
@@ -555,7 +555,7 @@
  GER_demand_communist_subjugation_decision: "Exigir a subjugação d[FROM.GetNameDef]"
  GER_proletarian_solidarity_decision: "Encorajar a solidariedade proletária n[FROM.GetNameDef]"
  GER_industrial_relocation_cat: "Realocação industrial"
- GER_industrial_relocation_catdesc: "Nosso programa de realocação industrial com [SOV.GetNameDef] pode reduzir nossa base industrial a curto prazo, mas as matérias-primas que ganharemos compensarão essa perda e fortalecerão nossas linhas de produção."
+ GER_industrial_relocation_cat_desc: "Nosso programa de realocação industrial com [SOV.GetNameDef] pode reduzir nossa base industrial a curto prazo, mas as matérias-primas que ganharemos compensarão essa perda e fortalecerão nossas linhas de produção."
  GER_currently_relocating_industry_flag: "Realocando fábricas no momento"
  GER_industrial_relocation_oil_decision: "Realocar a indústria para [FROM.Controller.GetNameDef] em troca de petróleo d[FROM.GetNameDef]"
  GER_industrial_relocation_tungsten_decision: "Realocar a indústria para [FROM.Controller.GetNameDef] em troca de tungstênio d[FROM.GetNameDef]"

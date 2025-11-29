@@ -789,6 +789,7 @@ FRA_coup_in_indochina = { ### 1/50
 			state = 670
 			state = 286
 			state = 741
+			state = 1017
 		}
 	}
 	visible = { 
@@ -798,6 +799,7 @@ FRA_coup_in_indochina = { ### 1/50
 			controls_state = 670
 			controls_state = 286
 			controls_state = 741
+			controls_state = 1017
 		}
 	}
 	available = {
@@ -829,6 +831,7 @@ FRA_coup_in_indochina = { ### 1/50
 					state = 670
 					state = 286
 					state = 741
+					state = 1017
 				}
 				CONTROLLER = {
 					not = { tag = ROOT }
@@ -850,6 +853,7 @@ FRA_coup_in_indochina = { ### 1/50
 					state = 670
 					state = 286
 					state = 741
+					state = 1017
 				}
 				CONTROLLER = {
 					not = { tag = ROOT }

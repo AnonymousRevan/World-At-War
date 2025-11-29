@@ -1,6 +1,6 @@
 ﻿l_spanish:
  AFG_oil_concessions_category: "Concesiones de petróleo"
- AFG_propose_oil_concession_deal: "Proponer a [FROM.GetName] un acuerdo de concesión de petróleo"
+ AFG_propose_oil_concession_deal: "Proponer un acuerdo de concesión de petróleo a §Y[FROM.GetName]§!"
  AFG_oil_deal_negotiation_in_progress: "Negociaciones de desarrollo petrolero en curso"
  AFG_signed_oil_deal_flag: "Acuerdo de concesión de petróleo firmado"
  AFG_nationalize_oil: "Nacionalizar la industria del petróleo"
@@ -378,7 +378,7 @@
  PER_offers_oil_flag: "Petróleo [PER.GetAdjective] ofrecido"
  PER_parliament_dissolved: "Parlamento disuelto"
  PER_economy_proved: "Credibilidad económica probada"
- PER_military_fielded: "Ejército mobilizado"
+ PER_military_fielded: "Ejército movilizado"
  PER_state_coring_flag: "Integrar el estado"
  ##############################
  #### INDUSTRIAL DECISIONS ####

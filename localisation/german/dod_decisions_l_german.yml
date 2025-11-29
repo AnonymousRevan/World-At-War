@@ -59,3 +59,4 @@
  ROM_change_sides_to_axis: "Der Achse beitreten"
  ROM_change_sides_to_axis_desc: "Änderungen innerhalb unserer Regierung haben zu einem Wandel unserer Ausrichtung im Krieg geführt. Wir stellen uns auf die Seite der Achse, was unsere momentanen \"Verbündeten\" in diesem globalen Konflikt gewiss reichlich verwirren wird. Rumänische Kugeln finden plötzlich neue Ziele."
  ROM_present_ultimatum: "Präsentieren Sie das Ultimatum"
+ ROM_country_and_all_subjects_trigger: "[Country.GetName] und alle Untertanen"

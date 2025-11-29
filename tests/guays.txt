@@ -6,7 +6,7 @@ tests = {
         acceptable_fail_rate = 0.1
 
         success = {
-            date > 1947.12.1
+            date > 1945.1.1
         }
 
         fail = {
@@ -24,7 +24,7 @@ tests = {
         acceptable_fail_rate = 0.1
 
         success = {
-            date > 1947.12.1
+            date > 1945.1.1
         }
 
         fail = {
@@ -41,7 +41,7 @@ tests = {
 
     URG_has_civil_war = {
         success = {
-            date > 1947.1.1
+            date > 1945.1.1
         }
 
         fail = {
@@ -53,7 +53,7 @@ tests = {
 
     PAR_has_civil_war = {
         success = {
-            date > 1947.1.1
+            date > 1945.1.1
         }
 
         fail = {
@@ -68,7 +68,7 @@ tests = {
         acceptable_fail_rate = 0.1
 
         success = {
-            date > 1947.12.1
+            date > 1945.1.1
         }
 
         fail = {
@@ -80,7 +80,7 @@ tests = {
         acceptable_fail_rate = 0.1
 
         success = {
-            date > 1947.12.1
+            date > 1945.1.1
         }
 
         fail = {

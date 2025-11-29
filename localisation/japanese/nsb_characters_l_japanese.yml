@@ -39,6 +39,7 @@
  SOV_andrey_grechko: "アンドレイ・グレチコ"
  SOV_rodion_malinovsky: "ロディオン・マリノフスキー"
  SOV_vasily_chuykov: "ヴァシーリー・チュイコフ"
+ SOV_aleksandr_cherepanov: "アレクサンドル・チェレパノフ"
  SOV_filipp_oktyabrsky: "フィリップ・オクチャーブリスキー"
  SOV_sergey_gorshkov: "セルゲイ・ゴルシコフ"
  SOV_gordey_levchenko: "ゴルジェーイ・レフチェンコ"
@@ -307,6 +308,10 @@
  MAN_yoshiko_kawashima: "川島芳子"
  MAN_zhao_shangzhi: "趙尚志"
  MAN_changlin_linge: "昌林·林格"
+ MAN_urzhin_garmaev: "ウルジン・ガルマーエフ"
+ MAN_yu_zishan: "于芷山"
+ MAN_jonjurjab: "ジョンジュルジャブ"
+ MAN_pujie: "溥傑"
  #USA
  USA_franklin_delano_roosevelt: "フランクリン・デラノ・ルーズベルト"
  USA_william_dudley_pelley: "ウィリアム・ダドリー・ペリー"

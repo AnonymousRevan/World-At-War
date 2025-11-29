@@ -741,7 +741,7 @@
  AAT_Sweden_flashpoints.82.a: "C'était bien la moindre des choses"
  AAT_Sweden_flashpoints.83.t: "[SWE.GetLeLaLNPCap] [SWE.GetName] refus[SWE.GetEEntNP]\nde compenser la perte d'$STATE_145$"
  AAT_Sweden_flashpoints.83.desc: "\n[SWE.GetLeLaLNPCap] [SWE.GetName] [SWE.GetAOntNP] clairement indiqué qu'[SWE.GetIlElleNP] n'étai[SWE.GetTEntNP] aucunement disposé[SWE.GetXENP] à dépenser quoi que ce soit pour compenser [FIN.GetLeLaLNP] [FIN.GetName] de la perte d'$STATE_145$."
- AAT_Sweden_flashpoints.83.a: "Hé bien, tant pis pour [SWE.GetLuiElleEuxNP] en ce cas"
+ AAT_Sweden_flashpoints.83.a: "Eh bien, tant pis pour [SWE.GetLuiElleEuxNP]"
  AAT_Sweden_BoP.10.t: "Questions électorales :\nla politique économique"
  AAT_Sweden_BoP.10.desc: "\nLa campagne électorale bat de nouveau son plein [Root.GetAuEnANP] [Root.GetName], et les partis rivalisent pour s'assurer le contrôle du Riksdag. Le débat du moment qui semble avoir retenu l'attention des électeurs est l'économie. Si certains pensent que le mieux est de poursuivre les politiques actuellement engagées, d'autres voudraient des changements radicaux. Mais, bien évidemment, une seule option permettra d'attirer la majorité des voix."
  AAT_Sweden_BoP.10.a: "L'économie doit être dirigée\npar et pour les travailleurs"

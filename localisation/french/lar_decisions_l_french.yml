@@ -41,6 +41,7 @@
  SPA_suppress_the_strikes: "Réprimer les grèves"
  SPA_suppress_the_strikes_desc: "Les grèves causent une grande agitation et mettent à mal l'économie du pays. Nous devons envoyer les milices pour les briser et remettre la population au travail."
  SPA_suppress_the_strikes_tt: "A mis fin aux grèves"
+ SPA_suppress_the_strikes_tt_NOT: "Impossible : a mis fin aux grèves"
  SPR_concessions_to_the_left: "Concessions à la gauche"
  SPR_concessions_to_the_left_desc: "Les grévistes ont de réelles raisons de s'inquiéter. Nous devons leur promettre de répondre à ces questions, et faire des concessions en acceptant de ne pas poursuivre les occupations illégales de terres et les délits et vols mineurs. Ce n'est qu'ainsi que l'agitation sociale pourra retomber."
  SPA_concessions_to_the_left_tt: "A fait des concessions à la gauche"

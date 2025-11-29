@@ -1189,7 +1189,8 @@
  #To GER/FRA/ENG: Exiled Belgium Requests equipment
  ww_BEL_event_diplomatic.15.t: "[FROM.GetNameDefCap] solicita equipo"
  ww_BEL_event_diplomatic.15.desc: "Acabamos de recibir una petición del gobierno [FROM.GetAdjective] en el exilio. Desean que les enviemos equipo para entrenar a las tropas que les quedan, con la esperanza de recuperar en algún momento su tierra patria."
- ww_BEL_event_diplomatic.15.a: "Los apoyaremos."
+ ww_BEL_event_diplomatic.15.a: "¡Les enviaremos $infantry_equipment$!"
+ ww_BEL_event_diplomatic.15.c: "¡Les enviaremos $support_equipment$!"
  ww_BEL_event_diplomatic.15.b: "Su ambición es noble, pero no podemos ayudarlos."
  #To GER/FRA/ENG: Exiled Belgium Requests factories
  ww_BEL_event_diplomatic.16.t: "[FROM.GetNameDefCap] solicita fábricas"
@@ -1816,7 +1817,7 @@
  wuw_GER_legions.7.a: "Nos vendría bien su ayuda para contener a Serbia."
  wuw_GER_legions.7.b: "No necesitamos a esa gentuza rusa."
  wuw_GER_legions.8.t: "Una oferta de los cosacos descontentos"
- wuw_GER_legions.8.desc: "Como cada vez está más clara nuestra intención de derribar la puerta desvencijada de [SOV.GetNameDef], muchos de los perdedores de la guerra civil rusa se nos han acercado buscando la oportunidad de acabar con el actual gobierno [SOV.GetAdjective]. Entre ellos están unos cosacos del Don y Kubán, [SOV.SOV_pyotr_krasnov.GetName] y [SOV.SOV_andrey_shkuro.GetName], que desean luchar con nosotros. ¿Aceptamos su ayuda?"
+ wuw_GER_legions.8.desc: "Como cada vez está más clara nuestra intención de derribar la puerta desvencijada de [SOV.GetNameDef], muchos de los perdedores de la Guerra Civil Rusa se nos han acercado buscando la oportunidad de acabar con el actual gobierno [SOV.GetAdjective]. Entre ellos están unos cosacos del Don y Kubán, [SOV.SOV_pyotr_krasnov.GetName] y [SOV.SOV_andrey_shkuro.GetName], que desean luchar con nosotros. ¿Aceptamos su ayuda?"
  wuw_GER_legions.8.a: "Nos vendría bien su conocimiento de la estepa de Kubán."
  wuw_GER_legions.8.b: "¿Por qué íbamos a necesitar la ayuda de unos cosacos?"
  ### GERMAN MONROE DOCTRINE EVENTS ###
@@ -2234,7 +2235,7 @@
  wuw_GER_diplomacy.105.t: "[FROM.GetNameDefCap] rechaza la declaración de esferas de influencia"
  wuw_GER_diplomacy.105.desc: "Los emisarios [FROM.GetAdjective]s nos han comunicado la negativa de su gobierno a reconocer la legitimidad de nuestra esfera de influencia. En lo que a ellos respecta, afirman que su esfera de influencia la delimitarán sin necesidad de avenirse con nosotros. Esto podría dar lugar a tensiones en la región."
  wuw_GER_diplomacy.105.a: "Qué grosería."
- wuw_GER_diplomacy.107.t: "Los [FROM.GetAdjective]s ofrecen industria a cambio de recursos"
+ wuw_GER_diplomacy.107.t: "El gobierno [FROM.GetAdjective] ofrece industria a cambio de recursos"
  wuw_GER_diplomacy.107.desc: "Hemos recibido una oferta de [FROM.GetNameDef]. Les interesaría acordar la adquisición prolongada de nuestros recursos y, a cambio, trasladarían parte de su industria a nuestro país. Actualmente tienen la mirada puesta en los recursos de [FROM.FROM.GetName], y nos piden parte de su producción."
  wuw_GER_diplomacy.107.a: "Por qué no."
  wuw_GER_diplomacy.107.b: "Nos lo piden en mal momento."

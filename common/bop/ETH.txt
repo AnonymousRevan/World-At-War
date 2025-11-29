@@ -180,7 +180,7 @@ ETH_centralization_balance = {
 				set_variable = { ETH_state_decentralization_infrastructure = -0.05 }
 				set_variable = { ETH_state_decentralization_resources = -0.1 }
 				set_variable = { ETH_state_decentralization_defence = 0.05 }
-				set_variable = { ETH_state_decentralization_attack = 0.5 }
+				set_variable = { ETH_state_decentralization_attack = 0.05 }
 				set_variable = { ETH_state_decentralization_recruitable_population = -0.1 }
 				set_variable = { ETH_state_decentralization_army_speed = 0.1 }
 				# Country Variables
@@ -501,7 +501,7 @@ ETH_centralization_balance = {
 				set_variable = { ETH_state_decentralization_infrastructure = -0.05 }
 				set_variable = { ETH_state_decentralization_resources = -0.1 }
 				set_variable = { ETH_state_decentralization_defence = 0.05 }
-				set_variable = { ETH_state_decentralization_attack = 0.5 }
+				set_variable = { ETH_state_decentralization_attack = 0.05 }
 				set_variable = { ETH_state_decentralization_recruitable_population = -0.1 }
 				set_variable = { ETH_state_decentralization_army_speed = 0.1 }
 				# Country Variables

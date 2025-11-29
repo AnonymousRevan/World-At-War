@@ -65,3 +65,5 @@
  MAPMODE_ALL_ENTRY_DETAILS: "§Gクリック§!で選択する。\n§G右クリック§!で選択して閉じる。"
  MAPMODE_TOOLTIP_INFRASTRUCTURE: "£infrastructure_texticon  インフラ $INF|Y$"
  MAPMODE_TOOLTIP_MANPOWER: "£population_texticon  人口 $MP|*Y$"
+ MAPMODE_DEBUG_NAVAL_ACCESSIBILITY: "§GALT§!キーを押し続けると潜水艦の航行可能域キャッシュを表示\n§GSHIFT§!を押し続けると水上艦の航行可能域キャッシュを表示"
+ STRATEGIC_LOCATION_MAPICON: "§H戦略的拠点§!"

@@ -65,3 +65,5 @@
  MAPMODE_ALL_ENTRY_DETAILS: "§GCliquer§! pour sélectionner.\n§GClic droit§! pour sélectionner et fermer."
  MAPMODE_TOOLTIP_INFRASTRUCTURE: "Infrastructures : $INF|Y$£infrastructure_texticon£"
  MAPMODE_TOOLTIP_MANPOWER: "Population : $MP|*Y$£population_texticon£"
+ MAPMODE_DEBUG_NAVAL_ACCESSIBILITY: "Maintenez §GAlt§! pour accéder au cache d'accessibilité des unités navales sous-marines\nMaintenez §GShift§! pour accéder au cache d'accessibilité des unités navales de surface"
+ STRATEGIC_LOCATION_MAPICON: "§HLieux stratégiques§!"

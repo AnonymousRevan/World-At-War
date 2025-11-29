@@ -60,6 +60,7 @@
  enclave: "Анклав"
  small_island: "Маленький остров"
  tiny_island: "Крохотный остров"
+ large_island: "Большой остров"
  pastoral: "Пастбищные угодья"
  OCCUPATION_BREAKDOWN: "Разбивка по оккупации:"
  OCCUPATION_BREAKDOWN_ENTRY: "\n$COUNTRY|Y$: $OCCUPATION|Y%0$"

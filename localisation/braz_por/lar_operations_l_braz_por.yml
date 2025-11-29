@@ -51,7 +51,7 @@
  operation_infiltrate_armed_forces_navy_desc: "Enquanto as tropas unidas de navios [From.GetAdjective] oferecem poucas possibilidade de infiltração, a equipe de suporte no país é outra história. Infiltrar alguém nos daria informações valiosas além da oportunidade de apoiar operações mais difíceis no futuro."
  operation_infiltrate_civilian: "Infiltrar administração civil"
  operation_infiltrate_civilian_desc: "O governo [From.GetAdjective] possui vários pontos fracos onde podemos infiltrar um agente em suas operações. Fazer isso nos traria conhecimento valioso sobre o funcionamento interno de [From.getAdjective], além de nos fornecer a oportunidade de usar esse agente em futuras operações contra [From.GetNameDef]."
- operation_infiltrate_armed_forces_airforce: "Infiltrar a força aérea"
+ operation_infiltrate_armed_forces_airforce: "Infiltrar-se na Força Aérea"
  operation_infiltrate_armed_forces_airforce_desc: "A força aérea [From.getAdjective] é a mais nova das forças armadas [From.GetAdjective]. Sendo assim, ela possui várias pessoas de passados incomuns. Podemos nos aproveitar disso para colocar um homem infiltrado."
  operation_infiltrate_armed_forces_army: "Infiltrar o exército"
  operation_infiltrate_armed_forces_army_desc: "O exército [From.GetAdjective] tem um número de indivíduos entre seus soldados que podem mudar de lado para fornecer informações adicionais e apoiar operações futuras."

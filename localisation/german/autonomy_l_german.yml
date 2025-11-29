@@ -33,6 +33,7 @@
  CONTINUOUS_AUTONOMY_EFFECT: "$REASON$: £autonomy_texticon $VAL|+=2$"
  EVENT_AUTONOMY_EFFECT: "$REASON$: £autonomy_texticon $VAL|+=2$"
  LL_TO_OVERLORD_FREEDOM_EFFECT: "Untertan sendet Leih-Pacht-Ausrüstung an Herren"
+ SUBJECT_OF_NAME: "Untertan von:\n$VALUE|H$"
  LL_TO_PUPPET_FREEDOM_EFFECT: "Herr sendet Leih-Pacht-Ausrüstung an Untertan"
  MONTHLY_LL_FREEDOM_TO_PUPPET: "$FLAG$ $VALUE|-2$"
  MONTHLY_LL_FREEDOM_TO_MASTER: "$VALUE|+2$"
@@ -72,3 +73,5 @@
  autonomy_volkskommissariat: "Volkskommissariat"
  autonomy_eu_member: "EU-Mitgliedsstaat"
  AUTONOMY_NOT_ENOUGH_TIME: "§RDie Autonomiestufe kann nur alle §Y$DURATION$ Tage§! geändert werden (§Y$REMAINDER$ Tag(e) übrig§!)§!"
+ autonomy_sea_warlord_subject: "Kriegsherrenenuntertan"
+ autonomy_sea_integrated_warlord_subject: "Integrierter Kriegsfherrenenuntertan"

@@ -64,6 +64,7 @@
  GRE_dominate_the_bulgarians_desc: "Les [BUL.GetHabitants] ont toujours été une menace pour la sécurité des [GRE.GetHabitants]. On les a qualifiés de « Prusse des Balkans », ce qui est fort pittoresque. Mais nous ne devons plus les laisser faire, maintenant."
  GRE_stage_an_incident_in_the_bosporus: "Créer un incident sur le Bosphore"
  GRE_stage_an_incident_in_the_bosporus_desc: "Le Politburo du PCUS ne fait aucun secret de son désir de contrôler Constantinople. Les [SOV.GetHabitants] ont décidé de franchir les premières étapes concrètes de ce projet en prenant le contrôle du Bosphore, et [Root.GetLeLaLNP] [Root.GetName] [Root.GetEstSontNP] évidemment prêt[Root.GetXENP] à les y aider en jouant un rôle de premier plan."
+ SOV_isolating_turkey: "Ambitions soutenues contre la Turquie"
  GRE_reviving_the_double_headed_eagle: "Faire renaître l'Aigle bicéphale"
  GRE_reviving_the_double_headed_eagle_desc: "Les venizélistes étaient des couards, qui ont toujours refusé de laisser la Grèce rétablir sa gloire d'antan, la gloire de Byzance. Mais pourquoi donc devrions-nous nous arrêter aux côtes [TUR.GetAdjFP] si tous les territoires perdus de l'Empire s'offrent à nous ? Une nouvelle ère de gloire s'ouvre désormais devant nous !"
  GRE_nenikikamen: "Nenikíkamen"

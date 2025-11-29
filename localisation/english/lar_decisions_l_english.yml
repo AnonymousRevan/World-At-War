@@ -41,6 +41,7 @@
  SPA_suppress_the_strikes:0 "Suppress the Strikes"
  SPA_suppress_the_strikes_desc:0 "The strikes are causing massive unrest and economic damage to our nation. We will send in our militias to break them up and ensure the people go back to work."
  SPA_suppress_the_strikes_tt:0 "Has completely suppressed the National Strikes"
+ SPA_suppress_the_strikes_tt_NOT:0 "Not: Has completely suppressed the National Strikes"
  SPR_concessions_to_the_left:0 "Concessions to the Left"
  SPR_concessions_to_the_left_desc:0 "The strikers have valid reasons for their concerns. We will promise address them, and in the mean time make concessions in the form of not persecuting illegal land occupation and minor social crimes and theft. This should serve to somewhat reduce social unrest."
  SPA_concessions_to_the_left_tt:0 "Has completely conceded to the Left"

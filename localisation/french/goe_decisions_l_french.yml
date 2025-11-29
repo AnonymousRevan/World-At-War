@@ -1,6 +1,6 @@
 ﻿l_french:
  AFG_oil_concessions_category: "Concessions pétrolières"
- AFG_propose_oil_concession_deal: "Proposer un accord de concession pétrolière aux [FROM.GetHabitants]"
+ AFG_propose_oil_concession_deal: "Proposer un accord de concession pétrolière aux §Y[FROM.GetHabitants]§!"
  AFG_oil_deal_negotiation_in_progress: "Négociations de développement pétrolier en cours"
  AFG_signed_oil_deal_flag: "Accord de concession pétrolière signé"
  AFG_nationalize_oil: "Nationalisation de l'industrie pétrolière"

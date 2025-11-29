@@ -1540,7 +1540,9 @@ JAP = {
 				GFX_JAP_early_fighter_medium
 			}
 			models = {
+				JAP_light_plane_3_entity #Ki-43 Hayabusa
 				JAP_light_plane_entity
+				JAP_light_plane_1_entity
 				#MORE MODELS ARE HANDLED ELSEWHERE DUE TO BEING DLC LOCKED
 			}
 		}
@@ -1551,6 +1553,9 @@ JAP = {
 			weight = 1.2
 			icons = {
 				GFX_JAP_fighter1_medium
+			}
+			models = {
+				JAP_light_plane_1_entity
 			}
 		}
 	}
@@ -1573,6 +1578,9 @@ JAP = {
 				GFX_JAP_fighter2_medium
 				GFX_JAP_fighter3_medium
 			}
+			models = {
+				JAP_light_plane_3_entity #Ki-43 Hayabusa
+			}
 		}
 	}
 
@@ -1585,6 +1593,9 @@ JAP = {
 				GFX_JAP_fighter3_medium
 				GFX_JAP_light_plane_2_medium
 				GFX_JAP_jet_plane_1_medium
+			}
+			models = {
+				JAP_light_plane_3_entity #Ki-43 Hayabusa
 			}
 		}
 	}
@@ -1663,6 +1674,65 @@ JAP = {
 		}
 	}
 
+	### Fighter ###
+
+
+	cv_small_plane_airframe = {
+		pool = {
+			icons = {
+			}
+			models = {
+				JAP_light_plane_3_entity #Ki-43 Hayabusa
+			}
+		}
+	}
+	cv_small_plane_airframe_0 = {
+		pool = {
+			icons = {
+			}
+			models = {
+
+			}
+		}
+	}
+	cv_small_plane_airframe_1 = {
+		pool = {
+			icons = {
+			}
+			models = {
+
+			}
+		}
+	}
+	cv_small_plane_airframe_2 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+	cv_small_plane_airframe_3 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				JAP_light_plane_3_entity #Ki-43 Hayabusa
+			}
+		}
+	}
+	cv_small_plane_airframe_4 = {
+		pool = {
+			icons = {
+			}
+			models = {
+				
+			}
+		}
+	}
+
+	#CARRIERS
 	cv_small_plane_airframe = {
 		pool = {
 			icons = {
@@ -1684,8 +1754,10 @@ JAP = {
 				GFX_JAP_fighter1_medium
 				GFX_JAP_cv_fighter1_medium
 				GFX_JAP_early_fighter_medium
+				GFX_JAP_cv_early_fighter_medium
 			}
 			models = {
+				JAP_light_plane_1_entity
 				JAP_light_plane_entity
 				#MORE MODELS ARE HANDLED ELSEWHERE DUE TO BEING DLC LOCKED
 			}
@@ -1696,7 +1768,7 @@ JAP = {
 		pool = {
 			weight = 1.2
 			icons = {
-				GFX_JAP_cv_fighter1_medium
+				GFX_JAP_cv_early_fighter_medium
 			}
 		}
 	}
@@ -1718,6 +1790,23 @@ JAP = {
 				GFX_JAP_cv_fighter1_medium
 				GFX_JAP_cv_fighter2_medium
 				GFX_JAP_fighter3_medium
+			}
+		}
+	}
+
+	#CAS
+
+	cv_small_plane_cas_airframe = {
+		pool = {
+			icons = {
+				GFX_JAP_cv_CAS3_medium
+				GFX_JAP_cv_CAS2_medium
+				GFX_JAP_CAS1_medium
+				GFX_JAP_iw_small_cv_fighter_1_medium
+			}
+			models = {
+				JAP_light_plane_entity
+				JAP_light_plane_1_entity
 			}
 		}
 	}
@@ -3189,53 +3278,206 @@ YUG = {
 CHI = {
 	small_plane_airframe = {
 		pool = {
-			limit = {
-				has_dlc = "Waking the Tiger"
-			}
 			icons = {
 				GFX_CHI_naval_bomber3_medium
-				GFX_CHI_CAS3_medium
-				GFX_CHI_fighter3_medium
-				GFX_CHI_fighter2_medium
-				GFX_CHI_CAS2_medium
+				GFX_CHI_advanced_small_cas_1_medium
+				GFX_CHI_advanced_small_fighter_medium
+				GFX_CHI_improved_small_fighter_medium
+				GFX_CHI_improved_small_cas_1_medium
 				GFX_CHI_naval_bomber2_medium
 				GFX_CHI_naval_bomber1_medium
-				GFX_CHI_CAS1_medium
-				GFX_CHI_fighter1_medium
-				GFX_CHI_early_fighter_medium
+				GFX_CHI_basic_small_cas_1_medium
+				GFX_CHI_basic_small_fighter_medium
+				GFX_CHI_iw_small_fighter_medium
 			}
 			models = {
 				CHI_light_plane_entity
 			}
 		}
 	}
+
+	small_plane_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_CHI_iw_small_fighter_medium
+				GFX_CHI_basic_small_fighter_medium
+			}
+		}
+	}
+
+	small_plane_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_CHI_improved_small_fighter_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_CHI_improved_small_fighter_medium
+				GFX_CHI_advanced_small_fighter_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_CHI_basic_small_fighter_medium
+				GFX_CHI_improved_small_fighter_medium
+				GFX_CHI_advanced_small_fighter_medium
+			}
+		}
+	}
+
+	#CAS
+	small_plane_cas_airframe = {
+		pool = {
+			icons = {
+				GFX_CHI_advanced_small_cas_1_medium
+				GFX_CHI_improved_small_cas_1_medium
+				GFX_CHI_basic_small_cas_1_medium
+			}
+			models = {
+				CHI_light_plane_entity
+			}
+		}
+	}
+
+	small_plane_cas_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_CHI_iw_small_fighter_medium
+				GFX_CHI_basic_small_cas_1_medium
+			}
+		}
+	}
+
+	small_plane_cas_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_CHI_basic_small_cas_1_medium
+				GFX_CHI_improved_small_cas_1_medium
+			}
+		}
+	}
+	
+	small_plane_cas_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_CHI_basic_small_cas_1_medium
+				GFX_CHI_improved_small_cas_1_medium
+				GFX_CHI_advanced_small_cas_1_medium
+			}
+		}
+	}
+	
+	small_plane_cas_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_CHI_advanced_small_fighter_medium
+				GFX_CHI_advanced_small_cas_1_medium
+			}
+		}
+	}
+
+	#CARRIERS
+
 	cv_small_plane_airframe = {
 		pool = {
-			limit = {
-				has_dlc = "Waking the Tiger"
-			}
 			icons = {
 				GFX_CHI_naval_bomber3_medium
-				GFX_CHI_CAS3_medium
-				GFX_CHI_fighter3_medium
-				GFX_CHI_fighter2_medium
-				GFX_CHI_CAS2_medium
+				GFX_CHI_advanced_small_cas_1_medium
+				GFX_CHI_advanced_small_fighter_medium
+				GFX_CHI_improved_small_fighter_medium
+				GFX_CHI_improved_small_cas_1_medium
 				GFX_CHI_naval_bomber2_medium
 				GFX_CHI_naval_bomber1_medium
-				GFX_CHI_CAS1_medium
-				GFX_CHI_fighter1_medium
-				GFX_CHI_early_fighter_medium
+				GFX_CHI_basic_small_cas_1_medium
+				GFX_CHI_basic_small_fighter_medium
+				GFX_CHI_iw_small_fighter_medium
 			}
 			models = {
 				CHI_light_plane_entity
 			}
 		}
 	}
+
+	cv_small_plane_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_CHI_basic_small_fighter_medium
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_CHI_basic_small_fighter_medium
+				GFX_CHI_improved_small_fighter_medium
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_CHI_improved_small_fighter_medium
+				GFX_CHI_advanced_small_cas_1_medium
+			}
+			models = {
+			}
+		}
+	}
+
+	#CAS
+	cv_small_plane_cas_airframe = {
+		pool = {
+			icons = {
+				GFX_CHI_advanced_small_cas_1_medium
+				GFX_CHI_improved_small_cas_1_medium
+				GFX_CHI_basic_small_cas_1_medium
+				GFX_CHI_iw_small_fighter_medium		
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_CHI_basic_small_cas_1_medium
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_CHI_basic_small_cas_1_medium
+				GFX_CHI_improved_small_cas_1_medium
+			}
+			models = {
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_CHI_improved_small_cas_1_medium
+				GFX_CHI_advanced_small_cas_1_medium
+			}
+		}
+	}
+
 	medium_plane_airframe = {
 		pool = {
-			limit = {
-				has_dlc = "Waking the Tiger"
-			}
 			icons = {
 				GFX_CHI_heavy_fighter3_medium
 				GFX_CHI_tactical_bomber3_medium
@@ -3247,15 +3489,93 @@ CHI = {
 			}
 		}
 	}
+
+	medium_plane_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_CHI_tactical_bomber1_medium
+			}
+		}
+	}
+	
+	medium_plane_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_CHI_tactical_bomber2_medium
+			}
+		}
+	}
+	
+	medium_plane_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_CHI_tactical_bomber3_medium
+			}
+		}
+	}
+	
+	medium_plane_fighter_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_CHI_heavy_fighter1_medium
+			}
+		}
+	}
+	
+	medium_plane_fighter_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_CHI_heavy_fighter2_medium
+			}
+		}
+	}
+	
+	medium_plane_fighter_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_CHI_heavy_fighter3_medium
+			}
+		}
+	}
+		
 	large_plane_airframe = {
 		pool = {
-			limit = {
-				has_dlc = "Waking the Tiger"
-			}
 			icons = {
 				GFX_CHI_strategic_bomber3_medium
 				GFX_CHI_strategic_bomber2_medium
 				GFX_CHI_strategic_bomber1_medium
+			}
+		}
+	}
+
+	large_plane_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_CHI_strategic_bomber1_medium
+			}
+		}
+	}
+	
+	large_plane_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_CHI_strategic_bomber2_medium
+			}
+		}
+	}
+	
+	large_plane_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_CHI_strategic_bomber3_medium
+			}
+		}
+	}
+	
+	large_plane_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_CHI_strategic_bomber3_medium
 			}
 		}
 	}
@@ -3264,73 +3584,230 @@ CHI = {
 PRC = {
 	small_plane_airframe = {
 		pool = {
-			limit = {
-				has_dlc = "Waking the Tiger"
-			}
 			icons = {
 				GFX_PRC_naval_bomber3_medium
 				GFX_PRC_CAS3_medium
-				GFX_PRC_fighter3_medium
-				GFX_PRC_fighter2_medium
+				GFX_PRC_advanced_small_fighter_medium
+				GFX_PRC_improved_small_fighter_medium
 				GFX_PRC_CAS2_medium
 				GFX_PRC_naval_bomber2_medium
 				GFX_PRC_naval_bomber1_medium
-				GFX_PRC_CAS1_medium
-				GFX_PRC_fighter1_medium
-				GFX_PRC_early_fighter_medium
+				GFX_PRC_basic_small_cas_medium
+				GFX_PRC_basic_small_fighter_medium
+				GFX_PRC_iw_small_fighter_1_medium
 			}
 			models = {
 				PRC_light_plane_entity
+				PRC_light_plane_var_1_entity
 			}
 		}
 	}
+
+	small_plane_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_PRC_iw_small_fighter_1_medium
+				GFX_PRC_basic_small_fighter_medium
+			}
+		}
+	}
+
+	small_plane_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_PRC_improved_small_fighter_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_PRC_improved_small_fighter_medium
+				GFX_PRC_advanced_small_fighter_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_PRC_iw_small_fighter_1_medium
+				GFX_PRC_basic_small_fighter_medium
+				GFX_PRC_improved_small_fighter_medium
+				GFX_PRC_advanced_small_fighter_medium
+			}
+		}
+	}
+
+	#CAS
+	small_plane_cas_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_PRC_iw_small_fighter_1_medium
+			}
+		}
+	}
+
+	small_plane_cas_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_PRC_iw_small_fighter_1_medium
+				GFX_PRC_basic_small_cas_medium
+			}
+		}
+	}
+
+	small_plane_cas_airframe_2 = {
+		pool = {
+			weight = 1.1
+			icons = {
+				GFX_PRC_basic_small_cas_medium
+				GFX_PRC_CAS2_medium
+			}
+		}
+	}
+	
+	small_plane_cas_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_PRC_basic_small_cas_medium
+				GFX_PRC_CAS2_medium
+				GFX_PRC_CAS3_medium
+			}
+		}
+	}
+	
+	small_plane_cas_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_PRC_CAS3_medium
+				GFX_PRC_advanced_small_fighter_medium
+			}
+		}
+	}
+
 	cv_small_plane_airframe = {
 		pool = {
-			limit = {
-				has_dlc = "Waking the Tiger"
-			}
 			icons = {
 				GFX_PRC_naval_bomber3_medium
 				GFX_PRC_CAS3_medium
-				GFX_PRC_fighter3_medium
-				GFX_PRC_fighter2_medium
+				GFX_PRC_advanced_small_fighter_medium
+				GFX_PRC_improved_small_fighter_medium
 				GFX_PRC_CAS2_medium
 				GFX_PRC_naval_bomber2_medium
 				GFX_PRC_naval_bomber1_medium
-				GFX_PRC_CAS1_medium
-				GFX_PRC_fighter1_medium
-				GFX_PRC_early_fighter_medium
+				GFX_PRC_basic_small_cas_medium
+				GFX_PRC_basic_small_fighter_medium
+				GFX_PRC_iw_small_fighter_1_medium
 			}
 			models = {
 				PRC_light_plane_entity
+				PRC_light_plane_var_1_entity
 			}
 		}
 	}
+
 	medium_plane_airframe = {
 		pool = {
-			limit = {
-				has_dlc = "Waking the Tiger"
-			}
 			icons = {
 				GFX_PRC_heavy_fighter3_medium
 				GFX_PRC_tactical_bomber3_medium
 				GFX_PRC_heavy_fighter2_medium
 				GFX_PRC_tactical_bomber2_medium
 				GFX_PRC_heavy_fighter1_medium
-				GFX_PRC_tactical_bomber1_medium
+				GFX_PRC_basic_medium_tactical_bomber_medium
 				GFX_PRC_early_bomber_medium
 			}
 		}
 	}
+
+	medium_plane_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_PRC_basic_medium_tactical_bomber_medium
+			}
+		}
+	}
+	
+	medium_plane_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_PRC_tactical_bomber2_medium
+			}
+		}
+	}
+	
+	medium_plane_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_PRC_tactical_bomber3_medium
+			}
+		}
+	}
+
+	medium_plane_fighter_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_PRC_heavy_fighter1_medium
+			}
+		}
+	}
+	
+	medium_plane_fighter_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_PRC_heavy_fighter2_medium
+			}
+		}
+	}
+	
+	medium_plane_fighter_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_PRC_heavy_fighter3_medium
+			}
+		}
+	}
+		
 	large_plane_airframe = {
 		pool = {
-			limit = {
-				has_dlc = "Waking the Tiger"
-			}
 			icons = {
 				GFX_PRC_strategic_bomber3_medium
 				GFX_PRC_strategic_bomber2_medium
-				GFX_PRC_strategic_bomber1_medium
+				GFX_PRC_basic_large_strategic_bomber_medium
+			}
+		}
+	}
+
+	large_plane_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_PRC_basic_large_strategic_bomber_medium
+			}
+		}
+	}
+
+	large_plane_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_PRC_strategic_bomber2_medium
+			}
+		}
+	}
+	
+	large_plane_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_PRC_strategic_bomber3_medium
+			}
+		}
+	}
+	
+	large_plane_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_PRC_strategic_bomber3_medium
 			}
 		}
 	}

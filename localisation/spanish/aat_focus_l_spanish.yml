@@ -482,6 +482,7 @@
  SWE_united_kingdoms_of_sweden_and_norway_desc: "Tras la crisis de Narvik y nuestras consiguientes ganancias, [NOR.GetName] ha quedado debilitada y desmoralizada. Ahora debemos asestar el golpe final a la independencia [NOR.GetAdjective] y forzar la unificación de nuestras naciones bajo un solo gobierno."
  SWE_swedish_finnish_defense_agreement: "Acuerdo de defensa sueco-finlandés"
  SWE_swedish_finnish_defense_agreement_desc: "Hasta que nos ocupemos de la amenaza de [SOV.GetNameDef], nos interesa colaborar con el ejército [FIN.GetAdjective]. Algún día volveremos a tenerlos bajo nuestro mando, pero ahora mismo tenemos problemas más acuciantes que atender."
+ SWE_swedish_finnish_defense_agreement_faction: "Acuerdo de defensa sueco-finlandés"
  SWE_danish_alignment: "Alineamiento danés"
  SWE_danish_alignment_desc: "[DEN.GetName] tiene una ubicación estratégica y es sustancialmente más débil que sus vecinos, por lo que es casi inevitable que uno de ellos intente acabar con la independencia [DEN.GetAdjective]. Por lo tanto, debemos atacar primero para no perder la oportunidad."
  SWE_finnish_integration: "Östra Rikshalvan"

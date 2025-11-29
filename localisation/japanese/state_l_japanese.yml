@@ -60,6 +60,7 @@
  enclave: "飛び地"
  small_island: "小島"
  tiny_island: "極小島"
+ large_island: "大きな島"
  pastoral: "牧畜地域"
  OCCUPATION_BREAKDOWN: "占領降伏:"
  OCCUPATION_BREAKDOWN_ENTRY: "\n$COUNTRY|Y$: $OCCUPATION|Y%0$"

@@ -41,6 +41,7 @@
  SPA_suppress_the_strikes: "Die Streiks unterdrücken"
  SPA_suppress_the_strikes_desc: "Die Streiks sorgen für schwere Unruhen und hohen wirtschaftlichen Schaden. Wir schicken unsere Milizen los, um sie zu zerschlagen und dafür zu sorgen, dass die Leute wieder an die Arbeit gehen."
  SPA_suppress_the_strikes_tt: "Hat die Nationalen Streiks vollständig unterdrückt"
+ SPA_suppress_the_strikes_tt_NOT: "Nicht: Hat die Nationalen Streiks vollständig unterdrückt"
  SPR_concessions_to_the_left: "Zugeständnisse gegenüber den Linken"
  SPR_concessions_to_the_left_desc: "Die streikenden Arbeiter haben begründete Sorgen. Wir versprechen ihnen, dass wir diese Probleme angehen werden. Bis dahin machen wir Zugeständnisse und gehen nicht strafrechtlich gegen die illegale Besetzung von Land und gegen kleinere Verbrechen und Diebstahl vor. Das dürfte die sozialen Unruhen zumindest ein wenig eindämmen."
  SPA_concessions_to_the_left_tt: "Hat die Niederlage den Linken gegenüber vollständig eingestanden"

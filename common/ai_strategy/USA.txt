@@ -1510,7 +1510,7 @@ USA_think_about_retaliation = {
 	}
 
 	ai_strategy = {
-		type = naval_invasion_supremacy_weight
+		type = naval_invasion_dominance_weight
 		value = 30
 	}
 
@@ -1550,7 +1550,7 @@ USA_go_time = {
 	}
 
 	ai_strategy = {
-		type = naval_invasion_supremacy_weight
+		type = naval_invasion_dominance_weight
 		value = 40
 	}
 
@@ -1644,7 +1644,7 @@ USA_start_buffering_in_pacific = {
 	}
 
 	ai_strategy = {
-		type = naval_invasion_supremacy_weight
+		type = naval_invasion_dominance_weight
 		value = 50
 	}
 }
@@ -1793,6 +1793,24 @@ USA_sugar_daddy_for_SOV = {
 	}
 }
 
+USA_west_coast_defense = {
+	allowed = {
+		original_tag = USA
+	}
+	
+	enable = {
+		has_war = yes
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = naval_dominance
+		id = us_west_coast
+		value = 100
+	}
+}
+
 USA_dont_guarantee_SA_unless_everyhting_is_shit = {
 	allowed = {
 		original_tag = USA
@@ -1918,3 +1936,168 @@ USA_dont_guarantee_SA_unless_everyhting_is_shit = {
 	}
 }
 
+
+### PACIFIC BUILDUP STRATEGIES
+
+# GUAM NAVAL BASE 
+USA_prepare_guam = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		date > 1940.1.1
+		638 = {
+			naval_base < 4
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = naval_base
+		target = 12140
+		value = 100
+	}
+}
+
+USA_prepare_guam_2 = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		date > 1943.1.1
+		638 = {
+			naval_base < 8
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = naval_base
+		target = 12140
+		value = 100
+	}
+}
+
+# GUAM HEADQUARTERS
+USA_prepare_guam_3_naval_hq_supply = { 
+	allowed = {
+		original_tag = USA
+		has_dlc = "No Compromise, No Surrender"
+	}
+	enable = {
+		date > 1943.1.1
+		638 = {
+			OR = {
+				naval_headquarters < 1
+				naval_supply_hub < 1
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = naval_headquarters
+		target = 12140
+		value = 100
+	}
+	ai_strategy = {
+		type = build_building
+		id = naval_supply_hub
+		target = 12140
+		value = 100
+	}
+
+}
+
+
+### FACTION RELATED STRATEGIES
+
+USA_base_faction_priorities = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = spent_faction_initiative_priority
+		id = program
+		value = 25
+	}
+	ai_strategy = {
+		type = spent_faction_initiative_priority
+		id = unlock_faction_commander
+		value = 5
+	}
+}
+
+### Pacific war strategies
+
+USA_JAP_pacific_war_dominance = {
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = JAP
+		}
+	}
+	
+	enable = {
+		OR = {
+			has_war_with = USA
+			has_war_with = JAP
+		}
+		surrender_progress < 0.15 #Just give up trying to compete now
+		set_temp_variable = { t = num_ships_with_type@carrier }
+		check_variable = { t > 4 } #We lost the carrier war now, time to retreat
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = naval_dominance
+		id = micronesia_pacific_control_zone
+		value = 80
+	}
+	
+	ai_strategy = {
+		type = naval_dominance
+		id = mariana_pacific_control_zone
+		value = 80
+	}
+	
+	ai_strategy = {
+		type = naval_dominance
+		id = north_pacific_control_zone
+		value = 80
+	}
+	
+	ai_strategy = {
+		type = naval_dominance
+		id = pearl_harbor_pacific_control_zone
+		value = 80
+	}
+	
+}
+
+USA_dominate_the_home_islands = {
+	allowed = {
+		original_tag = USA
+	}
+	
+	enable = {
+		has_war_with = JAP
+		OR = {
+			date > 1943.8.1
+			controls_state = 645 #Iwo Jima
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = naval_dominance
+		id = home_islands_control_zone
+		value = 100
+	}
+}

@@ -22,7 +22,7 @@
  YUG_weak_communists: "§RDébil§!"
  YUG_average_communists: "§HNormal§!"
  YUG_strong_communists: "§GFuerte§!"
- YUG_very_strong_communists: "§MMuy fuerte§!"
+ YUG_very_strong_communists: "§GMuy fuerte§!"
  HUN_closer_ties_to_CZE: "Estrechar lazos con [CZE.GetNameDef]"
  ROM_change_sides: "Cambio de lealtad"
  ROM_dividing_yugo: "El reparto de Yugoslavia"
@@ -59,3 +59,4 @@
  ROM_change_sides_to_axis: "Unirse al Eje"
  ROM_change_sides_to_axis_desc: "Los cambios en el gobierno han facilitado también el cambio de bando en la guerra. Al unirnos al Eje, nuestros \"camaradas\" actuales en este conflicto global se llevarán una buena sorpresa al ver que las balas rumanas apuntan a un nuevo objetivo."
  ROM_present_ultimatum: "Presentar el ultimátum"
+ ROM_country_and_all_subjects_trigger: "[Country.GetName] y todos sus súbditos"

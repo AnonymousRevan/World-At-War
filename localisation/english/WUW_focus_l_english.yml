@@ -656,8 +656,8 @@
  wuw_HUN_dissolve_the_volksbund: "Dissolve the Volksbund"
  wuw_HUN_dissolve_the_volksbund_desc: "The Volksbund is a DNSAP-related organization of ethnic [GER.GetAdjective]s in our nation. They get funds from [GER.GetNameDef], and run their errands within our country. We must dissolve them before they can cause any harm to the stability of our nation."
 
- wuw_HUN_an_airforce_to_be_reckoned_with: "An Airforce of the Future"
- wuw_HUN_an_airforce_to_be_reckoned_with_desc: "Our airforce needs to be modernized and strengthened in order to better compete with our enemies. Combined arms is the way of the future, and it is a fact which we must embrace."
+ wuw_HUN_an_airforce_to_be_reckoned_with: "An Air Force of the Future"
+ wuw_HUN_an_airforce_to_be_reckoned_with_desc: "Our air force needs to be modernized and strengthened in order to better compete with our enemies. Combined arms is the way of the future, and it is a fact which we must embrace."
 
  wuw_HUN_a_mobile_army: "A Mobile Army"
  wuw_HUN_a_mobile_army_desc: "As our army cannot beat any world powers in terms of sheer numbers of men in the army, we should focus on technological superiority. Armor and other land based vehicles that can punch through and encircle enemy units are the future of warfare, and we must embrace that fact."
@@ -2223,9 +2223,9 @@ BEL_early_helicopters: "Early Helicopters"
 BEL_early_helicopters_desc: "Nicolas Florine chose to emigrate to [ROOT.GetNameDef] following the Russian Civil War, and has shown an interest in a radical new form of flight using fast spinning rotors. We should fund this development, and see where this new field of aeronautical science takes us!"
 
 BEL_air_doctrine: "Air Doctrine"
-BEL_air_doctrine_desc: "Modern warfare is constantly changing and evolving. We should fund a study into the current doctrines utilized by other military powers, and see what lessons can be learned and applied to our own airforce."
+BEL_air_doctrine_desc: "Modern warfare is constantly changing and evolving. We should fund a study into the current doctrines utilized by other military powers, and see what lessons can be learned and applied to our own air force."
 
-BEL_legacy_of_the_belgian_airforce: "Legacy of the Belgian Airforce"
+BEL_legacy_of_the_belgian_airforce: "Legacy of the Belgian Air Force"
 BEL_legacy_of_the_belgian_airforce_desc: "Our pilots were considered among the most brave of those who fought above the battlefields of the Great War, and this proud tradition is still being upheld today."
 
 BEL_re_establish_belgian_navy: "Re-Establish Belgian Navy"
@@ -2681,7 +2681,7 @@ BEL_corruption_ns_fake_tt: "Daily Political Power Gain: §R-0.25%§! \nStability
  COG_utilize_sabena_for_military_purposes_desc: "SABENA has previously only been used for civilian transportation purposes. With the war closing on our backyard however, we must use them to train pilots, and refit their planes for aerial combat."
 
  COG_raf_and_saaf_cooperation: "RAF and SAAF Cooperation"
- COG_raf_and_saaf_cooperation_desc: "Many of our pilots have left to join the Royal Airforce. Though it pains us to cooperate further with the British Commonwealth, it will aid us greatly to learn their expertise and experience their tactics on the battlefield."
+ COG_raf_and_saaf_cooperation_desc: "Many of our pilots have left to join the Royal Air Force. Though it pains us to cooperate further with the British Commonwealth, it will aid us greatly to learn their expertise and experience their tactics on the battlefield."
 
  COG_enter_the_sterling_area: "Enter the Sterling Area"
  COG_enter_the_sterling_area_desc: "The British have demanded that we, in exchange for being allowed to maintain our independence from them whilst out overlord is under foreign occupation, join the Sterling Area and pay subsidies to them, as well as follow their colonial market prices. It won't be great for us economically, but it is a price we will have to pay."
@@ -3197,7 +3197,7 @@ BEL_corruption_ns_fake_tt: "Daily Political Power Gain: §R-0.25%§! \nStability
  GER_expanding_the_luftwaffe: "Expanding the Luftwaffe"
  GER_expanding_the_luftwaffe_desc: "$air_innovation_desc$" #old loc
  GER_aeronautical_research_institute: "Aeronautical Research Institute"
- GER_aeronautical_research_institute_desc: "Airwarfare has grown in importance and complexity since the Great War, and since the Versailles Treaty forbade us from fielding an airforce, we have been lagging behind in aircraft development. To remedy this, we must build a Luftfahrtforschungsanstalt, or an Aeronautical Research Institute, to develop innovative airframes, engines, and weapons to secure air supremacy."
+ GER_aeronautical_research_institute_desc: "Airwarfare has grown in importance and complexity since the Great War, and since the Versailles Treaty forbade us from fielding an air force, we have been lagging behind in aircraft development. To remedy this, we must build a Luftfahrtforschungsanstalt, or an Aeronautical Research Institute, to develop innovative airframes, engines, and weapons to secure air supremacy."
  GER_dive_bombers: "Dive Bombers"
  GER_dive_bombers_desc: "$GER_tactical_air_effort_desc$" #old loc
  GER_tactical_bombers: "Tactical Bombers"
@@ -3381,7 +3381,7 @@ BEL_corruption_ns_fake_tt: "Daily Political Power Gain: §R-0.25%§! \nStability
  GER_heed_von_neuraths_concerns: "Heed von Neurath's Concerns"
  GER_heed_von_neuraths_concerns_desc: "Concerns regarding our current military tactics and policies have been raised by a number of elevated members of our military, headed by Konstantin von Neurath. According to them the Führer's rather aggressive plans for the military will not hold, and that in the face of the risk of an all out war that might ensue if we pursue them, our army is not yet strong enough."
  GER_reorganize_the_wehrmacht: "Reorganize the Wehrmacht"
- GER_reorganize_the_wehrmacht_desc: "For us to able to follow through with the Führer's ambitious plans an expansive reorganization must take place within the Wehrmacht. Too many of the current leaders spend their time voicing petty and baseless concerns instead of carrying out the Führer's orders. Only by removing these individuals can our goals be achieved!"
+ GER_reorganize_the_wehrmacht_desc: "For us to be able to follow through with the Führer's ambitious plans an expansive reorganization must take place within the Wehrmacht. Too many of the current leaders spend their time voicing petty and baseless concerns instead of carrying out the Führer's orders. Only by removing these individuals can our goals be achieved!"
  GER_anschluss: "Anschluss"
  GER_anschluss_desc: "Despite the words of [AUS.GetAdjective] politicians it is clear that the largely [GER.GetAdjective] speaking population of [AUS.GetNameDef] longs to reunite with the Fatherland. We should pressure the corrupt leader [AUS.GetLeader] to resign, and let the will of the people be carried out."
  GER_anschluss_army_trigger_tt: "The §Y[ROOT.GetAdjective]§! Army is at least §Y[?global.deployed_manpower_ratio_needed_for_anschluss]§! times bigger than the §Y[AUS.GetAdjective]§! Army when counting only properly equipped units.\n\nWe estimate that we have [GetAnschlussProgress] this"
@@ -3757,7 +3757,7 @@ BEL_corruption_ns_fake_tt: "Daily Political Power Gain: §R-0.25%§! \nStability
  GER_reverse_the_brain_drain_ww_desc: "$GER_reverse_the_brain_drain_desc$"
  GER_shared_rd_programs_ww: "$GER_shared_rd_programs$"
  GER_shared_rd_programs_ww_desc: "$GER_shared_rd_programs_desc$"
- GER_shared_rd_programs_ww_tt: "The research speed bonus from §Y$GER_rnd_programs_modifier$§! increases by §G1%§! for every new faction member, up to a maximum of §G10%§!"
+ GER_shared_rd_programs_ww_tt: "The research speed bonus from §Y$GER_rnd_programs_modifier$§! increases by §G+1.00%§! for every new faction member, up to a maximum of §G+10.00%§!"
  GER_shared_rd_programs_2_tt: "Every §YNation§! in our §YFaction§! will also join the §YCentral European Research§! sharing group."
  GER_pool_technical_know_how_ww: "$GER_pool_technical_know_how$"
  GER_pool_technical_know_how_ww_desc: "$GER_pool_technical_know_how_desc$"

@@ -33,6 +33,7 @@
  CONTINUOUS_AUTONOMY_EFFECT: "$REASON$: £autonomy_texticon $VAL|+=2$"
  EVENT_AUTONOMY_EFFECT: "$REASON$: £autonomy_texticon $VAL|+=2$"
  LL_TO_OVERLORD_FREEDOM_EFFECT: "Ленд-лиз, отправленный субъектом в метрополию"
+ SUBJECT_OF_NAME: "Марионетка государства:\n$VALUE|H$"
  LL_TO_PUPPET_FREEDOM_EFFECT: "Ленд-лиз, отправленный метрополией субъекту"
  MONTHLY_LL_FREEDOM_TO_PUPPET: "$FLAG$ $VALUE|-2$"
  MONTHLY_LL_FREEDOM_TO_MASTER: "$VALUE|+2$"
@@ -72,3 +73,5 @@
  autonomy_volkskommissariat: "Фолькскомиссариат"
  autonomy_eu_member: "Государство — член ЕС"
  AUTONOMY_NOT_ENOUGH_TIME: "§RУровень автономии можно менять не чаще одного раза в §Y$DURATION$ дн.§! (§Yосталось: $REMAINDER$ дн.§!)§!"
+ autonomy_sea_warlord_subject: "Полевой командир-марионетка"
+ autonomy_sea_integrated_warlord_subject: "Интегрированный полевой командир-марионетка"

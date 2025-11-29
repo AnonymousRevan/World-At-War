@@ -13,7 +13,7 @@
  FIN_finnish_army_desc: "Produit de notre histoire, fière et indépendante, notre armée est une force formidable, endurcie par des années de lutte contre les invasions étrangères. Avec leur détermination farouche pour préserver la patrie, nos hommes sont des tireurs hors pair et des combattants endurants, préparés à faire face aux ennemis les plus impressionnants. Même si ses ressources sont limitées, l'armée est tenace et opiniâtre, et ne cédera jamais dans la difficulté."
  FIN_finnish_navy: "Marine finlandaise"
  FIN_finnish_navy_desc: "Notre flotte est limitée mais fière, et se tient prête à défendre la patrie contre toute menace. Centrée sur la protection des côtes et des couloirs maritimes, elle est un symbole puissant de notre indépendance et l'un des piliers de notre stratégie défensive. Et, même surpassés en nombre, ses équipages sont déterminés à combattre avec le même courage et la même opiniâtreté que les troupes terrestres."
- FIN_finnish_airforce: "Armée de l'air"
+ FIN_finnish_airforce: "Armée de l'air [FIN.GetAdjFS]"
  FIN_finnish_airforce_desc: "En dépit de sa taille et de ses ressources réduites, l'Armée de l'air peut s'appuyer sur des pilotes talentueux et des concepteurs novateurs, qui avec le temps ont perfectionné leurs appareils à force d'expérimentations et d'improvisation. Par sa détermination et sa volonté de s'adapter aux circonstances changeantes, l'Armée de l'air jouit aujourd'hui d'une belle réputation, celle d'hommes qui défendront la patrie avec courage et ténacité, au même titre que les effectifs au sol."
  FIN_national_industry_expand: "$BUL_national_industry_01$"
  FIN_national_industry_expand_desc: "$SWI_expand_arms_industry_desc$"

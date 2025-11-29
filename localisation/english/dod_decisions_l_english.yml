@@ -22,7 +22,7 @@
  YUG_weak_communists:0 "§RWeak§!"
  YUG_average_communists:0 "§HAverage§!"
  YUG_strong_communists:0 "§GStrong§!"
- YUG_very_strong_communists:0 "§MVery Strong§!"
+ YUG_very_strong_communists:0 "§GVery Strong§!"
  HUN_closer_ties_to_CZE:0 "Closer Ties to [CZE.GetNameDef]"
  ROM_change_sides:0 "Change of Allegiance"
  ROM_dividing_yugo:0 "The Partition of Yugoslavia"
@@ -59,3 +59,4 @@
  ROM_change_sides_to_axis:0 "Join the Axis"
  ROM_change_sides_to_axis_desc:0 "Changes in our government have facilitated a change in our alignment in the war. By joining with the Axis, our current “comrades” in this global conflict shall become confused as Romanian bullets find a new target."
  ROM_present_ultimatum:0 "Present the Ultimatum"
+ ROM_country_and_all_subjects_trigger: "[Country.GetName] and all its subjects"

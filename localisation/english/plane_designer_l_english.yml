@@ -100,7 +100,7 @@
  light_mg_2x:0 "2x Light Machine Gun"
  light_mg_2x_desc:0 "A set of two rifle-caliber machine guns gives a little added firepower against air targets for a very moderate cost."
  light_mg_4x:0 "4x Light Machine Gun"
- light_mg_4x_desc:0 "What this set of four rifle-caliber lacks in destructiveness, it makes up for in sheer volume."
+ light_mg_4x_desc:0 "What this set of four rifle-caliber weapons lacks in destructiveness, it makes up for in sheer volume."
  aircraft_cannon_1_1x:0 "1x Cannon I"
  aircraft_cannon_1_1x_desc:0 "An automatic cannon offers a significant amount of firepower against air targets, but the added weight makes the plane both slower and less maneuverable."
  aircraft_cannon_1_2x:0 "2x Cannon I"

@@ -37,7 +37,7 @@
  GRE_go_to_paris_to_negotiate_investment_talks: "Nach Paris reisen, um Investitionsgespräche zu führen"
  GRE_go_to_paris_to_negotiate_investment_talks_desc: "Eine Audienz bei den richtigen Leuten in Paris könnte für unsere Nation äußerst lohnend sein. Wir werden ihnen das gewaltige Potenzial unseres Volkes und unseres produzierenden Sektors zeigen."
  GRE_hold_national_showcase_for_investors_fra: "Nationale Präsentation für [FROM.GetAdjective]e Investoren abhalten"
- GRE_hold_national_showcase_for_investors_fra_desc: "\"Wir werden hier, in der Wiege der westlichen Zivilisation, eine große Präsentation abhalten. Hoffentlich können wir dadurch Investoren für unsere vernachlässigte Industrie gewinnen."
+ GRE_hold_national_showcase_for_investors_fra_desc: "Wir werden hier, in der Wiege der westlichen Zivilisation, eine große Präsentation abhalten. Hoffentlich können wir dadurch Investoren für unsere vernachlässigte Industrie gewinnen."
  GRE_bribe_french_trade_unions_to_pressure_government_into_investment: "Die [FROM.GetAdjective]en Gewerkschaften dazu bestechen, ihre Regierung unter Druck zu setzen"
  GRE_bribe_french_trade_unions_to_pressure_government_into_investment_desc: "[FROM.GetNameDef] wurde schon vor geraumer Zeit von seinen Gewerkschaften versklavt. Wenn wir den Gewerkschaften helfen, für Instabilität zu sorgen, verbessern wir unsere Verhandlungsposition durch eine kleine Erpressung."
  GRE_rebuke_french_investment: "Geld von [FROM.GetAdjective]en Investorne ablehnen"

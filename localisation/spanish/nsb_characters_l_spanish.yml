@@ -39,6 +39,7 @@
  SOV_andrey_grechko: "Andréi Grechko"
  SOV_rodion_malinovsky: "Rodión Malinovski"
  SOV_vasily_chuykov: "Vasili Chuikov"
+ SOV_aleksandr_cherepanov: "Aleksandr Cherepanov"
  SOV_filipp_oktyabrsky: "Filipp Oktiabrski"
  SOV_sergey_gorshkov: "Serguéi Gorshkov"
  SOV_gordey_levchenko: "Gordey Levchenko"
@@ -307,6 +308,10 @@
  MAN_yoshiko_kawashima: "Yoshiko Kawashima"
  MAN_zhao_shangzhi: "Zhao Shangzhi"
  MAN_changlin_linge: "Changlin Linge"
+ MAN_urzhin_garmaev: "Urzhin Garmaev"
+ MAN_yu_zishan: "Yu Zhishan"
+ MAN_jonjurjab: "Jonjurjab"
+ MAN_pujie: "Pujie"
  #USA
  USA_franklin_delano_roosevelt: "Franklin Delano Roosevelt"
  USA_william_dudley_pelley: "William Dudley Pelley"
@@ -607,7 +612,7 @@
  TUR_hazi_aslanov: "Hazi Aslanov"
  #JAPAN
  JAP_emperor_hirohito: "$JAP_hirohito$"
- JAP_kyuichi_tokuda: "Kyuichi Tokuda"
+ JAP_kyuichi_tokuda: "Kyūichi Tokuda"
  JAP_tetsu_katayama: "Tetsu Katayama"
  JAP_tomoyuki_yamashita: "$tomoyuki_yamashita$"
  JAP_hisaichi_terauchi: "$hisaichi_terauchi$"

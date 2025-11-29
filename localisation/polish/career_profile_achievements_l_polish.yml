@@ -234,5 +234,5 @@
  CAREER_PROFILE_TOOLTIP_SILVER: "Odblokowano dzięki srebru ($NAME|H$)"
  CAREER_PROFILE_TOOLTIP_GOLD: "Odblokowano dzięki złotu ($NAME|H$)"
  REQUIRES_DLC_TEXT: "Wymaga DLC $DLC|Y$"
- DLC_OWNED_TEXT: "§GTen kontynent należy do ciebie!§!"
+ DLC_OWNED_TEXT: "§GTa zawartość należy do ciebie!§!"
  DLC_NOT_OWNED_TEXT: "§HKliknij, aby odwiedzić stronę sklepu z tą zawartością.§!"

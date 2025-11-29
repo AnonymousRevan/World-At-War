@@ -1,6 +1,6 @@
 ﻿l_braz_por:
  AFG_oil_concessions_category: "Concessões de petróleo"
- AFG_propose_oil_concession_deal: "Propor um acordo de concessão de petróleo para [FROM.GetNameDef]"
+ AFG_propose_oil_concession_deal: "Propor um acordo de concessão de petróleo para §Y[FROM.GetNameDef]§!"
  AFG_oil_deal_negotiation_in_progress: "Negociações para o desenvolvimento de petróleo em andamento"
  AFG_signed_oil_deal_flag: "Acordo de concessão de petróleo assinado"
  AFG_nationalize_oil: "Nacionalizar a indústria petrolífera"

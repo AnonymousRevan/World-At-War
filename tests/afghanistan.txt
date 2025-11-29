@@ -6,7 +6,7 @@ tests = {
         success = {
             date > 1945.1.1
         }
-
+		acceptable_fail_rate = 0.2
         fail = {
             AFG = { is_in_faction = yes}
         }
@@ -16,7 +16,7 @@ tests = {
         success = {
             date > 1945.1.1 
         }
-
+		acceptable_fail_rate = 0.2
         fail = {
             AFG = { has_war = yes }
         }

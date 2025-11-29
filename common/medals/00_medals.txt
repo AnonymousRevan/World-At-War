@@ -949,4 +949,109 @@ medals = {
 			tooltip = "CAREER_PROFILE_KNOWLEDGE_IS_POWER_GOLD"
 		} }	
 	}
+
+	grand_strategikon = {
+		name = "CAREER_PROFILE_GRAND_STRATEGIKON_MEDAL"
+		description = "CAREER_PROFILE_GRAND_STRATEGIKON_MEDAL_DESCRIPTION"
+		debug = {
+			subdoctrines_mastered
+		}
+		frames = { 3 6 2 }
+		colors = {
+			{ bronze = { 155.0 105.0 81.0 1.0 } silver = { 1.0 1.0 1.0 1.0 } gold = { 0.91 0.76 0.38 1.0 } }
+			{ bronze = { 155.0 105.0 81.0 1.0 } silver = { 1.0 1.0 1.0 1.0 } gold = { 0.91 0.76 0.38 1.0 } }
+			{ bronze = { 155.0 105.0 81.0 1.0 } silver = { 1.0 1.0 1.0 1.0 } gold = { 0.91 0.76 0.38 1.0 } }
+		}
+		bronze = { career_profile_check_playthrough_value = {
+			var = subdoctrines_mastered
+			value = 4
+			compare = greater_than_or_equals
+			tooltip = "CAREER_PROFILE_GRAND_STRATEGIKON_BRONZE"
+			}
+		}
+		silver = { career_profile_check_playthrough_value = {
+			var = subdoctrines_mastered
+			value = 8
+			compare = greater_than_or_equals
+			tooltip = "CAREER_PROFILE_GRAND_STRATEGIKON_SILVER"
+			}
+		}
+		gold = { career_profile_check_playthrough_value = {
+			var = subdoctrines_mastered
+			value = 12
+			compare = greater_than_or_equals
+			tooltip = "CAREER_PROFILE_GRAND_STRATEGIKON_GOLD"
+			}
+		}		
+	}
+
+	pactweaver = {
+		name = "CAREER_PROFILE_PACTWEAVER_MEDAL"
+		description = "CAREER_PROFILE_PACTWEAVER_MEDAL_DESCRIPTION"
+		debug = {
+			faction_manifesto_fulfillment
+		}
+		frames = { 4 8 3 }
+		colors = {
+			{ bronze = { 155.0 105.0 81.0 1.0 } silver = { 1.0 1.0 1.0 1.0 } gold = { 0.91 0.76 0.38 1.0 } }
+			{ bronze = { 155.0 105.0 81.0 1.0 } silver = { 1.0 1.0 1.0 1.0 } gold = { 0.91 0.76 0.38 1.0 } }
+			{ bronze = { 155.0 105.0 81.0 1.0 } silver = { 1.0 1.0 1.0 1.0 } gold = { 0.91 0.76 0.38 1.0 } }
+		}
+		bronze = { career_profile_check_playthrough_value = {
+			var = faction_manifesto_fulfillment
+			value = 50
+			compare = greater_than_or_equals
+			tooltip = "CAREER_PROFILE_PACTWEAVER_BRONZE"
+			}
+		}
+		silver = { career_profile_check_playthrough_value = {
+			var = faction_manifesto_fulfillment
+			value = 75
+			compare = greater_than_or_equals
+			tooltip = "CAREER_PROFILE_PACTWEAVER_SILVER"
+			}
+		}
+		gold = { career_profile_check_playthrough_value = {
+			var = faction_manifesto_fulfillment
+			value = 100
+			compare = greater_than_or_equals
+			tooltip = "CAREER_PROFILE_PACTWEAVER_GOLD"
+			}
+		}			
+	}
+
+	overachiever = {
+		name = "CAREER_PROFILE_OVERACHIEVER_MEDAL"
+		description = "CAREER_PROFILE_OVERACHIEVER_MEDAL_DESCRIPTION"
+		debug = {
+			faction_long_term_goals_completed
+		}
+		frames = { 3 6 3 }
+		colors = {
+			{ bronze = { 155.0 105.0 81.0 1.0 } silver = { 1.0 1.0 1.0 1.0 } gold = { 0.91 0.76 0.38 1.0 } }
+			{ bronze = { 155.0 105.0 81.0 1.0 } silver = { 1.0 1.0 1.0 1.0 } gold = { 0.91 0.76 0.38 1.0 } }
+			{ bronze = { 155.0 105.0 81.0 1.0 } silver = { 1.0 1.0 1.0 1.0 } gold = { 0.91 0.76 0.38 1.0 } }
+		}
+		bronze = { career_profile_check_playthrough_value = {
+			var = faction_long_term_goals_completed
+			value = 1
+			compare = greater_than_or_equals
+			tooltip = "CAREER_PROFILE_OVERACHIEVER_BRONZE"
+			}
+		}
+		silver = { career_profile_check_playthrough_value = {
+			var = faction_long_term_goals_completed
+			value = 3
+			compare = greater_than_or_equals
+			tooltip = "CAREER_PROFILE_OVERACHIEVER_SILVER"
+			}
+		}
+		gold = { career_profile_check_playthrough_value = {
+			var = faction_long_term_goals_completed
+			value = 5
+			compare = greater_than_or_equals
+			tooltip = "CAREER_PROFILE_OVERACHIEVER_GOLD"
+			}
+		}		
+	}
 }

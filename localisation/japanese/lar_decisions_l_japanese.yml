@@ -41,6 +41,7 @@
  SPA_suppress_the_strikes: "ストライキの鎮圧"
  SPA_suppress_the_strikes_desc: "ストライキは我々の国家に多大な不安と経済損失を引き起こしている。民兵を派遣してこの人々を仕事へと戻らせるようにする。"
  SPA_suppress_the_strikes_tt: "全国ストを完全に鎮圧した"
+ SPA_suppress_the_strikes_tt_NOT: "全国ストを完全には鎮圧していない"
  SPR_concessions_to_the_left: "左派との譲歩"
  SPR_concessions_to_the_left_desc: "ストを行っている労働者たちの懸念には確かな理由がある。我々はその懸念に対処することを約束し、違法な土地の占拠や軽微な社会的犯罪および窃盗を訴追しないという形式で差し当たり譲歩する。これは社会不安の幾分かの軽減に役立つはずである。"
  SPA_concessions_to_the_left_tt: "左派と完全なる譲歩をした"

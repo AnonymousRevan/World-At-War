@@ -1,6 +1,6 @@
 ﻿l_russian:
  AFG_oil_concessions_category: "Нефтяные концессии"
- AFG_propose_oil_concession_deal: "Предложить [FROM.GetNameRuDat] концессию о добыче нефти"
+ AFG_propose_oil_concession_deal: "Предложить §Y[FROM.GetNameRuDat] концессию о добыче нефти§!"
  AFG_oil_deal_negotiation_in_progress: "Идут переговоры о добыче нефти"
  AFG_signed_oil_deal_flag: "Концессия о добыче нефти подписана"
  AFG_nationalize_oil: "Национализация нефтяной индустрии"

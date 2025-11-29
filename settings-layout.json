@@ -96,7 +96,8 @@
 		      { "label": "Polski", "value": "l_polish", "valueIso639-1": "pl" },
 		      { "label": "Pусский", "value": "l_russian", "valueIso639-1": "ru" },
 		      { "label": "日本語", "value": "l_japanese", "valueIso639-1": "ja" },
-          { "label": "中文", "value": "l_simp_chinese", "valueIso639-1": "zh-hans" }
+          { "label": "中文", "value": "l_simp_chinese", "valueIso639-1": "zh-hans" },
+		      { "label": "한국어", "value": "l_korean", "valueIso639-1": "ko" }
         ],
         "default": "l_english",
         "provider": "lang"

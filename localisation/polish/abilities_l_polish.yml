@@ -47,3 +47,6 @@
  ABILITY_ON_DAILY: "Codziennie:"
  ABILITY_QUININE: "Dystrybucja chininy"
  ABILITY_QUININE_DESC: "Wojska otrzymują chininę i dodatkowe zaopatrzenie."
+ ABILITY_CHI_force_attack_no_entrenchment_loss: "$ABILITY_FORCE_ATTACK$"
+ ABILITY_CHI_force_attack_no_entrenchment_loss_TOOLTIP: "Natarcie ($LEADER$)"
+ ABILITY_CHI_force_attack_no_entrenchment_loss_TOOLTIP_DESC: "Twoje armie otrzymają premię do ataku kosztem pewnych niedogodności."

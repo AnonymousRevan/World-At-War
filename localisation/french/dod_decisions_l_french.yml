@@ -22,7 +22,7 @@
  YUG_weak_communists: "§Rfaible§!"
  YUG_average_communists: "§Hmoyenne§!"
  YUG_strong_communists: "§Gimportante§!"
- YUG_very_strong_communists: "§Mtrès importante§!"
+ YUG_very_strong_communists: "§Gtrès importante§!"
  HUN_closer_ties_to_CZE: "Se rapprocher [CZE.GetDuDelaDelNP] [CZE.GetName]"
  ROM_change_sides: "Changement d'allégeance"
  ROM_dividing_yugo: "Démembrement [YUG.GetDuDelaDelNP] [YUG.GetName]"
@@ -59,3 +59,4 @@
  ROM_change_sides_to_axis: "Intégrer l'Axe"
  ROM_change_sides_to_axis_desc: "Les changements au gouvernement facilitent le changement d'allégeance dans la guerre. En rejoignant l'Axe, nos actuels « frères d'armes » dans le conflit mondial seront plongés dans la plus grande confusion, et les balles [Root.GetAdjFP] auront de nouvelles cibles."
  ROM_present_ultimatum: "Présenter un ultimatum"
+ ROM_country_and_all_subjects_trigger: "[Country.GetName] et toutes ses dépendances"
