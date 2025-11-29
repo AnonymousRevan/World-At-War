@@ -1,0 +1,22 @@
+####################################################### JAPAN ###########################################################
+
+#JAP land cruiser
+animation = {
+	name = "JAP_land_cruiser_armor_attack_animation"
+	file = "JAP_land_cruiser_armor_attack.anim"
+}
+
+animation = {
+	name = "JAP_land_cruiser_armor_idle_animation"
+	file = "JAP_land_cruiser_armor_idle.anim"
+}
+
+animation = {
+	name = "JAP_land_cruiser_armor_moving_animation"
+	file = "JAP_land_cruiser_armor_moving.anim"
+}
+
+animation = {
+	name = "JAP_land_cruiser_armor_defend_animation"
+	file = "JAP_land_cruiser_armor_defend.anim"
+}

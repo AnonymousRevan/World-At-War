@@ -1,0 +1,72 @@
+# China 
+
+music = {
+	name = "stillness_over_the_north"
+	file = "China/stillness_over_the_north.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "where_the_dragon_rises"
+	file = "China/where_the_dragon_rises.ogg"
+	volume = 0.8
+}
+
+# PRC 
+
+music = {
+	name = "march_of_hope_and_valor"
+	file = "China/march_of_hope_and_valor.ogg"
+	volume = 0.8
+}
+
+
+# Japan
+
+music = {
+	name = "battle_of_okinawa"
+	file = "Japan/battle_of_okinawa.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "the_last_whisper_of_sakura"
+	file = "Japan/the_last_whisper_of_sakura.ogg"
+	volume = 0.8
+}
+
+
+# Philippines 
+
+music = {
+	name = "sanctuary_of_hope"
+	file = "Philippines/sanctuary_of_hope.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "sanctuary_of_hope_acoustic_version"
+	file = "Philippines/sanctuary_of_hope_acoustic_version.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "warriors_heart_march"
+	file = "Philippines/warriors_heart_march.ogg"
+	volume = 0.8
+}
+
+
+# Generic 
+
+music = {
+	name = "the_monsoon_front"
+	file = "Generic/the_monsoon_front.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "tides_of_world_war"
+	file = "Generic/tides_of_world_war.ogg"
+	volume = 0.8
+}

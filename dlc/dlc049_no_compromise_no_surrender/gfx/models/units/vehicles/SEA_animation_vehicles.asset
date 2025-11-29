@@ -1,0 +1,40 @@
+
+##########################
+# CHINA #
+##########################
+
+animation = {
+	name = "CHI_armored_car_0_attack_animation"
+	file = "CHI_armored_car_0_attack.anim"
+}
+
+animation = {
+	name = "CHI_armored_car_0_idle_animation"
+	file = "CHI_armored_car_0_idle.anim"
+}
+
+animation = {
+	name = "CHI_armored_car_0_moving_animation"
+	file = "CHI_armored_car_0_moving.anim"
+}
+
+
+##########################
+# JAPAN #
+##########################
+
+#Type 1 Ho-Ha
+animation = {
+	name = "JAP_mechanized_vehicle_1_attack_animation"
+	file = "JAP_mechanized_vehicle_1_attack.anim"
+}
+
+animation = {
+	name = "JAP_mechanized_vehicle_1_idle_animation"
+	file = "JAP_mechanized_vehicle_1_idle.anim"
+}
+
+animation = {
+	name = "JAP_mechanized_vehicle_1_moving_animation"
+	file = "JAP_mechanized_vehicle_1_moving.anim"
+}

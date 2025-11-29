@@ -1,0 +1,8 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_support_ship_value"
+		texturefile = "gfx/interface/support_ship_value_icon.dds"
+	}
+	
+}

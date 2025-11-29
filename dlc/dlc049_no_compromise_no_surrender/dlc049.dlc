@@ -1,0 +1,9 @@
+name = "No Compromise, No Surrender"
+path = dlc/dlc049_no_compromise_no_surrender/
+steam_id = "3796260"
+pops_id = "hoi4_dlc049_no_compromise_no_surrender"
+affects_checksum = yes
+affects_compatability = yes
+third_party_content = no
+category = "expansion"
+checksum = "f92e18b80fd891dbd2f7b311e7009de7"

@@ -1,0 +1,322 @@
+##########################
+# China #
+##########################
+
+### Light ------------------------------------------------------------------------------------------------------------------
+
+#Disston Tractor RESKIN
+animation = {
+	name = "CHI_light_armor_0_attack_animation"
+	file = "CHI_light_armor_0_attack.anim"
+}
+
+animation = {
+	name = "CHI_light_armor_0_idle_animation"
+	file = "CHI_light_armor_0_idle.anim"
+}
+
+animation = {
+	name = "CHI_light_armor_0_moving_animation"
+	file = "CHI_light_armor_0_moving.anim"
+}
+
+#Chinese T-26
+animation = {
+	name = "CHI_light_armor_2_attack_animation"
+	file = "CHI_light_armor_2_attack.anim"
+}
+
+animation = {
+	name = "CHI_light_armor_2_idle_animation"
+	file = "CHI_light_armor_2_idle.anim"
+}
+
+animation = {
+	name = "CHI_light_armor_2_moving_animation"
+	file = "CHI_light_armor_2_moving.anim"
+}
+
+### Medium -----------------------------------------------------------------------------------------------------------------
+
+#M10 GMC (with 105mm Type 91 field gun)
+animation = {
+	name = "CHI_medium_armor_1_attack_animation"
+	file = "CHI_medium_armor_1_attack.anim"
+}
+
+animation = {
+	name = "CHI_medium_armor_1_idle_animation"
+	file = "CHI_medium_armor_1_idle.anim"
+}
+
+animation = {
+	name = "CHI_medium_armor_1_moving_animation"
+	file = "CHI_medium_armor_1_moving.anim"
+}
+
+### Heavy ------------------------------------------------------------------------------------------------------------------
+
+#T1 Heavy RESKIN
+animation = {
+	name = "CHI_heavy_armor_attack_animation"
+	file = "CHI_heavy_armor_attack.anim"
+}
+
+animation = {
+	name = "CHI_heavy_armor_idle_animation"
+	file = "CHI_heavy_armor_idle.anim"
+}
+
+animation = {
+	name = "CHI_heavy_armor_moving_animation"
+	file = "CHI_heavy_armor_moving.anim"
+}
+
+### Super Heavy ------------------------------------------------------------------------------------------------------------
+
+
+### Modern -----------------------------------------------------------------------------------------------------------------
+
+
+##############################
+# PEOPLE'S REPUBLIC OF CHINA #
+##############################
+
+### Light ------------------------------------------------------------------------------------------------------------------
+
+# T-26 RESKIN
+animation = {
+	name = "PRC_light_armor_0_attack_animation"
+	file = "PRC_light_armor_0_attack.anim"
+}
+
+animation = {
+	name = "PRC_light_armor_0_idle_animation"
+	file = "PRC_light_armor_0_idle.anim"
+}
+
+animation = {
+	name = "PRC_light_armor_0_moving_animation"
+	file = "PRC_light_armor_0_moving.anim"
+}
+
+#M3 Stuart RESKIN
+animation = {
+	name = "PRC_light_armor_1_attack_animation"
+	file = "PRC_light_armor_1_attack.anim"
+}
+
+animation = {
+	name = "PRC_light_armor_1_idle_animation"
+	file = "PRC_light_armor_1_idle.anim"
+}
+
+animation = {
+	name = "PRC_light_armor_1_moving_animation"
+	file = "PRC_light_armor_1_moving.anim"
+}
+
+
+#Type 98 Ke-Ni RESKIN
+animation = {
+	name = "PRC_light_armor_2_attack_animation"
+	file = "PRC_light_armor_2_attack.anim"
+}
+
+animation = {
+	name = "PRC_light_armor_2_idle_animation"
+	file = "PRC_light_armor_2_idle.anim"
+}
+
+animation = {
+	name = "PRC_light_armor_2_moving_animation"
+	file = "PRC_light_armor_2_moving.anim"
+}
+
+### Medium -----------------------------------------------------------------------------------------------------------------
+
+
+### Heavy ------------------------------------------------------------------------------------------------------------------
+
+#IS-2 RESKIN
+animation = {
+	name = "PRC_heavy_armor_2_attack_animation"
+	file = "PRC_heavy_armor_2_attack.anim"
+}
+
+animation = {
+	name = "PRC_heavy_armor_2_idle_animation"
+	file = "PRC_heavy_armor_2_idle.anim"
+}
+
+animation = {
+	name = "PRC_heavy_armor_2_moving_animation"
+	file = "PRC_heavy_armor_2_moving.anim"
+}
+
+### Super Heavy ------------------------------------------------------------------------------------------------------------
+
+
+### Modern -----------------------------------------------------------------------------------------------------------------
+
+#Type 59 (T-54 RESKIN)
+animation = {
+	name = "PRC_modern_armor_attack_animation"
+	file = "PRC_modern_armor_attack.anim"
+}
+
+animation = {
+	name = "PRC_modern_armor_idle_animation"
+	file = "PRC_modern_armor_idle.anim"
+}
+
+animation = {
+	name = "PRC_modern_armor_moving_animation"
+	file = "PRC_modern_armor_moving.anim"
+}
+
+
+
+
+##########################
+# Japan #
+##########################
+
+### Light ------------------------------------------------------------------------------------------------------------------
+
+
+### Medium -----------------------------------------------------------------------------------------------------------------
+
+
+### Heavy ------------------------------------------------------------------------------------------------------------------
+
+
+### Super Heavy ------------------------------------------------------------------------------------------------------------
+
+
+### Modern -----------------------------------------------------------------------------------------------------------------
+
+
+### Amphibious -------------------------------------------------------------------------------------------------------------
+
+animation = {
+	name = "JAP_amphibious_armor_1_idle_animation"
+	file = "JAP_amphibious_armor_1_idle.anim"
+}
+animation = {
+	name = "JAP_amphibious_armor_1_moving_animation"
+	file = "JAP_amphibious_armor_1_moving.anim"
+}
+animation = {
+	name = "JAP_amphibious_armor_1_amphibious_moving_animation"
+	file = "JAP_amphibious_armor_1_amphibious_moving.anim"
+}
+animation = {
+	name = "JAP_amphibious_armor_1_amphibious_attack_animation"
+	file = "JAP_amphibious_armor_1_amphibious_attack.anim"
+}
+animation = {
+	name = "JAP_amphibious_armor_1_attack_animation"
+	file = "JAP_amphibious_armor_1_attack.anim"
+}
+
+
+
+##########################
+# Philippines #
+##########################
+
+### Light ------------------------------------------------------------------------------------------------------------------
+
+#M2 Light RESKIN
+animation = {
+	name = "PHI_light_armor_0_attack_animation"
+	file = "PHI_light_armor_0_attack.anim"
+}
+
+animation = {
+	name = "PHI_light_armor_0_idle_animation"
+	file = "PHI_light_armor_0_idle.anim"
+}
+
+animation = {
+	name = "PHI_light_armor_0_moving_animation"
+	file = "PHI_light_armor_0_moving.anim"
+}
+
+
+#M3 Stuart RESKIN
+animation = {
+	name = "PHI_light_armor_1_attack_animation"
+	file = "USA_tank_light_attack.anim"
+}
+
+animation = {
+	name = "PHI_light_armor_1_idle_animation"
+	file = "USA_tank_light_idle.anim"
+}
+
+animation = {
+	name = "PHI_light_armor_1_moving_animation"
+	file = "USA_tank_light_moving.anim"
+}
+
+
+#M24 Chaffee RESKIN
+animation = {
+	name = "PHI_light_armor_2_attack_animation"
+	file = "PHI_light_armor_2_attack.anim"
+}
+
+animation = {
+	name = "PHI_light_armor_2_idle_animation"
+	file = "PHI_light_armor_2_idle.anim"
+}
+
+animation = {
+	name = "PHI_light_armor_2_moving_animation"
+	file = "PHI_light_armor_2_moving.anim"
+}
+
+
+### Medium -----------------------------------------------------------------------------------------------------------------
+
+#M3 RESKIN
+animation = {
+	name = "PHI_medium_armor_0_attack_animation"
+	file = "PHI_medium_armor_0_attack.anim"
+}
+
+animation = {
+	name = "PHI_medium_armor_0_idle_animation"
+	file = "PHI_medium_armor_0_idle.anim"
+}
+
+animation = {
+	name = "PHI_medium_armor_0_moving_animation"
+	file = "PHI_medium_armor_0_moving.anim"
+}
+
+#T20 RESKIN
+animation = {
+	name = "PHI_medium_armor_2_attack_animation"
+	file = "PHI_medium_armor_2_attack.anim"
+}
+
+animation = {
+	name = "PHI_medium_armor_2_idle_animation"
+	file = "PHI_medium_armor_2_idle.anim"
+}
+
+animation = {
+	name = "PHI_medium_armor_2_moving_animation"
+	file = "PHI_medium_armor_2_moving.anim"
+}
+
+### Heavy ------------------------------------------------------------------------------------------------------------------
+
+
+### Super Heavy ------------------------------------------------------------------------------------------------------------
+
+
+### Modern -----------------------------------------------------------------------------------------------------------------
