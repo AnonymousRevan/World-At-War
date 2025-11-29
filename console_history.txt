@@ -1,0 +1,3168 @@
+focus.autocomplete
+
+tag ger
+allowdiplo
+tag fra
+allowdiplo
+focus.autocomplete
+tag ger
+teleport
+tag fra
+ai
+focus.autocomplete
+add_autonomy RAJ 305
+research_in_icon_click
+research_on_icon_click
+ai
+focus.autocomplete
+pp 5000
+tag eng
+tag raj
+tag eng
+tag raj
+tag eng
+tag raj
+add_autonomy RAJ 305
+tag raj
+ai
+add_autonomy RAJ 305
+focus.autocomplete
+allowdiplo
+tag eng
+tag raj
+ai
+focus.autocomplete
+add_stability -20
+focus.autocomplete
+ai
+tag eng
+tag raj
+tag eng
+tag raj
+pp 4000
+tag chi
+tag raj
+focus.nochecks
+research_on_icon_click
+ai
+focus.autocomplete
+cp 554
+pp 5000
+ai
+teleport
+focus.nochecks
+focus.autocomplete
+focus.nochecks
+fow
+focus.autocomplete\
+focus.autocomplete
+pp 50000
+ai
+tag usa
+tag afg
+focus.nochecks
+ai
+focus.autocomplete
+pp 50
+ai
+pp 50000
+pp 5000
+focus.autocomplete
+pp 5000tag iraq
+tag irq
+tag afg
+focus.nochecks
+ai
+add_party_popularity
+add_party_popularity d 50
+add_war_support 50
+pp 5400
+research_on_icon_click
+tag per
+focus.autocomplete
+pp 5000
+ai
+focus.nochecks
+pp 4000
+fow
+teleport
+ai
+teleport
+tag raj
+tdenig
+tdbeug
+tdebug
+tag d04
+tag raj
+teleport
+focus.nochecks
+focus.autocomplete
+pp 400
+pp 4000
+cp 4000
+ai
+tag usa
+tag tur
+tag usa
+oo 49
+pp500
+tag tur
+decisions.nochecks
+decision.nochecks
+ai
+focus.autocomplete
+focus.nochecks
+tag usa
+tag tur
+focus.autocomplete
+focus.nochecks
+ai
+focus.autocomplete
+ai
+pp 100
+pp 40
+pp 500
+ai
+focus.autocomplete
+\fow
+fow
+\fow
+teleport
+pp 100
+teleport
+pp 150
+tag per
+tag tur
+ai
+pp 150pp 5000
+pp 50000
+focus.autocomplete
+pp 5000
+pp 50000
+ai
+focus.autocomplete
+ai
+focus.autocomplete
+pp 5000
+decisionnochecks
+decision.nochecks
+ai
+focus.autocomplete
+ai
+pp 4000
+cp 5000
+xp 5000
+focus.autocomplete
+ai
+teleport
+tleport
+teleport
+focus.autocomplete
+pp 5000
+focus.autocomplete
+decisions.fastremove
+decisions.fast
+decision.fastremove
+tag jap
+tag usa
+ai
+focus.autocomplete
+decision.fastremove
+pp 5000
+ai
+tag can
+teleportpp 100
+tag tag
+tdebug
+tag nfa
+focus.autocomplete
+ai
+decision.fastremove
+pp 500
+ai
+focus.autocomplete
+tdebug
+tag wrs
+ai
+focus.autocomplete
+ai
+pp 5000
+focus.autocomplete
+ai
+cp
+cp 5000
+cp 40
+cp 500
+focus.autocomplete
+focus.nochecks
+yfrnih
+tdebug
+anex aus
+annex aus
+annex cze
+annex sho
+decision.nochecks
+pp 5000
+anenx gre
+annex gre
+annex alb
+annex bul
+annex rom
+annex ukr
+annex blr
+annex pol
+ai
+focus.autocomplete
+focus.nochecks
+tag eng
+tag ger
+focus.autocomplete
+pp 54000
+decision.fastremove
+ai
+focus.autocomplete
+tdebug
+tag spm
+tag fra
+teleport
+tag spa
+teleport
+tag spr
+tag fra
+ai
+
+ai
+tag spm
+teleportpp 5000
+pp 5000
+\tag fra
+tag fra\
+tag fra
+ai
+ai\
+ai
+tag spm
+teleport
+tag spf
+tag spr
+tag spf
+tag spr
+focus.autocomplete
+p 500
+pp 140
+pp 24
+pp 400
+tag fra
+ai
+decision.nochecks
+decision.nochecks\
+decision.nochecks
+fow
+tag spa
+tag sov
+tag spr
+focus.autocomplete
+tag fra
+ai
+tag ger
+tag fra
+tag ger
+focus.nochecks
+tag fra
+tag ita
+tag fra
+ai
+tag ger
+ai
+allowdiplo
+teleport
+tag fra
+
+focus.autocomplete
+ai
+focus.autocomplete
+ai
+focus.autocomplete
+tdebug
+annex fng
+\annex zhi
+annex zhi
+focus.nochecks
+ai
+focus.autocomplete
+ai
+focus.autocomplete
+ai
+focus.autocomplete
+focus.nochecks
+focus.autocomplete
+ai
+pp 5000
+focus.nochecks
+focus.autocomplete
+ai
+pp 5000
+adecision.fastremove
+decision.fastremove
+ai
+pp 6000
+focus.autocomplete
+ai
+tag can
+ai
+tag usa
+tag can
+tag usa
+tag can
+tag usa
+ai
+
+focus.autocomplete
+ai
+focus.autocomplete
+ai
+focus.autocomplete
+ai
+focus.autocomplete
+focus.nochecks
+fow
+tdebug
+tag afg
+teleport
+tag raj
+tag deh
+teleport
+cp 50
+tag afg
+cp 50
+tag afg
+tag deh
+focus.autocomplete
+tag fal
+focus.nochecks
+ai
+focus.autocomplete
+focus.nochecks
+focus.autocomplete
+teleport
+focus.autocomplete
+fow
+ai
+tag ger
+tag eng
+tag can
+decision.nochecks
+00110
+decision.nochecks
+focus.autocomplete
+decision.nochecks
+focus.autocomplete
+pp 5000
+11
+pp 5000tdebug
+tdebug
+add_core 1317
+tag eng
+tag can
+focus.nochecks
+focus.autocomplete
+fow
+teleport
+focus.autocomplete
+ai
+focus.autocomplete
+ai
+00000
+focus.autocomplete
+annex pan
+ai
+focus.autocomplete
+ao
+fow
+tdbeug
+tdebug
+tag usa
+focus.autocomplete
+focus.nochecks
+ai
+tag psa
+tag cal
+focus.autocomplete
+focus.nochecks
+tag cal
+fow
+focus.autocomplete
+focus.nochecks
+focus.autocomplete
+decision.nochecks
+focus.autocomplete
+decision.nochecks
+decision.fastemove
+decision.fastremove
+decision.nochecks
+focus.autocomplete
+focus.nochecks
+ai
+focus.nochecks
+focus.autocomplete
+tdebug
+tag cor
+tag csa
+tag tex
+tag cal
+tag usa
+ai
+teleport
+ai
+AI
+tag cor
+allowdiplo
+tag usa
+teleport
+tag cor
+tag usa
+yag wcc
+tag wcc
+ai
+tag usa
+tag wcc
+ai
+tag usa
+yah wcc
+tag wcc
+tai
+ai
+focus.autocomplete
+ai
+focus.autocomplete
+decision.fastremove
+ai
+decision.fastremove
+focus.autocomplete
+tag dkb
+tag rus
+focus.autocomplete
+
+focus.autocomplete
+ai
+tag dkb
+tag rus
+tag tur
+ai
+tag kub
+tag ruai
+ai
+tag tur
+tag rus
+ai
+focus.autocomplete
+fow
+teleport
+ai
+tag kyr
+tag trk
+tag uzb
+tag rus
+teleport
+focus.autocomplete
+ai
+focus.nochecks
+tag jap
+tag rus
+tag jap
+focus.autocomplete
+ai
+focus.autocomplete
+ai
+tag tur
+tag rus
+decision.nochecks
+tag wcc
+tag usa
+focus.autocomplete
+
+ai
+tag irq
+focus.autocomplete
+\ai
+ai
+pp 50000
+cp 20
+tag afg
+tag ger
+tag deh
+cp 15
+fow
+tag afg
+cp 40
+fow
+xp 25
+-25 xp
+xp -25
+teleport
+focus.autocomplete
+focus.nochecks
+focus.autocomplete
+tdebug
+add_core 323
+tdebug
+xp 100\
+xp -50
+xp 50
+teloeport
+teleport
+teloeport
+teleport
+pp 150
+pp 100
+teleport
+xp 50
+reseach_on_icon_click
+research_on_icon_click
+tdebug
+annex ngr
+annex civ
+annex cog
+annex zam
+tdebugannex mag
+annex mag
+annex ken
+ai
+focus.autocomplete
+tdebug
+add_core 592
+add_core 803
+add_core 744
+add_core 803ai
+ai
+add_core 802
+add_core 1075
+focus.autocomplete
+ai
+focus.autocomplete
+ai
+tag ger
+tag usa
+tag eng
+tag can
+tag jap
+tag aus
+tag hol
+tag bel
+tag lec
+ai
+ia
+ai
+decision.nochecks
+ai
+focus.autocomplete
+ai
+focus.autocomplete
+ai
+focus.autocomplete
+focus.nohecks
+focus.nochecks
+focus.autocomplete
+tag ger
+ai
+tdebug
+tag maf
+tdebug
+add_core 268
+add_core 1297
+add_core 703
+add_core 704\
+add_core 704
+add_core 709
+focus.autocomplete
+pp 5000
+focus.nochecks
+research_on_icon_click
+fow
+pp 100
+pp 100\
+focus.autocomplete
+pp 40
+focus.autocomplete
+pp 500
+focus.nochecks
+focus.autocomplete
+focus.nochecks
+research_on_icon_click
+focus.autocomplete
+tdebug
+tag whd
+tag bag
+focus.autocomplete
+focus.nochecks
+focus.autocomplete
+research_on_icon_click
+ai
+instantconstruction
+focus.autocomplete
+focus.nochecks
+instantconstruction
+ai
+pp 400
+cp 5000
+ai
+focus.autocomplete
+focus.nochecks
+decision.nochecks
+focus.autocomplete
+allowdiplo
+ai
+pp 5000
+tdebug
+annex lac
+focus.nochecks
+focus.autocomplete
+pp 50000
+focus.nochecks
+fow
+tag blc
+ai
+tag glw
+focus.nochecks
+focus.autocomplete
+\pp 5000
+pp 500
+ai
+[[ 5---
+pp 5000000
+xp 5000
+instantconstruction
+Set_var caps_number_display 5000
+Set_var caps_number_display 5000000
+decision.nochecks
+xp 5000
+ai
+focus.autocomplete
+fow
+ai
+cp 5555
+decision.nochecks
+focus.autocomplete
+focus.nochecks
+tdebug
+tag eag
+teleport
+tag oro
+tag eag
+tag oro
+ai
+instantconstruction
+focus.autocomplete
+ai
+focus.autocomplete
+ai
+focus.autocomplete
+instantconstruction
+research_on_icon_click
+xo 70000
+xp 7000
+pp 500
+focus.nochecks
+tah chi
+tag chi
+tag ger
+tag usa
+tag chi
+tag usa
+tag eng
+tag sov
+tag fra
+tag chi
+fow
+tag eng
+tag fra
+tag ger
+decision.nochecks
+tag fra
+tag ger
+tdebug
+annex aus
+allowdiplo
+tag pol
+annex d09
+tag fra
+focus.autocomplete
+focus.nochecks
+ai
+allowdiplo
+tag pol
+annex d09
+tag ger
+tag sov
+tag eng
+tag ger
+focus.autocomplete
+focus.nochecks
+\annex aus
+annex aus
+tag fra
+tag eng
+tag ger
+focus.autocomplete
+focus.nochecks
+ai
+allowdiplo
+tag fra
+fow
+tag pol
+tag fra
+ai
+instantconstruction
+ai
+tag ger
+tag fra
+tag ger
+tag fra
+ai
+teleport
+ai
+focus.autocomplete
+ai
+teleport
+ai
+tag jap
+tag fra
+focus.autocomplete
+focus.nochecks
+focus.autocomplete
+focus.nochecks
+ai
+deciusion
+decision.nochecks
+focus.autocomplete
+tdebug
+tag vic
+research_on_icon_click
+focus.nochecks
+focus.autocomplete
+ai
+focus.autocomplete
+focus.nochecks
+pp 500
+focus.autocomplete
+ai
+pp 500
+ai
+teleport
+pp 5000
+fow
+ai
+focus.autocomplete
+focus.nochecks
+focus.autocomplete
+fow
+focus.autocomplete
+ai
+instantconstruction
+research_on_icon_click
+fow
+teleport
+focus.autocomplete
+ai
+fow
+annex d12
+annex d13
+annex d11
+cp 5000
+ai
+focus.autocomplete
+focus.nochecks
+ai
+fow
+ai
+focus.autocomplete
+focus.nochecks
+aI
+focus.nochecks
+focus.autocomplete
+FOW
+ANNEX D11
+annex d12
+annex d13
+annex d10
+focus.autocomplete
+focus.nochecks
+focus.autocomplete
+tag mex
+tag can
+tag usa
+focus.nochecks
+ai
+decision.nochecks
+research_on_icon_click
+tdebug
+ai
+focus.autocomplete
+decision.nochecks
+focus.nochecks
+ai
+tag can
+ai
+decision.fastremove
+
+focus.autocomplete
+focus.nochecks
+TAG IRQ
+focus.autocomplete
+teleport
+ai
+500
+pp 500
+tag usa
+decision.fastremove
+decision.nochecks
+tdebug
+tag sau
+focus.autocomplete
+focus.nochecks
+ai
+decision.nochecks
+ai
+pp 50000
+focus.autocomplete
+tag man
+decision.nochecks
+focus.nochecks
+tag yugf
+tag tug
+tag yug
+pp 50000ai
+ai
+focus.autocomplete
+ai
+cp 10
+tdebug
+tag gre
+tag ger
+allowdiplo
+tag aus
+
+tag ger
+ai
+focus.autocomplete
+decision.fastremove
+pp 50000
+ai
+decision.fastremove
+focus.autocomplete
+pp 600000
+ppp 50000
+pp 50000000
+pp 5600000
+focus.nochecks
+fow
+tdebug
+tag d01
+tag ger
+ai
+focus.nochecks
+focus.autocomplete
+ai
+fow
+ai
+decision.fastremove
+ai
+allowdiplo
+tag aus
+tag ger
+tag aus
+rtag
+tag ger
+tag aus
+tag ger
+focus.autocomplete
+focus.nochecks
+focus.autocomplete
+focus.nochecks
+tag chi
+ai
+tag sov
+tag ger
+focus.autocomplete
+tag sov
+ai
+focus.autocomplete
+pp 500
+fow
+teleport
+tag fin
+teleport
+tag lit
+tag lat
+tag est
+tag pol
+tag rom
+tag sov
+allowdiplo
+tag per
+tag sov
+[[ 500
+pp 0500
+decision.nochecks
+focus.autocomplete
+focus.autocompletetag ger
+tag ger
+ai
+allowdiplo
+teleport
+tag fra
+focus.autocomplete
+ai
+focus.nochecks
+focus.autocomplete
+focus.nochecks
+focus.autocomplete
+add_core
+tdebug
+add_core 373
+pp 500
+focus.autocomplete
+fow
+focus.autocomplete
+focus.nochecks
+ai
+eevent amcivwar.15
+event amcivwar.150
+event canada.2290
+focus.autocomplete
+pp 320
+pp 41
+pp -40
+focus.autocomplete
+361
+pp 361
+pp -40
+focus.autocomplete
+xp 50
+xp 40
+xp 75
+xp 5
+xp -200
+xp 105
+xp -500
+focus.autocomplete
+xp 500
+focus.autocomplete
+focus.autocompletepp 320
+pp 320\
+pp 1
+xp -5000
+xp 20
+- xp 50
+teleport
+xp -40
+focus.autocomplete
+ai
+tag ger
+tag can
+focus.autocomplete
+fdo
+fow
+ai
+teleport
+tag jap
+focus.autocomplete
+focus.nochecks
+ai
+tag chi
+tag prc
+xp 5000
+tag chi
+tag prc
+tag usa
+tag chi
+tag prc
+tag chi
+tag man
+tag jap
+tag usa
+ai
+tag jap
+instantconstruction
+tag chi
+teleport
+tag jap
+teleport
+tag tag eng
+tag aus
+tag sov
+tag usa
+tag ast
+roic
+tag nzl
+tag can
+tag dei
+tag ins
+tag sia
+tdebug
+tag neb
+tag men
+tag rrc
+tag kwt
+tag man
+tag kwt
+tag nep
+pp 5000
+tag eng
+tag usa
+tag jap
+tag usa
+tag eng
+tag mon
+focus.autocomplete
+ai
+focus.nochecks
+TAG SOV
+TAG MON
+instantcontruction
+instantconstruction
+ai
+focus.autocomplete
+tag ger
+allowdiplo
+teleport
+tag fra
+focus.autocomplete
+ai
+ao
+ai
+focus.autocomplete
+tag fra
+ai
+teleport
+tag ger
+allowdiplo
+tag fra
+focus.autocomplete
+tag vic
+tag fra
+tag jap
+tag fra
+tag jap
+tag fra
+tag ger
+tag vic
+tag efr
+focus.autocomplete
+focus.nochecks
+tag hol
+tag ger
+tag hol
+ai
+tag spr
+ai
+pp 150
+focus.nochecks
+ai
+aitag tag usa
+tag usa
+annex hun
+annex rom
+annex saf
+annex cze
+tag fra
+ai
+te,elkrttel
+teleport
+tag ger
+allowdiplo
+tag ger
+tag fra
+xp 500
+ai
+focus.nochecks
+tag ger
+tag fra
+tag ger
+teleport
+allowdiplo
+tag fra
+ai
+focus.nochecks
+focus.autocomplete
+TATAG FRA
+TAG FRA
+TAG GER
+ALLOWDIPLO
+TELEPORT
+TAG FRZ
+TAG FRA
+ai
+pp 50
+ai
+focus.autocomplete
+ai accept
+tag usa
+allowdiplo
+tag bra
+tag usa
+tag bra
+coir
+roic
+aiinstantconstruction
+instantconstruction
+focus.autocomplete
+instantconstruction
+roic
+pp 500
+ai
+tag frs
+tag fra
+ai
+pp 5000
+roic
+tag spr
+focus.autocomplete
+tag fra
+tag ger
+allowdiplo
+tag fra
+instantconstruction
+tag can
+instantconstruction
+AI
+tag spr
+focus.autocomplete
+tag fra
+tag saf
+tag nor
+tag fra
+ai
+focus.autocomplete
+ai
+tag spr
+focus.autocomplete
+tag fra
+focus.autocomplete
+ai
+focus.nochecks
+tag ger
+allowdiplo
+tekeopirt
+tewkew
+teleport
+tag fra
+ai
+focus.nochecks
+decision.nochecks
+tag ger
+allowdiplo
+tag eng
+tag hol
+tag eng
+tag hol
+focus.autocomplete
+focus.nochecks
+ai
+pp 300
+pp -300
+pp -50
+add_war_support 50
+ai
+pp 150
+pp -50
+focus.nochecks
+tag ger
+ai
+tag fra
+focus.autocomplete
+tag por
+ai
+roic
+focus.autocomplete
+instantconstruvtion
+instantconstruction
+tag bel
+pp 500
+tag fra
+tag usa
+fow
+tag ger
+allowdiplo
+ai
+tag fra
+focus.autocomplete
+compliance 100
+tag fra
+ai
+focus.nochecks
+tag ger
+allowdiplo
+tag fra
+tag ger
+teleport
+tag fra
+ai
+tag ger
+allowdiplo
+teleport
+tag fra
+compliance 100
+focus.nochecks
+focus.autocomplete
+ai
+tag bra
+taqg bra
+tag bra
+tag fra
+tag saf
+tag efr
+tag fra
+ai
+tag ger
+fow
+tag hol
+tag ger
+tag mex
+ai
+focus.autocomplete
+focus.nochecks
+tag jap
+oai
+ai
+tag man
+tag ast
+allowdiplo
+ai_accept
+tag ger
+allowdiplo
+ai_accept
+tag eng
+tag fra
+tag ger
+tag fra
+tag sov
+ai
+focus.autocomplete
+pp 5000
+focus.nochecks
+decisions.fastremove
+decision.fastremove
+ai
+focus.autocomplete
+fow
+focus.nochecks
+focus.autocomplete
+ai
+tdebug
+tag een
+focus.autocomplete
+tag een
+tag tal
+tag een
+focus.autocomplete
+tag tal
+focus.autocomplete
+ai
+decision.fastremove
+decision.nochecks
+tag tal
+ai
+focus.autocomplete
+tag tal
+focus.nochecks
+focus.autocomplete
+focus.nochecks
+ai
+focus.autocomplete\
+focus.autocomplete
+ai
+tdebug
+annex trn
+focus.autocomplete
+ai
+pp 5000
+ai
+focus.nochecks
+annex trn
+fow
+ai
+AI
+focus.autocomplete
+AI
+focus.nochecks
+focus.autocomplete
+AI
+focus.nochecks
+tag ger
+allowdiplo
+focus.autocomplete
+tag fra
+ai
+tag ger
+tag fra
+tag ger
+tag fra
+decision.fastremove
+focus.autocomplete
+roic
+pp 5000
+tag can
+tag raj
+tag ind
+tdebug
+tag idr
+ai
+tag eng
+focus.autocomplete
+focus.nochecks
+tag idr
+tag eng
+tag idr
+tag tur
+decision.nochecks
+tag raj
+tag idr
+ai
+xp 50
+ai
+decision.fastremove
+tag ita
+decision.nochecks
+tag frta
+tag fra
+tag ger
+tag ita
+decision.nochecks
+tag fra
+ai
+focus.nochecks
+focus.nochecksai
+ai
+focus.nochecks
+ai
+focus.autocomplete
+ai
+tag ger
+allowdiplo
+teleport
+tag fra
+ai
+tag eng
+focus.autocomplete
+tag fra
+focus.autocomplete
+ai
+tag eng
+roic
+tag fra
+ai
+tag saf
+focus.autocomplete
+roic
+tag fra
+ai
+focus.autocomplete
+roic
+tag
+tdebug
+tag par
+tag lat
+decision.nochecks
+decision.fastremove
+ai
+tag bra
+fow
+tag bra
+focus.autocomplete
+ai
+tag saf
+tag fra
+focus.autocomplete
+
+xxp 5000
+xp 50000
+weoic
+roic
+focus.autocomplete
+tag fra
+tag bra
+tdebug
+tag usa
+focus.autocomplete
+pp 50
+tag ger
+allowdiplo
+tag bra
+tag swe
+annex sov
+tag ger
+allowdiplo
+tag bra
+focus.autocomplete
+focus.nochecks
+tag usa
+tag bra
+tdbeug
+tdebug
+focus.autocomplete
+focus.nochecks
+ai
+pp 500
+fow
+add_war_support -100
+add_war_support -100\
+allowdiplo
+ai
+tag spr
+ai
+focus.autocomplete
+focus.nochecks
+ao
+ai
+tag ger
+a.lowdiplo
+allowdiplo
+tag saf
+add_war_support 600
+tag ger
+tag saf
+tag spr
+tag fra
+tag efr
+raf efr
+tag efr
+tag spr
+tag frsa
+tag fra
+tag can
+tag saf
+focus.autocomplete
+tag can
+pp 500
+focus.autocomplete
+focus.nochecks
+tag saf
+tag cab
+tag can
+focus.autocomplete
+focus.nochecks
+add_war_support 500
+pp 500
+ai
+allowdiplo
+focus.autocomplete
+focus.nochecks
+ao
+ai
+add_war_support 500
+allowdiplo
+tag ger
+tag can
+pp 500
+tag saf
+ai
+add_war_support 5000
+add_stability 60000
+tag can
+tag saf
+tag can
+focus.nochecks
+focus.autocomplete
+add_war_support 5000
+tag ger
+allowdiplo
+tag can
+ai
+tdebug
+focus.autocomplete
+ia
+ai
+focus.nochecks
+allowdiplo
+add_war_support 5000
+tag raj
+tag ids
+tag ins
+tdebug
+tag idr
+tag spr
+ai\
+ai
+focus.autocomplete
+tag raj
+tag idr
+focus.autocomplete
+x[ 5---
+xp 5000
+tag sov
+tag ger
+tag eng
+tag ger
+allowdi-plo
+allowdiplo
+teleport
+ai
+tag eng
+tag bra
+tag fra
+tagtag idr\
+tag idr
+teleport
+focus.autocomplete
+tag saf
+tag usa
+focus.nochecks
+tag raj
+tag idr
+tag raj
+tag idr
+ai
+tag hol
+ai
+xai
+ai
+tag eng
+focus.autocomplete
+tag can
+ai
+pp 150
+pp -50
+tag eng
+focus.autocomplete
+tag can
+focus.autocomplete
+tag eng
+focus.autocomplete
+tag can
+focus.autocomplete
+ai
+focus.autocomplete
+add_war_support 5
+tag spr
+focus.autocomplete
+tag can
+ai
+pp 50
+tag eng
+focus.autocomplete
+tag can
+pp -50
+tag spr
+focus.autocomplete\
+focus.autocomplete
+tag can
+focus.autocomplete
+pp 50
+tag eng
+tag can
+pp 150
+focus.nochecks
+pp -50
+ai
+focus.autocomplete
+tag ger
+allowdiplo
+tag can
+ai
+pp 5000
+roic
+instantconstruction
+ai
+focus.autocomplete
+ai
+roic
+instantconstruction
+pp 500
+instantconstruction
+ai
+roic
+focus.autocomplete
+focus.nochecks
+pp 500
+roic
+
+instantconstruction
+focus.autocomplete
+focus.nochecks
+instantconstruction
+roic
+pp 500
+ai
+pp 50
+tag eng
+focus.autocomplete
+tag saf
+ai
+pp -50
+pp 50
+tag spr
+focus.autocomplete
+tag spr
+ttag eng
+tag eng
+ai
+focus.autocomplete
+tag spr
+focus.autocomplete
+tag spr
+tag saf
+ai
+tag eng
+tag saf
+pp -50
+focus.nochecks
+tag efr
+tdbeug
+tdebug
+tag can
+ai
+focus.nochecks
+focus.autocomplete
+instantvcons
+instantconstruction
+tag ger
+focus.autocomplete
+ai
+tag fra
+tag can
+tag phi
+tag idr
+focus.autocomplete
+tag can
+focus.autocomplete
+
+focus.nochecks
+tag raj
+tag ridr
+tag idr
+tag saf
+
+focus.autocomplete
+ff
+pp 500
+tag can
+TAG IDR
+tag can
+ff
+tag saf
+tag idr
+ff
+tag can
+tag ast
+tag raj
+tag idr
+taqg idr
+tag idr
+tag spr
+focus.autocomplete
+ai
+focus.autocomplete
+pp 500
+tag usa
+tag bra
+instantocnstruction
+instantconstruction
+tag sov
+tag bra
+tag ita
+tag fra
+focus.autocomplete
+ff
+tag ger
+rroic
+roic
+tag sov
+tag fra
+ai
+tag spr
+ff
+fow
+tag ger
+tag rom
+focus.autocomplete
+focus.nochecks
+roic
+instantconstruction
+ai
+focus.autocomplete
+ff
+pp 5000
+roic
+teleport
+tag ger
+allowdiplo
+tag fra
+tag ger
+tag fra
+tag tdebug
+tdebug
+tag fri
+tag jap
+teleport
+tag ger
+allowdiplo
+tag fra
+teleport
+tekeoirt
+teleport
+ff
+tag ger
+allowdiplo
+tag fra
+tag ger
+tag fra
+focus.autocomplete
+ff
+ai
+pp 500
+focus.autocomplete
+ff
+ai
+ALLOWIDPLO
+ALLOWDIPLO
+AI_ACCEPT
+AI
+ta gger
+tag ger
+allowdiplo
+ai
+tag fra
+focus.nochecks
+tag fra
+ai
+ff
+ai
+pp 5000
+tag ger
+allowdiplo
+tag frtag fra
+tag fra
+tag hol
+ai
+tag ger
+tag hol
+focus.autocomplete
+tag ger
+tag can
+tag fra
+focus.autocomplete
+focus.nochecks
+focus.autocomplete
+tag bra
+tag ita
+tag ger
+tag sov
+tag efr
+pp 150
+tag eng
+ff
+tag eng
+ai
+focus.autocomplete
+ff
+tag por
+tag mon
+tag aus
+tag ast
+tag por
+tag ger
+focus.autocomplete
+focus.nochecks
+tag yug
+tag mon
+focus.autocomplete
+ff
+tag fra
+ai
+tag raai
+ai
+tag raj
+ff
+tag saf
+ff
+tag bra
+tag mex
+tag usa
+tag eng
+tag bra
+tag fra
+tag ita
+tag fra
+tag efr
+tag fra
+tag bra
+ff
+decisions.nochecks
+decision.nochecks
+ff
+tag sov
+tag bul
+tag sov
+tag bul
+tag sov
+tag tag bul
+ttag bul
+tag bul
+roic
+ff
+tag jap
+tag usa
+ff
+tag spor
+tag spr
+tag usa
+ai
+roic
+ai
+tag ger
+fow
+tag ita
+tag can
+ai
+tag saf
+tag can
+tag eng
+tag usa
+tag aus
+tag ast
+tag raj
+tag idr
+ff
+tag fra
+tag tag raj
+tag raj
+fow
+tag fra
+fow
+tdebug
+tag sor
+ff
+xp 5000
+pp 55
+ff
+roic
+ff
+decision.nochecks
+ff
+focus.autocomplete
+ff
+pp 500
+tag ger
+allowdiplo
+tag fra
+ai
+tag ger
+teleport
+tag ra
+tag fra
+tag ger
+tag fra
+tag ger
+tag fra
+tag ger
+tag fra
+tag ger
+tag fra
+tag usa
+ff
+
+aj
+ai
+allowdiplo
+tag eng
+tag fra
+ff
+ai
+ff
+decision.nochecks
+ai
+tag ger
+allowdiplo
+tag fra
+tag ger
+tag fra
+ai
+decision.nocheck
+decision.nochecks
+ai
+ff
+roic
+allowdiplo
+ai
+tag fra
+tag ger
+tag eng
+tag fra
+ff
+ai
+event fra.10
+event france.10
+tag ger
+tag fra
+tag usa
+ai\
+ai
+ff
+tag eng
+tag fra
+tag ger
+tag odr
+tag idr
+roic
+tag usa
+'roic
+roic
+tag fra
+ai
+focus.nochecks
+ai
+roic\
+roic
+ic
+ai
+tag ger
+tag fra
+ai
+tag eng
+ff
+tag fra
+ff
+focus.nochecks
+pp 150
+allowdiplo
+tag ger
+tag fra
+tag ger
+tag fra
+tag ger
+allowdiplo
+teleport
+tag fra
+roic
+instantconstruction
+tag fra
+tag eng
+tag raj
+tag idr
+tag ast
+tag usa
+tag eng
+tag usa
+tag eng
+tag fra
+ai
+ff
+roic
+decision.fastremove
+ff
+ai
+pp 5000
+instantocnstruction
+ic
+roic
+tag jap
+add_core
+tdebug
+add_core 671
+add_core 670
+add_core 741
+add_core 286
+tag fra
+tag tur
+add_core 680
+add_core 677
+add_core 554
+add_core 553
+add_core 462
+add_core 461
+add_core 459
+add_core 513
+add_core 460
+add_core 458
+add_core 665
+tag fra
+tag ger
+ai
+allowdiplo
+tag fra
+tag ger
+tag fra
+tag ger
+tag fra
+ff
+tag efr
+tag ra
+taqg fra
+tag fra
+event france.20
+FRA_francois_darlan
+xptdebug
+tdebug
+tag fra
+ff
+add_core 539
+add_core 272
+tag ger\
+tag ger
+allowdiplo
+ai
+tag fra
+event france.20
+tag eng
+tag fra
+ff
+tag ger
+tag fra
+tag ger
+ai
+allowdiplo
+ttag fra
+tag fra
+tag eng
+tag can
+tag saf
+tag fra
+tag can
+tag fra
+tag raj\
+tag idr
+tag fra
+ff
+ROIC
+tag jap
+ff
+taG EFR
+tag ita
+tag ger
+tag efr
+tag tag fra
+tag fra
+tag usa
+tag ger
+tag bra
+tag ger
+tag usa
+tag saf
+ff
+ttag bra
+tag bra
+allowdiplo
+tag ger
+tag fra
+tag ger
+tag fra
+ff
+event france.20
+event france.10
+tag ger
+allowdiplo
+fow
+teleport
+tag fra
+tag bul
+tag fra
+pp 5000
+roic
+tag eng
+tag ita
+tag ger
+yag usa
+tag usa
+tag fra
+tag efr
+tag fras
+tag fra
+roic
+ff
+tag ger
+allowdiplo
+ai
+tag fra
+roic\
+roic
+ai
+tag ger
+allowdiplo
+tag fra
+roic
+ff
+ic
+pp 50
+add_legitemacy 5
+legitemacy 5
+add_legitimacy FRA 500
+tag eng
+tag fra
+tag efr
+tag fra
+tdebug
+ff
+tag efr
+tag fra
+allowdiplo
+ai
+tag fra
+teleport
+ai
+tag ger
+teleport
+tag fra
+teleport
+ic
+ai
+tag ita
+tag ger\
+tag ger
+teleport
+tag fra
+tag eng
+tdebug
+tag efrtag eng
+tag eng
+pp 50
+decision.noechks
+decision.noechecks
+decision.nochecks
+tag fra
+ff
+ic
+ai
+tag hol
+fow
+tdebug
+tag fra
+decision.nochecks
+tag eng
+fow
+ff
+tag eng
+ff
+ai
+pp 500
+roic
+xp 50000
+tdebug
+tag mnr
+fow
+tag mon
+tag emp
+annex mim
+annex nab
+annex bat
+annex umb
+tag mon
+teleport
+tag mnr
+tag ald
+ff
+ai
+roic
+dd
+ff
+tag emp
+pp 500
+ff
+ai
+event kota.507
+ff
+ai
+tag kot
+ai
+ff
+tag ald
+tag kot
+tag ryl
+pp 5000
+ff
+tag spe
+ff
+pp 500
+add_war_support 5000
+pp 50000
+roic
+decision.nochecks
+decision.fastremove
+ff
+ai
+teleport
+ff
+pp 5000
+ai
+xp 50000
+decision.fastremove
+decision.nochecks
+ai
+tdebug
+tag bra
+tag fra
+tag ita
+tag fra
+ff
+decision.nocheck
+decision.nochecks
+tag eng
+tag fra
+tag sov
+tag fra
+ta gefr
+tag efr
+dfd
+ff
+tag fra
+ff
+ai
+ff
+tdebug
+tag kwn
+tag cri
+tag fra
+tag mon
+ff
+ic
+roic
+ff
+decision.nochecks
+decision.fastremove
+ai
+ff
+tag eng
+tag fra
+tag ger
+ai
+allowidplo
+allowdiplo
+tag fra
+tag ger
+tag fra
+tag eng
+tag fra
+tdebug
+ff
+pp 5000
+ff
+
+tag ger
+tag fra
+ff
+fow
+focus.nochecks
+pp 150
+focus.nochecks
+pp -150
+focus.nochecks
+tag ger
+allowdiplo
+teleport
+tag fra
+ff
+ai
+ff
+
+ff
+decision.nochecks
+tag ger
+tag fr
+tag fra
+decision.nochecks
+allowdiplo
+teleport
+tag fra
+decision.nochecks
+ai
+pp -50
+pp 50
+pp 15
+pp 1
+pp -16
+fow
+pp -50
+pp 50
+focus.nochecks
+pp 150
+focus.nochecks
+tag ger
+ai
+allowdiplo
+tag fra
+tag ger
+tag fra
+tag ger
+tag fra
+tag ger
+teleport
+tag fra
+pp 150
+ff
+tag ger
+tag frsa
+tag fra
+fow
+tag jap
+decision.nochecks
+tag fra
+focus.nochecks
+
+focus.nochecks
+ff
+focus.nochecks
+roic
+tag ger
+tag fra
+tag usa
+tag fra
+tag ger
+tag usa
+tag fra
+tag usa
+tag fra
+tag ger
+tag eng
+tag tag fra
+tag fra
+tag eng
+tag fra
+ff
+tag ast
+tag ja[
+tag jap
+ff
+ai
+pp 500
+ai
+ff
+tag fra
+tag ger
+tag fra
+tag bra
+tag fra
+decision.nochecks
+ff
+tdebug
+ff
+tag fra
+ic
+tag bra
+tag fra
+tag eng
+ttag fra
+tag fra
+tag eng
+tag ita
+\tag sov
+tag sov
+ff
+tag ger
+tag fra
+tag eng
+tag fra
+tag ger
+tag fra
+tag usa
+tag fra
+ff
+tag can
+tag saf
+tag can
+tag bra
+tag mex
+tag bra
+tag fra
+decision.nochecks
+tag spr
+ai
+fff
+ff
+tag ita
+tag fra
+decision.nochecksff
+ff
+ai
+tag ger
+allowdiplo
+teleport
+tag fra
+tag eng
+tag fra
+tag ger
+tag fra
+tag ger
+tag fra
+ff
+ffff
+tdebug
+tag riv
+ff
+roic
+ai
+roic
+ff
+pp 5000
+add_stability 60000
+ai
+add_stability 60000
+pp 5000
+ai
+ff
+tag eng
+pp 50000
+ff
+ai
+ff
+ai
+ff
+ai
+ff
+ai
+tag jap
+pp 500
+tag xom
+com
+tag coim\
+
+tdenig
+tdebug
+tag zco
+ff
+tag fra
+pp 5000
+tag sov
+pp 500
+tag ger
+pp 500
+tag ita
+pp 400
+tag usa
+pp 400
+tag zco
+tdebug
+ai
+ff
+ai
+ff
+tag usa
+allowdiplo
+tag ger
+tag ita
+tag fra
+tag sov
+tag jap
+tag chi
+tag eng
+ff
+tag zco
+ai
+allowdiplo
+tag bul
+tag ger
+ff
+fow
+tag gre
+tag yug
+tag gre
+tag bul
+tag fra
+tag spa
+tag spr
+tag fra
+tag eng
+decision.noechsk
+decision.nochecks
+ai
+decision.nochecks
+ai
+decision.nochecks
+ai
+tag fra
+ai
+tag jap
+tag fra
+tag jap\
+tag jap
+tag fra
+tag usa
+tag fra
+tag usa
+tag fra
+ff
+tag idr
+tah ird
+tdebug
+tag raj
+TAG vin
+tag fra
+tag eng
+tag fr
+tag fra
+ff
+ai
+ff
+pp 500
+tag bul
+ff
+tag rom
+tag bul
+ff
+ai
+ad
+allowidplo
+allowdiplo
+allowdiploteleport
+teleport
+tag fra
+ai
+ff
+tdebug
+tag fra
+ff
+tag bul
+ff
+tag fra
+ai
+tag spa
+tag spr
+roic
+tag rom
+tag bul
+tag hun
+tag bra
+tag man
+tag rom
+tag mon
+tag man
+tag cze
+tag rom
+tag hun
+tag bul
+ai
+roic
+tag spr
+tag bra
+tag can
+tag ast
+tag idr
+tag eng
+tag saf
+tag spr
+tag rom
+tag hun
+tag usa
+tag ita
+tag jap
+tag man
+tag sov
+tag mon
+tag cze
+ff
+si
+ai
+tag bra
+tag fra
+ff
+teebug
+tdebug
+ff
+ai
+tag bra
+tag bul
+tag fra
+ff
+ai
+tag can
+tag bul
+roic
+tag tag rom
+tag rom
+tag bul
+tagallowdiplo
+allowdiplo
+tag ger
+tag bul
+tag ger
+tag fra
+tdebug
+ff
+tdebug
+tag raj
+tag idr
+ai
+ff
+add_autonomy IDR 5000
+pp 500
+tag fra
+tag saf
+tag fra
+ff
+tag tag fra
+tag fra
+tag ger
+allowdiplo
+ai
+tag fra
+ff
+pp 500
+tag ast
+tag ger
+allowdiplo
+ai
+tag fra
+ff
+tag ger
+allowdiplo
+add_war_support 50000
+allowdiplo
+ai
+teleport
+ai
+tag fra
+ff
+tag eng
+tag fra
+ff
+ai
+tag ger
+allowdiplo
+teleport
+tag fra
+ai
+tag fra
+tag usq
+tag usa
+tag fra
+xp 55\
+tag ger
+allowdiplo
+teleport
+tag fra
+ff
+add_war_support 5000
+pp 500
+tag ger
+tag rom
+tag bul
+tag rom
+tag ger
+1ag hun
+tag hun
+tag ita
+tag hun
+tag rom
+tag bul
+tdebug
+tag sov
+ai
+tag mon
+tag sov
+tag ger
+tag sov
+tag spr
+tag ger
+tag saf
+ai
+tag can
+ai
+tag can
+tag saf
+tag can
+tag saf
+tag fra
+tag ita
+tag eng
+tag bul
+ai
+atag hun
+tag hun
+tag eng
+tag raj
+tag idr
+ff
+tag eng
+ff
+teleport
+tag cze
+ic
+pp 500
+ai
+tag fra
+tag ger
+allowdiplo
+teleport
+tag frata gfr
+tag eng
+tag gfra
+tag fra
+ff
+ai
+ff
+tag fraic
+ic
+pp 500
+ff
+tah ire
+tag ire
+pp 500
+tag saf
+tag spr
+ff
+tag fra
+aiai
+tag fra
+ta gfra
+tag fra
+tag eng
+tag fra
+tag rom
+tag hun
+tdebug
+tag saf
+ff
+tag fra
+tag saf
+tag fra
+teleport
+tag ger
+allowdiplo
+tag fra
+tag ger
+tag fras
+tag fra
+tag ger
+allowdiplo
+ai
+teleport
+telepotag fra
+tag fra
+tag can
+tag eng
+tag can
+tag eng
+tag can
+ff
+ai
+ff
+pp 500
+decision.nochecks
+ai
+decision.fastremove
+ai
+ff
+pp 500
+ai
+tag eng
+tag tag fra
+tag fra
+tag ita
+tag fra
+ai
+tag fra
+pp 500\
+ai
+tag raj
+tag idr
+taGast
+tag ast
+tag can
+tag fra
+TDEBUG
+tag rom
+tag sov
+tag bra
+roic
+ff
+ai
+cp4000
+cp 5000
+ff
+tag usa
+tag chi
+tdebug
+tag qin
+ai
+ff
+tag saf
+tag usa
+tag fra
+tdebug
+tag nfa
+ai
+roic
+xp 500
+tag fra
+tag eng
+ff
+pp 500
+ai
+teleport
+cp 500
+ai
+tdebug
+tag mun
+tag mep
+tag emp
+pp 5000
+ff
+ai
+teleport
+tag mon
+tag emp
+tag mon
+tag emp
+tag mon
+tag tag emp
+tag emp
+decisions.nochecks
+decision.nochecks
+teleport
+ff
+pp 400
+xp 500
+pp 4000
+ai
+ff
+ai
+teleport
+ff
+ai
+ff
+ai
+pp 5000
+roic
+pp 5000
+xp 500000
+tdebug
+tag d01
+fow
+tag maa
+teleport
+tag tag
+tag kot
+ai
+ff
+teleport
+teleport\
+teleport
+annex man
+annex maa
+ai
+ff
+roic
+ff
+pp 500
+ai
+tag can
+ai
+tag can
+ff
+ai
+fow
+tag ita
+xp 50000
+roic
+pp 500
+DECISION.NOCHECKS
+TELEPORT
+DECISION.NOCHECKS
+IC
+TDEBUG
+TAG LBA
+TELEPORT
+TAG ITA
+ANNEX LBA
+DECISION.NOCHECKS
+DECISION.FASTREMOVES
+DECISION.FASTREMOVE
+DECISION.NOCHECKS
+DECISION.FASTREMOVE
+FF
+FFAI
+AI
+DECISION.NOCHECKS
+tag eng
+tag ncr
+ff
+focus.autocomplete
+focus.nochecks
+yag ger
+tag ger
+allowdiplo
+ai
+teleport
+tag fra
+tag ger
+tag fra
+ff
+pp 500
+tag hol
+tag fra
+xp 10
+xp -10
+PP 95
+DECISION.NOCHECKS
+PP 50
+PP 35
+PP 50
+DECISION.NOCHECKS
+DECISION.FASTREMOVE
+DECISION.NOCHECKS
+FF
+ff
+FF
+pp 100
+pp 300
+xp 250
+pp 100
+ff
+pp 100
+pp 400
+ff
+pp 100
+teleport
+pp 100
+cp 50
+ai_accept
+teleport
+pp 50
+teleport
+pp 175
+roic
+xp 95
+pp 110
+teleport
+ff
+teleport
+ai_accept
+teleport
+fow
+tag fra
+tag nfa
+tag eng
+tag ast
+tag nfa
+teleport
+tag chi
+tdebug
+tag chl
+tag mex
+tag fra
+tag nfa
+teleport
+tag eng
+tag nfa
+telepoirt
+teleport
+tag ger
+ai
+tag nfa
+ai
+ff
+ai
+ff
+ai
+ff
+pp 5000
+decision.nochecks
+cp 5000
+ai
+decision.nochecks
+ff
+tag ger
+tag fra
+ff
+tag ger
+tag saf
+tag can
+tag ita
+tag fra
+tag ger
+tag eng
+tagsov
+tag sov
+tag raj
+rag idr
+tdebug
+tag idr
+tag spr
+ai
+AI
+ai
+tag ger
+tag fra
+teleport
+tag ger
+ai
+tag can
+tag ger
+atag fra
+tag fra
+tag eng
+ai
+focus.nochecks
+focus.autocomplete
+ai
+focus.autocomplete
+focus.nochecks
+focus.autocomplete
+tdebug
+tag een
+tag dcs
+tag riv
+focus.nochecks
+tag een
+tag dcs
+tag riv
+tag een
+tag bln
+tag out
+tag eng
+tag itas
+tag ita
+teleport
+tag fra
+ai
+tag spr
+tag eng
+tag ast
+tag fra
+tag hol
+tag fra
+tag hol
+tag fra
+tdbeug
+tdebug
+do
+fow
+tag ita
+tag fra
+tag usa
+tag fra
+tag eng
+tag fra
+fpw
+fow
+tag fra
+pp 500
+ff
+focus.nochecks
+focus.autocomplete
+tag frsa
+tag fra
+focus.autocomplete
+tag fra
+focus.autocomplete
+focus.nochecks
+focus.autocomplete
+tag fra
+pp 500
+ff
+tag spr
+ai
+tag fra
+tag ger
+ai
+teleport
+tag fra
+tag ger
+tag fra
+PPP 50000
+PP 5000
+XP 500000
+roic
+annex ger
+annex jao
+
+annex jap
+annex ita
+annex eng
+annex usa
+annex sov
+annex ger
+fow
+tag por
+annex sov
+annex jap
+annex usa
+annex ita
+annex fra
+annex ger
+fow
+annex fin
+annex mex
+annex bra
+annex can
+annex rom
+annex bul
+annex ast
+annex idr
+annex saf
+annex man
+annex hol
+annex mex
+annex bra
+aNNEX FIN
+annex hol
+annex idr
+annex can
+annexd ast
+annex ast
+annex can
+annex ast
+annex can
+annex saf
+annex idr
+annex can
+annex idr
+annex saf
+annex ast
+annex can
+annex saf
+annex idr
+annex ast
+annex saf
+tag can
+tag eng
+tag fra
+roic
+ai
+annex idr
+annrx can
+annex can
+annex saf
+annex can
+annex saf
+annex idr
+annex saf
+annex idr
+annex can
+annex saf
+annex raj
+annex idr
+annex can
+annex saf
+annex idr
+annex can
+annex idr
+annex saf
+annex can
+annex idr
+annex saf
+annex can
+annex saf
+annex idr
+annex can
+annes saf
+annnex idr
+annex saf
+annex idr
+annex ast
+annex can
+annex saf
+annex idr
+annex eng
+annex ast
+annex eng
+annex idr
+
+annex ast
+annex eng
+annex can
+annex eng
+annex ast
+annex saf
+ANNEX ENG
+ANNEX AST
+ANNEX IDR
