@@ -1,0 +1,97 @@
+last_date = 1995.1.1
+
+tests = {
+
+	world_tension_under_100_by_mid_1940 = {
+
+        success = {
+            date < 1940.6.1
+            threat > 0.99
+        }
+
+        fail = {
+            date > 1940.6.1
+        }
+    }
+
+    allies_are_fighting_china = {
+        success = {
+            CHI = {
+                OR = {  # dumb scoping because testing assumes some kind of ok top scope for checks
+                    date > 1944.1.1
+                    is_in_faction_with = JAP
+                }
+            }
+        }
+
+        fail = {
+            CHI = {
+                has_war_with = ENG
+                NOT = { is_in_faction_with = JAP }
+            }
+        }
+    }
+
+    baltic_has_gone_fascist = {
+        success = {
+            date > 1942.1.1
+        }
+
+        fail = {
+            date < 1942.1.1
+            OR = {
+                EST = { has_government = fascism }
+                LAT = { has_government = fascism }
+                LIT = { has_government = fascism }
+            }
+        }
+    }
+
+    baltic_country_formed_faction = {
+        success = {
+            date > 1942.1.1
+        }
+
+        fail = {
+            date < 1942.1.1
+            OR = {
+                EST = { is_faction_leader = yes }
+                LIT = { is_faction_leader = yes }
+                LAT = { is_faction_leader = yes }
+            }
+        }
+    }
+
+    allies_failed_to_naval_invade = {
+        acceptable_fail_rate = 0.3
+        success = {
+            date > 1943.6.1
+            any_state = {
+                OR  = {
+                    region = 208 # france
+                    region = 20 # southern france
+                    region = 5 # benelux
+                }
+                controller = {
+                    OR = {
+                        tag = FRA
+                        is_in_faction_with = FRA
+                    }
+                }
+            }
+        }
+        fail = {
+            date > 1946.1.1
+        }
+    }
+
+    Croatia_doesnt_exist = {
+        acceptable_fail_rate = 0.3
+        success = {
+            CRO = { exists = yes }
+        }
+        fail = {
+            date > 1942.1.1
+        }
+    }
+}

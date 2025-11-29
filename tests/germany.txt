@@ -1,0 +1,349 @@
+last_date = 1948.1.1
+
+tests = {
+
+    GER_didnt_defeat_france = {
+
+        success = {
+            date > 1939.1.1
+            date < 1941.1.1
+            FRA = { has_capitulated = yes }
+        }
+
+        fail = {
+            date > 1941.1.1
+        }
+    }
+
+    GER_at_peace_with_poland = {
+
+        success = {
+            GER = { has_war_with = POL }
+        }
+
+        fail = {
+            date > 1940.1.1
+        }
+    }
+
+    GER_didnt_defeat_poland = {
+
+        success = {
+            date > 1939.1.1
+            date < 1941.1.1
+            POL = {
+                OR = {
+                    has_capitulated = yes
+                    exists = no
+                }
+            }
+        }
+
+        fail = {
+            date > 1941.1.1
+        }
+    }
+
+    GER_didnt_design_garrison = {
+
+        success = {
+            date > 1939.1.1
+            date < 1945.1.1
+            GER = { ai_has_role_template = garrison }
+        }
+
+        fail = {
+            date > 1945.1.1
+        }
+    }
+
+    GER_didnt_design_anti_tank = {
+
+        success = {
+            date > 1939.1.1
+            date < 1945.1.1
+            GER = { ai_has_role_template = anti_armor }
+        }
+
+        fail = {
+            date > 1945.1.1
+        }
+    }
+
+    GER_didnt_field_garrison = {
+
+        success = {
+            date > 1939.1.1
+            date < 1945.1.1
+            GER = { ai_has_role_division = garrison }
+        }
+
+        fail = {
+            date > 1941.1.1
+        }
+    }
+
+    GER_dont_have_medium_armor = {
+        success = {
+            date > 1936.1.1
+            date < 1955.1.1
+            GER = {
+                has_equipment = {
+                    medium_tank_chassis > 0
+                }
+            }
+        }
+
+        fail = {
+            date > 1955.1.1
+        }
+
+        loggers = {
+
+            log_equipment_in_field = {
+                country = GER
+                value = medium_tank_chassis
+            }
+        }
+    }
+
+   GER_doesnt_have_medium_armor_design = {
+        success = {
+            date > 1936.1.1
+            date < 1945.1.1
+            GER = {
+                has_template_majority_unit = medium_armor
+            }
+        }
+
+        fail = {
+            date > 1945.1.1
+        }
+    }
+
+   GER_at_peace_with_luxembourg = {
+
+        success = {
+            GER = { has_war_with = LUX }
+        }
+
+        fail = {
+            date > 1941.1.1
+        }
+    }
+
+    GER_at_peace_with_belgium = {
+
+        success = {
+            GER = { has_war_with = BEL }
+        }
+
+        fail = {
+            date > 1941.1.1
+        }
+    }
+
+    GER_at_peace_with_netherlands = {
+
+        success = {
+            GER = { has_war_with = HOL }
+        }
+
+        fail = {
+            date > 1941.1.1
+        }
+    }
+
+
+    GER_at_peace_with_soviet_union = {
+
+        success = {
+            GER = { has_war_with = SOV }
+        }
+
+        fail = {
+            date > 1942.1.1
+        }
+    }
+
+    GER_wasnt_capitulated = {
+        acceptable_fail_rate = 0.2
+
+        success = {
+            GER = {
+                OR = {
+                    has_capitulated = yes
+                    exists = no
+                    is_subject = yes
+                }
+            }
+        }
+
+        fail = {
+            date > 1947.12.1
+        }
+
+    }
+
+    GER_capitulated_before_1943 = {
+
+        success = {
+            date > 1942.12.31
+        }
+
+        fail = {
+            GER = {
+                OR = {
+                    has_capitulated = yes
+                    exists = no
+                    is_subject = yes
+                }
+            }
+        }
+
+    }
+
+    GER_didnt_devevelop_nukes = {
+        success = {
+            GER = { num_of_nukes > 0 }
+        }
+
+        fail = {
+            # I don't know if we want this test so I'm just putting the fail state here for consistency. It probably doesn't even evaluate. // Jean
+            date > 1948.1.2
+        }
+    }
+
+    GER_doesnt_control_alsace_lorraine_21_days_after_france_falls = {
+        acceptable_fail_rate = 0.25
+
+        success = {
+            date > 1941.1.1
+        }
+
+        fail = {
+            date < 1941.1.1
+            FRA = {
+                OR = {
+                    has_capitulated = yes
+                    exists = no
+                }
+                days_since_capitulated > 21
+            }
+            28 = { # alsace-lorraine
+                CONTROLLER = {
+                    NOT = {
+                        is_in_faction_with = GER
+                    }
+                }
+            }
+        }
+    }
+
+   GER_doesnt_control_alsace_lorraine_56_days_after_france_falls = {
+        success = {
+            date > 1941.1.1
+        }
+
+        fail = {
+            date < 1941.1.1
+            FRA = {
+                OR = {
+                    has_capitulated = yes
+                    exists = no
+                }
+                days_since_capitulated > 56
+            }
+            28 = { # alsace-lorraine
+                CONTROLLER = {
+                    NOT = {
+                        is_in_faction_with = GER
+                    }
+                }
+            }
+        }
+    }
+
+    # We expect that Germany controls northern France.
+    # If some other ally controls this area instead, something
+    # went wrong and will probably mess up the Soviet war.
+    GER_alsace_lorraine_controlled_by_german_ally_after_france_falls = {
+        success = {
+            date > 1941.1.1
+        }
+
+        fail = {
+            date < 1941.1.1
+            FRA = {
+                OR = {
+                    has_capitulated = yes
+                    exists = no
+                }
+            }
+            28 = { # alsace-lorraine
+                CONTROLLER = {
+                    NOT = {
+                        tag = GER
+                    }
+                    is_in_faction_with = GER
+                }
+            }
+        }
+    }
+
+    GER_started_ww2_late = {
+        success = {
+            date > 1940.1.1
+            GER = { has_war = yes }
+        }
+        fail = {
+            date > 1940.1.1
+            GER = { has_war = no }
+        }
+    }
+
+    GER_not_joined_by_romania = {
+        success = {
+            date > 1936.1.1
+            date < 1943.1.1
+            ROM = {
+                is_in_faction_with = GER
+            }
+        }
+
+        fail = {
+            date > 1942.1.1
+        }
+    }
+
+    GER_not_joined_by_hungary = {
+        success = {
+            date > 1936.1.1
+            date < 1943.1.1
+            HUN = {
+                is_in_faction_with = GER
+            }
+        }
+
+        fail = {
+             date > 1942.1.1
+        }
+    }
+
+    GER_no_second_vienna_award = {
+        success = {
+            date < 1941.1.1
+            GER = {
+                has_country_flag = GER_second_vienna_award_flag
+            }
+        }
+        fail = {
+            date > 1941.1.1
+            GER = {
+                NOT = {
+                    has_country_flag = GER_second_vienna_award_flag
+                }
+            }
+        }
+    }
+}

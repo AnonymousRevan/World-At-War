@@ -1,0 +1,54 @@
+last_date = 1948.1.1
+
+tests = {
+
+    CHL_was_capitulated = {
+        acceptable_fail_rate = 0.2
+
+        success = {
+            date > 1947.12.1
+        }
+
+        fail = {
+            CHL = {
+                OR = {
+                    has_capitulated = yes
+                    exists = no
+                    is_subject = yes
+                }
+            }
+        }
+    }
+
+    CHL_has_civil_war = {
+        success = {
+            date > 1947.1.1
+        }
+
+        fail = {
+            CHL = {
+                has_civil_war = yes
+            }
+        }
+    }
+
+    CHL_joined_war_too_early = {
+        success = {
+            date > 1942.3.1
+        }
+
+        fail = {
+            CHL = { has_war = yes }
+        }
+    }
+
+    CHL_joined_war_too_late = {
+        success = {
+            CHL = { has_war = yes }
+        }
+
+        fail = {
+            date > 1944.1.1
+        }
+    }
+}

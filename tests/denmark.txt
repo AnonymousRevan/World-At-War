@@ -1,0 +1,65 @@
+last_date = 1948.1.1
+
+tests = {
+
+     DEN_at_peace_with_Germany = {
+
+        success = {
+            OR = {
+                GER = { has_war_with = DEN }
+                DEN = { has_country_flag = DEN_attacked }
+            }
+        }
+
+        fail = {
+            date > 1941.10.1
+        }
+    }
+
+    DEN_not_defeated = {
+
+        success = {
+            date < 1940.10.1
+            DEN = {
+                OR = {
+                    has_capitulated = yes
+                    exists = no
+                    is_subject = yes
+                }
+            }
+        }
+
+        fail = {
+            date > 1940.10.1
+        }
+    }
+
+    DEN_not_a_german_puppet = {
+        success = {
+            date < 1940.10.1
+            DEN = {
+                is_subject_of = GER
+            }
+        }
+
+        fail = {
+            date > 1940.10.1
+        }
+    }
+
+    DEN_not_free_before_mid_1944 = {
+        success = {
+            date > 1944.5.31
+        }
+
+        fail = {
+            date < 1944.6.1
+            DEN = {
+                NOT = {
+                    is_subject_of = GER
+                }
+                has_completed_focus = DEN_declare_independence
+            }
+        }
+    }
+}

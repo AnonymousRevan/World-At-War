@@ -1,0 +1,46 @@
+last_date = 1948.1.1
+
+tests = {
+
+     SWE_at_war_with_ger = {
+        success = {
+           date > 1946.1.1
+            }
+
+        fail = {
+            date < 1946.1.1
+            SWE = {
+                has_war_with = GER
+            }
+        }
+    }
+
+    SWE_at_war_with_SOV = {
+        success = {
+           date > 1946.1.1
+            }
+
+        fail = {
+            date < 1946.1.1
+            SWE = {
+                has_war_with = SOV
+            }
+            GER = {
+                has_government = fascism
+            }
+        }
+    }
+
+    SWE_at_war_with_ENG = {
+        success = {
+           date > 1946.1.1
+            }
+
+        fail = {
+            date < 1946.1.1
+            SWE = {
+                has_war_with = ENG
+            }
+        }
+    }
+}

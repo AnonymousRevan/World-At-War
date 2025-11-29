@@ -1,0 +1,54 @@
+last_date = 1948.1.1
+
+tests = {
+
+    ARG_was_capitulated = {
+        acceptable_fail_rate = 0.2
+
+        success = {
+            date > 1947.12.1
+        }
+
+        fail = {
+            ARG = {
+                OR = {
+                    has_capitulated = yes
+                    exists = no
+                    is_subject = yes
+                }
+            }
+        }
+    }
+
+    ARG_has_civil_war = {
+        success = {
+            date > 1947.1.1
+        }
+
+        fail = {
+            ARG = {
+                has_civil_war = yes
+            }
+        }
+    }
+
+    ARG_joined_war_too_early = {
+        success = {
+            date > 1942.1.1
+        }
+
+        fail = {
+            ARG = { has_war = yes }
+        }
+    }
+
+    ARG_joined_war_too_late = {
+        success = {
+            BRA = { has_war = yes }
+        }
+
+        fail = {
+            date > 1946.1.1
+        }
+    }
+}

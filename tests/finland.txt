@@ -1,0 +1,148 @@
+last_date = 1948.1.1
+
+tests = {
+
+    FIN_winter_war_too_early = {
+        acceptable_fail_rate = 0.3
+        success = {
+            date > 1939.10.1
+            FIN = {
+                has_war_with = SOV
+            }
+         }
+
+        fail = {
+            date < 1939.10.1
+            FIN = {
+                has_war_with = SOV
+            }
+        }
+    }
+
+    FIN_winter_war_too_late = {
+        acceptable_fail_rate = 0.3
+        success = {
+            date < 1940.2.1
+            FIN = {
+                has_war_with = SOV
+            }
+         }
+
+        fail = {
+        	date > 1940.2.1
+			FIN = {
+                has_war_with = SOV
+            }
+		}
+    }
+
+    FIN_no_continuation_war = {
+        success = {
+            GER = {
+            	has_war_with = SOV
+            }
+            FIN = {
+                has_war_with = SOV
+            }
+         }
+
+        fail = {
+            OR = {
+            	date > 1944.1.1
+            	AND ={
+            		date > 1942.1.1
+            		GER = {
+            			has_war_with = SOV
+            		}
+            	}
+            }
+        }
+    }
+
+    FIN_is_a_soviet_puppet = {
+        acceptable_fail_rate = 0.4
+        success = {
+            date > 1946.1.1
+         }
+
+        fail = {
+            FIN = {
+                is_subject_of = SOV
+            }
+        }
+    }
+
+    FIN_at_war_with_the_allies = {
+
+        success = {
+            OR = {
+				date > 1946.1.1
+				AND = {
+					date > 1940.1.1
+					GER = {
+						OR = { 
+							NOT = { has_war_with = SOV } #ww2 is over
+							AND = { 
+								has_war_with = SOV
+								SOV = { has_capitulated = yes } #stuff is sufficiently ahistorical now
+							}
+						}
+					}
+				}
+			}
+        }
+
+        fail = {
+            FIN = {
+                OR = {
+                    has_war_with = ENG
+                    has_war_with = USA
+                }
+            }
+        }
+    }
+
+    FIN_didnt_peace_out_soviets = {
+        success = {
+            GER = {
+                has_war_with = SOV
+            }
+            NOT = {
+                FIN = {
+                    has_war_with = SOV
+                }
+            }
+            date > 1942.1.1
+         }
+
+        fail = {
+            date > 1946.1.1
+        }
+    }
+
+    FIN_is_in_a_faction = {
+        success = {
+			OR = {
+				date > 1946.1.1
+				AND = {
+					date > 1940.1.1
+					GER = {
+						OR = { 
+							NOT = { has_war_with = SOV } #ww2 is over
+							AND = { 
+								has_war_with = SOV
+								SOV = { has_capitulated = yes } #stuff is sufficiently ahistorical now
+							}
+						}
+					}
+				}
+			}
+        }
+
+        fail = {
+            FIN = {
+                is_in_faction = yes
+            }
+        }
+    }
+}

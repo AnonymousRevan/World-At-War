@@ -1,0 +1,17 @@
+last_date = 1948.1.1
+
+tests = {
+
+    ICE_not_a_puppet_of_britain = {
+        acceptable_fail_rate = 0.25
+        success = {
+            ICE = {
+                is_subject_of = ENG
+            }
+         }
+
+        fail = {
+            date > 1942.1.1
+        }
+    }
+}
