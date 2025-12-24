@@ -567,7 +567,6 @@ focus_tree = {
 		
 		available = {
 		    has_war = yes
-			has_idea = frederic_irene_joliot_curie
 		}
 
 
