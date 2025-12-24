@@ -15,5 +15,6 @@ tags={
 	"National Focuses"
 	"Military"
 }
-name="A Bloat at War Beta"
-supported_version="1.16.9"
+name="A Bloat at War"
+supported_version="1.17.3.0"
+remote_file_id="3346804055"
