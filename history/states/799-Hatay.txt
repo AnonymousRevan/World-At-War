@@ -6,17 +6,18 @@ state={
 	}
 	manpower = 234379
 	
-	state_category = enclave
+	state_category = pastoral
 
 	history= {
 		owner = FRA
-		add_core_of = TUR
+		add_core_of = SEN
+		add_core_of = FRA
 
 		victory_points = {
 			12029 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 		}
 
 	}

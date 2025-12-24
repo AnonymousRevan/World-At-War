@@ -72,12 +72,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader }
-			skill=2
-			attack_skill=2
+			traits={ infantry_leader commando }
+			skill=3
+			attack_skill=3
 			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
+			planning_skill=3
+			logistics_skill=3
 			legacy_id=-1
 		}
 	}
@@ -145,7 +145,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ skilled_staffer commando }
+			traits={ skilled_staffer }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -347,7 +347,7 @@ characters={
 				original_tag = CAN
 			}
 			
-			traits = { army_infantry_3 }
+			traits = { army_infantry_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -651,10 +651,12 @@ characters={
 			idea_token = newton_weasely_rowell
 			ledger = civilian
 			picture = generic_political_advisor_europe_5
+			cost = 100
 			
 			allowed = {
 				original_tag = CAN
 			}
+			
 			
 			traits = { railroad_enthusiast }
 		}

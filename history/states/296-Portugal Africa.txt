@@ -4,7 +4,7 @@ state={
 	name="STATE_296" # Guinea-Bissau
 	manpower = 364900
 	
-	state_category = enclave
+	state_category = pastoral
 	history={
 		owner = FRA
 		add_core_of = POR
@@ -13,9 +13,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			12891 ={
-				naval_base = 1
-			}
 		}
 	}
 

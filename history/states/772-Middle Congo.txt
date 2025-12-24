@@ -13,13 +13,10 @@ state={
 		owner = FRA
 		add_core_of = SEN
 		victory_points = {
-			8193 10
+			8193 1
 		}
 		buildings = {
 			infrastructure = 3
-			12975 = {
-				naval_base = 1
-			}
 		}
 
 	}

@@ -7,12 +7,12 @@ state={
 	
 	resources={
 		steel=325 # was:26 was: 36
-		coal = 4 #initial distribution
 	}
 
 	history={
 		owner = FRA
 		add_core_of = SEN
+		add_core_of = FRA
 		set_state_flag = GER_atlantikwall
 		victory_points = {
 			1145 5 
@@ -24,10 +24,10 @@ state={
 			infrastructure = 4
 			air_base = 5
 			1145 = {
-				naval_base = 2
+				naval_base = 8
 			}
 			7132 = {
-				naval_base = 6
+				naval_base = 4
 			}
 		}
 	}

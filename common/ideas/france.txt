@@ -1625,6 +1625,7 @@ ideas = {
 			    country_resource_tungsten = 100
 				country_resource_aluminium = 100
 			    country_resource_chromium = 100
+				country_resource_coal = 50
 				country_resource_oil = 25
 				
 			}

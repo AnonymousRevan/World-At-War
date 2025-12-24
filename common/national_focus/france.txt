@@ -48,7 +48,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_la_front_du_popular
-		cost = 7.16
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -91,7 +91,7 @@ focus_tree = {
 		}
 		
 		relative_position_id = FRA_matignon_agreements
-		cost = 7.16
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -576,8 +576,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				category = nuclear 
-				uses = 3
-				bonus = 0.15
+				uses = 2
+				bonus = 1
 				name = USA_manhattan_project
 			}	
 			add_ideas = FRA_uranium_mines
@@ -585,9 +585,6 @@ focus_tree = {
 			    add_ideas = FRA_uranium_mines
 			}
 			ENG = {
-			    add_ideas = FRA_uranium_mines
-			}
-			IDR = {
 			    add_ideas = FRA_uranium_mines
 			}
 			CAN = {
@@ -2600,11 +2597,11 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = FRA_gold2
 			add_tech_bonus = {
-				technology = dispersed_industry4
-				technology = concentrated_industry4
-				technology = construction4
-				bonus = 1 
-				ahead_reduction = 1
+				technology = dispersed_industry5
+				technology = concentrated_industry5
+				technology = construction5
+				technology = modern_tools
+				bonus = 1.25
 				uses = 1
 				name = FRA_nationalize_key_industry
 			}
@@ -3016,8 +3013,8 @@ focus_tree = {
 				technology = dispersed_industry5
 				technology = concentrated_industry5
 				technology = construction5
-				technology = assembly_line_production
-				bonus = 1 
+				technology = modern_tools
+				bonus = 1.25
 				uses = 1
 				name = FRA_nationalize_key_industry
 			}
@@ -3065,10 +3062,10 @@ focus_tree = {
 
 		completion_reward = {
 			272 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -3088,10 +3085,10 @@ focus_tree = {
 	
 			completion_reward = {
 				298 = {
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = arms_factory
-						level = 4
+						level = 5
 						instant_build = yes
 					}
 				}

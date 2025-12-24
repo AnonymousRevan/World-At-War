@@ -67,4 +67,15 @@
 } 
 instant_effect = {
 	### Ships Under Contruction ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_carrier_1
+			creator = "FRA" 
+			version_name = "Joffre Class"
+		}
+		name = "Joffre" 
+		requested_factories = 10
+		progress = 0.4
+		amount = 1
+	}
 }

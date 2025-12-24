@@ -160,7 +160,8 @@ ideas = {
 
 			modifier = {
 				supply_consumption_factor = -0.05
-                local_resources_factor = 0.1			
+                local_resources_factor = 0.1
+                production_factory_max_efficiency_factor = 0.075				
 			}
 
 		}
