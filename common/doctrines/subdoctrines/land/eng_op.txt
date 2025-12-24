@@ -1,0 +1,104 @@
+cmw = {
+    track = operations
+    name = SUBDOCTRINE_cmw
+    description = SUBDOCTRINE_cmw_DESC
+    icon = GFX_doctrine_defensive_postures_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+		OR = {
+			original_tag = ENG
+			original_tag = SAF
+			original_tag = AST
+			original_tag = IDR
+			original_tag = CAN
+			original_tag = FRA
+		}
+    }
+	
+	visible = {
+		OR = {
+			original_tag = ENG
+			original_tag = SAF
+			original_tag = AST
+			original_tag = IDR
+			original_tag = CAN
+			original_tag = FRA
+		}
+	}
+	
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 95
+            OR = {
+            original_tag = ENG
+            original_tag = AST
+            original_tag = NZL
+            original_tag = CAN
+            original_tag = SAF
+            original_tag = ITA
+            }
+        }
+    }
+
+    #OTHER BASE REWARDS
+	supply_consumption_factor = -0.05
+	max_planning = 0.05
+    category_all_infantry = {
+        defense = 0.15
+		max_strength = 0.75
+    }
+
+    rewards = {
+        improvised_fighting_position = {
+            land_reinforce_rate = 0.05
+        }
+        elastic_operations = {
+			infantry = {
+				max_organisation = 5
+				initiative = 0.05
+            }
+			category_motorised = {
+				max_organisation = 5
+				max_strength = 0.25
+				breakthrough = 0.1
+			}
+			category_tanks = {
+				max_organisation = 2
+				defense = 0.2
+			}
+        }
+        developed_trench_networking = {
+			category_line_artillery = {
+				defense = 0.25
+				supply_consumption = 0.1
+			}
+        }
+        field_emplacements = {
+            truck_infantry = {
+                plains = {
+					attack = 0.1
+					defence = 0.05
+				}
+				desert = {
+					attack = 0.1
+					defence = 0.05
+					movement = 0.1
+				}
+				hills = {
+					attack = 0.1
+				}
+            }
+        }
+        field_construction_training = {
+            max_planning = 0.05
+			land_night_attack = 0.05
+			
+			}
+        }
+
+    }
+}

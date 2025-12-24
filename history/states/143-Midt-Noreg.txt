@@ -12,12 +12,16 @@ state = {
 		}
 		owner = NOR
 		add_core_of = NOR
-		add_core_of = SMI
-		
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			add_core_of = SMI
+		}
 		buildings = {
-			infrastructure = 2
-			arms_factory = 0
-			industrial_complex = 1
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
 			3022 = {
 				naval_base = 3
 				coastal_bunker = 2

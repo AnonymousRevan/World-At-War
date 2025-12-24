@@ -1,0 +1,141 @@
+sp_naval_manned_torp = {
+    specialization = specialization_nuclear
+    project_tags = sp_tag_surface_ship
+
+    ai_will_do = { base = 1 }
+
+    allowed = {
+		OR = {
+			original_tag = ITA
+		}
+	}
+
+    available = {
+        FROM = { has_tech = advanced_ship_torpedo_launcher }
+    }
+    prototype_time = sp_time.prototype.medium
+    complexity = sp_complexity.small
+    breakthrough_cost = { specialization_naval = 1 }
+    
+    project_output = {
+        equipment_bonus = {
+            ship_hull_cruiser = {
+				naval_torpedo_hit_chance_factor = 0.15
+            }
+            ship_hull_light = {
+				naval_torpedo_hit_chance_factor = 0.15
+			}
+			small_plane_naval_bomber_airframe = {
+				naval_strike_targetting = 0.25
+            }
+        }
+    }
+
+    generic_prototype_rewards = {
+        sp_naval_generic_reward_scientist_xp_1
+        sp_naval_generic_reward_scientist_xp_2
+        sp_naval_generic_reward_scientist_xp_3
+        sp_naval_generic_reward_navy_xp_1
+        sp_naval_generic_reward_navy_xp_2
+        sp_naval_generic_reward_navy_xp_3
+        sp_naval_generic_reward_test_failure_1
+        sp_naval_generic_reward_test_failure_2
+        sp_naval_generic_reward_test_failure_3
+        sp_naval_generic_reward_artillery_tech_1
+        sp_naval_generic_reward_artillery_tech_2
+        sp_naval_generic_failure_torpedo_accident
+    }
+}
+
+sp_naval_h41 = {
+    specialization = specialization_nuclear
+    project_tags = sp_tag_surface_ship
+
+    ai_will_do = { base = 1 }
+
+    allowed = { 
+        OR = {
+            original_tag = GER
+        }
+    }
+
+    available = {
+        FROM = { 
+            has_tech = improved_ship_hull_heavy
+            }
+        }
+    
+    prototype_time = sp_time.prototype.medium
+    complexity = sp_complexity.small
+    breakthrough_cost = { specialization_naval = 1 }
+    
+    project_output = {
+        sub_unit_bonus = {
+			battleship = {
+				hg_attack = 0.25
+				lg_attack = 0.25
+				naval_speed = 0.1
+			}
+		} 
+    }
+
+    generic_prototype_rewards = {
+        sp_naval_generic_reward_scientist_xp_1
+        sp_naval_generic_reward_scientist_xp_2
+        sp_naval_generic_reward_scientist_xp_3
+        sp_naval_generic_reward_navy_xp_1
+        sp_naval_generic_reward_navy_xp_2
+        sp_naval_generic_reward_navy_xp_3
+        sp_naval_generic_reward_test_failure_1
+        sp_naval_generic_reward_test_failure_2
+        sp_naval_generic_reward_test_failure_3
+        sp_naval_generic_reward_artillery_tech_1
+        sp_naval_generic_reward_artillery_tech_2
+        sp_naval_generic_failure_torpedo_accident
+    }
+}
+
+sp_air_coal_boy = {
+    specialization = specialization_nuclear
+    project_tags = sp_tag_aircraft
+
+    ai_will_do = { base = 1 }
+
+    allowed = {
+        OR = {
+            original_tag = GER
+			original_tag = HUN
+			original_tag = ROM
+			original_tag = BUL
+			original_tag = EFR
+        }
+    }
+    available = {
+        FROM = { has_tech = excavation3 }
+    }
+    prototype_time = sp_time.prototype.medium
+    complexity = sp_complexity.medium
+    breakthrough_cost = { specialization_air = 1 }
+    
+    project_output = {
+        enable_equipments = { rocket_interceptor_equipment_coal }
+	
+    }
+
+    generic_prototype_rewards = {
+        sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3	
+    }
+}

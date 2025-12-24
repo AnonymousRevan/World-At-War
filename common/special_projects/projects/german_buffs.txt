@@ -1,0 +1,46 @@
+sp_land_sspanzer = {
+    specialization = specialization_nuclear
+    project_tags = sp_tag_tank
+
+    ai_will_do = { base = 1 }
+
+allowed = {
+    OR = {
+        original_tag = GER
+    }
+}
+
+    available = {
+        FROM = { has_tech = advanced_machine_tools }
+    }
+    prototype_time = sp_time.prototype.medium
+    complexity = sp_complexity.medium
+    breakthrough_cost = { specialization_land = 1 }
+    
+    project_output = {
+		enable_subunits = { elite_medium_armor }
+
+    }
+
+    generic_prototype_rewards = {
+        sp_land_generic_reward_scientist_xp_1
+        sp_land_generic_reward_scientist_xp_2
+        sp_land_generic_reward_scientist_xp_3
+        sp_land_generic_reward_army_xp_1
+        sp_land_generic_reward_army_xp_2
+        sp_land_generic_reward_army_xp_3
+        sp_land_generic_reward_major_progress_1
+        sp_land_generic_reward_major_progress_2
+        sp_land_generic_reward_major_progress_3
+        sp_land_generic_reward_test_failure_1
+        sp_land_generic_reward_test_failure_2
+        sp_land_generic_reward_test_failure_3
+        sp_land_generic_reward_armor_tech_1
+        sp_land_generic_reward_armor_tech_2
+        sp_land_generic_reward_armor_tech_3
+        sp_land_generic_reward_engine_bonus_1
+        sp_land_generic_reward_engine_bonus_2
+        sp_land_generic_reward_engine_bonus_3
+        sp_land_generic_reward_resource_scarcity
+    }
+}

@@ -2,11 +2,67 @@
 	name = "Morit Diviziin"			# Cavalry Division
 
 	division_names_group = MON_CAV_01
-
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 2 }   
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+
+		anti_air = { x = 3 y = 0 }
+		anti_tank_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }      
+		
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+	}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 1 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 1 y = 1 }
+		anti_air_company = { x = 0 y = 2 }	
+		anti_tank =  { x = 1 y = 2 }
+	}
+}
+### 40 width garrison occupation template
+division_template = {
+	name = "Occupation Division"	
+	regiments = {
+		garrison = { x = 0 y = 0 }
+		garrison = { x = 0 y = 1 }
+		garrison = { x = 0 y = 2 }
+		garrison = { x = 0 y = 3 }
+
+		garrison = { x = 1 y = 0 }
+		garrison = { x = 1 y = 1 }
+		garrison = { x = 1 y = 2 }
+		garrison = { x = 1 y = 3 }
+		
+		garrison = { x = 2 y = 0 }
+		garrison = { x = 2 y = 1 }
+		garrison = { x = 2 y = 2 }
+		garrison = { x = 2 y = 3 }
+		
+		garrison = { x = 3 y = 0 }
+		garrison = { x = 3 y = 1 }
+		garrison = { x = 3 y = 2 }
+		garrison = { x = 3 y = 3 }
+		
+		garrison = { x = 4 y = 0 }
+		garrison = { x = 4 y = 1 }
+		garrison = { x = 4 y = 2 }
+		garrison = { x = 4 y = 3 }	
+	}
+	support = {
+	    military_police = { x = 0 y = 0 }
 	}
 }
 
@@ -21,8 +77,6 @@ units = {
 		location = 4801
 		division_template = "Morit Diviziin"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
 	}
 	division = {
 		#name = "2-p Morit Diviziin"
@@ -33,7 +87,6 @@ units = {
 		location = 4792
 		division_template = "Morit Diviziin"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
 	}
 	division = {
 		#name = "3-p Morit Diviziin"
@@ -44,78 +97,66 @@ units = {
 		location = 12557
 		division_template = "Morit Diviziin"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
 	}
-	division = {
-		#name = "4-p Morit Diviziin"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 1743
-		division_template = "Morit Diviziin"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		#name = "5-p Morit Diviziin"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 4873
-		division_template = "Morit Diviziin"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	#division = {
-	#	name = "6-p Morit Diviziin"
-	#	division_name = {    # New syntax for compatibility with name lists
-	#		is_name_ordered = yes
-	#		name_order = 6
-	#	}
-	#	location = 10575
-	#	division_template = "Morit Diviziin"
-	#	start_experience_factor = 0.1
-	#	start_equipment_factor = 0.5
-	#}
-	#division = {
-	#	name = "7-p Morit Diviziin"
-	#	division_name = {    # New syntax for compatibility with name lists
-	#		is_name_ordered = yes
-	#		name_order = 7
-	#	}
-	#	location = 4856
-	#	division_template = "Morit Diviziin"
-	#	start_experience_factor = 0.1
-	#	start_equipment_factor = 0.5
-    #
-	#}
-
-	#division = {
-	#	name = "8-p Morit Diviziin"
-	#	division_name = {    # New syntax for compatibility with name lists
-	#		is_name_ordered = yes
-	#		name_order = 8
-	#	}
-	#	location = 1723
-	#	division_template = "Morit Diviziin"
-	#	start_experience_factor = 0.1
-	#	start_equipment_factor = 0.5
-	#}
 }
 
 
 ##### No notable air force (only about 6 aircraft in 1936) #####
 
+##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "MON"
 		}
 		requested_factories = 1
-		progress = 0.20
-		efficiency = 100
+		progress = 0.80
+		efficiency = 20
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_weapon_equipment_1
+			creator = "MON"
+		}
+		requested_factories = 1
+		progress = 0.80
+		efficiency = 20
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "MON"
+		}
+		requested_factories = 1
+		progress = 0.70
+		efficiency = 20
+	}
+	add_equipment_production = {
+		equipment = {
+			type = train_equipment_1
+			creator = "MON"
+		}
+		requested_factories = 1
+		progress = 0.70
+		efficiency = 20
+	}
+#	add_equipment_production = {
+#		equipment = {
+#			type = motorized_equipment_1
+#			creator = "MON"
+#		}
+#		requested_factories = 1
+#		progress = 0.70
+#		efficiency = 20
+#	}
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "MON" 
+		}
+		requested_factories = 1
+		progress = 0.70
+		efficiency = 20
 	}
 }

@@ -1,0 +1,11 @@
+################
+##### IDR ###### Which is India
+################
+
+IDR_imperial_state_of_india = {
+	
+	allowed = {
+		original_tag = IDR
+	}
+	priority = 85
+}

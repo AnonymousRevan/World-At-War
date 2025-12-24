@@ -8,8 +8,8 @@
 
  #################### 
 
- BRA_bernadini_organization = {
- 	include = generic_medium_tank_organization
+BRA_bernadini_organization = {
+# 	include = generic_medium_tank_organization
  	icon = GFX_idea_BRA_bernardini
  	allowed = {	
  		has_dlc = "Trial of Allegiance"
@@ -32,7 +32,7 @@
  			}
  		} 
  	}
- }
+}
 
 
 #####################

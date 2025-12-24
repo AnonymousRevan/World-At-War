@@ -23,9 +23,6 @@ exfiltration_submarine_pickup = {
 	risk_extra = exfiltration_submarine_pickup_outcome_fail
 	picture = "GFX_phase_exfiltration_submarine_pickup"
 	icon = "GFX_phase_exfiltration_submarine_pickup_small"
-	equipment = {
-		
-	}
 
 	requirements = {
 		any_owned_state = {
@@ -55,20 +52,8 @@ exfiltration_border = {
 		FROM = {
 			any_owned_state = {
 				is_controlled_by = PREV
-				any_neighbor_state = {
-					CONTROLLER = {
-						NOT = {
-							tag = FROM
-							has_war_with = ROOT #any neighbouring state is controlled by a country that is not at war with us
-						}
-					}
-				}
 			}
 		}
-	}
-
-	equipment = {
-		
 	}
 }
 
@@ -79,8 +64,5 @@ exfiltration_go_to_ground = {
 	risk_extra = exfiltration_go_to_ground_outcome_fail
 	picture = "GFX_phase_exfiltration_go_to_ground"
 	icon = "GFX_phase_exfiltration_go_to_ground_small"
-	equipment = {
-		
-	}
 }
 

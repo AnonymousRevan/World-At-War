@@ -14,14 +14,6 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = BRA
-			has_completed_focus = BRA_constitutional_monarchy
-			has_government = neutrality
-		}
-		localization_key = BRA_imperial_development_key
-	}
-	text = {
-		trigger = {
-			original_tag = BRA
 			has_government = communism
 		}
 		localization_key = BRA_wealth_redistribution_key
@@ -40,34 +32,6 @@ defined_text = {
 
 defined_text = {
 	name = BRA_kgbrazil_key
-	text = {
-		trigger = {
-			original_tag = BRA
-			has_dlc = "La Resistance" 
-			has_intelligence_agency = no
-			NOT = { has_completed_focus = BRA_cangaco_coup }
-		}
-		localization_key = BRA_create_kgbrazil_with_agents
-	}
-
-	text = {
-		trigger = {
-			original_tag = BRA
-			has_government = communism
-			has_completed_focus = BRA_cangaco_coup
-		}
-		localization_key = BRA_kgbrazil_cangaco
-	}
-
-	text = {
-		trigger = {
-			original_tag = BRA
-			has_dlc = "La Resistance" 
-			has_intelligence_agency = yes
-			NOT = { has_completed_focus = BRA_cangaco_coup }
-		}
-		localization_key = BRA_kgbrazil_just_add_operatives
-	}
 
 	text = {
 		#trigger = {

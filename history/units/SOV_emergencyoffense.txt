@@ -1,0 +1,132 @@
+﻿
+#### OOB ####
+units = {
+	
+	division = {
+		name = "Proletariat division"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division 109"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division 110"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division 111"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division 112"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	division = {
+		name = "Proletariat division 113"
+		location = 9272
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.0
+		
+	}
+	
+}

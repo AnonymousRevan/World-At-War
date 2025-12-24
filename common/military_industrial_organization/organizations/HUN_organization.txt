@@ -7,124 +7,270 @@
  #  #  # #  # # # ## 
 
  #################### 
+HUN_mavag_armor = {
+	include = medium_assault_tank_designer
+	name = "MÁVAG"
+	icon = GFX_idea_HUN_mavag_assault_gun
+	
+	allowed = {
+		OR = {
+			original_tag = HUN
+			original_tag = BUL
+		}
+    }
+	equipment_type = { armor }
+	research_categories = { armor }
 
- HUN_hti_turan_organization = {
- 	include = generic_medium_tank_organization
- 	icon = GFX_idea_mw_aircraft #GFX_idea_HUN_hti_turan
- 	
- 	allowed = {	
- 		original_tag = HUN
- 		has_dlc = "Arms Against Tyranny"
- 	}
- 	
- 	available = {
- 		IF = {
- 			limit = {
- 				has_dlc = "Gotterdammerung"
- 			}
- 			FROM = {
- 				has_completed_focus = wuw_HUN_the_turan
- 			}
- 		}
- 		ELSE = {
- 			FROM = {
- 				has_completed_focus = HUN_develop_tanks
- 			}
- 		}
- 	}
- }
+	initial_trait = {
+		name = medium_assault_tank_designer
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_assault_guns
+		}		
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+		
+		equipment_bonus = {
+			build_cost_ic = 0.05
+		}
+	}
+	trait = {
+		token = conversion_of_captures
+		name = "Prepare Conversion of Captured Vehicles"
+		icon = GFX_generic_mio_department_icon_tank_general_conversion
+		position = { x=1 y=1 }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_assault_guns
+		}		
+		production_bonus = {
+			production_efficiency_gain_factor = 0.20
+			production_resource_need_factor = -0.1
+			production_resource_penalty_factor = -0.1
+		}
+	}
+	trait = {
+		token = spiggies
+		name = "Advance the SPG Projects"
+		icon = GFX_generic_mio_department_icon_tank_general_spg
 
- HUN_mavag_assault_guns_organization = {
- 	include = generic_assault_guns_organization
- 	icon = GFX_idea_HUN_mavag_assault_gun
- 	
- 	allowed = {	
- 		original_tag = HUN
- 		has_dlc = "Arms Against Tyranny"
- 	}
- 	
- 	available = {
- 		IF = {
- 			limit = {
- 				has_dlc = "Gotterdammerung"
- 			}
- 			FROM = {
- 				has_completed_focus = wuw_HUN_establish_the_mavag_army_division
- 			}
- 		}
- 		ELSE = {
- 			FROM = {
- 				has_completed_focus = HUN_assault_gun_focus
- 			}
- 		}
- 	}
- }
+		position = { x=-1 y=1 }
+		relative_position_id = conversion_of_captures
 
- HUN_fiat_tankettes_organization = {
- 	include = generic_mobile_tank_organization
- 	icon = GFX_idea_fiat
- 	
- 	allowed = {	
- 		original_tag = HUN 
- 		has_dlc = "Arms Against Tyranny"
- 	}
+		all_parents = { conversion_of_captures }
 
- 	visible = {
- 		IF = {
- 			limit = {
- 				FROM = {
- 					original_tag = HUN
- 				}
- 			}
- 			FROM = {
- 				has_completed_focus = wuw_HUN_license_fiat_tankettes
- 			}
- 		}
- 	}
- 	
- 	available = {
- 		# When in a Foreign MIO, countries need to be at peace with original country
- 		IF = {
- 			limit = {
- 				FROM = { NOT = { original_tag = ITA } }
- 			}
- 			FROM = { NOT = { has_war_with = ITA } }
- 		}
- 	}
- }
+		mutually_exclusive = { tiddies }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_assault_guns
+		}
 
- HUN_henschel_organization = {
- 	include = generic_heavy_tank_organization
- 	icon = GFX_idea_henschel
- 	
- 	allowed = {	
- 		original_tag = HUN 
- 		has_dlc = "Arms Against Tyranny"
- 	}
+		equipment_bonus = {
+			breakthrough = 0.125
+			soft_attack = 0.075
+			reliability = -0.075
+		}
+	}
 
- 	visible = {
- 		IF = {
- 			limit = {
- 				FROM = {
- 					original_tag = HUN
- 				}
- 			}
- 			FROM = {
- 				has_completed_focus = wuw_HUN_seek_german_contracts
- 			}
- 		}
- 	}
- 	
- 	available = {
- 		# When in a Foreign MIO, countries need to be at peace with original country
- 		IF = {
- 			limit = {
- 				FROM = { NOT = { original_tag = GER } }
- 			}
- 			FROM = { NOT = { has_war_with = GER } }
- 		}
- 	}
- }
+	trait = {
+		token = tiddies
+		name = "Refit to Tank Destroyer Role"
+		icon = GFX_generic_mio_department_icon_tank_general_at
+
+		position = { x=1 y=1 }
+		relative_position_id = conversion_of_captures
+
+		all_parents = { conversion_of_captures streamlined_comp }
+
+		mutually_exclusive = { spiggies }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_assault_guns
+		}
+		equipment_bonus = {
+			defense = 0.1
+			hard_attack = 0.10
+			ap_attack = 0.25
+			reliability = -0.05
+		}
+	}
+	trait = {
+		token = generic_mio_improved_ventilation
+		name = "Oversized Weaponry"
+		icon = GFX_generic_mio_trait_icon_hg_attack
+
+		position = { x=1 y=1 }
+		relative_position_id = spiggies
+
+		any_parent = { spiggies tiddies }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_assault_guns
+		}		
+		equipment_bonus = {
+			hard_attack = 0.03
+			soft_attack = 0.03
+		}
+	}
+
+	trait = {
+		token = generic_mio_improved_tracks_and_suspension
+		name = "Minimize Requirements for Heavy Tooling"
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_improved_ventilation
+
+		all_parents = { generic_mio_improved_ventilation }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_assault_guns
+		}		
+		equipment_bonus = {		
+			hardness = -0.03
+			build_cost_ic = -0.05
+		}
+	}
+	trait = {
+		token = heavy_components
+		name = "Blackmail Government Officials for Labor"	
+		icon = GFX_generic_mio_department_icon_facilities
+
+		position = { x=4 y=0 }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_assault_guns
+		}		
+		production_bonus = {
+			production_capacity_factor = 0.065
+		}
+	}
+	trait = {
+		token = streamlined_comp
+		name = "Steal and Reverse-Engineer German Components"
+		icon = GFX_generic_mio_department_icon_tank_general_technology
+
+		position = { x=3 y=1 }
+		mutually_exclusive = { final_ass }
+		any_parent = { heavy_components }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_assault_guns
+		}		
+		equipment_bonus = {
+			soft_attack = 0.03
+			hard_attack = 0.03
+			reliability = -0.05
+			build_cost_ic = 0.05
+		}
+		organization_modifier = {
+              military_industrial_organization_funds_gain  = -0.05
+		}
+	}
+	trait = {
+		token = final_ass
+		name = "Purchase Components from Abroad"
+		icon = GFX_generic_mio_department_icon_tank_general_line_efficiency
+
+		position = { x=5 y=1 }
+		mutually_exclusive = { streamlined_comp }
+		any_parent = { heavy_components  }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_assault_guns
+		}		
+		equipment_bonus = {
+			reliability = -0.025
+			build_cost_ic = -0.075
+		}
+		organization_modifier = {
+              military_industrial_organization_funds_gain  = 0.10
+		}
+	}
+	trait = {
+		token = hull_production_experts
+		name = "Innovative Crew Layouts"
+		icon = GFX_generic_mio_trait_icon_defense
+
+		position = { x=1 y=1 }
+		relative_position_id = final_ass
+		any_parent = { final_ass streamlined_comp }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_assault_guns
+		}		
+		equipment_bonus = {
+			reliability = -0.05
+			build_cost_ic = -0.05
+		}
+	}
+	trait = {
+		token = overhardened
+		name = "Ultra-Compact Designs"
+		icon = GFX_generic_mio_trait_icon_hardness
+
+		position = { x=1 y=1 }
+		relative_position_id = hull_production_experts
+		mutually_exclusive = { cemented }
+		any_parent = { hull_production_experts }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_assault_guns
+		}		
+		equipment_bonus = {
+			hardness = 0.075
+			armor_value = 0.35
+			reliability = -0.05
+		}
+	}
+	trait = {
+		token = cemented
+		name = "Maximize Firepower"
+		icon = GFX_generic_mio_department_icon_tank_general_weapons
+
+		position = { x=-1 y=1 }
+		relative_position_id = hull_production_experts
+		mutually_exclusive = { overhardened }
+		any_parent = { hull_production_experts  }
+		limit_to_equipment_type = { 
+			mio_cat_eq_all_assault_guns
+		}		
+		equipment_bonus = {
+			reliability = -0.05
+			soft_attack = 0.08
+			hard_attack =  0.10
+			build_cost_ic = 0.10
+		}
+	}
+}
+ HUN_MW_armor = {
+	include = medium_tank_designer
+	name = "Weiss Manfréd Fémművek"
+	icon = GFX_idea_HUN_turul_association_idea
+	
+	allowed = {	
+			tag = HUN
+    }
+
+}
+HUN_maort = {
+    name = "Maort"
+	include = light_tank_designer
+	icon = GFX_idea_HUN_maort
+	
+	allowed = { 
+		original_tag = HUN
+	}
+	available = {
+		
+	}
+	
+}
+HUN_skoda = {
+    name = "Skoda"
+	include = CZE_skoda
+	icon = GFX_idea_HUN_skoda_works
+	
+	allowed = { 
+		original_tag = HUN
+	}
+	available = {
+		GER = {
+			has_completed_focus = GER_end_of_czechoslovakia
+		}
+	}
+	
+}
 
 #####################
 
@@ -136,61 +282,16 @@
  
 #####################
 
-HUN_ganz_danubius_organization = { 
-	include = generic_escort_ship_organization
+HUN_ganz_danubius_organization = { #TODO_Manu: Could do with an extra trait
+	include = generic_task_force_ship_organization
 	icon = GFX_idea_HUN_ganz_danubius
 	allowed = { 
-		original_tag = HUN
-		has_dlc = "Arms Against Tyranny"
+		tag = HUN
 	}
 	available = {
-		IF = {
-			limit = { 
-				AND = {
-					has_dlc = "Death or Dishonor" 
-					NOT = {
-						has_dlc = "Gotterdammerung"
-					}
-				}
-			}
-			owner = { has_completed_focus = HUN_naval_warfare }
-		}
-
-		IF = {
-			limit = { 
-				has_dlc = "Gotterdammerung"
-			}
-			owner = { has_completed_focus = wuw_HUN_enlarge_the_ganz_danubius_division }
-		}
-	}
-}
-
-HUN_obudai_hajogyar_organization = { 
-	include = generic_refurbishment_repair_organization
-	icon = GFX_idea_HUN_obudai_hajogyar
-	allowed = { 
-		original_tag = HUN
-		has_dlc = "Arms Against Tyranny"
-		has_dlc = "Gotterdammerung"
-	}
-	available = {
-		IF = {
-			limit = { 
-				AND = {
-					has_dlc = "Death or Dishonor" 
-					NOT = {
-						has_dlc = "Gotterdammerung"
-					}
-				}
-			}
-			owner = { has_completed_focus = HUN_naval_warfare }
-		}
-
-		IF = {
-			limit = { 
-				has_dlc = "Gotterdammerung"
-			}
-			owner = { has_completed_focus = wuw_HUN_reinstate_the_navy }
+		if = {
+			limit = { has_dlc = "Death or Dishonor" }
+			
 		}
 	}
 }
@@ -209,69 +310,7 @@ HUN_mw_aircraft_organization = {
 	include = generic_light_aircraft_organization
 	icon = GFX_idea_mw_aircraft
 	allowed = { 
-		original_tag = HUN
-		has_dlc = "Arms Against Tyranny"
-	}
-
-	available = {
-		IF = {
-			limit = {
-				has_dlc = "Gotterdammerung"
-			}
-			FROM = {
-				has_completed_focus = wuw_HUN_the_matyasfold_fighter_factory
-			}
-		}
-		ELSE = {
-			FROM = {
-				has_completed_focus = HUN_establish_the_air_force
-			}
-		}
-	}
-}
-
-HUN_mavag_aircraft_organization = {
-	include = generic_range_focused_aircraft_organization
-	icon = GFX_idea_HUN_mavag_aircraft
-	allowed = { 
-		original_tag = HUN
-		has_dlc = "Arms Against Tyranny"
-		has_dlc = "Gotterdammerung"
-	}
-
-	available = {
-		FROM = {
-			has_completed_focus = wuw_HUN_establish_the_mavag_aircraft_factory
-		}
-	}
-}
-
-HUN_mrt_aircraft_organization = {
-	include = generic_multi_role_aircraft_organization
-	icon = GFX_idea_HUN_mrt_aircraft
-	allowed = { 
-		original_tag = HUN
-		has_dlc = "Arms Against Tyranny"
-	}
-
-	initial_trait = {
-		name = HUN_mio_trait_aircraft_production_plant
-		
-		limit_to_equipment_type = { 
-			mio_cat_eq_all_small_plane
-			mio_cat_eq_all_medium_plane
-			mio_cat_eq_all_large_plane
-		}
-		
-		equipment_bonus = {
-			
-		}
-
-		production_bonus = {
-			production_cost_factor = -0.05
-			production_resource_need_factor = -0.1
-			production_capacity_factor = 0.05
-		}
+		tag = HUN
 	}
 }
 
@@ -291,194 +330,56 @@ HUN_femaru_fegyver_es_gepgyar_organization = {
 	icon = GFX_idea_HUN_femaru_fegyver_es_gepgyar
 	allowed = { 
 		original_tag = HUN
-		has_dlc = "Arms Against Tyranny"
 	}
 }
-
-HUN_danuvia_inf_organization = {
-	include = generic_support_equipment_organization
-	icon = GFX_idea_HUN_dunai_gepgyar
-	allowed = { 
-		original_tag = HUN
-		has_dlc = "Arms Against Tyranny"
-	}
-
-	available = {
-		IF = {
-			limit = {
-				has_dlc = "Gotterdammerung"
-			}
-			FROM = {
-				has_completed_focus = wuw_HUN_danuvia_submachine_guns
-			}
-		}
-		ELSE = {
-			FROM = {
-				has_completed_focus = HUN_danuvia_submachine_guns
-			}
-		}
-	}
-
-	initial_trait = {
-		name = HUN_mio_trait_army_ammunition_and_wepaons_works
-		
-		limit_to_equipment_type = { 
-			infantry_equipment 
-		}
-		
-		equipment_bonus = {
-			reliability = 0.05
-			breakthrough = 0.03
-		}
-
-		production_bonus = {
-			production_cost_factor = -0.05
-		}
-	}
-
-	add_trait = { 
-		token = HUN_mio_trait_danuvia_two_part_lever_delayed_blowback_bolt
-		name = HUN_mio_trait_danuvia_two_part_lever_delayed_blowback_bolt
-		icon = GFX_generic_mio_department_icon_infantry_quality
-		special_trait_background = yes
-
-		relative_position_id = generic_mio_trait_anti_tank_rifle
-
-		all_parents = { generic_mio_trait_anti_tank_rifle }
-
-		position = { x = -1 y = 1 }
-
-		visible = {
-			FROM = { original_tag = HUN }
-		}
-		
-		available = {
-		}
-
-		limit_to_equipment_type = { infantry_equipment }
-		
-		equipment_bonus = {
-			reliability = 0.05
-			soft_attack = 0.05
-			breakthrough = 0.05
-		}
-
-	}
-
-	add_trait = { 
-		token = HUN_mio_trait_danuvia_improved_stock
-		name = HUN_mio_trait_danuvia_improved_stock
-		icon = GFX_generic_mio_department_icon_infantry_quality
-		special_trait_background = yes
-
-		relative_position_id = HUN_mio_trait_danuvia_two_part_lever_delayed_blowback_bolt
-
-		all_parents = { HUN_mio_trait_danuvia_two_part_lever_delayed_blowback_bolt }
-
-		position = { x = 0 y = 1 }
-
-		visible = {
-			FROM = { original_tag = HUN }
-		}
-		
-		available = {
-		}
-
-		limit_to_equipment_type = { infantry_equipment }
-		
-		equipment_bonus = {
-			reliability = 0.05
-			soft_attack = 0.05
-		}
-
-	}
-
-	add_trait = { 
-		token = HUN_mio_trait_heavy_mauser_rounds
-		name = HUN_mio_trait_heavy_mauser_rounds
-		icon = GFX_generic_mio_department_icon_infantry_quality
-		special_trait_background = yes
-
-		relative_position_id = HUN_mio_trait_danuvia_improved_stock
-
-		all_parents = { HUN_mio_trait_danuvia_improved_stock }
-
-		position = { x = 0 y = 1 }
-
-		visible = {
-			FROM = { original_tag = HUN }
-		}
-		
-		available = {
-		}
-
-		limit_to_equipment_type = { infantry_equipment }
-		
-		equipment_bonus = {
-			breakthrough = 0.1
-			hard_attack = 0.1
-		}
-
-	}
-
-	add_trait = { 
-		token = HUN_mio_trait_danuvia_motorcycles
-		name = HUN_mio_trait_danuvia_motorcycles
-		icon = GFX_generic_mio_department_icon_support_production
-		special_trait_background = yes
-
-		relative_position_id = generic_mio_trait_pontoons
-
-		all_parents = { generic_mio_trait_pontoons }
-
-		position = { x = 0 y = 1 }
-
-		visible = {
-			FROM = { original_tag = HUN }
-		}
-		
-		available = {
-		}
-
-		limit_to_equipment_type = { support_equipment }
-		
-		equipment_bonus = {
-			build_cost_ic = -0.15
-		}
-
-	}
-
-}
-
-HUN_digep_artillery = {
+HUN_dimavag_idea = {
 	include = generic_artillery_organization
-	icon = GFX_idea_HUN_digep_artillery
+	icon = 	GFX_idea_HUN_dimavag
+	name = "Dimavag"
 	
 	allowed = {	
 		original_tag = HUN
-		has_dlc = "Arms Against Tyranny"
-		has_dlc = "Gotterdammerung"
 	}
-
-	available = {
-	}
-
-	visible = {
-		FROM = { original_tag = HUN }
-	}
-
 }
-
-HUN_mwg_raba_organization = {
-	include = generic_motorized_mechanized_organization 
-	icon = GFX_idea_HUN_mwg_raba
-	allowed = {	 
+HUN_dimavag_heavy_artillery = {
+	include = generic_heavy_artillery_organization
+	icon = GFX_idea_HUN_dimavag
+	name = "Dimavag Heavy Industry"
+	allowed = {	
 		original_tag = HUN
-		has_dlc = "Arms Against Tyranny"
-		has_dlc = "Gotterdammerung"
 	}
 }
-
-
-
-
+HUN_danuvia_anti_tank_air = {
+	include = generic_anti_tank_air_organization
+	icon = GFX_danuvia	
+	name = "Danuvia Support Weaponry"
+	allowed = {	
+		original_tag = HUN
+	}
+}
+HUN_raba_works = {
+	include = generic_mechanized_designer
+	icon = 	GFX_idea_HUN_mwg_raba
+	name = "Rába Magyar Vagon és Gépgyár"
+	available = {
+	}	
+	allowed = {	
+		original_tag = HUN
+	}
+}
+HUN_csepel = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_HUN_csepel
+	name = "Csepel Autógyár"
+	allowed = {	
+		original_tag = HUN
+	}
+}
+HUN_MW = {
+	include = generic_armored_car_organization
+	icon = GFX_idea_HUN_turul_association_idea
+    name = "Weiss Manfréd Fémművek"	
+	allowed = {	
+		original_tag = HUN
+	}
+}

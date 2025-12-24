@@ -1,0 +1,98 @@
+axis2 = {
+    track = operations
+    name = SUBDOCTRINE_axis2
+    description = SUBDOCTRINE_axis2_DESC
+    icon = GFX_doctrine_defensive_postures_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+		OR = {
+			original_tag = ITA
+			original_tag = HUN
+			original_tag = ROM
+			original_tag = BUL
+			original_tag = SPR
+			original_tag = EFR
+		}
+    }
+	
+	visible = {
+		OR = {
+			original_tag = ITA
+			original_tag = HUN
+			original_tag = ROM
+			original_tag = BUL
+			original_tag = SPR
+			original_tag = EFR
+		}
+	}
+	
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 95
+            OR = {
+            original_tag = ENG
+            original_tag = AST
+            original_tag = NZL
+            original_tag = CAN
+            original_tag = SAF
+            original_tag = ITA
+            }
+        }
+    }
+
+    #OTHER BASE REWARDS
+	land_night_attack = 0.05
+	max_planning = 0.05
+    category_all_infantry = {
+        defense = 0.2
+		max_strength = 0.35
+    }
+
+    rewards = {
+        improvised_fighting_position = {
+            category_all_infantry = {
+				initiative = 0.02
+				default_morale = 0.05
+			}
+        }
+        elastic_operations = {
+            category_light_infantry = {
+                max_organisation = 5
+                defense = 0.1
+				max_strength = 0.15
+			}
+			infantry = {
+				max_organisation = 5
+				defense = 0.1
+				max_strength = 0.05
+            }
+        }
+        developed_trench_networking = {
+            infantry = {
+				breakthrough = 0.1
+				soft_attack = 0.05
+            }
+			category_line_artillery = {
+				defense = 0.15
+				default_morale = 0.15
+			}
+        }
+        field_emplacements = {
+            category_special_forces = {
+                soft_attack = 0.05
+				hard_attack = 0.05
+				default_morale = 0.15
+            }
+        }
+        field_construction_training = {
+            terrain_penalty_reduction = 0.05
+			
+			}
+        }
+
+    }
+}

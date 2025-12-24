@@ -6,9 +6,9 @@ state={
 
 	history={
 		owner = ENG
-		add_core_of = SUD
+		add_core_of = NGA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 1
 			air_base = 2
 		}
@@ -21,7 +21,7 @@ state={
 	}
 
 	provinces={
-		2046 4138 4961 4963 7925 7989 8105 10745 12796 12806 12826 12836 12881 
+		2046 4138 4961 4963 7925 7989 8105 10745 10982 12796 12806 12826 12836 12881 12902
 	}
 	
 	buildings_max_level_factor=1.000

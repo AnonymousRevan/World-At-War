@@ -5,16 +5,18 @@ state={
 	manpower = 4233900
 	
 	state_category = large_town
-
+	
 	resources = {
-		chromium = 3
+		chromium = 25
+		oil = 15
 	}
+
 
 	history={
 		owner = BRA
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 2
+			infrastructure = 4
+			industrial_complex = 4
 			air_base = 1
 			10946 = {
 				naval_base = 1

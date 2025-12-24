@@ -1,0 +1,74 @@
+SFP_master = {
+    track = infantry
+    name = SUBDOCTRINE_SFP_master
+    description = SUBDOCTRINE_SFP_master_DESC
+    icon = GFX_doctrine_defensive_postures_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        has_doctrine = superior_firepower
+    }
+
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 95
+            OR = {
+            original_tag = ENG
+            original_tag = AST
+            original_tag = NZL
+            original_tag = CAN
+            original_tag = SAF
+            original_tag = ITA
+            }
+        }
+    }
+
+    #OTHER BASE REWARDS
+	max_planning = -0.05
+	supply_consumption_factor = 0.05
+    category_all_infantry = {
+        soft_attack = 0.1
+		hard_attack = 0.1
+    }
+
+    rewards = {
+        better_prepared = {
+            category_all_infantry = {
+			defense = 0.05
+			}
+        }
+        elastic_operations = {
+            category_all_infantry = {
+                max_organisation = 7
+                breakthrough = 0.05
+            }
+        }
+        into_the_fray = {
+            category_all_infantry = {
+                soft_attack = 0.1
+				hard_attack = 0.1
+            }
+        }
+        sustained_fire = {
+            category_support_artillery = {
+                soft_attack = 0.15
+				hard_attack = 0.1
+				max_organisation = 10
+            }
+			category_all_infantry = {
+				max_organisation = 5
+			}
+        }
+        lead_the_way = {
+            land_reinforce_rate = 0.03
+			category_all_infantry = {
+				initiative = 0.05
+				breakthrough = 0.05
+			}
+        }
+
+    }
+}

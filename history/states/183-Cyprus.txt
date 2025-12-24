@@ -5,13 +5,14 @@ state= {
 	
 	state_category = rural
 	resources={
-		chromium=3 # was: 4
+		chromium=70 # was: 4
 	}
 
 	history=
 	{
 		owner = ENG
-		add_core_of = CYP
+		add_core_of = NGA
+		set_state_flag = ENG_atlantikwall
 		victory_points = {
 			11984 5
 		}
@@ -19,7 +20,7 @@ state= {
 			7193 3
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 5
 			air_base = 1
 			7193 = {
 				naval_base = 2

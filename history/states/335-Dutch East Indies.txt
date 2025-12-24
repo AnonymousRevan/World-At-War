@@ -7,13 +7,14 @@ state={
 	state_category = city
 	
 	resources={
-		rubber=140 # was: 242
-		oil=10 # was: 16
+		rubber = 600
+		oil = 10 
 	}
 
 	history={
 		owner = INS
 		add_core_of = INS
+		set_state_flag = USA_controls_air
 		victory_points = {
 			7381 5
 		}
@@ -22,8 +23,9 @@ state={
 		}
 
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 1
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 3
 			dockyard = 1
 			air_base = 3
 			7381 = {

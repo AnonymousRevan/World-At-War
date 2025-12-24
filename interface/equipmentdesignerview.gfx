@@ -97,7 +97,10 @@ spriteTypes = {
 		name = "GFX_SD_tv_light"
 		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_destroyer.dds"
 	}
-
+	spriteType = {
+		name = "GFX_SD_tv_hilfskreuzer"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_hilfskreuzer.dds"
+	}
 #######################
 # Extras
 #######################

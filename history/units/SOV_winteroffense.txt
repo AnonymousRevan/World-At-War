@@ -1,0 +1,87 @@
+﻿#### OOB ####
+units = {
+	division= {
+		name = "166aya 'Moskva' Strelk. Div."
+		location = 6380
+		division_template = "NKVD Division"
+		start_experience_factor = 0.2
+		
+	}
+	division= {
+		name = "176aya 'Moskva' Strelk. Div."
+		location = 6380
+		division_template = "NKVD Division"
+		start_experience_factor = 0.2
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 6380
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.1
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 6380
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.1
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 6380
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.1
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 6380
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.1
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 6380
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.1
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 6380
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.1
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 6380
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.1
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 6380
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.1
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 6380
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.1
+		
+	}
+	division = {
+		name = "Proletariat division"
+		location = 6380
+		division_template = "Shtrafbat Division"
+		start_experience_factor = 0.1
+		
+	}
+}

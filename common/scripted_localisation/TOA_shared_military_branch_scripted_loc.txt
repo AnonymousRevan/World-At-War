@@ -32,18 +32,6 @@ defined_text = {
 		localization_key = SMB_army_CHL
 	}
 	text = {
-		trigger = {
-			tag = PAR
-		}
-		localization_key = SMB_army_PAR
-	}
-	text = {
-		trigger = {
-			tag = URG
-		}
-		localization_key = SMB_army_URG
-	}
-	text = {
 		localization_key = SMB_army_default
 	}
 }
@@ -534,18 +522,6 @@ defined_text = {
 		localization_key = SMB_air_force_CHL
 	}
 	text = {
-		trigger = {
-			tag = PAR
-		}
-		localization_key = SMB_air_force_PAR
-	}
-	text = {
-		trigger = {
-			tag = URG
-		}
-		localization_key = SMB_air_force_URG
-	}
-	text = {
 		localization_key = SMB_air_force_default
 	}
 }
@@ -861,18 +837,6 @@ defined_text = {
 		localization_key = SMB_navy_CHL
 	}
 	text = {
-		trigger = {
-			tag = PAR
-		}
-		localization_key = SMB_navy_PAR
-	}
-	text = {
-		trigger = {
-			tag = URG
-		}
-		localization_key = SMB_navy_URG
-	}
-	text = {
 		localization_key = SMB_navy_default
 	}
 }
@@ -1089,23 +1053,5 @@ defined_text = {
 	}
 	text = {
 		localization_key = improving_our_army_spanish
-	}
-}
-
-defined_text = {
-	name = toa_purchase_dreadnaughts_descision_cat
-	text = {
-		trigger = {
-			OR = {
-				tag = BRA
-				tag = ARG
-				tag = URG
-				tag = CHL
-			}
-		}
-		localization_key = south_american_naval_arms_race_category_default
-	}
-	text = {
-		localization_key = south_american_naval_arms_race_category_generic
 	}
 }

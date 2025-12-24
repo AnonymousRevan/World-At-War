@@ -12,8 +12,8 @@ state = {
 			925 1 
 		}
 		buildings = {
-			infrastructure = 3 #was: 6
-			industrial_complex = 1
+			infrastructure = 6
+			industrial_complex = 3
 			925 = {
 				naval_base = 4
 			}
@@ -22,7 +22,6 @@ state = {
 			}
 		}
 		add_core_of = ITA
-		add_core_of = PAP
 	}
 
 	provinces = {

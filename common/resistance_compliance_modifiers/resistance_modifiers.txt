@@ -24,12 +24,6 @@
 #	#margin to disable the modifier back. it will be disabled if current value < threshold - margin.
 #	margin = 2
 #	
-#   #if modifier is marked as dynamic it will not be added to states on default, similarly to the static once 
-#   #it will only be active once the threshold has been reached, and will be able to be added/removed from
-#	#the state by the add_state_resistance_compliance_modifier and the remove_state_resistance_compliance_modifier
-# 	#only works for the modifier types state_resistance_modifier and state_compliance_modifier
-#   is_dynamic = yes
-#
 #	#if visible is false, the modifier will not show up anywhere
 #	visible = {
 #		
@@ -105,25 +99,14 @@ resistance_90 = {
 	state_modifier = {
 		local_factories = -0.03
 	}
-	
+
 	on_enable = {
-		if = {
-			limit = {
-				RAJ = { 
-					has_completed_focus = RAJ_forward_bloc 
-					NOT = { 
-						has_dynamic_modifier = { modifier = idea_RAJ_famine_country }  
-					}
-				}
-				NOT = { var:occupied_country = { original_tag = DIP } }
-			}
-			#dont do anything
-		}
-		else = {
-			custom_effect_tooltip = resistance_90_effect_tooltip
-			hidden_effect = {
-				# avoid effects that can effect state controllers here
-				country_event = { id = occupied_countries.2 hours = 1 }
+		custom_effect_tooltip = resistance_90_effect_tooltip
+		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+			# avoid effects that can effect state controllers here
+			country_event = { id = occupied_countries.2 hours = 1 }		
 			}
 		}
 	}

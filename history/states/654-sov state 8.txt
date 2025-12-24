@@ -13,9 +13,9 @@ state={
 		}
 		add_core_of = SOV
 		add_core_of = ALT
-		victory_points = {
-			4800 1 #Oyrot-Tura/Gorno-Altaysk
-		}
+#		victory_points = {
+#			4800 1 #Oyrot-Tura/Gorno-Altaysk
+#		}
 	}
 
 	provinces={

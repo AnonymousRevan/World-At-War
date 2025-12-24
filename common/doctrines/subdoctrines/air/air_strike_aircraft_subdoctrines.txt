@@ -96,7 +96,6 @@ air_subdoctrine_dive_bombers = {
         }
         close_air_support_aces = {
         	air_ace_generation_chance_factor = 0.05
-        	ace_effectiveness_factor = 0.05
         }
         fighter_bomber_coordination = {
         	air_escort_efficiency = 0.1
@@ -182,9 +181,9 @@ air_subdoctrine_carrier_strikes = {
             air_nav_efficiency = 0.1
         }
         specialized_torpedoes = {
-            naval_strike_targetting_factor = 0.1
+            naval_strike_targetting_factor = 0.05
             category_carrier_nav_bomber = {
-                naval_strike_attack = 0.08
+                naval_strike_attack = 0.05
             }
         }
         strike_wave_tactics = { 

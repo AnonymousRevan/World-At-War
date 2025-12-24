@@ -6,8 +6,8 @@ state={
 	
 	state_category = city
 	resources={
-		steel=42 #was 100 # was: 236
-		coal = 5 # initial distribution / 140 total
+		steel=210 #was 100 # was: 236
+		coal = 10 # initial distribution / 140 total
 	}
 
 	history={
@@ -21,32 +21,34 @@ state={
 		victory_points = { 9503 5 }
 		victory_points = { 9559 10 }
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 3
+			infrastructure = 7
+			industrial_complex = 5
 			549 = {
-				bunker = 10
+				bunker = 12
 
 			}
 			678 = {
-				bunker = 10
+				bunker = 12
 
 			}
 			3629 = {
-				bunker = 10
+				bunker = 12
 
 			}
 			6529 = {
-				bunker = 10
+				bunker = 12
+
 			}
 			9503 = {
-				bunker = 10
+				bunker = 12
+
 			}
 			9559 = {
-				bunker = 10
+				bunker = 12
 
 			}
 			11502 = {
-				bunker = 10
+				bunker = 12
 
 			}
 			anti_air_building = 5

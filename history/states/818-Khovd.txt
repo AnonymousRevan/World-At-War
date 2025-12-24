@@ -8,14 +8,15 @@ state={
 	history={
 		owner = MON
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 4
 		}
 		victory_points = {
 			7843 1 #Ulaangom
 		}
 		add_core_of = MON
 	}
-	manpower=149000
+	manpower=849000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

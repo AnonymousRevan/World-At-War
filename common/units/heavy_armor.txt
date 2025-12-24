@@ -1,14 +1,11 @@
 sub_units = {
 
 	heavy_armor = {
-		abbreviation = "HTK"
 		sprite = heavy_armor
 		map_icon_category = armored
-		priority = 2503
-		ai_priority = 2503
+		priority = 2505
 		active = yes
-		training_time = 180
-
+		
 		type = {
 			armor
 		}
@@ -20,63 +17,174 @@ sub_units = {
 			category_front_line
 			category_all_armor
 			category_army
+			category_heavy_armor
 		}
 
+		combat_width = 2
 
+		### Extra stat changes
+		defense = -0.20
+		
+		need = {
+			heavy_tank_chassis = 50
+		}
+
+		#Size Definitions
+		manpower = 800
+		max_strength = 2
+		max_organisation = 2
+		default_morale = 0.12
+		training_time = 200
+		suppression = 3.0
+		weight = 2.0
+		supply_consumption = 0.5
+				
+		plains = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		desert = {
+			attack = 0.0
+			defence = 0.0
+			movement = 0.0
+		}	
 		forest = {
-		    attack = -0.40
+			attack = -0.40
+			defence = -0.40
 			movement = -0.40
 		}
-		hills = {
-		    attack = -0.20
-		}
-		mountain = 	{
-		    attack = -0.3
-		}
 		jungle = {
-		    attack = -0.6
-			movement = -0.4
+			attack = -0.55
+			defence = -0.55
+			movement = -0.55
 		}
-		marsh = {
-		    attack = -0.4 
-			movement = -0.2
+		hills = {
+			attack = -0.30
+			defence = -0.30
+			movement = -0.30
+		}
+		mountain = {
+			attack = -0.90
+			defence = -0.90
+			movement = -0.75
 		}
 		urban = {
-			attack = -0.5
-			defence = -0.2
-		}
-		river = { 
-			attack = -0.4 
-			movement = -0.4
-		}
-		amphibious = { 
-			attack = -0.9
+			attack = -0.35
+			defence = -0.35
+			movement = 0.04
 		}
 		fort = {
-			attack = 0.1
+			attack = 0.03
+		}
+		marsh = {
+			attack = -0.65
+			defence = -0.65
+			movement = -0.65
+		}
+		river = {
+			attack = -0.50
+			defence = -0.50
+			movement = -0.50
+		}
+		amphibious = {
+			attack = -5.0
+			defence = -0.95
+			movement = -0.95
+		}
+	}
+	
+	elite_heavy_armor = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		special_forces = yes
+		priority = 2505
+		active = no
+		
+		type = {
+			armor
+		}
+		
+		group = armor
+		
+		categories = {
+			category_tanks
+			category_front_line
+			category_all_armor
+			category_heavy_armor
+			category_army
+			category_special_forces
 		}
 
 		combat_width = 2
 
 		need = {
-			heavy_tank_chassis = 40
+			heavy_tank_chassis = 50
+			special_equipment = 100
 		}
 
-		manpower = 500
-		max_organisation = 10
-		default_morale = 0.3
+		#Size Definitions
+		manpower = 800
 		max_strength = 2
-		weight = 1.5
-		
-		supply_consumption = 0.32
-
-		breakthrough = 0.15
-
-		#Tanks are awesome
-		# soft_attack = 0.5
-		
-		suppression = 2.5		
+		max_organisation = 2
+		default_morale = 0.14
+		training_time = 250
+		suppression = 3.0
+		weight = 2.0
+		supply_consumption = 0.5
+				
+		plains = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		desert = {
+			attack = 0.0
+			defence = 0.0
+			movement = 0.0
+		}	
+		forest = {
+			attack = -0.40
+			defence = -0.40
+			movement = -0.40
+		}
+		jungle = {
+			attack = -0.55
+			defence = -0.55
+			movement = -0.55
+		}
+		hills = {
+			attack = -0.30
+			defence = -0.30
+			movement = -0.30
+		}
+		mountain = {
+			attack = -0.90
+			defence = -0.90
+			movement = -0.75
+		}
+		urban = {
+			attack = -0.325
+			defence = -0.325
+			movement = 0.04
+		}
+		fort = {
+			attack = 0.03
+		}
+		marsh = {
+			attack = -0.65
+			defence = -0.65
+			movement = -0.65
+		}
+		river = {
+			attack = -0.50
+			defence = -0.50
+			movement = -0.50
+		}
+		amphibious = {
+			attack = -5.0
+			defence = -0.95
+			movement = -0.95
+		}
 	}
-
-	
 }

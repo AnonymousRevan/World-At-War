@@ -4,7 +4,7 @@ ideas = {
 
 		HOL_wilhelmina = {
 
-			picture = HOL_wilhelmina_ns
+			picture = hol_wilhelmina
 			
 			allowed = {
 				original_tag = HOL
@@ -27,7 +27,7 @@ ideas = {
 			
 			removal_cost = -1
 			
-			traits = { popular_figurehead }
+			traits = { wilhelmina }
 		}
 
 		HOL_aloof_neutrality = {
@@ -43,15 +43,73 @@ ideas = {
 			}
 			
 			removal_cost = -1
+		}
+		
+		HOL_neutral = {
+
+			picture = tfv_can_conscription_crisis
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
 						
 			modifier = {
-				#generate_wargoal_tension = 1.00
-				join_faction_tension = 1.00
-				#lend_lease_tension = 0.50
-				send_volunteers_tension = 0.50
-				guarantee_tension = 1.0
-				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
-				ai_get_ally_desire_factor = -100
+	            army_attack_factor = -0.20
+	            army_defence_factor = -0.20
+				surrender_limit = -0.5
+			}
+		}
+		
+		HOL_neutral2 = {
+
+			picture = tfv_can_conscription_crisis
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				army_core_attack_factor = -0.1
+				army_core_defence_factor = -0.1
+				surrender_limit = -0.2
+			}
+		}
+		
+		HOL_aloof_neutralit = {
+
+			picture = hol_aloof_neutrality
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+        	research_bonus = {
+        		special_tech = 0.05
+        	}
+						
+			modifier = {
+			    special_forces_min = 20
+			    production_speed_synthetic_refinery_factor = 0.05
+			    production_speed_synthetic_rubber_refinery_factor = 0.05
+				production_speed_steel_refinery_factor = 0.1
 			}
 		}
 
@@ -72,9 +130,8 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				conscription_factor = -0.5
-				industrial_capacity_factory = -0.25
-				industrial_capacity_dockyard = -0.1
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.10
 			}
 		}
 
@@ -95,9 +152,8 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				conscription_factor = -0.4
-				industrial_capacity_factory = -0.2
-				industrial_capacity_dockyard = -0.06
+				industrial_capacity_factory = -0.16
+				industrial_capacity_dockyard = -0.08
 			}
 		}
 
@@ -118,9 +174,8 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				conscription_factor = -0.3
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.03
+				industrial_capacity_factory = -0.12
+				industrial_capacity_dockyard = -0.06
 			}
 		}
 
@@ -141,8 +196,8 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				conscription_factor = -0.2
-				industrial_capacity_factory = -0.1
+				industrial_capacity_factory = -0.08
+				industrial_capacity_dockyard = -0.04
 			}
 		}
 
@@ -163,8 +218,8 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				conscription_factor = -0.1
-				industrial_capacity_factory = -0.05
+				industrial_capacity_factory = -0.04
+				industrial_capacity_dockyard = -0.02
 			}
 		}
 
@@ -185,7 +240,7 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				production_speed_buildings_factor = -0.50
+				production_speed_buildings_factor = -0.3
 			}
 		}
 
@@ -206,7 +261,7 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				production_speed_buildings_factor = -0.40
+				production_speed_buildings_factor = -0.25
 			}
 		}
 
@@ -227,7 +282,7 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				production_speed_buildings_factor = -0.30
+				production_speed_buildings_factor = -0.2
 			}
 		}
 
@@ -248,7 +303,7 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				production_speed_buildings_factor = -0.20
+				production_speed_buildings_factor = -0.15
 			}
 		}
 
@@ -269,7 +324,7 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				production_speed_buildings_factor = -0.10
+				production_speed_buildings_factor = -0.1
 			}
 		}
 
@@ -288,7 +343,7 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				political_power_cost = 0.5
+				political_power_cost = 0.35
 				stability_factor = -0.10
 			}
 		}
@@ -309,10 +364,10 @@ ideas = {
 						
 			equipment_bonus = {
 				ship_hull_light = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.05 instant = yes
 				}
 				ship_hull_cruiser = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.05 instant = yes
 				}
 			}
 		}
@@ -322,11 +377,6 @@ ideas = {
 			name = HOL_curtail_colonial_autonomy
 
 			picture = generic_pp_unity_bonus
-
-			available = {
-				country_exists = INS
-				INS = { is_subject_of = HOL }
-			}
 			
 			allowed = {
 				always = no
@@ -339,7 +389,7 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				political_power_cost = 0.33
+				political_power_gain = -0.1
 			}
 		}
 
@@ -383,8 +433,8 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				training_time_factor = -0.1
-				non_core_manpower = 0.02
+				conscription = 0.005
+				minimum_training_level = -0.1
 			}
 		}
 
@@ -424,9 +474,8 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				training_time_factor = -0.1
-				army_core_attack_factor = 0.1
-				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
 			}
 		}
 
@@ -455,11 +504,11 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				small_plane_cas_airframe = {
+				cv_small_plane_cas_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				cv_small_plane_cas_airframe = {
+				small_plane_cas_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
@@ -479,15 +528,7 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				medium_plane_scout_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-				large_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-				large_plane_maritime_patrol_plane_airframe = {
+				cv_medium_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
@@ -515,47 +556,47 @@ ideas = {
 			removal_cost = -1
 						
 			equipment_bonus = {
-				small_plane_airframe = {
+				fighter_equipment = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
-				cv_small_plane_airframe = {
+				cv_fighter_equipment = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
-				small_plane_cas_airframe = {
+				jet_fighter_equipment = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
-				cv_small_plane_cas_airframe = {
+				cv_CAS_equipment = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
-				small_plane_naval_bomber_airframe = {
+				CAS_equipment = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
-				cv_small_plane_naval_bomber_airframe = {
+				nav_bomber_equipment = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
-				medium_plane_airframe = {
+				cv_nav_bomber_equipment = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
-				medium_plane_fighter_airframe = {
+				rocket_interceptor_equipment = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
-				medium_plane_scout_plane_airframe = {
+				tac_bomber_equipment = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
-				large_plane_airframe = {
+				jet_tac_bomber_equipment = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
-				large_plane_maritime_patrol_plane_airframe = {
+				heavy_fighter_equipment = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
@@ -565,10 +606,11 @@ ideas = {
 				}
 			}
 		}
+		
 
-		HOL_friesland_agricultural_impetus = {
+		HOL_friesland_agricultural_impetu = {
 
-			picture = generic_goods_red_bonus
+			picture = generic_foreign_capital
 			
 			allowed = {
 				always = no
@@ -581,7 +623,9 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.33
+				war_support_weekly = 0.001
+				global_building_slots_factor = 0.25
 			}
 		}
 
@@ -606,6 +650,9 @@ ideas = {
 				mechanized_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
+				light_tank_chassis = {
+					build_cost_ic = -0.1 instant = yes
+				}
 			}
 		}
 
@@ -625,6 +672,7 @@ ideas = {
 			
 			modifier = {
 				local_resources_factor = 0.1
+				fuel_gain_factor = 0.25
 			}
 		}
 
@@ -644,7 +692,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_speed_bunker_factor = 0.1
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
 			}
 		}
 
@@ -717,7 +766,7 @@ ideas = {
 			}
 		}
 
-		HOL_modernize_the_air_fleet = {
+		HOL_modernize_tank = {
 		
 			picture = generic_air_payment
 
@@ -732,54 +781,12 @@ ideas = {
 			
 			removal_cost = -1
 
-			equipment_bonus = {
-				small_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.2
+			equipment_bonus = { 
+				amphibious_mechanized_equipment = {
+					build_cost_ic = -0.1 instant = yes
 				}
-				cv_small_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.2
-				}
-				small_plane_cas_airframe = {
-					instant = yes
-					build_cost_ic = -0.2
-				}
-				cv_small_plane_cas_airframe = {
-					instant = yes
-					build_cost_ic = -0.2
-				}
-				small_plane_naval_bomber_airframe = {
-					instant = yes
-					build_cost_ic = -0.2
-				}
-				cv_small_plane_naval_bomber_airframe = {
-					instant = yes
-					build_cost_ic = -0.2
-				}
-				medium_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.2
-				}
-				medium_plane_fighter_airframe = {
-					instant = yes
-					build_cost_ic = -0.2
-				}
-				medium_plane_scout_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.2
-				}
-				large_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.2
-				}
-				large_plane_maritime_patrol_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.2
-				}
-				transport_plane_equipment = {
-					instant = yes
-					build_cost_ic = -0.2
+				amphibious_tank_chassis = {
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -799,6 +806,8 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
+				refit_speed = 0.10
+				repair_speed_factor = 0.10
 				industrial_capacity_dockyard = 0.1
 			}
 		}
@@ -860,27 +869,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				fascism_drift = -0.02
-			}
-		}
-
-		HOL_volk_en_vaderland = {
-
-			picture = generic_fascism_drift_bonus
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				fascism_drift = 0.1
-				war_support_factor = 0.1
+				fascism_drift = -0.05
+				communism_drift = -0.05
 			}
 		}
 
@@ -919,9 +909,6 @@ ideas = {
 			removal_cost = -1
 						
 			equipment_bonus = {
-				ship_hull_submarine = {
-					build_cost_ic = -0.1 instant = yes
-				}
 				ship_hull_light = {
 					build_cost_ic = -0.1 instant = yes
 				}
@@ -973,25 +960,6 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.05
-			}
-		}
-
-		HOL_legacy_of_the_de_zeven_provincien_mutiny = {
-
-			picture = generic_communism_drift_bonus
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				communism_drift = 0.1
 			}
 		}
 
@@ -1110,66 +1078,6 @@ ideas = {
 			}
 		}
 
-		HOL_oranje_boven_1 = {
-
-			name = HOL_oranje_boven
-
-			picture = hol_oranje_boven
-
-			allowed = {
-				always = no
-			}
-
-			available = {
-				OR = {
-					has_government = neutrality
-					NOT = { has_completed_focus = HOL_the_only_man_in_the_dutch_government }
-				}
-			}
-
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				neutrality_drift = 0.1
-			}
-		}
-
-		HOL_oranje_boven_2 = {
-
-			name = HOL_oranje_boven
-
-			picture = hol_oranje_boven
-
-			allowed = {
-				always = no
-			}
-
-			available = {
-				OR = {
-					has_government = neutrality
-					NOT = { has_completed_focus = HOL_the_only_man_in_the_dutch_government }
-				}
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				neutrality_drift = 0.2
-				resistance_growth_on_our_occupied_states = 0.25
-				army_core_defence_factor = 0.1
-				army_core_attack_factor = 0.1
-			}
-		}
-
 		HOL_depillarization = {
 
 			picture = hol_depillarization
@@ -1204,8 +1112,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				fascism_drift = -0.02
-				communism_drift = -0.02
+				fascism_drift = -0.05
+				communism_drift = -0.05
 				democratic_drift = 0.05
 				stability_weekly = 0.001
 			}
@@ -1228,11 +1136,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription = 0.025
+				conscription = 0.015
 			}
 		}
 
-		HOL_allied_technological_developments = {
+		HOL_allied_technological_development = {
 
 			picture = generic_research_bonus
 
@@ -1247,7 +1155,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				research_speed_factor = 0.10
+				research_speed_factor = 0.05
 			}
 		}
 
@@ -1264,7 +1172,7 @@ ideas = {
 			}
 
 			modifier = {
-				max_command_power = 20
+				max_command_power = 15
 				command_power_gain_mult = 0.05
 				planning_speed = 0.1
 			}
@@ -1563,7 +1471,7 @@ ideas = {
 
 		HOL_staff_plan_eng = {
 
-			picture = FRA_fortification_focus
+			picture = fra_fortification_focus
 			
 			allowed = {
 				always = no
@@ -1583,7 +1491,7 @@ ideas = {
 
 		HOL_staff_plan_fra = {
 
-			picture = FRA_fortification_focus
+			picture = fra_fortification_focus
 			
 			allowed = {
 				always = no
@@ -1603,7 +1511,7 @@ ideas = {
 
 		HOL_staff_plan_ger = {
 
-			picture = FRA_fortification_focus
+			picture = fra_fortification_focus
 			
 			allowed = {
 				always = no
@@ -1638,8 +1546,8 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				air_superiority_efficiency = 0.05
-				air_intercept_efficiency = 0.05
+				air_intercept_efficiency = 0.03
+				air_superiority_efficiency = 0.03
 			}
 		}
 
@@ -1660,8 +1568,8 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				air_superiority_efficiency = -0.05
-				air_intercept_efficiency = -0.05
+				air_intercept_efficiency = -0.03
+				air_superiority_efficiency = -0.03
 			}
 		}
 
@@ -1827,7 +1735,8 @@ ideas = {
 						
 			modifier = {
 				industrial_capacity_factory = -0.05
-				production_speed_buildings_factor = -0.1
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.05
 			}
 
 		}
@@ -1921,20 +1830,14 @@ ideas = {
 		fokker = {
 			
 			picture = fokker
-
-			available = {
-				has_completed_focus = HOL_fokker
-			}
 			
 			allowed = {
 				original_tag = HOL
 				has_dlc = "Man the Guns"
 			}
-
-			cost = 75
 			
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = -0.05
 			}
 			
 			traits = { light_aircraft_manufacturer }
@@ -1950,7 +1853,7 @@ ideas = {
 
 		koolhoven = {
 			
-			picture = generic_air_manufacturer_3
+			picture = koolhoven
 
 			
 			allowed = {
@@ -1958,7 +1861,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = -0.05
 			}
 			
 			traits = { medium_aircraft_manufacturer }
@@ -1988,7 +1891,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = -0.05
 			}
 			
 			equipment_bonus = {
@@ -1996,9 +1899,6 @@ ideas = {
 			}
 			
 			traits = { raiding_fleet_naval_manufacturer }
-			
-			modifier = {
-			}
 		}
 
 		wilton_fijenoord = {
@@ -2012,17 +1912,14 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = -0.05
 			}
 			
 			equipment_bonus = {
 				# submarines, light cruisers you name it!
 			}
 			
-			traits = { atlantic_fleet_naval_manufacturer }
-			
-			modifier = {
-			}
+			traits = { convoy_escort_naval_manufacturer }
 		}
 	}
 	
@@ -2035,21 +1932,15 @@ ideas = {
 			
 			picture = HOL_daf
 
-			available = {
-				has_completed_focus = HOL_daf
-			}
-
 			allowed = {
 				tag = HOL
 				has_dlc = "Man the Guns"
 			}
-			
-			cost = 75
 
 			removal_cost = 10
 			
 			research_bonus = {
-				motorized_equipment = 0.15
+				motorized_equipment = -0.05
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -2058,20 +1949,14 @@ ideas = {
 		artillerie_inrichtingen = {
 			
 			picture = artillerie_inrichtingen
-
-			available = {
-				has_completed_focus = HOL_expand_the_artillerieinrichtingen
-			}
 			
 			allowed = {
 				original_tag = HOL
 				has_dlc = "Man the Guns"
 			}
-
-			cost = 75
-			
+	
 			research_bonus = {
-				infantry_weapons = 0.15
+				infantry_weapons = -0.05
 			}
 			
 			equipment_bonus = {
@@ -2079,9 +1964,6 @@ ideas = {
 			}
 			
 			traits = { infantry_equipment_manufacturer }
-			
-			modifier = {
-			}
 		}
 	
 		hih_siderius = {
@@ -2095,7 +1977,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				artillery = 0.15
+				artillery = -0.05
 			}
 			
 			equipment_bonus = {
@@ -2103,19 +1985,30 @@ ideas = {
 			}
 			
 			traits = { artillery_manufacturer }
-			
-			modifier = {
-			}
 		}
 	}
+	industrial_research = {
+		HOL_philips = {
+			
+			allowed = {
+				original_tag = HOL
+				has_dlc = "Man the Guns"
+			}
 
+			cost = 75
+
+			picture = generic_electronics_concern_1
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+		}
+	}
 	industrial_concern = {
 	
 		HOL_royal_dutch_shell = {
-
-			available = {
-				has_completed_focus = HOL_expand_curacao_oil_refineries
-			}
 			
 			allowed = {
 				original_tag = HOL
@@ -2127,33 +2020,11 @@ ideas = {
 			picture = HOL_royal_dutch_shell
 			
 			research_bonus = {
-				industry = 0.15
+				industry = -0.05
 				
 			}
 			
 			traits = { industrial_concern }
-		}
-
-		HOL_philips = {
-
-			available = {
-				has_completed_focus = HOL_philips_focus
-			}
-			
-			allowed = {
-				original_tag = HOL
-				has_dlc = "Man the Guns"
-			}
-
-			cost = 75
-
-			picture = HOL_philips
-			
-			research_bonus = {
-				electronics = 0.15
-			}
-			
-			traits = { electronics_concern }
-		}		
+		}				
 	}
 }

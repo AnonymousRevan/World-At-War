@@ -81,6 +81,7 @@ last_stand = {
     name = SUBDOCTRINE_LAST_STAND
     description = SUBDOCTRINE_LAST_STAND_DESC
     icon = GFX_doctrine_last_stand_medium
+    #TODO: Add trigger tag for surrender progress
     xp_cost = 100
     xp_type = army
 
@@ -88,7 +89,7 @@ last_stand = {
         always = yes
     }
     # EFFECTS
-    conscription = 0.05
+    conscription = 0.03
 
     ai_will_do = {
 
@@ -105,24 +106,25 @@ last_stand = {
         pocket_consolidation = {
         #2
             category_all_infantry = {
-                defense = 0.1
+                defense = 0.15
             }
         }
         digging_in = {
         #3
             out_of_supply_factor = -0.20
             category_all_infantry = {
-                entrenchment = 0.1
+                entrenchment = 0.2
             }
         }
         stocking_up = {
         #4
-            no_supply_grace = 72 
+            no_supply_grace = 72 # more hours before supply penalty changes
         }
         breaking_out = {
         #5
             category_army = {
-                soft_attack = 0.2
+                soft_attack = 0.1
+				hard_attack = 0.1
             }
         }
     }
@@ -190,7 +192,7 @@ infiltration_tactics = {
                 }
                 battalion_mult = {
                     category = category_cavalry
-                    soft_attack = 0.1
+                    soft_attack = 0.15
                 }
 
             }
@@ -205,7 +207,7 @@ infiltration_tactics = {
                 }
 
             }
-            light_tank_recon = {
+            light_armor_recon = {
                 battalion_mult = {
                     category = category_light_infantry
                     soft_attack = 0.1
@@ -258,7 +260,7 @@ grand_assault = {
     }
 
     # EFFECTS
-    max_planning = 0.1
+    max_planning = 0.05
     category_army = {
         breakthrough = 0.1
         soft_attack = 0.05
@@ -315,7 +317,7 @@ grand_assault = {
         c3i_theory = {
        #5
 
-            max_planning = 0.1
+            max_planning = 0.03
             category_all_infantry = {
                 max_organisation = 5
             }
@@ -383,7 +385,7 @@ deep_battle = {
                     defense = 0.05
                 }
             }
-            light_tank_recon = {
+            light_armor_recon = {
                 battalion_mult = {
                     category = category_light_infantry
                     soft_attack = 0.05
@@ -434,14 +436,14 @@ deep_battle = {
         #5
             org_loss_when_moving = -0.1
             land_reinforce_rate = 0.05
-            armored_car_recon = {
+            recon_ac = {
                 battalion_mult = {
                     category = category_light_infantry
                     max_organisation = 10
                     add = yes
                 }
             }
-            light_tank_recon = {
+            light_armor_recon = {
                 battalion_mult = {
                     category = category_light_infantry
                     max_organisation = 10
@@ -510,7 +512,7 @@ deep_battle_no_lar = {
                     defense = 0.05
                 }
             }
-            light_tank_recon = {
+            light_armor_recon = {
                 battalion_mult = {
                     category = category_light_infantry
                     soft_attack = 0.05
@@ -568,7 +570,7 @@ deep_battle_no_lar = {
                     add = yes
                 }
             }
-            light_tank_recon = {
+            light_armor_recon = {
                 battalion_mult = {
                     category = category_light_infantry
                     max_organisation = 10
@@ -590,9 +592,6 @@ guerilla_war = {
     available = {
         always = yes
     }
-    visible = {
-        has_dlc = "No Compromise, No Surrender"
-    }
 
     ai_will_do = { 
         base = 1
@@ -604,21 +603,21 @@ guerilla_war = {
             factor = 2
             is_major = no
         }
-        modifier = {
-            factor = 0
-            NOT = {
-                OR = {
-                has_template_containing_unit = irregular_infantry
-                has_template_containing_unit = militia
-                }
-            }
-        }
+        #modifier = {
+        #    factor = 0
+        #    NOT = {
+        #        OR = {
+        #        has_template_containing_unit = irregular_infantry
+        #        has_template_containing_unit = militia
+        #        }
+        #    }
+        #}
     
     }
 
     # EFFECTS
     enable_tactic = tactic_guerrilla_tactics
-    irregular_infantry = {
+    light_infantry = {
         soft_attack = 0.1
         defense = 0.2
     }
@@ -652,7 +651,7 @@ guerilla_war = {
             army_intel_factor = 0.05
             war_support_factor = 0.1
             political_power_factor = 0.1
-            mobilization_speed = 0.15
+            mobilization_speed = 0.1
 
         }
         scorched_earth = {
@@ -729,9 +728,11 @@ rapid_domination = {
     land_reinforce_rate = 0.02
     category_all_infantry = {
         soft_attack = 0.1
+		hard_attack = 0.05
     }
     category_line_artillery = {
         soft_attack = 0.1
+		hard_attack = 0.05
     }
 
 
@@ -769,6 +770,7 @@ rapid_domination = {
                 battalion_mult = {
                     category = category_artillery
                     soft_attack = 0.1
+					hard_attack = 0.05
                 }
             }
 
@@ -778,7 +780,7 @@ rapid_domination = {
         #4
             category_support_battalions = {
                 max_organisation = 10
-                soft_attack = 0.1
+                soft_attack = 0.2
             }
         }
         shock_and_awe = {
@@ -802,15 +804,12 @@ expeditionary_warfare = {
     name = SUBDOCTRINE_EXPEDITIONARY_WARFARE
     description = SUBDOCTRINE_EXPEDITIONARY_WARFARE_DESC
     icon = GFX_doctrine_expeditionary_warfare_medium
-
+    #TODO: Add trigger tag for surrender progress
     xp_cost = 100
     xp_type = army
 
     available = {
     
-    }
-    visible = {
-        has_dlc = "No Compromise, No Surrender"
     }
 
     ai_will_do = {
@@ -821,9 +820,9 @@ expeditionary_warfare = {
 
     # EFFECTS
     
-    send_volunteer_divisions_required = -0.5
-    send_volunteer_factor = 0.25
-    send_volunteers_tension = -0.1
+    land_reinforce_rate = 0.05
+    war_support_factor = 0.05
+    army_bonus_air_superiority_factor = 0.05
 
     ai_will_do = { }
 
@@ -841,7 +840,6 @@ expeditionary_warfare = {
         #2
             naval_invasion_prep_speed = 0.2
             naval_invasion_penalty = -0.15
-            naval_invasion_planning_bonus_speed = 0.2
             category_army = {
                 soft_attack = 0.1
             }
@@ -859,6 +857,73 @@ expeditionary_warfare = {
         withdrawal_protocols = {
         #5
             org_loss_when_moving = -0.2
+        }
+    }
+}
+
+environment_adapt = {
+    track = operations
+    name = SUBDOCTRINE_enviro
+    description = SUBDOCTRINE_enviro_DESC
+    icon = GFX_doctrine_expeditionary_warfare_medium
+    #TODO: Add trigger tag for surrender progress
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+    
+    }
+
+    ai_will_do = {
+
+        base = 0
+
+    }
+
+    # EFFECTS
+    
+    land_night_attack = 0.1
+	terrain_trait_xp_gain_factor = 0.5
+	
+    ai_will_do = { }
+
+    rewards = {
+        staging_area_security = {
+        #1
+            acclimatization_cold_climate_gain_factor = 0.075
+			acclimatization_hot_climate_gain_factor = 0.075
+            category_front_line = {
+                defense = 0.1
+            }
+
+        }
+        landing_operations = {
+        #2
+			winter_attrition_factor = -0.1
+			heat_attrition_factor = -0.1
+            category_front_line = {
+                soft_attack = 0.1
+				hard_attack = 0.1
+            }
+            
+        }
+        shore_fire_control_parties = {
+        #3
+            infantry = {
+				amphibious = {
+					attack = 0.15
+			}
+        }
+        breakout_emphasis = {
+        #4
+            category_front_line = {
+				breakthrough = 0.1
+				max_strength = 0.25
+			}
+        }
+        withdrawal_protocols = {
+        #5
+            no_supply_grace = 144
         }
     }
 }

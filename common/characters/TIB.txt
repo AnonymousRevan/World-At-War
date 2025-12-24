@@ -1,7 +1,6 @@
-characters = {
-
+characters={
 	TIB_jamphel_yeshe_gyaltsen={
-		name= TIB_jamphel_yeshe_gyaltsen
+		name="Jamphel Yeshe Gyaltsen"
 		portraits={
 			civilian={
 				large=GFX_portrait_Jamphel_Yeshe_Gyaltsen
@@ -13,142 +12,47 @@ characters = {
 			id=-1
 		}
 	}
-
 	TIB_namgang_rinpoche={
-		name= TIB_namgang_rinpoche
+		name="Namgang Rinpoche"
 		portraits={
 			civilian={
 				large=GFX_portrait_Namgang_Rinpoche
 			}
 		}
-		#country_leader={
-		#	ideology=socialism
-		#	expire="1944.1.1.12"
-		#	id=-1
-		#}
-	}
-
-	TIB_langdun = {
-		name = TIB_langdun
-		portraits = {
-			civilian = {
-				large = GFX_portrait_Namgang_Rinpoche
-			}
-		}
-		country_leader = {
-			ideology = conservatism
-			expire = "1946.1.1.12"
-			id = -1
+		country_leader={
+			ideology=socialism
+			expire="1944.1.1.12"
+			id=-1
 		}
 	}
-
 	TIB_penor_tashi={
-		name= TIB_penor_tashi
+		name="Penor Tashi"
 		portraits={
 			civilian={
 				large=GFX_portrait_Penor_Tashi
 			}
 		}
-		#country_leader={
-		#	ideology=anti_revisionism
-		#	traits={ retired_officer }
-		#	expire="1945.1.1.12"
-		#	id=-1
-		#}
-	}
-
-	TIB_lungshar = {
-		name = TIB_lungshar
-		portraits = {
-			civilian = {
-				large = GFX_portrait_Penor_Tashi
-			}
-		}
-		#country_leader = {
-		#	ideology = marxism
-		#	traits = { socialist_autocrat }
-		#	expire = "1938.1.1.12"
-		#	id = -1
-		#}
-	}
-
-	TIB_phuntsok_wangyal = {
-		name = TIB_phuntsok_wangyal
-		portraits = {
-			civilian = {
-				large = GFX_portrait_TIB_phuntsok_wangyal
-				small = GFX_portrait_TIB_phuntsok_wangyal_small
-			}
-		}
-		country_leader = {
-			ideology = marxism
-			traits = { inexperienced_socialist }
-			expire = "1945.1.1.12"
-			id = -1
+		country_leader={
+			ideology=anti_revisionism
+			traits={ retired_officer }
+			expire="1945.1.1.12"
+			id=-1
 		}
 	}
-
 	TIB_tsepon_shatra={
-		name= TIB_tsepon_shatra
+		name="Tsepon Shatra"
 		portraits={
 			civilian={
 				large=GFX_portrait_Tsepon_Shatra
 			}
 		}
-		#country_leader={
-		#	ideology=falangism
-		#	traits={ ideological_crusader reluctant_interventionist }
-		#	expire="1946.1.1.12"
-		#	id=-1
-		#}
-	}
-
-	TIB_thubten_kunpela = {
-		name = TIB_thubten_kunpela
-		portraits = {
-			civilian = {
-				large = GFX_portrait_TIB_thubten_kunphela
-				small = GFX_portrait_TIB_thubten_kunphela_civilian_small
-			}
-			army = {
-				small = GFX_portrait_TIB_thubten_kunphela_military_small
-			}
-		}
-		country_leader = {
-			ideology = emperor_fascism
-			traits = { TIB_strongman_of_tibet }
-			expire = "1963.1.1.12"
-			id = -1
+		country_leader={
+			ideology=falangism
+			traits={ ideological_crusader reluctant_interventionist }
+			expire="1946.1.1.12"
+			id=-1
 		}
 	}
-
-	TIB_tsarong_dzasa = {
-		name = TIB_tsarong_dzasa
-
-		portraits = {
-			army = {
-				large = GFX_portrait_TIB_tsarong_dzasa
-				small = GFX_portrait_TIB_tsarong_dzasa_military_small
-			}
-			civilian = {
-				small = GFX_portrait_TIB_tsarong_dzasa_civilian_small
-			}
-		}
-
-		corps_commander = {
-			traits = { trait_mountaineer organizer }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 3
-			legacy_id = -1
-			visible = {
-			}
-		}
-
-	}
-
 	TIB_gyato_wangdu={
 		advisor={
 			cost = 100
@@ -165,14 +69,13 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_gyato_wangdu
+		name="Gyato Wangdu"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_asia_2"
 			}
 		}
 	}
-
 	TIB_lobsang_tenzin={
 		advisor={
 			
@@ -191,14 +94,13 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_lobsang_tenzin
+		name="Bapa Yeshe"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_asia_3"
 			}
 		}
 	}
-
 	TIB_sampo_tsewang_rigzin={
 		advisor={
 			cost = 100
@@ -215,14 +117,13 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_sampo_tsewang_rigzin
+		name="Sampo Tsewang Rigzin"
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_2"
 			}
 		}
 	}
-
 	TIB_chama_samphe={
 		advisor={
 			cost = 100
@@ -239,14 +140,13 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_chama_samphe
+		name="Chama Samphe"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_asia_3"
 			}
 		}
 	}
-
 	TIB_lhalu_tsewang_dorje={
 		advisor={
 			
@@ -265,14 +165,13 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_lhalu_tsewang_dorje
+		name="Lhalu Tsewang Dorje"
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_asia_3"
 			}
 		}
 	}
-
 	TIB_chodak_karma={
 		advisor={
 			
@@ -291,14 +190,13 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_chodak_karma
+		name="Chodak Karma"
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_2"
 			}
 		}
 	}
-
 	TIB_tenpa_jamyang={
 		advisor={
 			
@@ -318,14 +216,13 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_tenpa_jamyang
+		name="Tenpa Jamyang"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_asia_4"
 			}
 		}
 	}
-
 	TIB_sogyal_rinpoche={
 		advisor={
 			
@@ -344,14 +241,13 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_sogyal_rinpoche
+		name="Sogyal Rinpoche"
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_asia_2"
 			}
 		}
 	}
-
 	TIB_bapa_yeshe={
 		advisor={
 			
@@ -370,14 +266,13 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_bapa_yeshe
+		name="Bapa Yeshe"
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_1"
 			}
 		}
 	}
-
 	TIB_jampal_rabgye_rinpoche={
 		advisor={
 			
@@ -396,14 +291,13 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_jampal_rabgye_rinpoche
+		name="Jampal Rabgyé Rinpoche"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_asia_5"
 			}
 		}
 	}
-
 	TIB_chaghoe_namgyal_dorje={
 		advisor={
 			
@@ -423,14 +317,13 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_chaghoe_namgyal_dorje
+		name="Chaghoe Namgyal Dorje"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_asia_1"
 			}
 		}
 	}
-
 	TIB_jamyang_rabten={
 		advisor={
 			
@@ -450,14 +343,13 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_jamyang_rabten
+		name="Jamyang Rabten"
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_asia_2"
 			}
 		}
 	}
-
 	TIB_khemey_sonam_wangdi={
 		advisor={
 			
@@ -477,14 +369,13 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_khemey_sonam_wangdi
+		name="Khemey Sonam Wangdi"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_asia_2"
 			}
 		}
 	}
-
 	TIB_jigme_taring={
 		advisor={
 			slot = political_advisor
@@ -497,14 +388,13 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_jigme_taring
+		name="Jigme Taring"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_asia_1"
 			}
 		}
 	}
-
 	TIB_reting_rimpoche={
 		advisor={
 			slot = political_advisor
@@ -517,14 +407,13 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_reting_rimpoche
+		name="Reting Rimpoche"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_asia_2"
 			}
 		}
 	}
-
 	TIB_taktra_rinpoche={
 		advisor={
 			slot = political_advisor
@@ -540,12 +429,11 @@ characters = {
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= TIB_taktra_rinpoche
+		name="Taktra Rinpoche"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_asia_3"
 			}
 		}
 	}
-
 }

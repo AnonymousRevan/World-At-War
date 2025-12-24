@@ -1,17 +1,14 @@
 sub_units = {
 
 	artillery = {
-		abbreviation = "ART"
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
 		active = yes
 		affects_speed = no
-		is_artillery_brigade = yes
-
 		type = {
-			infantry
+			artillery
 			support
 		}
 		
@@ -20,7 +17,7 @@ sub_units = {
 		categories = {
 			category_support_battalions
 			category_army
-			category_artillery
+			category_light_artillery
 			category_support_artillery
 		}
 
@@ -28,39 +25,37 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			artillery_equipment = 12
+			artillery_equipment = 16
+			horse_equipment = 16
 		}
 		manpower = 300
-		training_time = 120
+		training_time = 80
 		max_organisation = 0
 		default_morale = 0.1
 		max_strength = 0.2
 		weight = 0.1
 		
-		supply_consumption = 0.16
+		supply_consumption = 0.15
 
 		# Support nerfs to combat abilities
-		defense = -0.4
-		breakthrough = -0.4
-		soft_attack = -0.4
-		hard_attack = -0.4
+		defense = -0.5
+		breakthrough = -0.5
+		soft_attack = -0.5
+		hard_attack = -0.5
 
-
-		can_be_parachuted = yes
+		
+		can_be_parachuted = no
 	}
 	
 	rocket_artillery = {
-		abbreviation = "RART"
-		sprite = "artillery"
+		sprite = artillery
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
 		active = yes
 		affects_speed = no
-		is_artillery_brigade = yes
-		
 		type = {
-			infantry
+			artillery
 			support
 		}
 		
@@ -69,19 +64,18 @@ sub_units = {
 		categories = {
 			category_support_battalions
 			category_army
-			category_artillery
 			category_support_artillery
-			category_rocket_artillery
 		}		
 
 		combat_width = 0
 
 		need = {
-			rocket_artillery_equipment = 12
+			rocket_artillery_equipment = 16
+			horse_equipment = 16
 		}
 
 		manpower = 300
-		training_time = 120
+		training_time = 80
 		max_organisation = 0
 		default_morale = 0.1
 		max_strength = 0.2
@@ -94,11 +88,107 @@ sub_units = {
 		breakthrough = -0.5
 		soft_attack = -0.5
 		hard_attack = -0.5
+		
+		
+		can_be_parachuted = no
+	}
+	
+	pack_artillery = {
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+		type = {
+			artillery
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+			category_pack_artillery
+			category_support_artillery
+		}
 
 
+		combat_width = 0
+
+		need = {
+			pack_artillery_equipment = 16
+			horse_equipment = 16
+		}
+		manpower = 250
+		training_time = 70
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.2
+		weight = 0.1
+		
+		supply_consumption = 0.125
+
+		# Support nerfs to combat abilities
+		defense = -0.5
+		breakthrough = -0.5
+		soft_attack = -0.5
+		hard_attack = -0.5
+
+		
 		can_be_parachuted = yes
 	}
+	
+	artillery_heavy_support = {
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+		type = {
+			artillery
+			support
+		}
+		
+		group = support
 
+		categories = {
+			category_support_battalions
+			category_army
+			category_heavy_artillery
+			category_support_artillery
+		}		
+
+		combat_width = 0
+
+		need = {
+			heavy_artillery_equipment = 16
+			horse_equipment = 16		
+		}
+
+		manpower = 350
+		training_time = 90
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.2
+		weight = 0.1
+		
+		supply_consumption = 0.175
+
+		# Support nerfs to combat abilities
+		defense = -0.5
+		breakthrough = -0.5
+		soft_attack = -0.5
+		hard_attack = -0.5
+
+		
+		can_be_parachuted = no
+		
+		same_support_type = artillery # blocks adding other heavy arty or tank types to template
+	}
+	
 	super_heavy_artillery = {
 		abbreviation = "SHART"
 		sprite = super_heavy_artillery
@@ -106,7 +196,7 @@ sub_units = {
 		priority = 0
 		ai_priority = 0
 		active = yes
-		affects_speed = yes
+		affects_speed = no
 		is_artillery_brigade = yes
 
 		type = {
@@ -119,10 +209,9 @@ sub_units = {
 		categories = {
 			category_support_battalions
 			category_army
-			category_artillery
+			category_heavy_artillery
 			category_support_artillery
 		}
-
 
 		combat_width = 0
 		
@@ -131,7 +220,8 @@ sub_units = {
 		}
 
 		need = {
-			super_heavy_artillery_equipment = 3
+			super_heavy_artillery_equipment = 4
+			motorized_equipment = 12
 		}
 		manpower = 1000
 		training_time = 180
@@ -146,53 +236,5 @@ sub_units = {
 
 		same_support_type = super_heavy_artillery
 	}
-
-	self_propelled_super_heavy_artillery = {
-		abbreviation = "SPSHART"
-		sprite = self_propelled_super_heavy_artillery
-		map_icon_category = infantry
-		priority = 0
-		ai_priority = 0
-		active = yes
-		affects_speed = no
-		is_artillery_brigade = yes
-
-		type = {
-			infantry
-			support
-		}
-		
-		group = support
-		
-		categories = {
-			category_support_battalions
-			category_army
-			category_artillery
-			category_support_artillery
-		}
-
-
-		combat_width = 0
-
-		essential = {
-			self_propelled_super_heavy_artillery_equipment
-		}
-
-		need = {
-			self_propelled_super_heavy_artillery_equipment = 3
-		}
-
-		manpower = 1000
-		training_time = 180
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.2
-		weight = 0.1
-		
-		supply_consumption = 0.35
-
-		can_be_parachuted = no
-
-		same_support_type = super_heavy_artillery
-	}
+	
 }

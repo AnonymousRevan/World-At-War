@@ -2,14 +2,15 @@ state={
 	id=289
 	name="STATE_289"
 	resources={
-		rubber=8.000
-		tungsten=2.000
+		steel = 40
+		rubber= 75
+		tungsten= 10
 	}
 
 	history={
 		owner = SIA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 5
 			arms_factory = 1
 			industrial_complex = 5
 			air_base = 3
@@ -33,6 +34,6 @@ state={
 	}
 	manpower=8422400
 	buildings_max_level_factor=1.000
-	state_category=metropolis
-	local_supplies=1
+	state_category=city
+	local_supplies=0.000
 }

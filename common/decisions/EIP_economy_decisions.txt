@@ -1,0 +1,1525 @@
+propaganda_efforts = {
+        Eintd_light_industry = {
+
+		icon = GFX_decision_generic_factory
+
+		days_remove = 60
+		
+		days_re_enable = 30
+		
+		visible = {
+			OR = {
+				original_tag = GER
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               60 = {
+                   country_event = eip_industry.3
+               }
+               10 = {
+                   country_event = eip_industry.1
+               }
+               10 = {
+                   country_event = eip_industry.2
+               }
+			   10 = {
+                   country_event = eip_industry.4
+               }
+               10 = {
+                   country_event = eip_industry.5
+			}
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_civilian_factories < 1
+           }
+		}
+	}
+	
+	Eintd_light_industryITAs = {
+
+		icon = GFX_decision_generic_factory
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = ITA
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               60 = {
+                   country_event = eip_industry.3
+               }
+               10 = {
+                   country_event = eip_industry.1
+               }
+               10 = {
+                   country_event = eip_industry.2
+               }
+			   10 = {
+                   country_event = eip_industry.4
+               }
+               10 = {
+                   country_event = eip_industry.5
+			}
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_civilian_factories < 1
+           }
+		}
+	}
+	
+	Eintd_light_industryen = {
+
+		icon = GFX_decision_generic_factory
+
+		days_remove = 60
+		
+		days_re_enable = 30
+		
+		visible = {
+			OR = {
+				original_tag = ENG
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               60 = {
+                   country_event = eip_industry.3
+               }
+               10 = {
+                   country_event = eip_industry.1
+               }
+               10 = {
+                   country_event = eip_industry.2
+               }
+			   10 = {
+                   country_event = eip_industry.4
+               }
+               10 = {
+                   country_event = eip_industry.5
+			}
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_civilian_factories < 1
+           }
+		}
+	}
+	
+	Eintd_light_industrysov = {
+
+		icon = GFX_decision_generic_factory
+
+		days_remove = 60
+		
+		days_re_enable = 30
+		
+		visible = {
+			OR = {
+				original_tag = SOV
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+              60 = {
+                   country_event = eip_industry.3
+               }
+               10 = {
+                   country_event = eip_industry.1
+               }
+               10 = {
+                   country_event = eip_industry.2
+               }
+			   10 = {
+                   country_event = eip_industry.4
+               }
+               10 = {
+                   country_event = eip_industry.5
+			}
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_civilian_factories < 1
+           }
+		}
+	}
+	
+	Eintd_light_industryasta = {
+
+		icon = GFX_decision_generic_factory
+
+		days_remove = 60
+		
+		days_re_enable = 30
+		
+		visible = {
+			OR = {
+				original_tag = AST
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               50 = {
+                   country_event = eip_industry.3
+               }
+               15 = {
+                   country_event = eip_industry.1
+               }
+               15 = {
+                   country_event = eip_industry.2
+               }
+			   10 = {
+                   country_event = eip_industry.4
+               }
+               10 = {
+                   country_event = eip_industry.5
+			}
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_civilian_factories < 1
+           }
+		}
+	}
+	
+	Eintd_light_industryCAN = {
+
+		icon = GFX_decision_generic_factory
+
+		days_remove = 60
+		
+		days_re_enable = 30
+		
+		visible = {
+			OR = {
+				original_tag = CAN
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               50 = {
+                   country_event = eip_industry.3
+               }
+               10 = {
+                   country_event = eip_industry.1
+               }
+               15 = {
+                   country_event = eip_industry.2
+               }
+			   15 = {
+                   country_event = eip_industry.4
+               }
+               10 = {
+                   country_event = eip_industry.5
+			}
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_civilian_factories < 1
+           }
+		}
+	}
+	
+	Eintd_light_industryIDR = {
+
+		icon = GFX_decision_generic_factory
+
+		days_remove = 60
+		
+		days_re_enable = 30
+		
+		visible = {
+			OR = {
+				original_tag = IDR
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               50 = {
+                   country_event = eip_industry.3
+               }
+               10 = {
+                   country_event = eip_industry.1
+               }
+               10 = {
+                   country_event = eip_industry.2
+               }
+			   15 = {
+                   country_event = eip_industry.4
+               }
+               15 = {
+                   country_event = eip_industry.5
+			}
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_civilian_factories < 1
+           }
+		}
+	}
+	
+	Eintd_light_industrySAF = {
+
+		icon = GFX_decision_generic_factory
+
+		days_remove = 60
+		
+		days_re_enable = 30
+		
+		visible = {
+			OR = {
+				original_tag = SAF
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               55 = {
+                   country_event = eip_industry.3
+               }
+               15 = {
+                   country_event = eip_industry.1
+               }
+               10 = {
+                   country_event = eip_industry.2
+               }
+			   10 = {
+                   country_event = eip_industry.4
+               }
+               10 = {
+                   country_event = eip_industry.5
+			}
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_civilian_factories < 1
+           }
+		}
+	}
+	
+	Eintd_light_industryJAP = {
+
+		icon = GFX_decision_generic_factory
+
+		days_remove = 60
+		
+		days_re_enable = 30
+		
+		visible = {
+			OR = {
+				original_tag = JAP
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               60 = {
+                   country_event = eip_industry.3
+               }
+               10 = {
+                   country_event = eip_industry.1
+               }
+               10 = {
+                   country_event = eip_industry.2
+               }
+			   10 = {
+                   country_event = eip_industry.4
+               }
+               10 = {
+                   country_event = eip_industry.5
+			}
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_civilian_factories < 1
+           }
+		}
+	}
+	
+	Eintd_light_industryFRA = {
+
+		icon = GFX_decision_generic_factory
+
+		days_remove = 60
+		
+		days_re_enable = 30
+		
+		visible = {
+			OR = {
+				original_tag = FRA
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               80 = {
+                   country_event = eip_industry.3
+               }
+               5 = {
+                   country_event = eip_industry.1
+               }
+               5 = {
+                   country_event = eip_industry.2
+               }
+			   5 = {
+                   country_event = eip_industry.4
+               }
+               5 = {
+                   country_event = eip_industry.5
+			}
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_civilian_factories < 1
+           }
+		}
+	}
+	
+	Eintd_light_industrySPR = {
+
+		icon = GFX_decision_generic_factory
+
+		days_remove = 60
+		
+		days_re_enable = 30
+		
+		visible = {
+			OR = {
+				original_tag = SPR
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               55 = {
+                   country_event = eip_industry.3
+               }
+               10 = {
+                   country_event = eip_industry.1
+               }
+               10 = {
+                   country_event = eip_industry.2
+               }
+			   10 = {
+                   country_event = eip_industry.4
+               }
+               15 = {
+                   country_event = eip_industry.5
+			}
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_civilian_factories < 1
+           }
+		}
+	}
+	
+	Eintd_light_industryHUN = {
+
+		icon = GFX_decision_generic_factory
+
+		days_remove = 60
+		
+		days_re_enable = 30
+		
+		visible = {
+			OR = {
+				original_tag = HUN
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               40 = {
+                   country_event = eip_industry.3
+               }
+               20 = {
+                   country_event = eip_industry.1
+               }
+               10 = {
+                   country_event = eip_industry.2
+               }
+			   15 = {
+                   country_event = eip_industry.4
+               }
+               15 = {
+                   country_event = eip_industry.5
+			}
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_civilian_factories < 1
+           }
+		}
+	}
+	
+	Eintd_light_industryROM = {
+
+		icon = GFX_decision_generic_factory
+
+		days_remove = 60
+		
+		days_re_enable = 30
+		
+		visible = {
+			OR = {
+				original_tag = ROM
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.3
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               50 = {
+                   country_event = eip_industry.3
+               }
+               10 = {
+                   country_event = eip_industry.1
+               }
+               15 = {
+                   country_event = eip_industry.2
+               }
+			   10 = {
+                   country_event = eip_industry.4
+               }
+               15 = {
+                   country_event = eip_industry.5
+			}
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_civilian_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industry = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = GER
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.75
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               75 = {
+                   country_event = eip_industry.3
+               }
+               25 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industryUSA = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = USA
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.75
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               75 = {
+                   country_event = eip_industry.3
+               }
+               25 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+
+	Eintd_heavy_industryENG = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = ENG
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.75
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               75 = {
+                   country_event = eip_industry.3
+               }
+               25 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industryFRA = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = FRA
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.75
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               70 = {
+                   country_event = eip_industry.3
+               }
+               30 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industryCAN = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = CAN
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.75
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               70 = {
+                   country_event = eip_industry.3
+               }
+               30 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industrySPR = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = SPR
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.75
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               70 = {
+                   country_event = eip_industry.3
+               }
+               30 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industryITA = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = ITA
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.75
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               75 = {
+                   country_event = eip_industry.3
+               }
+               25 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industryROM = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = ROM
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.75
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               70 = {
+                   country_event = eip_industry.3
+               }
+               30 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industryHUN = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = HUN
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.75
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               60 = {
+                   country_event = eip_industry.3
+               }
+               40 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industrySOV = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = SOV
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.75
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               75 = {
+                   country_event = eip_industry.3
+               }
+               25 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industryEFR = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = EFR
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.75
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               80 = {
+                   country_event = eip_industry.3
+               }
+               20 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industrySAF = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = SAF
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.75
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               65 = {
+                   country_event = eip_industry.3
+               }
+               35 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industryIDR = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = IDR
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.75
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               65 = {
+                   country_event = eip_industry.3
+               }
+               35 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industryAST = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = AST
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.75
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               65 = {
+                   country_event = eip_industry.3
+               }
+               35 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industryJAP = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = JAP
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.75
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               90 = {
+                   country_event = eip_industry.3
+               }
+               10 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industryBUL = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = BUL
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.5
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               50 = {
+                   country_event = eip_industry.3
+               }
+               50 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories > 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industryMAN = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = MAN
+			}
+		}
+		
+		modifier = {
+			political_power_gain = -0.5
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               50 = {
+                   country_event = eip_industry.3
+               }
+               50 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories < 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industrySIA = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = SIA
+			}
+		}
+		
+		modifier = {
+			political_power_gain = 0.5
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               10 = {
+                   country_event = eip_industry.3
+               }
+               90 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories > 1
+           }
+		}
+	}
+	
+	Eintd_heavy_industryMON = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		days_remove = 60
+		
+		days_re_enable = 30
+
+		visible = {
+			OR = {
+				original_tag = MON
+			}
+		}
+		
+		modifier = {
+			political_power_gain = 0.5
+		}
+		
+		remove_effect = {
+		  custom_effect_tooltip = decision_eip_industry_tt
+		  hidden_effect = {
+		  random_list = {
+               40 = {
+                   country_event = eip_industry.3
+               }
+               60 = {
+                   country_event = al_lb.1
+               }
+           }
+		  } 
+		}
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+             add = 5
+             num_of_military_factories > 1
+           }
+		}
+	}

@@ -1,0 +1,88 @@
+axis = {
+    track = operations
+    name = SUBDOCTRINE_axis
+    description = SUBDOCTRINE_axis_DESC
+    icon = GFX_doctrine_defensive_postures_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+		OR = {
+			original_tag = GER
+			original_tag = HUN
+			original_tag = ROM
+			original_tag = BUL
+			original_tag = SPR
+			original_tag = EFR
+		}
+    }
+	
+	visible = {
+		OR = {
+			original_tag = GER
+			original_tag = HUN
+			original_tag = ROM
+			original_tag = BUL
+			original_tag = SPR
+			original_tag = EFR
+		}
+	}
+	
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 95
+            OR = {
+            original_tag = ENG
+            original_tag = AST
+            original_tag = NZL
+            original_tag = CAN
+            original_tag = SAF
+            original_tag = ITA
+            }
+        }
+    }
+
+    #OTHER BASE REWARDS
+    category_army = {
+        maximum_speed = 0.05
+    }
+
+    rewards = {
+        improvised_fighting_position = {
+            category_army = {
+				breakthrough = 0.15
+				supply_consumption = 0.02
+			}
+        }
+        elastic_operations = {
+            category_army = {
+                max_organisation = 10
+                hard_attack = 0.075
+            }
+        }
+        developed_trench_networking = {
+            category_army = {
+				max_strength = 0.15
+            }
+        }
+        field_emplacements = {
+            category_tanks = {
+                soft_attack = 0.1
+				hard_attack = 0.15
+				ap_attack = 0.05
+            }
+        }
+        field_construction_training = {
+            infantry = {
+				forest = {
+					attack = 0.1
+					defence = 0.1
+					movement = 0.1
+				}
+			}
+        }
+
+    }
+}

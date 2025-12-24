@@ -7,7 +7,8 @@ state=
 	history=
 	{
 		owner = USA
-		add_core_of = GUM
+		set_state_flag = USA_controls
+		add_core_of = HAW
 		buildings = {
 			infrastructure = 3 #was: 5
 			12140 = {
@@ -16,18 +17,11 @@ state=
 		}
 		victory_points = {
 			12140 1
-		}
-
-		strategic_province_location = {
-			natural_harbor = 12140
-		}
-		strategic_state_location = {
-			favorable_approach = 12140
-		}
+		 }
 
 	}
 	provinces={
-		12140
+		8255 10944 10965 12140
 	}
 
 	local_supplies=0.0 

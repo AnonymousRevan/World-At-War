@@ -3,12 +3,12 @@ state = {
 	id = 569
 	name = "STATE_569" # Khakassia
 	manpower = 1567322
-
-	resources = {
-		coal = 16 #initial distirbution
-	}
 	
 	state_category = town
+
+	resources = {
+		coal = 32 #initial distirbution
+	}
 
 	history = {
 		owner = SOV
@@ -18,15 +18,15 @@ state = {
 		}
 		add_core_of = SOV
 		add_core_of = KHA
-		victory_points = {
-			7757 1
-		}
-		victory_points = {
-			7822 1
-		}
-		victory_points = {
-			10580 2
-		}
+#		victory_points = {
+#			7757 1
+#		}
+#		victory_points = {
+#			7822 1
+#		}
+#		victory_points = {
+#			10580 2
+#		}
 	}
 
 	provinces = {

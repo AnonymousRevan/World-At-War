@@ -4,15 +4,19 @@ state={
 	manpower = 444290
 
 	state_category = rural
+	
+	resources={
+		oil=55
+	}
 
 	history={
-		add_core_of = GDL
+		add_core_of = SEN
 		owner = FRA
 		victory_points = {
 			9377 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			air_base = 1
 			177 = {
 				naval_base = 3

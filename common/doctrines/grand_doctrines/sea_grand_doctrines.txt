@@ -8,7 +8,7 @@ new_fleet_in_being = {
         always = yes
     }
 
-    xp_cost = 100
+    xp_cost = 25
     xp_type = navy
 
     ai_will_do = {
@@ -20,6 +20,7 @@ new_fleet_in_being = {
         screens
         carriers
         capital_ships
+		Naval_operations
     }
 
     # EFFECTS
@@ -31,8 +32,7 @@ new_fleet_in_being = {
     milestones = {
         {
             #Capital Ships
-			mines_planting_by_fleets_factor = 0.2
-			convoy_escort_efficiency = 0.15
+			convoy_escort_efficiency = 0.2
             effect = {
                 if = {
                     limit = {
@@ -102,6 +102,26 @@ new_fleet_in_being = {
                 }
             }
         }
+		{
+            #Naval_operations
+	        navy_capital_ship_defence_factor = 0.1
+			naval_strike_targetting_factor = 0.05
+			strike_force_movement_org_loss = -0.05
+
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = submarines_milestone_var
+                        }
+                    }
+                    set_variable = { submarines_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { submarines_milestone_var = 1 }
+                }
+            }
+        }
     }
 }
 
@@ -115,7 +135,7 @@ new_convoy_raiding = {
         always = yes
     }
 
-    xp_cost = 100
+    xp_cost = 25
     xp_type = navy
 
     ai_will_do = {
@@ -132,6 +152,7 @@ new_convoy_raiding = {
         screens
         carriers
         capital_ships
+		Naval_operations
     }
 
     # EFFECTS
@@ -220,6 +241,24 @@ new_convoy_raiding = {
                 }
             }
         }
+		{
+            #Naval_operations
+			convoy_raiding_efficiency_factor = 0.15
+
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = submarines_milestone_var
+                        }
+                    }
+                    set_variable = { submarines_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { submarines_milestone_var = 1 }
+                }
+            }
+        }
     }
 }
 
@@ -233,7 +272,7 @@ new_base_strike = {
         always = yes
     }
 
-    xp_cost = 100
+    xp_cost = 25
     xp_type = navy
 
     ai_will_do = {
@@ -245,6 +284,7 @@ new_base_strike = {
         screens
         carriers
         capital_ships
+		Naval_operations
     }
 
     # EFFECTS
@@ -317,6 +357,24 @@ new_base_strike = {
 	        sortie_efficiency = 0.30
 			naval_strike_targetting_factor = 0.1
 			navy_carrier_air_agility_factor = 0.10
+
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = submarines_milestone_var
+                        }
+                    }
+                    set_variable = { submarines_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { submarines_milestone_var = 1 }
+                }
+            }
+        }
+		{
+            #Naval_operations
+			naval_strike_targetting_factor = 0.05
 
             effect = {
                 if = {

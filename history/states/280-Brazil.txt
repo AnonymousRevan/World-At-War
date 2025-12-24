@@ -2,6 +2,9 @@
 state={
 	id=280
 	name="STATE_280"
+	manpower= 120000
+	impassable = yes
+	state_category = pastoral
 
 	history={
 		owner = BRA
@@ -17,10 +20,10 @@ state={
 	}
 
 	provinces={
-		2111 2142 2181 2204 8175 8189 10959 11010 
+		2142 2147 2204 8175 11010 12939 
 	}
-	manpower=120000
+
 	buildings_max_level_factor=1.000
-	state_category=pastoral
-	local_supplies=0.000
+
+	local_supplies=0.0 
 }

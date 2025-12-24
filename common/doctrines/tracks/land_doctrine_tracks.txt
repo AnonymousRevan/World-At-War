@@ -40,6 +40,8 @@ armor = {
         }
         sub_units = {
             armored_car
+			motorized
+			mechanized
         }
     }
 }

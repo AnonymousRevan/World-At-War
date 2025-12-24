@@ -1,37 +1,42 @@
 ﻿division_template = {
-	name = "Infanteridivisjon"		
+	name = "Infanteriet Divisjon"		
 	division_names_group = NOR_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }		
 	}
 	support = {
-		engineer = { x = 0 y = 0 }  
-	}
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 1 y = 0 } 
+		recon = { x = 0 y = 1 } 	
+		pack_artillery = { x = 1 y = 1 }  
+	}			 
 }
 division_template = {
-	name = "Binærdivisjon"		
+	name = "Binær Divisjon"		
 	division_names_group = NOR_INF_01
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+  
+		light_infantry = { x = 1 y = 1 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }
-	}
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 0 }								  						  
+	}			 
 }
 division_template = {
 	name = "Dragonregiment" 
@@ -41,22 +46,23 @@ division_template = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
-	}
+	}			 
 }
 
-
+#### OOB ####
 units = {
 	######## LAND UNITS ########
 	##### Kongelige Norwegan Overkommando #####
+
 	division = { # "1. Divisjon"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 6115
-		division_template = "Infanteridivisjon"
+		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.95
 
 	}
 	division = {
@@ -64,7 +70,7 @@ units = {
 		location = 6115
 		division_template = "Dragonregiment"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 
@@ -74,9 +80,9 @@ units = {
 				name_order = 2
 		}
 		location = 9157
-		division_template = "Binærdivisjon"
+		division_template = "Binær Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 	division = {
@@ -84,7 +90,7 @@ units = {
 		location = 9157
 		division_template = "Dragonregiment"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 
@@ -94,9 +100,9 @@ units = {
 				name_order = 3
 		}
 		location = 9296
-		division_template = "Binærdivisjon"
+		division_template = "Binær Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 
@@ -106,9 +112,9 @@ units = {
 				name_order = 4
 		}
 		location = 122
-		division_template = "Binærdivisjon"
+		division_template = "Binær Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 
@@ -118,9 +124,9 @@ units = {
 				name_order = 5
 		}
 		location = 3022
-		division_template = "Binærdivisjon"
+		division_template = "Binær Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 	division = {
@@ -128,7 +134,7 @@ units = {
 		location = 3022
 		division_template = "Dragonregiment"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 
@@ -138,30 +144,29 @@ units = {
 				name_order = 6
 		}
 		location = 192
-		division_template = "Binærdivisjon"
+		division_template = "Binær Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 	division = {
 		name = "Finnmark Brigaden"
 		location = 9116
-		division_template = "Binærdivisjon"
+		division_template = "Binær Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-}
+		start_equipment_factor = 0.9
+	}	
+		
+}		
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0
 			creator = "NOR"
 		}
 		requested_factories = 1
 		progress = 0.37
 		efficiency = 100
-		industrial_manufacturer = mio:NOR_kongsberg_vaapenfabrikk_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -171,6 +176,17 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.54
 		efficiency = 100
-		industrial_manufacturer = mio:NOR_norsk_spraengstofindustri_organization
+	}
+
+	############################# equipment stockpile
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 1000
+		producer = NOR
+	}
+	add_equipment_to_stockpile = {
+		type = horse_equipment_0
+		amount = 600
+		producer = NOR
 	}
 }

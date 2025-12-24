@@ -7,8 +7,8 @@ state={
 	state_category = city
 	
 	resources={
-		steel = 21 # was: 36
-		coal = 29 #initial distribution
+		steel=105 # was: 36
+		coal = 58 #initial distribution
 	}
 
 	history={
@@ -21,8 +21,9 @@ state={
 			11218 1 #Dumfries
 		}
 		buildings = {
-			infrastructure = 4 #was: 7
-			industrial_complex = 1
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 4
 			dockyard = 4
 			anti_air_building = 2
 			air_base = 3

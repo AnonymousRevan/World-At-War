@@ -2,13 +2,13 @@ state={
 	id=652
 	name="STATE_652"
 	resources={
-		steel=20.000
+		steel=100.000
 	}
 
 	history={
 		owner = SOV
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 
 		}
 		add_core_of = SOV

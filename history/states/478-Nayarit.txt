@@ -7,14 +7,14 @@ state={
 	state_category = town
 	
 	resources={
-		tungsten=8 # was: 10
 	}
 
 	history={
 		owner = MEX
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+#			industrial_complex = 3
+#			arms_factory = 1
 		}
 		add_core_of = MEX
 		victory_points = {

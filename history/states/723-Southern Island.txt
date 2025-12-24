@@ -3,17 +3,20 @@ state={
 	name="STATE_723"
 	manpower = 547198
 	resources={
-		tungsten=4 # was: 6
-		coal = 2 #initial distribution
+		tungsten=20 # was: 6
+		coal = 4 #initial distribution
 	}
 
 	state_category = rural
 
 
 	history={
-		owner = NZL
+		owner = AST
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 5
+			dockyard = 2
 			air_base = 1
 			2197 = {
 				naval_base = 1

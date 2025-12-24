@@ -2,25 +2,21 @@ state={
 	id=229
 	name="STATE_229"
 	resources={
-		oil=70 # was: 126.000
+		oil= 150
 	}
 
 	history={
 		owner = SOV
 		victory_points = {
-			7661 10 
-		}
-		victory_points = {
-			11674 1 
+			7661 5
 		}
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 4
+			industrial_complex = 6
 			fuel_silo = 1
 			air_base = 1
 		}
 		add_core_of = SOV
-		add_core_of = AZR
 
 	}
 

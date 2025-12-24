@@ -7,13 +7,14 @@ state={
 
 	history={
 		owner = JAP
+		set_state_flag = JAP_controls
 		add_core_of = FSM
 		buildings = {
 			infrastructure = 2
 			air_base = 3
 			2489 = {
-				naval_base = 6
-				coastal_bunker = 5
+				naval_base = 4
+				coastal_bunker = 4
 			}
 			13028 = {
 				naval_base = 1
@@ -42,14 +43,8 @@ state={
 		}
 		victory_points = {
 			13028 1 
-		}		
-		strategic_province_location = {
-			natural_harbor = 2489
 		}
-		
-		strategic_state_location = {
-			favorable_approach = 13031
-		}
+
 	}
 
 	provinces={

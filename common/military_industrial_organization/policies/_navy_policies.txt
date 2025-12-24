@@ -4,7 +4,7 @@ mio_policy_navy_welding_specialists = {
 		OR ={
 			has_mio_equipment_type = capital_ship
 			has_mio_equipment_type = screen_ship
-			has_mio_equipment_type = ship_hull_submarine
+			has_mio_equipment_type = submarine
 			has_mio_equipment_type = carrier
 			has_mio_equipment_type = mio_cat_eq_all_carrier
 			has_mio_equipment_type = mio_cat_eq_all_cruiser
@@ -15,7 +15,7 @@ mio_policy_navy_welding_specialists = {
 	available = { has_mio_size > 5}
 	production_bonus = {
 		same_as_mio = {
-			production_cost_factor = -0.05
+			production_capacity_factor = 0.06
 		}
 	}
 }
@@ -26,7 +26,7 @@ mio_policy_navy_space_efficient_design = {
 		OR ={
 			has_mio_equipment_type = capital_ship
 			has_mio_equipment_type = screen_ship
-			has_mio_equipment_type = ship_hull_submarine
+			has_mio_equipment_type = submarine
 			has_mio_equipment_type = carrier
 			has_mio_equipment_type = mio_cat_eq_all_carrier
 			has_mio_equipment_type = mio_cat_eq_all_cruiser
@@ -36,11 +36,12 @@ mio_policy_navy_space_efficient_design = {
 	}
 	available = { has_mio_size > 5}
 	equipment_bonus = {
+	
 		ship_hull_carrier = {
-			carrier_size = 1
+			max_strength = 0.15
 		}
 		same_as_mio = {
-			naval_range = 0.25
+			naval_range = 0.15
 		}
 	}
 }
@@ -51,6 +52,7 @@ mio_policy_navy_stable_platforms = {
 		OR ={
 			has_mio_equipment_type = capital_ship
 			has_mio_equipment_type = screen_ship
+			has_mio_equipment_type = submarine
 			has_mio_equipment_type = carrier
 			has_mio_equipment_type = mio_cat_eq_all_carrier
 			has_mio_equipment_type = mio_cat_eq_all_cruiser
@@ -61,8 +63,9 @@ mio_policy_navy_stable_platforms = {
 	available = { has_mio_size > 5}
 	equipment_bonus = {
 		same_as_mio = {
-			naval_light_gun_hit_chance_factor = 0.1
-			naval_heavy_gun_hit_chance_factor = 0.1
+			lg_attack = 0.05
+			hg_attack = 0.05
+			anti_air_attack = 0.1
 		}
 	}
 }
@@ -73,7 +76,7 @@ mio_policy_navy_great_sea_keeping  = {
 		OR ={
 			has_mio_equipment_type = capital_ship
 			has_mio_equipment_type = screen_ship
-			has_mio_equipment_type = ship_hull_submarine
+			has_mio_equipment_type = submarine
 			has_mio_equipment_type = carrier
 			has_mio_equipment_type = mio_cat_eq_all_carrier
 			has_mio_equipment_type = mio_cat_eq_all_cruiser
@@ -84,19 +87,41 @@ mio_policy_navy_great_sea_keeping  = {
 	available = { has_mio_size > 5}
 	equipment_bonus = {
 		same_as_mio = {
-			naval_weather_penalty_factor = -0.5
+			naval_weather_penalty_factor = -0.25
 		}
 	}
 }
 
- 	
+mio_policy_navy_Modern_RAD_FC = {
+	icon = GFX_mio_policy_coastal_battlefleet
+	allowed = {
+		OR ={
+			has_mio_equipment_type = capital_ship
+			has_mio_equipment_type = screen_ship
+			has_mio_equipment_type = submarine
+			has_mio_equipment_type = carrier
+			has_mio_equipment_type = mio_cat_eq_all_carrier
+			has_mio_equipment_type = mio_cat_eq_all_cruiser
+			has_mio_equipment_type = mio_cat_eq_all_destroyer
+			has_mio_equipment_type = mio_cat_eq_all_battleship
+		}
+	}
+	available = { has_mio_size > 7}
+	equipment_bonus = {
+		same_as_mio = {
+			naval_light_gun_hit_chance_factor = 0.10
+			naval_heavy_gun_hit_chance_factor = 0.10
+		}
+	}
+}
+
 mio_policy_navy_coastal_battlefleet = {
 	icon = GFX_mio_policy_coastal_battlefleet
 	allowed = {
 		OR ={
 			has_mio_equipment_type = capital_ship
 			has_mio_equipment_type = screen_ship
-			has_mio_equipment_type = ship_hull_submarine
+			has_mio_equipment_type = submarine
 			has_mio_equipment_type = carrier
 			has_mio_equipment_type = mio_cat_eq_all_carrier
 			has_mio_equipment_type = mio_cat_eq_all_cruiser
@@ -107,8 +132,8 @@ mio_policy_navy_coastal_battlefleet = {
 	available = { has_mio_size > 5}
 	equipment_bonus = {
 		same_as_mio = {
-			build_cost_ic = -0.1
-			naval_range = -0.25
+			build_cost_ic = -0.25
+			naval_range = -0.5
 		}
 	}
 }

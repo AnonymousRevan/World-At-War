@@ -2,15 +2,16 @@ state={
 	id=521
 	name="STATE_521"
 	resources={
-		tungsten=24.000
-		coal = 4 #initial distribution
+		tungsten= 140
+		coal = 8 #initial distribution
 	}
 
 	history={
 		owner = AST
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 5
 			air_base = 1
 			7564 = {
 				naval_base = 2

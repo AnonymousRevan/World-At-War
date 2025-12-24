@@ -8,12 +8,14 @@ state={
 	manpower = 1335010
 	resources={
 		oil=41 # was: 58
+		steel = 50
+		tungsten = 20
 	}
 
 	history={
 		owner = VEN
 		buildings = {
-			infrastructure = 2
+			infrastructure = 5
 			arms_factory = 1
 			industrial_complex = 5
 			air_base = 2

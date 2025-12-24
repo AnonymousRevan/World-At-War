@@ -243,7 +243,7 @@ ideas = {
 			removal_cost = -1
 			picture = chi_war_of_resistance3
 			modifier = {
-				war_support_factor = -0.1
+				war_support_factor = 0.05
 				stability_factor = -0.1
 			}
 		}
@@ -344,10 +344,10 @@ ideas = {
 			}
 
 			modifier = {
-				join_faction_tension = -0.5
+				lend_lease_tension = -0.5
 				send_volunteers_tension = -0.5
-				send_volunteer_size = 3
-				air_volunteer_cap = 2
+				send_volunteer_size = 6
+				air_volunteer_cap = 6
 			}
 		}
 
@@ -423,6 +423,7 @@ ideas = {
 				consumer_goods_factor = 0.1
 				production_speed_buildings_factor = 0.15
 				industrial_capacity_factory = 0.1
+				local_resources_factor = 0.05
 			}
 		}
 
@@ -441,6 +442,7 @@ ideas = {
 				stability_factor = 0.05
 				consumer_goods_factor = -0.1
 				#political_power_factor = -0.05
+				local_resources_factor = 0.05
 			}
 		}
 
@@ -725,10 +727,11 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.05
 				production_factory_max_efficiency_factor = 0.05
 				industrial_capacity_factory = 0.05
 				research_speed_factor = 0.02
+				local_resources_factor = 0.1
 			}
 		}
 
@@ -949,29 +952,6 @@ ideas = {
 	tank_manufacturer = {
 		designer = yes
 
-
-		BRA_fiat_company = {
-			picture = fiat
-			
-			allowed = {
-				has_dlc = "Trial of Allegiance"
-				original_tag = BRA
-			}
-
-			available = {
-				has_completed_focus = BRA_italian_trucks
-			}
-			research_bonus = {
-				motorized_equipment = 0.15
-				armor = 0.15
-			}
-			
-			traits = { fast_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-
 	 	BRA_bernadini_manufacturer = {
 		 	picture =  BRA_bernardini
 		 	allowed = {	
@@ -1036,47 +1016,6 @@ ideas = {
 			
 			traits = { light_aircraft_manufacturer }
 		}
-
-		ARG_BRA_mig = {
-
-			name = mig_design_bureau
-
-			picture = mig_design_bureau
-
-			allowed = {
-				OR = {
-					original_tag = BRA
-					original_tag = ARG
-				}
-				has_dlc = "Trial of Allegiance"
-			}
-
-
-			available = {
-				OR = {
-					AND = {
-						FROM = { original_tag = ARG }
-						FROM = { has_completed_focus = ARG_russian_manufacturers }
-					}
-
-					AND = {
-
-						FROM = { original_tag = BRA }
-						FROM = { has_completed_focus = BRA_soviet_arms_industry }
-					}
-				}
-
-			}
-
-			research_bonus = {
-				air_equipment = 0.15
-			}
-
-			traits = { light_aircraft_manufacturer }
-
-			modifier = {
-			}
-		}
 	}
 	naval_manufacturer = {
 		designer = yes
@@ -1109,92 +1048,11 @@ ideas = {
 
 			traits = { convoy_escort_naval_manufacturer }
 		}
-
-		SOV_ARG_BRA_rubin_design_bureau_manufacturer = {
-
-			picture = SOV_rubin_design_bureau
-
-			allowed = {
-				OR = {
-					original_tag = ARG
-					original_tag = BRA
-				}
-				has_dlc = "Trial of Allegiance"
-			}
-
-			visible = {
-				OR = {
-					original_tag = ARG
-					original_tag = BRA
-				}
-			}
-
-			available = {
-				OR = {
-					AND = {
-						original_tag = ARG
-						has_completed_focus = ARG_russian_manufacturers
-					}
-					AND = {
-						original_tag = BRA 
-						has_completed_focus = BRA_soviet_arms_industry
-					}
-				}
-			}
-
-			research_bonus = {
-				naval_equipment = 0.15
-			}
-
-			traits = { raiding_fleet_naval_manufacturer }
-
-			modifier = {
-			}
-		}
-
-
 	}
 
 	materiel_manufacturer = {
 
 		designer = yes
-
-		SOV_BRA_ARG_gaz = {
-			name = gaz
-
-			picture = gaz
-
-			 allowed = {
-				OR = {
-					original_tag = ARG
-					original_tag = BRA
-				}
-				has_dlc = "Trial of Allegiance"
-			}
-			available = {
-				OR = {
-					AND = {
-						original_tag = ARG
-						has_completed_focus = ARG_russian_manufacturers
-					}
-
-					AND = {
-						original_tag = BRA
-						has_completed_focus = BRA_soviet_arms_industry
-					}
-				}
-			}
-
-			research_bonus = {
-				motorized_equipment = 0.15
-				mot_rockets = 0.50
-			}
-
-			traits = { motorized_equipment_manufacturer }
-
-			modifier = {
-			}
-		}
 
 		BRA_ford_motor_company = {
 			

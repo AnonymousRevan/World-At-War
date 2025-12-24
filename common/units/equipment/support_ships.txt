@@ -3,24 +3,24 @@ equipments = {
 	support_ship_hull = {
 		year = 1936
 
-		can_be_produced = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				NOT = {
-					has_idea = BUL_army_restrictions_aat
-				}
-			}
-			else = {
-				NOT = {
-					has_idea = BUL_army_restrictions
-				}
-			}
-		}
+#		can_be_produced = {
+#			if = {
+#				limit = {
+#					has_dlc = "Arms Against Tyranny"
+#				}
+#				NOT = {
+#					has_idea = BUL_army_restrictions_aat
+#				}
+#			}
+#			else = {
+#				NOT = {
+#					has_idea = BUL_army_restrictions
+#				}
+#			}
+#		}
 
 		is_archetype = yes
-		is_buildable = no
+		is_buildable = yes
 		type = support_ship
 		interface_category = interface_category_other_ships
 		#alias = support_ship
@@ -51,13 +51,12 @@ equipments = {
 		naval_range = 3000
 		
 		max_strength = 25
-		
 
 		fuel_consumption = 0
 		
 		build_cost_ic = 500
 		resources = {
-			steel = 2
+			steel = 10
 		}
 		
 		manpower = 250

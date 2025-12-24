@@ -194,6 +194,12 @@ spriteTypes = {
 		textureFile = "gfx//interface//division_designer_popup_bg.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
+	
+	spriteType = {
+		name = "GFX_big_division_designer_popup_bg"
+		textureFile = "gfx//interface//big_division_designer_popup_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
 
 	spriteType = {
 		name = "GFX_ship_designer_popup_bg"

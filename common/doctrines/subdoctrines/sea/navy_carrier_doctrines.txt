@@ -119,10 +119,7 @@ escort_carrier_support = {
     xp_type = navy
 
     available = {
-        is_special_project_completed = sp:sp_naval_escort_carrier
-    }
-    visible = {
-        has_dlc = "No Compromise, No Surrender"
+#        is_special_project_completed = sp:sp_naval_escort_carrier
     }
     
     convoy_escort_efficiency = 0.5
@@ -138,7 +135,7 @@ escort_carrier_support = {
     	}
     	civilian_hull_shapes = {
             equipment_bonus = {
-                ship_hull_escort_carrier = {
+                ship_hull_carrier_conversion_ca = {
                     surface_visibility = -0.2
                     instant = yes
                 }
@@ -146,7 +143,7 @@ escort_carrier_support = {
     	}
     	integrated_convoy_escorts = {
             equipment_bonus = {
-                ship_hull_escort_carrier = {
+                ship_hull_carrier_conversion_ca = {
                     sub_detection = 0.15
                     instant = yes
                 }
@@ -162,7 +159,7 @@ escort_carrier_support = {
     	}
     	convoy_carrier_support_groups = {
             equipment_bonus = {
-                ship_hull_escort_carrier = {
+                ship_hull_carrier = {
                     build_cost_ic = -0.1
                     instant = yes
                 }
@@ -189,13 +186,6 @@ broad_naval_support = {
     xp_type = navy
 
     available = {
-        OR = {
-            is_special_project_completed = sp:sp_naval_escort_carrier
-            is_special_project_completed = sp:sp_naval_support_ships
-        }
-    }
-    visible = {
-        has_dlc = "No Compromise, No Surrender"
     }
 
     critical_receive_chance = -0.1
@@ -216,7 +206,7 @@ broad_naval_support = {
     	}
     	escorts_in_battle = {
             equipment_bonus = {
-                escort_carrier = {
+                ship_hull_carrier_conversion_bb = {
                     lg_attack = 0.15
                     anti_air_attack = 0.1
                     lg_armor_piercing = 0.15
@@ -324,9 +314,6 @@ light_task_forces = {
     }
     available = {
         always = yes
-    }
-    visible = {
-        has_dlc = "No Compromise, No Surrender"
     }
 
 

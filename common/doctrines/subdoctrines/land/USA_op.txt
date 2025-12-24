@@ -1,0 +1,92 @@
+usa = {
+    track = operations
+    name = SUBDOCTRINE_usa
+    description = SUBDOCTRINE_usa_DESC
+    icon = GFX_doctrine_defensive_postures_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+		OR = {
+			original_tag = USA
+			original_tag = SAF
+			original_tag = AST
+			original_tag = IDR
+			original_tag = CAN
+			original_tag = FRA
+		}
+    }
+	
+	visible = {
+		OR = {
+			original_tag = USA
+			original_tag = SAF
+			original_tag = AST
+			original_tag = IDR
+			original_tag = CAN
+			original_tag = FRA
+		}
+	}
+	
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 95
+            OR = {
+            original_tag = ENG
+            original_tag = AST
+            original_tag = NZL
+            original_tag = CAN
+            original_tag = SAF
+            original_tag = ITA
+            }
+        }
+    }
+
+    #OTHER BASE REWARDS
+	supply_consumption_factor = 0.1
+	max_planning = -0.1
+    category_line_artillery = {
+        soft_attack = 0.1
+		max_strength = 0.5
+    }
+
+    rewards = {
+        improvised_fighting_position = {
+            air_cas_present_factor = 0.1
+			army_bonus_air_superiority_factor = 0.1
+        }
+        elastic_operations = {
+			category_front_line = {
+				max_organisation = 5
+				soft_attack = 0.05
+				hard_attack = 0.05
+			}
+        }
+        developed_trench_networking = {
+			category_line_artillery = {
+				breakthrough = 0.15
+				default_morale = 0.2
+				max_organisation = 3
+			}
+        }
+        field_emplacements = {
+            terrain_penalty_reduction = 0.05
+			category_special_forces = {
+				soft_attack = 0.1
+				hard_attack = 0.1
+				max_strength = 0.33
+            }
+        }
+        field_construction_training = {
+			land_reinforce_rate = 0.01
+            industrial_capacity_factory = 0.1
+			category_army = {
+				defense = 0.05
+			
+			}
+        }
+
+    }
+}

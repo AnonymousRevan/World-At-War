@@ -1,0 +1,31 @@
+ideas = {
+  country = {
+    SPR_naval_rebuild_burst = {
+      picture = GFX_goal_generic_construct_naval_dockyard
+      allowed = { always = yes }             # anyone can get it
+      removal_cost = -1                      # optional: free to remove if scripted
+      modifier = {
+        production_speed_dockyard_factor = 0.20
+        refit_speed = 0.2
+	repair_speed_factor = 0.2
+        industrial_capacity_dockyard = 0.20
+        stability_weekly = -0.002                        # -0.2% stability per week
+      }
+    }
+
+#    SPR_naval_doctrine_theorist = {
+#      picture = GFX_portrait_generic_navy_theorist   # swap for your portrait GFX if you have one
+#      cost = 150
+#      removal_cost = -1
+#      allowed = { always = yes }                      # anyone can hire (adjust if you want Spain-only)
+#      slot = theorist                                  # <-- makes it a Theorist advisor
+#
+#      # Research speed bonus for naval doctrine (15%)
+#      research_bonus = { naval_doctrine = 0.15 }
+#
+#      ai_will_do = { factor = 1 }
+#
+#	}
+
+  }
+}

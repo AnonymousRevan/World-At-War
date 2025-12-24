@@ -1,0 +1,148 @@
+ideas = {
+country = {
+		ALX_dockyard = {
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		ALX_dockyard_2 = {
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.25
+			}
+		}
+
+		ALX_construction = {
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = 0.3
+			}
+		}	
+
+		ALX_construction_2 = {
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = 0.45
+			}
+		}
+
+		ALX_production = {
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.25
+			}
+		}
+
+
+		ALX_population = {
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				monthly_population = 0.15
+			}
+		}
+		
+		ALX_lootbox_printer = {
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			on_remove = {
+				add_to_variable = {
+					var = lootboxes_owned
+					value = 1
+				}
+				add_timed_idea = {
+					idea = ALX_lootbox_printer
+					days = 365
+				}
+			}
+			modifier = {
+				
+			}
+		}	
+		
+		ALX_volunteer_corps = {
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				conscription = 0.1
+			}
+		}	
+
+		ALX_research_boon = {
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_speed_factor = 0.1
+		}		
+}
+}

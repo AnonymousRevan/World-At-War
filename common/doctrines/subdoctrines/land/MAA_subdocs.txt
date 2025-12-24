@@ -1,0 +1,86 @@
+MAA_master = {
+    track = infantry
+    name = SUBDOCTRINE_MAA_master
+    description = SUBDOCTRINE_MAA_master_DESC
+    icon = GFX_doctrine_defensive_postures_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        has_doctrine = mass_assault
+    }
+
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 95
+            OR = {
+            original_tag = ENG
+            original_tag = AST
+            original_tag = NZL
+            original_tag = CAN
+            original_tag = SAF
+            original_tag = ITA
+            }
+        }
+    }
+
+    #OTHER BASE REWARDS
+	conscription = 0.015
+    militia = {
+        default_morale = 0.15
+		maximum_speed = 0.15
+    }
+	garrison = {
+		default_morale = 0.15
+		maximum_speed = 0.15
+	}
+	infantry = {
+		default_morale = 0.05
+		maximum_speed = 0.05
+	}
+	
+    rewards = {
+        secure_the_keys = {
+            militia = {
+				breakthrough = 0.25
+				max_organisation = 8
+			}
+			garrison = {
+				breakthrough = 0.25
+				max_organisation = 5
+			}
+			infantry = {
+				breakthrough = 0.15
+				max_organisation = 3
+			}
+        }
+        ascend_from_darkness = {
+            land_night_attack = 0.15
+        }
+        rain_fire = {
+            militia = {
+				soft_attack = 0.1
+			}
+			garrison = {
+				soft_attack = 0.1
+			}
+			infantry = {
+				soft_attack = 0.05
+            }
+        }
+        unleash_the_horde = {
+            category_all_infantry = {
+                max_organisation = 8
+				max_strength = 3.0
+            }
+        }
+        skewer_the_winged_beast = {
+            anti_air = {
+                air_attack = 0.15
+			}
+        }
+		
+    }
+}

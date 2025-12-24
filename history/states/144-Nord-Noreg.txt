@@ -7,23 +7,21 @@ state = {
 	state_category = rural
 	
 	resources = {
-		steel = 6
+		steel = 40
+		chromium = 35
 	}
 
 	history = {
 		victory_points = {
-			192 5
-		}
-		victory_points = {
-			9126 1
+			192 3
 		}
 		
 		owner = NOR
 		add_core_of = NOR
-		add_core_of = SMI
-		
+
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			industrial_complex = 1
 			air_base = 1
 			192 = {
 				naval_base = 3

@@ -1,0 +1,280 @@
+﻿l_english:
+ al_lb.1.t:0 "Mystery Box time"
+ al_lb.1.d:0 "We love gambling we love gambling we love gambling we love gambling we love gambling we love gambling we love gambling we love gambling" 
+ al_lb.1.a:0 "Open the box"
+ 
+ al_lb.2.t:0 "Political Power Refund"
+ al_lb.2.d:0 "Look at that, you won back some PP you lost."
+ al_lb.2.a:0 "Okay"
+ 
+ al_lb.3.t:0 "Propoganda Box"
+ al_lb.3.d:0 "inspiring war propoganda posters which rallied your people."
+ al_lb.3.a:0 "Okay"
+ 
+ al_lb.4.t:0 "Paradox MP Stability Patch"
+ al_lb.4.d:0 "secret HOI4 patch that fixed Multiplayer desyncs, this improved your game stability."
+ al_lb.4.a:0 "Okay"
+ 
+ al_lb.5.t:0 "Lootbox Duplication Glitch"
+ al_lb.5.d:0 "When you opened the Lootbox, it split into two, giving you new lootboxes to open."
+ al_lb.5.a:0 "I Love Gambling"
+ 
+ al_lb.6.t:0 "Airforce Training"
+ al_lb.6.d:0 "Your airforce has magically become better at their job. Don't ask me how that works."
+ al_lb.6.a:0 "Okay"
+ 
+ al_lb.7.t:0 "Army Training"
+ al_lb.7.d:0 "What? you can't win everytime (wins everytime.....except this time)."
+ al_lb.7.a:0 "Okay"
+ 
+ al_lb.8.t:0 "Navy Training"
+ al_lb.8.d:0 "training of your navy, it makes a very effective waterproof container."
+ al_lb.8.a:0 "Okay"
+ 
+ al_lb.9.t:0 "Military Industrial Complex"
+ al_lb.9.d:0 "The box contained a coupon to purchase American weapons."
+ al_lb.9.a:0 "I Love the Military Industrial Complex"
+ 
+ al_lb.10.t:0 "Additional Manpower"
+ al_lb.10.d:0 "Inside the box were 50,000 small men. You have decided to conscript them into the armed forces."
+ al_lb.10.a:0 "Okay"
+ 
+ al_lb.11.t:0 "Mysterious Disappearances"
+ al_lb.11.d:0 "After opening the box, people across the country began to disappear. 50,000 people vanished mysteriously before the disappearances stopped."
+ al_lb.11.a:0 "Okay"
+ 
+ al_lb.12.t:0 "Empty Box"
+ al_lb.12.d:0 "The box seller gave you an empty box. You got scammed."
+ al_lb.12.a:0 "Oh..."
+ 
+ al_lb.13.t:0 "Otherworldy Forge"
+ al_lb.13.d:0 "The box contained a strange device which seemingly transported men to an otherworldly forge. Manning this forge, you were able to gain an additional factory."
+ al_lb.13.a:0 "This Couldn't End Badly."
+ 
+ al_lb.14.t:0 "Pacifism on the Rise"
+ al_lb.14.d:0 "The box was empty and your people, seeing that you wasted military funds on a box, decided that maybe the country wasn't ready for war."
+ al_lb.14.a:0 "Okay"
+ 
+ al_lb.15.t:0 "New DLC Drop"
+ al_lb.15.d:0 "Paradox added a new DLC which broke game balance, this will affect you negatively."
+ al_lb.15.a:0 "Okay"
+ 
+ al_lb.16.t:0 "Inexplicable Growth"
+ al_lb.16.d:0 "One of our states seems to have had rapid overnight growth, turning it into a megalopolis."
+ al_lb.16.a:0 "Okay"
+ 
+ al_lb.17.t:0 "Resource Discovery"
+ al_lb.17.d:0 "Previously undiscovered Chromium deposits have been found."
+ al_lb.17.a:0 "Okay"
+ 
+ al_lb.18.t:0 "Resource Discovery"
+ al_lb.18.d:0 "Previously undiscovered Iron deposits have been found."
+ al_lb.18.a:0 "Okay"
+ 
+ al_lb.19.t:0 "Resource Discovery"
+ al_lb.19.d:0 "Previously undiscovered Aluminium deposits have been found."
+ al_lb.19.a:0 "Okay"
+ 
+ al_lb.20.t:0 "Resource Discovery"
+ al_lb.20.d:0 "Previously undiscovered Tungsten deposits have been found."
+ al_lb.20.a:0 "Okay"
+ 
+ al_lb.21.t:0 "Resource Discovery"
+ al_lb.21.d:0 "Previously undiscovered Oil deposits have been found."
+ al_lb.21.a:0 "Okay"
+ 
+ al_lb.22.t:0 "Resource Discovery"
+ al_lb.22.d:0 "How did revan get in here."
+ al_lb.22.a:0 "...How?"
+ 
+ al_lb.23.t:0 "Monty Appears"
+ al_lb.23.d:0 "Inside the Lootbox was a cat. He claimed he could lead our men in battle and we believed him. Monty, as he calls himself, is our new Field Marshal."
+ al_lb.23.a:0 "All Hail Monty"
+ 
+ al_lb.24.t:0 "Small Weapons Cache"
+ al_lb.24.d:0 "The box turned out to be a weapons cache which contained many weapons that can be utilised by our armed forces."
+ al_lb.24.a:0 "Okay"
+ 
+ al_lb.25.t:0 "Medium Weapons Cache"
+ al_lb.25.d:0 "The box turned out to be a weapons cache which contained many weapons that can be utilised by our armed forces."
+ al_lb.25.a:0 "Okay"
+ 
+ al_lb.26.t:0 "Large Weapons Cache"
+ al_lb.26.d:0 "The box turned out to be a weapons cache which contained many weapons that can be utilised by our armed forces."
+ al_lb.26.a:0 "Okay"
+ 
+ al_lb.27.t:0 "Massive Weapons Cache"
+ al_lb.27.d:0 "The box turned out to be a weapons cache which contained many weapons that can be utilised by our armed forces."
+ al_lb.27.a:0 "Okay"
+ 
+ al_lb.28.t:0 "Meteor Strikes"
+ al_lb.28.d:0 "A meteor has struck one of our states, many people died but we were able to begin extracting considerable numbers of resources from the meteor."
+ al_lb.28.a:0 "Okay"
+ 
+ al_lb.29.t:0 "Massive Political Gathering"
+ al_lb.29.d:0 "Massive numbers of people have come out in support of our government, increasing our popularity accross the country."
+ al_lb.29.a:0 "Okay"
+ 
+ al_lb.30.t:0 "Political Support Growing"
+ al_lb.30.d:0 "The people have begun to express their support for the government."
+ al_lb.30.a:0 "Okay"
+ 
+ al_lb.31.t:0 "Criticism of the Government"
+ al_lb.31.d:0 "People have begun protesting against the government, calling out its unfair policies."
+ al_lb.31.a:0 "Okay"
+ 
+ al_lb.32.t:0 "Paradox Optimises Game Code"
+ al_lb.32.d:0 "Paradox has integrated yet another optimisation mod into the base game, this has greatly improved game performance."
+ al_lb.32.a:0 "Okay"
+ 
+ al_lb.33.t:0 "Paradox Adds New Focus Trees"
+ al_lb.33.d:0 "Paradox has added new focus trees to the game, this has destroyed game performance and brought your game sessions to their knees."
+ al_lb.33.a:0 "Okay"
+ 
+ al_lb.34.t:0 "People Support War"
+ al_lb.34.d:0 "Our population has become very outspoken in recent days about their desires for war. Seeing the current state of the world, they have decided to support the government in any act of war."
+ al_lb.34.a:0 "Okay"
+ 
+ al_lb.35.t:0 "Anti-War Protests"
+ al_lb.35.d:0 "Pacifism is on the rise, the population is demanding demobilisation and feels as if war would only harm their wellbeing."
+ al_lb.35.a:0 "Okay"
+ 
+ al_lb.36.t:0 "Tank Cache"
+ al_lb.36.d:0 "The Lootbox contained a number of tanks that may be useful in the future."
+ al_lb.36.a:0 "Okay"
+ 
+ al_lb.37.t:0 "Dockyard Production Exceeeds Targets"
+ al_lb.37.d:0 "Our dockyards have had a seeming boost in production overnight, they have exceeded our quotas and are predicted to stay that way for the foreeable future."
+ al_lb.37.a:0 "Okay"
+ 
+ al_lb.38.t:0 "Dockyard Production Greatly Exceeds Targets"
+ al_lb.38.d:0 "Our dockyards have had a seeming boost in production overnight, they have greatly exceeded our quotas and are predicted to stay that way for the foreeable future."
+ al_lb.38.a:0 "Okay"
+ 
+ al_lb.39.t:0 "Construction Technology Improves"
+ al_lb.39.d:0 "New technology was found inside the box which has boosted the productivity of our construction sector."
+ al_lb.39.a:0 "Okay"
+ 
+ al_lb.40.t:0 "Construction Technology Improves"
+ al_lb.40.d:0 "New technology was found inside the box which has boosted the productivity of our construction sector."
+ al_lb.40.a:0 "Okay"
+ 
+ al_lb.41.t:0 "Construction Technology Improves"
+ al_lb.41.d:0 "New technology was found inside the box which has boosted the productivity of our construction sector."
+ al_lb.41.a:0 "Okay"
+ 
+ al_lb.42.t:0 "Supercharged Factories"
+ al_lb.42.d:0 "Our weapons factories have seen an increase in production output, this will greatly increase our ability to wage wars."
+ al_lb.42.a:0 "Okay"
+ 
+ al_lb.43.t:0 "Population Demographics Shifting"
+ al_lb.43.d:0 "The number of births per year is rapidly increasing, shifting our population demographics drastically."
+ al_lb.43.a:0 "Okay"
+ 
+ al_lb.44.t:0 "Strange Nuclear Device"
+ al_lb.44.d:0 "Searching through our stockpiles, we found a strange device that appears to emit large amounts of radiation. We theorise it could be used as a form of 'Nuclear Bomb'"
+ al_lb.44.a:0 "Okay"
+ 
+ al_lb.45.t:0 "Research Improvements"
+ al_lb.45.d:0 "The efficiency of our research is improving drastically, allowing us to research more technologies at once."
+ al_lb.45.a:0 "Okay"
+ 
+ al_lb.46.t:0 "Army Reorganisation"
+ al_lb.46.d:0 "One of our Generals has begun to exhibit new traits all of a sudden. Their new strategies are odd... but perhaps effective?"
+ al_lb.46.a:0 "Okay"
+ 
+ al_lb.47.t:0 "Navy Reorganisation"
+ al_lb.47.d:0 "One of our Admirals has begun to exhibit new traits all of a sudden. Their new strategies are odd... but perhaps effective?"
+ al_lb.47.a:0 "Okay"
+ 
+ al_lb.48.t:0 "MIO Improvements"
+ al_lb.48.d:0 "One of our military industrial organisations has received a massive growth in funding, allowing them to expand very suddenly to meet our growing military requirements."
+ al_lb.48.a:0 "Okay"
+ 
+ al_lb.49.t:0 "Economy Mobilisation"
+ al_lb.49.d:0 "Citizens are beginning to demand that we mobilise the economy further to prepare for war."
+ al_lb.49.a:0 "Okay"
+ 
+ al_lb.50.t:0 "Gradual State Growth"
+ al_lb.50.d:0 "One of our states has begun to grow, with populations rising and a slow increase in the amount of industrial space to build in."
+ al_lb.50.a:0 "Okay"
+ 
+ al_lb.51.t:0 "General Wounded"
+ al_lb.51.d:0 "One of our Generals has been injured with what they describe as a 'Skill Issue'. We should look into what this means."
+ al_lb.51.a:0 "Okay"
+ 
+ al_lb.52.t:0 "Spy Agency Growth"
+ al_lb.52.d:0 "Improvements to our Intelligence Operations have allowed the growth of our spy agency."
+ al_lb.52.a:0 "Okay"
+ 
+ al_lb.53.t:0 "Synthetic Rubber Experiments"
+ al_lb.53.d:0 "What in the Revan."
+ al_lb.53.a:0 "Okay"
+
+ al_lb.54.t:0 "Kamikaze Pilots"
+ al_lb.54.d:0 "A new tactic seems to have formed amongst our air force named 'Kamikaze'. We're not sure what this means, but it seems to be effective."
+ al_lb.54.a:0 "Okay"
+ 
+ al_lb.55.t:0 "Subjects Contribute Spies"
+ al_lb.55.d:0 "Our subjects have begun to contribute spies towards allied intelligence operations, this will greatly help our intelligence efforts."
+ al_lb.55.a:0 "Okay"
+ 
+ al_lb.56.t:0 "War of Survival"
+ al_lb.56.d:0 "To hell with justification! If our nation is at war, we will do whatever it takes to survive, even if that means invading our neutral neighbours to win."
+ al_lb.56.a:0 "Okay"
+ 
+ al_lb.57.t:0 "New Factory Opens"
+ al_lb.57.d:0 "A new factory has opened! This is a great day for our nation."
+ al_lb.57.a:0 "Why are you telling me this?"
+
+ al_lb.58.t:0 "New Factory Opens"
+ al_lb.58.d:0 "A new factory has opened! This is a great day for our nation."
+ al_lb.58.a:0 "Why are you telling me this?"
+
+ al_lb.59.t:0 "Refinery Constructed"
+ al_lb.59.d:0 "..."
+ al_lb.59.a:0 "Okay"
+
+ al_lb.60.t:0 "Air Base Approved"
+ al_lb.60.d:0 "A new air base has been approved for construction, this will allow us to field a larger, better air force."
+ al_lb.60.a:0 "Okay"
+
+ al_lb.61.t:0 "Air Defenses Online!"
+ al_lb.61.d:0 "A new anti-air emplacement has been constructed in one of our states, this will stop our enemies in their tracks."
+ al_lb.61.a:0 "Okay"
+
+ al_lb.62.t:0 "Commercialised Nuclear Power"
+ al_lb.62.d:0 "We have opened a new commercial nuclear power plant in our nation... though we may not fully understand how to use it"
+ al_lb.62.a:0 "Okay"
+
+ al_lb.63.t:0 "Nuclear Power"
+ al_lb.63.d:0 "We have opened a new nuclear plant in our nation... though we may not fully understand how to use it"
+ al_lb.63.a:0 "Okay"
+
+ al_lb.64.t:0 "Comply or Die"
+ al_lb.64.d:0 "The people of our nation have been given a simple decision. Comply or Die. No longer will resistance and unrest be tolerated in our glorious nation."
+ al_lb.64.a:0 "Okay"
+
+ al_lb.65.t:0 "Lootbox Replication Technology"
+ al_lb.65.d:0 "We have studied the technology behind 'Lootboxes' and have created a reliable way to create them ourselves. This process will be slow, however."
+ al_lb.65.a:0 "I Love Gambling"
+
+ al_lb.66.t:0 "Volunteer Corps"
+ al_lb.66.d:0 "Many of our citizens have begun to form a volunteer corps. These fighters will dedicate themselves to the cause of our nation and promise to be the first in line during times of war."
+ al_lb.66.a:0 "God Bless These Brave Men"
+
+ al_lb.67.t:0 "Research Boon"
+ al_lb.67.d:0 "Major breakthroughs in technology have been made recently, drastically changing the way our scientists approach research."
+ al_lb.67.a:0 "Great!"
+
+ al_lb.68.t:0 "Research Boon"
+ al_lb.68.d:0 "Minor breakthroughs have been made in our research labs as of late, resulting in a temporary boost in our ability to research different technologies."
+ al_lb.68.a:0 "Okay"
+
+ al_lb.69.t:0 "Event Number 69"
+ al_lb.69.d:0 ""
+ al_lb.69.a:0 "Nice"
+
+ al_lb.70.t:0 "Gambling Economy"
+ al_lb.70.d:0 "Many of our citizens have begun to resort to gambling instead of interacting with any traditional form of economy. Our leaders, after lengthy discussion, have decided to adopt it as our official economy. Citizens will now be required to gamble in order to live and thrive in our glorious nation."
+ al_lb.70.a:0 "WE LOVE GAMBLING"

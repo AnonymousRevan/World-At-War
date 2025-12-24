@@ -3316,3 +3316,15 @@ soundeffect = {
 	fade_out = 0.40
 	volume = 0.70
 }
+
+### NORA's sound Effects Stuff ###
+soundeffect =
+{
+	name = "Nora_Stalingrad_Massengrab"
+	volume = 0.35
+	sounds = {
+		sound = "Nora_Stalingrad_Massengrab"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}

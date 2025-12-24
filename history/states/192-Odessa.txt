@@ -12,8 +12,8 @@ state = {
 			11670 10 
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 1
+			infrastructure = 5
+			industrial_complex = 2
 			air_base = 6
 			11670 ={
 				naval_base = 3
@@ -22,11 +22,6 @@ state = {
 		}
 		add_core_of = SOV
 		add_core_of = UKR
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 2
-			}
-		}
 	}
 
 	provinces = {

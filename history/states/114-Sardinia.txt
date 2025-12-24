@@ -3,14 +3,15 @@ state = {
 	name = "STATE_114"
 	manpower = 991921
 	
-	resources = {
-		coal = 1 # initial distribution
-	}
-
 	state_category = town
+
+	resources = {
+		coal = 5 # initial distribution
+	}
 	
 	history = {
 		owner = ITA
+		set_state_flag = GER_atlantikwall
 		victory_points = {
 			11773 3 
 		}
@@ -18,8 +19,8 @@ state = {
 			9772 2 
 		}
 		buildings = {
-			infrastructure = 3
-			arms_factory = 0
+			infrastructure = 5
+			arms_factory = 1
 			industrial_complex = 1
 			air_base = 5
 			11773 = {

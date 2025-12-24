@@ -1,0 +1,76 @@
+propaganda_efforts = {
+	mastery_gain_land = {
+
+		icon = GFX_decision_generic_factory
+		
+		available = {
+			has_army_experience > 150
+		}
+		
+		visible = {
+			NOT = {
+				original_tag = SOV
+			}
+		}
+		days_remove = 180
+		
+		days_re_enable = 90
+		
+		modifier = {
+			land_mastery_gain_factor = 0.25
+		}
+		complete_effect = {
+			army_experience = -150
+		}
+	}
+	
+	mastery_gain_navy = {
+
+		icon = GFX_decision_generic_factory
+		
+		available = {
+			has_navy_experience > 150
+		}
+		
+		visible = {
+			NOT = {
+				original_tag = SOV
+			}
+		}	
+		days_remove = 180
+		
+		days_re_enable = 90
+		
+		modifier = {
+			naval_mastery_gain_factor = 0.25
+		}
+		complete_effect = {
+			navy_experience = -150
+		}
+	}
+	
+	mastery_gain_air = {
+
+		icon = GFX_decision_generic_factory
+		
+		available = {
+			has_air_experience > 150
+		}
+		
+		visible = {
+			NOT = {
+				original_tag = SOV
+			}
+		}
+		days_remove = 180
+		
+		days_re_enable = 90
+		
+		modifier = {
+			air_mastery_gain_factor = 0.25
+		}
+		complete_effect = {
+			air_experience = -150
+		}
+	}
+	

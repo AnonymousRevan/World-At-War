@@ -1,12 +1,15 @@
 state_categories={
 	tiny_island = {
-		local_building_slots = 0
-	
-    buildings_max_level = {
-        naval_base = 3
-        air_base = 2
-    }
+		local_building_slots = 3
+		local_supplies = -0.15
+		color = { 40 40 40 }
 
-			color = { 40 40 40 }
+	    buildings_max_level = {
+			infrastructure = 5
+        	naval_base = 3
+        	air_base = 3
+			bunker = 4
+			coastal_bunker = 5
+    	}
 	}
 }

@@ -10,19 +10,13 @@ state={
 		owner = BRA
 		add_core_of = BRA
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 6
 			arms_factory = 2
-			industrial_complex = 4
+			industrial_complex = 6
 			dockyard = 2
 			air_base = 7
 			10980 = {
 				naval_base = 7
-                landmark_cristo_redentor = {
-                    level = 1
-                    allowed = {
-                        has_dlc = "Gotterdammerung"
-                    }
-                }
 			}
 		}
 		victory_points = {

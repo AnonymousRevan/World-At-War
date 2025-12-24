@@ -3,8 +3,8 @@ state={
 	name="STATE_719" # Natal
 	manpower = 3962157
 	resources={
-		chromium=60 # was: 116
-		coal = 4 #initial distribution
+		chromium= 240 # was: 300
+		coal = 8 #initial distribution
 	}
 	
 	state_category = city
@@ -13,8 +13,9 @@ state={
 	history={
 		owner = SAF
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 2
+			infrastructure = 5
+			arms_Factory = 4
+			industrial_complex = 9
 			air_base = 1
 			1468 = {
 				naval_base = 2

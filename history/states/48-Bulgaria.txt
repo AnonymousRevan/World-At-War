@@ -4,8 +4,9 @@ state={
 	name="STATE_48"
 	manpower = 1685989
 	resources={
-		aluminium = 2
-		coal = 1 #initial distribution
+		aluminium = 10
+		steel = 30
+		coal = 4 #initial distribution
 	}
 	
 	
@@ -20,7 +21,8 @@ state={
 			9771 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 5
+			arms_factory = 5
 			industrial_complex = 6
 			air_base = 3
 		}

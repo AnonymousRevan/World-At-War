@@ -1,16 +1,16 @@
-﻿capital = 525 # Seoul/Keijō/Gyeongseong
-
+﻿capital = 525 #South Korea - Seoul or Busan
+set_research_slots = 5
 oob = "KOR_1936"
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
-	tech_trucks = 1
+################# infantry ###############
+	
+	infantry_weapons = 1  fuel_silos = 1 field_equipment = 1
+	
 }
 
-set_grand_doctrine = mass_assault
-
-set_convoys = 5
+set_convoys = 25
 
 set_politics = {
 	ruling_party = democratic
@@ -25,11 +25,46 @@ set_popularities = {
 	neutrality = 10
 }
 
-recruit_character = KOR_jiro_minami
-recruit_character = KOR_syngman_rhee
-recruit_character = KOR_lyuh_woon_hyung
-recruit_character = KOR_yi_kang
-recruit_character = KOR_kim_il_sung
-recruit_character = KOR_yi_un
-recruit_character = KOR_choe_hyon
-recruit_character = KOR_pak_hon_yong
+create_country_leader = {
+	name = "Syngman Rhee"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Yi Kang"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kim Il-sung"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Yi Un"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}

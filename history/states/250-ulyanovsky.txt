@@ -6,19 +6,17 @@ state={
 	
 	state_category = town
 	resources={
-		steel=14 # was: 20
+		steel=70 # was: 20
 	}
 
 	history={
 		owner = SOV
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			industrial_complex = 1
 		}
 		add_core_of = SOV
-		victory_points = {
-			392 1
-		}
+
 	}
 
 	provinces={

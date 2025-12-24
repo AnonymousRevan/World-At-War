@@ -1,0 +1,77 @@
+Soviet = {
+    track = operations
+    name = SUBDOCTRINE_SOV
+    description = SUBDOCTRINE_SOV_DESC
+    icon = GFX_doctrine_defensive_postures_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+		OR = {
+			original_tag = SOV
+		}
+    }
+	
+	visible = {
+		OR = {
+			original_tag = SOV
+		}
+	}
+	
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 95
+            OR = {
+            original_tag = ENG
+            original_tag = AST
+            original_tag = NZL
+            original_tag = CAN
+            original_tag = SAF
+            original_tag = ITA
+            }
+        }
+    }
+
+    #OTHER BASE REWARDS
+	conscription = 0.05
+    category_all_infantry = {
+        entrenchment = 0.05
+		max_strength = 0.75
+    }
+
+    rewards = {
+        improvised_fighting_position = {
+            category_all_infantry = {
+				supply_consumption = -0.02
+				default_morale = 0.15
+			}
+        }
+        elastic_operations = {
+            category_front_line = {
+                defense = 0.1
+            }
+        }
+        developed_trench_networking = {
+            category_line_artillery = {
+				breakthrough = 0.15
+				maximum_speed = -0.05
+				max_strength = 0.25
+            }
+        }
+        field_emplacements = {
+            category_army = {
+                soft_attack = 0.1
+				hard_attack = 0.1
+            }
+        }
+        field_construction_training = {
+            category_front_line = {
+				max_organisation = 20
+				}
+			}
+        }
+
+    }
+}

@@ -6,11 +6,11 @@ state = {
 	
 	state_category = metropolis
 	resources = {
-		steel = 24 # was: 40
-		aluminium = 16 # was: 28
-		chromium = 2 # was: 4
-		tungsten = 1 # was: 2
-		coal = 1 # initial distribution
+		steel = 120 # was: 40
+		aluminium = 80 # was: 28
+		chromium = 10 # was: 4
+		tungsten = 5 # was: 2
+		coal = 3 # initial distribution
 	}
 
 	history = {
@@ -22,9 +22,9 @@ state = {
 			6780 5 
 		}
 		buildings = {
-			infrastructure = 4 #was: 7
-			arms_factory = 7
-			industrial_complex = 1
+			infrastructure = 7
+			arms_factory = 10
+			industrial_complex = 4
 			dockyard = 2
 			air_base = 8
 			6788 = {
@@ -38,9 +38,6 @@ state = {
 				arms_factory = 10
 				industrial_complex = 2
 				dockyard = 3
-				6788 = {
-					naval_facility = 1 # Genoa Facilities
-				}
 			}
 		}
 	}

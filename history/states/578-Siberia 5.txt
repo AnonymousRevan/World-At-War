@@ -3,12 +3,12 @@ state={
 	id=578
 	name="STATE_578" # Tomsk
 	manpower = 609304
-
-	resources = {
-		coal = 16 #initial distribution
-	}
 	
 	state_category = rural
+
+	resources = {
+		coal = 32 #initial distribution
+	}
 
 	history={
 		owner = SOV
@@ -16,9 +16,6 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = SOV
-		victory_points = {
-			7789 1
-		}
 	}
 
 	provinces={

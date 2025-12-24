@@ -30,7 +30,8 @@
 #                                      where you choose the historical division name.
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
-MEN_INF_01 = {
+MEN_INF_01 = 
+{
 	name = "Infantry Unit"
 
 	for_countries = { MEN }
@@ -46,7 +47,8 @@ MEN_INF_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		1 = { "%d Mengjiang Juntuán" }			# All fictional names
 		2 = { "%d Mengjiang Juntuán" }
 		3 = { "%d Mengjiang Juntuán" }
@@ -80,7 +82,8 @@ MEN_INF_01 = {
 	}
 }
 
-MEN_CAV_01 = {
+MEN_CAV_01 = 
+{
 	name = "Cavalry Unit"
 
 	for_countries = { MEN }
@@ -90,13 +93,14 @@ MEN_CAV_01 = {
 	division_types = { "cavalry" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { MEN_CAV_02 }
+	#link_numbering_with = { MEN_INF_01 }
 
 	fallback_name = "%d Mengjiang Qibing Jun"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		1 = { "%d Mengjiang Qibing Jun" }
 		2 = { "%d Mengjiang Qibing Jun" }
 		3 = { "%d Mengjiang Qibing Jun" }
@@ -115,42 +119,8 @@ MEN_CAV_01 = {
 	}
 }
 
-MEN_CAV_02 = {
-	name = "Cavalry Unit"
-
-	for_countries = { MEN }
-
-	can_use = { always = yes }
-
-	division_types = { "cavalry" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { MEN_CAV_01 }
-
-	fallback_name = "%d. Morit Diviz"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered = {
-		1 = { "%d. Morit Diviz" }
-		2 = { "%d. Morit Diviz" }
-		3 = { "%d. Morit Diviz" }
-		4 = { "%d. Morit Diviz" }
-		5 = { "%d. Morit Diviz" }
-		6 = { "%d. Morit Diviz" }
-		7 = { "%d. Morit Diviz" }
-		8 = { "%d. Morit Diviz" }
-		9 = { "%d. Morit Diviz" }
-		10 = { "%d. Morit Diviz" }
-		11 = { "%d. Morit Diviz" }
-		12 = { "%d. Morit Diviz" }
-		13 = { "%d. Morit Diviz" }
-		14 = { "%d. Morit Diviz" }
-		15 = { "%d. Morit Diviz" }
-	}
-}
-
-MEN_MOT_01 = {
+MEN_MOT_01 = 
+{
 	name = "Motor Unit"
 
 	for_countries = { MEN }
@@ -166,7 +136,8 @@ MEN_MOT_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		1 = { "%d Mengjiang Jidonghua Juntuán" }		
 		2 = { "%d Mengjiang Jidonghua Juntuán" }		
 		3 = { "%d Mengjiang Jidonghua Juntuán" }		
@@ -185,7 +156,8 @@ MEN_MOT_01 = {
 	}
 }
 
-MEN_MEC_01 = {
+MEN_MEC_01 = 
+{
 	name = "Mechanized Unit"
 
 	for_countries = { MEN }
@@ -201,7 +173,8 @@ MEN_MEC_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		1 = { "%d Mengjiang Jixiehua Juntuán" }				
 		2 = { "%d Mengjiang Jixiehua Juntuán" }		
 		3 = { "%d Mengjiang Jixiehua Juntuán" }		
@@ -220,14 +193,15 @@ MEN_MEC_01 = {
 	}
 }
 
-MEN_ARM_01 = {
+MEN_ARM_01 = 
+{
 	name = "Tank Unit"
 
 	for_countries = { MEN }
 
 	can_use = { always = yes }
 
-	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	division_types = { "light_armor" "medium_armor" "heavy_armor"  }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { MEN_INF_01 }
@@ -236,7 +210,8 @@ MEN_ARM_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		1 = { "%d Mengjiang Zhuangjia Shi" }
 		2 = { "%d Mengjiang Zhuangjia Shi" }
 		3 = { "%d Mengjiang Zhuangjia Shi" }
@@ -255,7 +230,8 @@ MEN_ARM_01 = {
 	}
 }
 
-MEN_PAR_01 = {
+MEN_PAR_01 = 
+{
 	name = "Parachute Unit"
 
 	for_countries = { MEN }
@@ -271,7 +247,8 @@ MEN_PAR_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		1 = { "%d Mengjiang Sanbing Shi" }
 		2 = { "%d Mengjiang Sanbing Shi" }
 		3 = { "%d Mengjiang Sanbing Shi" }
@@ -285,7 +262,8 @@ MEN_PAR_01 = {
 	}
 }
 
-MEN_MAR_01 = {
+MEN_MAR_01 = 
+{
 	name = "Marine Unit"
 
 	for_countries = { MEN }
@@ -301,7 +279,8 @@ MEN_MAR_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		1 = { "%d Mengjiang Luzhan Dui Shi" }
 		2 = { "%d Mengjiang Luzhan Dui Shi" }
 		3 = { "%d Mengjiang Luzhan Dui Shi" }
@@ -315,7 +294,8 @@ MEN_MAR_01 = {
 	}
 }
 
-MEN_MNT_01 = {
+MEN_MNT_01 = 
+{
 	name = "Mountain Unit"
 
 	for_countries = { MEN }
@@ -331,7 +311,8 @@ MEN_MNT_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		1 = { "%d Mengjiang Juntuán" }			# All fictional names
 		2 = { "%d Mengjiang Juntuán" }
 		3 = { "%d Mengjiang Juntuán" }
@@ -365,7 +346,8 @@ MEN_MNT_01 = {
 	}
 }
 
-MEN_GAR_01 = {
+MEN_GAR_01 = 
+{
 	name = "Garrison Unit"
 
 	for_countries = { MEN }
@@ -381,7 +363,8 @@ MEN_GAR_01 = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered = {
+	ordered =
+	{
 		1 = { "%d Qu Jun" }
 		2 = { "%d Qu Jun" }
 		3 = { "%d Qu Jun" }

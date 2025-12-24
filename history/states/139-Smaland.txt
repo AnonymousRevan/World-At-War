@@ -5,7 +5,7 @@ state = {
 	manpower = 390366
 	state_category = rural
 	resources = {
-		steel = 4
+		steel = 20
 	}
 
 	history = {
@@ -21,7 +21,7 @@ state = {
 			211 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 5
 			industrial_complex = 1	
 		}	
 

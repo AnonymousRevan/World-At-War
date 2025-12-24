@@ -77,7 +77,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 11948;1177;sea;2708;-1;-1;-1;-1;;Jeju-Korea
 10124;1123;sea;8499;-1;-1;-1;-1;;Okinawa 1
 1123;7115;sea;8318;-1;-1;-1;-1;;Okinawa 2
-3995;13024;sea;2855;-1;-1;-1;-1;;Saipan-Tinian
 1135;13090;sea;6471;-1;-1;-1;-1;;Amlia-Unalaska
 13090;10694;sea;6064;-1;-1;-1;-1;;Unalaska-Unimak
 10048;7195;sea;8384;-1;-1;-1;-1;;Hawaii-Maui
@@ -91,8 +90,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13027;13028;sea;2735;-1;-1;-1;-1;;Ngulu-Yap
 13029;13028;sea;2735;-1;-1;-1;-1;;Ulithi-Yap
 2489;13033;sea;7918;-1;-1;-1;-1;;Truk-Hall Islands
-13041;13044;sea;7287;-1;-1;-1;-1;;Carolines 1
-13042;13043;sea;2414;-1;-1;-1;-1;;Carolines 2
 10276;7669;sea;5263;-1;-1;-1;-1;;Tiwi-Darwin
 12910;7567;sea;5771;-1;-1;-1;-1;;Adelaide-Kangaroo Island
 4526;153;sea;2571;-1;-1;-1;-1;;Curacao-Zulia
@@ -135,16 +132,28 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7304;4360;sea;8614;-1;-1;-1;-1;;New Foundland-Strait
 5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
-2455;2431;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
+2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
-7452;7678;;-1;-1;-1;-1;-1;DARDANELLES_STRAIT;Dardanelles
 2919;2943;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz
+2998;11156;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+2998;6153;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+2998;6210;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+80;3185;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+80;6210;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+80;7;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+6098;7;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+9074;3073;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+9074;6045;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+6175;3073;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+6175;6134;impassable;-1;-1;-1;-1;-1;;Finland;;;;
+6175;7;impassable;-1;-1;-1;-1;-1;;Finland;;;;
 10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
 10910;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10910;12807;impassable;-1;-1;-1;-1;-1;;Himalayas
 12730;2098;impassable;-1;-1;-1;-1;-1;;Himalayas
 12730;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
+10810;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;8041;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;5102;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -153,13 +162,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1898;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 3989;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 1129;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
-2098;12860;impassable;-1;-1;-1;-1;-1;;Himalayas
-4210;7976;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
-4210;5009;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
-4210;10413;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
-7400;10413;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
-7909;10413;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
-7909;10776;impassable;-1;-1;-1;-1;-1;;Yunnan Mountain Chains 
 4558;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;12653;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 4558;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
@@ -216,31 +218,89 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13058;12512;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
 13058;10636;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
 13058;13066;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
-12960;13292;sea;2580;-1;-1;-1;-1;;Falklands
-7683;13293;sea;8642;-1;-1;-1;-1;;Cote Nord
-8198;13295;sea;5473;-1;-1;-1;-1;;Aysen
-13307;13296;sea;9009;-1;-1;-1;-1;;Chubut
-12954;13297;sea;5424;-1;-1;-1;-1;;Araucania
-13312;7982;sea;2919;-1;-1;-1;-1;;South Iran
-761;13315;sea;9092;-1;-1;-1;-1;;Ontario
-13196;13314;sea;9092;-1;-1;-1;-1;;Northern Quebec
-8053;10476;impassable;-1;-1;-1;-1;-1;;Paropamisus Mountains
-12788;10476;impassable;-1;-1;-1;-1;-1;;Paropamisus Mountains
-12788;10896;impassable;-1;-1;-1;-1;-1;;Paropamisus Mountains
-1995;10896;impassable;-1;-1;-1;-1;-1;;Paropamisus Mountains
-10852;7584;impassable;-1;-1;-1;-1;-1;;North Afghanistan
-10852;12248;impassable;-1;-1;-1;-1;-1;;North Afghanistan
-12877;7584;impassable;-1;-1;-1;-1;-1;;North Afghanistan
-10781;12248;impassable;-1;-1;-1;-1;-1;;North Afghanistan
-10781;12314;impassable;-1;-1;-1;-1;-1;;North Afghanistan
-10789;7916;impassable;-1;-1;-1;-1;-1;;South Afghanistan
-10789;1995;impassable;-1;-1;-1;-1;-1;;South Afghanistan
-10789;2078;impassable;-1;-1;-1;-1;-1;;South Afghanistan
-5064;2078;impassable;-1;-1;-1;-1;-1;;South Afghanistan
-1421;10184;sea;2899;-1;-1;-1;-1;;Sulu-Mindanao
-12118;1224;sea;8751;-1;-1;-1;-1;;Cebu-Samar
-5864;5838;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto Strait
--1;-1;;-1;-1;-1;-1;-1;-1 
-#Start province ID;End province ID;Adjacency type;Through province ID;Starting X position;Starting Y position;Ending X position;Ending Y position;Adjacency rule;Comment
-
-
+13228;1048;impassable;-1;-1;-1;-1;-1;;Gibraltar
+13228;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
+4135;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
+4135;7153;impassable;-1;-1;-1;-1;-1;;Gibraltar
+### Africa ###
+8157;1143;impassable;-1;-1;-1;-1;-1;;Quattara Depression
+8157;10938;impassable;-1;-1;-1;-1;-1;;Quattara Depression
+8157;13301;impassable;-1;-1;-1;-1;-1;;Quattara Depression
+8157;10952;impassable;-1;-1;-1;-1;-1;;Quattara Depression
+8157;7148;impassable;-1;-1;-1;-1;-1;;Quattara Depression
+8225;7148;impassable;-1;-1;-1;-1;-1;;Quattara Depression
+8225;10127;impassable;-1;-1;-1;-1;-1;;Quattara Depression
+8225;12930;impassable;-1;-1;-1;-1;-1;;Quattara Depression
+8225;10987;impassable;-1;-1;-1;-1;-1;;Quattara Depression
+8225;10952;impassable;-1;-1;-1;-1;-1;;Quattara Depression
+7076;8069;impassable;-1;-1;-1;-1;-1;;Agheila
+10754;8069;impassable;-1;-1;-1;-1;-1;;Agheila
+2088;1984;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+12862;1984;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+12862;2040;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+4918;2040;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+4918;4954;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+12887;4954;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+12887;2009;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+12800;2009;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+12800;13243;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+12800;13244;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+10877;13244;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+10859;13244;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+10859;13245;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+10859;8019;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+11145;8019;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+2066;8019;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+2066;13247;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+8133;13247;impassable;-1;-1;-1;-1;-1;;Ethiopian Mountain Range
+7005;12000;impassable;-1;-1;-1;-1;-1;;Gabes
+4061;11935;impassable;-1;-1;-1;-1;-1;;Kasserine
+4061;1141;impassable;-1;-1;-1;-1;-1;;Kasserine
+7992;10875;impassable;-1;-1;-1;-1;-1;;West Africa
+### Asian straits ###
+2106;12103;sea;3805;-1;-1;-1;-1;;Peleliu
+13041;13044;sea;7287;-1;-1;-1;-1;;Carolines 1
+13042;13043;sea;2414;-1;-1;-1;-1;;Carolines 2
+13030;13031;sea;1681;-1;-1;-1;-1;;Caroline Islands
+13032;13033;sea;2121;-1;-1;-1;-1;;Caroline Islands
+13046;13045;sea;7062;-1;-1;-1;-1;;Marshall Islands
+13045;1002;sea;7062;-1;-1;-1;-1;;Marshall Islands
+13044;13043;sea;7287;-1;-1;-1;-1;;Marshall Islands
+13039;13040;sea;2414;-1;-1;-1;-1;;Marshall Islands
+8253;8216;sea;2855;-1;-1;-1;-1;;Saipan
+8216;13023;sea;2855;-1;-1;-1;-1;;Saipan
+13047;12928;sea;7247;-1;-1;-1;-1;;Wake Island
+11001;12922;sea;7247;-1;-1;-1;-1;;Wake Island
+13052;12978;sea;8956;-1;-1;-1;-1;;Midway
+### More india impassible ###
+4318;12789;impassable;-1;-1;-1;-1;-1;;Mandalay Mountains
+4996;12789;impassable;-1;-1;-1;-1;-1;;Mandalay Mountains
+4996;12898;impassable;-1;-1;-1;-1;-1;;Mandalay Mountains
+4996;10863;impassable;-1;-1;-1;-1;-1;;Mandalay Mountains
+4425;10863;impassable;-1;-1;-1;-1;-1;;Mandalay Mountains
+10920;10863;impassable;-1;-1;-1;-1;-1;;Mandalay Mountains
+12363;10863;impassable;-1;-1;-1;-1;-1;;Mandalay Mountains
+4210;10863;impassable;-1;-1;-1;-1;-1;;Mandalay Mountains
+4210;7976;impassable;-1;-1;-1;-1;-1;;Mandalay Mountains
+4210;5009;impassable;-1;-1;-1;-1;-1;;Mandalay Mountains
+4210;10413;impassable;-1;-1;-1;-1;-1;;Mandalay Mountains
+7400;10413;impassable;-1;-1;-1;-1;-1;;Mandalay Mountains
+10821;5087;impassable;-1;-1;-1;-1;-1;;Mongolia Border
+10821;1970;impassable;-1;-1;-1;-1;-1;;Mongolia Border
+5042;1970;impassable;-1;-1;-1;-1;-1;;Mongolia Border
+5042;8112;impassable;-1;-1;-1;-1;-1;;Mongolia Border
+5042;4973;impassable;-1;-1;-1;-1;-1;;Mongolia Border
+### Georgian Mountain Range
+11617;11664;impassable;-1;-1;-1;-1;-1;;Georgian Range
+11617;6692;impassable;-1;-1;-1;-1;-1;;Georgian Range
+11647;6692;impassable;-1;-1;-1;-1;-1;;Georgian Range
+11647;9674;impassable;-1;-1;-1;-1;-1;;Georgian Range
+11664;9649;impassable;-1;-1;-1;-1;-1;;Georgian Range
+6674;9649;impassable;-1;-1;-1;-1;-1;;Georgian Range
+6674;685;impassable;-1;-1;-1;-1;-1;;Georgian Range
+9632;685;impassable;-1;-1;-1;-1;-1;;Georgian Range
+9632;11614;impassable;-1;-1;-1;-1;-1;;Georgian Range
+6763;7554;impassable;-1;-1;-1;-1;-1;;Georgian Range
+6763;3711;impassable;-1;-1;-1;-1;-1;;Georgian Range
+6763;1450;impassable;-1;-1;-1;-1;-1;;Georgian Range
+-1;-1;;-1;-1;-1;-1;-1;-1

@@ -237,9 +237,6 @@ coastal_defence_fleet = {
     xp_cost = 100
     xp_type = navy
 
-    visible = {
-        has_dlc = "No Compromise, No Surrender"
-    }
 
     ai_will_do = { }
 
@@ -307,13 +304,10 @@ naval_gunfire_support = {
         always = yes
     }
 
-    visible = {
-        has_dlc = "No Compromise, No Surrender"
-    }
 
     ai_will_do = { }
 
-	shore_bombardment_bonus = 0.25
+	shore_bombardment_bonus = 0.15
 	navy_fuel_consumption_factor = -0.10
 
     rewards = {
@@ -338,7 +332,7 @@ naval_gunfire_support = {
         }
 
         joint_operations= {
-        	naval_invasion_planning_bonus_speed = 0.20
+        	amphibious_invasion_defence = 0.20
         	naval_repair_support_value_factor = 0.10
     		naval_general_support_value_factor = 0.10
 
@@ -383,9 +377,6 @@ battleship_antiair_screen = {
         always = yes
     }
 
-    visible = {
-    	has_dlc = "No Compromise, No Surrender"
-    }
 
     navy_anti_air_attack_factor = 0.1
 

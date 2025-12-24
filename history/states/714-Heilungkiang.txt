@@ -1,28 +1,22 @@
 state={
 	id=714
 	name="STATE_714"
+	
+	resources = {
+		oil = 15
+		steel = 75
+		aluminium = 75
+	}
 
-	history = {
-
+	history={
 		owner = MAN
 		add_core_of = CHI
 		add_core_of = MAN
 		add_core_of = PRC
-
-		victory_points = {
-			12485 1 # Ulanhot
-		}
-
-		victory_points = {
-			7848 1 # Mohe
-		}
-
-		victory_points = {
-			1693 2 # Aihui/Heihe 
-		}
-
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
+			industrial_complex = 2
+
 		}
 
 	}

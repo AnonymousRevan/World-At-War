@@ -4,17 +4,17 @@ state={
 	name="STATE_135"
 	manpower = 941400
 
-	resources = {
-		coal = 1 #initial distribution
-	}
-
 	state_category = town
 
+	resources = {
+		coal = 2 #initial distribution
+	}
+
 	history={
-		owner = IRE
+		owner = ENG
 		buildings = {
-			infrastructure = 3 #was: 6
-			industrial_complex = 3
+			infrastructure = 6
+			industrial_complex = 1
 		}
 		victory_points = {
 			7394 5 #Cork
@@ -22,7 +22,8 @@ state={
 		victory_points = {
 			6313 1 #Limerick
 		}
-		add_core_of = IRE
+#		add_core_of = IRE
+		add_core_of = ENG
 	}
 
 	provinces={

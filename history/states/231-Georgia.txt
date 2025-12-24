@@ -5,14 +5,14 @@ state = {
 	history = {
 		owner = SOV
 		victory_points = {
-			1599 5 
+			1599 3 
 		}
 		victory_points = {
-			3653 3 
+			3653 1 
 		}
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 3
+			industrial_complex = 2
 			air_base = 3
 			3653 = {
 				naval_base = 2
@@ -22,14 +22,7 @@ state = {
 
 		}
 		add_core_of = SOV
-		add_core_of = GEO
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 2
 
-			}
-
-		}
 
 	}
 

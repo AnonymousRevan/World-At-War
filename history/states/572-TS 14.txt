@@ -4,18 +4,16 @@ state={
 	name="STATE_572" # Chelyabinsk
 	manpower = 2074932
 	
-	resources = {
-		coal = 8 # initial distribution
-	}
 	state_category = town
+
+	resources = {
+		coal = 16 # initial distribution
+	}
 
 	history={
 		owner = SOV
-		victory_points = {
-			9292 5
-		}
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 6
 			industrial_complex = 1
 
 		}

@@ -1,0 +1,45 @@
+﻿l_english:
+  SPR_navy_german_path:0 "Seek German Naval Aid"
+  SPR_navy_german_path_desc:0 "Germany’s experience with submarines and torpedoes will strengthen our navy."
+
+  SPR_navy_italian_path:0 "Seek Italian Naval Aid"
+  SPR_navy_italian_path_desc:0 "Italy’s naval tradition with capital ships will guide our battleship program."
+
+  SPR_navy_japan_path:0 "Seek Japanese Naval Aid"
+  SPR_navy_japan_path_desc:0 "Japan’s expertise in carriers and naval aviation will be invaluable to Spain’s future fleet. (plus it's a carrier mod lol)"
+
+  SPR_navy_independent_path:0 "Forge Our Own Path"
+  SPR_navy_independent_path_desc:0 "Rely on Spanish industry and seamanship. We’ll modernize without foreign strings attached. The naval meta in this mod is changing every week anyway."
+
+  SPR_import_italian_designs:0 "Purchase Littorio Designs"
+  SPR_import_italian_designs_desc:0 "We will purchase the Littorio-class designs from Italy. Our naval yards will gain expertise in building battleships, though at a cost to our military industry. Italy receives political support for this deal."
+
+  SPR_japan_aircraft_synergy:0 "Japanese Aviation Synergy"
+  SPR_japan_aircraft_synergy_desc:0 "By adopting Japan's designs, we can benefit from some throughput bonuses with absolutely no downside whatsoever."
+
+  SPR_navy_modular_construction:0 "Adopt German Modular Construction"
+  SPR_navy_modular_construction_desc:0 "By following German methods of modular shipbuilding, we can streamline naval production with modern industrial practices."
+
+  SPR_repurpose_secn_dockyards:0 "Repurpose the S.E.C.N. Dockyards"
+  SPR_repurpose_secn_dockyards_desc:0 "With Italian technical support, we will rebuild and repurpose the S.E.C.N. facilities devastated by the civil war—diverting civilian capacity to expand our naval yards and restore Spain’s shipbuilding prowess."
+
+  SPR_home_merchant_industry:0 "Grow the Home Merchant Industry"
+  SPR_home_merchant_industry_desc:0 "By investing directly into our domestic shipyards and supporting industries, we can expand our merchant marine while strengthening the foundations of our naval rearmament."
+
+  SPR_divert_reconstruction_funds:0 "Divert Reconstruction Funds"
+  SPR_divert_reconstruction_funds_desc:0 "With the civil war still fresh in memory, we can redirect portions of reconstruction funding to rapidly rebuild a modern navy. This will also unlock a standing program to periodically backdoor funds for shipyard output at the expense of political stability."
+
+  SPR_navy_rebuilds:0 "Naval Reconstruction Programs"
+  SPR_divert_cw_funds_decision:0 "Divert Reconstruction Funds to the Navy"
+  SPR_divert_cw_funds_decision_desc:0 "Authorize a short, intensive surge of shipyard activity. Results are immediate, but the political strain will erode public stability over time."
+
+  SPR_naval_rebuild_burst:0 "Naval Reconstruction Surge"
+  SPR_naval_rebuild_burst_desc:0 "Shipyard output and construction are accelerated by special appropriations, while public confidence wanes due to diverted relief funds."
+
+  SPR_divert_reconstruction_funds_decision_tt:0 "§YUnlocks Decision:§! Rebuild the Navy (Decisions tab)"
+  SPR_dusty_naval_category:0 "Dusty's Naval LARP Zone"
+
+ SPR_expand_admiralty:0 "Expand the Admiralty"
+ SPR_expand_admiralty_desc:0 "With new dockyards rising and resources flowing again, we can afford to expand our naval leadership, appointing a new generation of admirals to guide Spain’s fleet into the modern era."
+ SPR_expand_admiralty_tt:0 "New Admirals become available for command."
+

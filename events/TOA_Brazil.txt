@@ -5,118 +5,6 @@
 add_namespace = JUNO_brazil_news
 add_namespace = JUNO_brazil_events
 
-#Fascist march in state - bad
-country_event = {
-	id = JUNO_brazil_events.10
-	title = JUNO_brazil_events.10.t
-	desc = JUNO_brazil_events.10.desc
-	picture = GFX_report_event_gathering_protest
-	is_triggered_only = yes
-	option = {
-		name = JUNO_brazil_events.10.a
-		ai_chance = {
-			base = 10
-		}
-		add_popularity = { ideology = fascism popularity = 0.01 }
-		clr_country_flag = BRA_gaining_support_in_progress
-	}	
-}
-
-#Fascist march in state - average
-country_event = {
-	id = JUNO_brazil_events.11
-	title = JUNO_brazil_events.11.t
-	desc = JUNO_brazil_events.11.desc
-	picture = GFX_report_event_gathering_protest
-	is_triggered_only = yes
-	option = {
-		name =  JUNO_brazil_events.11.a
-		ai_chance = {
-			base = 10
-		}
-		add_popularity = { ideology = fascism popularity = 0.03 }
-		clr_country_flag = BRA_gaining_support_in_progress
-	}	
-}
-
-#Fascist march in state - good
-country_event = {
-	id = JUNO_brazil_events.12
-	title = JUNO_brazil_events.12.t
-	desc = JUNO_brazil_events.12.desc
-	picture = GFX_report_event_gathering_protest
-	is_triggered_only = yes
-	option = {
-		name =  JUNO_brazil_events.12.a
-		ai_chance = {
-			base = 10
-		}
-		add_popularity = { ideology = fascism popularity = 0.05 }
-		clr_country_flag = BRA_gaining_support_in_progress
-	}	
-}
-
-#MM: Never used. Not localized (title, option, desc)
-country_event = {
-	id = JUNO_brazil_events.5
-	title = JUNO_brazil_events.5.t
-	desc = JUNO_brazil_events.5.desc
-	picture = GFX_report_event_gathering_protest
-	is_triggered_only = yes
-	option = {
-		name = JUNO_brazil_events.5.a
-		ai_chance = {
-			base = 10
-		}
-		create_dynamic_country = {
-			original_tag = BRA
-			set_politics = {
-				ruling_party = neutrality
-				last_election = "1934.1.1"
-				election_frequency = 4
-				elections_allowed = no
-			}
-			set_popularities = {
-				neutrality = 60
-				democratic = 10
-				fascism = 10
-				communism = 20
-			}
-			BRA = {
-				every_owned_state = {
-					limit = {
-						is_fully_controlled_by = BRA
-						has_dynamic_modifier = {
-							modifier = BRA_cangaceiro_state
-						}
-					}
-					PREV.PREV = {
-						transfer_state = PREV
-					} 
-				}
-			}			
-		}
-	}	
-}
-
-country_event = {
-	id = JUNO_brazil_events.13
-	title = JUNO_brazil_events.13.t
-	desc = JUNO_brazil_events.13.desc
-	picture = GFX_report_event_radar_01
-	is_triggered_only = yes
-	option = {
-		name = JUNO_brazil_events.13.a
-		ai_chance = {
-			base = 10
-		}
-		add_opinion_modifier = {
-			target = FROM
-			modifier = BRA_disrupted_bolivar
-		}
-	}	
-}
-
 country_event = {
 	id = JUNO_brazil_events.14
 	title = JUNO_brazil_events.14.t
@@ -1129,11 +1017,9 @@ country_event = {
 		}
 		effect_tooltip = {
 			FROM = {
-				annex_country = { 
-					target = PREV 
-					transfer_troops = yes 
-				}
+				puppet = ROOT
 			}
+			set_cosmetic_tag = POR_const_kingdom_neutrality
 		}
 	}		
 	# Propose Portugese Commonwealth
@@ -1150,14 +1036,6 @@ country_event = {
 			modifier = {
 				factor = 0
 				has_war_with = FROM
-			}
-			modifier = {
-				factor = 10
-				has_completed_focus = POR_a_royal_wedding
-				OR = {
-					has_stability < 70
-					has_war = yes
-				}
 			}
 			modifier = {
 				factor = 0
@@ -1226,24 +1104,11 @@ country_event = {
 				}
 			}
 		}
+		puppet = FROM
 		FROM = {
-			every_owned_state = {
-				limit = {
-					is_core_of = POR
-				}
-				add_core_of = ROOT
-			}
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = POR_const_kingdom_neutrality
 		}
-		annex_country = { 
-			target = FROM
-			transfer_troops = yes
-		}
-		drop_cosmetic_tag = yes
-		set_cosmetic_tag = BRA_uk_POR
-		#FROM = {
-		#	drop_cosmetic_tag = yes
-		#	set_cosmetic_tag = POR_const_kingdom_neutrality
-		#}
 		hidden_effect = {
 			news_event = { id = JUNO_brazil_news.3 hours = 1 }
 		}
@@ -1584,10 +1449,6 @@ country_event = {
 				#elections_allowed = no
 			}
 			remove_ideas = POR_estado_novo
-			swap_ideas = {
-				remove_idea = POR_unstable_republic
-				add_idea = POR_unstable_monarchy
-			}
 			set_country_flag = KOP_kingdom_of_portugal_flag
 			set_cosmetic_tag = KOP_kingdom_portugal
 			create_country_leader = {
@@ -1938,66 +1799,11 @@ country_event = { #BRA requests tech sharing
 		name = JUNO_brazil_events.120.a 
 		ai_chance = {
 			base = 1
-			modifier = {
-				factor = 10
-				has_opinion = {
-					target = FROM
-					value > 0.5
-				}
-			}
-			modifier = {
-				factor = 100
-				is_in_faction_with = FROM
-			}
-			modifier = {
-				factor = 5
-				has_government = FROM
-			}
-			modifier = {
-				factor = 0
-				has_war_with = FROM
-			}
 		}
 		FROM = {
 			country_event = {
 				id = JUNO_brazil_events.121
 				hours = 1
-			}
-		}
-		effect_tooltip = {
-			IF = {
-				limit = {
-					FROM = {
-						has_completed_focus = BRA_us_brazil_technology_exchange
-					}
-				}
-			
-				add_to_tech_sharing_group = BRA_USA_tech_sharing_group
-				FROM = {
-					add_to_tech_sharing_group = BRA_USA_tech_sharing_group
-				}
-			}
-			IF = {
-				limit = {
-					FROM = {
-						has_completed_focus = BRA_south_american_research_cooperation
-					}
-				}
-				add_to_tech_sharing_group = BRA_south_american_tech_sharing_group
-				FROM = {
-					add_to_tech_sharing_group = BRA_south_american_tech_sharing_group
-				}
-			}
-			IF = {
-				limit = {
-					FROM = {
-						has_completed_focus = AFG_soviet_research_cooperation
-					}
-				}
-				add_to_tech_sharing_group = AFG_SOV_tech_sharing_group
-				FROM = {
-					add_to_tech_sharing_group = AFG_SOV_tech_sharing_group
-				}
 			}
 		}
 	}
@@ -2034,41 +1840,6 @@ country_event = { #USA agrees to share tech
 		name = JUNO_brazil_events.121.a 
 		ai_chance = {
 			base = 1
-		}
-		IF = {
-			limit = {
-				FROM = {
-					has_completed_focus = BRA_us_brazil_technology_exchange
-				}
-			}
-		
-			add_to_tech_sharing_group = BRA_USA_tech_sharing_group
-			FROM = {
-				add_to_tech_sharing_group = BRA_USA_tech_sharing_group
-			}
-		}
-		IF = {
-			limit = {
-				FROM = {
-					has_completed_focus = BRA_south_american_research_cooperation
-				}
-			}
-			add_to_tech_sharing_group = BRA_south_american_tech_sharing_group
-			FROM = {
-				add_to_tech_sharing_group = BRA_south_american_tech_sharing_group
-			}
-		}
-		IF = {
-			limit = {
-				FROM = {
-					tag = SOU
-				}
-				has_completed_focus = AFG_soviet_research_cooperation
-			}
-			add_to_tech_sharing_group = AFG_SOV_tech_sharing_group
-			FROM = {
-				add_to_tech_sharing_group = AFG_SOV_tech_sharing_group
-			}
 		}
 	}
 }
@@ -2631,9 +2402,6 @@ country_event = { #cangaceiro raid/spread
 		}
 		add_stability = -0.02
 		clr_country_flag = BRA_cangaceiro_small_raid_flag
-		hidden_effect = {
-			activate_mission = BRA_cangaceiro_mission
-		}
 	}
 	option = {
 		name = JUNO_brazil_events.150.b
@@ -2645,9 +2413,6 @@ country_event = { #cangaceiro raid/spread
 		}
 		add_stability = -0.05
 		clr_country_flag = BRA_cangaceiro_big_raid_flag
-		hidden_effect = {
-			activate_mission = BRA_cangaceiro_mission
-		}
 	}
 	option = {
 		name = JUNO_brazil_events.150.c
@@ -2677,9 +2442,6 @@ country_event = { #cangaceiro raid/spread
 			}
 		}
 		clr_country_flag = BRA_cangaceiro_spread_flag
-		hidden_effect = {
-			activate_mission = BRA_cangaceiro_mission
-		}
 	}
 }
 
@@ -2781,7 +2543,7 @@ country_event = {
 					original_tag = USA
 				}
 				custom_effect_tooltip = JUNO_brazil_events_160_tt
-				show_mio_tooltip = USA_marmon_herrington_organization
+				show_mio_tooltip = USA_chrysler_organization
 				show_mio_tooltip = USA_north_american_aviation_organization
 				show_mio_tooltip = USA_newport_news_shipbuilding_organization
 			}
@@ -2790,7 +2552,7 @@ country_event = {
 					original_tag = ENG
 				}
 				custom_effect_tooltip = JUNO_brazil_events_160_tt
-				show_mio_tooltip = ENG_vauxhall_organization
+				show_mio_tooltip = ENG_vauxhall_org
 				show_mio_tooltip = ENG_cammell_laird_organization
 				show_mio_tooltip = ENG_avro_organization
 			}
@@ -2802,16 +2564,6 @@ country_event = {
 				show_mio_tooltip = FRA_acf_organization
 				show_mio_tooltip = FRA_bloch_organization
 				show_mio_tooltip = FRA_renault_organization
-			}
-			IF = {
-				limit = {
-					original_tag = SWE
-				}
-				custom_effect_tooltip = JUNO_brazil_events_160_tt
-				show_mio_tooltip = SWE_saab_organization			
-				show_mio_tooltip = SWE_landsverk_organization
-				show_mio_tooltip = SWE_gotaverken_organization
-				show_mio_tooltip = SWE_scania_vabis_organization
 			}
 		}
 	}
@@ -2866,10 +2618,10 @@ country_event = {
 				set_country_flag = BRA_already_sent_mio
 			}
 			set_country_flag = has_marmon_herrington_mio_flag
-			show_mio_tooltip = USA_marmon_herrington_organization
-			mio:USA_marmon_herrington_organization = {
-				add_mio_size = 2
-			}
+			show_mio_tooltip = USA_chrysler_organization
+#			mio:USA_chrysler_organization = {
+#				add_mio_size = 2
+#			}
 		}
 		IF = {
 			limit = {
@@ -2881,10 +2633,10 @@ country_event = {
 				set_country_flag = BRA_already_sent_mio
 			}
 			set_country_flag = has_vauxhall_mio_flag
-			show_mio_tooltip = ENG_vauxhall_organization
-			mio:ENG_vauxhall_organization = {
-				add_mio_size = 2
-			}
+			show_mio_tooltip = ENG_vauxhall_org
+#			mio:ENG_vauxhall_org = {
+#				add_mio_size = 2
+#			}
 		}
 		IF = {
 			limit = {
@@ -2897,9 +2649,9 @@ country_event = {
 			}
 			set_country_flag = has_renault_mio_flag
 			show_mio_tooltip = FRA_renault_organization
-			mio:FRA_renault_organization = {
-				add_mio_size = 2
-			}
+#			mio:FRA_renault_organization = {
+#				add_mio_size = 2
+#			}
 		}
 		IF ={
 			limit = {
@@ -2912,9 +2664,9 @@ country_event = {
 			}
 			set_country_flag = has_landsverk_mio_flag
 			show_mio_tooltip = SWE_landsverk_organization
-			mio:SWE_landsverk_organization = {
-				add_mio_size = 2
-			}
+#			mio:SWE_landsverk_organization = {
+#				add_mio_size = 2
+#			}
 		}
 	}
 	# airforce
@@ -2971,21 +2723,6 @@ country_event = {
 			set_country_flag = has_bloch_mio_flag
 			show_mio_tooltip = FRA_bloch_organization
 			mio:FRA_bloch_organization = {
-				add_mio_size = 2
-			}
-		}
-		IF ={
-			limit = {
-				FROM = {
-					original_tag = SWE
-				}
-			}
-			FROM = {
-				set_country_flag = BRA_already_sent_mio
-			}
-			set_country_flag = has_saab_mio_flag
-			show_mio_tooltip = SWE_saab_organization
-			mio:SWE_saab_organization = {
 				add_mio_size = 2
 			}
 		}
@@ -3067,45 +2804,6 @@ country_event = {
 				add_mio_size = 2
 			}
 		}
-		IF ={
-			limit = {
-				FROM = {
-					original_tag = SWE
-				}
-			}
-			FROM = {
-				set_country_flag = BRA_already_sent_mio
-			}
-			set_country_flag = has_gotaverken_mio_flag
-			show_mio_tooltip = SWE_gotaverken_organization
-			mio:SWE_gotaverken_organization = {
-				add_mio_size = 2
-			}
-		}
-	}
-
-	# armored car
-	option = {
-		name = JUNO_brazil_events.161.d
-		trigger = {
-			has_dlc = "La Resistance"
-			FROM = {
-				original_tag = SWE
-			}
-		}
-		ai_chance = {
-			base = 1
-		}
-		clr_country_flag = BRA_invite_company_in_progress
-		BRA_mio_military_factory = yes
-		FROM = {
-			set_country_flag = BRA_already_sent_mio
-		}
-		set_country_flag = has_scania_vabis_mio_flag
-		show_mio_tooltip = SWE_scania_vabis_organization
-		mio:SWE_scania_vabis_organization = {
-			add_mio_size = 2
-		}		
 	}
 }
 
@@ -3235,7 +2933,6 @@ country_event = {
 				}
 				add_core_of = ROOT
 			}
-			clr_country_flag = BRA_target_which_is_currently_being_integrated
 		}
 		annex_country = {
 			target = FROM
@@ -3257,9 +2954,6 @@ country_event = {
 		name = JUNO_brazil_events.172.a
 		ai_chance = {
 			base = 1
-		}
-		FROM = {
-			clr_country_flag = BRA_target_which_is_currently_being_integrated
 		}
 		clr_country_flag = BRA_invite_country_in_progress
 	}
@@ -3313,10 +3007,6 @@ country_event = {
 				factor = 0
 				has_government = communism
 			}
-		}
-		add_timed_idea = {
-		    idea = POR_monarchists_on_the_rise
-		    days = 730
 		}
 		set_party_name = { 
 		    ideology = neutrality
@@ -3466,10 +3156,7 @@ country_event = {
 	option = {
 		name = JUNO_brazil_events.200.c
 		trigger = {
-			OR = {
 				has_completed_focus = BRA_free_speech
-				has_completed_focus = BRA_prepare_for_second_intentona
-			}
 		}
 		ai_chance = {
 			base = 0
@@ -3575,11 +3262,7 @@ country_event = {
 		has_government = democratic
 		has_completed_focus	= BRA_repeal_the_national_security_law
 		NOT = {
-			OR = {
-				has_completed_focus = BRA_romanticize_the_old_empire
 				has_completed_focus = BRA_tribunal_de_seguranca_nacional
-				has_completed_focus = BRA_launch_the_revolution
-			}
 		}
 	}
 
@@ -3717,3 +3400,226 @@ news_event = {
 	}
 }
 
+#Purchase old ships generic decision events (Moved from BBA file)
+
+# FROM wants to purcahse old ships
+country_event = {
+	id = generic_purchase_ships_events.01
+	title = generic_purchase_ships_events.01.t
+	desc = generic_purchase_ships_events.01.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_merchant_ship_01
+	# Yes
+	option = {
+		name = generic_purchase_ships_events.01.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 50
+				is_in_faction_with = FROM
+			}
+			modifier = {
+				add = 50
+				has_same_ideology = yes
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 10
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = FROM
+					value > 40
+				}
+			}
+			modifier = {
+				add = 30
+				has_opinion = {
+					target = FROM
+					value > 80
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = { 
+					has_war_with = FROM
+					has_civil_war = yes
+					has_capitulated = yes
+					has_opinion = {
+						target = FROM
+						value < 0
+					}
+				}
+			}
+		}
+		add_offsite_building = { type = industrial_complex  level = 1 }
+		FROM = {
+			country_event = {
+				id = generic_purchase_ships_events.02
+				days = 1
+			}
+		}
+	}
+	# No
+	option = {
+		name = generic_purchase_ships_events.01.b
+		ai_chance = {
+			base = 20
+		}
+		FROM = {
+			country_event = {
+				id = generic_purchase_ships_events.03
+				days = 1
+			}
+		}
+	}
+}
+
+# FROM agrees to sell ships
+country_event = {
+	id = generic_purchase_ships_events.02
+	title = generic_purchase_ships_events.02.t
+	desc = generic_purchase_ships_events.02.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_ast_navy
+	option = {
+		name = generic_purchase_ships_events.02.a
+		ai_chance = {
+			base = 5
+		}	
+		ETH_get_ships_from_country = yes
+	}
+}
+
+# FROM refuses to sell ships
+country_event = {
+	id = generic_purchase_ships_events.03
+	title = generic_purchase_ships_events.03.t
+	desc = generic_purchase_ships_events.03.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_ast_navy
+	option = {
+		name = generic_purchase_ships_events.03.a
+		ai_chance = {
+			base = 5
+		}
+		FROM = {
+			clr_country_flag = negotiating_ship_purchase_flag@ROOT
+		}
+	}
+}
+
+# FROM wants to purcahse old dreadnoughts
+country_event = {
+	id = generic_purchase_ships_events.04
+	title = generic_purchase_ships_events.04.t
+	desc = generic_purchase_ships_events.04.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_merchant_ship_04
+	# Yes
+	option = {
+		name = generic_purchase_ships_events.04.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 50
+				is_in_faction_with = FROM
+			}
+			modifier = {
+				add = 50
+				has_same_ideology = yes
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 10
+				}
+			}
+			modifier = {
+				add = 20
+				has_opinion = {
+					target = FROM
+					value > 40
+				}
+			}
+			modifier = {
+				add = 30
+				has_opinion = {
+					target = FROM
+					value > 80
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = { 
+					has_war_with = FROM
+					has_civil_war = yes
+					has_capitulated = yes
+					has_opinion = {
+						target = FROM
+						value < 0
+					}
+				}
+			}
+		}
+		add_offsite_building = { type = industrial_complex  level = 1 }
+		FROM = {
+			country_event = {
+				id = generic_purchase_ships_events.05
+				days = 1
+			}
+		}
+	}
+	# No
+	option = {
+		name = generic_purchase_ships_events.04.b
+		ai_chance = {
+			base = 20
+		}
+		FROM = {
+			country_event = {
+				id = generic_purchase_ships_events.06
+				days = 1
+			}
+		}
+	}
+}
+
+# FROM agrees to sell dreadnoughts
+country_event = {
+	id = generic_purchase_ships_events.05
+	title = generic_purchase_ships_events.05.t
+	desc = generic_purchase_ships_events.05.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_ast_navy
+	option = {
+		name = generic_purchase_ships_events.05.a
+		ai_chance = {
+			base = 5
+		}	
+		SMB_get_dreadnoughts_from_country = yes
+	}
+}
+
+# FROM refuses to sell dreadnoughts
+country_event = {
+	id = generic_purchase_ships_events.06
+	title = generic_purchase_ships_events.06.t
+	desc = generic_purchase_ships_events.06.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_ast_navy
+	option = {
+		name = generic_purchase_ships_events.06.a
+		ai_chance = {
+			base = 5
+		}
+		FROM = {
+			clr_country_flag = negotiating_dreadnought_purchase_flag@ROOT
+		}
+	}
+}

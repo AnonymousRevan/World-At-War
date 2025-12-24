@@ -8,7 +8,7 @@ new_strategic_destruction = {
         always = yes
     }
 
-    xp_cost = 100
+    xp_cost = 25
     xp_type = air
 
     ai_will_do = { 
@@ -20,6 +20,7 @@ new_strategic_destruction = {
         strike_aircraft
         medium_aircraft
         heavy_aircraft
+		heavy_fighter_aircraft
     }
 
     # EFFECTS
@@ -104,6 +105,25 @@ new_strategic_destruction = {
                 }
                 else = {
                     add_to_variable = { heavies_milestone_var = 1 }
+				}
+			}
+		}
+		{
+			#5 Heavy fighters
+			air_intercept_efficiency = 0.1
+			air_interception_detect_factor = 0.05
+			
+			effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = heavies_milestone_var
+                        }
+                    }
+                    set_variable = { heavies_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { heavies_milestone_var = 1 }
                 }
             }
         }
@@ -120,7 +140,7 @@ new_battlefield_support = {
         always = yes
     }
 
-    xp_cost = 100
+    xp_cost = 25
     xp_type = air
 
     ai_will_do = {
@@ -137,6 +157,7 @@ new_battlefield_support = {
         strike_aircraft
         medium_aircraft
         heavy_aircraft
+		heavy_fighter_aircraft
     }
 
     # EFFECTS
@@ -222,6 +243,25 @@ new_battlefield_support = {
                 }
                 else = {
                     add_to_variable = { heavies_milestone_var = 1 }
+				}
+			}
+		}
+		{
+			#5 Heavy fighters
+			air_intercept_efficiency = 0.1
+			air_interception_detect_factor = 0.05
+			
+			effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = heavies_milestone_var
+                        }
+                    }
+                    set_variable = { heavies_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { heavies_milestone_var = 1 }
                 }
             }
         }
@@ -238,7 +278,7 @@ new_operational_integrity = {
         always = yes
     }
 
-    xp_cost = 100
+    xp_cost = 25
     xp_type = air
 
     ai_will_do = {
@@ -250,6 +290,7 @@ new_operational_integrity = {
         strike_aircraft
         medium_aircraft
         heavy_aircraft
+		heavy_fighter_aircraft
     }
 
     # EFFECTS
@@ -328,6 +369,25 @@ new_operational_integrity = {
 			strategic_bomb_visibility = -0.4
 
             effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = heavies_milestone_var
+                        }
+                    }
+                    set_variable = { heavies_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { heavies_milestone_var = 1 }
+				}
+			}
+		}
+		{
+			#5 Heavy fighters
+			air_intercept_efficiency = 0.1
+			air_interception_detect_factor = 0.05
+			
+			effect = {
                 if = {
                     limit = {
                         NOT = {

@@ -1,0 +1,1433 @@
+﻿add_namespace = al_lb
+
+#Common - 20 Weight
+#Uncommon - 15 Weight
+#Rare - 10 Weight
+#Epic - 5 Weight
+#Legendary - 3 Weight
+#Mythic - 1 Weight
+
+country_event = {
+	id = al_lb.1
+	title = al_lb.1.t
+	desc = al_lb.1.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Open it!
+		name = al_lb.1.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			random_list = {
+				20 = {country_event = {id = al_lb.2}} #PP Refund
+				15 = {country_event = {id = al_lb.3}} #5% War Support
+				15 = {country_event = {id = al_lb.4}} #5% Stability
+				15 = {country_event = {id = al_lb.6}} #25 Air XP
+				15 = {country_event = {id = al_lb.7}} #25 Army XP
+				15 = {country_event = {id = al_lb.8}} #25 Navy XP
+				20 = {country_event = {id = al_lb.9}} #Military Industrial Complex
+				20 = {country_event = {id = al_lb.10}} #10k Manpower
+				20 = {country_event = {id = al_lb.11}} # -10k Manpower
+				20 = {country_event = {id = al_lb.12}} #Nothing
+				20 = {country_event = {id = al_lb.13}} #Random offmap civ/mil
+				15 = {country_event = {id = al_lb.14}} # -5% War Support
+				15 = {country_event = {id = al_lb.15}} # -5% Stability
+				10 = {country_event = {id = al_lb.16}} #Megalopolis
+				10 = {country_event = {id = al_lb.17}} #+25 Chromium
+				10 = {country_event = {id = al_lb.18}} #+25 Steel
+				10 = {country_event = {id = al_lb.19}} #+25 Aluminium
+				10 = {country_event = {id = al_lb.20}} #+25 Tungsten
+				10 = {country_event = {id = al_lb.21}} #+25 Oil
+				5 = {country_event = {id = al_lb.22}} #+25 Rubber
+				20 = {country_event = {id = al_lb.24}} #Small Weapons Crate
+				15 = {country_event = {id = al_lb.25}} #Medium Weapons Crate
+ 				10 = {country_event = {id = al_lb.26}} #Large Weapons Crate
+				5 = {country_event = {id = al_lb.27}} #Massive Weapons Crate
+				5 = {country_event = {id = al_lb.28}} #Meteor
+				10 = {country_event = {id = al_lb.29}} #150 PP
+				20 = {country_event = {id = al_lb.30}} #35 PP
+				20 = {country_event = {id = al_lb.31}} # -10 PP
+				10 = {country_event = {id = al_lb.32}} #10% Stability
+				10 = {country_event = {id = al_lb.33}} # -10% Stability
+				10 = {country_event = {id = al_lb.34}} #10% War Support
+				10 = {country_event = {id = al_lb.35}} # -10% War Support
+				20 = {country_event = {id = al_lb.37}} #5% Dockyard
+				15 = {country_event = {id = al_lb.38}} #10% Dockyard
+				5 = {country_event = {id = al_lb.39}} #15% Construction (Temporary)
+				1 = {country_event = {id = al_lb.40}} #15% Construction
+				3 = {country_event = {id = al_lb.41}} #10% Construction
+				1 = {country_event = {id = al_lb.42}} #15% Factory Output
+				5 = {country_event = {id = al_lb.43}} #5% Monthly Pop
+				5 = (country_event = {id = al_lb.45}} #Research Slot +1
+				15 = {country_event = {id = al_lb.46}} #Random Army Trait
+				15 = {country_event = {id = al_lb.47}} #Random Navy Trait
+				20 = {country_event = {id = al_lb.48}} #Random MIO Level Up
+				10 = {country_event = {id = al_lb.53}} #Refinery +1 Rubber
+				20 = {country_event = {id = al_lb.57}} #Build Civ
+				20 = {country_event = {id = al_lb.58}} #Build Mil
+				20 = {country_event = {id = al_lb.59}} #Build Refinery
+				20 = {country_event = {id = al_lb.60}} #Build Airbase
+				20 = {country_event = {id = al_lb.61}} #Build Anti-Air Gun
+				15 = {country_event = {id = al_lb.62}} #Build Commercial Reactor
+				20 = {country_event = {id = al_lb.63}} #Build Nuclear Reactor
+				5 = {country_event = {id = al_lb.66}} #Volunteer Corps
+				3 = {country_event = {id = al_lb.67}} #Research Boon (Permanent)
+				5 = {country_event = {id = al_lb.68}} #Research Boon (Temporary)
+				1 = {country_event = {id = al_lb.69}} #Event 69
+			}
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.2
+	title = al_lb.2.t
+	desc = al_lb.2.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.2.a
+		ai_chance = { factor = 100 }
+		add_political_power = 45
+	}
+}
+
+country_event = {
+	id = al_lb.3
+	title = al_lb.3.t
+	desc = al_lb.3.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.3.a
+		ai_chance = { factor = 100 }
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = al_lb.4
+	title = al_lb.4.t
+	desc = al_lb.4.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.4.a
+		ai_chance = { factor = 100 }
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = al_lb.5
+	title = al_lb.5.t
+	desc = al_lb.5.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.5.a
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = lootboxes_owned
+			value = 2
+		}		
+	}
+}
+
+country_event = {
+	id = al_lb.6
+	title = al_lb.6.t
+	desc = al_lb.6.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.6.a
+		ai_chance = { factor = 100 }
+		air_experience = 69
+	}
+}
+
+country_event = {
+	id = al_lb.7
+	title = al_lb.7.t
+	desc = al_lb.7.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.7.a
+		ai_chance = { factor = 100 }
+		army_experience = 67
+	}
+}
+
+country_event = {
+	id = al_lb.8
+	title = al_lb.8.t
+	desc = al_lb.8.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.8.a
+		ai_chance = { factor = 100 }
+		navy_experience = 420
+	}
+}
+
+country_event = {
+	id = al_lb.9
+	title = al_lb.9.t
+	desc = al_lb.9.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.9.a
+		ai_chance = { factor = 100 }
+		add_equipment_to_stockpile = { 
+			type = infantry_equipment_1
+			amount = 1000
+			producer = USA
+		}
+		add_equipment_to_stockpile = { 
+			type = support_equipment 
+			amount = 100
+			producer = USA
+		}
+		add_equipment_to_stockpile = { 
+			type = artillery_equipment_1
+			amount = 100
+			producer = USA
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.10
+	title = al_lb.10.t
+	desc = al_lb.10.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.10.a
+		ai_chance = { factor = 100 }
+		add_manpower = 100000
+	}
+}
+
+country_event = {
+	id = al_lb.11
+	title = al_lb.11.t
+	desc = al_lb.11.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.11.a
+		ai_chance = { factor = 100 }
+		add_manpower = -100000
+	}
+}
+
+country_event = {
+	id = al_lb.12
+	title = al_lb.12.t
+	desc = al_lb.12.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.11.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = al_lb.13
+	title = al_lb.13.t
+	desc = al_lb.13.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.13.a
+		ai_chance = { factor = 100 }
+		random_list = {
+			50 = {add_offsite_building = { type = industrial_complex level = 10 }}
+			50 = {add_offsite_building = { type = arms_factory level = 10 }}
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.14
+	title = al_lb.14.t
+	desc = al_lb.14.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.14.a
+		ai_chance = { factor = 100 }
+		add_war_support = -0.05
+	}
+}
+
+country_event = {
+	id = al_lb.15
+	title = al_lb.15.t
+	desc = al_lb.15.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.15.a
+		ai_chance = { factor = 100 }
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = al_lb.16
+	title = al_lb.16.t
+	desc = al_lb.16.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.16.a
+		ai_chance = { factor = 100 }
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 5
+			set_state_category = megalopolis
+			set_building_level = {
+				type = infrastructure
+				level = 10
+				instant_build = yes
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = al_lb.17
+	title = al_lb.17.t
+	desc = al_lb.17.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.17.a
+		ai_chance = { factor = 100 }
+		random_owned_state = {
+			add_resource = {
+				type = chromium
+				amount = 25
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = al_lb.18
+	title = al_lb.18.t
+	desc = al_lb.18.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.18.a
+		ai_chance = { factor = 100 }
+		random_owned_state = {
+			add_resource = {
+				type = steel
+				amount = 25
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = al_lb.19
+	title = al_lb.19.t
+	desc = al_lb.19.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.19.a
+		ai_chance = { factor = 100 }
+		random_owned_state = {
+			add_resource = {
+				type = aluminium
+				amount = 25
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = al_lb.20
+	title = al_lb.20.t
+	desc = al_lb.20.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.20.a
+		ai_chance = { factor = 100 }
+		random_owned_state = {
+			add_resource = {
+				type = tungsten
+				amount = 25
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = al_lb.21
+	title = al_lb.21.t
+	desc = al_lb.21.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.21.a
+		ai_chance = { factor = 100 }
+		random_owned_state = {
+			add_resource = {
+				type = oil
+				amount = 25
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = al_lb.22
+	title = al_lb.22.t
+	desc = al_lb.22.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.22.a
+		ai_chance = { factor = 100 }
+		random_owned_state = {
+			add_resource = {
+				type = rubber
+				amount = 25
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = al_lb.23
+	title = al_lb.23.t
+	desc = al_lb.23.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.23.a
+		ai_chance = { factor = 100 }
+		recruit_character = ALX_monty
+	}
+}
+
+country_event = {
+	id = al_lb.24
+	title = al_lb.24.t
+	desc = al_lb.24.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.24.a
+		ai_chance = { factor = 100 }
+		add_equipment_to_stockpile = { 
+			type = infantry_equipment_1
+			amount = 1000
+			producer = ROOT
+		}
+		add_equipment_to_stockpile = { 
+			type = artillery_equipment_1
+			amount = 150
+			producer = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.25
+	title = al_lb.25.t
+	desc = al_lb.25.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.25.a
+		ai_chance = { factor = 100 }
+		add_equipment_to_stockpile = { 
+			type = infantry_equipment_1
+			amount = 2000
+			producer = ROOT
+		}
+		add_equipment_to_stockpile = { 
+			type = artillery_equipment_1
+			amount = 300
+			producer = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.26
+	title = al_lb.26.t
+	desc = al_lb.26.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.26.a
+		ai_chance = { factor = 100 }
+		add_equipment_to_stockpile = { 
+			type = infantry_equipment_1
+			amount = 3000
+			producer = ROOT
+		}
+		add_equipment_to_stockpile = { 
+			type = artillery_equipment_1
+			amount = 450
+			producer = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.27
+	title = al_lb.27.t
+	desc = al_lb.27.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.27.a
+		ai_chance = { factor = 100 }
+		add_equipment_to_stockpile = { 
+			type = infantry_equipment_1
+			amount =5000
+			producer = ROOT
+		}
+		add_equipment_to_stockpile = { 
+			type = artillery_equipment_1
+			amount = 750
+			producer = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.28
+	title = al_lb.28.t
+	desc = al_lb.28.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.28.a
+		ai_chance = { factor = 100 }
+		add_manpower = -50000
+		random_owned_state = {
+			add_resource = {
+				type = steel
+				amount = 45
+			}
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.29
+	title = al_lb.29.t
+	desc = al_lb.29.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.29.a
+		ai_chance = { factor = 100 }
+		add_political_power = 150
+	}
+}
+
+country_event = {
+	id = al_lb.30
+	title = al_lb.30.t
+	desc = al_lb.30.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.30.a
+		ai_chance = { factor = 100 }
+		add_political_power = 35
+	}
+}
+
+country_event = {
+	id = al_lb.31
+	title = al_lb.31.t
+	desc = al_lb.31.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.31.a
+		ai_chance = { factor = 100 }
+		add_political_power = -45
+	}
+}
+
+country_event = {
+	id = al_lb.32
+	title = al_lb.32.t
+	desc = al_lb.32.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.32.a
+		ai_chance = { factor = 100 }
+		add_stability = 0.1
+	}
+}
+
+country_event = {
+	id = al_lb.33
+	title = al_lb.33.t
+	desc = al_lb.33.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.33.a
+		ai_chance = { factor = 100 }
+		add_stability = -0.1
+	}
+}
+
+country_event = {
+	id = al_lb.34
+	title = al_lb.34.t
+	desc = al_lb.34.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.34.a
+		ai_chance = { factor = 100 }
+		add_war_support = 0.1
+	}
+}
+
+country_event = {
+	id = al_lb.35
+	title = al_lb.35.t
+	desc = al_lb.35.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.35.a
+		ai_chance = { factor = 100 }
+		add_war_support = -0.1
+	}
+}
+
+country_event = {
+	id = al_lb.36
+	title = al_lb.36.t
+	desc = al_lb.36.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.36.a
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_country_flag = gambling_tank
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 750
+				variant_name = "Gambling Tank"
+			}
+		}
+		else = {
+			create_equipment_variant = {
+				name = "Gambling Tank"
+				type = light_tank_chassis_1
+				parent_version = 1
+				modules = {
+					main_armament_slot = tank_heavy_machine_gun
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 2
+				}
+				icon = "GFX_ENG_basic_light_tank_medium"
+				model = ENG_MKIV_light_tank_entity
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_1
+				amount = 750
+				variant_name = "Gambling Tank"
+			}
+			set_country_flag = gambling_tank
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.37
+	title = al_lb.37.t
+	desc = al_lb.37.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.37.a
+		ai_chance = { factor = 100 }
+		add_timed_idea = {
+			idea = ALX_dockyard
+			days = 365
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.38
+	title = al_lb.38.t
+	desc = al_lb.38.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.38.a
+		ai_chance = { factor = 100 }
+		add_timed_idea = {
+			idea = ALX_dockyard_2
+			days = 365
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.39
+	title = al_lb.39.t
+	desc = al_lb.39.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.39.a
+		ai_chance = { factor = 100 }
+		add_timed_idea = {
+			idea = ALX_construction
+			days = 365
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.40
+	title = al_lb.40.t
+	desc = al_lb.40.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.40.a
+		ai_chance = { factor = 100 }
+		add_ideas = ALX_construction
+	}
+}
+
+country_event = {
+	id = al_lb.41
+	title = al_lb.41.t
+	desc = al_lb.41.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.41.a
+		ai_chance = { factor = 100 }
+		add_ideas = ALX_construction_2
+	}
+}
+
+country_event = {
+	id = al_lb.42
+	title = al_lb.42.t
+	desc = al_lb.42.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.42.a
+		ai_chance = { factor = 100 }
+		add_ideas = ALX_production
+	}
+}
+
+country_event = {
+	id = al_lb.43
+	title = al_lb.43.t
+	desc = al_lb.43.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.43.a
+		ai_chance = { factor = 100 }
+		add_ideas = ALX_population
+	}
+}
+
+country_event = {
+	id = al_lb.44
+	title = al_lb.44.t
+	desc = al_lb.44.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.44.a
+		ai_chance = { factor = 100 }
+		add_nuclear_bombs  = 1
+	}
+}
+
+country_event = {
+	id = al_lb.45
+	title = al_lb.45.t
+	desc = al_lb.45.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.45.a
+		ai_chance = { factor = 100 }
+		add_research_slot = 1
+	}
+}
+
+country_event = {
+	id = al_lb.46
+	title = al_lb.46.t
+	desc = al_lb.46.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.46.a
+		ai_chance = { factor = 100 }
+		random_army_leader = {
+			add_random_trait = {
+				old_guard
+				brilliant_strategist
+				inflexible_strategist
+				politically_connected
+				war_hero
+				career_officer
+				trait_cautious
+				trait_reckless
+				media_personality
+				harsh_leader
+				bearer_of_artillery
+				infantry_officer
+				cavalry_officer
+				armor_officer
+				organizer
+				cavalry_leader
+				infantry_leader
+				skilled_staffer
+				trickster
+				winter_specialist
+				adaptable
+				winter_expert
+				trait_engineer
+				panzer_leader
+				commando
+				desert_fox
+				swamp_fox
+				trait_mountaineer
+				hill_fighter
+				jungle_rat
+				ranger
+				urban_assault_specialist
+				naval_invader
+				panzer_expert
+				combined_arms_expert
+				cavalry_expert
+				fortress_buster
+				scavenger
+				infantry_expert
+				ambusher
+				invader_ii
+				naval_liason
+				skirmisher
+				paratrooper
+				camouflage_expert
+				expert_improviser
+				guerilla_fighter
+			}
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.47
+	title = al_lb.47.t
+	desc = al_lb.47.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.47.a
+		ai_chance = { factor = 100 }
+		random_navy_leader = {
+			add_random_trait = {
+				blockade_runner
+				seawolf
+				spotter
+				fleet_protector
+				superior_tactician
+				air_controller
+				ironside
+				concealment_expert
+				lone_wolf
+				silent_hunter
+				lancer
+				search_pattern_expert
+				destroyer_leader
+				cruiser_captain
+				flight_deck_manager
+				ground_pounder
+				big_guns_expert
+				safety_first
+				smoke_screen_expert
+				torpedo_expert
+				loading_drill_master
+				hunter_killer
+				fly_swatter
+				fighter_director
+				dive_bomber
+				torpedo_bomber
+				marksman
+				crisis_magician
+				arctic_water_expert
+				inshore_fighter
+				blue_water_expert
+				green_water_expert
+				old_guard_navy
+				gentlemanly
+				gunnery_expert
+				cuts_corners
+				chief_engineer
+				navy_media_personality
+				bold
+				navy_career_officer
+				battleship_adherent
+				aviation_enthusiast
+				caustic_personality
+				craven
+				naval_lineage
+			}
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.48
+	title = al_lb.48.t
+	desc = al_lb.48.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.48.a
+		ai_chance = { factor = 100 }
+		random_military_industrial_organization = {
+			add_mio_size = 1
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.49
+	title = al_lb.49.t
+	desc = al_lb.49.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.49.a
+		ai_chance = { factor = 100 }
+		add_nuclear_bombs = 10
+	}
+}
+
+country_event = {
+	id = al_lb.50
+	title = al_lb.50.t
+	desc = al_lb.50.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.50.a
+		ai_chance = { factor = 100 }
+		random_owned_state = {
+			increase_state_category = yes
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.51
+	title = al_lb.51.t
+	desc = al_lb.51.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.51.a
+		ai_chance = { factor = 100 }
+		random_army_leader = {
+			add_timed_unit_leader_trait = {
+				trait = wounded
+				days = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.52
+	title = al_lb.52.t
+	desc = al_lb.52.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.52.a
+		ai_chance = { factor = 100 }
+		gain_random_agency_upgrade = yes
+	}
+}
+
+country_event = {
+	id = al_lb.53
+	title = al_lb.53.t
+	desc = al_lb.53.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.53.a
+		ai_chance = { factor = 100 }
+		modify_building_resources = {
+			building = synthetic_refinery
+			resource = rubber
+			amount = 5
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.54
+	title = al_lb.54.t
+	desc = al_lb.54.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.54.a
+		ai_chance = { factor = 100 }
+		set_rule = {
+			can_use_kamikaze_pilots = yes
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.55
+	title = al_lb.55.t
+	desc = al_lb.55.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.55.a
+		ai_chance = { factor = 100 }
+		every_subject_country = {
+			set_rule = {
+				contributes_operatives = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.56
+	title = al_lb.56.t
+	desc = al_lb.56.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.56.a
+		ai_chance = { factor = 100 }
+		set_rule = {
+			can_declare_war_without_wargoal_when_in_war = yes
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.57
+	title = al_lb.57.t
+	desc = al_lb.57.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.57.a
+		ai_chance = { factor = 100 }
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 5
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.58
+	title = al_lb.58.t
+	desc = al_lb.58.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.58.a
+		ai_chance = { factor = 100 }
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.59
+	title = al_lb.59.t
+	desc = al_lb.59.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.59.a
+		ai_chance = { factor = 100 }
+		random_owned_state = {
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.60
+	title = al_lb.60.t
+	desc = al_lb.60.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.60.a
+		ai_chance = { factor = 100 }
+		random_owned_state = {
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.61
+	title = al_lb.61.t
+	desc = al_lb.61.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.61.a
+		ai_chance = { factor = 100 }
+		random_owned_state = {
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.62
+	title = al_lb.62.t
+	desc = al_lb.62.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.62.a
+		ai_chance = { factor = 100 }
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = commercial_nuclear_reactor
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.63
+	title = al_lb.63.t
+	desc = al_lb.63.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.63.a
+		ai_chance = { factor = 100 }
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = nuclear_reactor
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.64
+	title = al_lb.64.t
+	desc = al_lb.64.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.64.a
+		ai_chance = { factor = 100 }
+		ROOT = {
+			set_occupation_law = comply_or_die
+			set_country_flag = comply_or_die
+			every_controlled_state = {
+				set_occupation_law = comply_or_die
+			}
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.65
+	title = al_lb.65.t
+	desc = al_lb.65.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.65.a
+		ai_chance = { factor = 100 }
+		add_timed_idea = {
+			idea = ALX_lootbox_printer
+			days = 365
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.66
+	title = al_lb.66.t
+	desc = al_lb.66.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.66.a
+		ai_chance = { factor = 100 }
+		add_ideas = ALX_volunteer_corps
+	}
+}
+
+country_event = {
+	id = al_lb.67
+	title = al_lb.67.t
+	desc = al_lb.67.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.67.a
+		ai_chance = { factor = 100 }
+		add_ideas = ALX_research_boon
+	}
+}
+
+country_event = {
+	id = al_lb.68
+	title = al_lb.68.t
+	desc = al_lb.68.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.68.a
+		ai_chance = { factor = 100 }
+		add_timed_idea = {
+			idea = ALX_research_boon
+			days = 365
+		}
+	}
+}
+
+country_event = {
+	id = al_lb.69
+	title = al_lb.69.t
+	desc = al_lb.69.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.69.a
+		ai_chance = { factor = 100 }
+		add_political_power = 69
+		add_manpower = 1
+	}
+}
+
+country_event = {
+	id = al_lb.70
+	title = al_lb.70.t
+	desc = al_lb.70.d
+	picture = report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = { # Okay
+		name = al_lb.70.a
+		ai_chance = { factor = 100 }
+		add_ideas = alx_gambling_economy
+		set_country_flag = alx_gambling_economy
+	}
+}

@@ -1,172 +1,36 @@
+############ Artillery regiment
+#		plains = {
+#		}
+#		desert = {
+#		}	
+#		forest = {
+#		}
+#		jungle = {
+#		}
+#		hills = {
+#		}
+#		mountain = {
+#		}
+#		urban = {
+#		}
+#		fort = {
+#		}
+#		marsh = {
+#		}
+#		river = {
+#		}
+#		amphibious = {
+#		}
+
 sub_units = {
-
-	artillery_brigade = {
-		abbreviation = "ART"
-		sprite = artillery
-		map_icon_category = infantry
-		priority = 1198
-		ai_priority = 100
-		active = yes
-		is_artillery_brigade = yes
-		
-		type = {
-			infantry
-			artillery
-		}
-
-		group = combat_support
-		
-		categories = {
-			category_army
-			category_line_artillery
-			category_artillery
-		}
-
-		combat_width = 3
-
-		manpower = 500
-		need = {
-			artillery_equipment = 24
-		}
-		
-		max_strength = 0.6
-		max_organisation = 0
-		default_morale = 0.1
-		training_time = 120
-		weight = 0.5
-		supply_consumption = 0.21
-
-		#Line artillery bonuses
-		# soft_attack = 0.25
-		
-		forest = {
-			attack = -0.2
-			movement = -0.2
-		}
-
-		hills = {
-			movement = -0.05
-		}
-
-		mountain = {
-			movement = -0.2
-		}
-
-		jungle = {
-			attack = -0.25
-			movement = -0.2
-		}
-
-		marsh = {
-			attack = -0.2
-			movement = -0.3
-		}
-
-		fort = {
-			attack = 0.1
-		}
-
-		river = {
-			attack = -0.2
-			movement = -0.2
-		}
-
-		amphibious = {
-			attack = -0.4
-		}
-	}
-
-	mot_artillery_brigade = {
-		abbreviation = "MRT"
-		sprite = artillery
-		map_icon_category = infantry
-		priority = 1198
-		ai_priority = 100
-		active = yes
-		is_artillery_brigade = yes
-
-		type = {
-			motorized
-			artillery
-		}
-
-		group = mobile_combat_support
-		
-		categories = {
-			category_army
-			category_line_artillery
-			category_artillery
-			category_mobile_and_mobile_combat_sup
-		}
-
-		combat_width = 3
-		transport = motorized_equipment
-		manpower = 500
-
-		essential = {
-			motorized_equipment
-		}
-
-		need = {
-			artillery_equipment = 24
-			motorized_equipment = 36
-		}
-		
-		max_strength = 0.6
-		max_organisation = 0
-		default_morale = 0.1
-		training_time = 120
-		weight = 0.5
-		supply_consumption = 0.25
-		
-		forest = {
-			attack = -0.2
-			movement = -0.5
-		}
-
-		hills = {
-			movement = -0.05
-		}
-
-		mountain = {
-			movement = -0.2
-		}
-
-		jungle = {
-			attack = -0.25
-			movement = -0.5
-		}
-
-		marsh = {
-			attack = -0.2
-			movement = -0.3
-		}
-
-		fort = {
-			attack = 0.1
-		}
-
-		river = {
-			attack = -0.2
-			movement = -0.2
-		}
-
-		amphibious = {
-			attack = -0.4
-		}
-	}
 	
-	rocket_artillery_brigade = {
-		abbreviation = "RRT"
-		sprite = "artillery"
+	artillery_brigade = {
+		sprite = artillery
 		map_icon_category = infantry
-		priority = 1199
-		ai_priority = 100
+		priority = 800
 		active = yes
-		is_artillery_brigade = yes
-		
+
 		type = {
-			infantry
 			artillery
 		}
 
@@ -175,73 +39,78 @@ sub_units = {
 		categories = {
 			category_army
 			category_line_artillery
-			category_artillery
-			category_rocket_artillery
-		}		
+			category_light_artillery		
+		}
 
-		combat_width = 3
-
+		combat_width = 2
+	
 		need = {
-			rocket_artillery_equipment = 24
+			artillery_equipment = 24
+			horse_equipment = 24 
 		}
 		
-		manpower = 500
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.6
-		training_time = 120
+		#Size Definitions
+		manpower = 650
+		max_strength = 2
+		max_organisation = 2
+		default_morale = 0.05
+		training_time = 80
 		weight = 0.5
-
-		supply_consumption = 0.22
+		supply_consumption = 0.17
+		maximum_speed = 0.25
 		
+		plains = {
+		}
+		desert = {
+		}	
 		forest = {
-			attack = -0.2
-			movement = -0.2
+			attack = -0.15
+			defence = -0.075
+			movement = -0.15
 		}
-
-		hills = {
-			movement = -0.05
-		}
-
-		mountain = {
-			movement = -0.2
-		}
-
 		jungle = {
-			attack = -0.25
-			movement = -0.2
+			attack = -0.15
+			defence = -0.10
+			movement = -0.20
 		}
-
-		marsh = {
-			attack = -0.2
-			movement = -0.3
+		hills = {
+			movement = -0.10
 		}
-
+		mountain = {
+			attack = -0.30
+			defence = -0.25
+			movement = -0.30			
+		}
+		urban = {
+		#	attack = 0.05
+		}
 		fort = {
-			attack = 0.1
+			attack = -0.05
 		}
-
+		marsh = {
+			attack = -0.30
+			defence = -0.25
+			movement = -0.25
+		}
 		river = {
-			attack = -0.2
-			movement = -0.2
+			attack = -0.20
+			defence = -0.15
+			movement = -0.15
 		}
-
 		amphibious = {
-			attack = -0.4
+			attack = -0.35
+			defence = -0.30
+			movement = -0.20
 		}
 	}
-
-	mot_rocket_artillery_brigade = {
-		abbreviation = "TRA"
-		sprite = "artillery"
+	artillery_brigade_mot = {
+		sprite = artillery
 		map_icon_category = infantry
-		priority = 1199
-		ai_priority = 100
+		priority = 800
 		active = yes
-		is_artillery_brigade = yes
 		
-		type = {
-			motorized
+		type = {			
+		    motorized
 			artillery
 		}
 
@@ -250,71 +119,529 @@ sub_units = {
 		categories = {
 			category_army
 			category_line_artillery
-			category_artillery
-			category_rocket_artillery
+			category_light_artillery
+			category_line_mot_artillery			
+		}
+
+		combat_width = 2
+
+		manpower = 500
+		need = {
+			artillery_equipment = 24
+			motorized_equipment = 24 
+		}
+		
+		defense = 0.10
+		soft_attack = 0.10
+		hard_attack = 0.10
+		breakthrough = 0.10
+			
+		#Size Definitions
+		manpower = 650
+		max_strength = 2
+		max_organisation = 1
+		default_morale = 0.05
+		training_time = 80
+		weight = 0.6
+		supply_consumption = 0.2
+		
+		plains = {
+		}
+		desert = {
+		}	
+		forest = {
+			attack = -0.15
+			defence = -0.075
+			movement = -0.15
+		}
+		jungle = {
+			attack = -0.15
+			defence = -0.10
+			movement = -0.20
+		}
+		hills = {
+			movement = -0.10
+		}
+		mountain = {
+			attack = -0.30
+			defence = -0.25
+			movement = -0.30			
+		}
+		urban = {
+		#	attack = 0.05
+		}
+		fort = {
+			attack = -0.05
+		}
+		marsh = {
+			attack = -0.30
+			defence = -0.25
+			movement = -0.25
+		}
+		river = {
+			attack = -0.20
+			defence = -0.15
+			movement = -0.15
+		}
+		amphibious = {
+			attack = -0.35
+			defence = -0.30
+			movement = -0.20
+		}
+		
+	}
+	pack_artillery_brigade = {
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 800
+		active = yes
+		
+		can_be_parachuted = no
+				
+		type = {			
+			artillery
+		}
+
+		group = combat_support
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_pack_artillery			
+		}
+
+		combat_width = 2
+
+		need = {
+			pack_artillery_equipment = 24
+			horse_equipment = 24
+		}
+		
+		#Size Definitions
+		manpower = 650
+		max_strength = 2
+		max_organisation = 2
+		default_morale = 0.05
+		training_time = 80
+		weight = 0.5
+		supply_consumption = 0.17
+		maximum_speed = 0.25
+		
+		plains = {
+		}
+		desert = {
+		}	
+		forest = {
+			attack = -0.10
+			defence = -0.10
+			movement = -0.10
+		}
+		jungle = {
+			attack = -0.05
+			defence = -0.05
+			movement = -0.10
+		}
+		hills = {
+			attack = 0.20
+			defence = 0.10
+		}
+		mountain = {
+			attack = 0.40
+			defence = 0.30
+			movement = -0.10
+		}
+		urban = {
+			attack = -0.10
+		}
+		fort = {
+			attack = -0.15
+		}
+		marsh = {
+			attack = -0.25
+			defence = -0.25
+			movement = -0.15
+		}
+		river = {
+			attack = -0.20
+			defence = -0.20
+			movement = -0.15
+		}
+		amphibious = {
+			attack = 0.40
+			defence = 0.15
+			movement = -0.10
+		}
+	}
+	pack_artillery_brigade_mot = {
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 800
+		active = yes
+		
+		can_be_parachuted = no
+						
+		type = {		
+			artillery
+		}
+
+		group = mobile_combat_support
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_pack_artillery
+			category_line_mot_artillery
+		}
+
+		combat_width = 2
+
+		need = {
+			pack_artillery_equipment = 24
+			motorized_equipment = 24
+		}
+		
+		defense = 0.10
+		soft_attack = 0.10
+		hard_attack = 0.10
+		breakthrough = 0.10
+		
+		#Size Definitions
+		manpower = 650
+		max_strength = 2
+		max_organisation = 1
+		default_morale = 0.05
+		training_time = 80
+		weight = 0.5
+		supply_consumption = 0.2
+		
+		plains = {
+		}
+		desert = {
+		}	
+		forest = {
+			attack = -0.10
+			defence = -0.10
+			movement = -0.10
+		}
+		jungle = {
+			attack = -0.05
+			defence = -0.05
+			movement = -0.10
+		}
+		hills = {
+			attack = 0.20
+			defence = 0.10
+		}
+		mountain = {
+			attack = 0.40
+			defence = 0.30
+			movement = -0.10
+		}
+		urban = {
+			attack = -0.10
+		}
+		fort = {
+			attack = -0.15
+		}
+		marsh = {
+			attack = -0.25
+			defence = -0.25
+			movement = -0.15
+		}
+		river = {
+			attack = -0.20
+			defence = -0.20
+			movement = -0.15
+		}
+		amphibious = {
+			attack = 0.40
+			defence = 0.15
+			movement = -0.10
+		}
+	}
+	artillery_heavy = {
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 800
+		active = yes
+		
+		type = {			
+			artillery
+		}
+		
+		group = combat_support
+		
+		categories = {
+			category_army
+			category_heavy_artillery
+			category_line_artillery
+			category_line_mot_artillery
+		}
+
+		combat_width = 2
+
+		need = {
+			heavy_artillery_equipment = 24			
+			motorized_equipment = 24
+		}
+	
+		#Size Definitions
+		manpower = 650
+		max_strength = 2
+		max_organisation = 2
+		default_morale = 0.05
+		training_time = 80
+		weight = 0.6
+		supply_consumption = 0.20
+		maximum_speed = -0.35
+				
+		plains = {
+			attack = 0.075
+			defence = 0.05
+			movement = 0.025
+		}
+		desert = {
+			attack = 0.075
+			defence = 0.05
+			movement = 0.025
+		}	
+		forest = {
+			attack = -0.35
+			defence = -0.35
+			movement = -0.15
+		}
+		jungle = {
+			attack = -0.40
+			defence = -0.40
+			movement = -0.30
+		}
+		hills = {
+			attack = -0.05
+			defence = -0.05
+			movement = -0.10
+		}
+		mountain = {
+			attack = -0.70
+			defence = -0.70
+			movement = -0.40
+		}
+		urban = {
+			attack = 0.40
+		}
+		fort = {
+			attack = 0.25
+		}
+		marsh = {
+			attack = -0.50
+			defence = -0.50
+			movement = -0.30
+		}
+		river = {
+			attack = -0.30
+			defence = -0.30
+			movement = -0.20
+		}
+		amphibious = {
+			attack = -0.75
+			defence = -0.75
+			movement = -0.30
+		}
+	}
+	artillery_heavy_mot = {
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 800
+		active = yes
+		
+		type = {
+			motorized
+			artillery
+		}
+		
+		group = mobile_combat_support
+		
+		categories = {
+			category_army
+			category_heavy_artillery
+			category_line_artillery
+			category_line_mot_artillery
+		}
+
+		combat_width = 2
+		
+		need = {
+			heavy_artillery_equipment = 24
+			motorized_equipment = 36			
+		}
+		
+		defense = 0.10
+		soft_attack = 0.10
+		hard_attack = 0.10
+		breakthrough = 0.10
+	
+		#Size Definitions
+		manpower = 650
+		max_strength = 2
+		max_organisation = 1
+		default_morale = 0.05
+		training_time = 80
+		weight = 0.7
+		supply_consumption = 0.25
+		maximum_speed = -0.25
+		
+		can_be_parachuted = no
+		
+		plains = {
+			attack = 0.075
+			defence = 0.05
+			movement = 0.025
+		}
+		desert = {
+			attack = 0.075
+			defence = 0.05
+			movement = 0.025
+		}	
+		forest = {
+			attack = -0.35
+			defence = -0.35
+			movement = -0.15
+		}
+		jungle = {
+			attack = -0.40
+			defence = -0.40
+			movement = -0.30
+		}
+		hills = {
+			attack = -0.05
+			defence = -0.05
+			movement = -0.10
+		}
+		mountain = {
+			attack = -0.70
+			defence = -0.70
+			movement = -0.40
+		}
+		urban = {
+			attack = 0.40
+		}
+		fort = {
+			attack = 0.25
+		}
+		marsh = {
+			attack = -0.50
+			defence = -0.50
+			movement = -0.30
+		}
+		river = {
+			attack = -0.30
+			defence = -0.30
+			movement = -0.20
+		}
+		amphibious = {
+			attack = -0.75
+			defence = -0.75
+			movement = -0.30
+		}
+	}
+	rocket_artillery_brigade = {
+		sprite = "artillery"
+		map_icon_category = infantry
+		priority = 800
+		active = no
+		
+		type = {
+		    artillery
+			rocket
+		}
+
+		group = combat_support
+		
+		categories = {
+			category_army
+			category_line_artillery		
 		}		
 
-		combat_width = 3
-		transport = motorized_equipment
+		combat_width = 2
+
 		need = {
 			rocket_artillery_equipment = 24
-			motorized_equipment = 36
+			horse_equipment = 24
 		}
 		
-		manpower = 500
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.6
-		training_time = 120
+		#Size Definitions
+		manpower = 650
+		max_strength = 2
+		max_organisation = 2
+		default_morale = 0.05
+		training_time = 80
 		weight = 0.5
-
-		supply_consumption = 0.25
+		supply_consumption = 0.17
+		maximum_speed = 0.25
 		
 		forest = {
-			attack = -0.2
-			movement = -0.5
-		}
-
-		hills = {
-			movement = -0.05
-		}
-
-		mountain = {
-			movement = -0.2
-		}
-
-		jungle = {
 			attack = -0.25
-			movement = -0.5
-		}
-
-		marsh = {
-			attack = -0.2
-			movement = -0.3
-		}
-
-		fort = {
-			attack = 0.1
-		}
-
-		river = {
-			attack = -0.2
+			defence = -0.25
 			movement = -0.2
 		}
 
+		plains = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.025
+		}
+		desert = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.025
+		}	
+		forest = {
+			attack = -0.30
+			defence = -0.30
+			movement = -0.10
+		}
+		jungle = {
+			attack = -0.30
+			defence = -0.30
+			movement = -0.25
+		}
+		hills = {
+			attack = -0.10
+			defence = -0.10
+			movement = -0.10
+		}
+		mountain = {
+			attack = -0.55
+			defence = -0.55
+			movement = -0.35
+		}
+		urban = {
+			attack = 0.25
+		}
+		fort = {
+			attack = 0.10
+		}
+		marsh = {
+			attack = -0.40
+			defence = -0.40
+			movement = -0.30
+		}
+		river = {
+			attack = 0.10
+			defence = 0.10
+			movement = -0.20
+		}
 		amphibious = {
-			attack = -0.4
+			attack = 0.10
+			defence = 0.10
+			movement = -0.30
 		}
 	}
 	
 	motorized_rocket_brigade = {
-		abbreviation = "MRA"
 		sprite = motorized
 		map_icon_category = infantry
-		priority = 1199
-		ai_priority = 100
+		priority = 800
 		active = no
-		is_artillery_brigade = yes
 		
 		type = {
 			artillery
@@ -327,61 +654,85 @@ sub_units = {
 		categories = {
 			category_army
 			category_line_artillery
-			category_artillery
-			category_rocket_artillery
+			category_line_mot_artillery
 		}		
 
-		combat_width = 3
+		combat_width = 2
 
 		need = {
-			motorized_rocket_equipment = 16
-			motorized_equipment = 16
+			motorized_rocket_equipment = 24
 		}
 		
-		manpower = 500
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.6
-		training_time = 120
-		weight = 0.5
-
+		defense = 0.10
+		soft_attack = 0.10
+		breakthrough = 0.10
 		
-		supply_consumption = 0.25
+		#Size Definitions
+		manpower = 650
+		max_strength = 2
+		max_organisation = 1
+		default_morale = 0.05
+		training_time = 80
+		weight = 0.6
+		supply_consumption = 0.20
 		
 		forest = {
-			attack = -0.1
-			movement = -0.5
-		}
-
-		hills = {
-			movement = -0.05
-		}
-
-		mountain = {
-			movement = -0.2
-		}
-
-		jungle = {
 			attack = -0.25
-			movement = -0.5
-		}
-
-		marsh = {
-			attack = -0.2
-			movement = -0.5
-		}
-
-		fort = {
-			attack = 0.1
-		}
-
-		river = {
-			attack = -0.2
+			defence = -0.25
 			movement = -0.2
 		}
 
+		plains = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.025
+		}
+		desert = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.025
+		}	
+		forest = {
+			attack = -0.30
+			defence = -0.30
+			movement = -0.10
+		}
+		jungle = {
+			attack = -0.30
+			defence = -0.30
+			movement = -0.25
+		}
+		hills = {
+			attack = -0.10
+			defence = -0.10
+			movement = -0.10
+		}
+		mountain = {
+			attack = -0.55
+			defence = -0.55
+			movement = -0.35
+		}
+		urban = {
+			attack = 0.25
+		}
+		fort = {
+			attack = 0.10
+		}
+		marsh = {
+			attack = -0.40
+			defence = -0.40
+			movement = -0.30
+		}
+		river = {
+			attack = 0.10
+			defence = 0.10
+			movement = -0.20
+		}
 		amphibious = {
-			attack = -0.4
+			attack = 0.10
+			defence = 0.10
+			movement = -0.30
 		}
 	}
 }
+

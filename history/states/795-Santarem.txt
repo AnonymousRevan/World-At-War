@@ -2,7 +2,7 @@ state={
 	id=795
 	name="STATE_795"
 	resources={
-		chromium=20.000 #added due to portugal setup
+		chromium=100.000 #added due to portugal setup
 	}
 	history={
 		owner = POR
@@ -13,11 +13,12 @@ state={
 			924 1 
 		}
 		buildings = {
-			infrastructure = 3 #was: 6
-			industrial_complex = 2
+			infrastructure = 5
+			industrial_complex = 1
 
 		}
 		add_core_of = POR
+		add_core_of = SPR
 
 	}
 

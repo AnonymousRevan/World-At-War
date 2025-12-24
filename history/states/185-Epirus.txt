@@ -7,8 +7,8 @@ state={
 	state_category = rural
 	
 	resources={
-		chromium=14 # was: 20
-		steel = 14 # was: 20
+		chromium=70 # was: 20
+		steel = 70 # was: 20
 	}
 
 	history={
@@ -23,7 +23,7 @@ state={
 		}
 		owner = GRE
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			industrial_complex = 1
 			air_base = 3
 			9805 = {

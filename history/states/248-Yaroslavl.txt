@@ -12,8 +12,8 @@ state={
 			121 5 
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 1
+			infrastructure = 5
+			industrial_complex = 3
 			air_base = 1
 		}
 		add_core_of = SOV

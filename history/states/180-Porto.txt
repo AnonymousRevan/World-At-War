@@ -3,13 +3,9 @@ state={
 	id=180
 	name="STATE_180"
 	manpower = 1904600
-
-	resources = {
-		coal = 2 #initial distribution
-	}
 	
 	state_category = large_town
-
+	
 	history={
 		owner = POR
 		victory_points = {
@@ -19,7 +15,7 @@ state={
 			11673 5
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5
 			industrial_complex = 2
 			dockyard = 1
 			9817 = {
@@ -27,6 +23,7 @@ state={
 			}
 		}
 		add_core_of = POR
+		add_core_of = SPR
 	}
 
 	provinces={

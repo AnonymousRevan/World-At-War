@@ -1,86 +1,95 @@
 equipments = {
 
 	anti_tank_equipment = {
-		year = 1934
-
 		is_archetype = yes
-		picture = archetype_anti_tank_equipment		
 		type = { 
 			anti_tank
-			infantry #adding infantry type
+			infantry
 		}
 		group_by = archetype
 		
 		interface_category = interface_category_land
-
+		
 		#Misc Abilities
-		reliability = 0.8
-		maximum_speed = 4
+		reliability = 0.75
+
 		#Defensive Abilities
-		defense = 4
-		breakthrough = 0
+		defense = 16
+		breakthrough = 4
 		hardness = 0.1
 		armor_value = 0
 
 		#Offensive Abilities
 		soft_attack = 4
-		hard_attack = 20
-		ap_attack = 60
+		hard_attack = 45
+		ap_attack = 54
+
 		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 3
-				
-		build_cost_ic = 4
+			
+		build_cost_ic = 5
 		resources = {
-			tungsten = 2
-			steel = 2
+			tungsten = 7
+			steel = 4
+		}
+		upgrades = {
+		art_at_upgrade
+		art_cost_upgrade
 		}
 	}
-
+	# 1936
 	anti_tank_equipment_1 = {
-		year = 1936
-
 		archetype = anti_tank_equipment
 		priority = 90
 		visual_level = 0
+		
+		upgrades = {
+		}
 	}
-	
-	anti_tank_equipment_2 = {
-		year = 1940
-
+	# 1940
+	anti_tank_equipment_2 = {     
 		archetype = anti_tank_equipment
 		parent = anti_tank_equipment_1
 		priority = 90
 		visual_level = 1
 		
-		hard_attack = 22
-		ap_attack = 90
+		defense = 17
+		soft_attack = 5
+		breakthrough = 6
+		hard_attack = 50
+		ap_attack = 74
 		
-		build_cost_ic = 5
+		build_cost_ic = 7.5
 		resources = {
-			tungsten = 2
-			chromium = 1
-			steel = 2
+			tungsten = 8
+			steel = 5
+		}
+		
+		upgrades = {
 		}
 	}
-	
+	# 1943
 	anti_tank_equipment_3 = {
-		year = 1943
-
 		archetype = anti_tank_equipment
 		parent = anti_tank_equipment_2
 		priority = 90
 		visual_level = 2
 		
-		hard_attack = 30
-		ap_attack = 125
-		
-		build_cost_ic = 6
+		defense = 18
+		soft_attack = 6
+		breakthrough = 8
+		hard_attack = 55
+		ap_attack = 88
 		resources = {
-			tungsten = 2
-			chromium = 1
-			steel = 3
+			steel = 6
+			tungsten = 9
+		}
+		build_cost_ic = 9
+		
+		upgrades = {
 		}
 	}
+	
 }

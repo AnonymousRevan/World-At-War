@@ -1,15 +1,22 @@
 state={
 	id=539
 	name="STATE_539"
+	
+	resources = {
+		steel = 65
+		tungsten = 65
+	}
 
 	history={
 		owner = FRA
-		add_core_of = GAB
+		add_core_of = SEN
 		victory_points = {
 			5139 1 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
 			5139 = {
 				naval_base = 1
 

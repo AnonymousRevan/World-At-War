@@ -5,13 +5,13 @@ state={
 	
 	state_category = pastoral
 	resources = {
-		steel = 32
+		steel = 160
 	}
 	
 	history=
 	{
-		owner = ENG
-		add_core_of = SIE
+		owner = FRA
+		add_core_of = NGA
 		victory_points = {
 			2038 1 
 		}

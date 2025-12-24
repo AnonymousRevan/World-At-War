@@ -3,14 +3,14 @@ state={
 	name="STATE_691"
 	manpower = 413119
 	resources={
-		oil=12 # was: 16
+		oil=17 # was: 12
 	}
 	
 	state_category = rural
 
 
 	history={
-		add_core_of = TRI
+		add_core_of = NGA
 		owner = ENG
 		victory_points = {
 			3284 1

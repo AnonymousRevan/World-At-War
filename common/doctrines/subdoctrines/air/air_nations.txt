@@ -1,0 +1,123 @@
+air_subdoctrine_raf = {
+    track = fighter_aircraft
+    name = SUBDOCTRINE_RAF
+    description = SUBDOCTRINE_FIGHTER_HOMELAND_DEFENSE_DESC
+    icon = GFX_doctrine_forward_interception_medium
+
+    xp_cost = 100
+    xp_type = air
+
+    available = {
+        OR = { 
+			original_tag = ENG
+		}
+	}
+	
+	visible = {
+		OR = {
+			original_tag = ENG
+		}
+	}
+
+    ai_will_do = {
+
+        base = 1
+        modifier = {
+            factor = 95
+			is_major = no 
+        }
+    }
+
+    # EFFECTS
+	air_home_defence_factor = 0.2
+	air_weather_penalty = -0.2
+	air_night_penalty = -0.2
+
+    rewards = {
+		interception_priority = {
+			air_intercept_efficiency = 0.15
+			air_superiority_efficiency = 0.15		
+		}
+		air_defense_grids = {
+			category_fighter = {
+				air_agility = 0.05
+				maximum_speed = 0.1
+			}
+		}
+		air_wing_knowledge_transfer = {
+			air_untrained_pilots_penalty_factor = -0.3
+			air_wing_xp_loss_when_killed_factor = -0.15
+		}
+        experienced_pilots_protection = {
+			air_ace_generation_chance_factor = 0.1
+			ace_effectiveness_factor = 0.1
+		}
+		mass_sorties = {
+			air_superiority_detect_factor = 0.15
+			air_interception_detect_factor = 0.15
+		}
+    }
+}
+
+air_subdoctrine_jericho = {
+    track = strike_aircraft
+    name = SUBDOCTRINE_Jericho
+    description = SUBDOCTRINE_FLYING_ARTILLERY_DESC
+    icon = GFX_doctrine_combat_unit_destruction_medium
+
+    xp_cost = 100
+    xp_type = air
+
+    available = {
+        OR = {
+			original_tag = GER
+		}
+    }
+	
+	visible = {
+		OR = {
+			original_tag = GER
+		}
+	}
+	
+    ai_will_do = {
+
+        base = 1
+        modifier = {
+            factor = 75
+            OR = {
+                original_tag = ENG
+                original_tag = FRA
+                original_tag = ITA
+                original_tag = SOV
+            }
+        }
+    }
+
+    # EFFECTS
+	category_cas = {
+		air_defence = 0.1
+	}
+
+    rewards = {
+        suppression_runs = {
+        	air_cas_efficiency = 0.1
+			air_close_air_support_org_damage_factor = 0.1
+        }
+        terrain_familiarity = {
+			air_cas_present_factor = 0.15
+        }
+        effective_payloads = { 
+        	category_cas = {
+        		air_ground_attack = 0.1
+        	}
+        }
+        rugged_airframes = {
+        	air_accidents_factor = -0.05
+        }
+        movement_interdiction = {
+        	air_close_air_support_org_damage_factor = 0.1
+        	army_bonus_air_superiority_factor = 0.05
+        }
+    }
+}

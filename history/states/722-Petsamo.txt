@@ -4,6 +4,13 @@ state={
 	manpower = 2371
 
 	state_category = enclave
+	
+	resources={
+		steel = 75
+		aluminium = 40
+		tungsten = 35
+		chromium = 30
+	}
 
 	history={
 		owner = FIN
@@ -13,13 +20,12 @@ state={
 		}
 
 		buildings = {
-			infrastructure = 1 #MM: Was 2
+			infrastructure = 3
 			9140 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = FIN
-		add_core_of = SMI
 
 	}
 	

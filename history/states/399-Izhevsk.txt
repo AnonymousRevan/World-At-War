@@ -5,20 +5,16 @@ state = {
 	manpower = 1324935
 	state_category = rural
 	resources = {
-		chromium = 18 # was: 24
+		chromium = 90
 	}
 
 	history = {
 		owner = SOV
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 		}
 		add_core_of = SOV
-		add_core_of = UDM
 		
-		victory_points = {
-			6278 1 
-		}
 	}
 
 	provinces = {

@@ -1,5 +1,4 @@
-use_legacy_ai_pp_spend = yes
 graphical_culture = southamerican_gfx
 graphical_culture_2d = southamerican_2d
 
-color = { 57  113  228 }
+color = { 91  91  91 } #color = { 57  113  228 }

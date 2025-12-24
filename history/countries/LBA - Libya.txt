@@ -3,15 +3,7 @@
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-}
-
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-	}
+	
 }
 
 set_convoys = 20
@@ -19,7 +11,6 @@ set_convoys = 20
 1939.1.1 = {
 
 	add_political_power = 1198
-	add_command_power = 100
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -36,15 +27,12 @@ set_convoys = 20
 		tech_support = 1
 		tech_recon = 1
 		support_weapons = 1
-		tech_trucks = 1
-		gw_artillery = 1
-
-		#doctrines
-		#air_superiority = 1
+		
 
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
+		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -57,14 +45,6 @@ set_convoys = 20
 		construction2 = 1
 		dispersed_industry = 1
 		dispersed_industry2 = 1
-	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_strategic_destruction
-
-	complete_special_project = {
-		project = sp:sp_air_radar
 	}
 }
 
@@ -84,7 +64,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Bashir es Sadawi"
 	desc = ""
-	picture = GFX_portrait_Bashir_es_Sadawi
+	picture = "Portrait_Arabia_Generic_democratic1.dds"
 	ideology = liberalism
 	traits = {
 		#
@@ -94,7 +74,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ettore Bastico"
 	desc = ""
-	picture = GFX_portrait_Ettore_Bastico
+	picture = "Portrait_Italy_Giuseppe_Fioravanzo.dds"
 	ideology = fascism_ideology
 	traits = {
 		#
@@ -104,7 +84,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Idris Senussi"
 	desc = ""
-	picture = GFX_portrait_Idris_Senussi
+	picture = "Portrait_Arabia_Generic_land_3.dds"
 	ideology = despotism
 	traits = {
 		#
@@ -114,7 +94,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hassan as-Senussi"
 	desc = ""
-	picture = GFX_portrait_Hassan_as_Senussi
+	picture = "Portrait_Arabia_Generic_communism1.dds"
 	ideology = leninism
 	traits = {
 		#

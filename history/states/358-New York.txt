@@ -2,7 +2,7 @@ state={
 	id=358
 	name="STATE_358"
 	resources={
-		steel=13 # was: 24.000
+		steel = 65 
 	}
 	
 	state_category = megalopolis
@@ -10,20 +10,16 @@ state={
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 4 #was: 8
-			arms_factory = 2
-			industrial_complex = 7
+			infrastructure = 8
+			arms_factory = 7
+			industrial_complex = 12
 			dockyard = 3
 			air_base = 10
 			3878 = {
 				naval_base = 6
-                landmark_statue_of_liberty = {
-                    level = 1
-                    allowed = {
-                        has_dlc = "Gotterdammerung"
-                    }
-                }
+
 			}
+
 		}
 		add_core_of = USA
 		victory_points = {

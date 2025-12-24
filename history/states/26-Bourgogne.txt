@@ -4,20 +4,21 @@ state={
 	name="STATE_26" # Auveregne
 	manpower = 877800
 	
-	resources = {
-		coal = 2 # initial distribution / 140 total
-	}
-
 	state_category = town
-
+	
+	resources = {
+		coal = 4 # initial distribution / 140 total
+	}
+	
 	history={
 		owner = FRA
 		victory_points = {
 			3594 3 
 		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 5
+			arms_factory = 6
+			industrial_complex = 4
 
 		}
 		add_core_of = OCC

@@ -14,9 +14,9 @@ state=
 			5068 1
 		}
 		owner = ENG
-		add_core_of = SOM
+		add_core_of = NGA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			10833 = {
 				naval_base = 1
 			}

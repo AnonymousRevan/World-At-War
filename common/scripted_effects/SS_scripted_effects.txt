@@ -1,21 +1,3 @@
-#	Example:
-# 
-#	example_effect = {
-#		add_political_power = 66
-#		add_popularity = {
-#			ideology = fascism
-#			popularity = 0.33
-#		}
-#	}
-#
-#
-#	In a script file:
-#
-#	effect = {
-#		example_effect = yes
-#	}
-#
-
 SS_set_templates = {
 	if = {
 		limit = {
@@ -23,8 +5,9 @@ SS_set_templates = {
 				has_country_flag = SS_motorised_division
 			}
 			NOT = {
-				has_tech = mechanised_infantry
+				has_tech = ger_mechanised_infantry
 			}
+			has_completed_focus = GER_SS_armed_branch
 		}
 		SS_motorised_division = yes
 	}
@@ -33,7 +16,7 @@ SS_set_templates = {
 			NOT = {
 				has_country_flag = SS_mechanised_division_early
 			}
-			has_tech = mechanised_infantry	
+			has_tech = ger_mechanised_infantry	
 		}
 		SS_mechanised_division_early = yes
 	}
@@ -43,9 +26,9 @@ SS_set_templates = {
 				has_country_flag = SS_mechanised_division_late
 			}
 			AND = {
-				has_tech = mechanised_infantry
-				has_tech = basic_medium_td
-				has_tech = basic_medium_art
+				has_tech = ger_mechanised_infantry
+				has_tech = ger_heavy_tank_1942
+				has_completed_focus = GER_SS_armed_branch
 			}
 		}
 		SS_mechanised_division_late = yes
@@ -53,35 +36,29 @@ SS_set_templates = {
 	if = {
 		limit = {
 			AND = {
-				NOT = { has_country_flag = SS_armored_division_early }
-				NOT = {
-					OR = {
-						has_tech = basic_medium_tank
-						has_tech = improved_medium_tank
-						has_tech = advanced_medium_tank
-						has_tech = basic_medium_tank_chassis #just one needed because nsb medium tree has no bypasses
-					}
+				NOT = { 
+					has_country_flag = SS_armored_division_early 
 				}
+				has_completed_focus = GER_SS_armed_branch
+				has_tech = ger_cruiser_tank_1936
+				has_tech = ger_medium_tank_1937
 				NOT = {
-					has_tech = mechanised_infantry
+					has_tech = ger_mechanised_infantry
 				}
 			}
 		}
-		SS_armored_division_early = yes
+		SS_armored_division_early = yes 
 	}
 	if = {
 		limit = {
 			AND = {
-				NOT = { has_country_flag = SS_armored_division_improved }
-				OR = {
-					has_tech = basic_medium_tank
-					has_tech = improved_medium_tank
-					has_tech = advanced_medium_tank
-					has_tech = basic_medium_tank_chassis #just one needed because nsb medium tree has no bypasses
+				NOT = { 
+					has_country_flag = SS_armored_division_improved 
 				}
-				NOT = {
-					has_tech = mechanised_infantry
-				}
+				has_tech = ger_cruiser_tank_1936
+				has_tech = ger_medium_tank_1937
+				has_tech = ger_mechanised_infantry
+				has_completed_focus = GER_SS_armed_branch
 			}
 		}
 		SS_armored_division_improved = yes
@@ -89,131 +66,178 @@ SS_set_templates = {
 	if = {
 		limit = {
 			AND = {
-				NOT = { has_country_flag = SS_armored_division_late }
-				OR = {
-					has_tech = basic_medium_tank
-					has_tech = improved_medium_tank
-					has_tech = advanced_medium_tank
-					has_tech = basic_medium_tank_chassis #just one needed because nsb medium tree has no bypasses
-				}
-				has_tech = mechanised_infantry
+				NOT = { has_country_flag = SS_armored_division_late }	
+				has_tech = ger_cruiser_tank_1936
+				has_tech = ger_medium_tank_1937
+				has_tech = ger_heavy_tank_1942
+				has_tech = ger_mechanised_infantry
+				has_completed_focus = GER_SS_armed_branch
 			}
 		}
 		SS_armored_division_late = yes
 	}
 }
 
+
 SS_motorised_division = {
 	set_country_flag = SS_motorised_division
 	division_template = {
-		name = "SS Motorisierte Division"
-		priority = 2
-		division_names_group = GER_SS_01
-		is_locked = yes
+			name = "SS Motorisierte Division"
+			priority = 2
+			division_names_group = GER_SS_01
+			is_locked = no
+		template_counter = 80	
 		regiments = {
 			motorized = { x = 0 y = 0 }
-			motorized = { x = 0 y = 1 }
+		    motorized = { x = 0 y = 1 }
 			motorized = { x = 0 y = 2 }
-
+			motorized = { x = 0 y = 3 }
+			
 			motorized = { x = 1 y = 0 }
 			motorized = { x = 1 y = 1 }
 			motorized = { x = 1 y = 2 }
+			motorized = { x = 1 y = 3 }
 
-			motorized = { x = 2 y = 0 }
-			motorized = { x = 2 y = 1 }
-			motorized = { x = 2 y = 2 }
+			artillery_brigade_mot = { x = 2 y = 0 }
+			artillery_brigade_mot = { x = 2 y = 1 }
+			artillery_brigade_mot = { x = 2 y = 2 }
+			anti_tank_brigade_mot = { x = 2 y = 3 }
 		}
 		support = {
-			artillery = { x = 0 y = 0 }
-			engineer = { x = 0 y = 1 }
-			mot_recon = { x = 0 y = 2 }
+			DIV_HQ = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+		 	engineer = { x = 0 y = 2 }	
+			signal_company = { x = 0 y = 3 }
+			maintenance_company = { x = 1 y = 0 }
+			logistics_company = { x = 1 y = 1 }
+			recon_ac = { x = 1 y = 2 }
 		}
-		override_model = GER_infantry_alt_0_entity
 	}
 }
+
+
 SS_mechanised_division_early = {
 	set_country_flag = SS_mechanised_division_early
 	division_template = {
-		name = "SS Panzergrenadier Division"
-		priority = 2
-		division_names_group = GER_SS_01
-		is_locked = yes
+			name = "SS Panzergrenadier Division"
+			priority = 2
+			division_names_group = GER_SS_01
+			is_locked = no
+		template_counter = 78
 		regiments = {
 			mechanized = { x = 0 y = 0 }
 			mechanized = { x = 0 y = 1 }
 			mechanized = { x = 0 y = 2 }
-
+			mechanized = { x = 0 y = 3 }
+			
 			mechanized = { x = 1 y = 0 }
 			mechanized = { x = 1 y = 1 }
 			mechanized = { x = 1 y = 2 }
-			
-			mechanized = { x = 2 y = 0 }
-			mechanized = { x = 2 y = 1 }
-			mechanized = { x = 2 y = 2 }
+			mechanized = { x = 1 y = 3 }
+		
+			artillery_brigade_mot = { x = 2 y = 0 }
+			artillery_brigade_mot = { x = 2 y = 1 }
+			artillery_brigade_mot = { x = 2 y = 2 }
+			anti_tank_brigade_mot = { x = 2 y = 3 }
+		
 		}
 		support = {
-			artillery = { x = 0 y = 0 }
-			engineer = { x = 0 y = 1 }
-			mot_recon = { x = 0 y = 2 }
+			DIV_HQ = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+			engineer = { x = 0 y = 2 }	
+			signal_company = { x = 0 y = 3 }
+			maintenance_company = { x = 1 y = 0 }
+			logistics_company = { x = 1 y = 1 }
+			recon_ac = { x = 1 y = 2 }
 		}
-		override_model = GER_infantry_alt_0_entity
 	}
 }
 
 SS_mechanised_division_late = {
 	set_country_flag = SS_mechanised_division_late
 	division_template = {
-		name = "SS Panzergrenadier Division (n.A.)"
-		priority = 2
-		division_names_group = GER_SS_01
-		is_locked = yes
+			name = "SS Panzergrenadier Division (n.A.)"
+			priority = 2
+			division_names_group = GER_SS_01
+			is_locked = no
+		template_counter = 78	
 		regiments = {
-			mechanized = { x = 0 y = 0 }
-			mechanized = { x = 0 y = 1 }
-			mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 0 }
+	    mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		
+		mechanized = { x = 1 y = 0 }
+	    mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+	
+		heavy_armor = { x = 2 y = 0 }
+		heavy_armor = { x = 2 y = 1 }
+		heavy_armor = { x = 2 y = 2 }
+		heavy_armor = { x = 2 y = 3 }
+	
+		artillery_brigade_mot = { x = 3 y = 0 }
+		artillery_brigade_mot = { x = 3 y = 1 }
+		artillery_brigade_mot = { x = 3 y = 2 }
+		anti_tank_brigade_mot = { x = 3 y = 3 }
 
-			mechanized = { x = 1 y = 0 }
-			mechanized = { x = 1 y = 1 }
-			mechanized = { x = 1 y = 2 }
-
-			medium_tank_destroyer_brigade = { x = 2 y = 0 }
-			medium_sp_artillery_brigade = { x = 2 y = 1 }
-			medium_sp_artillery_brigade = { x = 2 y = 2 }
 		}
 		support = {
-			artillery = { x = 0 y = 0 }
-			engineer = { x = 0 y = 1 }
-			mot_recon = { x = 0 y = 2 }
+			DIV_HQ = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+		 	engineer = { x = 0 y = 2 }	
+			signal_company = { x = 0 y = 3 }
+			maintenance_company = { x = 1 y = 0 }
+			logistics_company = { x = 1 y = 1 }
+			recon_ac = { x = 1 y = 2 }
 		}
-		override_model = GER_infantry_alt_0_entity
 	}
 }
 
 SS_armored_division_early = {
 	set_country_flag = SS_armored_division_early
 	division_template = {
-		name = "SS Panzer Division"
-		priority = 2
-		division_names_group = GER_SS_01
-		is_locked = yes
+			name = "SS Panzer Division"
+			priority = 2
+			division_names_group = GER_SS_01
+			is_locked = no
+		template_counter = 82		
 		regiments = {
-			light_armor = { x = 0 y = 0 }
-			light_armor = { x = 0 y = 1 }
-			light_armor = { x = 0 y = 2 }
-			light_armor = { x = 0 y = 3 }
-
+			motorized = { x = 0 y = 0 }
+		    motorized = { x = 0 y = 1 }
+			motorized = { x = 0 y = 2 }
+			armored_car = { x = 0 y = 3 }
+			
 			motorized = { x = 1 y = 0 }
-			motorized = { x = 1 y = 1 }
-			motorized = { x = 1 y = 2 }
+		    motorized = { x = 1 y = 1 }
+		    motorized = { x = 1 y = 2 }
+			armored_car = { x = 1 y = 3 }
 
-			motorized = { x = 2 y = 0 }
-			motorized = { x = 2 y = 1 }
-			motorized = { x = 2 y = 2 }
+			medium_armor = { x = 2 y = 0 }
+			medium_armor = { x = 2 y = 1 }
+			medium_armor = { x = 2 y = 2 }
+			medium_armor = { x = 2 y = 3 }
+			
+			medium_armor = { x = 3 y = 0 }
+		    medium_armor = { x = 3 y = 1 }
+		    medium_armor = { x = 3 y = 2 }
+		    medium_armor = { x = 3 y = 3 }
+
+			artillery_brigade_mot = { x = 4 y = 0 }
+			artillery_brigade_mot = { x = 4 y = 1 }
+			artillery_brigade_mot = { x = 4 y = 2 }
+			artillery_brigade_mot = { x = 4 y = 3 }
+			
 		}
 		support = {
-			artillery = { x = 0 y = 0 }
-			engineer = { x = 0 y = 1 }
-			mot_recon = { x = 0 y = 2 }
+			DIV_HQ = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+		 	engineer = { x = 0 y = 2 }	
+			signal_company = { x = 0 y = 3 }
+			maintenance_company = { x = 1 y = 0 }
+			logistics_company = { x = 1 y = 1 }
+			recon_ac = { x = 1 y = 2 }
 		}
 	}
 }
@@ -221,119 +245,166 @@ SS_armored_division_early = {
 SS_armored_division_improved = {
 	set_country_flag = SS_armored_division_improved
 	division_template = {
-		name = "SS Panzer Division (n.A.)"
-		priority = 2
-		division_names_group = GER_SS_01
-		is_locked = yes
+			name = "SS Panzer Division (n.A.)"
+			priority = 2
+			division_names_group = GER_SS_01
+			is_locked = no
+		template_counter = 82		
 		regiments = {
-			medium_armor = { x = 0 y = 0 }
-			medium_armor = { x = 0 y = 1 }
-			medium_armor = { x = 0 y = 2 }
-			medium_armor = { x = 0 y = 3 }
+			mechanized = { x = 0 y = 0 }
+		    mechanized = { x = 0 y = 1 }
+			mechanized = { x = 0 y = 2 }
+			armored_car = { x = 0 y = 3 }
 
+			mechanized = { x = 1 y = 0 }
+		    mechanized = { x = 1 y = 1 }
+		    mechanized = { x = 1 y = 2 }
+			armored_car = { x = 1 y = 3 }
+
+			medium_armor = { x = 2 y = 0 }
+			medium_armor = { x = 2 y = 1 }
+			medium_armor = { x = 2 y = 2 }
+			medium_armor = { x = 2 y = 3 }
+			
+			medium_armor = { x = 3 y = 0 }
+		    medium_armor = { x = 3 y = 1 }
+		    medium_armor = { x = 3 y = 2 }
+		    medium_armor = { x = 3 y = 3 }
+
+			artillery_brigade_mot = { x = 4 y = 0 }
+			artillery_brigade_mot = { x = 4 y = 1 }
+			artillery_brigade_mot = { x = 4 y = 2 }
+			artillery_brigade_mot = { x = 4 y = 3 }
+		}
+		support = {
+			DIV_HQ = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+		 	engineer = { x = 0 y = 2 }	
+			signal_company = { x = 0 y = 3 }
+			maintenance_company = { x = 1 y = 0 }
+			logistics_company = { x = 1 y = 1 }
+			recon_ac = { x = 1 y = 2 }
+		}
+	}
+}
+
+SS_armored_division_late = {
+	set_country_flag = SS_armored_division_late
+	division_template = {
+			name = "SS Panzer Division (vollgep.)"
+			priority = 2
+			division_names_group = GER_SS_01
+			is_locked = no
+		template_counter = 83		
+		regiments = {
+			mechanized = { x = 0 y = 0 }
+		    mechanized = { x = 0 y = 1 }
+			mechanized = { x = 0 y = 2 }
+			armored_car = { x = 0 y = 3 }
+
+			mechanized = { x = 1 y = 0 }
+		    mechanized = { x = 1 y = 1 }
+		    mechanized = { x = 1 y = 2 }
+			armored_car = { x = 1 y = 3 }
+			
+			heavy_armor = { x = 2 y = 0 }
+			heavy_armor = { x = 2 y = 1 }
+			heavy_armor = { x = 2 y = 2 }
+			heavy_armor = { x = 2 y = 3 }
+			
+			medium_armor = { x = 3 y = 0 }
+		    medium_armor = { x = 3 y = 1 }
+		    medium_armor = { x = 3 y = 2 }
+		    medium_armor = { x = 3 y = 3 }
+
+			artillery_brigade_mot = { x = 4 y = 0 }
+			artillery_brigade_mot = { x = 4 y = 1 }
+			artillery_brigade_mot = { x = 4 y = 2 }
+			artillery_brigade_mot = { x = 4 y = 3 }
+		}
+
+		support = {
+			DIV_HQ = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+		 	engineer = { x = 0 y = 2 }	
+			signal_company = { x = 0 y = 3 }
+			maintenance_company = { x = 1 y = 0 }
+			logistics_company = { x = 1 y = 1 }
+			recon_ac = { x = 1 y = 2 }
+		}
+	}
+}
+
+SS_infantry_division = {
+	set_country_flag = SS_infantry_division
+	division_template = {
+			name = "SS Waffen-Grenadier-Division"
+			priority = 2
+			division_names_group = GER_SS_01
+			is_locked = no
+		template_counter = 68		
+		regiments = {
+			motorized = { x = 0 y = 0 }
+		    motorized = { x = 0 y = 1 }
+			motorized = { x = 0 y = 2 }
+			
 			motorized = { x = 1 y = 0 }
-			motorized = { x = 1 y = 1 }
+		    motorized = { x = 1 y = 1 }
 			motorized = { x = 1 y = 2 }
+			motorized = { x = 1 y = 3 }
 
 			motorized = { x = 2 y = 0 }
 			motorized = { x = 2 y = 1 }
 			motorized = { x = 2 y = 2 }
+			anti_tank_brigade = { x = 2 y = 3 }
+			
+			artillery_brigade = { x = 3 y = 0 }
+			artillery_brigade = { x = 3 y = 1 }
+			anti_tank_brigade = { x = 3 y = 2 }
+			artillery_heavy = { x = 3 y = 3 }
 		}
+
 		support = {
-			artillery = { x = 0 y = 0 }
-			engineer = { x = 0 y = 1 }
-			mot_recon = { x = 0 y = 2 }
+			DIV_HQ = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+		 	engineer = { x = 0 y = 2 }	
+			signal_company = { x = 0 y = 3 }
+			maintenance_company = { x = 1 y = 0 }
+			logistics_company = { x = 1 y = 1 }
+			field_hospital = { x = 1 y = 2 }			
 		}
 	}
 }
-SS_armored_division_late = {
-	set_country_flag = SS_armored_division_late
-	division_template = {
-		name = "SS Panzer Division (vollgep.)"
-		priority = 2
-		division_names_group = GER_SS_01
-		is_locked = yes
-		regiments = {
-			medium_armor = { x = 0 y = 0 }
-			medium_armor = { x = 0 y = 1 }
-			medium_armor = { x = 0 y = 2 }
-			medium_armor = { x = 0 y = 3 }
 
-			mechanized = { x = 1 y = 0 }
-			mechanized = { x = 1 y = 1 }
-			mechanized = { x = 1 y = 2 }
-
-			mechanized = { x = 2 y = 0 }
-			mechanized = { x = 2 y = 1 }
-			mechanized = { x = 2 y = 2 }
-		}
-		support = {
-			artillery = { x = 0 y = 0 }
-			engineer = { x = 0 y = 1 }
-			mot_recon = { x = 0 y = 2 }
-		}
-	}
-}
-SS_infantry_division = {
-	set_country_flag = SS_infantry_division
-	division_template = {
-		name = "SS Waffen-Grenadier-Division"
-		priority = 2
-		division_names_group = GER_SS_01
-		template_counter = 101
-		is_locked = yes
-		regiments = {
-			militia = { x = 0 y = 0 }
-			militia = { x = 0 y = 1 }
-			militia = { x = 0 y = 2 }
-		
-			militia = { x = 1 y = 0 }
-			militia = { x = 1 y = 1 }
-			militia = { x = 1 y = 2 }
-
-			artillery_brigade = { x = 2 y = 0 }
-			artillery_brigade = { x = 2 y = 1 }
-			militia = { x = 2 y = 2 }
-		}
-		support = {
-			artillery = { x = 0 y = 0 }
-			engineer = { x = 0 y = 1 }
-			recon = { x = 0 y = 2 }
-		}
-		override_model = GER_militia
-	}
-}
 SS_resolve_effects_wehrmacht = {
 	if = {
 		limit = {
 			AND = {
 				check_variable = { var = wehrmacht_anger value = 0 compare = greater_than_or_equals }
-				check_variable = { wehrmacht_anger < 10 }
+				check_variable = { var = wehrmacht_anger value = 10 compare = less_than }
 			}
 		}
 		random_list = {
 			50 = { country_event = { id = ss_recruitment_event.10 days = 1 } } #generals protest
-			50 = {}
 		}
 	}
 	if = {
 		limit = {
 			AND = {
 				check_variable = { var = wehrmacht_anger value = 10 compare = greater_than_or_equals }
-				check_variable = { wehrmacht_anger < 20 }
+				check_variable = { var = wehrmacht_anger value = 20 compare = less_than }
 			}
 		}
 		random_list = {
 			50 = { country_event = { id = ss_recruitment_event.10 days = 1 } } #generals protest
 			25 = { country_event = { id = ss_recruitment_event.11 days = 1 } } #general resigns in protest
-			25 = {}
 		}
 	}
 	if = {
 		limit = {
 			AND = {
-				check_variable = { var = wehrmacht_anger value = 20 compare = greater_than_or_equals }
-				check_variable = { wehrmacht_anger < 30 }
+				check_variable = { var = wehrmacht_anger value = 30 compare = greater_than_or_equals }
+				check_variable = { var = wehrmacht_anger value = 40 compare = less_than }
 			}
 		}
 		random_list = {
@@ -345,8 +416,8 @@ SS_resolve_effects_wehrmacht = {
 	if = {
 		limit = {
 			AND = {
-				check_variable = { var = wehrmacht_anger value = 30 compare = greater_than_or_equals }
-				check_variable = { wehrmacht_anger < 40 }
+				check_variable = { var = wehrmacht_anger value = 40 compare = greater_than_or_equals }
+				check_variable = { var = wehrmacht_anger value = 50 compare = less_than }
 			}
 		}
 		random_list = {
@@ -358,8 +429,8 @@ SS_resolve_effects_wehrmacht = {
 	if = {
 		limit = {
 			AND = {
-				check_variable = { var = wehrmacht_anger value = 40 compare = greater_than_or_equals }
-				check_variable = { wehrmacht_anger < 50 }
+				check_variable = { var = wehrmacht_anger value = 50 compare = greater_than_or_equals }
+				check_variable = { var = wehrmacht_anger value = 60 compare = less_than }
 			}
 		}
 		random_list = {
@@ -381,8 +452,8 @@ SS_resolve_effects_wehrmacht = {
 	if = {
 		limit = {
 			AND = {
-				check_variable = { var = wehrmacht_anger value = 50 compare = greater_than_or_equals }
-				check_variable = { wehrmacht_anger < 60 }
+				check_variable = { var = wehrmacht_anger value = 60 compare = greater_than_or_equals }
+				check_variable = { var = wehrmacht_anger value = 70 compare = less_than }
 			}
 		}
 		random_list = {
@@ -403,7 +474,7 @@ SS_resolve_effects_wehrmacht = {
 	}
 	if = {
 		limit = {
-			check_variable = { var = wehrmacht_anger value = 60 compare = greater_than_or_equals }
+			check_variable = { var = wehrmacht_anger value = 70 compare = greater_than_or_equals }
 		}
 		random_list = {
 			15 = { 
@@ -427,32 +498,30 @@ SS_resolve_effects_ss = {
 		limit = {
 			AND = {
 				check_variable = { var = SS_anger value = 0 compare = greater_than_or_equals }
-				check_variable = { SS_anger < 10 }
+				check_variable = { var = SS_anger value = 10 compare = less_than }
 			}
 		}
 		random_list = {
 			50 = { country_event = { id = ss_recruitment_event.20 days = 1 } } #Himmler protests
-			50 = {}
 		}
 	}
 	if = {
 		limit = {
 			AND = {
 				check_variable = { var = SS_anger value = 10 compare = greater_than_or_equals }
-				check_variable = { SS_anger < 20 }
+				check_variable = { var = SS_anger value = 20 compare = less_than }
 			}
 		}
 		random_list = {
 			50 = { country_event = { id = ss_recruitment_event.20 days = 1 } } #Himmler protest
 			25 = { country_event = { id = ss_recruitment_event.21 days = 1 } } #secret meeting of SS officers
-			25 = {}
 		}
 	}
 	if = {
 		limit = {
 			AND = {
 				check_variable = { var = SS_anger value = 20 compare = greater_than_or_equals }
-				check_variable = { SS_anger < 30 }
+				check_variable = { var = SS_anger value = 30 compare = less_than }
 			}
 		}
 		random_list = {
@@ -465,7 +534,7 @@ SS_resolve_effects_ss = {
 		limit = {
 			AND = {
 				check_variable = { var = SS_anger value = 30 compare = greater_than_or_equals }
-				check_variable = { SS_anger < 40 }
+				check_variable = { var = SS_anger value = 40 compare = less_than }
 			}
 		}
 		random_list = {
@@ -478,7 +547,7 @@ SS_resolve_effects_ss = {
 		limit = {
 			AND = {
 				check_variable = { var = SS_anger value = 40 compare = greater_than_or_equals }
-				check_variable = { SS_anger < 50 }
+				check_variable = { var = SS_anger value = 50 compare = less_than }
 			}
 		}
 		random_list = {
@@ -491,7 +560,7 @@ SS_resolve_effects_ss = {
 		limit = {
 			AND = {
 				check_variable = { var = SS_anger value = 50 compare = greater_than_or_equals }
-				check_variable = { SS_anger < 60 }
+				check_variable = { var = SS_anger value = 60 compare = less_than }
 			}
 		}
 		random_list = {

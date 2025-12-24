@@ -3,18 +3,20 @@ state={
 	id=19
 	name="STATE_19"
 	resources={
-		steel=14 #was 25
-		aluminium=11
+		steel=70 #was 25
+		aluminium=45
 	}
 
 	history={
 		owner = FRA
+		set_state_flag = atlantikwall_state
 		victory_points = {
-			9737 20 
+			9737 15
 		}
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 3
 			dockyard = 1
 			air_base = 3
 			9737 = {

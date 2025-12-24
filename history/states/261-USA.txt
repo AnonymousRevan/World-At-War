@@ -2,9 +2,9 @@ state={
 	id=261
 	name="STATE_261"
 	resources={
-		steel=28 # was: 48.000
-		aluminium=9 # was: 16.000
-		coal = 13 # initial distribution = with infra 46.8 / 1280 total
+		steel=140 # was: 48.000
+		aluminium=45 # was: 16.000
+		coal = 26 # initial distribution = with infra 46.8 / 1280 total
 	}
 	
 	state_category = metropolis
@@ -12,7 +12,7 @@ state={
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 4 #was: 7
+			infrastructure = 8
 			arms_factory = 1
 			industrial_complex = 6
 

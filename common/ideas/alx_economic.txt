@@ -1,0 +1,28 @@
+ideas = {
+
+	economy = {
+		alx_gambling_economy = {
+
+			available = {
+			}
+			
+			visible = {
+				has_country_flag = alx_gambling_economy
+			}
+	
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.1
+				political_power_factor = 0.1
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				conversion_cost_civ_to_mil_factor= 0.25
+				conversion_cost_mil_to_civ_factor = 0.25
+			}
+
+			cancel_if_invalid = no
+		}
+	}
+}

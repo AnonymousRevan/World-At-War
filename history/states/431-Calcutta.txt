@@ -2,15 +2,16 @@ state={
 	id=431
 	name="STATE_431"
 	resources={
-		steel=13.000
-		# tungsten=11.000
+		steel= 65
+		tungsten= 55
 	}
 
 	history={
-		owner = RAJ
+		owner = IDR
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 1
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 3
 			dockyard = 1
 			air_base = 2
 			4245 = {
@@ -26,7 +27,7 @@ state={
 	}
 
 	provinces={
-		1159 1609 1656 4062 4204 4245 4644 7220 7475 7537 7565 7593 10077 12050 12338 
+		1159 1609 1656 4062 4204 4245 4435 4644 7220 7475 7537 7565 7593 10077 12050 12338 
 	}
 	manpower=18778100
 	buildings_max_level_factor=1.000

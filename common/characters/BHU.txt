@@ -1,6 +1,6 @@
 characters={
 	BHU_jigme_wangchuck={
-		name= BHU_jigme_wangchuck
+		name="Jigme Wangchuck"
 		portraits={
 			civilian={
 				large="GFX_portrait_buthan_jigme_wangchuk"
@@ -9,12 +9,11 @@ characters={
 		country_leader={
 			ideology=despotism
 			expire="1965.1.1.1"
-			traits = { the_dragon_king }
 			id=-1
 		}
 	}
 	BHU_tsarong_wangyal={
-		name= BHU_tsarong_wangyal
+		name="Tsarong Wangyal"
 		portraits={
 			civilian={
 				large=GFX_portrait_Tsarong_Wangyal
@@ -27,8 +26,8 @@ characters={
 			id=-1
 		}
 	}
-	BHU_gendun_rinpoche={
-		name= BHU_gendun_rinpoche
+	BHU_gendün_rinpoche={
+		name="Gendün Rinpoche"
 		portraits={
 			civilian={
 				large=GFX_portrait_Gendun_Rinpoche
@@ -42,7 +41,7 @@ characters={
 		}
 	}
 	BHU_andruk_tashi={
-		name= BHU_andruk_tashi
+		name="Andruk Tashi"
 		portraits={
 			civilian={
 				large=GFX_portrait_Andruk_Tashi
@@ -73,7 +72,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_reginald_b_stevens
+		name="Reginald B. Stevens"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_asia_3"
@@ -98,7 +97,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_jigme_dorji_wangchuck
+		name="Jigme Dorji Wangchuck"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_asia_1"
@@ -121,7 +120,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_chamba_wangyal
+		name="Chamba Wangyal"
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_2"
@@ -146,7 +145,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_namgyal_bahadur
+		name="Namgyal Bahadur"
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_2"
@@ -171,7 +170,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_ugyen_tenzin
+		name="Ugyen Tenzin"
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_asia_2"
@@ -196,7 +195,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_tommy_gould
+		name="Tommy Gould"
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_asia_1"
@@ -222,7 +221,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_bill_collett
+		name="Bill Collett"
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_3"
@@ -248,7 +247,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_gendun_shakabpa
+		name="Gendün Shakabpa"
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_asia_1"
@@ -271,7 +270,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_tsarong_rinpoche
+		name="Tsarong Rinpoche"
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_asia_2"
@@ -296,7 +295,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_dorji_yeshey
+		name="Dorji Yeshey"
 		portraits={
 			army={
 				small="GFX_idea_generic_air_asia_3"
@@ -319,7 +318,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_tsepon_shatra
+		name="Tsepon Shatra"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_asia_2"
@@ -345,7 +344,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_dechen_sonam
+		name="Dechen Sonam"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_asia_5"
@@ -371,7 +370,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_sonam_pradukha
+		name="Sonam Pradukha"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_asia_4"
@@ -390,7 +389,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_jigme_palden_dorji
+		name="Jigme Palden Dorji"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_asia_2"
@@ -409,7 +408,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_sonam_tobgay_dorji
+		name="Sonam Tobgay Dorji"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_asia_3"
@@ -428,7 +427,7 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name= BHU_mang_pos_bhur_bai
+		name="Mang-pos Bhur-ba'i"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_asia_1"

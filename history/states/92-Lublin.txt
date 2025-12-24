@@ -8,8 +8,9 @@ state={
 		}
 		owner = POL
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
+			infrastructure = 5
+			arms_factory = 4
+			industrial_complex = 3
 			air_base = 1
 
 		}
@@ -28,13 +29,12 @@ state={
 		3521 3559 6484 6580 9452 9521 9544 11399 11466 
 	}
 	manpower=2464600
-
-	resources = {
-		coal = 2 # initial distribution
-	}
-
 	buildings_max_level_factor=1.000
 	state_category=town
+
+	resources = {
+		coal = 4 # initial distribution
+	}
 
 	local_supplies=9.0 
 }

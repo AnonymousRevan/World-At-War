@@ -1,5 +1,5 @@
 ideas = {
-
+	
 	country = {
 		CAN_great_depression_1 = {
 
@@ -14,11 +14,12 @@ ideas = {
 			removal_cost = -1
 
 			picture = great_depression
-
+			
 			modifier = {
-				consumer_goods_factor = 0.50
-				industrial_capacity_factory = -0.20
-				industrial_capacity_dockyard = -0.20
+				consumer_goods_factor = 0.75
+				industrial_capacity_factory = -0.45
+				industrial_capacity_dockyard = -0.45
+				production_speed_arms_factory_factor = -0.15
 			}
 		}
 
@@ -35,11 +36,12 @@ ideas = {
 			removal_cost = -1
 
 			picture = great_depression
-
+			
 			modifier = {
-				consumer_goods_factor = 0.25
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = -0.10
+				consumer_goods_factor = 0.50
+				industrial_capacity_factory = -0.30
+				industrial_capacity_dockyard = -0.30
+				production_speed_arms_factory_factor = -0.05
 			}
 		}
 
@@ -56,7 +58,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = can_patriation
-
+			
 			rule = { can_decline_call_to_war = yes }
 
 			modifier = {
@@ -77,14 +79,73 @@ ideas = {
 			removal_cost = -1
 
 			picture = tfv_can_conscription_crisis
-
+			
 			modifier = {
 				conscription_factor = -0.30
 			}
 		}
-
+		
 		CAN_conscription_crisis_mended = {
-
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = tfv_can_conscription_crisis
+			
+			modifier = {
+				conscription_factor = -0.10
+			}
+		}
+		
+		CAN_conscription_crisis_healed = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = can_defence_of_canada_regulations_fascism
+			
+			modifier = {
+				conscription_factor = 0.10
+				special_forces_cap = 0.05
+			}
+		}
+		
+		defense_board = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = can_defence_of_canada_regulations_communism
+			
+			modifier = {
+				experience_gain_army = 0.05
+				experience_gain_air = 0.05
+				experience_gain_navy = 0.05	
+			}
+		}
+		
+		CAN_hour = {
 			allowed = {
 				always = no
 			}
@@ -95,11 +156,53 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = tfv_can_conscription_crisis
+			picture = generic_exploit_mines
 
 			modifier = {
-				conscription_factor = -0.10
+				supply_consumption_factor = -0.05
+                local_resources_factor = 0.1			
 			}
+
+		}
+		
+		CAN_darkest = {
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = CAN
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = 0.05
+
+			}
+		}
+		
+		CAN_darkest_hour = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = YUG_federal_defense_council
+
+			modifier = {
+				heat_attrition_factor = -0.5
+				acclimatization_hot_climate_gain_factor = 0.1			
+			}
+
 		}
 
 		CAN_defence_of_canada_regulations_democratic = {
@@ -109,13 +212,13 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				 has_government = democratic
+				 has_government = democratic 
 			}
 
 			removal_cost = -1
 
 			picture = can_defence_of_canada_regulations_democratic
-
+			
 			modifier = {
 				communism_drift = -0.01
 				fascism_drift = -0.01
@@ -136,7 +239,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = can_defence_of_canada_regulations_fascism
-
+			
 			modifier = {
 				democratic_drift = -0.01
 				communism_drift = -0.01
@@ -157,7 +260,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = can_defence_of_canada_regulations_communism
-
+			
 			modifier = {
 				democratic_drift = -0.01
 				fascism_drift = -0.01
@@ -178,9 +281,11 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_goods_red_bonus
-
+			
 			modifier = {
-				consumer_goods_factor = -0.10
+				industrial_capacity_factory = 0.04
+				industrial_capacity_dockyard = 0.04
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -197,9 +302,11 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_goods_red_bonus
-
+			
 			modifier = {
-				consumer_goods_factor = -0.20
+				industrial_capacity_factory = 0.08
+				industrial_capacity_dockyard = 0.08
+				consumer_goods_factor = -0.25
 			}
 		}
 
@@ -238,13 +345,13 @@ ideas = {
 			removal_cost = -1
 
 			picture = can_wartime_prices_and_trade_board
-
+			
 			modifier = {
 				min_export = -0.05
 				global_building_slots_factor = 0.10
 			}
 		}
-
+		
 		CAN_bits_and_pieces_program = {
 
 			allowed = {
@@ -258,12 +365,12 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_production_bonus
-
+			
 			modifier = {
 				production_factory_start_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
-				industrial_capacity_factory = 0.04
-				industrial_capacity_dockyard = 0.04
+				industrial_capacity_factory = 0.03
+				industrial_capacity_dockyard = 0.03
 			}
 		}
 
@@ -280,7 +387,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_manpower_bonus
-
+			
 			modifier = {
 				conscription_factor = 0.05
 			}
@@ -288,7 +395,7 @@ ideas = {
 		}
 
 		CAN_send_in_the_zombies = {
-
+			
 			allowed = {
 				always = no
 			}
@@ -300,15 +407,15 @@ ideas = {
 			removal_cost = -1
 
 			picture = can_send_in_the_zombies
-
+			
 			modifier = {
-				conscription_factor = 0.15
+				conscription_factor = 0.05
 				conscription = 0.01
 			}
 		}
-
+		
 		CAN_the_plan = {
-
+			
 			allowed = {
 				always = no
 			}
@@ -320,7 +427,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_air_bonus
-
+			
 
 			equipment_bonus = {
 				small_plane_airframe = {
@@ -343,12 +450,12 @@ ideas = {
 					air_ground_attack = 0.05
 					instant = yes
 				}
-				small_plane_naval_bomber_airframe = {
+				cv_small_plane_naval_bomber_airframe = {
 					air_range = 0.1
 					naval_strike_attack = 0.05
 					instant = yes
 				}
-				cv_small_plane_naval_bomber_airframe = {
+				small_plane_naval_bomber_airframe = {
 					air_range = 0.1
 					naval_strike_attack = 0.05
 					instant = yes
@@ -363,17 +470,9 @@ ideas = {
 					air_attack = 0.05
 					instant = yes
 				}
-				medium_plane_scout_plane_airframe = {
+				cv_medium_plane_airframe = {
 					air_range = 0.1
-					instant = yes
-				}
-				large_plane_airframe = {
-					air_range = 0.1
-					air_bombing = 0.05
-					instant = yes
-				}
-				large_plane_maritime_patrol_plane_airframe = {
-					air_range = 0.1
+					air_attack = 0.05
 					instant = yes
 				}
 				transport_plane_equipment = {
@@ -386,7 +485,7 @@ ideas = {
 				air_ace_generation_chance_factor = 0.10
 			}
 		}
-
+		
 		CAN_swastika_clubs = {
 			allowed = {
 				always = no
@@ -422,7 +521,7 @@ ideas = {
 			modifier = {
 				democratic_drift = -0.1
 				fascism_drift = 0.2
-				war_support_factor = 0.05
+				stability_factor = 0.05
 				conscription = 0.02
 			}
 		}
@@ -443,7 +542,7 @@ ideas = {
 			modifier = {
 				democratic_drift = -0.1
 				fascism_drift = 0.2
-				war_support_factor = 0.05
+				stability_factor = 0.05
 				conscription = 0.02
 				send_volunteer_divisions_required = -1
 				send_volunteer_size = 1
@@ -486,7 +585,6 @@ ideas = {
 				democratic_drift = -0.1
 				communism_drift = 0.2
 				industrial_capacity_factory = 0.02
-				industrial_capacity_dockyard = 0.02
 			}
 		}
 
@@ -509,7 +607,6 @@ ideas = {
 				democratic_drift = -0.1
 				communism_drift = 0.2
 				industrial_capacity_factory = 0.04
-				industrial_capacity_dockyard = 0.04
 				subversive_activites_upkeep = -0.5
 			}
 		}
@@ -528,19 +625,17 @@ ideas = {
 			picture = generic_degauss_ship_hulls
 
 			equipment_bonus = {
-				ship_hull_light = {
-					instant = yes
-					sub_detection = 0.1
+				destroyer = {
+					sub_detection = 0.1 instant = yes
 				}
 				ship_hull_cruiser = {
-					instant = yes
-					sub_detection = 0.1
+					sub_detection = 0.1 instant = yes
 				}
 			}
 		}
 
 		CAN_trade_fleet = {
-
+			
 			allowed = {
 				always = no
 			}
@@ -550,385 +645,260 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			picture = escort_effort_focus
-
+			
 			equipment_bonus = {
 				convoy = {
 					build_cost_ic = -0.25 instant = yes
 				}
 			}
 		}
-		
-		CAN_dollar_a_year_men = {
-			allowed = {
-				always = no
-			}
-			
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = generic_political_support
-			
-			modifier = {
-				political_advisor_cost_factor = -0.33
-			}
-		}
-		
-		CAN_unified_communist_party = {
-			allowed = {
-				always = no
-			}
-			
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			removal_cost = -1
-
-			picture = generic_communism_drift_bonus
-			
-			modifier = {
-				party_popularity_stability_factor = 0.15
-				conscription_factor = 0.15
-			}
-		}
-		
-		CAN_communist_ideals_4 = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = generic_communism_drift_bonus
-
-			modifier = {
-				democratic_drift = -0.1
-				communism_drift = 0.25
-				industrial_capacity_factory = 0.10
-				industrial_capacity_dockyard = 0.10
-				subversive_activites_upkeep = -0.5
-			}
-		}
-		
-		CAN_true_revolution = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = generic_communist_army
-
-			modifier = {
-				training_time_factor = -0.2
-				land_doctrine_cost_factor = -0.10
-				non_core_manpower = 0.05
-				resistance_target = -0.05
-			}
-		}
-		
-		CAN_booming_economy = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_exploit_mines
-
-			modifier = {
-				production_speed_buildings_factor = 0.20
-			}
-		}
-
-		CAN_canadian_citizenship = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_constitutional_guarantees
-
-			modifier = {
-				
-				conscription_factor = 0.1
-				surrender_limit = 0.15
-				autonomy_gain = 0.1
-				research_speed_factor = 0.05
-				
-			}
-		}
-
-		CAN_consumer_goods_for_newfoundland = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_exploit_mines
-
-			modifier = {
-				
-				consumer_goods_factor = -0.15
-				
-			}
-		}
-
-		CAN_dominion_rifle_association_idea = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = ast_volunteer_defence_corps
-
-			modifier = {
-				
-				training_time_factor = -0.15
-				experience_gain_army_factor = 0.05
-				
-			}
-
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-		
 	}
-
+	
 	# TECHNOLOGY
-	tank_manufacturer = {
+	
+    tank_research = {
+		
 
-		designer = yes
+		vickers_armstrong_can_research = {
 
-		vickers_armstrong_can = {
+			picture = generic_tank_manufacturer_1
 
-			picture = generic_tank_manufacturer_2
-
+			
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
+			
+			research_bonus = { armor = 0.15 }  traits = { tank_research_trait }		
 
-			research_bonus = {
-				armor = 0.15
-			}
-
-			traits = { medium_tank_manufacturer }
-
-			# quite the useless tanks the vickers 6-ton
 		}
 	}
 
 	industrial_concern = {
 
-
-
 		montreal_lab = {
 
 			picture = generic_industrial_concern_1
-
+			
 			allowed = {
 				original_TAG = CAN
-				has_dlc = "Together for Victory"
 			}
-
-
-
+				
 			research_bonus = {
-				electronics = 0.15
+				industry = -0.05
 			}
-
-			traits = { electronics_concern }
-
-			modifier = {
-			}
+			
+			traits = { industrial_concern }
 		}
-
 		polymer_corporation = {
 
 			picture = generic_industrial_concern_2
 
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
+			}
+
+			available = {
+				has_completed_focus = CAN_polymer_corporation
 			}
 
 			research_bonus = {
 				synth_resources = 0.1
-				industry = 0.05
+			}
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_synthetic_rubber_refinery_factor = 0.1
+				fuel_gain_factor = 0.25
 			}
 
-			traits = { refinery_concern }
-		}
-
-		canadian_pacific_railway = {
-
-			picture = CAN_canadian_pacific_railway
-
-			allowed = {
-				original_tag = CAN
-				has_dlc = "Together for Victory"
-			}
-
-			available = {
-				has_completed_focus = CAN_canada_pacific_railway
-			}
-
-			research_bonus = {
-				industry = 0.05
-			}
-
-			traits = { railway_company }
+			traits = { GER_refinery_concern }	
 		}
 
 	}
+    industrial_research = {
 
+
+		montreal_lab_research = {
+
+			picture = generic_industrial_concern_1
+			
+			allowed = {
+				original_TAG = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+            traits = { industrial_research_trait }
+		}
+
+	}
 	materiel_manufacturer = {
-
+			
 		designer = yes
-
+		
 		inglis_company = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
 
+			allowed = {
+				original_TAG = CAN
+			}
+					
+			research_bonus = {
+				support_tech = -0.05
+			}
+			modifier = { materiel_manufacturer_cost_factor = -0.33 }
+			traits = { support_equipment_manufacturer }
+					
+		}	
+
+		small_arms_limited = {
+
+			picture = generic_infantry_equipment_manufacturer_1
+			
+			allowed = {
+				original_TAG = CAN
+			}
+		
+			
+			research_bonus = {
+				infantry_weapons = -0.05
+			}
+			modifier = { materiel_manufacturer_cost_factor = -0.33 }
+			traits = { infantry_equipment_manufacturer }
+			
+		}
+		
+	}
+	materiel_research = {
+
+		inglis_company_research = {
+			
 			picture = generic_infantry_equipment_manufacturer_2
 
 			allowed = {
 				original_TAG = CAN
 				has_dlc = "Together for Victory"
 			}
-
-
-
+						
 			research_bonus = {
 				support_tech = 0.10
 			}
+			traits = { materiel_research_trait }
+		}	
 
-			traits = { support_equipment_manufacturer }
-
-
-		}
-
-		small_arms_limited = {
+		small_arms_limited_research = {
 
 			picture = generic_infantry_equipment_manufacturer_1
-
+			
 			allowed = {
 				original_TAG = CAN
 				has_dlc = "Together for Victory"
 			}
-
-
-
+					
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-
-			traits = { infantry_equipment_manufacturer }
-
-					}
-
+			traits = { materiel_research_trait }
+		
+		}
+		
 	}
-
-	naval_manufacturer = {
-
+	naval_manufacturer = { 
+		
 		designer = yes
-
+		
 		kingston_shipbuilding = {
 			picture = generic_naval_manufacturer_2
 
-
+			
 			allowed = {
 				original_tag = CAN
 			}
-
+			
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = -0.05
 			}
-
-			equipment_bonus = {
-
-			}
-
+			modifier = { naval_manufacturer_cost_factor = -0.33 }
+			
 			traits = { pacific_fleet_naval_manufacturer }
 		}
 
 		halifax_shipyard_limited = {
 			picture = generic_naval_manufacturer_3
 
-
+			
 			allowed = {
 				original_tag = CAN
 			}
-
+			
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = -0.05
 			}
-
+			modifier = { naval_manufacturer_cost_factor = -0.33 }
 			equipment_bonus = {
 				# destroyers
 			}
-
+			
 			traits = { convoy_escort_naval_manufacturer }
 		}
 	}
+	naval_research = { 
+		
+		kingston_shipbuilding_research = {
+			picture = generic_naval_manufacturer_2
 
-	aircraft_manufacturer = {
-
-		designer = yes
-
-		havilland_canada = {
-			picture = generic_air_manufacturer_1
-
-
+			
 			allowed = {
 				original_tag = CAN
 			}
+			
+			research_bonus = { naval_equipment = 0.15 } traits = { naval_research_trait }
 
-			research_bonus = {
-				air_equipment = 0.15
+		}
+
+	}
+	aircraft_research = { 
+
+		havilland_canada_research = {
+			picture = generic_air_manufacturer_1
+
+			
+			allowed = {
+				original_tag = CAN
 			}
+			
+			research_bonus = { air_equipment = 0.15 }
+			traits = { aircraft_research_trait }
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
+	}
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		havilland_canada = {
+			picture = generic_air_manufacturer_1
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			research_bonus = {
+				air_equipment = -0.05
+			}
+			modifier = { aircraft_manufacturer_cost_factor = -0.33 }
 			traits = { medium_aircraft_manufacturer }
-
+			
 			# heavy fighters like mosquito
-
+						
 			ai_will_do = {
 				factor = 1
 			}
@@ -937,19 +907,19 @@ ideas = {
 		canadian_car_foundry = {
 			picture = generic_air_manufacturer_2
 
-
+			
 			allowed = {
 				original_tag = CAN
 			}
-
+			
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = -0.05
 			}
-
+			modifier = { aircraft_manufacturer_cost_factor = -0.33 }
 			traits = { light_aircraft_manufacturer }
-
+			
 			# fighter/interceptors like Hurricane
-
+						
 			ai_will_do = {
 				factor = 1
 			}
@@ -968,15 +938,15 @@ ideas = {
 			available = {
 				has_completed_focus = CAN_fund_fairchilds_development
 			}
-
+			
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = -0.05
 			}
-
+			modifier = { aircraft_manufacturer_cost_factor = -0.33 }
 			traits = { naval_aircraft_manufacturer }
-
+			
 			# fighter/interceptors like Hurricane
-
+						
 			ai_will_do = {
 				factor = 1
 			}
@@ -995,15 +965,15 @@ ideas = {
 			available = {
 				has_completed_focus = CAN_cookie_carriers
 			}
-
+			
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = -0.05
 			}
-
+			modifier = { aircraft_manufacturer_cost_factor = -0.33 }
 			traits = { heavy_aircraft_manufacturer }
-
+			
 			# fighter/interceptors like Hurricane
-
+						
 			ai_will_do = {
 				factor = 1
 			}

@@ -144,47 +144,16 @@ leader_traits = {
 		}
 	}
 
-	PER_deposed_shah_trait = {
-		sprite = 5
-		autonomy_gain = 0.1
-		stability_factor = 0.1
-
-		ai_will_do = {
-			factor = 2
-		}
-	}
-
-	PER_disinherited_heir_trait = {
-		sprite = 5
-		neutrality_drift = 0.1
-		stability_factor = -0.05
-
-		ai_will_do = {
-			factor = 2
-		}
-	}
-
-	PER_rightful_king_trait = {
-		sprite = 5
-		political_power_factor = 0.1
-		stability_factor = -0.02
-
-
-		ai_will_do = {
-			factor = 2
-		}
-	}
-
-	sikh_activist = {
-		sprite = 13
-		experience_gain_army_factor = 0.1
-		modifier_army_sub_unit_mountaineers_attack_factor = 0.1
-		modifier_army_sub_unit_mountaineers_max_org_factor = 0.1
-		autonomy_gain_ll_to_overlord = 0.35
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#	sikh_activist = {
+#		sprite = 13
+#		experience_gain_army_factor = 0.1
+#		modifier_army_sub_unit_mountaineers_attack_factor = 0.1
+#		modifier_army_sub_unit_mountaineers_max_org_factor = 0.1
+#		autonomy_gain_ll_to_overlord = 0.35
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
 
 	all_india_muslim_league_leader = {
 		sprite = 13
@@ -263,15 +232,14 @@ leader_traits = {
 
 	destroyer_of_worlds = {
 		sprite = 13
-		production_speed_nuclear_facility_factor = 0.2
-		nuclear_production_factor = 0.2
-		production_speed_arms_factory_factor = 0.15
-		production_speed_industrial_complex_factor = -0.15
+		production_speed_nuclear_facility_factor = 0.20
+		nuclear_production_factor = 0.10
+		production_speed_rocket_site_factor = 0.20
 	}
 
 	father_of_pakistan = {
 		sprite = 13
-		surrender_limit = 0.1
+		surrender_limit = 0.5
 		army_core_defence_factor = 0.15
 		army_core_attack_factor = 0.1
 		political_power_factor = 0.1
@@ -304,9 +272,11 @@ leader_traits = {
 
 	special_operations_specialist = {
 		sprite = 3
-		paradrop_organization_factor = 0.1
-		paratrooper_aa_defense = 0.25
-		no_supply_grace = 72
+		
+		stability_factor = 0.05
+		stability_weekly = 0.001
+		war_support_weekly = 0.001
+		special_forces_min = 75
 	}
 	well_mannered_iman = {
 		sprite = 13
@@ -380,21 +350,6 @@ leader_traits = {
 		cic_to_overlord_factor = 0.15
 	}
 
-	staunch_imperialist_alt = { # Freeman's trait for Loyalist branch - a bit less bad
-		sprite = 13
-		autonomy_gain_ll_to_overlord = -0.15
-		autonomy_gain = -0.2
-		cic_to_overlord_factor = 0.15
-	}
-
-	staunch_imperialist_alt_consult = { # Improvement in Loyalist Branch
-		sprite = 13
-		autonomy_gain_ll_to_overlord = -0.15
-		autonomy_gain = -0.2
-		cic_to_overlord_factor = 0.1
-		stability_factor = 0.1
-	}
-
 	seasoned_administrator = {
 		resistance_activity = -0.2
 		resistance_damage_to_garrison = -0.35
@@ -405,27 +360,6 @@ leader_traits = {
 		autonomy_gain_ll_to_overlord = -0.1
 		autonomy_gain = -0.1
 		cic_to_overlord_factor = 0.05
-	}
-
-	aloof_authority_alt = { # Linlithgow's trait for Loyalist branch - a bit less bad
-		autonomy_gain_ll_to_overlord = -0.1
-		autonomy_gain = -0.1
-		cic_to_overlord_factor = 0.05
-		master_ideology_drift = 0.2
-	}
-
-	aloof_authority_alt_consult = { # Improvement in Loyalist Branch
-		autonomy_gain_ll_to_overlord = -0.1
-		autonomy_gain = -0.1
-		cic_to_overlord_factor = 0.05
-		master_ideology_drift = 0.2
-		stability_factor = 0.1
-	}
-
-	belligerent_viceroy = {
-		stability_factor = -0.15
-		industrial_capacity_factory = 0.1
-		conscription_factor = 0.1
 	}
 
 	spiritual_leader = {
@@ -586,10 +520,11 @@ leader_traits = {
 
 	RAJ_freedom_fighter = {
 		sprite = 13
-		army_attack_against_major_factor = 0.08
-		army_defence_against_major_factor = 0.1
-		supply_consumption_factor = -0.03
-		communism_drift = 0.03
+		stability_factor = 0.05
+		stability_weekly = 0.001
+		war_support_weekly = 0.001
+		army_armor_attack_factor = 0.02
+	    army_armor_defence_factor = 0.02
 	}
 
 	RAJ_trade_union_leader = {
@@ -649,13 +584,13 @@ leader_traits = {
 			}
 		}
 
-		equipment_bonus = {
-			armored_car_equipment = {
-				build_cost_ic = -0.15
-				instant = yes
-			}
-			
-		}	
+#		equipment_bonus = {
+#			armored_car_equipment = {
+#				build_cost_ic = -0.15
+#				instant = yes
+#			}
+#			
+#		}	
 	}
 
 	tata_chairman = {
@@ -707,14 +642,5 @@ leader_traits = {
 		war_support_factor = 0.2
 		justify_war_goal_time = -0.5
 	}
-
-	red_tiger_of_bengal = {
-		sprite = 13
-		resistance_damage_to_garrison_on_our_occupied_states = 0.15
-		army_core_defence_factor = 0.1
-		army_core_attack_factor = 0.08
-		communism_drift = 0.02
-	}
-	#RAJ
 
 }

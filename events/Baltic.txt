@@ -38,17 +38,16 @@ country_event = {
 					has_guaranteed = EST
 				}
 			}
-			modifier = { #If Germany has given guarantee through a focus, don't fold
-				factor = 0
-				is_guaranteed_by = GER
-				GER = {
-					OR = {
-						has_completed_focus = GER_tributes_for_guarantees
-						has_completed_focus = GER_safeguard_the_baltic
-						has_completed_focus = GER_safeguard_the_baltic_ww
-					}
-				}
-			}
+#			modifier = { #If Germany has given guarantee through a focus, don't fold
+#				factor = 0
+#				is_guaranteed_by = GER
+#				GER = {
+##					OR = {
+##						has_completed_focus = GER_tributes_for_guarantees
+##						has_completed_focus = GER_safeguard_the_baltic
+##					}
+#				}
+#			}
 
 			modifier = { #To cover an edge case, should not happen
 				factor = 0
@@ -152,17 +151,16 @@ country_event = {
 				}
 			}
 
-			modifier = { #If Germany has given guarantee through a focus, don't fold
-				factor = 0
-				is_guaranteed_by = GER
-				GER = {
-					OR = {
-						has_completed_focus = GER_tributes_for_guarantees
-						has_completed_focus = GER_safeguard_the_baltic
-						has_completed_focus = GER_safeguard_the_baltic_ww
-					}
-				}
-			}
+#			modifier = { #If Germany has given guarantee through a focus, don't fold
+#				factor = 0
+#				is_guaranteed_by = GER
+#				GER = {
+#					OR = {
+#						has_completed_focus = GER_tributes_for_guarantees
+#						has_completed_focus = GER_safeguard_the_baltic
+#					}
+#				}
+#			}
 
 			modifier = { #To cover an edge case this should not happen
 				factor = 0
@@ -267,17 +265,16 @@ country_event = {
 				}
 			}
 
-			modifier = { #If Germany has given guarantee through a focus, don't fold
-				factor = 0
-				is_guaranteed_by = GER
-				GER = {
-					OR = {
-						has_completed_focus = GER_tributes_for_guarantees
-						has_completed_focus = GER_safeguard_the_baltic
-						has_completed_focus = GER_safeguard_the_baltic_ww
-					}
-				}
-			}
+#			modifier = { #If Germany has given guarantee through a focus, don't fold
+#				factor = 0
+#				is_guaranteed_by = GER
+#				GER = {
+#					OR = {
+#						has_completed_focus = GER_tributes_for_guarantees
+#						has_completed_focus = GER_safeguard_the_baltic
+#					}
+#				}
+#			}
 
 			modifier = { #To cover an edge case this should not happen
 				factor = 0
@@ -295,9 +292,6 @@ country_event = {
 		if = {
 			limit = {
 				has_country_flag = cave_to_enemy_pressure_flag
-				NOT = {	#Appeased the wrong side
-					has_completed_focus = LIT_appease_nazis
-				}
 			}
 			effect_tooltip = {
 				FROM = { 
@@ -359,6 +353,8 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	fire_only_once = yes
+	
 	option = { # Accept demands
 		name = baltic.4.a
 		ai_chance = { 
@@ -404,21 +400,21 @@ country_event = {
 			}
 			country_event = { days = 1 id = germany.22 }
 		}
-		hidden_effect = {
-			hidden_effect = {
-				every_country = {
-					limit = {
-						capital_scope = {
-							is_on_continent = europe
-						}
-					}
-					news_event = { 
-						id = news.19
-						days = 1 
-					}	
-				}
-			}
-		}
+#		hidden_effect = {
+#			hidden_effect = {
+#				every_country = {
+#					limit = {
+#						capital_scope = {
+#							is_on_continent = europe
+#						}
+#					}
+#					news_event = { 
+#						id = news.19
+#						days = 1 
+#					}	
+#				}
+#			}
+#		}
 	}
 	option = { # Refuse
 		name = baltic.4.b		

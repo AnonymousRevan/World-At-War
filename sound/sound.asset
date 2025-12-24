@@ -956,7 +956,7 @@ sound =
 sound =
 {
 	name = "nuke_01"
-	file = "animations/nuke_01.wav"
+	file = "animations/shit_nfl.wav"
 	always_load = no
 }
 
@@ -4258,4 +4258,11 @@ sound =
 {
 	name = "building_landmark_big_ben_destroyed_04"
 	file = "animations/building_landmark_big_ben_destroyed_04.wav"
+}
+
+#### NORA SOUND MODDING ####
+sound = 
+{
+	name = "Nora_Stalingrad_Massengrab"
+	file = "audiofiles/stalingrad_massengrab.wav"
 }

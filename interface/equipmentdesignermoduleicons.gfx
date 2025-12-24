@@ -81,6 +81,16 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_EMSI_fixed_ship_radar_slot_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/radar.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_EMSI_fixed_ship_radar_slot_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/radar.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_EMSI_fixed_ship_engine_slot"
 		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/engine.dds"
 	}
@@ -294,6 +304,21 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/secondary_battery_icn_2.dds"
 	}
 	
+	##DP Secondary Battery
+	spriteType = {
+		name = "GFX_SMI_ship_secondaries_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/secondary_battery_icn.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_secondaries_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/secondary_battery_icn_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_ship_secondaries_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/secondary_battery_icn_5.dds"
+	}
 	
 ######## Depth Charge
 

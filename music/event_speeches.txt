@@ -1,0 +1,7 @@
+music_station = "event_speeches"
+
+music = {
+	song = "usanyecommittee"
+	chance = { factor = 1 }
+}
+

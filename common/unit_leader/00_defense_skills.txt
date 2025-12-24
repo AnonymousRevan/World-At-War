@@ -2,122 +2,66 @@ leader_defense_skills = {
 
 	### NAVY ###
 	1 = {
-		cost = 100
+		cost = 200
 		type = navy
 		modifier = {
-			naval_defense_factor = 0.05
-		}
-		building_module_modifier = {
-			naval_enemy_fleet_size_ratio_penalty_factor = 0.0125
-			screening_efficiency = 0.015
+			naval_defense_factor = 0.025
 		}
 	}
 
 	2 = {
-		cost = 200
+		cost = 400
 		type = navy
 		modifier = {
-			naval_defense_factor = 0.10
-		}
-		building_module_modifier = {
-			naval_enemy_fleet_size_ratio_penalty_factor = 0.025
-			screening_efficiency = 0.03
+			naval_defense_factor = 0.05
 		}
 	}
 
 	3 = {
-		cost = 400
+		cost = 800
 		type = navy
 		modifier = {
-			naval_defense_factor = 0.15
-		}
-		building_module_modifier = {
-			naval_enemy_fleet_size_ratio_penalty_factor = 0.0375
-			screening_efficiency = 0.045
+			naval_defense_factor = 0.075
 		}
 	}
 
 	4 = {
-		cost = 800
+		cost = 1600
 		type = navy
 		modifier = {
-			naval_defense_factor = 0.20
-		}
-		building_module_modifier = {
-			naval_enemy_fleet_size_ratio_penalty_factor = 0.05
-			screening_efficiency = 0.06
+			naval_defense_factor = 0.1
 		}
 	}
 
 	5 = {
-		cost = 1600
+		cost = 3200
 		type = navy
 		modifier = {
-			naval_defense_factor = 0.25
-		}
-		building_module_modifier = {
-			naval_enemy_fleet_size_ratio_penalty_factor = 0.0625
-			screening_efficiency = 0.075
+			naval_defense_factor = 0.125
 		}
 	}
 
 	6 = {
-		cost = 3200
+		cost = 6400
 		type = navy
 		modifier = {
-			naval_defense_factor = 0.30
-		}
-		building_module_modifier = {
-			naval_enemy_fleet_size_ratio_penalty_factor = 0.075
-			screening_efficiency = 0.09
+			naval_defense_factor = 0.15
 		}
 	}
 
 	7 = {
-		cost = 6400
+		cost = 12800
 		type = navy
 		modifier = {
-			naval_defense_factor = 0.35
-		}
-		building_module_modifier = {
-			naval_enemy_fleet_size_ratio_penalty_factor = 0.0875
-			screening_efficiency = 0.105
+			naval_defense_factor = 0.175
 		}
 	}
 
 	8 = {
-		cost = 12800
-		type = navy
-		modifier = {
-			naval_defense_factor = 0.40
-		}
-		building_module_modifier = {
-			naval_enemy_fleet_size_ratio_penalty_factor = 0.1
-			screening_efficiency = 0.12
-		}
-	}
-
-	9 = {
 		cost = 25600
 		type = navy
 		modifier = {
-			naval_defense_factor = 0.45
-		}
-		building_module_modifier = {
-			naval_enemy_fleet_size_ratio_penalty_factor = 0.1125
-			screening_efficiency = 0.135
-		}
-	}
-	
-	10 = {
-		cost = 51200
-		type = navy
-		modifier = {
-			naval_defense_factor = 0.50
-		}
-		building_module_modifier = {
-			naval_enemy_fleet_size_ratio_penalty_factor = 0.125
-			screening_efficiency = 0.15
+			naval_defense_factor = 0.20
 		}
 	}
 
@@ -129,7 +73,8 @@ leader_defense_skills = {
 			defence = 0.025
 		}
 	}
-		
+	
+	
 	2 = {
 		cost = 200
 		type = corps_commander
@@ -151,7 +96,7 @@ leader_defense_skills = {
 		cost = 800
 		type = corps_commander
 		modifier = {
-			defence = 0.10
+			defence = 0.1
 		}
 	}
 	
@@ -169,7 +114,7 @@ leader_defense_skills = {
 		modifier = {
 			defence = 0.15
 		}
-	}
+	}	
 
 	7 = {
 		cost = 6400
@@ -177,26 +122,38 @@ leader_defense_skills = {
 		modifier = {
 			defence = 0.175
 		}
-	}
+	}	
 
 	8 = {
 		cost = 12800
 		type = corps_commander
 		modifier = {
-			defence = 0.20
+			defence = 0.2
 		}
 	}
-
 	9 = {
+		cost = 19200
+		type = corps_commander
+		modifier = {
+			defence = 0.21
+		}
+	}
+	10 = {
 		cost = 25600
 		type = corps_commander
 		modifier = {
-			defence = 0.225
+			defence = 0.22
 		}
 	}
-	
-	10 = {
-		cost = 51200
+	11 = {
+		cost = 32000
+		type = corps_commander
+		modifier = {
+			defence = 0.23
+		}
+	}
+	12 = {
+		cost = 38400
 		type = corps_commander
 		modifier = {
 			defence = 0.25
@@ -234,7 +191,7 @@ leader_defense_skills = {
 		cost = 800
 		type = field_marshal
 		modifier = {
-			defence = 0.10
+			defence = 0.1
 		}
 	}
 	
@@ -266,23 +223,35 @@ leader_defense_skills = {
 		cost = 12800
 		type = field_marshal
 		modifier = {
-			defence = 0.20
+			defence = 0.2
 		}
-	}	
-
+	}
 	9 = {
+		cost = 19200
+		type = field_marshal
+		modifier = {
+			defence = 0.21
+		}
+	}
+	10 = {
 		cost = 25600
 		type = field_marshal
 		modifier = {
-			defence = 0.225
+			defence = 0.22
 		}
-	}	
-	
-	10 = {
-		cost = 51200
+	}
+	11 = {
+		cost = 32000
+		type = field_marshal
+		modifier = {
+			defence = 0.23
+		}
+	}
+	12 = {
+		cost = 38400
 		type = field_marshal
 		modifier = {
 			defence = 0.25
 		}
-	}
+	}	
 }

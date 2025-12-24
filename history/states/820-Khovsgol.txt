@@ -9,7 +9,8 @@ state = {
 		owner = MON
 
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			industrial_complex = 2
 		}
 
 		victory_points = {
@@ -21,7 +22,7 @@ state = {
 
 		add_core_of = MON
 	}
-	manpower = 88200
+	manpower = 888200
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	local_supplies = 0.000

@@ -8,7 +8,7 @@ state=
 	state_category = town
 
 	history= {
-		owner = IRE
+		owner = ENG
 		victory_points = {
 			9303 3 #Galway
 		}
@@ -16,9 +16,11 @@ state=
 			11371 1 #Sligo
 		}
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 7
+			industrial_complex = 1
 		}
-		add_core_of = IRE
+		add_core_of = ENG
+#		add_core_of = IRE
 	}
 
 	provinces=

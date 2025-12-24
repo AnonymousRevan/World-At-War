@@ -185,40 +185,17 @@ submarine_coastal_defense = {
     xp_cost = 100
     xp_type = navy
 
-    available = {
-        is_special_project_completed = sp:sp_naval_midget_submarine
-    }
-    visible = {
-        has_dlc = "No Compromise, No Surrender"
-    }
 
     submarine = {
         supply_consumption = -0.02
     }
 
     rewards = {
-
-    	optimized_compartments = {
-            equipment_bonus = {
-                ship_hull_midget_submarine = {
-                    reliability = 0.2
-                    instant = yes
-                }
-            }
-    	}
     	patrol_vigilance = {
     		submarine = {
     			max_organisation = 20
     			surface_detection = 0.2
     		}
-    	}
-    	maneuever_fire = {
-            equipment_bonus = {
-                ship_hull_midget_submarine = {
-                    torpedo_attack = 0.1
-                    instant = yes
-                }
-            }
     	}
     	locals_knowledge = {
     		submarine = {
@@ -228,70 +205,6 @@ submarine_coastal_defense = {
     	counter_submarine_operations = {
     		submarine = {
     			torpedo_attack = 0.1
-    		}
-            equipment_bonus = {
-                ship_hull_midget_submarine = {
-                    sub_visibility = -0.05
-
-                    instant = yes
-                }
-            }
-    	}
-    }
-}
-
-coastal_minelaying = {
-	track = submarines
-    name = SUBDOCTRINE_SUBMARINE_COASTAL_MINELAYING
-    description = SUBDOCTRINE_SUBMARINE_COASTAL_MINELAYING_DESC
-    icon = GFX_doctrine_convoy_interdiction_medium
-
-    xp_cost = 100
-    xp_type = navy
-
-    available = {
-        always = yes
-    }
-    visible = {
-        has_dlc = "No Compromise, No Surrender"
-    }
-
-    naval_mines_effect_reduction = 0.1
-
-    rewards = {
-
-    	covert_buildup = {
-    		submarine = {
-    			naval_speed = 0.1
-    			mines_planting = 0.25
-    		}
-
-    	}
-
-    	placement_for_effect = {
-    		naval_mines_damage_factor = 0.25
-    	}
-
-
-    	minefield_patrols = {
-    		destroyer = {
-    			mines_planting = 0.25
-    			lg_attack = 0.1
-    		}
-
-    	}
-    	overhead_protection = {
-    		destroyer = {
-    			anti_air_attack = 0.1
-    		}
-
-    	}
-    	clearing_procedures = {
-    		submarine = {
-    			mines_sweeping = 0.2
-    		}
-    		destroyer = {
-    			mines_sweeping = 0.2
     		}
     	}
     }
@@ -307,14 +220,10 @@ long_range_submarines = {
     xp_type = navy
 
     available = {
-        OR = {
-            is_special_project_completed = sp:sp_naval_cruiser_submarine
-            is_special_project_completed = sp:sp_naval_submarine_carrier
-        }
         
     }
     visible = {
-        has_dlc = "No Compromise, No Surrender"
+        has_dlc = "Gotterdammerung"
     }
 
     naval_torpedo_hit_chance_factor = 0.1
@@ -323,10 +232,6 @@ long_range_submarines = {
 
         ocean_patrols = {
             equipment_bonus = {
-                ship_hull_fleet_submarine = {
-                    surface_detection = 0.1
-                    instant = yes
-                }
                 ship_hull_cruiser_submarine = {
                     surface_detection = 0.1
                     instant = yes
@@ -338,51 +243,25 @@ long_range_submarines = {
         }
         improved_dive_protocols = {
             equipment_bonus = {
-                ship_hull_fleet_submarine = {
-                    surface_visibility = -0.05
-                    instant = yes
-                }
                 ship_hull_cruiser_submarine = {
                     surface_visibility = -0.05
                     instant = yes
-                }
-                ship_hull_carrier_submarine = {
-                    surface_visibility = -0.1
-                    instant = yes
-
                 }
             }
         }
         support_the_surface = {
             equipment_bonus = {
-                ship_hull_fleet_submarine = {
-                    naval_speed = 0.1
-                    torpedo_attack = 0.2
-                    instant = yes
-                }
                 ship_hull_cruiser_submarine = {
                     naval_speed = 0.1
                     torpedo_attack = 0.2
-                    instant = yes
-                }
-                ship_hull_carrier_submarine = {
-                    naval_speed = 0.2
                     instant = yes
                 }
             }
         }
         stowage_efficiency = {
             equipment_bonus = {
-                ship_hull_fleet_submarine = {
-                    fuel_consumption = -0.2
-                    instant = yes
-                }
                 ship_hull_cruiser_submarine = {
                     fuel_consumption = -0.2
-                    instant = yes
-                }
-                ship_hull_carrier_submarine = {
-                    submarine_carrier_size = 2
                     instant = yes
                 }
             }

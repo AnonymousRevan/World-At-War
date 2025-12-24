@@ -401,7 +401,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_unit_level"
 		texturefile = "gfx/interface/unit_level.dds"
-		noOfFrames = 5
+		noOfFrames = 8
 	}
 	
 	SpriteType = {
@@ -791,7 +791,7 @@ spriteTypes = {
 		name = "GFX_trait_defense"
 		textureFile = "gfx/interface/unitcontrol/trait_defense.dds"
 	}
-
+	
 	spriteType = {
 		name = "GFX_commander_sort_blue"
 		textureFile = "gfx/interface/unitcontrol/commander_sort_blue.dds"

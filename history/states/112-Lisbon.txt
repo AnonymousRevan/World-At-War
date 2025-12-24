@@ -2,7 +2,7 @@ state={
 	id=112
 	name="STATE_112"
 	resources={
-		tungsten= 32 #was: 50.000
+		tungsten= 50 #was: 50.000
 	}
 
 	history={
@@ -14,9 +14,9 @@ state={
 			3798 1 
 		}
 		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 2
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
 			air_base = 5
 			dockyard = 2
 			11805 = {
@@ -24,6 +24,7 @@ state={
 			}
 		}
 		add_core_of = POR
+		add_core_of = SPR
 
 	}
 

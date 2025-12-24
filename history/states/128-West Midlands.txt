@@ -6,16 +6,16 @@ state={
 	
 	state_category = metropolis
 	resources={
-		steel=27 # was: 48
-		coal = 13 # initial distribution
+		steel=135 # was: 48
+		coal = 26 # initial distribution
 	}
 
 	history={
 		owner = ENG
 		buildings = {
-			infrastructure = 4 #was: 8
-			arms_factory = 2
-			industrial_complex = 3
+			infrastructure = 8
+			arms_factory = 4
+			industrial_complex = 7
 			air_base = 6
 		}
 		victory_points = {

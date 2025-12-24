@@ -8,12 +8,12 @@ state={
 
 	history={
 		owner = ITA
-		
+		set_state_flag = GER_atlantikwall
 		victory_points = {
 			1130 5 
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			air_base = 4
 			1130 = {
 				naval_base = 6

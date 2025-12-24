@@ -1,0 +1,63 @@
+THF = {
+    track = operations
+    name = SUBDOCTRINE_THF
+    description = SUBDOCTRINE_THF_DESC
+    icon = GFX_doctrine_expeditionary_warfare_medium
+    #TODO: Add trigger tag for surrender progress
+    xp_cost = 75
+    xp_type = army
+
+    available = {
+    
+    }
+
+    ai_will_do = {
+
+        base = 0
+
+    }
+
+    # EFFECTS
+    
+    war_support_factor = 0.05
+	stability_factor = 0.05
+	consumer_goods_factor = 0.25
+	
+    ai_will_do = { }
+
+    rewards = {
+        round_the_clock = {
+        #1
+			mastery = 250
+            industrial_capacity_factory = 0.1
+			industrial_capacity_dockyard = 0.1
+        }
+        invest_in_victory = {
+        #2
+			mastery = 250
+            production_speed_arms_factory_factor = 0.1
+			production_speed_dockyard_factor = 0.1  
+        }
+        believe_in_steel = {
+        #3
+			mastery = 250
+            production_speed_steel_refinery_factor = 0.1
+			local_resources_factor = 0.1
+        }
+        all_must_fight = {
+        #4
+			mastery = 250
+            conscription = 0.05
+        }
+        good_day_to_die = {
+        #5
+			mastery = 250
+            category_front_line = {
+                default_morale = 0.1
+				breakthrough = 0.1
+				soft_attack = 0.02
+				hard_attack = 0.02
+				max_organisation = 1
+        }
+    }
+}

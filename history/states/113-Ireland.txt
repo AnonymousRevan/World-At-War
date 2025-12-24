@@ -4,15 +4,15 @@ state={
 	name="STATE_113" # Leinster
 	manpower = 1357600
 	resources={
-		aluminium=0 # was: 2
-		steel=2 # was: 3
-		coal = 1 # initial distribution
+#		aluminium=0 # was: 2
+		steel=10 # was: 3
+		coal = 2 # initial distribution
 	}
 	
 	state_category = city
 	
 	history={
-		owner = IRE
+		owner = ENG
 		victory_points = {
 			285 1 #Wexford
 		}
@@ -23,15 +23,15 @@ state={
 			11293 10 #Dublin
 		}
 		buildings = {
-			infrastructure = 4
-			arms_factory = 1
-			industrial_complex = 5
+			infrastructure = 7
+			industrial_complex = 2
 			air_base = 3
 			11293 = {
 				naval_base = 6
 			}
 		}
-		add_core_of = IRE
+#		add_core_of = IRE
+		add_core_of = ENG
 	}
 
 	provinces={

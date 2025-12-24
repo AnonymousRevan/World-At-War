@@ -7,17 +7,17 @@ state={
 	state_category = rural
 	
 	resources={
-		oil=14 # was: 20
-		aluminium=30 # was: 52
-		coal = 5 # initial distribution = with infra 8.4 / 1280 total
+		oil=14
+		aluminium=150
+		coal = 10 # initial distribution = with infra 8.4 / 1280 total
 	}
 
 
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 4
+			industrial_complex = 8
 		}
 		add_core_of = USA
 		victory_points = {

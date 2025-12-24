@@ -8,7 +8,8 @@ fighter_aircraft = {
         multiplier = 8.0 
         equipment = {
             fighter
-            interceptor
+			heavy_fighter
+            scout_plane
         }
     }
 }
@@ -37,7 +38,6 @@ medium_aircraft = {
         multiplier = 8.0 
         equipment = {
             tactical_bomber
-            heavy_fighter
             scout_plane
         }
     }
@@ -52,7 +52,22 @@ heavy_aircraft = {
         multiplier = 8.0 
         equipment = {
             strategic_bomber
+			tactical_bomber
             maritime_patrol_plane
         }
     }
 }
+
+heavy_fighter_aircraft = {
+    name = DOCTRINE_TRACK_HFIGHTER_AIRCRAFT
+    background = "GFX_air_superiority_bg"
+    icon = "GFX_doctrine_milestone_fighter_air"
+    icon_frame = "GFX_doctrine_decor_air"
+    mastery = {
+        multiplier = 8.0 
+        equipment = {
+			heavy_fighter
+			fighter
+            scout_plane
+        }
+    }

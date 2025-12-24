@@ -633,7 +633,7 @@ sp_land_generic_reward_armor_tech_1 = {
 					name = sp_land_generic_reward_option_armor_tech_bonus_name
 					bonus = 0.1
 					uses = 1
-					category = armor
+					category = all_armour
 				}
 
 				FROM = { set_project_flag = sp_land_generic_reward_armor_tech_flag }
@@ -673,7 +673,7 @@ sp_land_generic_reward_armor_tech_2 = {
 					name = sp_land_generic_reward_option_armor_tech_bonus_name
 					bonus = 0.2
 					uses = 1
-					category = armor
+					category = all_armour
 				}
 
 				FROM = { set_project_flag = sp_land_generic_reward_armor_tech_flag }
@@ -713,7 +713,7 @@ sp_land_generic_reward_armor_tech_3 = {
 					name = sp_land_generic_reward_option_armor_tech_bonus_name
 					bonus = 0.35
 					uses = 1
-					category = armor
+					category = all_armour
 				}
 
 				add_breakthrough_progress = {
@@ -758,7 +758,8 @@ sp_land_generic_reward_artillery_tech_1 = {
 					name = sp_land_generic_reward_option_artillery_tech_bonus_name
 					bonus = 0.1
 					uses = 1
-					category = mio_cat_artillery
+					category = artillery
+					category = infantry_weapons
 				}
 
 				FROM = { set_project_flag = sp_land_generic_reward_artillery_tech_flag }
@@ -798,7 +799,8 @@ sp_land_generic_reward_artillery_tech_2 = {
 					name = sp_land_generic_reward_option_artillery_tech_bonus_name
 					bonus = 0.2
 					uses = 1
-					category = mio_cat_artillery
+					category = artillery
+					category = infantry_weapons
 				}
 
 				FROM = { set_project_flag = sp_land_generic_reward_artillery_tech_flag }
@@ -838,7 +840,8 @@ sp_land_generic_reward_artillery_tech_3 = {
 					name = sp_land_generic_reward_option_artillery_tech_bonus_name
 					bonus = 0.35
 					uses = 1
-					category = mio_cat_artillery
+					category = artillery
+					category = infantry_weapons
 				}
 
 				add_breakthrough_progress = {
@@ -880,7 +883,7 @@ sp_land_generic_reward_armor_bonus_1 = {
 		iteration_output = {
 			equipment_bonus = {
 				armor = {
-					armor_value = 0.02
+					armor_value = 0.05
 				}
 			}
 			
@@ -919,7 +922,7 @@ sp_land_generic_reward_armor_bonus_2 = {
 		iteration_output = {
 			equipment_bonus = {
 				armor = {
-					hardness = 0.02
+					hardness = 0.05
 				}
 			}
 			
@@ -958,7 +961,7 @@ sp_land_generic_reward_armor_bonus_3 = {
 		iteration_output = {
 			equipment_bonus = {
 				armor = {
-					armor_value = 0.02
+					armor_value = 0.03
 					hardness = 0.02
 				}
 			}
@@ -1042,7 +1045,7 @@ sp_land_generic_reward_engine_bonus_2 = {
 		iteration_output = {
 			equipment_bonus = {
 				armor = {
-					reliability = 0.03
+					reliability = 0.05
 				}
 			}
 
@@ -1125,8 +1128,8 @@ sp_land_generic_reward_artillery_bonus_1 = {
 		
 		iteration_output = {
 			equipment_bonus = {
-				artillery = {
-					soft_attack = 0.02
+				artillery_equipment = {
+					soft_attack = 0.05
 				}
 			}
 
@@ -1164,11 +1167,11 @@ sp_land_generic_reward_artillery_bonus_2 = {
 		
 		iteration_output = {
 			equipment_bonus = {
-				anti_tank = {
-					hard_attack = 0.02
+				anti_tank_equipment = {
+					hard_attack = 0.04
 				}
-				anti_air = {
-					air_attack = 0.02
+				anti_air_equipment = {
+					air_attack = 0.04
 				}
 			}
 
@@ -1206,14 +1209,14 @@ sp_land_generic_reward_artillery_bonus_3 = {
 		
 		iteration_output = {
 			equipment_bonus = {
-				artillery = {
-					soft_attack = 0.02
+				artillery_equipment = {
+					soft_attack = 0.04
 				}
-				anti_tank = {
-					hard_attack = 0.02
+				anti_tank_equipment = {
+					hard_attack = 0.04
 				}
-				anti_air = {
-					air_attack = 0.02
+				anti_air_equipment = {
+					air_attack = 0.04
 				}
 			}
 
@@ -1300,7 +1303,7 @@ sp_land_generic_reward_critical_failure = {
 			facility_state_effects = {
 				damage_building = {
 					tags = facility
-					damage = 0.25
+					damage = 0.74
 					province = var:facility_province_id
 				}
 			}

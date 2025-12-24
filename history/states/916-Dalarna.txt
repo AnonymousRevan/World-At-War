@@ -5,7 +5,7 @@ state={
 	state_category = rural
 
 	resources = {
-		steel = 20
+		steel = 100
 	}
 
 
@@ -16,7 +16,7 @@ state={
 		owner = SWE
 		add_core_of = SWE
 		buildings = {
-			infrastructure = 3
+			infrastructure = 5
 		}
 	}
 	provinces={

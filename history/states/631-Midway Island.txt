@@ -7,9 +7,10 @@ state=
 
 	history={
 		owner = USA
+		set_state_flag = USA_controls
 		add_core_of = HAW
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			13052 = {
 				naval_base = 1
 			}
@@ -20,7 +21,7 @@ state=
 	}
 	
 	provinces={
-		13052 	
+		12943 12978 13052 	
 	}
 
 	local_supplies=0.0 

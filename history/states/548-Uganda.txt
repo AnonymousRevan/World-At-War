@@ -4,15 +4,15 @@ state={
 
 	state_category = rural
 	resources={
-		rubber=3 # was: 4
+		rubber=15
 	}
 	history={
 		owner = ENG
+		add_core_of = NGA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 
 		}
-		add_core_of = UGA
 		victory_points = {
 			12989 1
 		}

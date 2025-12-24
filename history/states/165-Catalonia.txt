@@ -3,16 +3,15 @@ state={
 	id=165
 	name="STATE_165"
 	manpower = 3036537
-
-	resources = {
-		coal = 2 #initial distribution
-	}
 	
 	state_category = large_city
 
+	resources = {
+		coal = 4 #initial distribution
+	}
+
 	history={
 		owner = SPR
-		add_core_of = CAT
 		victory_points = {
 			9764 30
 		}
@@ -23,10 +22,10 @@ state={
 			6927 1
 		}
 		buildings = {
-			infrastructure = 4 #was: 7
-			arms_factory = 1
-			industrial_complex = 1
-			air_base = 2
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 6
+			air_base = 1
 			9764 = {
 				naval_base = 4
 			}

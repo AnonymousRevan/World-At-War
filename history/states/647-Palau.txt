@@ -1,50 +1,30 @@
-state = {
-
-	id = 647
-	name = "STATE_647"
+state=
+{
+	id=647
+	name="STATE_647"
 	state_category = small_island
 	manpower = 12100
-
-	resources = {
-		aluminium = 5
-	}
-
-	history = {
-
+	history=
+	{
 		owner = JAP
+		set_state_flag = JAP_controls
 		add_core_of = FSM
-		add_core_of = PLU
-
 		buildings = {
-
-			infrastructure = 2
+			infrastructure = 3
 			air_base = 1
-			
 			4357 = {
 				naval_base = 1
-			}
 
+			}
 		}
 		
 		victory_points = {
-			4357 1 # Ngaraard
-		}
-
-		victory_points = {
-			12103 2 # Koror
-		}
-
-		strategic_province_location = {
-			defensive_chokepoint = 12103
-		}
-		strategic_province_location = {
-			defensible_coastline = 4357
+			4357 1 
 		}
 	}
-
-	provinces = {
-		4357 12103
+	provinces={
+		2106 4357 12103
 	}
 
-	local_supplies = 0.0 
+	local_supplies=0.0 
 }

@@ -1,0 +1,65 @@
+GBP_master = {
+    track = infantry
+    name = SUBDOCTRINE_GBP_master
+    description = SUBDOCTRINE_GBP_master_DESC
+    icon = GFX_doctrine_defensive_postures_medium
+
+    xp_cost = 100
+    xp_type = army
+
+    available = {
+        has_doctrine = grand_battleplan
+    }
+
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 95
+            OR = {
+            original_tag = ENG
+            original_tag = AST
+            original_tag = NZL
+            original_tag = CAN
+            original_tag = SAF
+            original_tag = ITA
+            }
+        }
+    }
+
+    #OTHER BASE REWARDS
+	max_planning = 0.05
+    category_all_infantry = {
+        entrenchment = 0.1
+		max_strength = 1.5
+		max_organisation = 5
+    }
+
+    rewards = {
+        improvised_fighting_position = {
+            supply_consumption_factor = -0.075
+        }
+        elastic_operations = {
+            category_all_infantry = {
+                max_organisation = 10
+                defense = 0.1
+            }
+        }
+        developed_trench_networking = {
+            category_all_infantry = {
+                default_morale = 0.1
+				entrenchment = 0.05
+            }
+        }
+        field_emplacements = {
+            category_all_infantry = {
+                soft_attack = 0.15
+            }
+        }
+        field_construction_training = {
+            category_all_infantry = {
+				breakthrough = 0.15
+				max_organisation = 6
+        }
+
+    }
+}

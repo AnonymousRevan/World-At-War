@@ -3,17 +3,19 @@ state={
 	id=227
 	name="STATE_227"
 	manpower = 3767336
-
-	resources = {
-		coal = 82 # initial distribution
-	}
 	
 	state_category = city
+
+	resources = {
+		coal = 45 # initial distribution
+	}
 
 	history={
 		owner = SOV
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5
+			arms_factory = 8
+			industrial_complex = 2
 		}
 		victory_points = {
 			6474 10
