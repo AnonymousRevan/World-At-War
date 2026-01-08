@@ -97,7 +97,7 @@ characters={
 		country_leader={
 			desc="POLITICS_PHILIPPE_PÉTAIN_DESC"
 			ideology=fascism_ideology
-			traits={ LAT_military_dictator }
+			traits={ LAT_military_dictator air_concern }
 			expire="1965.1.1.1"
 			id=-1
 		}

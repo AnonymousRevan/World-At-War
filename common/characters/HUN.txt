@@ -80,14 +80,14 @@ characters={
 		country_leader={
 			desc="POLITICS_MIKLOS_HORTHY_DESC"
 			ideology=fascism_ideology
-			traits={ anti_communist }
+			traits={ anti_communist ambitious_union_boss }
 			expire="1965.1.1.1"
 			id=-1
 		}
 		country_leader={
 			desc="POLITICS_MIKLOS_HORTHY_DESC"
 			ideology=oligarchism
-			traits={ fascist_sympathies anti_communist }
+			traits={ fascist_sympathies anti_communist ambitious_union_boss }
 			expire="1965.1.1.1"
 			id=500
 		}

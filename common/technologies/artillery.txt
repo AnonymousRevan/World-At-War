@@ -743,6 +743,10 @@ technologies = {
 			hard_attack = 0.075
 			ap_attack = 0.10
 		}
+		category_tank_destroyers = {
+			hard_attack = 0.075
+			ap_attack = 0.1
+		}
 		
 		path = {
 			leads_to_tech = antitank2
@@ -770,6 +774,12 @@ technologies = {
 		
 		enable_equipments = {
 			anti_tank_equipment_2
+		}
+		
+		enable_subunits = {
+			anti_tank_brigade_heavy
+			anti_tank_hvs
+			anti_tank_brigade_mot_heavy
 		}
 		
 		enable_equipment_modules = {
@@ -804,6 +814,10 @@ technologies = {
 			hard_attack = 0.075
 			ap_attack = 0.10
 		}
+		category_tank_destroyers = {
+			hard_attack = 0.075
+			ap_attack = 0.1
+		}
 		
 		path = {
 			leads_to_tech = antitank4
@@ -833,6 +847,10 @@ technologies = {
 		category_anti_tank = {
 			hard_attack = 0.075
 			ap_attack = 0.10
+		}
+		category_tank_destroyers = {
+			hard_attack = 0.075
+			ap_attack = 0.1
 		}
 		
 		path = {
@@ -1001,6 +1019,12 @@ technologies = {
 	
 		enable_equipments = {
 			anti_air_equipment_2
+		}
+		
+		enable_subunits = {
+			anti_air_heavy
+			anti_air_company_hv
+			anti_air_mot_heavy
 		}
 		
 		enable_equipment_modules = {

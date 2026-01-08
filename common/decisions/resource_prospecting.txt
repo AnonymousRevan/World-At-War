@@ -4152,27 +4152,51 @@ prospect_for_resources = {
 	CHI_develop_coal_mines = {
 		icon = coal
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 694
+		allowed = {
+			#original_tag = CHI
+			#has_dlc = "No Compromise, No Surrender"
+			
+		}
+
+		visible = {
+			FROM = {
+				is_controlled_by_ROOT_or_ally = yes
+				NOT = {
+					has_state_flag = china_coal_developed
+				}
+			}
+		}
+
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target_array = CHI.core_states
+		target_trigger = {
+			OR = {
+				AND = {
+					owns_state = FROM
+					controls_state = FROM
+				}
+				AND = {		#Only let China check allies, its performance-intensive
+					has_dlc = "No Compromise, No Surrender"
+					original_tag = CHI
+					FROM = {
+						controller = {
+							is_ally_with = ROOT
+						}
+					}
+				}
+			}
+			FROM = {
+				has_resources_amount = {
+					resource = coal
+					amount > 3
+				}
 			}
 		}
 
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 694
-			controls_state = 694
-		}
-
-		visible = {
-			owns_state = 694
-			controls_state = 694
-			694 = {
-				NOT = {
-					has_state_flag = china_coal_developed
-				}
-			}
 		}
 
 		fire_only_once = yes
@@ -4204,7 +4228,7 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			694 = {
+			FROM = {
 				set_state_flag = china_coal_developed
 				add_resource = {
 					type = coal

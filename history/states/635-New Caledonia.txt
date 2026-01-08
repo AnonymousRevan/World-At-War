@@ -3,16 +3,16 @@ state={
 	id=635
 	name="STATE_635"
 	resources={
-		chromium=300
+		chromium=450
 	}
 	
-	state_category = pastoral
+	state_category = small_island
 
 	history={
 		owner = FRA
 		add_core_of = SEN
 		victory_points = {
-			4268 5
+			4268 1
 		}
 		victory_points = {
 			12120 1

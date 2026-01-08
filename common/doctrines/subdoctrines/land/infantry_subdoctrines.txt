@@ -40,12 +40,12 @@ mobile_infantry = {
             }
         }
         decisive_operations = {
-            category_vehicle_infantry = {
+            category_motorised = {
                 max_organisation = 10
             }
         }
         delegated_authority = {
-            category_vehicle_infantry = {
+            category_motorised = {
                 default_morale = 0.1
                 soft_attack = 0.1
             }
@@ -171,7 +171,6 @@ large_unit_tactics = {
         }
         flexible_division_structures = {
         #2
-           unit_infantry_design_cost_factor = -1
            infantry = {
                 max_strength = 0.75
             }
@@ -186,7 +185,7 @@ large_unit_tactics = {
         #4
             category_all_infantry = {
                 max_organisation = 10
-                soft_attack = 0.1
+                soft_attack = 0.05
             }
             army_morale = 0.2
             
@@ -197,7 +196,7 @@ large_unit_tactics = {
                 breakthrough = 0.1
                 soft_attack = 0.1
             }
-            category_vehicle_infantry = {
+            category_motorised = {
                 supply_consumption = -0.02
                 reliability = 0.1
             }
@@ -216,7 +215,10 @@ assault_infantry = {
     xp_type = army
 
     available = {
-        always = yes
+        OR = {
+			has_doctrine = grand_battleplan
+			has_doctrine = superior_firepower
+		}
     }
 
     ai_will_do = {
@@ -677,7 +679,7 @@ peoples_war = {
         quick_decision_offensive_warfare = {
         #3
             militia = {
-               initiative = 0.2
+               initiative = 0.02
                max_organisation = 10
                breakthrough = 0.2
             }

@@ -32,9 +32,10 @@ technologies = {
 		category_all_infantry = {
 			hard_attack = 0.07
 			ap_attack = 0.25
+			defense = 0.025
 
 			urban = {
-				defence = 0.1
+				defence = 0.2
 			}
 		}
 	}
@@ -45,14 +46,14 @@ technologies = {
 			always = no
 		}
 
-		light_infantry = {
+		infantry = {
 			need = {
 			   	infantry_equipment = -25
 				horse_equipment = -10
 			}
-			hard_attack = -0.05
-			soft_attack = -0.05
-			breakthrough = -0.05
+			hard_attack = -0.03
+			soft_attack = -0.03
+			breakthrough = -0.03
 		}
 	}
 	
@@ -76,13 +77,13 @@ technologies = {
 		}
 	}
 	
-	GER_elite_tiger_unit = {
+	GER_volksrifle = {
 		research_cost = -1
 		allow = {
 			always = no
 		}
-		enable_subunits = {
-			elite_heavy_armor
+		enable_equipments = {
+			infantry_equipment_5
 		}
 	}
 
@@ -707,6 +708,40 @@ technologies = {
 				movement = 0.025 
 			}	
 		}	
+	}
+	super_heavy_railway_gun = {
+		enable_equipments = {
+			super_heavy_railway_gun_equipment_1
+		}
+
+		research_cost = 1.0
+		start_year = 1940
+		folder = {
+			name = support_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		categories = {
+			train_tech
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+
+			modifier = {
+				OR = {
+					TAG = GER
+					tag = SOV
+				}
+				factor = 1.5
+			}
+		}
 	}
 }
 

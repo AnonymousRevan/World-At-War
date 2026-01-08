@@ -121,14 +121,14 @@ sp_naval_heavy_carrier = {
     }
     prototype_time = sp_time.prototype.medium
     complexity = sp_complexity.small
-    breakthrough_cost = { specialization_naval = 2 }
+    breakthrough_cost = { specialization_naval = 1 }
     
     project_output = {
         sub_unit_bonus = {
 			carrier = {
-				anti_air_attack = 0.15
+				anti_air_attack = 0.05
 				max_strength = 0.15
-				lg_attack = 0.1
+				lg_attack = 0.05
             }
         }
     }
@@ -162,13 +162,14 @@ sp_naval_DDL = {
     }
     prototype_time = sp_time.prototype.medium
     complexity = sp_complexity.small
-    breakthrough_cost = { specialization_naval = 2 }
+    breakthrough_cost = { specialization_naval = 1 }
     
     project_output = {
         sub_unit_bonus = {
 			destroyer = {
 				sub_detection = 0.25
 				surface_detection = 0.25
+				sub_attack = 0.25
 			}
 		}	
     }
@@ -221,7 +222,7 @@ sp_naval_BCV = {
 			carrier = {
 				lg_attack = 0.25
 				anti_air_attack = 0.25
-				max_strength = 0.33
+				max_strength = 0.25
 				naval_light_gun_hit_chance_factor = 0.15
 				surface_detection = 0.15
 			}
@@ -271,9 +272,9 @@ sp_naval_SHCV = {
     project_output = {
         sub_unit_bonus = {
 			carrier = {
-				max_strength = 1.0
-				max_organisation = 20
-				anti_air_attack = 0.75
+				max_strength = 0.5
+				max_organisation = 10
+				anti_air_attack = 0.5
 			}
 		}
     }
@@ -313,7 +314,7 @@ sp_naval_AC = {
         sub_unit_bonus = {
 			destroyer = {
 				naval_light_gun_hit_chance_factor = 0.1
-				naval_torpedo_hit_chance_factor = 0.1
+				naval_torpedo_hit_chance_factor = 0.05
 				anti_air_attack = 0.05
 			}
 		}

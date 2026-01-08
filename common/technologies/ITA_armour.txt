@@ -731,6 +731,7 @@ technologies = {
 		}
 		enable_subunits = {
 			cruiser_armor
+			cruiser_armor_recon
 		}
 		dependencies = {
 			improved_machine_tools = 1

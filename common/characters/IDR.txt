@@ -10,6 +10,7 @@ characters={
 		country_leader={
 			desc="POLITICS_LORD_LINLITHGOW_DESC"
 			ideology=despotism
+			traits = { energy_concern }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -52,6 +53,7 @@ characters={
 		country_leader={
 			desc="POLITICS_B_P_SITARAMAYYA_DESC"
 			ideology=socialism
+			traits = { ambitious_union_boss }
 			expire="1965.1.1.1"
 			id=-1
 		}

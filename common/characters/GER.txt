@@ -1648,8 +1648,9 @@ characters={
 			}
 			modifier  = {
 				political_power_cost  = 0.1
-				production_speed_arms_factory_factor  = 0.1
-				production_speed_dockyard_factor  = 0.1
+				production_speed_arms_factory_factor  = 0.15
+				production_speed_dockyard_factor  = 0.15
+				production_speed_steel_refinery_factor = 0.25
 				production_speed_industrial_complex_factor  = -0.1
 			}
 		}
@@ -1938,6 +1939,7 @@ characters={
 					compliance_gain  = 0.030
 					minimum_training_level  = -0.150
 					political_power_cost  = 0.400
+					conscription = 0.02
 				}
 				ai_will_do  = {
 					factor  = 0.000

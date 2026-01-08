@@ -21,6 +21,7 @@ ideas = {
 				fascism_acceptance = 10
 				enemy_justify_war_goal_time = 10
 				send_volunteer_size = 6
+				land_mastery_gain_factor = 0.15
 				air_volunteer_cap = 1000
 			}
 		}

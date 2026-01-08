@@ -121,6 +121,7 @@ ideas = {
 			modifier = {
 				conscription_factor = 0.10
 				special_forces_cap = 0.05
+				land_mastery_gain_factor = 0.05
 			}
 		}
 		
@@ -142,6 +143,9 @@ ideas = {
 				experience_gain_army = 0.05
 				experience_gain_air = 0.05
 				experience_gain_navy = 0.05	
+				land_mastery_gain_factor = 0.05
+				air_mastery_gain_factor = 0.05
+				naval_mastery_gain_factor = 0.05
 			}
 		}
 		
@@ -160,8 +164,7 @@ ideas = {
 
 			modifier = {
 				supply_consumption_factor = -0.05
-                local_resources_factor = 0.1
-                production_factory_max_efficiency_factor = 0.075				
+                local_resources_factor = 0.1			
 			}
 
 		}
@@ -484,6 +487,7 @@ ideas = {
 
 			modifier = {
 				air_ace_generation_chance_factor = 0.10
+				air_mastery_gain_factor = 0.05
 			}
 		}
 		

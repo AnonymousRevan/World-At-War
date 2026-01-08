@@ -17,17 +17,17 @@ sp_harsh_resource = {
 			modify_building_resources = {
 			   building = steel_refinery
 			   resource = steel
-			   amount = 25
-			}
-			modify_building_resources = {
-			   building = steel_refinery
-			   resource = aluminium
 			   amount = 20
 			}
 			modify_building_resources = {
 			   building = steel_refinery
-			   resource = tungsten
+			   resource = aluminium
 			   amount = 15
+			}
+			modify_building_resources = {
+			   building = steel_refinery
+			   resource = tungsten
+			   amount = 10
 			}
 			modify_building_resources = {
 			   building = steel_refinery
@@ -37,7 +37,7 @@ sp_harsh_resource = {
 			modify_building_resources = {
 			   building = synthetic_refinery
 			   resource = oil
-			   amount = 5
+			   amount = 2
 			}
 			modify_building_resources = {
 			   building = synthetic_rubber_refinery

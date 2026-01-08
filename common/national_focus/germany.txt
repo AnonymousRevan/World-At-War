@@ -1616,7 +1616,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 100 
+					amount = 150 
 				}
 			}
 			effect_tooltip = {
@@ -1641,7 +1641,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 100 
+					amount = 150 
 				}
 				set_state_flag = GER_seize_private_iron_ore_target
 			}
@@ -1661,7 +1661,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 100 
+					amount = 150
 				}
 				set_state_flag = GER_seize_private_iron_ore_target
 			}
@@ -4013,7 +4013,7 @@ focus_tree = {
 		relative_position_id = GER_volksturm
 		x = 0
 		y = 2
-		cost = 5
+		cost = 3
 		available = {
 			OR = {
 				SOV = {
@@ -4039,9 +4039,9 @@ focus_tree = {
 		
 		completion_reward = {
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 100000 producer = GER }
-		} 
-	}	
-
+			set_technology = { GER_volksrifle = 1 }
+		}
+	}
 
 	focus = {
 		id = GER_standard_panzer
@@ -4050,7 +4050,7 @@ focus_tree = {
 		relative_position_id = GER_total_war
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			OR = {
 				SOV = {
@@ -4086,7 +4086,7 @@ focus_tree = {
 		relative_position_id = GER_total_war
 		x = -2
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			OR = {
 				SOV = {
@@ -4122,7 +4122,7 @@ focus_tree = {
 		relative_position_id = GER_panzerfausts_for_all
 		x = 0
 		y = 2
-		cost = 5
+		cost = 3
 		available = {
 			OR = {
 				SOV = {
@@ -4159,7 +4159,7 @@ focus_tree = {
 		relative_position_id = GER_total_war
 		x = 1
 		y = 2
-		cost = 5
+		cost = 3
 		available = {
 			OR = {
 				SOV = {
@@ -4195,7 +4195,7 @@ focus_tree = {
 		relative_position_id = GER_total_war
 		x = -1
 		y = 2
-		cost = 5
+		cost = 3
 		available = {
 			OR = {
 				SOV = {
@@ -4855,7 +4855,7 @@ focus_tree = {
 		relative_position_id = GER_inspire_fanatasiscm
 		x = 2
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 			OR = {
 				SOV = {

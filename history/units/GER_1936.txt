@@ -59,7 +59,7 @@ division_template = {
 
 		motorized = { x = 4 y = 0 }
 		motorized = { x = 4 y = 1 }
-		armored_car = { x = 4 y = 2 }
+		motorized = { x = 4 y = 2 }
 
 	}
 
@@ -94,7 +94,7 @@ division_template = {
 		
 		motorized = { x = 3 y = 0 }
 		motorized = { x = 3 y = 1 }
-		armored_car = { x = 3 y = 2 }
+		motorized = { x = 3 y = 2 }
 
 		artillery_brigade_mot = { x = 4 y = 0 }
 		anti_tank_brigade_mot =  { x = 4 y = 1 }

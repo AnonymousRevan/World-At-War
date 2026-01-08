@@ -193,7 +193,7 @@ CAN_CARRIERS_tt:0 "Will put in production 2 cruiser converted carriers represent
  GER_volksturm_tt:0 "Mobilizing the Reich's citizens who have before been seen as unfit for service within the Wehrmacht. This §YNational Focus§! unlocks the £decision_icon_small to recruit Volksturm divisions.\n"
  GER_scorched_earth_tt:0 "Unlocks £decision_icon_small to destroy the infrastructure in some of our occupied territories and in parts of §YGermany§!.  "
  GER_festung_deutschland_tt:0 "Germany shall be turned into an §RImpregnable Fortress§! to resist the barbarous hordes from §YEast§! and §YWest§!. Our glorious cities will become bastions of resistance to withstand all foes."
- GER_panzer_shrek_tech:0 "Panzerfaust"
+ GER_panzer_shrek_tech:0 "Panzerschreck (Inf AP, Defence & Hard attack)"
  GER_cheaper_last_stand_tt:0 "Unlocks a new §YLast Stand§! ability which is cheaper in terms of command power, and doesn't cause a loss of §YWar Support§!."
  GER_schacht_prison:0 "This action will send §HHjalmar Schacht§! to prison, thus making him unavailable as an advisor.\n"
  GER_drang_nach_osten_tt:0 "We are committed on a crusade against §YBolshevism§! and §YCommunism§!. It will be wiped out from the earth and no trace of it will be left behind. A great living space will be created for Germans in the east, and the vast riches of Russia will be secured for the Reich.\n"

@@ -1,0 +1,79 @@
+FTE = {
+    track = operations
+    name = SUBDOCTRINE_FTE
+    description = SUBDOCTRINE_FTE_DESC
+    icon = GFX_doctrine_peoples_war_medium
+
+    xp_cost = 300
+    xp_type = army
+
+    available = {
+		OR = {
+			original_tag = JAP
+			original_tag = SIA
+			original_tag = MAN
+		}
+    }
+	
+	visible = {
+		OR = {
+			original_tag = JAP
+			original_tag = SIA
+			original_tag = MAN
+		}
+	}
+	
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 95
+            OR = {
+            original_tag = ENG
+            original_tag = AST
+            original_tag = NZL
+            original_tag = CAN
+            original_tag = SAF
+            original_tag = ITA
+            }
+        }
+    }
+
+    #OTHER BASE REWARDS
+	land_night_attack = 0.15
+    category_all_infantry = {
+        breakthrough = 0.2
+    }
+
+    rewards = {
+        improvised_fighting_position = {
+            category_all_infantry = {
+				default_morale = 0.1
+			}
+        }
+        elastic_operations = {
+			infantry = {
+				max_organisation = 10
+            }
+        }
+        developed_trench_networking = {
+            category_all_infantry = {
+				breakthrough = 0.1
+				soft_attack = 0.15
+            }
+			category_line_artillery = {
+				breakthrough = 0.15
+				default_morale = 0.05
+			}
+        }
+        field_emplacements = {
+            category_special_forces = {
+				default_morale = 0.25
+            }
+        }
+        field_construction_training = {
+            terrain_penalty_reduction = 0.02
+			
+			}
+        }
+    }
+}

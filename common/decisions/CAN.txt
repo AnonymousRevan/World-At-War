@@ -25,36 +25,15 @@ operations = {
 					transfer_navy = {
 						target = CAN
 					}
-					every_unit_leader = {
-						set_nationality = CAN
-					}
-				}
-				CAN = {
-				transfer_state = 771
-				transfer_state = 545
-				transfer_state = 542
-				transfer_state = 895
-				transfer_state = 894
-				transfer_state = 541
-				transfer_state = 893
-				transfer_state = 681
-				transfer_state = 719
-				transfer_state = 275
-				
-				add_state_core = 771
-				add_state_core = 545
-				add_state_core = 542
-				add_state_core = 895
-				add_state_core = 894
-				add_state_core = 541
-				add_state_core = 893
-				add_state_core = 681
-				add_state_core = 719
-				add_state_core = 275
 				}
 				annex_country = {
 				  target = SAF
 				  transfer_troops = yes
+				}
+				every_state = {
+					limit = { is_core_of = SAF }
+					set_resistance = 0
+					set_compliance = 100
 				}
 			}		
 	}

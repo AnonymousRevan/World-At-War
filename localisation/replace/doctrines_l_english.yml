@@ -765,7 +765,7 @@
   HAS_MASTERY_LEVEL_TRIGGER: "Has reached $SUBDOCTRINE|H$ mastery level $NUMBER|H$"
   HAS_NOT_MASTERY_LEVEL_TRIGGER: "Has not reached $SUBDOCTRINE|H$ mastery level $NUMBER|H$"
   SUBDOCTRINE_More_dakka: "Blot out the sun"
-  SUBDOCTRINE_Bigger_the_better: "The bigger the better"
+  SUBDOCTRINE_Bigger_the_better: "Rear echelon support"
   big_gun: "Big Iron"
   better_ammunition: "Ammo improvements"
   town_buster: "Landscape redesign"
@@ -814,3 +814,5 @@
   DOCTRINE_TRACK_HFIGHTER_AIRCRAFT: "Heavy Fighters"
   SUBDOCTRINE_Jericho: "Jericho's bells"
   SUBDOCTRINE_RAF: "Strength in the Air"
+  SUBDOCTRINE_FTE: "For the Emperor"
+  

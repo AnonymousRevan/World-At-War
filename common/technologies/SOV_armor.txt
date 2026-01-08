@@ -1109,6 +1109,11 @@ technologies = {
 		enable_equipments = {
 			hybrid_tank_equipment_1941
 		}	
+		
+		enable_subunits = {
+			modern_armor_recon
+		}
+		
 		path = {
 			leads_to_tech = sov_hybrid_tank_1943
 			research_cost_coeff = 1

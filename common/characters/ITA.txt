@@ -9,7 +9,7 @@ characters={
 		country_leader={
 			desc="POLITICS_BENITO_MUSSOLINI_DESC"
 			ideology=fascism_ideology
-			traits={ Duce }
+			traits={ Duce sea_concern }
 			expire="1965.1.1.1"
 			id=-1
 		}

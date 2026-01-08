@@ -594,6 +594,7 @@ characters={
 					original_tag  = BUL
 				}
 				available  = {
+					has_completed_focus  = BUL_appoint_right_wing_ministers 
 					not  = {
 						has_government  = democratic 
 					}
@@ -880,9 +881,12 @@ characters={
 					original_tag  = BUL
 				}
 				available  = {
+					not  = {
+						has_completed_focus  = BUL_power_to_the_tsar 
+					}
 				}
 				traits  = {
-					quartermaster_general
+					democratic_reformer 
 				}
 				ai_will_do  = {
 					base  = 1.000
@@ -1020,6 +1024,7 @@ characters={
 					}
 				}
 				available  = {
+					has_completed_focus  = BUL_appoint_right_wing_ministers 
 					not  = {
 						has_country_leader  = {
 							character = BUL_kimon_georgiev
@@ -1114,7 +1119,7 @@ characters={
 					}
 				}
 				traits  = {
-					rearmament_proponent 
+					#tsars_puppet 
 				}
 		}
 		name="BUL_georgi_ivanov_kyoseivanov"
@@ -1132,9 +1137,12 @@ characters={
 					original_tag  = BUL
 				}
 				available  = {
+					not  = {
+						has_completed_focus  = BUL_power_to_the_tsar 
+					}
 				}
 				traits  = {
-					adventurous_daredevil 
+					communist_revolutionary 
 				}
 				ai_will_do  = {
 					base  = 1.000

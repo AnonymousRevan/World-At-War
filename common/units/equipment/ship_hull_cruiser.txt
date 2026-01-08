@@ -106,7 +106,7 @@ equipments = {
 		manpower = 600
 		fuel_consumption = 20
 		
-		max_strength = 90
+		max_strength = 60
 		armor_value = 0
 		reliability = 0.75
 		naval_speed = 24
@@ -170,7 +170,7 @@ equipments = {
 
 		build_cost_ic = 1750
 		manpower = 1000
-		max_strength = 122
+		max_strength = 80
 		reliability = 0.85
 		naval_dominance_factor = 115
 		naval_speed = 26
@@ -209,7 +209,7 @@ equipments = {
 
 		build_cost_ic = 2000
 		manpower = 1200
-		max_strength = 138
+		max_strength = 100
 		reliability = 0.90
 		naval_dominance_factor = 130
 		naval_speed = 27
@@ -247,7 +247,7 @@ equipments = {
 
 		build_cost_ic = 2200
 		manpower = 1400
-		max_strength = 154
+		max_strength = 120
 		reliability = 0.95
 		naval_dominance_factor = 150
 		naval_speed = 28

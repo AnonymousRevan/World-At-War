@@ -249,7 +249,7 @@ branch_operation = {
 		
 		level = {
 			modifier = {
-				operation_steal_tech_outcome = 0.10
+				operation_steal_tech_outcome = 0.05
 				operation_steal_tech_civilian_cost = -0.10
 				operation_steal_tech_army_cost = -0.10
 				operation_steal_tech_navy_cost = -0.10
@@ -260,7 +260,7 @@ branch_operation = {
 		
 		level = {
 			modifier = {
-				operation_steal_tech_outcome = 0.10
+				operation_steal_tech_outcome = 0.05
 				operation_steal_tech_civilian_cost = -0.10
 				operation_steal_tech_army_cost = -0.10
 				operation_steal_tech_navy_cost = -0.10
@@ -271,7 +271,7 @@ branch_operation = {
 		
 		level = {
 			modifier = {
-				operation_steal_tech_outcome = 0.10
+				operation_steal_tech_outcome = 0.05
 				operation_steal_tech_civilian_cost = -0.10
 				operation_steal_tech_army_cost = -0.10
 				operation_steal_tech_navy_cost = -0.10
@@ -282,7 +282,7 @@ branch_operation = {
 		
 		level = {
 			modifier = {
-				operation_steal_tech_outcome = 0.10
+				operation_steal_tech_outcome = 0.05
 				operation_steal_tech_civilian_cost = -0.10
 				operation_steal_tech_army_cost = -0.10
 				operation_steal_tech_navy_cost = -0.10

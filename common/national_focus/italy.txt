@@ -1989,7 +1989,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			has_tech = ita_medium_tank_1937
+			has_tech = ita_cruiser_tank_1939
 		}
 
 		completion_reward = {
@@ -2001,15 +2001,15 @@ focus_tree = {
 					priority = 2
 					
 					regiments = {
-						medium_armor = { x = 0 y = 0 }
-						medium_armor = { x = 0 y = 1 }
-						medium_armor = { x = 0 y = 2 }
-						medium_armor = { x = 0 y = 3 }
+						cruiser_armor = { x = 0 y = 0 }
+						cruiser_armor = { x = 0 y = 1 }
+						cruiser_armor = { x = 0 y = 2 }
+						cruiser_armor = { x = 0 y = 3 }
 		
-						medium_armor = { x = 1 y = 0 }
-						medium_armor = { x = 1 y = 1 }
-						medium_armor = { x = 1 y = 2 }
-						medium_armor = { x = 1 y = 3 }
+						cruiser_armor = { x = 1 y = 0 }
+						cruiser_armor = { x = 1 y = 1 }
+						cruiser_armor = { x = 1 y = 2 }
+						cruiser_armor = { x = 1 y = 3 }
 		
 						motorized = { x = 2 y = 0 }
 						motorized = { x = 2 y = 1 }

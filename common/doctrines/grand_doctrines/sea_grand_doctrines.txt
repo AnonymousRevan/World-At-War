@@ -105,7 +105,6 @@ new_fleet_in_being = {
 		{
             #Naval_operations
 	        navy_capital_ship_defence_factor = 0.1
-			naval_strike_targetting_factor = 0.05
 			strike_force_movement_org_loss = -0.05
 
             effect = {

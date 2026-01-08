@@ -23,14 +23,14 @@ characters={
 				}
 				available  = {
 					SAF = {
-						has_completed_focus  = SAF_hofmeyrs_reforms 
+						has_completed_focus  = SAF_support_appeasement 
 					}
 				}
 				traits  = {
 					technocrat 
 				}
 				modifier  = {
-					political_power_factor  = 0.1
+					political_power_factor  = 0.05
 				}
 		}
 		portraits={
@@ -412,7 +412,7 @@ characters={
 					original_tag  = SAF
 				}
 				traits  = {
-					army_infantry_2 
+					army_artillery_1 
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -542,7 +542,7 @@ characters={
 					}
 				}
 				traits  = {
-					backroom_backstabber_2 military_theorist 
+					backroom_backstabber_2 
 				}
 		}
 		name="SAF_e_g_jansen"
@@ -561,7 +561,7 @@ characters={
 					original_tag  = SAF
 				}
 				traits  = {
-					army_cavalry_2
+					army_infantry_3 
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -588,6 +588,9 @@ characters={
 				available  = {
 					not  = {
 						has_completed_focus  = SAF_force_parliament_debate 
+					}
+					not  = {
+						has_completed_focus  = SAF_support_appeasement 
 					}
 				}
 				traits  = {

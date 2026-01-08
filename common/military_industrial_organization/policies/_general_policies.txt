@@ -90,31 +90,7 @@ mio_policy_cheaper  = {
 	equipment_bonus = {
 		same_as_mio = {
 			reliability = -0.4
-			build_cost_ic = -0.075
-		}
-	}
-}
-
-mio_policy_guntrucks  = {
-	icon = GFX_mio_policy_mechanical_genius
-	allowed = { always = yes }
-	available = { has_mio_size > 4 }
-	equipment_bonus = {
-		motorized_equipment = {
-			soft_attack = 5.0
-			hard_attack = 5.0
-			maximum_speed = -0.15
-			hardness = 0.05
-			build_cost_ic = 0.1
-		}
-	}
-	equipment_bonus = {
-		mechanized_equipment = {
-			soft_attack = 1.25
-			hard_attack = 0.75
-			maximum_speed = -0.2
-			hardness = 0.05
-			build_cost_ic = 0.1
+			build_cost_ic = -0.15
 		}
 	}
 }

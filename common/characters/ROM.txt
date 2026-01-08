@@ -194,7 +194,7 @@ characters={
 		country_leader={
 			desc="POLITICS_OCTAVIAN_GOGA_DESC"
 			ideology=fascism_ideology
-			traits={ fascist_demagogue }
+			traits={ fascist_demagogue the_black_prince }
 			expire="1965.1.1.1"
 			id=-1
 		}

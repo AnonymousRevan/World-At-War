@@ -98,13 +98,7 @@ focus_tree = {
 			ENG = { add_ideas = ENG_foreign_indian_labour_force }
 			add_political_power = 75 
 		    IDR = { complete_national_focus = RAJ_bengal_dockyards }
-			IDR = { complete_national_focus = RAJ_dockyard_construction_efforts }
 		    IDR = { complete_national_focus = RAJ_import_british_design }
-		    add_state_core = 765
-			add_state_core = 658
-			add_state_core = 294
-			add_state_core = 293
-			add_state_core = 659
 		}
 	}
 	
@@ -862,7 +856,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			ENG = { set_autonomy = { target = IDR autonomy_state = autonomy_free } }
+			ENG = { set_autonomy = { target = RAJ autonomy_state = autonomy_free } }
 			set_country_leader_name = {
 				ideology = neutrality
 				name = POLITICS_B_P_SITARAMAYYA_DESC
@@ -878,7 +872,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			ENG = { set_autonomy = { target = IDR autonomy_state = autonomy_free } }
+			ENG = { set_autonomy = { target = RAJ autonomy_state = autonomy_free } }
 			set_country_leader_name = {
 				ideology = neutrality
 				name = POLITICS_B_P_SITARAMAYYA_DESC
@@ -2414,10 +2408,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			modify_tech_sharing_bonus = {
- 				id = commonwealth_research
- 				bonus = 0.03
-			}
 			swap_ideas = {
 				remove_idea = RAJ_poor_industrial_infrastructure_2
 				add_idea = RAJ_poor_industrial_infrastructure_imperial_learning
@@ -5521,7 +5511,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				IDR = { surrender_progress > 0.1 }
+				RAJ = { surrender_progress > 0.1 }
 				date > 1942.01.01
 			}
 		}
@@ -5878,6 +5868,7 @@ focus_tree = {
 				mtg_transport = 1
 				improved_secondary_battery = 1
 				basic_fire_control_system = 1
+				cv_fighter_1936 = 1 
 			}
 	create_equipment_variant = {
 		name = "S Class"
@@ -5946,8 +5937,6 @@ focus_tree = {
 				mtg_transport = 1
 				improved_secondary_battery = 1
 				basic_fire_control_system = 1
-				eng_cv_fighter_1936 = 1 
-				eng_cv_naval_bomber_1936 = 1
 			}
 	create_equipment_variant = {
 		name = "S Class"
@@ -6006,7 +5995,7 @@ focus_tree = {
 		x = -2
 		y = 4
 
-		cost = 3
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -6042,7 +6031,7 @@ focus_tree = {
 		x = 2
 		y = 4
 
-		cost = 3
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 1
@@ -6089,10 +6078,11 @@ focus_tree = {
 		icon = GFX_focus_generic_navy_battleship2
 		relative_position_id = RAJ_bengal_dockyards
 		prerequisite = { focus = RAJ_a_raiding_fleet }
+		mutually_exclusive = { focus = RAJ_submarine_warfare }
 		x = 1
 		y = 5
 
-		cost = 3
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 1
@@ -6116,10 +6106,11 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_weapon
 		relative_position_id = RAJ_bengal_dockyards
 		prerequisite = { focus = RAJ_a_raiding_fleet }
+		mutually_exclusive = { focus = RAJ_capital_ship_raiders }
 		x = 3
 		y = 5
 
-		cost = 3
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -6158,7 +6149,7 @@ focus_tree = {
 		x =-2
 		y = 5
 
-		cost = 3
+		cost = 2.9
 
 		ai_will_do = {
 			factor = 1
@@ -6208,7 +6199,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 3
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -6224,6 +6215,11 @@ focus_tree = {
 
 		complete_tooltip = {
 			unlock_decision_tooltip = RAJ_illustrious_decision
+				add_equipment_to_stockpile = {
+					type = cv_fighter_equipment_1936
+					amount = 40
+					producer = IDR 
+				}
 			create_equipment_variant = {
 				name = "Illustrious Class"
 				type = ship_hull_carrier_1
@@ -6245,12 +6241,7 @@ focus_tree = {
 			unlock_decision_tooltip = RAJ_illustrious_decision
 				add_equipment_to_stockpile = {
 					type = cv_fighter_equipment_1936
-					amount = 60
-					producer = IDR 
-				}
-				add_equipment_to_stockpile = {
-					type = cv_nav_bomber_equipment_1936
-					amount = 60
+					amount = 40
 					producer = IDR 
 				}
 			create_equipment_variant = {
@@ -6278,7 +6269,7 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		cost = 3
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

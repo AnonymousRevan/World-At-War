@@ -186,7 +186,7 @@ focus_tree = {
 		relative_position_id = SOV_expand_the_fleet_commands
 	 	prerequisite = { focus = SOV_expand_the_fleet_commands }
 
-		cost = 5.8
+		cost = 3
 
 		ai_will_do = {
 			factor = 1

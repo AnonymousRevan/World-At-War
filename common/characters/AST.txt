@@ -12,6 +12,7 @@ characters={
 		country_leader={
 			desc="POLITICS_JOHN_CURTIN_DESC"
 			ideology=socialism
+			traits = { captain_of_industry }
 			expire="1965.1.1.1"
 			id=-1
 		}

@@ -2342,7 +2342,7 @@ USA_north_american_aviation_organization = {
 	initial_trait = {
 		name = generic_mio_initial_trait_range_focused_aircraft_designer
 
-		limit_to_equipment_type = {  mio_cat_eq_all_medium_plane }
+		limit_to_equipment_type = {  mio_cat_eq_all_small_plane }
 
 		organization_modifier = {
 			military_industrial_organization_funds_gain = 0.25

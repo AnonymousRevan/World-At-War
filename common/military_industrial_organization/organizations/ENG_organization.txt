@@ -1140,6 +1140,7 @@ ENG_supermarine_organization = {
 
 	equipment_type = {
 		mio_cat_eq_all_small_plane
+		medium_plane_scout_plane_airframe
 		
 	}	
 

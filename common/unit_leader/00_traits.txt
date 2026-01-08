@@ -1788,7 +1788,7 @@ leader_traits = {
 		sub_unit_modifiers = {
 			destroyer = {
 				naval_damage_factor = 0.1
-				naval_torpedo_hit_chance_factor = 0.1
+				naval_torpedo_hit_chance_factor = 0.05
 				navy_visibility = -0.1
 			}
 		}	
@@ -1942,8 +1942,7 @@ leader_traits = {
 	mine_sweeper = { 
 		type = navy
 		modifier = {
-			mines_sweeping_by_fleets_factor = 0.25
-			naval_mines_effect_reduction = 0.25
+			navy_capital_ship_defence_factor = 0.1
 		}
 				
 		ai_will_do = {
@@ -2133,7 +2132,7 @@ leader_traits = {
 		type = navy
 		sub_unit_modifiers = {
 			cv_cas = {
-				air_attack_factor = 0.1
+				air_attack_factor = 0.15
 				air_mission_efficiency = 0.1
 			}
 		}	
@@ -2159,7 +2158,7 @@ leader_traits = {
 		type = navy
 		sub_unit_modifiers = {
 			cv_nav_bomber = {
-				air_attack_factor = 0.1
+				air_attack_factor = 0.15
 				air_mission_efficiency = 0.1
 			}
 		}		
@@ -2687,24 +2686,6 @@ leader_traits = {
 
 		modifier = {
 			intelligence_agency_defense = 0.2
-		}
-	}
-
-	operative_linguist = {
-		type = operative
-		trait_type = basic_trait
-
-		#new_commander_weight = {
-		#}
-
-		cost = 400
-		gain_xp_leader = {
-			NOT = { operative_leader_mission = no_mission }
-			NOT = { has_nationality = FROM }
-		}
-
-		modifier = {
-			# something good
 		}
 	}
 

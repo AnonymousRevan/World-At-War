@@ -44,7 +44,7 @@ NDefines.NProduction.BASE_COUNTRY_ENERGY_PRODUCTION = 55.0 			-- The base energy
 NDefines.NProduction.ENERGY_SCALING_COST_BY_FACTORY_COUNT = 0.02 -- Scales energy cost based on the total number of factories
 NDefines.NProduction.BASE_ENERGY_COST = 0.2						-- How much energy per factory consumes
 NDefines.NProduction.BASE_FACTORY_SPEED = 4				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.5 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.4 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.00				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 10	-- Base start efficiency for factories expressed in %.
 NDefines.NProduction.BASE_FACTORY_MAX_EFFICIENCY_FACTOR = 30	-- Base max efficiency for factories expressed in %.
@@ -142,7 +142,7 @@ NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0 	--Base cost to unlock a 
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 500			--Max army experience a country can store
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 500			--Max navy experience a country can store
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 500				--Max air experience a country can store
-NDefines.NMilitary.COMBAT_MINIMUM_TIME = 6			-- Shortest time possible for a combat in hours
+NDefines.NMilitary.COMBAT_MINIMUM_TIME = 8			-- Shortest time possible for a combat in hours
 NDefines.NMilitary.LAND_COMBAT_ORG_DICE_SIZE = 4                 -- nr of damage dice
 NDefines.NMilitary.LAND_COMBAT_STR_DICE_SIZE = 2                 -- nr of damage dice
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.058       -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
@@ -166,7 +166,7 @@ NDefines.NMilitary.BASE_FORT_PENALTY = -0.18 					   -- fort penalty
 NDefines.NMilitary.MULTIPLE_COMBATS_PENALTY = -0.3         		-- defender penalty if attacked from multiple directions
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 1.0			   -- Base xp gain for traits per hour for armies
 NDefines.NMilitary.MAX_NUM_TRAITS = -1						   -- cant have more, -1 to disable
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.40          -- effect on defense due to enemy air superiorty
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.30          -- effect on defense due to enemy air superiorty
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.65	       -- more AA attack will approach this amount of help (diminishing returns)
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 156 -- how quickly defense approaches the max impact diminishing returns curve
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.20     -- effect on speed due to enemy air superiority
@@ -273,7 +273,7 @@ NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.05 					--Factor on c
 NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0.10				--Training exercises cause more accidents
 NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 5.0							-- multiplier on disruption damage to scale its effects on carrier vs carrier planes
 NDefines.NAir.DISRUPTION_ATTACK_FACTOR = 0.75
-NDefines.NAir.CARRIER_PLANES_AMOUNT_FOR_POSITIONING = 10         -- below this amount of planes on a carrier we no longer get max benefit on enemy positioning
+NDefines.NAir.CARRIER_PLANES_AMOUNT_FOR_POSITIONING = 40         -- below this amount of planes on a carrier we no longer get max benefit on enemy positioning
 NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.25                      -- CAS damaged get multiplied by this in land combats at night
 NDefines.NAir.MISSION_FUEL_COSTS = {  -- fuel cost per plane for each mission
 		1.0, -- AIR_SUPERIORITY
@@ -299,11 +299,11 @@ NDefines.NAir.MAX_QUICK_WING_SELECTION = 5									-- Max possible selection for
 NDefines.NNavy.COMBAT_EVASION_TO_HIT_CHANCE_TORPEDO_MULT = 9.0				-- the above evasion hit chance is multiplied by 400% if shooting with torpedoes. Torpedoes are slow, so evasion matters more.
 NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0.3									-- random factor in damage. So if max damage is fe. 10, and randomness is 30%, then damage will be between 7-10.
 NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.2							-- chance for critical hit from torpedo.
-NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_DAMAGE_MULT = 3.0						-- multiplier to damage when got critical hit from torpedo. (Critical hits are devastating as usualy torpedo_attack are pretty high base values).
+NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_DAMAGE_MULT = 1.0						-- multiplier to damage when got critical hit from torpedo. (Critical hits are devastating as usualy torpedo_attack are pretty high base values).
 NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.24								-- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
 NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.4								-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
 NDefines.NNavy.COMBAT_CHASE_RESIGNATION_HOURS = 14								-- Before we resign chasing enemy, give them some minimum time so the combat doesn't end instantly.
-NDefines.NNavy.COMBAT_MIN_DURATION = 14										-- Min combat duration before we can retreat. It's a balancing variable so it's not possible to always run with our weak ships agains big flotillas.
+NDefines.NNavy.COMBAT_MIN_DURATION = 24									-- Min combat duration before we can retreat. It's a balancing variable so it's not possible to always run with our weak ships agains big flotillas.
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.4							-- Balancing value to convert averaged equipment stats (anti_air_targetting and naval_strike_agility) to probability chances of airplane being hit by navies AA.
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.002								-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
 NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.75								-- amphibious landing penalty
@@ -317,7 +317,7 @@ NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 3							-- base cap of divisio
 -- NDefines.NNavy.CARRIER_STACK_PENALTY = 6										-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.30
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0							-- cost to unassign/replace pride of the fleet
-NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 4                          -- hours from start of combat when only carriers, capitals and subs get to attack
+NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 24                          -- hours from start of combat when only carriers, capitals and subs get to attack
 NDefines.NNavy.MISSION_FUEL_COSTS = {  -- fuel cost for each mission
 		0.0, -- HOLD (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)
 		1.0, -- PATROL
@@ -415,9 +415,9 @@ NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS 					= 0.1  -- this 
 NDefines.NNavy.DEPTH_CHARGE_STAT_FOR_SHIP_TO_BE_SUB_HUNTER = 8					-- amount of depth charge required for a ship to be considred a sub hunter and so good for convoy escort
 
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
-		75.0,	-- big guns
+		70.0,	-- big guns
 		100.0,	-- torpedoes
-		45.0,	-- small guns
+		60.0,	-- small guns
 	}	
 NDefines.NNavy.CONVOY_HIT_PROFILE												= 100.0  	-- convoys has this contant hit profile
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO							= 10.0		-- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
@@ -503,7 +503,7 @@ NDefines.NRaids.RAID_LOW_RISK_SETTING_DISASTER_MODIFIER = 0.00      -- How much 
 NDefines.NRaids.RAID_MEDIUM_RISK_SETTING_DISASTER_MODIFIER = 0.10  -- How much the disaster risk is modified when the dial is set to "medium"
 NDefines.NRaids.RAID_HIGH_RISK_SETTING_DISASTER_MODIFIER = 0.25   -- How much the disaster risk is modified when the dial is set to "high"
 
-NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0.2
+NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0.25
 NDefines.NDoctrines.MAX_MONTHLY_MASTERY_GAIN = 75.0
 NDefines.NDoctrines.MIN_MASTERY_GAIN_PER_DAY = 0.0
 
@@ -512,4 +512,4 @@ NDefines.NProject.BASIC_RESEARCH_TECHNOLOGY_BONUS_FACTOR = 0.05
 NDefines.NProject.BASIC_RESEARCH_TECHNOLOGY_BONUS_DIMINISHING_RETURN_FACTOR = 0.25
 
 NDefines.NMilitary.ATTRITION_WHILE_MOVING_FACTOR = 0.1
-NDefines.NMilitary.RELIABILITY_WEATHER = 1.5
+NDefines.NMilitary.RELIABILITY_WEATHER = 1.0

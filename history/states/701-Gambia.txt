@@ -10,6 +10,10 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
+			4989 = {
+				naval_base = 1
+
+			}
 
 		}
 
@@ -20,7 +24,7 @@ state={
 	}
 	manpower=199520
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=enclave
 
 	local_supplies=0.0 
 }

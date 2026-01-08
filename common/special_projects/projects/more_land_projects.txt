@@ -20,10 +20,10 @@ allowed = {
     project_output = {
         sub_unit_bonus = {
             anti_tank_brigade = {
-                soft_attack = 0.5
+                soft_attack = 0.25
 			}
 			anti_tank_brigade_mot = {
-				soft_attack = 0.5
+				soft_attack = 0.25
             }
         }
     }
@@ -126,9 +126,9 @@ allowed = {
     project_output = {
 		sub_unit_bonus = {
 			motorized_rocket_brigade = {
-				breakthrough = 0.15
-				hardness = 0.15
-				defense = 0.15
+				breakthrough = 0.1
+				hardness = 0.1
+				defense = 0.1
 			}
 		}
     }
@@ -178,12 +178,12 @@ allowed = {
     project_output = {
         sub_unit_bonus = {
 			heavy_armor = {
-				soft_attack = 0.5
-				hard_attack = 0.25
-				ap_attack = 0.25
-				max_strength = 0.33
-				breakthrough = 0.33
-				reliability = -0.15
+				soft_attack = 0.25
+				hard_attack = 0.15
+				ap_attack = 0.15
+				max_strength = 0.25
+				breakthrough = 0.25
+				reliability = -0.08
 			}
 		}
     }
@@ -238,10 +238,10 @@ allowed = {
     project_output = {
 		sub_unit_bonus = {
 			garrison = {
-				defense = 0.25
-				max_strength = 0.25
-				soft_attack = 0.15
-				hard_attack = 0.15
+				defense = 0.15
+				max_strength = 0.15
+				soft_attack = 0.1
+				hard_attack = 0.1
 			}
 		}
     }
@@ -398,14 +398,14 @@ allowed = {
 		sub_unit_bonus = {
 			infantry = {
 				max_strength = 1.0
-				max_organisation = 3
-				default_morale = 0.15
+				max_organisation = 2
+				default_morale = 0.1
 				defense = 0.05
 			}
 			mountaineers = {
-				max_strength = 2.0
-				max_organisation = 4
-				default_morale = 0.2
+				max_strength = 1.0
+				max_organisation = 2
+				default_morale = 0.15
 				defense = 0.1
 			}
 		}
@@ -461,11 +461,11 @@ allowed = {
     project_output = {
 		sub_unit_bonus = {
 			motorized = {
-				max_organisation = 3
+				max_organisation = 2
 				default_morale = 0.1
 			}
 			mechanized = {
-				max_organisation = 3
+				max_organisation = 2
 				default_morale = 0.1
 			}
 			heavy_armor = {
@@ -530,9 +530,9 @@ allowed = {
 		sub_unit_bonus = {
 			marine = {
 				max_strength = 1.0
-				max_organisation = 10
+				max_organisation = 5
 				default_morale = 0.15
-				defense = 0.15
+				defense = 0.1
 			}
 			mountaineers = {
 				max_strength = 0.75
@@ -595,10 +595,10 @@ allowed = {
 				defense = 0.15
 			}
 			garrison = {
-				max_strength = 5.0
+				max_strength = 2.5
 				soft_attack = 0.25
 				default_morale = 0.15
-				defense = 0.25
+				defense = 0.2
 			}
 		}
     }
@@ -649,7 +649,7 @@ allowed = {
     project_output = {
 		sub_unit_bonus = {
 			infantry = {
-				max_organisation = 15
+				max_organisation = 8
 				default_morale = 0.15
 			}
 			light_armor = {
@@ -705,7 +705,7 @@ allowed = {
     project_output = {
 		sub_unit_bonus = {
 			motorized = {
-				breakthrough = 2.0
+				breakthrough = 1.0
 				maximum_speed = 0.05
 			}
 			mechanized = {
@@ -717,7 +717,7 @@ allowed = {
 				maximum_speed = 0.05
 			}
 			medium_armor = {
-				breakthrough = 0.25
+				breakthrough = 0.15
 				maximum_speed = 0.05
 			}
 		}
@@ -900,23 +900,23 @@ allowed = {
     project_output = {
 		sub_unit_bonus = {
 			motorized = {
-				hardness = 0.25
-				hard_attack = 0.25
+				hardness = 0.15
+				hard_attack = 0.15
 				maximum_speed = -0.05
 			}
 			mechanized = {
-				hardness = 0.25
-				hard_attack = 0.25
+				hardness = 0.15
+				hard_attack = 0.15
 				maximum_speed = -0.05
 			}
 			truck_infantry = {
-				hardness = 0.25
-				hard_attack = 0.25
+				hardness = 0.15
+				hard_attack = 0.15
 				maximum_speed = -0.05
 			}
 			medium_armor = {
-				hardness = 0.25
-				hard_attack = 0.25
+				hardness = 0.15
+				hard_attack = 0.15
 				maximum_speed = -0.05
 			}
 		}
@@ -1030,7 +1030,7 @@ allowed = {
 			light_armor = {
 				hardness = -0.15
 				hard_attack = 0.15
-				ap_attack = 0.25
+				ap_attack = 0.15
 				maximum_speed = 0.1
 			}
 			heavy_armor = {
@@ -1228,7 +1228,7 @@ allowed = {
 				supply_consumption_factor = -0.1
 			}
 			maintenance_company = {
-				equipment_capture_factor = 0.5
+				equipment_capture_factor = 0.25
 			}
 			field_hospital = {
 				casualty_trickleback = 0.05

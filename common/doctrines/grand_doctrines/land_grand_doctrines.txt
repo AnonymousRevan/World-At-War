@@ -382,6 +382,9 @@ mass_assault = {
     no_supply_grace = 48
     out_of_supply_factor = -0.10
     enable_tactic = tactic_relentless_assault
+	 category_army = {
+        max_strength = 1.25
+    }
     
 
     milestones = {

@@ -63,84 +63,17 @@ sp_land_VT_integration = {
     }
     prototype_time = sp_time.prototype.short
     complexity = sp_complexity.small
-    breakthrough_cost = { specialization_land = 1 }
+    breakthrough_cost = { specialization_naval = 1 }
     
     project_output = {
         sub_unit_bonus = {
-			anti_air = {
-				air_attack = 0.15
-				ap_attack = 0.15
-				hard_attack = 0.15
-				soft_attack = 0.15
-				defense = 0.1
-			}
-			anti_air_mot = {
-				air_attack = 0.15
-				ap_attack = 0.25
-				hard_attack = 0.25
-				soft_attack = 0.25
-				defense = 0.1
-			}
 			battleship = {
-				anti_air_attack = 0.1
+				anti_air_attack = 0.2
 				lg_attack = 0.01
 			}
 			carrier = {
-				anti_air_attack = 0.1
+				anti_air_attack = 0.2
 				lg_attack = 0.01
-			}
-		}
-    }
-
-    generic_prototype_rewards = {
-        sp_land_generic_reward_scientist_xp_1
-        sp_land_generic_reward_scientist_xp_2
-        sp_land_generic_reward_scientist_xp_3
-        sp_land_generic_reward_army_xp_1
-        sp_land_generic_reward_army_xp_2
-        sp_land_generic_reward_army_xp_3
-        sp_land_generic_reward_major_progress_1
-        sp_land_generic_reward_major_progress_2
-        sp_land_generic_reward_major_progress_3
-        sp_land_generic_reward_test_failure_1
-        sp_land_generic_reward_test_failure_2
-        sp_land_generic_reward_test_failure_3
-        sp_land_generic_reward_artillery_tech_1
-        sp_land_generic_reward_artillery_tech_2
-        sp_land_generic_reward_artillery_tech_3
-        sp_land_generic_reward_artillery_bonus_1
-        sp_land_generic_reward_artillery_bonus_2
-        sp_land_generic_reward_artillery_bonus_3
-        sp_land_generic_reward_resource_scarcity
-    }
-}
-
-sp_land_German_AT = {
-    specialization = specialization_nuclear
-    project_tags = sp_tag_artillery
-
-    ai_will_do = { base = 1 }
-
-    allowed = { }
-
-    available = {
-        FROM = { has_tech = antitank2 }
-    }
-    prototype_time = sp_time.prototype.short
-    complexity = sp_complexity.small
-    breakthrough_cost = { specialization_land = 1 }
-    
-    project_output = {
-        sub_unit_bonus = {
-			anti_tank_brigade = {
-				ap_attack = 0.2
-				hard_attack = 0.2
-				defense = 0.1
-			}
-			anti_tank_brigade_mot = {
-				ap_attack = 0.25
-				hard_attack = 0.25
-				defense = 0.15
 			}
 		}
     }

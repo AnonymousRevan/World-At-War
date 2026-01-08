@@ -2887,7 +2887,7 @@ operation_steal_tech_airforce = { ### 19 3/55
 		ROOT = {
 			add_tech_bonus = {
 				category = all_air
-				bonus = 0.5
+				bonus = 0.25
 				name = operation_steal_tech_airforce
 				uses = 1
 			}
@@ -2903,7 +2903,7 @@ operation_steal_tech_airforce = { ### 19 3/55
 				ROOT = {
 					add_tech_bonus = {
 						category = all_air
-						bonus = 1
+						bonus = 0.33
 						name = operation_steal_tech_airforce
 						uses = 1
 					}
@@ -2913,7 +2913,7 @@ operation_steal_tech_airforce = { ### 19 3/55
 				ROOT = {
 					add_tech_bonus = {
 						category = all_air
-						bonus = 1
+						bonus = 0.5
 						name = operation_steal_tech_airforce
 						uses = 1
 					}
@@ -2926,7 +2926,7 @@ operation_steal_tech_airforce = { ### 19 3/55
 		ROOT = {
 			add_tech_bonus = {
 				category = all_air
-				bonus = 0.5
+				bonus = 0.25
 				name = operation_steal_tech_airforce
 				uses = 1
 			}

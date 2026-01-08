@@ -1082,6 +1082,10 @@ technologies = {
 			special_equipment_1			
 		}
 		
+		enable_subunits = {
+			ranger_battalion
+		}
+		
 		path = {
 			leads_to_tech = marines
 			
@@ -1222,6 +1226,11 @@ technologies = {
 				defence = 0.025
 			}
 		}
+		
+		enable_subunits = {
+			marine_commando
+		}
+		
 		path = {
 			leads_to_tech = marines4
 			research_cost_coeff = 1
@@ -1418,6 +1427,10 @@ technologies = {
 			}
 		}
 		
+		enable_subunits = {
+			marine_commando
+		}
+		
 		research_cost = 1.5
 		start_year = 1940
 		folder = {
@@ -1598,9 +1611,9 @@ technologies = {
 		}
 	}
 	paratroopers3 = {
-#        enable_subunits = {
-#			light_armor_para
-#		}
+        enable_subunits = {
+			marine_commando
+		}
 		paratrooper = {
 			max_organisation = 3
 

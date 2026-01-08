@@ -119,12 +119,12 @@ leader_traits = {
     air_concern = {
 	    random = no
 		equipment_bonus = {
-			fighter_equipment = {
+			small_plane_airframe = {
                 air_range = 0.1 
 				air_agility = 0.05
 				maximum_speed = 0.05
 			}
-			cv_fighter_equipment = {
+			cv_small_plane_airframe = {
                 air_range = 0.1 
 				air_agility = 0.05
 				maximum_speed = 0.05
@@ -134,15 +134,15 @@ leader_traits = {
     sea_concern = {
 	    random = no
 		equipment_bonus = {
-			submarine = {
+			ship_hull_submarine = {
 				sub_visibility = -0.1 
 				surface_visibility = -0.1 
 			}
-			screen_ship = {
+			ship_hull_light = {
 				sub_detection = 0.1 
 				lg_attack = 0.05
 			}
-			capital_ship = {
+			ship_hull_heavy = {
 				armor_value = 0.1 
 				hg_attack = 0.05
 			}
@@ -208,16 +208,16 @@ leader_traits = {
 	colonial_naval_manufacturer = {
 		random = no
 		equipment_bonus = {
-			carrier = {
+			ship_hull_carrier = {
 				carrier_size = 2
 				armor_value = 0.35
 				max_strength = 0.1
 			}
-			capital_ship = {
+			ship_hull_heavy = {
 				armor_value = 0.1
 				hg_attack = 0.1
 			}
-			screen_ship = {
+			ship_hull_light = {
 				lg_attack = 0.1
 				armor_value = 0.1
 			}

@@ -978,6 +978,10 @@ technologies = {
 			cruiser_tank_equipment_1940
 		}
 		
+		enable_subunits = {
+			cruiser_armor_recon
+		}
+		
 		path = {
 			leads_to_tech = eng_medium_tank_1942
 			research_cost_coeff = 1
@@ -1669,6 +1673,7 @@ technologies = {
 
 		enable_subunits = {
 			modern_armor
+			modern_armor_recon
 		}
 		enable_equipments = {
 			centurion_tank_equipment_1

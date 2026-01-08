@@ -1614,7 +1614,7 @@ ideas = {
 			
 			modifier = {
 				industrial_factory_donations = 20
-				military_factory_donations = 15
+				military_factory_donations = 10
 				dockyard_donations = 10
 				war_support_weekly = 0.001
 				stability_weekly = 0.001
@@ -1623,7 +1623,9 @@ ideas = {
 				country_resource_steel = 	200
 				country_resource_rubber = 150
 			    country_resource_tungsten = 100
+				country_resource_aluminium = 100
 			    country_resource_chromium = 100
+				country_resource_oil = 25
 				
 			}
 		}

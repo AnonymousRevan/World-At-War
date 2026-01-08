@@ -513,6 +513,7 @@ ideas = {
 				max_command_power = 25
 				command_power_gain_mult = 0.1
 				planning_speed = 0.1
+				land_mastery_gain_factor = 0.05
 			}
 
 			picture = eng_chiefs_of_staff_committee
@@ -1656,6 +1657,7 @@ ideas = {
 			modifier = {
 				air_interception_detect_factor = 0.1
 				air_intercept_efficiency = 0.1
+				air_mastery_gain_factor = 0.1
 			}
 		}
 
@@ -1925,6 +1927,7 @@ ideas = {
 				air_mission_xp_gain_factor = 0.1
 				air_training_xp_gain_factor = 0.2
 				air_doctrine_cost_factor = -0.05
+				air_mastery_gain_factor = 0.05
 			}
 		}
 
@@ -2109,6 +2112,9 @@ ideas = {
 			modifier = {
 				lend_lease_tension = -0.5
 				send_volunteers_tension = -0.5
+				air_mastery_gain_factor = 0.1
+				land_mastery_gain_factor = 0.1
+				naval_mastery_gain_factor = 0.1
 			}
 
 			picture = FRA_scw_intervention_nationalists_focus

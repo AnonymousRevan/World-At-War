@@ -5543,11 +5543,11 @@ GER_military_buildup = {
 			}
 			has_navy_size = {
 				archetype = ship_hull_cruiser
-				size > 29
+				size > 14
 			}
 			has_navy_size = {
 				archetype = ship_hull_light
-				size > 99
+				size > 49
 			}
 		}
 
@@ -5567,7 +5567,7 @@ GER_military_buildup = {
 			hidden_effect = {
 				add_resource = {
 					type = oil
-					amount = -7
+					amount = 25
 					state = 59
 				}
 			}

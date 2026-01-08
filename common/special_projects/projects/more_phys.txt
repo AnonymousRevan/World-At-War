@@ -20,17 +20,17 @@ sp_harsh_resource2 = {
 			modify_building_resources = {
 			   building = steel_refinery
 			   resource = steel
-			   amount = 40
-			}
-			modify_building_resources = {
-			   building = steel_refinery
-			   resource = aluminium
 			   amount = 30
 			}
 			modify_building_resources = {
 			   building = steel_refinery
+			   resource = aluminium
+			   amount = 20
+			}
+			modify_building_resources = {
+			   building = steel_refinery
 			   resource = tungsten
-			   amount = 25
+			   amount = 15
 			}
 			modify_building_resources = {
 			   building = steel_refinery
@@ -40,17 +40,17 @@ sp_harsh_resource2 = {
 			modify_building_resources = {
 			   building = synthetic_refinery
 			   resource = oil
-			   amount = 10
+			   amount = 5
 			}
 			modify_building_resources = {
 			   building = synthetic_rubber_refinery
 			   resource = rubber
-			   amount = 5
+			   amount = 3
 			}
 			modify_building_resources = {
 			   building = steel_refinery
 			   resource = coal
-			   amount = 15
+			   amount = 10
 			}
 		}
     }
@@ -108,7 +108,7 @@ sp_mastery = {
     prototype_time = sp_time.prototype.medium
     complexity = sp_complexity.medium
 
-    breakthrough_cost = { specialization_nuclear = 2 }
+    breakthrough_cost = { specialization_nuclear = 1 }
     
     project_output = {
 		country_effects = {

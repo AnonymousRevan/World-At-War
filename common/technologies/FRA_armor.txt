@@ -875,6 +875,10 @@ technologies = {
 			cruiser_tank_equipment_1941
 		}
 		
+		enable_subunits = {
+			cruiser_armor_recon
+		}
+		
 		path = {
 			leads_to_tech = fra_cruiser_tank_1943
 			research_cost_coeff = 1
@@ -1582,6 +1586,7 @@ technologies = {
 		}
 		enable_subunits = {
 			modern_armor
+			modern_armor_recon
 		}
 				
 		path = {

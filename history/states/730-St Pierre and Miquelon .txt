@@ -1,12 +1,11 @@
 state={
 	id=730
 	name="STATE_730"
-	manpower=123456
-	state_category = pastoral
+	manpower=3426
+	state_category = tiny_island
 
 	history={
 		owner = FRA
-		add_core_of = SEN
 		buildings = {
 			infrastructure = 2
 			373 = {

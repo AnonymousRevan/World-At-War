@@ -713,12 +713,12 @@ SOV_gulag_economy = {
 			}
 			add_resource = {
 				type = chromium
-				amount = 5
+				amount = 10
 				state = 577  
 			}
 			add_resource = {
-				type = chromium 
-				amount = 5
+				type = coal 
+				amount = 10
 				state = 580  
 			}
 		}
@@ -6364,6 +6364,65 @@ SOV_5_year_plan_decisions = {
 				}
 				add_resource = {
 				    type = chromium
+				    amount = 40
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				set_state_flag = SOV_exhausted_resources
+    		}
+ 			custom_effect_tooltip = SOV_5_year_plan_tt   		
+ 			add_to_variable = { var = five_year_plan_progress value = 2 }	
+		}
+	}	
+	
+	SOV_5_year_plan_coal = {
+
+		icon = chromium
+
+		available = {
+			has_completed_focus = SOV_the_quotas_must_be_fulfilled
+			any_owned_state = {
+				NOT = { has_state_flag = SOV_exhausted_resources }					
+				has_resources_amount = {
+					resource = chromium
+					amount > 9 
+				}
+			}																
+		}
+
+		visible = {
+			tag = SOV
+			OR = {
+				has_idea = SOV_idea_2_5_year_plan
+				has_idea = SOV_idea_3_5_year_plan
+			}
+		}
+
+		days_re_enable = 15
+
+		days_remove = 55
+
+		cost = 25
+
+		modifier = {
+			civilian_factory_use = 3
+			stability_weekly = -0.005		
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					NOT = { has_state_flag = SOV_exhausted_resources }
+					has_resources_amount = {
+					    resource = coal
+					    amount > 45
+					}
+				}
+				add_resource = {
+				    type = coal
 				    amount = 40
 				}
 				add_extra_state_shared_building_slots = 2

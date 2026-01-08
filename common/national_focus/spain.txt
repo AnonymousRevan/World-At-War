@@ -79,7 +79,60 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-
+			GER = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_germans_ger_trade }
+			}
+			ITA = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_germans_ger_trade }
+			}
+			JAP = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_germans_ger_trade }
+			}
+			ROM = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_germans_ger_trade }
+			}
+			HUN = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_germans_ger_trade }
+			}
+			BUL = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_germans_ger_trade }
+			}
+			EFR = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_germans_ger_trade }
+			}
+			MAN = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_germans_ger_trade }
+			}	
+			USA = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_british_ger_trade }
+			}
+			ENG = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_british_ger_trade }
+			}
+			FRA = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_british_ger_trade }
+			}
+			SOV = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_british_ger_trade }
+			}
+			IDR = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_british_ger_trade }
+			}
+			SAF = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_british_ger_trade }
+			}
+			AST = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_british_ger_trade }
+			}
+			CAN = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_british_ger_trade }
+			}
+			BRA = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_british_ger_trade }
+			}
+			MON = {
+				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_british_ger_trade }
+			}
 			add_stability = .10
 			add_popularity = {
 			    ideology = fascism

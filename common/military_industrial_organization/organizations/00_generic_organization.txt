@@ -4076,7 +4076,7 @@ generic_light_aircraft_organization = {
 	}
 
 	equipment_type = {
-		mio_cat_eq_only_light_fighter
+		mio_cat_eq_all_small_plane
 	}
 
 	research_categories = {	mio_cat_all_light_fighter_and_modules }
@@ -4509,7 +4509,7 @@ generic_lightheavy_aircraft_organization = {
 	}
 
 	equipment_type = {
-		mio_cat_eq_only_light_fighter
+		mio_cat_eq_all_small_plane
 	}
 
 	research_categories = {	mio_cat_all_light_fighter_and_modules }
@@ -5334,6 +5334,7 @@ Fighter_medium_aircraft_organization = {
 	equipment_type = {
 		small_plane_cas_airframe
 		medium_plane_fighter_airframe
+		medium_plane_scout_plane_airframe
 		transport_plane_equipment
 	}
 
@@ -9663,6 +9664,29 @@ generic_motorized_mechanized_organization = {
 
 		production_bonus = {
 			production_efficiency_cap_factor = 0.05
+		}
+	}
+	trait = {
+		token = guntruck
+		name = "Guntrucks"
+		icon = GFX_generic_mio_department_icon_motorized_engine
+		
+		position = { x=1 y=2 }
+		relative_position_id = generic_mio_trait_attached_wood_gas_generator
+		
+		all_parents = { standards }
+		
+		mutually_exclusive = { generic_mio_trait_attached_wood_gas_generator }
+
+		limit_to_equipment_type = { motorized_equipment }
+
+		equipment_bonus = {
+			soft_attack = 2.5
+			hard_attack = 2.5
+			breakthrough = 0.25
+			maximum_speed = -0.1
+			hardness = 0.03
+			build_cost_ic = 0.07
 		}
 	}
 }

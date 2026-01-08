@@ -8,7 +8,7 @@ fire_concentration = {
     xp_type = army
 
     available = {
-        has_doctrine = superior_firepower
+        always = yes
     }
 
     ai_will_do = {
@@ -106,7 +106,7 @@ anti_tank_frontline = {
     rewards = {
         pakfront = {
         #1
-            anti_tank_brigade = {
+            category_anti_tank = {
                 defense = 0.15
                 ap_attack = 0.1
                 soft_attack = 0.2
@@ -114,31 +114,30 @@ anti_tank_frontline = {
         }
         emplacement_rotation = {
         #2
-            anti_tank_brigade = {
+            category_anti_tank = {
                 max_organisation = 10
             }
         }
         weakpoint_studies = {
         #3
-            anti_tank_brigade = {
+            category_anti_tank = {
                 ap_attack = 0.1
                 hard_attack = 0.1
             }
         }
         offensive_deployments = {
         #4
-            anti_tank_brigade_mot = {
+            category_anti_tank = {
                 breakthrough = 0.2
-                ap_attack = 0.2
             }
         }
         assault_anti_tank = {
         #5
-            anti_tank_brigade_mot = {
+            category_anti_tank = {
                 soft_attack = 0.2
                 hard_attack = 0.2
-            }
-        }
+			}
+		}
     }
 }
 
@@ -352,7 +351,7 @@ mobile_recon_and_assault = {
     rewards = {
 
         motorization_support = {
-            category_mobile_and_mobile_combat_sup = {
+            category_motorised = {
                 maximum_speed = 0.1
                 default_morale = 0.2
             }
@@ -368,8 +367,20 @@ mobile_recon_and_assault = {
                 battalion_mult = {
                     category = category_all_armor
                     breakthrough = 0.1
-                }
+				}
             }
+			cruiser_armor_recon = {
+				battalion_mult = {
+					category = category_all_armor 
+					breakthrough = 0.15
+				}
+			}
+			modern_armor_recon = {
+				battalion_mult = {
+					category = category_all_armor
+					breakthrough = 0.2
+				}
+			}
             artillery_brigade_mot = {
                 soft_attack = 0.05
             }
@@ -400,6 +411,14 @@ mobile_recon_and_assault = {
                 recon = 0.2
                 breakthrough = 0.1
             }
+			cruiser_armor_recon = {
+				recon = 0.3
+				breakthrough = 0.1
+			}
+			modern_armor_recon = {
+				recon = 0.4
+				breakthrough = 0.15
+			}
         }
     }
 }
@@ -564,6 +583,20 @@ self_propelled_support = {
                     default_morale = 0.2
                 }
             }
+			cruiser_armor_recon = {
+                battalion_mult = {
+                    category = category_self_propelled_artillery
+                    soft_attack = 0.1
+                    default_morale = 0.2
+                }
+            }
+			modern_armor_recon = {
+                battalion_mult = {
+                    category = category_self_propelled_artillery
+                    soft_attack = 0.1
+                    default_morale = 0.2
+                }
+            }
         }
         all_terrain_mobility = {
             category_self_propelled_artillery = {
@@ -688,7 +721,7 @@ siege_artillery = {
         }
         urban_strongpoint_sieges = {
 
-            category_artillery = {
+            category_support_artillery = {
                 soft_attack = 0.05
             }
             super_heavy_artillery = {
@@ -744,9 +777,11 @@ field_engineering = {
 
     engineer = {
         river = {
+			attack = 0.03
             movement = 0.02
         }
         forest = {
+			attack = 0.03
             movement = 0.02
         }
     }
@@ -760,9 +795,11 @@ field_engineering = {
 #    }
     pioneer_support = {
         river = {
+			attack = 0.05
             movement = 0.02
         }
         forest = {
+			attack = 0.05
             movement = 0.02
         }
     }
@@ -793,7 +830,7 @@ field_engineering = {
         engineerdug_gun_emplacements = {
             engineer = {
                 battalion_mult = {
-                    category = category_artillery
+                    category = category_line_artillery
                     soft_attack = 0.1
                     defense = 0.1
                 }
@@ -827,73 +864,6 @@ field_engineering = {
     }
 }
 
-Dakka = {
-    track = combat_support
-    name = SUBDOCTRINE_More_dakka
-    description = SUBDOCTRINE_More_dakka_DESC
-    icon = GFX_doctrine_antitank_frontline_medium
-
-    xp_cost = 100
-    xp_type = army
-
-    available = {
-        always = yes
-    }
-
-    ai_will_do = { base = 0 }
-
-     # EFFECTS
-     
-
-    engineer = {
-        battalion_mult = {
-            category = category_line_artillery
-            entrenchment = 0.2
-            add = yes
-        }
-    }
-
-    rewards = {
-        pakfront = {
-        #1
-            anti_air = {
-                defense = 0.2
-                air_attack = 0.1
-                soft_attack = 0.2
-            }
-        }
-        emplacement_rotation = {
-        #2
-            anti_air = {
-                max_organisation = 10
-            }
-        }
-        weakpoint_studies = {
-        #3
-            anti_air = {
-                air_attack = 0.1
-                hard_attack = 0.1
-				ap_attack = 0.05
-            }
-        }
-        offensive_deployments = {
-        #4
-            anti_air_mot = {
-                breakthrough = 0.2
-                air_attack = 0.15
-				ap_attack = 0.1
-            }
-        }
-        assault_anti_tank = {
-        #5
-            anti_air_mot = {
-                soft_attack = 0.2
-                hard_attack = 0.2
-            }
-        }
-    }
-}
-
 BTB = {
     track = combat_support
     name = SUBDOCTRINE_Bigger_the_better
@@ -914,7 +884,7 @@ BTB = {
 
     engineer = {
         battalion_mult = {
-            category = category_line_artillery
+            category = category_all_infantry
             defense = 0.1
             add = yes
         }
@@ -923,85 +893,38 @@ BTB = {
     rewards = {
         big_gun = {
         #1
-            anti_tank_brigade = {
-                ap_attack = 0.25
-                hard_attack = 0.15
-            }
-            anti_tank_brigade_mot = {
-                ap_attack = 0.15
-                hard_attack = 0.05
-            }
-            artillery_heavy = {
-                ap_attack = 0.15
-                soft_attack = 0.15
-            }
-            artillery_heavy_mot = {
-                ap_attack = 0.05
-                soft_attack = 0.05
+            category_support_artillery = {
+				soft_attack = 0.25
+				max_organisation = 10
             }
         }
         emplacement_rotation = {
         #2
-            anti_tank_brigade = {
-                max_organisation = 5
-            }
-            anti_tank_brigade_mot = {
-                max_organisation = 5
-            }
-            artillery_heavy = {
-                max_organisation = 5
-            }
-            artillery_heavy_mot = {
-                max_organisation = 5
+            category_support_artillery = {
+				hard_attack = 0.25
+				default_morale = 0.15
             }
         }
         better_ammunition = {
         #3
-            anti_tank_brigade = {
-                soft_attack = 0.1
-                hard_attack = 0.1
-            }
-            anti_tank_brigade_mot = {
-                soft_attack = 0.1
-            }
-            artillery_heavy = {
-                defense = 0.1
-                soft_attack = 0.1
-            }
-            artillery_heavy_mot = {
-                defense = 0.05
+            category_support_artillery = {
+				breakthrough = 0.25
+				max_strength = 0.50
             }
         }
         offensive_deployments = {
         #4
-            anti_tank_brigade = {
-                breakthrough = 0.15
-                default_morale = 0.1
-            }
-            anti_tank_brigade_mot = {
-                breakthrough = 0.15
-                default_morale = 0.1
-            }
-            artillery_heavy = {
-                breakthrough = 0.15
-                default_morale = 0.1
-            }
-            artillery_heavy_mot = {
-                breakthrough = 0.15
-                default_morale = 0.1
+            category_support_battalions = {
+				max_strength = 0.25
+				max_organisation = 10
             }
         }
         town_buster = {
         #5
-            artillery_heavy = {
-                urban = {
-                    attack = 0.1
-                }
-            }
-            artillery_heavy_mot = {
-                urban = {
-                    attack = 0.1
-                }
+            category_support_battalions = {
+				default_morale = 0.15
+				soft_attack = 0.15
+				hard_attack = 0.15
             }
         }
     }
@@ -1027,7 +950,7 @@ Mountain_gun_enjoyer = {
 
     engineer = {
         battalion_mult = {
-            category = category_line_artillery
+            category = category_pack_artillery	
             breakthrough = 0.1
             add = yes
         }
@@ -1095,148 +1018,6 @@ Mountain_gun_enjoyer = {
             pack_artillery_brigade_mot = {
                 soft_attack = 0.05
                 hard_attack = 0.05
-            }
-        }
-    }
-}
-
-schizo_path = {
-    track = combat_support
-    name = SUBDOCTRINE_schizo
-    description = SUBDOCTRINE_schizo_DESC
-    icon = GFX_doctrine_antitank_frontline_medium
-
-    xp_cost = 100
-    xp_type = army
-
-    available = {
-        always = yes
-    }
-
-    ai_will_do = { base = 0 }
-
-     # EFFECTS
-     
-
-    logistics_company = {
-        battalion_mult = {
-            category = category_all_infantry
-            defense = -0.15
-            add = yes
-        }
-    }
-
-    rewards = {
-        big_gun = {
-        #1
-            anti_tank_brigade = {
-                ap_attack = 0.25
-                hard_attack = 0.15
-            }
-            anti_tank_brigade_mot = {
-                ap_attack = 0.15
-                hard_attack = 0.05
-            }
-            anti_air = {
-                ap_attack = 0.15
-                soft_attack = 0.15
-            }
-            anti_air_mot = {
-                ap_attack = 0.05
-                soft_attack = 0.05
-            }
-        }
-        emplacement_rotation = {
-        #2
-            anti_tank_brigade = {
-                max_organisation = 5
-            }
-            anti_tank_brigade_mot = {
-                max_organisation = 5
-            }
-            anti_air = {
-                max_organisation = 5
-            }
-            anti_air_mot = {
-                max_organisation = 5
-            }
-        }
-        better_ammunition = {
-        #3
-            anti_tank_brigade = {
-                soft_attack = 0.05
-                hard_attack = 0.1
-                ap_attack = 0.1
-            }
-            anti_tank_brigade_mot = {
-                hard_attack = 0.05
-                ap_attack = 0.05
-            }
-            anti_air = {
-                defense = 0.1
-                air_attack = 0.1
-            }
-            anti_air_mot = {
-                defense = 0.05
-                air_attack = 0.05
-            }
-        }
-        on_the_backs_of_inf = {
-        #4
-            anti_tank_brigade = {
-                breakthrough = 0.25
-                default_morale = 0.1
-            }
-            anti_tank_brigade_mot = {
-                breakthrough = 0.15
-                default_morale = 0.1
-            }
-            anti_air = {
-                breakthrough = 0.15
-                default_morale = 0.1
-            }
-            anti_air_mot = {
-                breakthrough = 0.05
-                default_morale = 0.1
-            }
-            infantry = {
-                max_organisation = -5
-                max_strength = -0.15
-            }
-        }
-        tough_nut = {
-        #5
-            anti_tank_brigade = {
-                forest = {
-                    defence = 0.1
-                }
-                urban = {
-                    defence = 0.1
-                }
-            }
-            anti_tank_brigade_mot = {
-                forest = {
-                    defence = 0.1
-                }
-                urban = {
-                    defence = 0.1
-                }
-            }
-            anti_air = {
-                forest = {
-                    defence = 0.1
-                }
-                urban = {
-                    defence = 0.1
-                }
-            }
-            anti_air_mot = {
-                forest = {
-                    defence = 0.1
-                }
-                urban = {
-                    defence = 0.1
-                }
             }
         }
     }

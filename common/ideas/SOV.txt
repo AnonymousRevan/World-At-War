@@ -36,6 +36,7 @@ ideas = {
 			modifier = {
 				army_attack_factor = 0.15
 				army_defence_factor = 0.15
+				land_mastery_gain_factor = 0.25
 				conscription = 0.1
 				industrial_capacity_factory = 0.2
 			}
@@ -114,6 +115,7 @@ ideas = {
 			picture = generic_oppression
 
 			modifier = {
+				land_mastery_gain_factor = 0.15
 				industrial_capacity_factory = 0.15
 				dig_in_speed_factor = 0.2
 				army_core_defence_factor = 0.05
@@ -141,6 +143,7 @@ ideas = {
 			picture = generic_oppression
 
 			modifier = {
+				land_mastery_gain_factor = 0.3
 				industrial_capacity_factory = 0.2
 				dig_in_speed_factor = 0.25
 				army_core_defence_factor = 0.1
@@ -506,6 +509,7 @@ ideas = {
 				land_doctrine_cost_factor = -0.05
 				air_doctrine_cost_factor = -0.05
 				naval_doctrine_cost_factor = -0.05
+				land_mastery_gain_factor = 0.05
 			}
 		}
 
@@ -680,6 +684,7 @@ ideas = {
 			modifier = {
 				max_planning = 0.1
 				army_org_factor = 0.05
+				land_mastery_gain_factor = 0.05
 				supply_consumption_factor = -0.125
 			}
 		}
@@ -2232,6 +2237,9 @@ ideas = {
 				land_doctrine_cost_factor = 5
 				air_doctrine_cost_factor = 4
 				naval_doctrine_cost_factor = 4
+				land_mastery_gain_factor = -1.0
+				naval_mastery_gain_factor = -0.8
+				air_mastery_gain_factor = -0.8
 			}
 		}
 
@@ -2258,6 +2266,9 @@ ideas = {
 				land_doctrine_cost_factor = 4
 				air_doctrine_cost_factor = 3
 				naval_doctrine_cost_factor = 3
+				land_mastery_gain_factor = -0.8
+				naval_mastery_gain_factor = -0.6
+				air_mastery_gain_factor = -0.6
 			}
 		}
 
@@ -2284,6 +2295,9 @@ ideas = {
 				land_doctrine_cost_factor = 3
 				air_doctrine_cost_factor = 2
 				naval_doctrine_cost_factor = 2
+				land_mastery_gain_factor = -0.6
+				naval_mastery_gain_factor = -0.4
+				air_mastery_gain_factor = -0.4
 			}
 		}
 
@@ -2310,6 +2324,9 @@ ideas = {
 				land_doctrine_cost_factor = 2
 				air_doctrine_cost_factor = 1
 				naval_doctrine_cost_factor = 1
+				land_mastery_gain_factor = -0.4
+				naval_mastery_gain_factor = -0.2
+				air_mastery_gain_factor = -0.2
 			}
 		}
 
@@ -2335,6 +2352,7 @@ ideas = {
 				land_doctrine_cost_factor = 1
 				air_doctrine_cost_factor = 0.5
 				naval_doctrine_cost_factor = 0.5
+				land_mastery_gain_factor = -0.2
 			}
 		}
 

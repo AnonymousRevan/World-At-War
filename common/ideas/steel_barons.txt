@@ -101,8 +101,8 @@ ideas = {
 			}
 
 			modifier = {	
-				industrial_capacity_factory = 0.15
-				local_resources_factor = 0.2
+				industrial_capacity_factory = 0.3
+				local_resources_factor = 0.25
 				political_power_cost = 0.10
 				stability_factor = -0.1 
 				required_garrison_factor = 0.1 	
