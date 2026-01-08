@@ -25,7 +25,7 @@ focus_tree = {
 	default = no
 
 
-continuous_focus_position = { x = 1900 y = 1100 }
+continuous_focus_position = { x = 800 y = 100 }
 
 
 #  #  ##  ### ###  ##  #  #  ##  #   ###  ## ###     ###  #  # ### #   ###     #  # ###
@@ -2182,8 +2182,8 @@ technology = construction4
 	focus = {
 		id = SPR_navy_funds
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 26
-		y = 0
+		x = 20
+		y = 10
 		cost = 5
 
 		available_if_capitulated = yes
@@ -2197,210 +2197,395 @@ technology = construction4
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 4
 			add_building_construction = {
 				type = dockyard
-				level = 2
+				level = 4
 				instant_build = yes
 			}
-			navy_experience = 25	
+			navy_experience = 50	
 		}
 		
 		completion_reward = {
 		    navy_experience = 25
 			792 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}		
 		}		
 	}
-	
-	focus = {
-		id = SPR_navy_doc_1
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = SPR_navy_funds }
-		mutually_exclusive = { focus = SPR_navy_doc_2 }
-		x = -1
-		y = 1
-		relative_position_id = SPR_navy_funds
-		cost = 5
 
-		available_if_capitulated = yes
+focus = {
+    id = SPR_navy_german_path
+    icon = GFX_goal_generic_wolf_pack
+    prerequisite = { focus = SPR_navy_funds }
+    mutually_exclusive = { focus = SPR_import_italian_designs focus = SPR_navy_japan_path focus = SPR_navy_independent_path } 
+    relative_position_id = SPR_navy_funds
+    x = -2
+    y = 1
+    cost = 5
+    available_if_capitulated = yes
 
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.50
-				uses = 2
-			}
+    completion_reward = {
+        set_technology = { cruiser_submarines = 1 }
+        add_tech_bonus = {
+            name = GER_sub_bonus
+            bonus = 1.0
+            uses = 1
+            category = ss_tech
+        }
+	167 = {
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+		type = dockyard
+		level = 2
+		instant_build = yes
 		}
 	}
 
-	focus = {
-		id = SPR_destroyer_effort
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = SPR_navy_doc_1 focus = SPR_navy_doc_2}
-		x = -1
-		y = 2
-		relative_position_id = SPR_navy_funds
-		cost = 5
-
-		available_if_capitulated = yes
+        add_tech_bonus = {
+            name = SPR_magnetic_detonator_bonus
+            bonus = 1.0
+            uses = 1
+            technology = magnetic_detonator
+        }
+    }
+}
 
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
+focus = {
+    id = SPR_navy_japan_path
+    icon = GFX_goal_generic_carrier
+    prerequisite = { focus = SPR_navy_funds }
+    mutually_exclusive = { focus = SPR_navy_german_path focus = SPR_import_italian_designs focus = SPR_navy_independent_path }
+    relative_position_id = SPR_navy_funds
+    x = 0
+    y = 1
+    cost = 5
+    available_if_capitulated = yes
 
-		completion_reward = {
-			add_tech_bonus = {
-				name = naval_doctrine_bonus
-				bonus = 1
-				uses = 1
-				category = dd_tech
-			}
+    completion_reward = {
+        navy_experience = 50
+       167 = {
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+		type = dockyard
+		level = 2
+		instant_build = yes
 		}
 	}
 
-		focus = {
-		id = SPR_big_ship_effort
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = SPR_destroyer_effort focus = SPR_submarine_effort }
-		x = -1
-		y = 3
-		relative_position_id = SPR_navy_funds
-		cost = 5
+        add_tech_bonus = {
+            name = JAP_carrier_bonus
+            bonus = 2.0
+            uses = 1
+            category = cv_tech
+        }
+        # 100% bonus for naval bombers
+        add_tech_bonus = {
+            name = JAP_navbomber_bonus
+            bonus = 1.0
+            uses = 1
+            category = naval_bomber
+        }
+    }
+}
 
-		available_if_capitulated = yes
+focus = {
+    id = SPR_navy_independent_path
+    icon = GFX_goal_generic_construct_civ_factory
+    prerequisite = { focus = SPR_navy_funds }
+    mutually_exclusive = { focus = SPR_navy_german_path focus = SPR_import_italian_designs focus = SPR_navy_japan_path }
+    relative_position_id = SPR_navy_funds
+    x = 4
+    y = 1
+    cost = 5
+    available_if_capitulated = yes
 
+    completion_reward = {
+        # One broad naval bonus: five 25% discounts across naval techs
+        navy_experience = 50
+        add_tech_bonus = {
+            name = SPR_indep_naval_bundle
+            bonus = 0.25
+            uses  = 5
+            category = naval_equipment
+        }
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
+        # 2 dockyards in Galicia (state 171)
+        171 = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = dockyard
+                level = 2
+                instant_build = yes
+            }
+        }
+    }
+}
 
-		completion_reward = {
-			add_tech_bonus = {
-				name = naval_doctrine_bonus
-				bonus = 1
-				uses = 1
-				category = bc_tech
-				category = bb_tech
-				category = ca_tech
-				category = cl_tech
-			}
-		}
-	}
-	
-	focus = {
-		id = SPR_navy_doc_2
-		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = SPR_navy_funds }
-		mutually_exclusive = { focus = SPR_navy_doc_1 }
-		x = 1
-		y = 1
-		relative_position_id = SPR_navy_funds
-		cost = 5
+focus = {
+    id = SPR_home_merchant_industry
+    icon = GFX_goal_generic_construct_civ_factory
+    prerequisite = { focus = SPR_navy_independent_path }
+    relative_position_id = SPR_navy_independent_path
+    x = 0
+    y = 1
+    cost = 5
+    available_if_capitulated = yes
 
-		available_if_capitulated = yes
+    complete_tooltip = {
+        # Preview: adds factories & dockyards in the chosen state
+        navy_experience = 75
+        165 = {
+            add_extra_state_shared_building_slots = 9
+            add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+            add_building_construction = { type = dockyard            level = 6 instant_build = yes }
+        }
+    }
 
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.50
-				uses = 2
-			}
-		}
-	}
-		
-	focus = {
-		id = SPR_submarine_effort
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = SPR_navy_doc_1 focus = SPR_navy_doc_2}
-		x = 1
-		y = 2
-		relative_position_id = SPR_navy_funds
-		cost = 5
+    completion_reward = {
+        navy_experience = 25
+        165 = {
+            add_extra_state_shared_building_slots = 9
+            add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+            add_building_construction = { type = dockyard            level = 6 instant_build = yes }
+        }
+    }
+}
 
-		available_if_capitulated = yes
+focus = {
+    id = SPR_import_italian_designs
+    icon = GFX_goal_generic_navy_battleship
+    prerequisite = { focus = SPR_navy_funds }
+    mutually_exclusive = { focus = SPR_navy_german_path focus = SPR_navy_japan_path focus = SPR_navy_independent_path }
 
+    relative_position_id = SPR_navy_funds
+    x = 2
+    y = 1
+    cost = 5
+    available_if_capitulated = yes
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
+    complete_tooltip = {
+        navy_experience = 25
+        add_political_power = -25
+    }
 
-		completion_reward = {
-		    navy_experience = 50
-			add_tech_bonus = {
-				name = YUG_expand_the_submarine_fleet
-				bonus = 0.25
-				uses = 1
-				category = ss_tech
-			}
-		}
-	}
-	
-	focus = {
-		id = SPR_naval_doctrine_1
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = SPR_destroyer_effort focus = SPR_submarine_effort }
-		x = 1
-		y = 3
-		relative_position_id = SPR_navy_funds
-		cost = 5
+    completion_reward = {
+                navy_experience = 50
+        792 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+                       }
+        }
+        set_technology = {
+            early_ship_hull_heavy = 1
+            basic_ship_hull_heavy = 1
+            improved_ship_hull_heavy = 1
+            # modules commonly used by BBs (adjust to your mod’s names as needed)
+            basic_heavy_battery = 1
+            basic_heavy_armor_scheme = 1
+            improved_secondary_battery = 1
+            basic_fire_control_system = 1
+            radio_detection = 1
+            sonar = 1
+            mtg_transport = 1
+        }
 
-		available_if_capitulated = yes
+        # Optional: give Spain an immediate Littorio-pattern BB variant
+        create_equipment_variant = {
+            name = "Littorio (License)"
+            type = ship_hull_heavy_2          # adjust if your BB hull key differs
+            name_group = SPR_BB_HISTORICAL    # or remove if you don’t use name groups
+            parent_version = 0
+            modules = {
+                fixed_ship_battery_slot = ship_heavy_battery_2
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+                fixed_ship_radar_slot = ship_radar_1
+                fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_secondaries_slot = ship_secondaries_2
+                fixed_ship_armor_slot = ship_armor_bb_2
+				front_1_custom_slot = empty
+                mid_1_custom_slot   = empty
+				mid_2_custom_slot   = empty
+                rear_1_custom_slot  = empty
+            }
+        }
+    }
+}
 
+focus = {
+    id = SPR_repurpose_secn_dockyards
+    icon = GFX_goal_generic_navy_battleship
+    prerequisite = { focus = SPR_import_italian_designs }  
+    relative_position_id = SPR_import_italian_designs
+    x = 0
+    y = 1
+    cost = 5
+    available_if_capitulated = yes
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
+    complete_tooltip = {
+        navy_experience = 50
+        }
 
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.50
-				uses = 1
-				category = naval_doctrine
-			}
-		}
-	}
+    completion_reward = {
+        navy_experience = 50
+        165 = {
+            add_extra_state_shared_building_slots = 8
+            remove_building = { type = industrial_complex level = 3 }
+            add_building_construction = { type = dockyard level = 8 instant_build = yes }
+        }
+    }
+}
+
+focus = {
+    id = SPR_japan_aircraft_synergy
+    icon = GFX_goal_generic_air_fighter
+    prerequisite = { focus = SPR_navy_japan_path }
+    relative_position_id = SPR_navy_japan_path
+    x = 0
+    y = 1
+    cost = 5
+    available_if_capitulated = yes
+
+    complete_tooltip = {
+        add_ideas = JAP_prioritize_naval_aircraft_construction
+    }
+
+    completion_reward = {
+        792 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+                        }
+    }
+        add_ideas = JAP_prioritize_naval_aircraft_construction
+    }
+}
+
+focus = {
+    id = SPR_navy_modular_construction
+    icon = GFX_goal_generic_construct_naval_dockyard
+    prerequisite = { focus = SPR_navy_german_path }
+    relative_position_id = SPR_navy_german_path
+    x = 0
+    y = 1
+    cost = 5
+    available_if_capitulated = yes
+
+    complete_tooltip = {
+        add_ideas = GER_modular_construction
+    }
+
+    completion_reward = {
+        add_ideas = GER_modular_construction
+    }
+}
+
+focus = {
+    id = SPR_divert_reconstruction_funds
+    icon = GFX_goal_generic_construct_naval_dockyard
+
+    prerequisite = {
+            focus = SPR_home_merchant_industry
+            focus = SPR_japan_aircraft_synergy
+            focus = SPR_repurpose_secn_dockyards
+            focus = SPR_navy_modular_construction
+    }
+
+    x = 20
+    y = 13
+    cost = 5
+    available_if_capitulated = yes
+
+    complete_tooltip = {
+        set_country_flag = SPR_nav_rebuilds_unlocked
+        custom_effect_tooltip = SPR_divert_reconstruction_funds_decision_tt
+        171 = {
+            add_extra_state_shared_building_slots = 4
+            add_building_construction = { type = dockyard level = 4 instant_build = yes }
+        }
+    }
+
+    completion_reward = {
+        set_country_flag = SPR_nav_rebuilds_unlocked
+        custom_effect_tooltip = SPR_divert_reconstruction_funds_decision_tt
+        171 = {
+            add_extra_state_shared_building_slots = 4
+            add_building_construction = { type = dockyard level = 4 instant_build = yes }
+        }
+    }
+}
+
+focus = {
+    id = SPR_expand_admiralty
+    icon = GFX_goal_generic_navy_cruiser
+    prerequisite = { focus = SPR_divert_reconstruction_funds }
+    relative_position_id = SPR_divert_reconstruction_funds
+    x = 0
+    y = 1
+    cost = 5
+    available_if_capitulated = yes
+
+    complete_tooltip = {
+        custom_effect_tooltip = SPR_expand_admiralty_tt
+    }
+
+    completion_reward = {
+
+            create_navy_leader = {
+            name = "Beef Cheggerson"
+            picture = "GFX_portrait_beef_cheggerson.dds"
+            traits = { cruiser_captain fly_swatter }
+            skill = 4
+		attack_skill=4
+		defense_skill=4
+		maneuvering_skill=2
+		coordination_skill=2
+        }
+           create_navy_leader = {
+	   name = "Kaiser"
+	   picture = "GFX_portrait_SPR_adm_kaiser.dds"
+	   traits = { gunnery_expert ironside substance_abuser }
+           skill = 4
+		attack_skill=4
+		defense_skill=1
+		maneuvering_skill=4
+		coordination_skill=2
+        }
+           create_navy_leader = {
+	   name = "Onu"
+	   picture = "GFX_portrait_SPR_adm_Onu.dds"
+	   traits = { seawolf blue_water_expert }
+           skill = 4
+		attack_skill=4
+		defense_skill=1
+		maneuvering_skill=4
+		coordination_skill=2
+        }
+          
+           create_navy_leader = {
+	   name = "Dusty"
+	   picture = "GFX_portrait_SPR_adm_dusty.dds"
+	   traits = { superior_tactician air_controller blue_water_expert naval_lineage career_officer }
+           skill = 4
+		attack_skill=4
+		defense_skill=2
+		maneuvering_skill=3
+		coordination_skill=2
+        }
+    }
+}
 	
 	############################
 	##### AIRFORCE SECTION #####
@@ -2410,7 +2595,7 @@ technology = construction4
 		id = SPA_the_german_testing_ground
 
 		icon = GFX_GER_Legion_Condor
-		x = 32
+		x = 27
 		y = 0
 		cost = 5
 
