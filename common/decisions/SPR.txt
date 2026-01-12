@@ -577,6 +577,11 @@ operations = {
 			tag = SPR
 		}
 		available = {
+		    NOT = { has_completed_focus = SPA_the_stabilization_plan }
+			OR = {
+			    has_completed_focus = SPA_autarky
+				has_completed_focus = SPA_fascist_economic_aid
+			}
 			OR = {
 			FRA = { has_capitulated = yes }
 			date > 1940.5.1

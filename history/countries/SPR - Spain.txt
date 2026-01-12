@@ -11,10 +11,10 @@ if = {
 }
 set_research_slots = 3
 add_ideas = {
-	limited_exports
 	limited_conscription
 	SPA_german_trading
 	SPA_no_army
+	SPA_volunteer
 }
 set_technology = { #player 
 	############### infantry #############

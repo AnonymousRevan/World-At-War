@@ -58,7 +58,6 @@ focus = {
 	available_if_capitulated = yes
 	search_filters = {FOCUS_FILTER_MANPOWER}
 	completion_reward = {
-		army_experience = 200
 		air_experience = 100
 		set_party_name = { ideology = fascism long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
 		set_party_name = { ideology = neutrality long_name = SPR_fascism_francoist_party_long name = SPR_fascism_francoist_party }
@@ -79,6 +78,7 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+		    army_experience = 500
 			GER = {
 				add_opinion_modifier = { target = SPR modifier = HOL_caved_to_the_germans_ger_trade }
 			}
@@ -214,7 +214,6 @@ focus = {
 				hours = 48
 				id = spain.1
 			}
-			army_experience = 40
 	        add_stability = 0.05
 	   }
 	}
@@ -241,7 +240,7 @@ focus = {
 		}
 
 		icon = GFX_goal_support_fascism
-		x = -3
+		x = -4
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
 		cost = 7.145
@@ -299,7 +298,7 @@ technology = construction4
 		x = 0
 		y = 1
 		relative_position_id = SPA_fascist_economic_aid
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -377,6 +376,55 @@ technology = construction4
 			}
 		}
 	}
+	
+	focus = {
+		id = SPA_funny1
+		available = {
+		}
+		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports }
+
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+		relative_position_id = SPA_facilitate_pyrenees_freight_transports
+		cost = 7.16
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			USA = {
+				add_opinion_modifier = { target = SPR modifier = embargo }
+			}
+			ENG = {
+				add_opinion_modifier = { target = SPR modifier = embargo }
+			}
+			FRA = {
+				add_opinion_modifier = { target = SPR modifier = embargo }
+			}
+			SOV = {
+				add_opinion_modifier = { target = SPR modifier = embargo }
+			}
+			IDR = {
+				add_opinion_modifier = { target = SPR modifier = embargo }
+			}
+			SAF = {
+				add_opinion_modifier = { target = SPR modifier = embargo }
+			}
+			AST = {
+				add_opinion_modifier = { target = SPR modifier = embargo }
+			}
+			CAN = {
+				add_opinion_modifier = { target = SPR modifier = embargo }
+			}
+			BRA = {
+				add_opinion_modifier = { target = SPR modifier = embargo }
+			}
+			MON = {
+				add_opinion_modifier = { target = SPR modifier = embargo }
+			}
+		}
+	}
+
 
 	focus = {
 		id = SPA_improve_cross_country_railways
@@ -409,28 +457,17 @@ technology = construction4
 
 	focus = {
 		id = SPA_support_the_war_industry
-		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports }
+		prerequisite = { focus = SPA_funny1 }
 		prerequisite = { focus = SPA_improve_cross_country_railways }
 
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 0
-		y = 2
-		relative_position_id = SPA_facilitate_pyrenees_freight_transports
-		cost = 10
+		y = 1
+		relative_position_id = SPA_funny1
+		cost = 7.16
 
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			every_state = {
-				limit	= {	has_state_flag = SPA_support_the_war_industry_1civ }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -497,7 +534,7 @@ technology = construction4
 		x = 0
 		y = 2
 		relative_position_id = SPA_support_the_war_industry
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -529,21 +566,10 @@ technology = construction4
 		x = 1
 		y = 1
 		relative_position_id = SPA_support_the_war_industry
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			every_state = {
-				limit	= {	has_state_flag = SPA_expand_the_war_industry_2mil }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -598,17 +624,6 @@ technology = construction4
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
-		complete_tooltip = {
-			every_state = {
-				limit	= {	has_state_flag = SPA_national_recovery_2civ }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 		completion_reward = {
             add_ideas = MAN_resource
 			swap_ideas = {
@@ -641,9 +656,9 @@ technology = construction4
 		mutually_exclusive = { focus = SPA_fascist_economic_aid focus = SPA_the_stabilization_plan }
 
 		icon = GFX_goal_generic_oil_refinery
-		x = 3
+		x = 0
 		y = 1
-		relative_position_id = SPA_axis
+		relative_position_id = SPA_national_recovery
 		cost = 7.145
 
 		available_if_capitulated = yes
@@ -694,7 +709,7 @@ technology = construction4
 		x = 1
 		y = 1
 		relative_position_id = SPA_spanish_austerity
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -738,17 +753,6 @@ technology = construction4
 
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			every_state = {
-				limit	= {	has_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -820,14 +824,60 @@ technology = construction4
 		x = 0
 		y = 1
 		relative_position_id = SPA_unify_the_nationalist_front
-		cost = 5
+		cost = 7.16
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 50
-			add_political_power = 60
-			add_war_support = 0.05
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+
+			}
 		}
 	}
 
@@ -839,13 +889,12 @@ technology = construction4
 		x = -1
 		y = 1
 		relative_position_id = SPA_save_the_alcazar
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			army_experience = 50
-			add_war_support = 0.1
+			add_war_support = 0.25
 			add_popularity = {
 			    ideology = fascism
 			    popularity = 0.05
@@ -861,13 +910,13 @@ technology = construction4
 		x = 1
 		y = 1
 		relative_position_id = SPA_save_the_alcazar
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			army_experience = 50
 			add_stability = 0.05
+			add_political_power = 60
 			remove_country_leader_trait = caudillo_1
 			add_country_leader_trait = caudillo_2
 		}
@@ -882,13 +931,59 @@ technology = construction4
 		x = 1
 		y = 1
 		relative_position_id = SPA_martyrdom_for_primo_de_rivera
-		cost = 5
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_SPA_CARLIST_UPRISING}
 		completion_reward = {
-			army_experience = 50
-			add_war_support = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
 		}
 	}
 
@@ -910,7 +1005,6 @@ technology = construction4
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			army_experience = 50
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -928,41 +1022,40 @@ technology = construction4
 					}
 				}
 
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
 					}
-				}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
 					}
 
-			}
-			add_ideas = partial_economic_mobilisation
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+
+				}
 
 		}
 	}
@@ -983,7 +1076,6 @@ technology = construction4
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_SPA_CARLIST_UPRISING}
 		completion_reward = {
-			army_experience = 50
 			swap_ideas = {
 				remove_idea = SPA_carlism_1
 				add_idea = SPA_carlism_2
@@ -1010,7 +1102,6 @@ technology = construction4
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			army_experience = 50
 			add_popularity = {
 			    ideology = neutrality
 			    popularity = 0.05
@@ -1052,12 +1143,11 @@ technology = construction4
 		x = -1
 		y = 1
 		relative_position_id = SPA_extol_the_martyrs_of_the_war
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CARLIST_UPRISING}
 		completion_reward = {
-			army_experience = 50
 			add_political_power = 100
 			remove_ideas = SPA_carlism_3
 		}
@@ -1071,12 +1161,11 @@ technology = construction4
 		x = 1
 		y = 1
 		relative_position_id = SPA_extol_the_martyrs_of_the_war
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			army_experience = 50
 			add_stability = 0.1
 			add_political_power = 60
 		}
@@ -1100,7 +1189,7 @@ technology = construction4
 		}
 
 		icon = GFX_goal_support_democracy
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
 		cost = 7.145
@@ -1153,7 +1242,7 @@ technology = construction4
 		x = 0
 		y = 1
 		relative_position_id = SPA_the_stabilization_plan
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 
@@ -1172,31 +1261,65 @@ technology = construction4
 }
 		}
 	}
+	
+	focus = {
+		id = SPA_funny2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		prerequisite = { focus = SPA_expand_spanish_bases }
+
+		icon = GFX_goal_generic_construct_military
+		x = 0
+		y = 1
+		relative_position_id = SPA_expand_spanish_bases
+		cost = 7.16
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			load_oob = SPR_fleet
+			transfer_state = 179
+			transfer_state = 795
+		    transfer_state = 112
+			transfer_state = 181
+		    transfer_state = 180
+		    add_ideas = SPA_usa_trading
+			add_ideas = SPA_uk_trading
+			41 = {
+				add_resource = {
+					type = oil
+					amount = 25
+				}
+			}
+			361 = {
+				add_resource = {
+					type = tungsten
+					amount = 20
+				}
+			}
+			126 = {
+				add_resource = {
+					type = tungsten
+					amount = 20
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = SPA_capitalist_economic_aid
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		prerequisite = { focus = SPA_expand_spanish_bases }
+		prerequisite = { focus = SPA_funny2 }
 
 		icon = GFX_focus_generic_the_giant_wakes
 		x = 0
-		y = 2
-		relative_position_id = SPA_expand_spanish_bases
-		cost = 10
+		y = 1
+		relative_position_id = SPA_funny2
+		cost = 7.16
 
 		available_if_capitulated = yes
-		complete_tooltip = {
-			every_state = {
-				limit	= {	has_state_flag = SPA_capitalist_economic_aid_2civ }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
+
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			add_tech_bonus = {
@@ -1288,26 +1411,6 @@ technology = construction4
 
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			every_state = {
-				limit	= {	has_state_flag = SPA_the_spanish_miracle_2civ }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			every_state = {
-				limit	= {	has_state_flag = SPA_the_spanish_miracle_2mil }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			swap_ideas = {
@@ -1422,8 +1525,10 @@ technology = construction4
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = SPA_la_division_azul
-			add_ideas = SPA_volunteer
+			swap_ideas = {
+				remove_idea = SPA_volunteer
+				add_idea = SPA_la_division_azul
+			}
 		}
 
 	}
@@ -1643,8 +1748,6 @@ technology = construction4
 				uses = 1
 				category = artillery
 			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = SPA_inf_sister
 		}
 	}
 
@@ -1886,24 +1989,15 @@ technology = construction4
 			GER = {
 				add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
 			}
-			hidden_effect = {
 				set_technology = {
 					axis_light_tank_1936 = 1
+					axis_cruiser_tank_1937 = 1
 				}
-			}
-			custom_effect_tooltip = SPA_light_tank_unlock_tt
 			add_equipment_to_stockpile = {
-				type = light_tank_equipment_1936
-				amount = 200
-				producer = ITA
-			}
-			add_equipment_to_stockpile = {
-				type = medium_tank_equipment_1936
-				amount = 50
+				type = cruiser_tank_equipment_1936
+				amount = 400
 				producer = GER
 			}
-			custom_effect_tooltip = available_political_advisor
-            show_ideas_tooltip = SPA_wilhelm_ritter_von_thoma
 		}
 	}
 
@@ -2182,7 +2276,7 @@ technology = construction4
 	focus = {
 		id = SPR_navy_funds
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 20
+		x = 32
 		y = 10
 		cost = 5
 
@@ -2196,15 +2290,6 @@ technology = construction4
 			}
 		}
 
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 4
-			add_building_construction = {
-				type = dockyard
-				level = 4
-				instant_build = yes
-			}
-			navy_experience = 50	
-		}
 		
 		completion_reward = {
 		    navy_experience = 25
@@ -2225,19 +2310,13 @@ focus = {
     prerequisite = { focus = SPR_navy_funds }
     mutually_exclusive = { focus = SPR_import_italian_designs focus = SPR_navy_japan_path focus = SPR_navy_independent_path } 
     relative_position_id = SPR_navy_funds
-    x = -2
+    x = -3
     y = 1
     cost = 5
     available_if_capitulated = yes
 
     completion_reward = {
-        set_technology = { cruiser_submarines = 1 }
-        add_tech_bonus = {
-            name = GER_sub_bonus
-            bonus = 1.0
-            uses = 1
-            category = ss_tech
-        }
+	navy_experience = 50
 	167 = {
 		add_extra_state_shared_building_slots = 2
 		add_building_construction = {
@@ -2246,6 +2325,75 @@ focus = {
 		instant_build = yes
 		}
 	}
+        set_technology = { 
+		     cruiser_submarines = 1 
+			 improved_ship_torpedo_launcher = 1
+             sonar = 1
+             mtg_transport = 1
+		}
+	create_equipment_variant = {
+		name = "Type IX (License)"			
+		type = ship_hull_cruiser_submarine
+		name_group = SPR_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			front_1_custom_slot = ship_torpedo_sub_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				creator = "SPR" 
+				version_name = "Type IX (License)"
+			}
+			requested_factories = 1
+			progress = 0.5
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				creator = "SPR" 
+				version_name = "Type IX (License)"
+			}
+			requested_factories = 1
+			progress = 0.5
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				creator = "SPR" 
+				version_name = "Type IX (License)"
+			}
+			requested_factories = 1
+			progress = 0.5
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				creator = "SPR" 
+				version_name = "Type IX (License)"
+			}
+			requested_factories = 1
+			progress = 0.5
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				creator = "SPR" 
+				version_name = "Type IX (License)"
+			}
+			requested_factories = 1
+			progress = 0.5
+			amount = 1
+		}
 
         add_tech_bonus = {
             name = SPR_magnetic_detonator_bonus
@@ -2259,11 +2407,11 @@ focus = {
 
 focus = {
     id = SPR_navy_japan_path
-    icon = GFX_goal_generic_carrier
+    icon = GFX_goal_generic_navy_carrier
     prerequisite = { focus = SPR_navy_funds }
     mutually_exclusive = { focus = SPR_navy_german_path focus = SPR_import_italian_designs focus = SPR_navy_independent_path }
     relative_position_id = SPR_navy_funds
-    x = 0
+    x = -1
     y = 1
     cost = 5
     available_if_capitulated = yes
@@ -2278,19 +2426,60 @@ focus = {
 		instant_build = yes
 		}
 	}
+        set_technology = {
+			early_ship_hull_carrier = 1
+			basic_ship_hull_carrier = 1
+            improved_secondary_battery = 1
+            radio_detection = 1
+            sonar = 1
+            mtg_transport = 1
+			cv_fighter_1936 = 1 
+			cv_naval_bomber_1936 = 1
+        }
+				add_equipment_to_stockpile = {
+					type = cv_fighter_equipment_1936
+					amount = 40
+					producer = SPR 
+				}
+				add_equipment_to_stockpile = {
+					type = cv_nav_bomber_equipment_1936
+					amount = 40
+					producer = SPR 
+				}
+
+        # Optional: give Spain an immediate Littorio-pattern BB variant
+        create_equipment_variant = {
+            name = "Soryu (License)"
+			type = ship_hull_carrier_1
+			name_group = SPR_CV_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_engine_slot = carrier_ship_engine_2
+				fixed_ship_secondaries_slot = ship_secondaries_2
+				front_1_custom_slot = ship_deck_space
+			}
+        }
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_1
+						creator = "SPR" 
+						version_name = "Soryu (License)"
+					}
+					name = "España" 
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
 
         add_tech_bonus = {
             name = JAP_carrier_bonus
-            bonus = 2.0
-            uses = 1
-            category = cv_tech
-        }
-        # 100% bonus for naval bombers
-        add_tech_bonus = {
-            name = JAP_navbomber_bonus
             bonus = 1.0
             uses = 1
-            category = naval_bomber
+            category = cv_tech
         }
     }
 }
@@ -2301,7 +2490,7 @@ focus = {
     prerequisite = { focus = SPR_navy_funds }
     mutually_exclusive = { focus = SPR_navy_german_path focus = SPR_import_italian_designs focus = SPR_navy_japan_path }
     relative_position_id = SPR_navy_funds
-    x = 4
+    x = 3
     y = 1
     cost = 5
     available_if_capitulated = yes
@@ -2309,13 +2498,6 @@ focus = {
     completion_reward = {
         # One broad naval bonus: five 25% discounts across naval techs
         navy_experience = 50
-        add_tech_bonus = {
-            name = SPR_indep_naval_bundle
-            bonus = 0.25
-            uses  = 5
-            category = naval_equipment
-        }
-
         # 2 dockyards in Galicia (state 171)
         171 = {
             add_extra_state_shared_building_slots = 2
@@ -2324,6 +2506,16 @@ focus = {
                 level = 2
                 instant_build = yes
             }
+        }
+        set_technology = {
+            sonar = 1
+            mtg_transport = 1
+        }
+        add_tech_bonus = {
+            name = SPR_indep_naval_bundle
+            bonus = 1.0
+            uses  = 4
+            category = naval_equipment
         }
     }
 }
@@ -2338,23 +2530,14 @@ focus = {
     cost = 5
     available_if_capitulated = yes
 
-    complete_tooltip = {
-        # Preview: adds factories & dockyards in the chosen state
-        navy_experience = 75
-        165 = {
-            add_extra_state_shared_building_slots = 9
-            add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
-            add_building_construction = { type = dockyard            level = 6 instant_build = yes }
-        }
-    }
-
     completion_reward = {
         navy_experience = 25
         165 = {
-            add_extra_state_shared_building_slots = 9
-            add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
-            add_building_construction = { type = dockyard            level = 6 instant_build = yes }
+            add_extra_state_shared_building_slots = 8
+            add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+            add_building_construction = { type = dockyard level = 6 instant_build = yes }
         }
+		add_ideas = FRA_the_young_school
     }
 }
 
@@ -2365,15 +2548,11 @@ focus = {
     mutually_exclusive = { focus = SPR_navy_german_path focus = SPR_navy_japan_path focus = SPR_navy_independent_path }
 
     relative_position_id = SPR_navy_funds
-    x = 2
+    x = 1
     y = 1
     cost = 5
     available_if_capitulated = yes
 
-    complete_tooltip = {
-        navy_experience = 25
-        add_political_power = -25
-    }
 
     completion_reward = {
                 navy_experience = 50
@@ -2388,8 +2567,6 @@ focus = {
         set_technology = {
             early_ship_hull_heavy = 1
             basic_ship_hull_heavy = 1
-            improved_ship_hull_heavy = 1
-            # modules commonly used by BBs (adjust to your mod’s names as needed)
             basic_heavy_battery = 1
             basic_heavy_armor_scheme = 1
             improved_secondary_battery = 1
@@ -2413,12 +2590,23 @@ focus = {
                 fixed_ship_engine_slot = heavy_ship_engine_2
 				fixed_ship_secondaries_slot = ship_secondaries_2
                 fixed_ship_armor_slot = ship_armor_bb_2
-				front_1_custom_slot = empty
-                mid_1_custom_slot   = empty
-				mid_2_custom_slot   = empty
-                rear_1_custom_slot  = empty
+				front_1_custom_slot = ship_heavy_battery_2
+                mid_1_custom_slot   = ship_secondaries_2
+				mid_2_custom_slot   = ship_anti_air_2
+                rear_1_custom_slot  = ship_heavy_battery_2
             }
         }
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_2
+						creator = "SPR" 
+						version_name = "Littorio (License)"
+					}
+					name = "España" 
+					requested_factories = 1
+					progress = 0.8
+					amount = 1
+				}
     }
 }
 
@@ -2432,17 +2620,19 @@ focus = {
     cost = 5
     available_if_capitulated = yes
 
-    complete_tooltip = {
-        navy_experience = 50
-        }
 
     completion_reward = {
         navy_experience = 50
         165 = {
             add_extra_state_shared_building_slots = 8
-            remove_building = { type = industrial_complex level = 3 }
             add_building_construction = { type = dockyard level = 8 instant_build = yes }
         }
+			add_tech_bonus = {
+				name = FRA_capital_ship_focus
+				bonus = 1.0
+				uses = 1
+				category = bb_tech
+			}
     }
 }
 
@@ -2456,20 +2646,19 @@ focus = {
     cost = 5
     available_if_capitulated = yes
 
-    complete_tooltip = {
-        add_ideas = JAP_prioritize_naval_aircraft_construction
-    }
-
     completion_reward = {
-        792 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = dockyard
-				level = 2
-				instant_build = yes
-                        }
-    }
+        173 = {
+		    add_extra_state_shared_building_slots = 8
+            add_building_construction = { type = dockyard level = 8 instant_build = yes }
+        }
         add_ideas = JAP_prioritize_naval_aircraft_construction
+        # 100% bonus for naval bombers
+        add_tech_bonus = {
+            name = JAP_navbomber_bonus
+            bonus = 1.0
+            uses = 1
+            category = naval_bomber
+        }
     }
 }
 
@@ -2483,11 +2672,18 @@ focus = {
     cost = 5
     available_if_capitulated = yes
 
-    complete_tooltip = {
-        add_ideas = GER_modular_construction
-    }
-
     completion_reward = {
+        171 = {
+            add_extra_state_shared_building_slots = 8
+            add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+            add_building_construction = { type = dockyard level = 6 instant_build = yes }
+        }
+        add_tech_bonus = {
+            name = GER_sub_bonus
+            bonus = 1.0
+            uses = 1
+            category = ss_tech
+        }
         add_ideas = GER_modular_construction
     }
 }
@@ -2503,23 +2699,13 @@ focus = {
             focus = SPR_navy_modular_construction
     }
 
-    x = 20
+    x = 32
     y = 13
     cost = 5
     available_if_capitulated = yes
 
-    complete_tooltip = {
-        set_country_flag = SPR_nav_rebuilds_unlocked
-        custom_effect_tooltip = SPR_divert_reconstruction_funds_decision_tt
-        171 = {
-            add_extra_state_shared_building_slots = 4
-            add_building_construction = { type = dockyard level = 4 instant_build = yes }
-        }
-    }
 
     completion_reward = {
-        set_country_flag = SPR_nav_rebuilds_unlocked
-        custom_effect_tooltip = SPR_divert_reconstruction_funds_decision_tt
         171 = {
             add_extra_state_shared_building_slots = 4
             add_building_construction = { type = dockyard level = 4 instant_build = yes }
@@ -2537,9 +2723,6 @@ focus = {
     cost = 5
     available_if_capitulated = yes
 
-    complete_tooltip = {
-        custom_effect_tooltip = SPR_expand_admiralty_tt
-    }
 
     completion_reward = {
 
@@ -2606,6 +2789,7 @@ focus = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			air_experience = 100
+			add_ideas = GER_air_innovations_1_idea
 			add_tech_bonus = {
 				name = SPA_the_condor_legion
 				bonus = 1.0
@@ -2636,10 +2820,6 @@ focus = {
 		}
 
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-		    add_ideas = ROM_local_development_2
-		}
 
 		completion_reward = {
 		    add_ideas = ROM_local_development_2
@@ -2872,7 +3052,7 @@ focus = {
 	focus = {
 		id = SPR_revitalize_the_army
 		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
-		x = 13
+		x = 24
 		y = 9
 		cost = 3
 		ai_will_do = {
@@ -2890,7 +3070,6 @@ focus = {
 			add_manpower = 100000
 			division_template = {
 						name = "Viejo Guardia"
-						is_locked = yes
 						priority = 2
 
 						regiments = {
@@ -2901,6 +3080,7 @@ focus = {
 							light_infantry = { x = 1 y = 0 }
 							light_infantry = { x = 1 y = 1 }
 							light_infantry = { x = 1 y = 2 }
+							light_infantry = { x = 1 y = 3 }
 								
 							light_infantry = { x = 2 y = 0 }
 							light_infantry = { x = 2 y = 1 }
@@ -2908,11 +3088,10 @@ focus = {
 							
 							artillery_brigade = { x = 3 y = 0 }
 							artillery_brigade = { x = 3 y = 1 }
-							light_infantry = { x = 3 y = 2 }
 							
 							anti_air = { x = 4 y = 0 }
 							anti_tank_brigade = { x = 4 y = 1 }
-							light_infantry = { x = 4 y = 2 }
+							artillery_brigade = { x = 4 y = 2 }
 							
 						}
 
@@ -2923,6 +3102,7 @@ focus = {
 							military_police = { x = 1 y = 0 }
 							recon = { x = 1 y = 1 }
 							anti_air_company = { x = 1 y = 2 }
+							artillery = { x = 0 y = 3 }
 						}
 			}
 			41 = {
@@ -3123,7 +3303,7 @@ focus = {
 	
 	focus = {
 		id = SPR_fortify_our_east
-		icon = GFX_idea_generic_wall_line
+		icon = GFX_goal_generic_fortify_city
 		relative_position_id = SPR_revitalize_the_army
 		prerequisite = { focus = SPR_revitalize_the_army }
 		x = 1
@@ -3248,7 +3428,7 @@ focus = {
 	
 	focus = {
 		id = SPR_fortify_our_north
-		icon = GFX_idea_generic_fortify_the_borders
+		icon = GFX_goal_generic_defence
 		relative_position_id = SPR_revitalize_the_army
 		prerequisite = { focus = SPR_revitalize_the_army }
 		x = 3
@@ -3476,10 +3656,10 @@ focus = {
 				category = artillery
 			}
 			165 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}

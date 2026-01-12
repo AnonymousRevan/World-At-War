@@ -663,8 +663,9 @@ characters={
 	}
 	SPA_rafael_garcia_valino = { # Francoist/Carlist
 		advisor = {
-			slot = army_chief
+			slot = high_command
 			idea_token = SPA_rafael_garcia_valino
+			ledger = navy
 			picture = SPA_rafael_garcia_valino
 			
 			allowed = {
@@ -694,7 +695,7 @@ characters={
 				}
 			}
 			
-			traits = { army_chief_organizational_2 }
+			traits = { navy_screen_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -743,8 +744,9 @@ characters={
 	}
 	SPA_miguel_ponte = { # Francoist
 		advisor = {
-			slot = army_chief
+			slot = high_command
 			idea_token = SPA_miguel_ponte
+			ledger = army
 			picture = SPA_miguel_ponte
 			
 			allowed = {
@@ -766,7 +768,7 @@ characters={
 				}
 			}
 			
-			traits = { army_chief_drill_2 }
+			traits = { army_cavalry_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -857,8 +859,9 @@ characters={
 	}
 	SPA_juan_vigon_suero_diaz = { # Carlist
 		advisor = {
-			slot = air_chief
+			slot = high_command
 			idea_token = SPA_juan_vigon_suero_diaz	
+			ledger = air
 			picture = generic_air_europe_2
 			
 			allowed = {
@@ -880,7 +883,7 @@ characters={
 				}
 			}
 			
-			traits = { air_chief_reform_2 }
+			traits = { air_close_air_support_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -985,7 +988,7 @@ characters={
 				}
 			}
 			
-			traits = { navy_chief_decisive_battle_2 }
+			traits = { navy_chief_commerce_raiding_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -1147,11 +1150,6 @@ characters={
 			}
 
 			available = {
-				has_completed_focus = SPA_the_condor_legion
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-					NOT = { tag = SPD }
-				}
 			}
 			
 			traits = { army_armored_2 }
@@ -1284,11 +1282,6 @@ characters={
 			}
 
 			available = {
-				has_completed_focus = SPA_the_corpo_truppe_volontarie
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-					NOT = { tag = SPD }
-				}
 			}
 			
 			traits = { army_commando_1 }
