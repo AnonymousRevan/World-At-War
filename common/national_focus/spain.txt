@@ -240,7 +240,7 @@ focus = {
 		}
 
 		icon = GFX_goal_support_fascism
-		x = -4
+		x = -3
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
 		cost = 7.145
@@ -383,7 +383,7 @@ technology = construction4
 		}
 		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports }
 
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		x = 0
 		y = 1
 		relative_position_id = SPA_facilitate_pyrenees_freight_transports
@@ -422,6 +422,46 @@ technology = construction4
 			MON = {
 				add_opinion_modifier = { target = SPR modifier = embargo }
 			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			41 = {
+				add_resource = {
+					type = chromium
+					amount = 15
+				}
+				add_resource = {
+					type = coal
+					amount = 10
+				}
+			}
 		}
 	}
 
@@ -434,7 +474,7 @@ technology = construction4
 		x = 2
 		y = 2
 		relative_position_id = SPA_fascist_economic_aid
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -443,12 +483,6 @@ technology = construction4
 				limit = {
 					is_controlled_by = ROOT
 					is_core_of = ROOT
-					NOT = {
-						state = 165
-						state = 176
-						state = 792
-						state = 41
-					}
 				}
 				build_2_infrastructure = yes
 			}
@@ -689,7 +723,7 @@ technology = construction4
 		x = 0
 		y = 1
 		relative_position_id = SPA_autarky
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -732,7 +766,7 @@ technology = construction4
 		x = 0
 		y = 2
 		relative_position_id = SPA_spanish_austerity
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 
@@ -747,9 +781,9 @@ technology = construction4
 
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = SPA_expand_the_axis_gold_trade
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 
@@ -804,6 +838,40 @@ technology = construction4
 					type = industrial_complex
 					level = 2
 					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SPA_funny3
+		prerequisite = { focus = SPA_ensure_agricultural_self_sufficiency }
+
+		icon = GFX_focus_generic_coal_mining
+		x = 0
+		y = 1
+		relative_position_id = SPA_ensure_agricultural_self_sufficiency
+		cost = 7.16
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			41 = {
+				add_resource = {
+					type = chromium
+					amount = 35
+				}
+				add_resource = {
+					type = coal
+					amount = 20
+				}
+				add_resource = {
+					type = aluminium
+					amount = 20
+				}
+				add_resource = {
+					type = rubber
+					amount = 15
 				}
 			}
 		}
@@ -1189,7 +1257,7 @@ technology = construction4
 		}
 
 		icon = GFX_goal_support_democracy
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
 		cost = 7.145
@@ -1228,6 +1296,13 @@ technology = construction4
 			swap_ideas = {
 				remove_idea = SPA_national_recovery_1
 				add_idea = SPA_national_recovery_2
+			}
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				build_2_infrastructure = yes
 			}
 		}
 	}
@@ -1268,7 +1343,7 @@ technology = construction4
 		continue_if_invalid = no
 		prerequisite = { focus = SPA_expand_spanish_bases }
 
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_goal_generic_dangerous_deal
 		x = 0
 		y = 1
 		relative_position_id = SPA_expand_spanish_bases
@@ -1277,18 +1352,55 @@ technology = construction4
 		available_if_capitulated = yes
 
 		completion_reward = {
-			load_oob = SPR_fleet
-			transfer_state = 179
-			transfer_state = 795
-		    transfer_state = 112
-			transfer_state = 181
-		    transfer_state = 180
+			hidden_effect = {
+				load_oob = SPR_fleet
+				POR = {
+					transfer_navy = {
+						target = SPR
+					}
+			    }
+				transfer_state = 179
+				transfer_state = 795
+		  	    transfer_state = 112
+				transfer_state = 181
+		   	    transfer_state = 180
+      	        179 = {
+        	        remove_building = { type = industrial_complex level = 30 }
+					remove_building = { type = arms_factory level = 30 }
+					remove_building = { type = dockyard level = 30 }
+       	        }
+      	        795 = {
+        	        remove_building = { type = industrial_complex level = 30 }
+					remove_building = { type = arms_factory level = 30 }
+					remove_building = { type = dockyard level = 30 }
+       	        }
+      	        112 = {
+        	        remove_building = { type = industrial_complex level = 30 }
+					remove_building = { type = arms_factory level = 30 }
+					remove_building = { type = dockyard level = 30 }
+       	        }
+      	        181 = {
+        	        remove_building = { type = industrial_complex level = 30 }
+					remove_building = { type = arms_factory level = 30 }
+					remove_building = { type = dockyard level = 30 }
+       	        }
+      	        180 = {
+        	        remove_building = { type = industrial_complex level = 30 }
+					remove_building = { type = arms_factory level = 30 }
+					remove_building = { type = dockyard level = 30 }
+       	        }
+			}
+			custom_effect_tooltip = SPA_light_tank_unlock_tt
 		    add_ideas = SPA_usa_trading
 			add_ideas = SPA_uk_trading
 			41 = {
 				add_resource = {
 					type = oil
 					amount = 25
+				}
+				add_resource = {
+					type = rubber
+					amount = 10
 				}
 			}
 			361 = {
@@ -1303,6 +1415,26 @@ technology = construction4
 					amount = 20
 				}
 			}
+            add_resource = {
+                state = 383
+                amount = -20
+                type = oil
+            }
+            add_resource = {
+                state = 291
+                amount = -5
+                type = oil
+            }
+            add_resource = {
+                state = 336
+                amount = -10
+                type = rubber
+            }
+            add_resource = {
+                state = 181
+                amount = -40
+                type = tungsten
+            }
 		}
 	}
 
@@ -1407,7 +1539,7 @@ technology = construction4
 		x = 1
 		y = 1
 		relative_position_id = SPA_improve_living_standards
-		cost = 10
+		cost = 7.16
 
 		available_if_capitulated = yes
 
@@ -1682,7 +1814,7 @@ technology = construction4
 		icon = GFX_goal_generic_build_tank
 		x = 19
 		y = 0
-		cost = 3
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1725,7 +1857,7 @@ technology = construction4
 		x = -1
 		y = 1
 		relative_position_id = SPA_equipment_shipments
-		cost = 2
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -1981,7 +2113,7 @@ technology = construction4
 		x = 1
 		y = 1
 		relative_position_id = SPA_equipment_shipments
-		cost = 2
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2276,8 +2408,8 @@ technology = construction4
 	focus = {
 		id = SPR_navy_funds
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 32
-		y = 10
+		x = 20
+		y = 9
 		cost = 5
 
 		available_if_capitulated = yes
@@ -2699,8 +2831,8 @@ focus = {
             focus = SPR_navy_modular_construction
     }
 
-    x = 32
-    y = 13
+    x = 20
+    y = 12
     cost = 5
     available_if_capitulated = yes
 
@@ -3052,7 +3184,7 @@ focus = {
 	focus = {
 		id = SPR_revitalize_the_army
 		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
-		x = 24
+		x = 12
 		y = 9
 		cost = 3
 		ai_will_do = {

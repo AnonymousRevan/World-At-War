@@ -1071,5 +1071,4 @@ SPR_expand_resource_extraction = {
 			}
 		}
 	}
-
 }
