@@ -1082,7 +1082,7 @@ opinion_modifiers = {
 
 	HOL_caved_to_the_british_ger_trade = {
 		trade = yes
-		value = -50
+		value = -25
 	}
 
 	HOL_caved_to_the_british_eng = {
