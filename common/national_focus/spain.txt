@@ -1365,29 +1365,22 @@ technology = construction4
 				transfer_state = 181
 		   	    transfer_state = 180
       	        179 = {
-        	        remove_building = { type = industrial_complex level = 30 }
-					remove_building = { type = arms_factory level = 30 }
-					remove_building = { type = dockyard level = 30 }
+        	        remove_building = { type = industrial_complex level = 2 }
        	        }
       	        795 = {
-        	        remove_building = { type = industrial_complex level = 30 }
-					remove_building = { type = arms_factory level = 30 }
-					remove_building = { type = dockyard level = 30 }
+        	        remove_building = { type = industrial_complex level = 1 }
        	        }
       	        112 = {
-        	        remove_building = { type = industrial_complex level = 30 }
-					remove_building = { type = arms_factory level = 30 }
-					remove_building = { type = dockyard level = 30 }
+        	        remove_building = { type = industrial_complex level = 1 }
+					remove_building = { type = arms_factory level = 1 }
+					remove_building = { type = dockyard level = 2 }
        	        }
       	        181 = {
-        	        remove_building = { type = industrial_complex level = 30 }
-					remove_building = { type = arms_factory level = 30 }
-					remove_building = { type = dockyard level = 30 }
+        	        remove_building = { type = industrial_complex level = 1 }
        	        }
       	        180 = {
-        	        remove_building = { type = industrial_complex level = 30 }
-					remove_building = { type = arms_factory level = 30 }
-					remove_building = { type = dockyard level = 30 }
+        	        remove_building = { type = industrial_complex level = 2 }
+					remove_building = { type = dockyard level = 1 }
        	        }
 			}
 			custom_effect_tooltip = SPA_light_tank_unlock_tt
