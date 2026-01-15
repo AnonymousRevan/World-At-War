@@ -97,7 +97,7 @@ country_event = {
 #			}
 			news_event = { hours = 6 id = news.63 }
 			set_global_flag = spanish_civil_war
-			set_equipment_fraction = 0.85
+#			set_equipment_fraction = 0.85
 			set_stability = 0.55
 			set_war_support = 0.6
 			add_timed_idea = {
