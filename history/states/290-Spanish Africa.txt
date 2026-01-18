@@ -14,6 +14,7 @@ state={
 	history={
 		owner = SPR
 		add_core_of = WES
+		add_core_of = SPR
 		victory_points = {
 			9945 3
 		}
